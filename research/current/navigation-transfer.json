@@ -1,5 +1,5 @@
 {
-  "status": "REJECTED_FIXED_TRANSFER_OBSERVATION",
+  "status": "THREE_SETTING_GEOMETRY_REVIEW_CLOSED_NO_ADOPTION",
   "authorization_utc": "2026-10-23T22:14:25.623Z",
   "target": "Music Navigation",
   "base_commit": "12bce1134f687f8f442d526a25fdb5f65d9e85cd",
@@ -88,5 +88,54 @@
     "nested_graph_evaluations": 8688182,
     "RGB_sampling_queries_total": 2879796,
     "candidate_composites": 2
+  },
+  "geometry_review": {
+    "source_commit": "e2fa795755d1e4b8d58a674db62deb9e95924086",
+    "settings": [
+      {
+        "strength": 0,
+        "rounded_E": [
+          25.797215,
+          25.704831
+        ]
+      },
+      {
+        "strength": 0.1,
+        "rounded_E": [
+          25.870702,
+          27.647697
+        ]
+      },
+      {
+        "strength": -0.1,
+        "rounded_E": [
+          25.72225,
+          24.868928
+        ]
+      }
+    ],
+    "selected_H1_rounded_E": [
+      22.794806,
+      23.521786
+    ],
+    "decision": "Reject all three settings as fidelity replacements; retain incident H1.",
+    "primary_visual_review": "Both A/B full comparisons inspected for each sign; minus weakens the misplaced B cap arc relative to zero but still fails H1 and foreground/completed-image guards.",
+    "implication": "The modulation couples a small straight-body horizontal change to a much larger cap change. Its faithful mathematical implementation does not establish fidelity transfer.",
+    "limits": "Conditional source mosaics, unobserved illumination and unknown reference-feature correspondence remain.",
+    "no_fourth_geometry_setting": true
+  },
+  "next_stage": {
+    "status": "AUTHORIZED_ISOLATED_NEUTRAL_TONE_QUESTION",
+    "baseline": "Current H1 D2, source sigma 6.75; all source/shape/foreground/scoring stages frozen",
+    "position": "Common encoded lens-color gain/bias after retained integration, before clear/foreground composition; no per-ray float32-equivalence claim",
+    "maximum_minutes": 20,
+    "maximum_solve_model_evaluations": 16,
+    "maximum_actual_candidate_composites": 8,
+    "maximum_cached_identity_controls": 2,
+    "new_optical_rays": 0,
+    "new_source_queries": 0,
+    "new_filters": 0,
+    "comparison": "All original paired and completed-image guards against current H1; no geometric acceptance implied",
+    "clock": "Record actual receipt before setup; authorization is not execution."
   }
 }
