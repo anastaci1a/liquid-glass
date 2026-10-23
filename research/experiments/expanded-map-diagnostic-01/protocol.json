@@ -1,0 +1,25 @@
+{
+  "status": "complete-diagnostic",
+  "started_at": "2026-10-23T18:35:47.360Z",
+  "deadline": "2026-10-23T18:47:47.360Z",
+  "original_refraction_deadline": "2026-10-23T19:03:30.082Z",
+  "prerequisite": "Completed review-after-three in expanded-geometry-04",
+  "question": "Which source-displacement component is missing from the tested physical surfaces, using the historical fitted map only as diagnostic evidence?",
+  "allowed": "Read frozen empirical geometry_field and saved physical native maps. No empirical map may render a new reconstruction.",
+  "budgets": {
+    "empirical_field_points": 1400000,
+    "new_geometric_rays": 0,
+    "RGB_queries": 0,
+    "fits": 0,
+    "native_images": 0,
+    "parameter_proposals": 0
+  },
+  "checks": [
+    "Assert all old and new original cases retain the same pose and reference masks.",
+    "Compare source-coordinate fields by fixed original cohorts, not image-score equivalence.",
+    "Use the existing unknown-height compatibility test at three derivative steps. Raw map curl and fold signs are not rejection criteria."
+  ],
+  "stop": "Deadline, budget or nonfinite/case mismatch. No source changes, fitted residual warp or automatic fourth image.",
+  "finished_at": "2026-10-23T18:35:55.652058+00:00",
+  "outcome": "Perimeter displacement/curvature gap identified; full empirical map not automatically realizable. No rendering or geometry fit."
+}
