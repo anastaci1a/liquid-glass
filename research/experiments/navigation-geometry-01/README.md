@@ -1,6 +1,6 @@
 # Navigation: geometric transfer
 
-Status: useful negative with incomplete color/outline identification. No accepted replacement; historical pass03 remains the incumbent.
+Status: useful negative with incomplete color/outline identification. The raw geometric baseline is primary under the [current selection policy](../../decisions/primary-geometric-models.md); empirical pass03 is historical.
 
 ## Visible question
 

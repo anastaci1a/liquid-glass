@@ -17,6 +17,7 @@ const panels=JSON.parse(fs.readFileSync(path.join(root,'comparison-panels.json')
     assert.equal(await img.getAttribute('data-comparison-top'),String(bounds.top),'Use the declared caption height for '+src);
    }
    const compact=page.locator('#compact-mini-player');await compact.evaluate(d=>d.open=true);
+   await compact.locator('details[data-historical]').first().evaluate(d=>d.open=true);
    const compactImage=compact.locator('img[data-comparison-top]').first();
    await compactImage.evaluate(async i=>{while(!i.hasAttribute('src'))await new Promise(requestAnimationFrame);await i.decode();});
    await compact.locator('.comparison-frame').first().waitFor({state:'visible'});
@@ -71,7 +72,7 @@ const panels=JSON.parse(fs.readFileSync(path.join(root,'comparison-panels.json')
   assert.deepEqual(colors,[[255,0,0],[0,0,255]],'Crop caption/gutter and align corresponding source halves');
   }
   const noJS=await browser.newContext({javaScriptEnabled:false}),plain=await noJS.newPage();await plain.goto(url);
-  assert.equal(await plain.locator('.comparison').count(),0);assert(await plain.locator('img').first().isVisible(),'No-JS thumbnail remains available');await plain.locator('#clear-playback-control>summary').click();assert(await plain.getByRole('link',{name:'Open image',exact:true}).first().isVisible(),'No-JS source image link remains available');await noJS.close();
+  assert.equal(await plain.locator('.comparison').count(),0);assert(await plain.locator('img').first().isVisible(),'No-JS thumbnail remains available');await plain.locator('#clear-playback-control>summary').click();await plain.locator('#clear-playback-control .study-body>p>noscript>a').first().waitFor({state:'visible'});await noJS.close();
  assert.deepEqual(errors,[]);console.log('PASS comparison desktop/phone, drag bounds, keyboard, fullscreen/focus/reset, exact half/header/gutter crop and no-JS thumbnail navigation');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1)});

@@ -28,6 +28,8 @@ Agree interfaces and file ownership before overlapping edits. Use linked Git wor
 
 Keep current findings and the next proposed experiment in `research/current/`. Save work in progress with an explicit status and reproducible inputs.
 
+Closing a bounded experiment does not end an authorized research sequence. Resume the agreed next task after status questions or related documentation work unless the user pauses the sequence.
+
 Commit coherent code, configuration and evidence. Check private data and redistribution scope, push every new commit immediately, and verify the remote branch tip.
 
 Keep credentials, session dumps, dependencies and downloaded software packages out of Git. Use indexed artifacts for numerical and media evidence.

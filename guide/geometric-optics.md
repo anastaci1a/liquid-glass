@@ -4,6 +4,8 @@
 
 New refraction studies use explicit optical surfaces. Their intersections, normals, ray paths and section views describe the same geometry. Historical displacement maps and filtered image fits remain reproducible controls; they are not the new optical implementation.
 
+Geometric versions are now the [primary gallery models](reconstruction.md), including while visible defects remain. [Current selections](../reconstruction/current-models.json) and [latest research state](../research/current/state.md) distinguish model direction from verified fidelity improvements.
+
 ## Scope and conventions
 
 - Lengths use the fixed reference minor half-extent `L`; actual surface extents remain explicit multiples of it. x points right, y down, +z toward the camera.

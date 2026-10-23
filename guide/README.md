@@ -13,13 +13,15 @@ The project studies explicit optical geometry, material response and visible ref
 | Reference defects | [Observations](../research/feedback/README.md) |
 | Experiment results | [Catalogue](../research/experiments/README.md) |
 | Historical reports | [Evidence library](../research/evidence/README.md) |
-| Measured reconstructions | [Reference comparisons](reconstruction.md) |
+| Primary geometric reconstructions | [Reference comparisons](reconstruction.md) |
 | Surfaces and ray paths | [Geometric optics](geometric-optics.md) |
 | Apple guidance and demonstrations | [Source atlas](sources.md) |
 
 ## Models and demonstrations
 
 The [physical reconstruction engine](../reconstruction/README.md) traces rays through explicit surfaces. Mathematical validity and visible agreement are tested separately.
+
+Geometric versions are primary while defects remain. The [current-model registry](../reconstruction/current-models.json) selects gallery defaults; empirical fits are historical references.
 
 The [interactive Lab](../lab/index.html) illustrates refraction and motion. Its historical empirical modes are diagnostic demonstrations, not evidence of a realizable optical solid.
 

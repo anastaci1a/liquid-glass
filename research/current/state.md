@@ -1,6 +1,6 @@
 # Current state
 
-Status: the [focused clear-play study](../experiments/clear-play-02/README.md) and [navigation transfer study](../experiments/navigation-geometry-01/README.md) are verified useful negatives with declared incomplete branches. No historical reconstruction has been replaced.
+Status: geometric models are the primary versions for playback, toolbar, expanded miniplayer and navigation. Their visible defects remain open. Earlier empirical fits are historical references under the [primary-model policy](../decisions/primary-geometric-models.md).
 
 ## Clear circular play control
 
@@ -8,7 +8,7 @@ Status: the [focused clear-play study](../experiments/clear-play-02/README.md) a
 | --- | --- |
 | Refraction | G05 physical hypothesis retained; later proposals yielded no accepted geometric improvement. |
 | Ordinary blur | Output sigma 1.7 remains accepted. Matched source blur sharpens edges but regresses original guards. |
-| Color, outline, shadow, icon | No new accepted replacement. |
+| Color, outline, shadow, icon | Incomplete; no newer component accepted. |
 | Dispersion | Skip for this control under the reviewer’s instruction. |
 
 The corrected supplemental foreground guard improves 98.655754 → 98.166603. The stale 5.534182 result used reversed coordinates and is superseded.
@@ -28,7 +28,15 @@ The bounded outline extension leaves residual reflected power and 20 unsupported
 | Shadow / foreground | Rejected under original paired guards. |
 | Dispersion | Not identified; no spectral model added. |
 
-Physical-model E is 49.12716 / 19.81851. Historical pass03 remains much better at 5.38805 / 3.11686 and remains the accepted full reconstruction.
+Primary physical-model E is 49.12716 / 19.81851. Historical pass03 scores 5.38805 / 3.11686; its closer image fit remains archived, rather than determining the primary modeling approach.
+
+## Navigation and toolbar
+
+Navigation’s primary version is the raw harmonic rounded-rectangle baseline. Its incident-PSF and shadow variants remain rejected or held; the nonlinear foreground chain blocked color fitting.
+
+The toolbar’s primary image is its harmonic crowned-back baseline. Tone, d-stroke curvature and underside structure remain incomplete. Later closed-surface checks have no newer supported full image.
+
+The [current-model registry](../../reconstruction/current-models.json) selects gallery versions. Primary selection and verified visual improvement are separate decisions.
 
 ## Shared limits
 

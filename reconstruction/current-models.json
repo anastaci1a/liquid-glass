@@ -1,0 +1,65 @@
+{
+  "policy": "research/decisions/primary-geometric-models.md",
+  "selection_is_not_fidelity_acceptance": true,
+  "unlisted_controls": "geometric-version-pending; empirical images are historical references",
+  "models": {
+    "clear-playback-control": {
+      "name": "Clear playback",
+      "geometry": "G05 radial-curvature back",
+      "material": "Selected output softness 1.7 native pixels; historical foreground nuisance retained",
+      "record": "reconstruction/studies/geometric-playback/pipeline-01.json",
+      "study": "research/experiments/clear-play-02/README.md",
+      "images": [
+        "assets/geometric-playback-primary.png"
+      ],
+      "limits": "Thin rim, lower-left illumination, crossing offsets and foreground response remain unresolved.",
+      "selection": "primary-geometric",
+      "fidelity": "incomplete",
+      "full_radiance_verified": false
+    },
+    "archive-and-plus-toolbar": {
+      "name": "Archive and plus toolbar",
+      "geometry": "Harmonic crowned back, depth 0.15 and longitudinal depth 0.4",
+      "material": "Raw unit transmission; no added optical blur, shadow or fitted lighting",
+      "record": "reconstruction/studies/geometric-playback/toolbar-harmonic.json",
+      "study": "guide/geometric-optics.md",
+      "images": [
+        "assets/geometric-toolbar-primary.png"
+      ],
+      "limits": "Tone, cap/body appearance, d-stroke curvature and underside structure remain wrong; hidden source paper is estimated.",
+      "selection": "primary-geometric",
+      "fidelity": "incomplete",
+      "full_radiance_verified": false
+    },
+    "expanded-mini-player": {
+      "name": "Expanded miniplayer",
+      "geometry": "Harmonic rounded-rectangle back",
+      "material": "Selected ordinary output softness and common neutral affine response",
+      "record": "reconstruction/studies/geometric-expanded-pipeline/summary.json",
+      "study": "guide/geometric-optics.md",
+      "images": [
+        "assets/geometric-expanded-primary-a.png",
+        "assets/geometric-expanded-primary-b.png"
+      ],
+      "limits": "Cap/body geometry, bright rim, tone and reflected scene remain incomplete.",
+      "selection": "primary-geometric",
+      "fidelity": "incomplete",
+      "full_radiance_verified": false
+    },
+    "navigation-control": {
+      "name": "Navigation",
+      "geometry": "Harmonic rounded-rectangle back",
+      "material": "Raw unit baseline; source-blur and shadow variants retained as rejected/held experiments",
+      "record": "research/experiments/navigation-geometry-01/raw-result.json",
+      "study": "research/experiments/navigation-geometry-01/README.md",
+      "images": [
+        "assets/geometric-navigation-primary-a.png",
+        "assets/geometric-navigation-primary-b.png"
+      ],
+      "limits": "Missing frosting, body response and rim; color branch stopped at nonlinear foreground precondition.",
+      "selection": "primary-geometric",
+      "fidelity": "incomplete",
+      "full_radiance_verified": false
+    }
+  }
+}

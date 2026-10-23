@@ -2,15 +2,30 @@
 
 Open a study to load its comparisons. **Wipe** shows Apple on the left and the reconstruction on the right; **Side by side** shows both panels. **Fullscreen** enlarges any image. The divider resets to the center when a view reopens. Motion captures load only when their dropdown is opened.
 
-The clear playback control is the **current most-polished historical image fit**. New refraction work follows the [geometry-only optical contract](geometric-optics.md). These offline results are separate from the live lab and Android app.
+**Geometric models are the primary reconstructions.** They appear first below, with their unresolved defects. Earlier empirical fits and motion are archived within each study. Controls awaiting geometry are marked pending. These offline results are separate from the live lab.
 
-[Mathematical specification](recreation-models.md) · [Parameters](../reconstruction/recipes.json) · [Scores](#scores) · [Reproduce](#reproduce) · [Material roles](#material-roles) · [Guide](README.md)
+[Current model registry](../reconstruction/current-models.json) · [Primary-model policy](../research/decisions/primary-geometric-models.md) · [Shared geometric optics](geometric-optics.md). Wipe compares the Apple reference with the selected geometric version; an older fit is not the default.
+
+[Geometric specification](geometric-optics.md) · [Primary parameters](../reconstruction/current-models.json) · [Scores](#scores) · [Reproduce](#reproduce) · [Material roles](#material-roles) · [Guide](README.md)
+
+Primary geometric versions: [Play button](#clear-playback-control) · [Toolbar](#archive-and-plus-toolbar) · [Expanded miniplayer](#expanded-mini-player) · [Navigation](#navigation-control).
 
 [Playback](#clear-playback-control) · [Toolbar](#archive-and-plus-toolbar) · [Slider](#active-slider) · [Light/dark](#light-and-dark-surfaces) · [Apple Music](#apple-music-studies) · [Switch](#active-switch)
 
 ## Clear playback control
 
-The [first exact-surface comparison](geometric-optics.md#circular-play-control-first-geometric-comparison) is a useful negative result; it does not replace this historical filtered fit.
+**Primary: G05 geometric model with selected ordinary softness.** Refraction comes from the explicit surface and its normals. The body uses unit transmission; the icon retains its labeled historical color/coverage nuisance.
+
+Reference: [Apple, Meet Liquid Glass, 3:10](https://developer.apple.com/videos/play/wwdc2025/219/?time=190).
+
+![Apple playback reference and primary geometric model](assets/geometric-playback-primary.png)
+
+The thin bright rim, lower-left illumination and some dune crossings remain wrong. The latest source-blur test sharpens compressed edges but regresses the original image guards; it remains an experiment rather than the selected material state.
+
+[Latest blur/outline study](../research/experiments/clear-play-02/README.md) · [Selected parameters and corrected scores](../reconstruction/studies/geometric-playback/pipeline-01.json) · [Actual surface](../reconstruction/studies/geometric-playback/g05-surface.json). The full native crop is preserved; this figure formats saved arrays with no new optical render.
+
+<details data-historical>
+<summary>Archived empirical reconstruction and motion</summary>
 
 Apple, [Meet Liquid Glass, 3:10](https://developer.apple.com/videos/play/wwdc2025/219/?time=190); uncovered photograph at 3:00. The selected radial map has a quiet center, stronger rim refraction and slight filtering after refraction. The play symbol's calculated color is blurred internally before sharp triangular coverage is applied.
 
@@ -60,11 +75,13 @@ Width/fps defaults remain1920/30. The export keeps the original path and2×2 mot
 
 </details>
 
+</details>
+
 ## Next-track control
 
 ![Next-track circle and neutral material reconstruction](assets/flower-next-current.png)
 
-- **Current preview: E8.027**, after the [shared rim round](#shared-rim-response-next-and-bag).
+- **Historical preview: E8.027**, after the [shared rim round](#shared-rim-response-next-and-bag).
 - **Initial3/3 material passes:** additive values b=.025→.05→.075 shared across RGB, gain1. E **25.734→19.689→13.942→9.076**; glass/rim **25.114/27.126→8.156/10.924**.
 - Every original held, interior, SSIM, icon and near/full exterior guard improves; no clipping in the audited native samples. [Recipe and scores](../reconstruction/studies/flower-next/round/pass-03.json) · [Independent replay](../reconstruction/studies/flower-next/round/pass-03-verification.json).
 - The circular map and normalized source/output kernels reuse the selected playback model. The former icon-specific color grade is removed; the pinned solid forward-end glyph stays white.
@@ -89,6 +106,19 @@ All visible-alpha/output-kernel queries, finite source-kernel support and biline
 </details>
 
 ## Archive and plus toolbar
+
+**Primary: harmonic crowned geometric back.** This raw unit-transmission baseline uses the shared surface-derived tracing and no added optical blur, fitted light or generated shadow.
+
+Reference: [Apple, Meet Liquid Glass, 11:50](https://developer.apple.com/videos/play/wwdc2025/219/?time=710).
+
+![Apple toolbar reference and primary geometric baseline](assets/geometric-toolbar-primary.png)
+
+The visible cap/body, tone, d-stroke curvature and underside remain incomplete. Hidden paper is estimated. Closed-surface alternatives have mathematical checks but no newer supported full image.
+
+[Surface, source scope and measurements](../reconstruction/studies/geometric-playback/toolbar-harmonic.json) · [Geometric comparison and sections](geometric-optics.md#a-back-surface-with-two-curvatures).
+
+<details data-historical>
+<summary>Archived empirical reconstruction and motion</summary>
 
 Apple, [Meet Liquid Glass, 11:50](https://developer.apple.com/videos/play/wwdc2025/219/?time=710); uncovered text at 12:00. Review revision 3 adds a shared intensity curve and common material adjustment; shape and refraction are unchanged. Weighted RMS error decreases **1.17%** from revision 2, with glass, exterior and both foreground checks passing.
 
@@ -116,6 +146,8 @@ The main comparison and wide rim/underside crops are1080px per side, resized fro
 The upper-rim crop now extends downward by half its original height; the letter-refraction crop starts at its bottom edge. With these boundaries, visible-composite RMSE within the glass mask decreases from 7.403 to 7.303 in the upper rim and from 3.368 to 3.096 around the `d`.
 
 The underside worsens from **5.062 to 5.471**; its reflections remain too distinct. The [reframed diagnostics](../reconstruction/studies/archive-plus/review-round/pass-03-crops-reframed.json) and [original boundaries/scores](../reconstruction/studies/archive-plus/review-round/pass-03-crops.json) remain advisory and do not imply every region improved.
+
+</details>
 
 </details>
 
@@ -184,7 +216,7 @@ This limits transfer of the material, rather than proving a different optical ge
 
 ![Safari bag circle and neutral material reconstruction](assets/safari-bag-current.png)
 
-- **Current preview: E5.778**, after the [shared rim round](#shared-rim-response-next-and-bag).
+- **Historical preview: E5.778**, after the [shared rim round](#shared-rim-response-next-and-bag).
 - **Initial3/3 material passes:** common RGB bias b=.075, gain1. E **24.479→18.262→12.209→6.775**, with every original glass, rim, held, interior, icon, SSIM and near/full exterior check improving. No clipped audited samples.
 - [Recipe and scores](../reconstruction/studies/safari-bag/round/pass-03.json) · [Independent replay](../reconstruction/studies/safari-bag/round/pass-03-verification.json).
 - This reuses the selected playback map and normalized kernels as a prior, with a pinned solid bag outline.
@@ -214,7 +246,7 @@ The field is evaluated at1560×1600 before downsampling to1080×1108. One native
 
 ![Safari tab-count pill and neutral material reconstruction](assets/safari-tab-pill-current.png)
 
-- **Current preview: rim round3/3**, E15.638→14.823→13.302→11.973. The same normal-dependent neutral response used on the circles preserves every original check; no clipping or source/map/filter change. [Recipe and verification](../reconstruction/studies/safari-tab-pill/rim-round/pass-03.json).
+- **Historical preview: rim round3/3**, E15.638→14.823→13.302→11.973. The same normal-dependent neutral response used on the circles preserves every original check; no clipping or source/map/filter change. [Recipe and verification](../reconstruction/studies/safari-tab-pill/rim-round/pass-03.json).
 - **Initial3/3 material passes:** the shared neutral white-mixture response uses τ=.95→.90→.85. E **29.117→24.325→19.764→15.638**, with every original glass, rim, held, interior, SSIM, individual-icon and near/full exterior check improving.
 - [Recipe](../reconstruction/studies/safari-tab-pill/round/pass-03.json) · [Scores](../reconstruction/studies/safari-tab-pill/round/pass-03-scores.json) · [Independent replay](../reconstruction/studies/safari-tab-pill/round/pass-03-verification.json).
 - A quadratic RGB field fitted only to uncovered controls improved held error .805→.697 and independent lower error4.298→1.999 levels. Hidden RGB remains modeled, not observed.
@@ -247,7 +279,7 @@ Apple, [Meet Liquid Glass,1:40](https://developer.apple.com/videos/play/wwdc2025
 
 ![Mail toolbar and neutral material reconstruction](assets/mail-toolbar-current.png)
 
-- **Current preview: rim round3/3**, E11.683→11.099→10.121→9.459; every original guard holds, no clipping or source/map change. [Recipe and verification](../reconstruction/studies/mail-toolbar/rim-round/pass-03.json).
+- **Historical preview: rim round3/3**, E11.683→11.099→10.121→9.459; every original guard holds, no clipping or source/map change. [Recipe and verification](../reconstruction/studies/mail-toolbar/rim-round/pass-03.json).
 
 **Initial3/3 material passes:** transmission τ1→.95→.90→.85, with one value shared across RGB. E **26.249→20.982→16.002→11.683**, glass/rim **25.298/28.345→10.252/14.483**. Every icon, glass/interior/held region, near/full exterior and SSIM check passes. [Recipe](../reconstruction/studies/mail-toolbar/round/pass-03.json) · [Scores](../reconstruction/studies/mail-toolbar/round/pass-03-scores.json) · [Independent replay](../reconstruction/studies/mail-toolbar/round/pass-03-verification.json).
 - The affine incident field is estimated only from uncovered controls. Held error2.132 levels; independent upper/lower1.905/2.235. A quadratic failed the predefined independent-lower improvement test and is not used.
@@ -357,7 +389,22 @@ References come from [Apple's original Music video](https://www.apple.com/newsro
 
 ### Expanded mini-player
 
-Current round: **3/3** verified passes. A shared outer-normal/material update changes native E A5.388053→5.388045/B3.118163→3.116864. Both glass errors improve and all ten glyph/artwork guards hold; fixed exterior error is unchanged. All original emitted and scored subrays pass the finite3sigma recovered-source check. [Current recipe](../reconstruction/studies/music-mini-expanded-vector/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-mini-expanded-vector/review-round/pass-03-verification.json).
+**Primary: harmonic rounded-rectangle geometric model.** Both references use the same surface law, ordinary softness and common neutral response. The cap/body, bright rim and tone remain visibly incomplete.
+
+References: [Apple Music clip](https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4), frames at 0 and 6.033 seconds.
+
+![Expanded miniplayer A and primary geometric model](assets/geometric-expanded-primary-a.png)
+
+![Expanded miniplayer B and primary geometric model](assets/geometric-expanded-primary-b.png)
+
+Paired E is 49.127 / 19.819. This primary selection is not a claim of parity with the reference or a passing full-model comparison. Checkerboard marks unavailable unscored exterior; no backdrop is filled from the target.
+
+[Selected geometry/material and limits](../reconstruction/studies/geometric-expanded-pipeline/summary.json) · [Paired geometric study](geometric-optics.md#frosted-miniplayer-paired-component-checks).
+
+<details data-historical>
+<summary>Archived empirical reconstruction and motion</summary>
+
+Historical round: **3/3** verified passes. A shared outer-normal/material update changes native E A5.388053→5.388045/B3.118163→3.116864. Both glass errors improve and all ten glyph/artwork guards hold; fixed exterior error is unchanged. All original emitted and scored subrays pass the finite3sigma recovered-source check. [Archived recipe](../reconstruction/studies/music-mini-expanded-vector/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-mini-expanded-vector/review-round/pass-03-verification.json).
 
 The crown-only variants failed the frozen guards and are not adopted; existing footprint limitations remain. Final motion uses this third-pass recipe: 1080px wide, 90 frames at 15fps. Both full-size 256-color GIFs are below10MB (A7.0MB/B4.0MB). [Motion verification](../reconstruction/studies/music-mini-expanded-vector/review-round/motion.json). The sampled moving source checks pass; this is illustrative backdrop motion, not captured Apple animation or device-performance evidence.
 
@@ -391,11 +438,13 @@ Frame A: 0 seconds. Frame B: 6.033 seconds. Cover art is a separate high-resolut
 
 </details>
 
+</details>
+
 ### Compact mini-player
 
-Current round: **3/3** verified passes. Shared lighting, outer-normal and material updates change native E A 4.989875→4.988888/B 4.834120→4.831008. All ten glyph/artwork guards hold; artwork and exterior errors are unchanged. Frozen sources fully support the original emitted and scored subrays.
+Historical round: **3/3** verified passes. Shared lighting, outer-normal and material updates change native E A 4.989875→4.988888/B 4.834120→4.831008. All ten glyph/artwork guards hold; artwork and exterior errors are unchanged. Frozen sources fully support the original emitted and scored subrays.
 
-[Current recipe](../reconstruction/studies/music-mini-compact-vector/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-mini-compact-vector/review-round/pass-03-verification.json). Final motion uses this recipe: 6 seconds at 15fps, 1080px wide. Both full-size GIFs have 256 colors and remain below 10MB. [Motion verification](../reconstruction/studies/music-mini-compact-vector/review-round/motion.json). The sampled moving source checks pass; this is illustrative motion, not captured Apple animation or device-performance evidence.
+[Archived recipe](../reconstruction/studies/music-mini-compact-vector/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-mini-compact-vector/review-round/pass-03-verification.json). Final motion uses this recipe: 6 seconds at 15fps, 1080px wide. Both full-size GIFs have 256 colors and remain below 10MB. [Motion verification](../reconstruction/studies/music-mini-compact-vector/review-round/motion.json). The sampled moving source checks pass; this is illustrative motion, not captured Apple animation or device-performance evidence.
 
 Frames A/B: 2.5/2.0 seconds. This tests the compact state of the same playback component. The exterior mask remains fixed while the silhouette is refined; it cannot move to conceal shadow error.
 
@@ -428,11 +477,11 @@ Frames A/B: 2.5/2.0 seconds. This tests the compact state of the same playback c
 
 ### Detached Search control
 
-Current round: **3/3** verified passes. Shared material updates: native E A7.230750→7.227650 and B7.124124→7.120881. Glass and foreground improve on both; exterior shadow stays fixed. Unknown exterior is completed from nearest defined source RGB for presentation only; scored pixels are unchanged. Motion below uses this third-pass recipe:6 seconds at 15fps,1080px wide.
+Historical round: **3/3** verified passes. Shared material updates: native E A7.230750→7.227650 and B7.124124→7.120881. Glass and foreground improve on both; exterior shadow stays fixed. Unknown exterior is completed from nearest defined source RGB for presentation only; scored pixels are unchanged. Motion below uses this third-pass recipe:6 seconds at 15fps,1080px wide.
 
 GIFs preserve full dimensions below10MB (A10fps/96colors; B6fps/256colors). [Motion verification](../reconstruction/studies/music-search-vector/review-round/motion.json).
 
-[Current recipe](../reconstruction/studies/music-search-vector/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-search-vector/review-round/pass-03-verification.json).
+[Archived recipe](../reconstruction/studies/music-search-vector/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-search-vector/review-round/pass-03-verification.json).
 
 Frames A/B: 2.5/2.0 seconds. The magnifier is a clean symmetric vector trace; color and opacity are fitted separately. The icon geometry does not contain video compression artifacts.
 
@@ -465,7 +514,22 @@ Frames A/B: 2.5/2.0 seconds. The magnifier is a clean symmetric vector trace; co
 
 ### Navigation control
 
-Current round: **3/3** verified passes. Native E: A1.979013→1.975144; B7.434360→7.429451. All16 foreground and exterior measurements are unchanged. Shared outer-normal and rim-lighting width adjustments improve both references; advisory interior error slightly increases in passes2–3. Unknown exterior context uses nearest defined source RGB for presentation only; measured pixels are unchanged.
+**Primary: harmonic rounded-rectangle geometric baseline.** Source and footprint checks pass; the current body still lacks the reference frosting, tone and bright rim.
+
+References: the same Apple Music clip, frames at 0 and 6.033 seconds. The original source mosaics and foreground remain fixed.
+
+![Navigation A and primary geometric baseline](assets/geometric-navigation-primary-a.png)
+
+![Navigation B and primary geometric baseline](assets/geometric-navigation-primary-b.png)
+
+The source-blur variant improves body texture but fails foreground guards. Color stopped before fitting because the original foreground response is nonlinear. The shadow improves exterior aggregates but worsens A completed glass/rim error. Checkerboard marks unavailable unscored exterior.
+
+[Latest complete study and alternatives](../research/experiments/navigation-geometry-01/README.md) · [Selected baseline](../research/experiments/navigation-geometry-01/raw-result.json) · [Surface and certificate](../research/experiments/navigation-geometry-01/surface.md).
+
+<details data-historical>
+<summary>Archived empirical reconstruction and motion</summary>
+
+Historical round: **3/3** verified passes. Native E: A1.979013→1.975144; B7.434360→7.429451. All16 foreground and exterior measurements are unchanged. Shared outer-normal and rim-lighting width adjustments improve both references; advisory interior error slightly increases in passes2–3. Unknown exterior context uses nearest defined source RGB for presentation only; measured pixels are unchanged.
 
 Motion below uses the third-pass recipe:6 seconds at 15fps,1080px wide, with full-size GIFs below10MB. One bottom row is codec padding. [Motion verification](../reconstruction/studies/music-navigation/review-round/motion.json).
 
@@ -477,7 +541,7 @@ Frames A/B: 0/6.033 seconds. The study separates the outer glass, fixed gray sel
 
 [![Navigation control, background B: Apple left, reconstruction right](assets/study-music-navigation-paired-b.png)](assets/study-music-navigation-paired-b.png)
 
-- [Current recipe](../reconstruction/studies/music-navigation/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-navigation/review-round/pass-03-verification.json) · [Historical calibration](../reconstruction/studies/music-navigation/paired/accepted.json) · [A diagnostics](../reconstruction/studies/music-navigation/paired/a/diagnostics.json) · [B diagnostics](../reconstruction/studies/music-navigation/paired/b/diagnostics.json).
+- [Archived recipe](../reconstruction/studies/music-navigation/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-navigation/review-round/pass-03-verification.json) · [Historical calibration](../reconstruction/studies/music-navigation/paired/accepted.json) · [A diagnostics](../reconstruction/studies/music-navigation/paired/a/diagnostics.json) · [B diagnostics](../reconstruction/studies/music-navigation/paired/b/diagnostics.json).
 <details>
 <summary>Motion — background A</summary>
 
@@ -500,13 +564,15 @@ Frames A/B: 0/6.033 seconds. The study separates the outer glass, fixed gray sel
 
 </details>
 
+</details>
+
 ### Home control
 
 Current boundary-approximation round: **3/3** verified passes. This is a new input epoch, not a claimed gain over the historical backdrop. Nearest-defined RGB estimates missing incident content while preserving every originally observed pixel and target scoring mask.
 
 About 0.44%/0.30% of full emitted rays still depend on unobserved content; this is a boundary assumption, not recovered Apple imagery. Within that fixed epoch, native E improves A 6.342535→6.342152/B 10.160994→10.160404. A shared bounded icon-color response reduces foreground RMSE A 11.1165→11.0619/B 11.8255→11.6845. **The overly dark outer rim and foreground mismatch remain unresolved. **
 
-[Current recipe](../reconstruction/studies/music-home-vector/boundary-round/pass-03.json) · [Independent verification and source limits](../reconstruction/studies/music-home-vector/boundary-round/pass-03-verification.json). Motion below uses the final recipe: 1080px wide, 6 seconds at 15fps; GIFs use10fps/128colors and stay below10MB each. The moving boundary includes estimated content (minimum original scored-kernel support 92.7% on A,100% on B); it is an illustration, not an observed Apple animation. [Media verification](../reconstruction/studies/music-home-vector/boundary-round/motion.json).
+[Archived recipe](../reconstruction/studies/music-home-vector/boundary-round/pass-03.json) · [Independent verification and source limits](../reconstruction/studies/music-home-vector/boundary-round/pass-03-verification.json). Motion below uses the final recipe: 1080px wide, 6 seconds at 15fps; GIFs use10fps/128colors and stay below10MB each. The moving boundary includes estimated content (minimum original scored-kernel support 92.7% on A,100% on B); it is an illustration, not an observed Apple animation. [Media verification](../reconstruction/studies/music-home-vector/boundary-round/motion.json).
 
 Reference frames A/B: 2.5/2.0 seconds. The source-brightness response, white incident-field approximation and clean Home vector retain their earlier two-background calibration; this does not establish behavior outside those observations.
 
@@ -652,6 +718,8 @@ The blue curves compare three geometric footprints against the same Apple rim. C
 </details>
 
 ## Scores
+
+Primary geometric measurements are linked from each selected model above. The tables below preserve historical image-fit checkpoints; they do not choose the primary model or establish cross-model visual ranking.
 
 Historical experiment counts below include rejected proposals and ties; they are not counts of verified passes. The [current verification protocol](recreation-models.md#verified-improvement-protocol) defines nonregression, measurable progress and independent checks; it replaces the earlier fixed0.5% minimum.
 

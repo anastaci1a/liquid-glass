@@ -2,6 +2,8 @@
 
 Shared tracing, geometry adapters, rendering, historical studies and focused tests.
 
+[Current models](current-models.json) select the primary geometric versions. Earlier empirical recipes remain reproducible historical references, independent of whether their image scores are lower.
+
 | Module | Responsibility |
 | --- | --- |
 | `geometric_optics.py` | Surface-derived normals, path statuses and ray transport. |

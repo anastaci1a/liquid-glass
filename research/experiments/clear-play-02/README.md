@@ -1,6 +1,6 @@
 # Clear play: source blur and outline transport
 
-Status: verified useful negative. Source blur demonstrates the expected edge-sharpening mechanism, but no candidate replaces the accepted image.
+Status: verified useful negative. Source blur demonstrates the expected edge-sharpening mechanism but fails the original guards. G05 remains the primary geometry under the [current selection policy](../../decisions/primary-geometric-models.md).
 
 ## Question
 

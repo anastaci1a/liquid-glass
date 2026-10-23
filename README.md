@@ -13,6 +13,8 @@ Mathematical models of Apple's Liquid Glass: explicit surfaces, optical transpor
 
 A visually close image does not establish Apple's private implementation. Mathematical validity, perceptual fidelity, parameter identification and runtime performance are separate claims.
 
+Geometric versions are the [primary models](reconstruction/current-models.json), including while defects remain. Empirical image fits are historical references under the [selection policy](research/decisions/primary-geometric-models.md).
+
 ## Explore
 
 | Area | Contents |

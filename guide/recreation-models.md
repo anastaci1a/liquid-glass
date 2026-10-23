@@ -1,12 +1,12 @@
 # Mathematical models for the reference recreations
 
-**Historical image-fit recipes. ** New refraction work follows the [geometry-only contract](geometric-optics.md). Empirical maps below remain frozen diagnostic controls; they do not establish realizable optical surfaces.
+**Historical image-fit recipes.** Primary versions follow the [geometry-only contract](geometric-optics.md) and [current model registry](../reconstruction/current-models.json). Empirical maps below remain archived diagnostic controls; they do not establish realizable optical surfaces.
 
 These are **rendering-method-independent inverse image maps and material functions**. They can be evaluated by a shader, a mesh with sufficient sampling, a CPU renderer or another implementation. The Python replay is a reference implementation, not the specification's coordinate system or required rendering technology.
 
 [Comparisons and scores](reconstruction.md) · [Exact parameter records](../reconstruction/recipes.json) · [General optical models](model.md) · [Replay](reconstruction.md#reproduce)
 
-The circular playback control is the **current most-polished calibration**, selected after visual review. The toolbar, slider and uniform light/dark surfaces have independent frozen recipes. A recipe reproduces a particular study; it does not identify Apple's private shader, imply physical correctness or establish defaults for every background.
+The circular playback control was the most polished empirical calibration. The toolbar, slider and uniform light/dark surfaces also have frozen historical recipes. These reproduce particular studies; they do not identify Apple's shader or establish defaults for every background.
 
 ## Common contract
 

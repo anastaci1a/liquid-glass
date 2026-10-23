@@ -10,7 +10,7 @@ A full pass is one bounded cycle through isolated modeling stages. It may conclu
 - Declare physical parameters, nuisance stages, evaluation caps and checkpoints.
 - Record actual UTC start, stage deadlines and overall deadline.
 
-Use the [experiment template](../../templates/experiment.md). Preserve the incumbent separately from experimental component states.
+Use the [experiment template](../../templates/experiment.md). Preserve selected geometric states, experimental variants and historical image fits separately under the [primary-model policy](../decisions/primary-geometric-models.md).
 
 ## Focused clear-play study: two hours
 
