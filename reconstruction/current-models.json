@@ -6,13 +6,13 @@
     "clear-playback-control": {
       "name": "Clear playback",
       "geometry": "G05 radial-curvature back",
-      "material": "Selected output softness 1.7 native pixels; historical foreground nuisance retained",
-      "record": "reconstruction/studies/geometric-playback/pipeline-01.json",
-      "study": "research/experiments/clear-play-02/README.md",
+      "material": "Incident softness 1.7 native pixels before geometric sampling; historical foreground nuisance retained",
+      "record": "research/experiments/clear-play-03/selection.json",
+      "study": "research/experiments/clear-play-03/README.md",
       "images": [
         "assets/geometric-playback-primary.png"
       ],
-      "limits": "Thin rim, lower-left illumination, crossing offsets and foreground response remain unresolved.",
+      "limits": "Original numerical guards regress versus historical output filtering; thin rim, crossing offsets, illumination and foreground remain unresolved.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
       "full_radiance_verified": false

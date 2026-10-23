@@ -1,0 +1,30 @@
+{
+  "status": "complete-model-convention-selection-outline-blocked",
+  "started_at": "2026-10-23T17:39:14.466Z",
+  "deadline": "2026-10-23T18:09:14.466Z",
+  "visible_defects": [
+    "Edge texture should be compressed by refraction rather than spread by an output filter.",
+    "Thin bright outline remains missing or spatially incorrect."
+  ],
+  "hypothesis": "Adopt incident-space softness as the current modeling convention, preserving historical output filtering and all guard regressions. Use saved path evidence to identify the next outline requirement, without inventing environment radiance.",
+  "frozen": [
+    "G05 actual surface, normals, map, index1.5, D2L, AA4",
+    "Original source, target, registration, masks, foreground and original guards",
+    "Saved incident sigma1.7 native pixels; no radius search or source repair"
+  ],
+  "budgets": {
+    "new_rays": 0,
+    "new_RGB_queries": 0,
+    "new_optical_renders": 0,
+    "new_fits": 0,
+    "saved_crop_views": 4,
+    "saved_path_evaluations": 64
+  },
+  "checkpoint": "Confirm existing independent source-first proof/replay, compare local edge crops and all original guards; stop on any inconsistency.",
+  "stop": "Deadline, mismatched provenance or exhausted saved-evidence budget. Unknown scene or incomplete paths block reflection images.",
+  "dispersion": "Retain unchanged under explicit review acceptance; do not claim absence.",
+  "next": "Expanded Apple Music playback refraction against its own evidence, with historical incident softness seeded first.",
+  "finished_at": "2026-10-23T17:41:19.617Z",
+  "elapsed_minutes": 2.08585,
+  "close_reason": "Saved evidence resolves the operation-order question; missing scene/path evidence blocks an honest outline image. Close early rather than repeat completed native work."
+}

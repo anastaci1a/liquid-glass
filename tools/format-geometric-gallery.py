@@ -22,7 +22,7 @@ def pair(name,target,calculated,label,max_width=1080):
  draw.text((12,20),'Apple reference',font=font,fill='black');draw.text((w+14,20),label,font=font,fill='black')
  dest=ASSETS/name;canvas.save(dest)
  records.append({'asset':'assets/'+name,'width':canvas.width,'height':canvas.height,'top':64,'bottom':0,'gutter':2,'native_panel_size':list(original),'shown_panel_size':[w,h],'unavailable_pixels':int((~np.isfinite(calculated).all(2)).sum()),'sha256':hashlib.sha256(dest.read_bytes()).hexdigest()})
-pair('geometric-playback-primary.png',Image.open(WORK/'play-target.png').crop((620,220,1300,875)),np.load(WORK/'playback.npy'),'Primary geometric model')
+pair('geometric-playback-primary.png',Image.open(WORK/'play-target.png').crop((620,220,1300,875)),np.load(ROOT/'research/experiments/clear-play-02/candidate.npz')['complete'],'Incident blur 1.7 px; incomplete model')
 pair('geometric-toolbar-primary.png',Image.open(WORK/'toolbar-target-sha.png').crop((475,285,1445,845)),np.asarray(Image.open(WORK/'toolbar.png').convert('RGB'))/255,'Primary geometric baseline')
 for k in ['a','b']:
  target=Image.open(WORK/f'music-{k}-target.png')

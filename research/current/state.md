@@ -1,6 +1,6 @@
 # Current state
 
-Current direction: finish the compact outline subpass, then spend 30 minutes on clear play before focusing on expanded playback refraction. Follow the [refinement sequence](../method/refinement-sequence.md).
+Current direction: compact outline and the bounded clear-play review are closed. Next, focus on expanded playback refraction. Follow the [refinement sequence](../method/refinement-sequence.md).
 
 Ordinary blur belongs before refraction across elements. Historical widths seed incident filtering; output-filtered records remain labeled comparisons.
 
@@ -11,13 +11,13 @@ Status: geometric models are primary for playback, toolbar, expanded/compact min
 | Stage | Disposition |
 | --- | --- |
 | Refraction | G05 physical hypothesis retained; later proposals yielded no accepted geometric improvement. |
-| Ordinary blur | Output sigma 1.7 remains accepted. Matched source blur sharpens edges but regresses original guards. |
+| Ordinary blur | Incident sigma 1.7 is primary by operation-order convention. Historical output filtering remains numerically better under several guards. |
 | Color, outline, shadow, icon | Incomplete; no newer component accepted. |
 | Dispersion | Retain unchanged under explicit review acceptance; absence is not established. |
 
 The corrected supplemental foreground guard improves 98.655754 → 98.166603. The stale 5.534182 result used reversed coordinates and is superseded.
 
-The accepted output filter worsens outer-rim MAE 16.527521 → 16.897352. Source filtering reduces it to 16.467651, but glass/rim RMSE, SSIM and exterior guards regress. Edge geometry, light structure and icon response remain unresolved.
+The historical accepted output filter worsens outer-rim MAE 16.527521 → 16.897352. Source filtering reduces it to 16.467651, but glass/rim RMSE, SSIM and exterior guards regress. Edge geometry, light structure and icon response remain unresolved.
 
 The bounded outline extension leaves residual reflected power and 20 unsupported secondary background events. No reflected RGB image or fitted environment is accepted.
 
