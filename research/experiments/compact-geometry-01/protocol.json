@@ -1,0 +1,128 @@
+{
+  "status": "active-intake",
+  "started_at": "2026-10-23T16:35:49.533Z",
+  "deadline": "2026-10-23T20:35:49.533Z",
+  "stages": [
+    {
+      "name": "refraction",
+      "cap_minutes": 80,
+      "latest_deadline": "2026-10-23T17:55:49.533Z",
+      "started_at": "2026-10-23T16:35:49.533Z",
+      "deadline": "2026-10-23T17:55:49.533Z",
+      "first_checkpoint_deadline": "2026-10-23T16:55:49.533Z"
+    },
+    {
+      "name": "blurriness",
+      "cap_minutes": 20,
+      "latest_deadline": "2026-10-23T18:15:49.533Z"
+    },
+    {
+      "name": "color",
+      "cap_minutes": 20,
+      "latest_deadline": "2026-10-23T18:35:49.533Z"
+    },
+    {
+      "name": "outline",
+      "cap_minutes": 60,
+      "latest_deadline": "2026-10-23T19:35:49.533Z"
+    },
+    {
+      "name": "shadow",
+      "cap_minutes": 15,
+      "latest_deadline": "2026-10-23T19:50:49.533Z"
+    },
+    {
+      "name": "foreground",
+      "cap_minutes": 20,
+      "latest_deadline": "2026-10-23T20:10:49.533Z"
+    },
+    {
+      "name": "dispersion-identification",
+      "cap_minutes": 10,
+      "latest_deadline": "2026-10-23T20:20:49.533Z"
+    },
+    {
+      "name": "review",
+      "cap_minutes": 15,
+      "latest_deadline": "2026-10-23T20:35:49.533Z"
+    }
+  ],
+  "early_close": true,
+  "defects": [
+    "F-006/H-003: distinguish body scale from peripheral compression, rather than fitting a uniform zoom.",
+    "H-004/H-008: preserve rounded body and later explain the visible light/dark rim."
+  ],
+  "reference_crops": {
+    "top_body": [
+      715,
+      582,
+      1050,
+      620
+    ],
+    "left_cap": [
+      515,
+      580,
+      715,
+      765
+    ],
+    "right_cap": [
+      1285,
+      595,
+      1405,
+      755
+    ],
+    "lower_body": [
+      710,
+      730,
+      1300,
+      765
+    ]
+  },
+  "geometry": {
+    "family": "RoundedRectangleHarmonicBack with accepted smoothed capsule coordinate",
+    "depth": 0.15,
+    "crown_depth": 0.4,
+    "power": 3,
+    "cap_join_width": 0.35,
+    "index": 1.5,
+    "distance_over_L": 2,
+    "reference_L": 88.5
+  },
+  "frozen": [
+    "Original paired source/target/known PNGs, cases, registration and styles",
+    "Original glass/held/rim/interior/SSIM, all ten foreground/artwork guards",
+    "Original exterior_reference_shape, independent of current physical coverage",
+    "Accepted smoothed silhouette and pose; all refraction from actual surface"
+  ],
+  "first_raw_nuisances": {
+    "source_sigma": 0,
+    "output_sigma": 0,
+    "gain": 1,
+    "bias": 0,
+    "lighting": 0,
+    "shadow": 0,
+    "foreground": "Original sharp fixed styles/artwork"
+  },
+  "budgets": {
+    "maximum_refraction_hypotheses": 3,
+    "first_fixture_height_evaluations": 12000,
+    "first_fixture_rays": 512,
+    "first_source_preflight_rays": 1766400,
+    "first_render_rays": 1766400,
+    "first_full_native_images": 2
+  },
+  "cache_contract": [
+    "Retain exact sampled float64 RGB, source XY, membership and sample phase",
+    "Retain pre-foreground float32 integrated image, separate float64 clear/lens contributions and coverage",
+    "Replay the original foreground/artwork chain; require exact zero control"
+  ],
+  "later_transfer_prior": {
+    "reference": "reconstruction/studies/geometric-expanded-pipeline/summary.json",
+    "gain": 0.701980827595718,
+    "bias": 0.22423217000784113,
+    "ordinary_output_sigma_over_L": 0.07627118644067797,
+    "source_psf_test": "Separate operator hypothesis; do not call it unchanged output-PSF transfer."
+  },
+  "stop": "First invalid invariant/path/required source; evaluation limit or deadline. Retain partial results and do not silently reset budgets.",
+  "primary_policy": "Geometric version becomes primary once supported native image exists; visual acceptance and historical image-fit scores remain separate."
+}
