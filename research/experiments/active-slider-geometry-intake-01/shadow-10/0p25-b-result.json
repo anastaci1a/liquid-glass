@@ -1,0 +1,87 @@
+{
+  "case": "b",
+  "factor": 0.25,
+  "opacity": 0.014665199650024446,
+  "scores": {
+    "glass": {
+      "pixels": 208969,
+      "rmse": 26.441543579101562
+    },
+    "rim": {
+      "pixels": 60968,
+      "rmse": 27.807527542114258
+    },
+    "held": {
+      "pixels": 53183,
+      "rmse": 26.59737777709961
+    },
+    "interior": {
+      "pixels": 148001,
+      "rmse": 25.857860565185547
+    },
+    "ssim": 0.9430350661277771,
+    "loss": 721.3862351935018,
+    "E": 26.858634276401727,
+    "exterior": {
+      "rmse": 5.648101329803467,
+      "pixels": 132594
+    }
+  },
+  "guards": {
+    "glass": true,
+    "rim": true,
+    "held": false,
+    "interior": true,
+    "exterior": true,
+    "E": true,
+    "ssim": true
+  },
+  "fully_covered_exact": true,
+  "partial_scored_pixels": 23,
+  "partial_baseline_rmse": 15.973576545715332,
+  "partial_candidate_rmse": 15.948446273803711,
+  "fixed_crops": {
+    "upper-left": {
+      "bounds_pixels": [
+        94,
+        34,
+        314,
+        177
+      ],
+      "baseline_rgb_rmse": 16.966020584106445,
+      "candidate_rgb_rmse": 16.916372299194336
+    },
+    "lower-left": {
+      "bounds_pixels": [
+        94,
+        365,
+        330,
+        496
+      ],
+      "baseline_rgb_rmse": 33.66349411010742,
+      "candidate_rgb_rmse": 33.43883514404297
+    },
+    "right-rim": {
+      "bounds_pixels": [
+        565,
+        160,
+        714,
+        399
+      ],
+      "baseline_rgb_rmse": 11.961631774902344,
+      "candidate_rgb_rmse": 11.801652908325195
+    },
+    "center": {
+      "bounds_pixels": [
+        275,
+        200,
+        510,
+        370
+      ],
+      "baseline_rgb_rmse": 5.083740234375,
+      "candidate_rgb_rmse": 5.083740234375
+    }
+  },
+  "raw_below_zero": 0,
+  "raw_above_one": 0
+}
