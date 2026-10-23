@@ -2,7 +2,7 @@
 
 | ID | Control | Observation / request | Disposition |
 | --- | --- | --- | --- |
-| F-001 | Clear play | Edges look too blurred; test source blur before refraction. | Pending; [proposal](../current/next.md). |
+| F-001 | Clear play | Edges look too blurred; test source blur before refraction. | [Tested](../experiments/clear-play-02/README.md): compressed edges sharpen, but original guards regress; no replacement accepted. |
 | F-002 | Clear play | Edge reversal can be correct for this lens. | Earlier no-reversal assumption withdrawn. |
 | F-003 | Clear play | Thin bright rim and lower-left light structure remain wrong. | Unresolved; output softness is not an outline fix. |
 | F-004 | Toolbar | Continuous cap/body, minute crown, progressive d-stroke stretch and compressed underside. | Geometric diagnostics negative; source uncertainty retained. |
