@@ -40,7 +40,9 @@ A later [positive spline-height observation](../experiments/expanded-spline-obse
 
 ## Navigation and toolbar
 
-Navigation’s primary version now includes its saved incident softness under the operation-order convention. Foreground guards still fail, so no numerical pass is claimed; the nonlinear foreground chain blocked color fitting.
+Navigation’s primary version includes its saved incident softness. The nonlinear foreground chain now replays exactly. A shared [neutral-tone proposal](../experiments/agent-navigation-neutral-06/README.md) visibly improves the body, but all four factors fail the predeclared B partial-boundary guard. It remains held; the unit-tone H1 state stays selected.
+
+The transferred spline and both longitudinal modulation signs fail original paired guards. The [three-setting review](../experiments/agent-navigation-longitudinal-05/README.md) preserves their source proofs and actual surfaces without claiming fidelity transfer.
 
 The toolbar’s primary image is its harmonic crowned-back baseline. Tone, d-stroke curvature and underside structure remain incomplete. Later closed-surface checks have no newer supported full image.
 
@@ -54,7 +56,7 @@ Source blur 6.75 native pixels and a common neutral response improve both refere
 
 ## Shared limits
 
-Navigation preserves the accepted footprint and passes paired required-source support. Incident blur improves body texture but regresses foreground guards. Color stopped before fitting because the retained foreground response is nonlinear. Shadow improves exterior aggregates but worsens A completed-glass/rim error; it is held.
+Navigation preserves its footprint and conditional paired source support. Its nonlinear foreground chain is retained exactly. Neutral tone remains held for the B boundary failure. The earlier shadow improves exterior aggregates but worsens A completed-glass/rim error; it remains rejected.
 
 Surface-derived normals, tracing and finite support transfer. Navigation now has bounded paired native controls, but no transferred fidelity acceptance. Geometry and softness differ by control family; device performance is not measured here.
 

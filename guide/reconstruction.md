@@ -542,7 +542,7 @@ Frames A/B: 2.5/2.0 seconds. The magnifier is a clean symmetric vector trace; co
 
 ### Navigation control
 
-**Primary: harmonic rounded-rectangle geometric baseline.** Source and footprint checks pass; the current body still lacks the reference frosting, tone and bright rim.
+**Primary: harmonic rounded-rectangle geometric baseline.** Source and footprint checks pass. Incident blur is present; body tone, cap/text returns and bright rim remain inaccurate.
 
 References: the same Apple Music clip, frames at 0 and 6.033 seconds. The original source mosaics and foreground remain fixed.
 
@@ -550,9 +550,26 @@ References: the same Apple Music clip, frames at 0 and 6.033 seconds. The origin
 
 ![Navigation B and primary geometric baseline](assets/geometric-navigation-primary-b.png)
 
-The source-blur variant improves body texture but fails foreground guards. Color stopped before fitting because the original foreground response is nonlinear. The shadow improves exterior aggregates but worsens A completed glass/rim error. Checkerboard marks unavailable unscored exterior.
+The source-blur variant improves body texture but fails foreground guards. Exact cached replay now preserves the nonlinear foreground chain. The shadow improves exterior aggregates but worsens A completed glass/rim error. Checkerboard marks unavailable unscored exterior.
 
 [Latest complete study and alternatives](../research/experiments/navigation-geometry-01/README.md) · [Selected baseline](../research/experiments/navigation-geometry-01/raw-result.json) · [Surface and certificate](../research/experiments/navigation-geometry-01/surface.md).
+
+<details>
+<summary>Latest tone candidate: visibly closer body; boundary guard still fails</summary>
+
+One shared neutral response reduces paired E from 22.795 / 23.522 to 9.716 / 7.618. All original paired body, SSIM and sixteen foreground guards pass. The predeclared B partial-boundary guard worsens from 84.818 to 85.643, so the candidate is held, not accepted.
+
+![Apple and held neutral-tone Navigation A](assets/geometric-navigation-tone-held-a.png)
+
+![Apple and held neutral-tone Navigation B](assets/geometric-navigation-tone-held-b.png)
+
+Geometry, incident blur, sources, masks and foreground styles stay fixed. This encoded response follows cached pixel integration; it is not an optical transmission measurement. Texture contrast and missing rim light remain imperfect. All four declared factors fail the boundary guard; no additional factor is tried.
+
+[Complete colour report and regressions](../research/experiments/agent-navigation-neutral-06/README.md) · [Exact saved-panel extraction](../research/presentation/navigation-tone-held.json).
+
+</details>
+
+The [fixed spline transfer](../research/experiments/agent-navigation-spline-03/README.md) and both [longitudinal height modulations](../research/experiments/agent-navigation-longitudinal-05/README.md) fail paired geometry comparisons. Their valid surfaces and source checks do not establish transferred fidelity.
 
 <details data-historical>
 <summary>Archived empirical reconstruction and motion</summary>

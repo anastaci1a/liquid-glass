@@ -1,0 +1,211 @@
+{
+  "status": "PASS_BOTH_EXACT",
+  "records": [
+    {
+      "case": "a",
+      "identity_exact": true,
+      "baseline_scores": {
+        "glass": {
+          "pixels": 113250,
+          "rmse": 22.88168716430664
+        },
+        "rim": {
+          "pixels": 35386,
+          "rmse": 22.590784072875977
+        },
+        "held": {
+          "pixels": 27873,
+          "rmse": 22.07554817199707
+        },
+        "interior": {
+          "pixels": 77864,
+          "rmse": 23.012676239013672
+        },
+        "ssim": 0.97696852684021,
+        "loss": 519.6031827478287,
+        "E": 22.794806047602787,
+        "foreground_mse": {
+          "home.svg": 273.4781563631259,
+          "home-label.svg": 327.60655941674486,
+          "new.svg": 362.1176108485088,
+          "new-label.svg": 452.523154753726,
+          "radio.svg": 448.44530678819865,
+          "radio-label.svg": 553.1916748266667,
+          "library.svg": 624.9586257152259,
+          "library-label.svg": 498.2060555834323
+        },
+        "exterior": {
+          "pixels": 46436,
+          "rmse": 22.485950469970703
+        }
+      },
+      "baseline_completed_scores": {
+        "glass": {
+          "pixels": 113250,
+          "rmse": 22.355398178100586
+        },
+        "rim": {
+          "pixels": 35386,
+          "rmse": 20.836233139038086
+        },
+        "held": {
+          "pixels": 27873,
+          "rmse": 22.075550079345703
+        },
+        "interior": {
+          "pixels": 77864,
+          "rmse": 23.012676239013672
+        },
+        "ssim": 0.97696852684021,
+        "loss": 480.0792628183008,
+        "E": 21.910711143600537,
+        "foreground_mse": {
+          "home.svg": 273.4781563631259,
+          "home-label.svg": 327.60655941674486,
+          "new.svg": 362.1176108485088,
+          "new-label.svg": 452.523154753726,
+          "radio.svg": 448.44530678819865,
+          "radio-label.svg": 553.1916748266667,
+          "library.svg": 624.9586257152259,
+          "library-label.svg": 498.2060555834323
+        },
+        "exterior": {
+          "pixels": 46436,
+          "rmse": 22.485950469970703
+        }
+      },
+      "partial_pixels": 95,
+      "partial_RMSE": 11.800439834594727,
+      "train_pixels": 85332,
+      "held_excluded": true,
+      "actual_paint_excluded": true,
+      "finite_lens_min": 0.7009456753730774,
+      "finite_lens_max": 0.9929425716400146,
+      "contributing_lens_pixels": 221639,
+      "before_clips_low": 0,
+      "before_clips_high": 0,
+      "dtype": {
+        "material": "float32",
+        "pre_foreground": "float32",
+        "clear": "float32",
+        "coverage": "float64"
+      },
+      "inputs": {
+        "research/experiments/navigation-geometry-01/a-source-blur.npz": "cba9608ab825916372b1d235b9431267ee5ca1f54f4366e8fcf77d6bc3fbb78f",
+        "research/experiments/navigation-geometry-01/a-raw.npz": "c705205e9d3a6c38b9a7958e3ca5f24005980e0ba78580ddd4397d5dc20afa09",
+        "research/experiments/navigation-geometry-01/a-masks.npz": "b3b3b24bf950d3f6bd83682654ba4ced0ea7c399af6d693e5bef76996e1a3649",
+        "research/experiments/agent-navigation-spline-03/a-zero-control.npz": "2f4932cce98180be5e6b6f4178b5836a4448b797cd283a4ba703cec504e4223d"
+      }
+    },
+    {
+      "case": "b",
+      "identity_exact": true,
+      "baseline_scores": {
+        "glass": {
+          "pixels": 113250,
+          "rmse": 23.63930320739746
+        },
+        "rim": {
+          "pixels": 35386,
+          "rmse": 23.245269775390625
+        },
+        "held": {
+          "pixels": 27873,
+          "rmse": 23.845767974853516
+        },
+        "interior": {
+          "pixels": 77864,
+          "rmse": 23.81621742248535
+        },
+        "ssim": 0.9771069884300232,
+        "loss": 553.274429371097,
+        "E": 23.521786270840423,
+        "foreground_mse": {
+          "home.svg": 462.5508279539645,
+          "home-label.svg": 319.7277403785847,
+          "new.svg": 306.0178830754012,
+          "new-label.svg": 450.61535668792203,
+          "radio.svg": 397.872276767157,
+          "radio-label.svg": 567.6914972718805,
+          "library.svg": 580.6615930516273,
+          "library-label.svg": 486.87690353253856
+        },
+        "exterior": {
+          "pixels": 46436,
+          "rmse": 22.88271713256836
+        }
+      },
+      "baseline_completed_scores": {
+        "glass": {
+          "pixels": 113250,
+          "rmse": 23.56171417236328
+        },
+        "rim": {
+          "pixels": 35386,
+          "rmse": 22.991779327392578
+        },
+        "held": {
+          "pixels": 27873,
+          "rmse": 23.845802307128906
+        },
+        "interior": {
+          "pixels": 77864,
+          "rmse": 23.81621742248535
+        },
+        "ssim": 0.9771069884300232,
+        "loss": 547.1946373099563,
+        "E": 23.392191802179553,
+        "foreground_mse": {
+          "home.svg": 462.5508279539645,
+          "home-label.svg": 319.7277403785847,
+          "new.svg": 306.0178830754012,
+          "new-label.svg": 450.61535668792203,
+          "radio.svg": 397.872276767157,
+          "radio-label.svg": 567.6914972718805,
+          "library.svg": 580.6615930516273,
+          "library-label.svg": 486.87690353253856
+        },
+        "exterior": {
+          "pixels": 46436,
+          "rmse": 22.88271713256836
+        }
+      },
+      "partial_pixels": 95,
+      "partial_RMSE": 84.81813049316406,
+      "train_pixels": 85332,
+      "held_excluded": true,
+      "actual_paint_excluded": true,
+      "finite_lens_min": 0.26776161789894104,
+      "finite_lens_max": 0.9927372336387634,
+      "contributing_lens_pixels": 221639,
+      "before_clips_low": 0,
+      "before_clips_high": 0,
+      "dtype": {
+        "material": "float32",
+        "pre_foreground": "float32",
+        "clear": "float32",
+        "coverage": "float64"
+      },
+      "inputs": {
+        "research/experiments/navigation-geometry-01/b-source-blur.npz": "863e34fdc5d4b7b7f541b3617067f0989ea9073e387ce22526ab9097c8f8fee2",
+        "research/experiments/navigation-geometry-01/b-raw.npz": "bcec81d4c32e1d5e389a20db4194edb7cdbfc524218a1e714898ad1f63b8b11d",
+        "research/experiments/navigation-geometry-01/b-masks.npz": "b3b3b24bf950d3f6bd83682654ba4ced0ea7c399af6d693e5bef76996e1a3649",
+        "research/experiments/agent-navigation-spline-03/b-zero-control.npz": "b88791267918edfd552e178a1e58ea4d1588588a50085fcf2586ed9cd73a45c0"
+      }
+    }
+  ],
+  "utc": "2026-10-23T23:12:26.450259+00:00",
+  "ledger": {
+    "identity_composites": 2,
+    "quadratic_evaluations": 0,
+    "solves": 0,
+    "paired_trials": 0,
+    "candidate_composites": 0,
+    "rays": 0,
+    "height_evaluations": 0,
+    "source_queries": 0,
+    "incident_filters": 0,
+    "output_filters": 0,
+    "baseline_material_renders": 0
+  }
+}

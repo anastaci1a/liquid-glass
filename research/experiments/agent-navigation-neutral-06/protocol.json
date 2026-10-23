@@ -1,0 +1,59 @@
+{
+  "start": "2026-10-23T23:08:58.483Z",
+  "deadline": "2026-10-23T23:28:58.483Z",
+  "overall_ceiling": "2026-10-24T02:14:11.659Z",
+  "visible_question": "Reduce excessive neutral body brightness without worsening paired foreground/backing, text detail or original guards.",
+  "baseline": "Current incident H1 D2, not rejected spline or modulation",
+  "gain_bounds": [
+    0.5,
+    1.2
+  ],
+  "bias_bounds": [
+    -0.1,
+    0.25
+  ],
+  "factors": [
+    1,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "model": "Shared neutral_color_response, gain/bias tied across RGB and both references, no highlight lift. Applied to retained integrated finite lens color only.",
+  "composition": "Preserve exact cached H1 integrated backing P0. P(g,b)=float32(P0 + alpha*(graded(M)-M)) on covered pixels; untouched elsewhere. This is the lens-color change before clear/foreground composition, with the original native rounding retained at identity. No target or foreground subtraction, no invented raw subrays. Clear cache unchanged.",
+  "dtypes": "Stored M/P0/complete float32, alpha float64. Shared response output retained at its actual dtype; differences/addition in float64 then P cast float32. Material scored/stored float32; preclip raw retained.",
+  "fit": "One finite active-set 2D convex quadratic solve, equal reference weighting, full original valid non-held training pixels excluding all actual foreground paint and zero physical coverage. No foreground approximation. At most interior plus six edge minimizers and identity: at most eight unique full candidate constraint/objective evaluations, hard cap16.",
+  "clip_constraints": "Use global min/max over every contributing finite retained lens pixel in both references; gain positive. Impose g*min+b>=0 and g*max+b<=1 without tolerance.",
+  "crops": {
+    "left_cap": [
+      320,
+      535,
+      650,
+      765
+    ],
+    "upper_body": [
+      650,
+      530,
+      1270,
+      595
+    ],
+    "lower_body": [
+      650,
+      690,
+      1270,
+      765
+    ]
+  },
+  "limits": {
+    "quadratic_evaluations": 16,
+    "solves": 1,
+    "paired_trials": 4,
+    "candidate_composites": 8,
+    "cached_identity_composites": 2,
+    "rays": 0,
+    "height": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "baseline_material_renders": 0
+  },
+  "stop": "Identity or unsupported solve stops before trials. First original+completed+partial paired qualifier with visible tone/detail support stops. Otherwise four factors or deadline; no next fit or stage."
+}

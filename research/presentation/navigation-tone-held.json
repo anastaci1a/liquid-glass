@@ -1,0 +1,46 @@
+{
+  "operation": "Exact saved-panel extraction; no resizing",
+  "rays": 0,
+  "source_queries": 0,
+  "optical_renders": 0,
+  "records": [
+    {
+      "source": "research/experiments/agent-navigation-neutral-06/trial-01/a-comparison.png",
+      "source_sha256": "664dd886aaa5bbfd9bd6c26b9fadcc00ba4af2a967be4e33995b980873cd7426",
+      "asset": "guide/assets/geometric-navigation-tone-held-a.png",
+      "SHA256": "f835ac04e29f23706bd29ea92ba9eaa8b430a8ac7d7e8e2a699391b8ed41d6cb",
+      "width": 2162,
+      "height": 399,
+      "top_caption": 64,
+      "gutter": 2,
+      "native_panel_width": 1080,
+      "presentation_panel_width": 1080,
+      "body_pixels_exact": true,
+      "status": "held-not-accepted"
+    },
+    {
+      "source": "research/experiments/agent-navigation-neutral-06/trial-01/b-comparison.png",
+      "source_sha256": "7a7c40d7882fa1fe0fe3316ff4e273abcc448fbd47fca1b77cd41df9c1f5f74a",
+      "asset": "guide/assets/geometric-navigation-tone-held-b.png",
+      "SHA256": "b345243b24197faf1776631cdd1c84baafe1307281760d90600d170217c973ae",
+      "width": 2162,
+      "height": 399,
+      "top_caption": 64,
+      "gutter": 2,
+      "native_panel_width": 1080,
+      "presentation_panel_width": 1080,
+      "body_pixels_exact": true,
+      "status": "held-not-accepted"
+    }
+  ],
+  "browser_verification": {
+    "utc": "2026-10-23T23:24:54.079Z",
+    "status": "PASS",
+    "tests": [
+      "guide/experiments/reconstruction-page.cjs",
+      "guide/experiments/reconstruction-comparison.cjs",
+      "guide/experiments/reconstruction-media-loading.cjs"
+    ],
+    "scope": "Desktop/mobile layout, native caption/gutter crops, wipe/keyboard/fullscreen/reset and deferred media with actual font rendering; no optical replay or performance claim."
+  }
+}
