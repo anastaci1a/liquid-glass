@@ -1,0 +1,296 @@
+{
+  "case": "a",
+  "scores": {
+    "glass": {
+      "pixels": 113250,
+      "rmse": 24.72307777404785
+    },
+    "rim": {
+      "pixels": 35386,
+      "rmse": 28.144559860229492
+    },
+    "held": {
+      "pixels": 27873,
+      "rmse": 24.048450469970703
+    },
+    "interior": {
+      "pixels": 77864,
+      "rmse": 23.00055503845215
+    },
+    "ssim": 0.9679235816001892,
+    "loss": 665.4962771529456,
+    "E": 25.79721452314078,
+    "foreground_mse": {
+      "home.svg": 252.55620708921924,
+      "home-label.svg": 327.7157780248672,
+      "new.svg": 362.5563928973861,
+      "new-label.svg": 453.6917363293469,
+      "radio.svg": 433.3174849161878,
+      "radio-label.svg": 554.7123176045716,
+      "library.svg": 603.8672922179103,
+      "library-label.svg": 498.2624968048185
+    },
+    "exterior": {
+      "pixels": 46436,
+      "rmse": 22.485950469970703
+    }
+  },
+  "baseline_scores": {
+    "glass": {
+      "pixels": 113250,
+      "rmse": 22.88168716430664
+    },
+    "rim": {
+      "pixels": 35386,
+      "rmse": 22.590784072875977
+    },
+    "held": {
+      "pixels": 27873,
+      "rmse": 22.07554817199707
+    },
+    "interior": {
+      "pixels": 77864,
+      "rmse": 23.012676239013672
+    },
+    "ssim": 0.97696852684021,
+    "loss": 519.6031827478287,
+    "E": 22.794806047602787,
+    "foreground_mse": {
+      "home.svg": 273.4781563631259,
+      "home-label.svg": 327.60655941674486,
+      "new.svg": 362.1176108485088,
+      "new-label.svg": 452.523154753726,
+      "radio.svg": 448.44530678819865,
+      "radio-label.svg": 553.1916748266667,
+      "library.svg": 624.9586257152259,
+      "library-label.svg": 498.2060555834323
+    },
+    "exterior": {
+      "pixels": 46436,
+      "rmse": 22.485950469970703
+    }
+  },
+  "original_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": true,
+    "exterior": true,
+    "E": false,
+    "ssim": false,
+    "home.svg": true,
+    "home-label.svg": false,
+    "new.svg": false,
+    "new-label.svg": false,
+    "radio.svg": true,
+    "radio-label.svg": false,
+    "library.svg": true,
+    "library-label.svg": false
+  },
+  "completed_image_scores": {
+    "glass": {
+      "pixels": 113250,
+      "rmse": 24.236806869506836
+    },
+    "rim": {
+      "pixels": 35386,
+      "rmse": 26.75670623779297
+    },
+    "held": {
+      "pixels": 27873,
+      "rmse": 24.048442840576172
+    },
+    "interior": {
+      "pixels": 77864,
+      "rmse": 23.00055503845215
+    },
+    "ssim": 0.9679235816001892,
+    "loss": 625.9723636695064,
+    "E": 25.01943971533948,
+    "foreground_mse": {
+      "home.svg": 252.55620708921924,
+      "home-label.svg": 327.7157780248672,
+      "new.svg": 362.5563928973861,
+      "new-label.svg": 453.6917363293469,
+      "radio.svg": 433.3174849161878,
+      "radio-label.svg": 554.7123176045716,
+      "library.svg": 603.8672922179103,
+      "library-label.svg": 498.2624968048185
+    },
+    "exterior": {
+      "pixels": 46436,
+      "rmse": 22.485950469970703
+    }
+  },
+  "completed_baseline_scores": {
+    "glass": {
+      "pixels": 113250,
+      "rmse": 22.355398178100586
+    },
+    "rim": {
+      "pixels": 35386,
+      "rmse": 20.836233139038086
+    },
+    "held": {
+      "pixels": 27873,
+      "rmse": 22.075550079345703
+    },
+    "interior": {
+      "pixels": 77864,
+      "rmse": 23.012676239013672
+    },
+    "ssim": 0.97696852684021,
+    "loss": 480.0792628183008,
+    "E": 21.910711143600537,
+    "foreground_mse": {
+      "home.svg": 273.4781563631259,
+      "home-label.svg": 327.60655941674486,
+      "new.svg": 362.1176108485088,
+      "new-label.svg": 452.523154753726,
+      "radio.svg": 448.44530678819865,
+      "radio-label.svg": 553.1916748266667,
+      "library.svg": 624.9586257152259,
+      "library-label.svg": 498.2060555834323
+    },
+    "exterior": {
+      "pixels": 46436,
+      "rmse": 22.485950469970703
+    }
+  },
+  "completed_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": true,
+    "exterior": true,
+    "E": false,
+    "ssim": false,
+    "home.svg": true,
+    "home-label.svg": false,
+    "new.svg": false,
+    "new-label.svg": false,
+    "radio.svg": true,
+    "radio-label.svg": false,
+    "library.svg": true,
+    "library-label.svg": false
+  },
+  "partial_boundary_pixels": 95,
+  "partial_boundary_errors": {
+    "baseline": 11.800439834594727,
+    "candidate": 11.817586898803711
+  },
+  "fixed_crops": {
+    "left-cap": {
+      "original_frame_bounds": [
+        320,
+        535,
+        650,
+        765
+      ],
+      "native_crop_bounds": [
+        35,
+        40,
+        365,
+        270
+      ],
+      "values": {
+        "baseline": {
+          "RGB_RMSE": 19.273107827162654,
+          "luma_RMSE": 18.9256552305857,
+          "chroma_RMSE": 4.616895399762468,
+          "signed_RGB": [
+            13.210421022354913,
+            13.97693908523763,
+            14.165735248023063
+          ]
+        },
+        "candidate": {
+          "RGB_RMSE": 21.72500270919496,
+          "luma_RMSE": 21.408473519806268,
+          "chroma_RMSE": 4.616852737078473,
+          "signed_RGB": [
+            16.948389917353232,
+            17.715807519484823,
+            17.89765518031781
+          ]
+        }
+      }
+    },
+    "upper-body": {
+      "original_frame_bounds": [
+        650,
+        530,
+        1270,
+        595
+      ],
+      "native_crop_bounds": [
+        365,
+        35,
+        985,
+        100
+      ],
+      "values": {
+        "baseline": {
+          "RGB_RMSE": 21.64717541278749,
+          "luma_RMSE": 21.62419111242114,
+          "chroma_RMSE": 0.08081586577478682,
+          "signed_RGB": [
+            16.952533291528006,
+            16.883904334359222,
+            16.960364724100376
+          ]
+        },
+        "candidate": {
+          "RGB_RMSE": 26.13267460133234,
+          "luma_RMSE": 26.10893196318562,
+          "chroma_RMSE": 0.07792671446677227,
+          "signed_RGB": [
+            23.216835599512823,
+            23.15901804040221,
+            23.23775494173354
+          ]
+        }
+      }
+    },
+    "lower-body": {
+      "original_frame_bounds": [
+        650,
+        690,
+        1270,
+        765
+      ],
+      "native_crop_bounds": [
+        365,
+        195,
+        985,
+        270
+      ],
+      "values": {
+        "baseline": {
+          "RGB_RMSE": 22.43312920804419,
+          "luma_RMSE": 22.42794389001949,
+          "chroma_RMSE": 0.1844178449353784,
+          "signed_RGB": [
+            20.094249712278607,
+            20.024181348590158,
+            20.022404624187732
+          ]
+        },
+        "candidate": {
+          "RGB_RMSE": 22.295400235178718,
+          "luma_RMSE": 22.288253376931376,
+          "chroma_RMSE": 0.18500477704455487,
+          "signed_RGB": [
+            19.957242637461075,
+            19.880826153154374,
+            19.885166535005048
+          ]
+        }
+      }
+    }
+  },
+  "raw_clips_below": 0,
+  "raw_clips_above": 0,
+  "source_queries_cumulative": 1439898,
+  "actual_full_candidate_composites": 1
+}

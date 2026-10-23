@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "case": "a",
+      "whole_body_rays": 884008,
+      "required_subrays": 1071709,
+      "all_audited_subrays": 1447200,
+      "unsupported_required": 0,
+      "unknown_unscored": 7370,
+      "source_radius": 21,
+      "finite_kernel_shape": [
+        43,
+        43
+      ],
+      "bilinear_texels_per_field": 4,
+      "actual_mask_lookups": 11577600,
+      "support_certification": "43 by 43 known-mask erosion followed by all four bilinear corner lookups; clear rays use original known mask. Erosion is source-domain work, not zero effort.",
+      "coverage_exact": true,
+      "original_masks_exact": true,
+      "input_hashes": {
+        "case.json": "f91c3bba50f425412cb75b27e3429237fba9acde1900c2dcdd616d1d3be0d465",
+        "source.png": "38dd774b3b87ab4acaa9bb9588b63995df18d7da7ac89fb77697da6e1a1d3830",
+        "target.png": "f1eae5af7870bdc4088000595045187b31d26f4401a79fd61d0a2634e7529d0d",
+        "known.png": "89104ca1981763478097dd344e6a433002e8a14445226f238a07433301fd4412"
+      }
+    },
+    {
+      "case": "b",
+      "whole_body_rays": 884008,
+      "required_subrays": 1071709,
+      "all_audited_subrays": 1447200,
+      "unsupported_required": 0,
+      "unknown_unscored": 7370,
+      "source_radius": 21,
+      "finite_kernel_shape": [
+        43,
+        43
+      ],
+      "bilinear_texels_per_field": 4,
+      "actual_mask_lookups": 11577600,
+      "support_certification": "43 by 43 known-mask erosion followed by all four bilinear corner lookups; clear rays use original known mask. Erosion is source-domain work, not zero effort.",
+      "coverage_exact": true,
+      "original_masks_exact": true,
+      "input_hashes": {
+        "case.json": "eb3b35e9cf3255d82d2a42dfeefa0a24fee85bc7e337ada3bec62db8cfe12a62",
+        "source.png": "afb6c22b3013749c12321c8ef4dd676c29a6f89bc356cada69f290f110b99ffc",
+        "target.png": "cd320a2e26ef1abc716248b7ffcf5d496c5a843a1830b387b5cf0e7d3b450ce8",
+        "known.png": "d9714fa75734a791a94a391810a116d20f889893eb05d8f1585a6b3422a67a9c"
+      }
+    }
+  ],
+  "ledger": {
+    "graph": 8687606,
+    "height": 2896184,
+    "boundary": 1447619,
+    "footprint": 4343803,
+    "fixture_rays": 419,
+    "native_rays": 1447200,
+    "RGB_queries": 0,
+    "candidate_composites": 0,
+    "cached_zero_controls": 2,
+    "source_audit_subrays": 2894400,
+    "bilinear_mask_lookups": 23155200
+  },
+  "finished_utc": "2026-10-23T22:21:45.872492+00:00",
+  "new_RGB_queries": 0,
+  "new_images": 0,
+  "confidence": "Existing conditional temporal mosaics. No new observational truth or observed mask."
+}

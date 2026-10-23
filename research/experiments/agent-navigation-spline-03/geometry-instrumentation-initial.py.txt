@@ -1,0 +1,45 @@
+"""Fixed positive-height transfer: counted geometry and source-only audit."""
+from pathlib import Path
+import json,sys,datetime,time,os
+import numpy as np,cv2
+P=Path(__file__).resolve().parent;ROOT=P.parents[2];sys.path.insert(0,str(ROOT/'reconstruction'))
+from spline_height_back import SplineFootprintBack
+from geometric_optics import trace_flat_front_orthographic
+from extended_fit import Study
+os.umask(0o002);cv2.setNumThreads(1)
+protocol=json.loads((P/'protocol.json').read_text());PRIMARY=ROOT.parent/'liquid-glass';WORK=PRIMARY/'.evidence-working/navigation-geometry-01';CACHE=PRIMARY/'research/experiments/navigation-geometry-01';fit=json.loads((ROOT/'research/experiments/expanded-spline-height-01/inference.json').read_text());params=json.loads((ROOT/'reconstruction/studies/music-navigation/review-round/pass-03.json').read_text())['parameters']
+def utc():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def save(n,j):(P/n).write_text(json.dumps(j,indent=2,allow_nan=False)+'\n')
+def gate(checkpoint=False):assert datetime.datetime.now(datetime.timezone.utc)<datetime.datetime.fromisoformat(protocol['checkpoint_deadline_utc' if checkpoint else 'deadline_utc'].replace('Z','+00:00'))
+ledger=json.loads((P/'ledger.json').read_text()) if (P/'ledger.json').exists() else {'graph':0,'height':0,'boundary':0,'footprint':0,'fixture_rays':0,'native_rays':0,'RGB_queries':0,'candidate_composites':0,'cached_zero_controls':2,'source_audit_subrays':0,'bilinear_mask_lookups':0}
+def charge(key,n):
+ assert ledger['graph']+n<=12000000,'Persistent nested graph cap';ledger['graph']+=int(n);ledger[key]+=int(n)
+class Counted(SplineFootprintBack):
+ def __init__(self,*args,**kwargs):
+  super().__init__(*args,**kwargs);original=self.coordinate.footprint
+  def footprint(x,y):
+   n=np.broadcast_arrays(np.asarray(x),np.asarray(y))[0].size;charge('footprint',n);return original(x,y)
+  self.coordinate.footprint=footprint
+ def height_gradient(self,x,y):
+  charge('height',np.broadcast_arrays(np.asarray(x),np.asarray(y))[0].size);return super().height_gradient(x,y)
+ def boundary_mask(self,x,y):
+  charge('boundary',np.broadcast_arrays(np.asarray(x),np.asarray(y))[0].size);return super().boundary_mask(x,y)
+def setup(k):
+ s=Study(WORK/k);L=s.L;half=tuple(s.half+[params['half_x_delta'],params['half_y_delta']]);R=min(s.radius+params['radius_delta'],*half);center=np.array(s.case['center'])+L*np.array([params['shape_dx'],params['shape_dy']]);surface=Counted(half,R,fit['breaks'],fit['best']['heights'],cap_join_width=0.);return s,surface,center
+
+def trace(s,x,y,index=1.5,D=2.1,native=False):
+ n=np.broadcast_arrays(np.asarray(x),np.asarray(y))[0].size;key='native_rays' if native else 'fixture_rays';cap=2894400 if native else 5000;assert ledger[key]+n<=cap;assert ledger['graph']+6*n<=12000000;ledger[key]+=int(n);return trace_flat_front_orthographic(s,x,y,index,D)
+def checkpoint():
+ gate(True);assert not (P/'geometry-checkpoint.json').exists();assert json.loads((P/'contract-result.json').read_text())['status']=='PASS';s,f,center=setup('a');c=np.array(fit['best']['heights']);x=np.linspace(-f.half[0]*.96,f.half[0]*.96,64);y=.73*f.radius*np.sin(np.arange(64)*.7);h,hx,hy,inside=f.height_gradient(x,y);ok=inside&(h>0);x=x[ok];y=y[ok];h,hx,hy,_=f.height_gradient(x,y);e=1e-6;dx=(f.height_gradient(x+e,y)[0]-f.height_gradient(x-e,y)[0])/(2*e);dy=(f.height_gradient(x,y+e)[0]-f.height_gradient(x,y-e)[0])/(2*e);error=max(abs(dx-hx).max(),abs(dy-hy).max());assert error<1e-8 and np.min(h)>0 and h.max()<=f.maximum_height;assert np.hypot(hx,hy).max()<=f.slope_bound and (1.5**2-1)*f.slope_bound**2<1 and f.maximum_height<2.1
+ q=trace(f,x,y);qm=trace(f,-x,-y);np.testing.assert_allclose(qm['X'],-q['X'],rtol=0,atol=2e-14);np.testing.assert_allclose(qm['Y'],-q['Y'],rtol=0,atol=2e-14)
+ scaled=Counted(tuple(np.array(f.half)*3),f.radius*3,fit['breaks'],c*3);qs=trace(scaled,x*3,y*3,D=6.3);np.testing.assert_allclose(qs['X'],3*q['X'],rtol=0,atol=2e-13);np.testing.assert_allclose(qs['Y'],3*q['Y'],rtol=0,atol=2e-13)
+ shifted=center+np.array([17.,-11.]);qp=trace(f,((x*s.L+shifted[0])-shifted[0])/s.L,((y*s.L+shifted[1])-shifted[1])/s.L);np.testing.assert_allclose(qp['X'],q['X'],rtol=0,atol=2e-14);np.testing.assert_allclose(qp['Y'],q['Y'],rtol=0,atol=2e-14)
+ circle=Counted((1.,1.),1.,fit['breaks'],c);r=np.linspace(.03,.97,48);theta=np.linspace(0,2*np.pi,48,endpoint=False);xx=r*np.cos(theta);yy=r*np.sin(theta);ch,cx,cy,_=circle.height_gradient(xx,yy);rho=np.hypot(xx,yy);dh=circle.radial_derivative(rho);np.testing.assert_allclose(ch,circle.profile(rho),rtol=0,atol=2e-15);np.testing.assert_allclose(cx,dh*xx/rho,rtol=0,atol=2e-14);np.testing.assert_allclose(cy,dh*yy/rho,rtol=0,atol=2e-14);qc=trace(circle,xx,yy);qa=trace(circle,r,np.zeros_like(r));np.testing.assert_allclose(qc['X'],qa['X']*np.cos(theta),rtol=0,atol=3e-14);np.testing.assert_allclose(qc['Y'],qa['X']*np.sin(theta),rtol=0,atol=3e-14)
+ unit=trace(f,x,y,index=1);np.testing.assert_allclose(unit['X'],x,rtol=0,atol=1e-15);np.testing.assert_allclose(unit['Y'],y,rtol=0,atol=1e-15)
+ crease=trace(f,np.array([0.,0.]),np.array([f.half[1],-f.half[1]]));assert not crease['complete'].any() and np.isnan(crease['X']).all();miss=trace(f,np.array([f.half[0]+.1]),np.array([0.]));assert miss['complete'].all() and not miss['inside'].any()
+ # Same actual surface sections, not a visual approximation. All calls charged.
+ sections={}
+ for axis in ['x','y']:
+  v=np.linspace(-f.half[0 if axis=='x' else 1]*1.01,f.half[0 if axis=='x' else 1]*1.01,257);sec=f.section(v,axis);sections.update({axis+'_'+k:value for k,value in sec.items()})
+ np.savez_compressed(P/'sections.npz',**sections);np.savez_compressed(P/'fixture-paths.npz',**q);gate(True);save('geometry-checkpoint.json',{'status':'PASS_GEOMETRY_ONLY','finished_utc':utc(),'finite_difference_error':float(error),'maximum_height':f.maximum_height,'slope_bound':f.slope_bound,'subcritical_quantity':(1.5**2-1)*f.slope_bound**2,'mirrors':True,'scale':True,'pose':True,'circle_direct_algebra':True,'crease_unresolved':True,'ledger':ledger.copy()});save('ledger.json',ledger);print('checkpoint PASS',ledger,flush=True)
+if __name__=='__main__':checkpoint()

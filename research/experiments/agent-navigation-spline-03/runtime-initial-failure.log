@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/research/agent-navigation-spline-223/research/experiments/agent-navigation-spline-03/contract.py", line 15, in <module>
+    s=Study(WORK/key);old=np.load(CACHE/f'{key}-source-blur.npz');raw=np.load(CACHE/f'{key}-raw.npz');m=np.load(CACHE/f'{key}-masks.npz');assert not s.transmission_layers
+      ^^^^^^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/reconstruction/extended_fit.py", line 151, in __init__
+    vector=coverage(self.folder,layer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/reconstruction/vector_foreground.py", line 43, in coverage
+    return _coverage(raw,tuple(layer['box']),tuple(layer['vector_box']),scale).copy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/reconstruction/vector_foreground.py", line 19, in _coverage
+    import cairosvg
+ModuleNotFoundError: No module named 'cairosvg'
