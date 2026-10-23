@@ -1,5 +1,5 @@
 {
-  "status": "active-intake",
+  "status": "active-outline-review",
   "started_at": "2026-10-23T15:14:03.297Z",
   "deadline": "2026-10-23T19:14:03.297Z",
   "stages": [
@@ -8,22 +8,66 @@
       "cap_minutes": 80,
       "latest_deadline": "2026-10-23T16:34:03.297Z",
       "started_at": "2026-10-23T15:14:03.297Z",
-      "deadline": "2026-10-23T16:34:03.297Z"
+      "deadline": "2026-10-23T16:34:03.297Z",
+      "finished_at": "2026-10-23T15:19:30.432Z",
+      "outcome": "One raw paired transfer diagnostic; source proof and exact coverage pass. Missing frosting dominates, no further geometry fit justified in isolation."
     },
     {
       "name": "blurriness",
       "cap_minutes": 20,
-      "latest_deadline": "2026-10-23T16:54:03.297Z"
+      "latest_deadline": "2026-10-23T16:54:03.297Z",
+      "started_at": "2026-10-23T15:19:30.432Z",
+      "deadline": "2026-10-23T15:39:30.432Z",
+      "budget": {
+        "source_sigmas_native": [
+          6.75
+        ],
+        "new_native_images": 2,
+        "preflight_rays": 2894400,
+        "renderer_rays": 2894400
+      },
+      "question": "Can one common incident PSF explain observed text attenuation without blurring clear exterior?",
+      "status": "complete-negative",
+      "finished_at": "2026-10-23T15:25:52.548Z",
+      "outcome": "Common source PSF improves body/texture but fails five original foreground guards. No adoption; raw experimental state retained."
     },
     {
       "name": "color",
       "cap_minutes": 20,
-      "latest_deadline": "2026-10-23T17:14:03.297Z"
+      "latest_deadline": "2026-10-23T17:14:03.297Z",
+      "started_at": "2026-10-23T15:25:52.548Z",
+      "deadline": "2026-10-23T15:45:52.548Z",
+      "proposal": "One shared neutral affine least-squares response on original train pixels only; raw incident image, no blur. Gains/offsets tied across RGB and both references.",
+      "constraints": "0 <= gain <= 1; 0 <= bias <= 1-gain; no clipping on unit inputs.",
+      "budget": {
+        "analytic_fits": 1,
+        "cached_pair_trials": 4,
+        "factors": [
+          1,
+          0.5,
+          0.25,
+          0.125
+        ],
+        "new_rays": 0,
+        "source_queries": 0
+      },
+      "stop": "First paired strict qualifier, failed invariant, four trials or clock.",
+      "finished_at": "2026-10-23T15:29:39.006Z",
+      "status": "incomplete-precondition",
+      "outcome": "Frozen foreground has backing-dependent response; proposed cached affine compositor invalid. Stopped before fit/trials. No new rays authorized in this stage."
     },
     {
       "name": "outline",
       "cap_minutes": 60,
-      "latest_deadline": "2026-10-23T18:14:03.297Z"
+      "latest_deadline": "2026-10-23T18:14:03.297Z",
+      "started_at": "2026-10-23T15:29:39.006Z",
+      "deadline": "2026-10-23T16:29:39.006Z",
+      "budget": {
+        "new_rays": 0,
+        "images": 0,
+        "source_queries": 0
+      },
+      "question": "Do existing source and surface records support a reflected-radiance outline proposal?"
     },
     {
       "name": "shadow",

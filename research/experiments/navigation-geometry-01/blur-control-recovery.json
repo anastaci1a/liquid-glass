@@ -1,0 +1,14 @@
+{
+  "status": "SCOPED_RECORDING_FIX_WITHIN_ORIGINAL_BUDGET",
+  "failure": "First clear-only tile compared float64 renderer layer to stored float32 layer without matching the recorded dtype.",
+  "maximum_difference": 2.98023224e-8,
+  "attempted_rays": 51840,
+  "completed_images": 0,
+  "first_tile_native_rows": [
+    0,
+    12
+  ],
+  "correction": "Compare exact float32 recorded clear layer, not unlike dtypes. No score tolerance.",
+  "recovery": "Reuse original saved pixels for the entirely clear, foreground-free first tile. No repeated first-tile rays. Remaining tiles use unchanged declared model.",
+  "original_renderer_budget": 2894400
+}

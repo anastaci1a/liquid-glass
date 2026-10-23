@@ -6,7 +6,7 @@ optional frozen constant grading reproduces historical diagnostics only.
 import cv2,numpy as np
 from geometric_optics import trace_flat_front_orthographic
 
-def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission=False,exact_bilinear=False,samples_per_axis=4,source_known=None,required_pixels=None,return_support=False,return_layers=False):
+def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission=False,exact_bilinear=False,samples_per_axis=4,source_known=None,required_pixels=None,return_support=False,return_layers=False,incident_source=None,incident_known=None):
     """Finite pixel integration with coupled lens/background coverage.
 
     Default4 preserves the historical geometric control. Explicit2 preserves an
@@ -16,8 +16,13 @@ def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission
     subray and every subray of a required pixel must remain defined and known.
     No unsupported coordinate is clamped or sampled. Confidence means the input
     contract's known/model support, not necessarily observed photographic truth.
+    Optional incident_source affects lens rays only. Its known mask must already
+    certify the complete finite filtering footprint; clear rays use source.
     """
     if isinstance(samples_per_axis,bool) or int(samples_per_axis)!=samples_per_axis or not 1<=samples_per_axis<=8:raise ValueError('Integer AA samples per axis1..8 required')
+    if incident_source is not None:
+        if incident_source.shape!=source.shape or incident_known is None or incident_known.shape!=source.shape[:2]:raise ValueError('Incident source requires matching RGB and certified known mask')
+    elif incident_known is not None:raise ValueError('Incident known mask without source')
     s=int(samples_per_axis);x0,y0,x1,y1=case['crop'];L=min(case['half'])
     yy,xx=np.mgrid[y0+start:y0+stop:1/s,x0:x1:1/s]
     phase=(s-1)/(2*s);x=(xx-phase-case['center'][0])/L;y=(yy-phase-case['center'][1])/L
@@ -25,6 +30,10 @@ def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission
     if not q['complete'].all():raise ValueError('Unresolved primary path; no pixel fallback')
     X=q['X']*L+case['center'][0];Y=q['Y']*L+case['center'][1]
     finite=np.isfinite(X)&np.isfinite(Y);defined=finite&(X>=0)&(Y>=0)&(X<source.shape[1]-1)&(Y<source.shape[0]-1)
+    if incident_source is not None:
+        i,j=np.nonzero(defined&q['inside']);a=np.floor(X[i,j]).astype(int);b=np.floor(Y[i,j]).astype(int)
+        safe=(incident_known[b,a]>0)&(incident_known[b,a+1]>0)&(incident_known[b+1,a]>0)&(incident_known[b+1,a+1]>0)
+        if not safe.all():raise ValueError('Unsupported finite incident-filter footprint')
     if source_known is None and required_pixels is None:
         if not defined.all():raise ValueError('Undefined bilinear source footprint')
     else:
@@ -51,6 +60,14 @@ def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission
             C[rows,cols]=(source[b,a]*(1-fx)+source[b,a+1]*fx)*(1-fy)+(source[b+1,a]*(1-fx)+source[b+1,a+1]*fx)*fy
         else:
             C[rows,cols]=cv2.remap(source,X[rows,cols].astype(np.float32)[None],Y[rows,cols].astype(np.float32)[None],cv2.INTER_LINEAR)[0]
+    if incident_source is not None:
+        rows,cols=np.nonzero(defined&q['inside']);a=np.floor(X[rows,cols]).astype(int);b=np.floor(Y[rows,cols]).astype(int)
+        if exact_bilinear:
+            fx=(X[rows,cols]-a)[:,None];fy=(Y[rows,cols]-b)[:,None]
+            C[rows,cols]=(incident_source[b,a]*(1-fx)+incident_source[b,a+1]*fx)*(1-fy)+(incident_source[b+1,a]*(1-fx)+incident_source[b+1,a+1]*fx)*fy
+        else:
+            C[rows,cols]=cv2.remap(incident_source,X[rows,cols].astype(np.float32)[None],Y[rows,cols].astype(np.float32)[None],cv2.INTER_LINEAR)[0]
+        if not np.isfinite(C[rows,cols]).all():raise ValueError('Certified incident source contains undefined RGB')
     if not raw_transmission:
         fixed=C*np.asarray(p['material'][:3])+np.asarray(p['material'][3:6]);C=np.where(q['inside'][...,None],fixed,C)
     result=C.reshape(stop-start,s,x1-x0,s,3).mean((1,3)).astype(np.float32)

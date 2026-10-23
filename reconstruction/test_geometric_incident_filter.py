@@ -2,10 +2,28 @@
 import unittest
 import cv2
 import numpy as np
-from geometric_render import incident_source_filter
+from geometric_render import incident_source_filter,render_rows
+from geometric_optics import CircularBevel
 
 
 class IncidentFilterTest(unittest.TestCase):
+    def test_incident_layer_preserves_clear_exterior_and_zero(self):
+        source=np.full((81,81,3),.4)
+        known=np.ones((81,81),bool)
+        case={'crop':[20,20,60,60],'center':[40,40],'half':[10,10]}
+        args=(source,case,{},CircularBevel(depth=.02),1.5,2.,0,40)
+        opts=dict(raw_transmission=True,exact_bilinear=True,samples_per_axis=2,source_known=known,return_layers=True)
+        original,_,layers=render_rows(*args,**opts)
+        zero,_,_=render_rows(*args,**opts,incident_source=source,incident_known=known)
+        np.testing.assert_array_equal(original,zero)
+        changed,_,_=render_rows(*args,**opts,incident_source=np.full_like(source,.2),incident_known=known)
+        alpha=layers['coverage']
+        np.testing.assert_array_equal(original[alpha==0],changed[alpha==0])
+        np.testing.assert_allclose(changed[...,0],.4-.2*alpha,atol=2e-8)
+        bad=known.copy();bad[40,40]=False
+        with self.assertRaisesRegex(ValueError,'Unsupported finite incident'):
+            render_rows(*args,**opts,incident_source=source,incident_known=bad)
+
     def test_zero_identity_and_unknown_rejection(self):
         source = np.full((33, 41, 3), .4)
         known = np.ones(source.shape[:2], bool)

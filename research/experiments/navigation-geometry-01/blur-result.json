@@ -1,0 +1,123 @@
+{
+  "status": "NO_PAIRED_QUALIFIER",
+  "sigma_native": 6.75,
+  "radius": 21,
+  "references": [
+    {
+      "reference": "a",
+      "scores": {
+        "glass": {
+          "pixels": 113250,
+          "rmse": 22.88168716430664
+        },
+        "rim": {
+          "pixels": 35386,
+          "rmse": 22.590784072875977
+        },
+        "held": {
+          "pixels": 27873,
+          "rmse": 22.07554817199707
+        },
+        "interior": {
+          "pixels": 77864,
+          "rmse": 23.012676239013672
+        },
+        "ssim": 0.97696852684021,
+        "loss": 519.6031827478287,
+        "E": 22.794806047602787,
+        "foreground_mse": {
+          "home.svg": 273.4781563631259,
+          "home-label.svg": 327.60655941674486,
+          "new.svg": 362.1176108485088,
+          "new-label.svg": 452.523154753726,
+          "radio.svg": 448.44530678819865,
+          "radio-label.svg": 553.1916748266667,
+          "library.svg": 624.9586257152259,
+          "library-label.svg": 498.2060555834323
+        },
+        "exterior": {
+          "pixels": 46436,
+          "rmse": 22.485950469970703
+        }
+      },
+      "guards": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "exterior": true,
+        "E": true,
+        "ssim": true,
+        "home.svg": true,
+        "home-label.svg": false,
+        "new.svg": true,
+        "new-label.svg": false,
+        "radio.svg": true,
+        "radio-label.svg": false,
+        "library.svg": true,
+        "library-label.svg": false
+      },
+      "clear_and_coverage_exact": true
+    },
+    {
+      "reference": "b",
+      "scores": {
+        "glass": {
+          "pixels": 113250,
+          "rmse": 23.63930320739746
+        },
+        "rim": {
+          "pixels": 35386,
+          "rmse": 23.245269775390625
+        },
+        "held": {
+          "pixels": 27873,
+          "rmse": 23.845767974853516
+        },
+        "interior": {
+          "pixels": 77864,
+          "rmse": 23.81621742248535
+        },
+        "ssim": 0.9771069884300232,
+        "loss": 553.274429371097,
+        "E": 23.521786270840423,
+        "foreground_mse": {
+          "home.svg": 462.5508279539645,
+          "home-label.svg": 319.7277403785847,
+          "new.svg": 306.0178830754012,
+          "new-label.svg": 450.61535668792203,
+          "radio.svg": 397.872276767157,
+          "radio-label.svg": 567.6914972718805,
+          "library.svg": 580.6615930516273,
+          "library-label.svg": 486.87690353253856
+        },
+        "exterior": {
+          "pixels": 46436,
+          "rmse": 22.88271713256836
+        }
+      },
+      "guards": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "exterior": true,
+        "E": true,
+        "ssim": true,
+        "home.svg": true,
+        "home-label.svg": true,
+        "new.svg": true,
+        "new-label.svg": true,
+        "radio.svg": false,
+        "radio-label.svg": true,
+        "library.svg": true,
+        "library-label.svg": true
+      },
+      "clear_and_coverage_exact": true
+    }
+  ],
+  "native_images": 2,
+  "renderer_rays_including_failed_tile": 2894400,
+  "reused_clear_pixels": 12960,
+  "meaning": "Empirical incident PSF, not derived optical roughness."
+}

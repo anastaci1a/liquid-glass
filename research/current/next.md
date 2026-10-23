@@ -1,5 +1,7 @@
-# Next control
+# Active control
 
 The [clear-play study](../experiments/clear-play-02/README.md) is a useful negative: source blur sharpens compressed edge texture, but original guards regress. Missing scene radiance prevents a justified outline image. Keep the existing accepted image.
 
-Select a different control for the [four-hour cycle](../method/passes.md), beginning with frozen references and visible feedback. Text-backed navigation is a candidate for geometric transfer; no new experiment is declared yet. Preserve unresolved source and ownership limitations rather than reopening blocked work.
+The [navigation transfer study](../experiments/navigation-geometry-01/README.md) follows the four-hour maximum cycle. Source support and exact historical coverage pass. The incident PSF improves texture but fails protected foreground guards; color stopped before fitting because the foreground response is not affine.
+
+Finish the remaining scene, exterior, foreground and identification review without reopening failed branches or inventing supported illumination. Retain the historical accepted model.

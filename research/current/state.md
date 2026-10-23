@@ -1,6 +1,6 @@
 # Current state
 
-Status: the [focused clear-play study](../experiments/clear-play-02/README.md) is verified with no accepted replacement. The next control study is being selected.
+Status: the [focused clear-play study](../experiments/clear-play-02/README.md) is verified with no accepted replacement. The [navigation transfer study](../experiments/navigation-geometry-01/README.md) is active; no historical reconstruction has been replaced.
 
 ## Clear circular play control
 
