@@ -1,9 +1,0 @@
-# Model review after three substantive experiments
-
-Frozen inputs replay incumbent E7.1037421016, glass6.1235160828. No accepted passes.
-
-1. Ordinary postblur sweep .25/.5/.75/1/1.5 native px, fixed tensor shape/material. Best E7.0508083233 at .75px (0.7452% lower), but frozen exterior error19.2729132776→19.3025000881 regresses. REJECT. Further implementation review: the diagnostic postblur averaged the conditional glass image with zero-filled exterior pixels. This can darken the boundary independent of the intended optical effect. Retain this experiment as rejected diagnostic evidence; do not promote its score improvement. Replace that boundary condition with explicit coverage-normalized color filtering, never blur shape coverage.
-2. Tangential exponents3/3.5/4.5/5, all other values fixed. None improves E or glass sufficiently; no accepted step. Greater easing freedom alone does not solve the observed d-stroke issue.
-3. Continuous convex footprint softness .08/.15/.25, same cardinal bounds. .08 gives E7.0724356815, glass6.0998988152, exterior19.2206778973: improves all but E only .4407%, short of .5%. Larger changes regress badly, confirming Ana's instruction to preserve the close toolbar and use only a minute crown. It is an implicit geometric boundary coordinate, not exact Euclidean distance or identified 3D solid.
-
-Next bounded hypothesis: retain tiny .08 crown and test properly coverage-normalized ordinary blur as an independent named combination experiment. Freeze all sources, masks, registration, material, normal coefficients and tangential profile. Convolution is G(C alpha)/G(alpha), then composite through the original sharp shape alpha. It shares one sigma across the whole element, with no cropped/painted regional effect or channel split. A candidate must pass the exterior guard as well as E/glass, and remain unaccepted until primary independent replay/visual review. No source correction or reset is proposed.

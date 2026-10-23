@@ -18,8 +18,12 @@
     "privacy_and_rights_holds": "7 private feedback files plus 578 untracked vectors/third-party pages withheld after automated scan"
   },
   "docs": {
-    "build": "PASS: 666 files",
-    "links": "PASS: 632 local links/assets/anchors"
+    "maintained_markdown": 30,
+    "prose_and_markdown_links": "PASS",
+    "static_files": 666,
+    "local_html_links": 631,
+    "browser": "PASS: desktop/mobile layout, all 60 source figures, deferred requests/nested reopen, comparison drag/keyboard/fullscreen/crop/no-JS navigation",
+    "environment_recovery": "Host browser lacked libraries/fonts; isolated read-only runner used host-backed dependencies. Removed old /tmp/optics-deps override in the comparison test."
   },
   "backup": {
     "git_bundle": "PASS: git bundle verify",
@@ -28,10 +32,8 @@
     "empty_container_attempt": "Excluded: first command lacked stdin forwarding and produced empty tar; retained for audit"
   },
   "pending": [
-    "Final source consistency/exclusive ownership",
-    "Public licensing/storage review of untracked binary evidence and third-party packages",
-    "Generated-site uniqueness and symlink reconciliation",
-    "Localica cutover and future session-directory updates"
+    "Merge and verify isolated Localica documentation cutover",
+    "Final fresh checkout and remote artifact verification"
   ],
   "python": {
     "status": "PASS",
@@ -49,5 +51,26 @@
     "python": "PASS: 24 tests in independent container mounting only fresh checkout and separately installed pinned dependencies, with no old Localica filesystem mount",
     "limitations": "No full historical reconstruction replay from withheld raw inputs; no browser or Android build required for this split"
   },
-  "ci": "Independent docs/geometry checks only; original Android workflow excluded; no Pages/deployment workflow"
+  "ci": "Root package scripts and reconstruction paths; no deployment workflow",
+  "status": "Independent repository and evidence migrated; source cutover prepared",
+  "layout": {
+    "research": "research/",
+    "engine": "reconstruction/",
+    "guide": "guide/",
+    "lab": "lab/"
+  },
+  "evidence": {
+    "unique_objects": 8298,
+    "logical_files": 15056,
+    "lfs_objects": 1763,
+    "lfs_stored_bytes": 5564813105,
+    "full_original_object_verification": "PASS: all 8298 current objects decompressed and matched original SHA-256",
+    "alias_resolution": {
+      "added_files": 984,
+      "excluded": []
+    },
+    "inventory": "Every original inventory entry tracked or explicitly excluded",
+    "restoration": "PASS: 26 pipeline reports restored without an old Localica checkout"
+  },
+  "shared_physics": "All five shared geometry/tracing/render modules byte-identical to the pre-refactor baseline"
 }

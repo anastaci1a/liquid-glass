@@ -1,9 +1,0 @@
-# Queue38 conditional theory branch OFF
-
-37does not identify the sign/amplitude or whole-body support of a missing horizontal-width optical mode independently of source/font/PSF uncertainty. Therefore38's explicit source gate is NOT satisfied. No true-distance/R-support primitive, renderer, native score, invariant suite or fit is implemented/executed/claimed for38.
-
-History preserved: original13tested Psi=.5lambda*x_major²*S(d/.30L) using ACTUAL gradient of the inherited non-Euclidean coordinate, not its unit normal. In d its support was saturated, giving uniform xstrain; stronger tested amplitudes failed full/foreground guards, best admitted E gain.00562%farbelow.5%. The earlier tangent family included a wider~.55 band and also failed; ordinary tangent/current sourcePSF controls were not absent/untried. Changing to supportR and true Euclidean gradient is a theoretical variation of the SAME potential framework, not wholly untested generic support extension or an identified thick-lens solid. Inherited total map remains empirical.
-
-Required before activation: independently measured d row-width/curvature with intrinsic source contour/PSF/photometric/pose uncertainty controlled, and evidence that one geometry-defined whole-body mode addresses it without reenacting the already rejected support families. Then a separate theoretical review would need true-distance reach/medial-axis/center regularity, complete gradient coupling, explicit dimensionless displacement bound and analytic rank/support comparison. None is claimed passed for an inactive branch. No native calibration or changed scoring epoch is authorized by this review.
-
-Accepted revision3/count3/source/epoch unchanged. Request21 predates this review; await primary review/next authoritative queue while maintaining reciprocal monitoring.

@@ -1,5 +1,0 @@
-Calibrate one shared neutral boundary-normal response on NEXT and Safari bag circles. Three independently verified passes were each pushed and published separately: NEXT E9.076→8.861→8.373→8.027; bag6.775→6.588→6.163→5.778. Every original region/icon/SSIM/exterior guard holds; source, geometry and kernels are fixed. Preserve failed stronger proposals and the redundant continuation render in the evidence.
-
-Publish matching1080px comparisons, six-second MP4s and GIFs (NEXT6.69MB, bag2.75MB). Native export controls are exact; all-pose finite source support, target crops, media hashes and zero clipping independently checked. Local Pages links and desktop/mobile browser checks pass.
-
-This is cross-control material evidence, not an identified Apple optical model. Smooth estimated backgrounds, missing highlight strength and glyph-weight differences remain explicit. No app/release/live-lab changes.

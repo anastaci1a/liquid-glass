@@ -1,9 +1,0 @@
-# G02 — Is the historical folded radial map geometrically realizable?
-
-Concrete question after G01's three failed shape proposals: is the flat-front/convex-back assumption itself inadequate, or only that simple bevel profile? The old radial map is a diagnostic target, not a permitted rendering warp. This experiment infers a genuine height, then retraces through that height with shared Snell code; it is not a fidelity candidate.
-
-Freeze n1.5, backgroundD2, orthographic camera, outer radius1 and edgeheight0 before solving. For old radial displacement a(r), set q=a/(D-h), s=q/(n*sqrt(1+q*q)-1), h'=-s with h(1)=0. Use only the outward transmitted branch q<sqrt(n*n-1). Normals/intersections and views must derive from the inferred height. ODE values/derivatives are geometry construction inputs, never post-trace corrections.
-
-Budget: 15 minutes from execution start; at most2 ODE solves (rtol1e-9/1e-11, atol1e-11/1e-13),3000 total RHS calls,3 numerical surface resolutions257/513/1025,50000 diagnostic geometry rays,0 image renders/fits/source work. Stop on budget/invalid branch or after convergence check. Intermediate checkpoint after ODE path/global branch bounds and before surface retracing. No coefficient search, source change, mask change, icon work, blur or media export.
-
-Represent curvature k=-h'' as nonnegative piecewise-linear data, integrated twice from the flat-core boundary. This defines one C2 concave piecewise-cubic height. Use derivatives of THAT polynomial for normals. Increasing resolution is numerical convergence of the same inferred surface, not a new fitted candidate. Sections use this same height. Report interpolation error, convexity/branch bounds and whether the reconstructed physical map retains the unwanted fold. That fold would be a useful negative result about copying the old fit, not successful Apple matching.

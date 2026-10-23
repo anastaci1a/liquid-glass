@@ -1,4 +1,0 @@
-- Pushed `e42fc48` on PR414: size-proportional filtering/lighting units and a monotone highlight-reduction operator. Owner selected playback width4.5/gain1 and glass blur1.6px per490px shorter dimension; this remains an inverse-map approximation.
-- Private pass06 adds a 15-cell highlight/icon-color-blur grid, dark-weighted saturation comparisons and two motion clips. Original pass04 response is retained as requested; no early white plateau is added. Icon blur filters calculated color before sharp coverage. Example icon amounts await owner review.
-- Checks pass: supported fold count, geometry/blur/light scale covariance, exact reference-size lighting equivalence, 100001-sample monotonicity controls and full decode of both180-frame clips. Offline clips do not verify Android performance. Native app/main/Pages unchanged.
-— Codex

@@ -1,1 +1,0 @@
-Initial inspection script was named inspect.py and shadowed Python's standard-library inspect import during NumPy initialization. It failed before image processing/rays/fits. Renamed inspect_boundaries.py; model and inputs unchanged. No completed computation repeated.

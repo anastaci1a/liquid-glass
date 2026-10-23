@@ -1,3 +1,0 @@
-- Refine the clear playback reconstruction in three separately verified and pushed passes: shared exposure, post-refraction filtering/highlight response, then radial edge amplitude.
-- Frozen-reference weighted RMS error: 9.10758 → 9.07967 → 9.06493 → 9.06475. Glass and independently rendered symbol errors never regress. This remains a single-reference empirical model, with incomplete exterior-shadow reconstruction.
-- Publish fresh 4× comparisons, exact parameter records and current 1920×1080 video/GIF (7.74 MB). Replay checks exact native pixels, source hashes, analytic source bounds and visual changes; media fully decodes. Pages link/browser checks pass. No Android or live-lab changes.

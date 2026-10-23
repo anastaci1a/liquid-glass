@@ -1,9 +1,0 @@
-# Frozen stage boundaries / compositor contract
-
-Current geometric_render.render_rows already couples inside-lens and straight exterior subrays before native2x2 integration. Apply only the fixed canonical foreground to that integrated image. Do NOT pass it through vector_revision.composite again: that historical function expects a material-only buffer and applies its own shape coverage, which would double-compose edge coverage here. Study.comparison is also unsuitable: its historical context branch can retain target pixels. Neither was called.
-
-Current H1/H2/H3 actual geometry, gradient, source-known and score masks are distinct from historical field/shade/material coefficients. No geometry_field, Study.field/render, shade or target-derived context was used in the physical diagnostic. Study constructor/masks and apply_foreground alone reuse frozen source/provenance/SVG/artwork data. Its transmission_layers list is asserted empty, so no target-calibrated foreground response occurs.
-
-Historical comparison panels are the saved accepted material buffer plus fixed foreground, without replaying its generated exterior shadow compositor. Label them historical material+foreground, not an exact new replay of the full accepted shadow result. Accepted public scores/recipes and old arrays remain separate immutable records.
-
-For later authorized blur, color, outline and shadows stages, retain this coupled coverage contract and actual geometry-derived inside status. A source-space frosting kernel must not blur straight exterior rays. Material changes act inside; exterior generated components must not darken transmitted body subrays or use target residual. New shared components remain lead-owned. This note is a read-only interface observation, not early activation or fitting of any later stage.

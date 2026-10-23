@@ -1,3 +1,0 @@
-- Complete three verified refinements of the existing Expanded mini-player outer-normal/material model on both frozen backgrounds. Preserve all ten glyph/artwork, glass and fixed-exterior guards; current public-code replay is exact and fresh changed-map source checks pass.
-- Publish final 1080px comparisons, six-second videos and GIFs below10MB. Keep failed crown replacements, small score gains, source/model limits and presentation sampling explicit.
-- Validation: native replay, finite whole/all-scored source and visual checks for each pass; separate float64 reductions confirm all three paired gains. Final media decoded/hashed; static site and439 links pass. Documentation/research only; no app modification or release.

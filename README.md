@@ -1,19 +1,37 @@
 # Liquid Glass research
 
-A reusable, explainable Liquid Glass system, extracted with research-specific history from [Localica](https://github.com/anastaci1a/localica).
+A reusable, explainable rendering system grounded in explicit geometry and visible reference evidence.
 
-Start with the [field guide](docs/README.md), [geometric optics](docs/geometric-optics.md), and [migration status](migration/README.md). The current geometric work is preserved separately from older empirical reconstructions; those historical images do not establish physical model fidelity.
+| Start here | Purpose |
+| --- | --- |
+| [Current research](research/current/state.md) | Accepted components and unresolved defects. |
+| [Next hypothesis](research/current/next.md) | Source blur before refraction; awaiting research authorization. |
+| [Feedback](research/feedback/README.md) | Visible issues and their dispositions. |
+| [Documentation conduct](DOCUMENTATION.md) | Concise formats for all maintained records. |
+| [Field guide](guide/README.md) | Apple references and reconstruction comparisons. |
+| [Interactive Lab](lab/README.md) | Separate illustrative browser model. |
 
-No new scientific pass is authorized. Ana's pending observation is that source blur before refraction may reproduce directional compression better than the current output blur. This remains an untested hypothesis.
+## Workspace
 
-## Local checks
+| Directory | Role |
+| --- | --- |
+| `research/` | Current state, methods, experiments, feedback and evidence. |
+| `reconstruction/` | Shared optics, rendering, historical studies and tests. |
+| `guide/` | Reference guide and static publishing tools. |
+| `lab/` | Browser Lab; not the physical research engine. |
+| `agents/` | Ownership and collaboration rules. |
+| `migration/` | Source history, file mappings and validation. |
+
+## Checks
 
 ~~~sh
-npm ci --prefix docs
-npm run build --prefix docs
-node docs/experiments/check-links.cjs
-python3 -m pip install -r docs/experiments/reconstruction/requirements.txt
-python3 -m unittest discover -s docs/experiments/reconstruction -p 'test_geometric*.py'
+npm ci --ignore-scripts
+npm run build
+npm test
+python3 -m pip install -r reconstruction/requirements.txt
+python3 -m unittest discover -s reconstruction -p 'test_geometric*.py'
 ~~~
 
-The static build is local only. Existing [published reconstructions](https://anastaci1a.github.io/localica/liquid-glass/reconstruction.html) remain on Localica; this migration does not replace them or deploy Pages.
+See [evidence restoration](research/evidence/README.md) for Git LFS artifacts. Historical scripts remain evidence; current work must use the [geometry-first method](research/method/README.md).
+
+This project was extracted from [Localica](https://github.com/anastaci1a/localica) with research-specific history. Original IDs and file mappings remain in [migration records](migration/README.md).

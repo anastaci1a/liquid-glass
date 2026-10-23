@@ -1,4 +1,0 @@
-- Begin a separate current-history study of the active segmented-selector lens. Calibration and final media are pending.
-- Separate the modeled selected-text incident layer from the ordinary exterior. Both use one coordinate system; existing studies retain their single-source default.
-- Verify identical-source PNG identity, native/HQ optical identity under exterior changes, and the actual encoded motion exterior.
-- Background construction will document hidden track/text estimates and distinguish them from photographic recovery. No app or held live-lab changes.

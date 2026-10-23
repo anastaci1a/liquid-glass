@@ -1,8 +1,0 @@
-# Switch: review after the next three model families
-
-- Narrower neutral rim basis: fixed-material and average-refit proposals trade A against B. A constrained normalized minimax refit at .85 width passes both with0.6197% E reduction and glass/shadow guards. More aggressive .70 minimax fails. This is ONE verified revision, not a pass per optimizer step.
-- Directional color-separation neighborhood:24 angle/length/strength proposals fail the paired milestone. Larger separation worsens green A while barely changing gray B. Retain current recipe; do not strengthen rainbow visually without passing the broader comparison.
-- Ordinary source/output blur neighborhood:8 proposals, including zero Gaussian blur, all fail the paired milestone. Removing blur does not by itself correct the shape/material mismatch. This does not establish physical scattering in Apple; it describes this empirical model's current fit.
-- Crop diagnostics now compare the actual visible clean composites, including generated exterior. Earlier raw-material crops included invisible values outside the shape. Both old and new summaries are recalculated; core acceptance masks and measurements are unchanged.
-- Next hypothesis: shared optical-profile and core magnification refinement, with source, pose, footprint, material, ordinary blur and dispersion fixed. Use a cheap deterministic sampling proposal, then independently test the full native renderer. No target-pixel fixes or per-reference coefficients.
-- Persistent limitations: conditional estimated backgrounds; no identified physical solid; current dark rim and colored fringes visibly incorrect; historical counts not certified under the new gate. Maintain the 0.5% milestone; failed searches are not passes.

@@ -1,7 +1,0 @@
-# Shadow/glow: no identified visible improvement accepted
-
-Six fixed Gaussian footprint kernels tested, each with one analytic neutralblack opacity fit[0,.15], original source/frame/pose/coverage/body/blur/icon unchanged. Existing gaussian_coverage_shadow only was used; no empirical refractive mapping or target shadow was copied. Zero-opacity complete pixels recover the incumbent exactly. No new optical candidate rays or source queries.
-
-Best numerical shape sigma.06L/offset[0,.01]L/opacity.0135381 improves exteriorMSE24.06740->24.04796 (about.081%); near exteriorRMSE9.26385->9.25946. All body/held/rim/interior/SSIM/foreground metrics are exact unchanged, other declared guards pass. Maximum exteriorRGB change only1.49/255. Primary inspected Apple/zero-shadow/candidate: it does not establish a discernible intended shadow or fix the actual bright-rim defect, and tiny improvement may reflect registration/capture residuals. Therefore do NOT count/adopt a successful shadow correction merely because the aggregate falls.
-
-Current generated shadow remains zero. No colored/blueglow is proposed for this circle. This is a UI-compositing shadow hypothesis behind coverage, explicitly not full physical self-shadow/caustic transport. Source cleancontext was the original no-control photograph, not a supplied reference shadow. Every kernel/zero-opacity outcome remains under /evidence/extended/playback-pipeline-01/shadow; result.json's numerical pending status is superseded by this primary visible review. No more kernel/offset searches in this block.

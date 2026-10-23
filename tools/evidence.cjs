@@ -11,7 +11,7 @@ if(command==='restore'&&!output)throw Error('An explicit output directory is req
 const seen=new Set();let count=0;
 for(const r of selected){if(command==='verify'&&seen.has(r.sha256))continue;seen.add(r.sha256);const source=path.resolve(root,r.object);if(!source.startsWith(root+path.sep))throw Error('Unsafe object path');
  const data=cp.execFileSync('zstd',['-q','-d','-c','--',source],{maxBuffer:Math.max(r.bytes+1048576,64*1024*1024)});if(data.length!==r.bytes||digest(data)!==r.sha256)throw Error('Evidence mismatch: '+r.logical);
- if(command==='restore'){const dest=path.resolve(output,r.logical),base=path.resolve(output);if(!dest.startsWith(base+path.sep))throw Error('Unsafe logical path');fs.mkdirSync(path.dirname(dest),{recursive:true});if(fs.existsSync(dest)&&digest(fs.readFileSync(dest))!==r.sha256)throw Error('Refusing to overwrite different bytes: '+dest);fs.writeFileSync(dest,data);}
+ if(command==='restore'){const dest=path.resolve(output,r.logical.replace(/^historical-records\//,'')),base=path.resolve(output);if(!dest.startsWith(base+path.sep))throw Error('Unsafe logical path');fs.mkdirSync(path.dirname(dest),{recursive:true});if(fs.existsSync(dest)&&digest(fs.readFileSync(dest))!==r.sha256)throw Error('Refusing to overwrite different bytes: '+dest);fs.writeFileSync(dest,data);}
  count++;
 }
 console.log(command+': '+count+' verified objects/files');

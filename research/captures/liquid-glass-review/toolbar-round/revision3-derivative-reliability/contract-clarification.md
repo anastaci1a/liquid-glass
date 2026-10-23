@@ -1,3 +1,0 @@
-# Original guard contract clarification
-
-Lead queue35 clarifies the original contract: the hard guards are glass, exterior, archive and plus, alongside required E improvement. Rim contributes to E and is separately reported; it is not an extra standalone nonregression gate. Earlier33/34 prose grouped rim into “five guards”; use this clarification. The5/6 rejection rationale still includes their actual PLUS regression, so the conditional no-fit conclusion is unchanged. Raw diagnostics/scores and sealed original reports are preserved. Do not require an invented standalone rim gate or relax any original guard.

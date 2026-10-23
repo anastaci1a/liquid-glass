@@ -1,3 +1,0 @@
-- Merged research/docs PR439–443; current Safari comparison,1080px media and reproduction records are live on Pages. No app/release change.
-- Safari PLUS:3 individually committed, independently verified exterior passes; near/full RMSE5.809/5.357→4.674/4.829. Native glass/icon pixels unchanged. Incorrect cyan/brightness transfer remains disclosed; magnifier0 successful material passes,8 rejected trials. No paired-optics or Apple-parity claim.
-- Flower previous/pause source intake is blocked: bounded genuine donors recover no concealed petal texture. Preserved negative evidence; no invented background or optical gain. Next sky-backed control and Mail toolbar are source/foreground-stage investigations with separate ownership.

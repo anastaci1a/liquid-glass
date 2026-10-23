@@ -1,5 +1,7 @@
 # Liquid Glass workspace
 
-Read [agents/README.md](agents/README.md) and [migration status](migration/README.md) before changes.
+Read [documentation conduct](DOCUMENTATION.md), [working rules](agents/README.md), [current state](research/current/state.md), and the relevant feedback before editing.
 
-Use umask 0002 for file creation, then run ./fix-permissions.sh on only the paths created or modified. Credentials and machine configuration never belong in this repository.
+Use `umask 0002`. After file creation or changes, run `./fix-permissions.sh` on only the affected paths.
+
+Research experiments remain paused. Migration, documentation consolidation and validation are authorized. Do not contact or control the helper; do not use Sessionsation.

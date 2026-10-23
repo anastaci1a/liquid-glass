@@ -1,9 +1,0 @@
-# Segmented selector — crown/optics review
-
-- Hypothesis: a continuous capsule-like footprint can improve the shoulders and their normals without a straight central interval. Pure superellipse fit is worse; smooth convex crown is better on the sampled white ridge.
-- Native contour fit, held samples: A capsule0.7866px/crown0.3475px/superellipse2.8086px; B0.7871/0.4320/2.9514px. These are gradient-normalized contour residuals (capsule uses exact SDF). White ridge need not be the exact physical boundary. No optical-pass credit.
-- Three sharp optical trials use the same incident inputs, zero source/output Gaussian blur and a shared crown softness0.185. A losses325.716/334.034/336.068; B341.738/341.484/341.034. None beats the frozen public baseline under the new gate. Final states were NOT promoted and no baselines reset.
-- Whole-frame visual inspection: text remains misregistered, material fitting reduces text contrast to compromise with those errors, and the new outer shape alone does not explain the refraction. Color separation is absent here by construction and must be a separate experiment.
-- Training surrogate decreases do not guarantee native score decreases; retain native validation before every promotion. Rejected trials can inform the next hypothesis but are not accepted incumbents.
-- Next hypothesis: explicit flat-front/curved-underside height graph with an orthographic observer and a planar background. Trace the transmitted Snell branch, reject unsupported TIR rather than fake a continuation. Compare against the SAME public score baseline; don't count easier within-family gains.
-- Legacy state remains visually rejected; these exploratory comparisons do not establish Apple's proprietary shape/shader. Shared generalized equations, independent reconstruction of inputs and strong local crop checks remain required.

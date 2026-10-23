@@ -1,3 +1,0 @@
-- Complete three verified green-control refinements on both frozen backgrounds. Original weightedE/glass/fixed-exterior guards hold; the final ambient-response step leaves A bit-exact and improves B. Native replay is exact, with explicitly modeled hidden-track source limits.
-- Publish final1080px videos/GIFs below10MB and fixed-region crop comparisons. Keep the local regressions, unresolved fringe/contour mismatch and estimated-source limitations visible.
-- Validation: independent native/source/visual acceptance per pass; final media decoded and hashed; crop sheet uses saved native arrays and unchanged rectangles; static build and441 links pass. Include complete caption metadata for the new figures. No app changes or release.

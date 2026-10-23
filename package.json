@@ -1,0 +1,17 @@
+{
+  "name": "liquid-glass-research",
+  "private": true,
+  "scripts": {
+    "build": "node guide/site.cjs",
+    "test": "npm run check:docs && node guide/experiments/comparison-panels.test.cjs && node guide/experiments/equations-test.cjs",
+    "check:docs": "node tools/check-docs.cjs && node guide/experiments/check-links.cjs",
+    "test:guide": "node guide/experiments/reconstruction-page.cjs && node guide/experiments/reconstruction-media-loading.cjs && node guide/experiments/reconstruction-comparison.cjs",
+    "test:lab": "node guide/experiments/browser.cjs && node guide/experiments/software.cjs",
+    "evidence:verify": "node tools/evidence.cjs verify"
+  },
+  "devDependencies": {
+    "marked": "17.0.4",
+    "playwright": "1.61.1",
+    "sharp": "^0.35.5"
+  }
+}

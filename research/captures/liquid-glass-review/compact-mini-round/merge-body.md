@@ -1,3 +1,0 @@
-- Complete three independently verified Compact mini-player refinements on both frozen backgrounds. Preserve all ten glyph/artwork, glass and fixed-exterior guards; replay is pixel-exact and the changed-map finite source checks pass.
-- Publish final 1080px comparisons, 6-second videos and full-size GIFs below 10MB. Keep empirical material/source limits and native versus presentation sampling explicit.
-- Validation: native replay/source/visual review for each pass; final media fully decoded and hashed; static site build and 430 local links pass. Documentation/research only; no app modification or release.

@@ -1,9 +1,0 @@
-# Procedural/model review after three substantive families
-
-Curvature11–12: one shared curvature-normal coefficient, checked exact closest-boundary geometry/C2bump; guardedE6.850284211(-.294104%), d unchanged, fails .5%. Core13: one actual-coordinate potential, checked gradient/curl/zero/uniform/rays; local guardedE6.870104462(-.005620%), d gain at stronger negative strain conflicts with full/foreground guards. Joint16: compatible saved baseline derivatives support shared inner4–6/core direction; bounded12step native bestE6.8655788815918894(-0.071490%), all5guards hold, d/underside worsen. No qualified family, two accepted historical passes unchanged.
-
-Every extension is procedural and shape-normalized, no target/rim painting, source/shadow/glyph changes or arbitrary per-crop coefficients. Both foreground boxes constrain proposal and final native decisions; partial coverage/native-vs-HQ and material-vs-composite are kept distinct. All rejected/partial attempts are retained; disk ENOSPC recovery reused completed caches, no fabricated success counts. B714inactive. Source14–15cannot certify extra hidden ink/RGB.
-
-Numerical limits: curvature8step and joint12step budgets are not global convergence/exhaustion proofs; core local guard interval is not global infeasibility. Foreground tightness and coarse/source uncertainty cannot be erased by changing masks. Ordinary source/output Gaussian blur6was explicitly ordinary blur, not dispersion. None identifies Apple surface, environment, roughness or chromatic law.
-
-Next hypothesis is a graph surface under declared camera/front/back/gap/IOR, not another isolated displacement coefficient. Derive its normal-field compatibility with unknown h and validate Snell branches/path dependence before considering image fits. Nonzero arbitrary output-map curl alone is insufficient. Queue17–18authorizes that review; no new acceptance inferred.

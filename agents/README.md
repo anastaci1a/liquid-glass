@@ -1,25 +1,39 @@
-# Research collaboration
+# Working rules
 
-The primary checkout is /mnt/user/live/projects/liquid-glass/liquid-glass. Additional checkouts must be actual linked Git worktrees under the parent workspace, with explicit branch and file ownership.
+## Ownership
 
-The existing lead session is liq-glass-lead; the existing helper is liq-glass-agent. Normally the lead owns shared geometry, tracing, rendering/material interfaces, verification and public commits. The helper owns a distinct control family, private adapters and evidence. Shared interfaces require agreement before shared edits. Do not duplicate research targets or create bespoke per-icon displacement laws.
+| Role | Normal responsibility |
+| --- | --- |
+| `liq-glass-lead` | Shared optics/render/material API, independent verification and public integration. |
+| `liq-glass-agent` | A distinct control family, element adapters and its evidence. |
 
-## Current solo restriction
+Agree shared interfaces and file ownership before overlapping edits. Use actual linked worktrees; never conceal helpers in unmanaged terminals.
 
-Sessionsation is being worked on. Do not use it. Do not contact, start, stop, resume, interrupt, relocate or otherwise control the helper, including through another transport. Its working directory has NOT been changed by this migration. Record required future directory/ownership updates for Ana. Existing source worktrees may still be active; no exclusive ownership is established.
+## Current restriction
 
-No new experiments are authorized. Preserve accepted baselines and all negative evidence. The last pipelines are stopped. A future authorized experiment must declare a visible defect, physical hypothesis, frozen nuisance stages, references, real wall-time and evaluation budgets, checkpoint and stop rule. Review after at most three substantive proposals, including rejects. Never reset expired budgets to manufacture progress.
+Work solo. Sessionsation is unavailable. Do not message, launch, stop, resume, interrupt, relocate or reconfigure the helper through any transport.
 
-## Shared physical system
+No session was relocated by this migration. Ana must handle any future session-directory change. The canonical repository is `/mnt/user/live/projects/liquid-glass/liquid-glass`.
 
-Use explicit optical surfaces, camera/view geometry, refractive indices and background placement. Intersections, visualized sections and normals must derive from the same surfaces. No independent normal corrections, sampled-pixel tweaks or residual warps. Empirical maps may initialize or diagnose a physically consistent model only. Preserve valid paths, branch/TIR/status information and source support. Edge reversal can be desirable for this reference; do not prohibit folds globally.
+## Research
 
-Common convention: L is minor half-extent; x right, y down, +z toward viewer; front z=0, solid below, background z=-D. See current code and geometry certificates for each family's scope. Do not claim all historical models satisfy this convention.
+- No new experiment is currently authorized.
+- Preserve accepted baselines, source hashes, reference masks and negative evidence.
+- Follow the [method](../research/method/README.md) and [documentation conduct](../DOCUMENTATION.md).
+- Declare real time/evaluation limits and stop conditions before execution.
+- Review a hypothesis after at most three substantive proposals, including rejects.
+- Judge visible feedback first; keep local regressions and uncertainty explicit.
+- Derive intersections, normals and sections from the same physical surface.
+- Never add independent normal tweaks, displacement patches or residual warps.
 
-Separate refraction, ordinary blur, color, outline, shadow and foreground stages. Freeze sources, registration and original score masks; preserve local regressions. Mathematical correctness, visible fidelity, cross-control transfer and device performance are separate claims. Reuse unchanged valid evidence. No motion export during an unpromising search.
+## Recording and Git
 
-## Git and publication
+Save useful work in progress with an explicit status. Put the next action in `research/current/`, not in a private handoff file.
 
-Audit secrets, private conversations and redistribution rights before committing. Use coherent commits with repository-local anastaci1a identity. Push EVERY new commit immediately and verify the remote tip. Never force-push Localica or overwrite unrelated destination work. Keep downloaded fonts/software, dependencies, caches, machine locks and private session dumps out of Git. Track substantive project-owned research deliberately; pending large/private evidence stays explicitly inventoried with recoverable backups.
+Commit coherent code, configuration and records. Audit secrets and redistribution scope, push every new commit immediately, and verify the remote tip.
 
-Publishing the repository is not permission for a site deployment, release, repository-security change, app behavior change or source cleanup. Existing published Localica URLs stay intact until a separately safe cutover.
+Use indexed evidence for raw arrays/media and immutable reports. Keep credentials, private session dumps, dependencies and downloaded font/video packages out of Git.
+
+## Application boundary
+
+Research organization does not authorize Localica behavior changes, releases or site deployments. Work from an isolated clone for source cutover; preserve dirty app work and historical refs.

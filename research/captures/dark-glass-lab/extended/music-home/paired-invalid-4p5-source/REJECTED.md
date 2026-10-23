@@ -1,1 +1,0 @@
-Rejected before publication: source-4.5.png has a large unobserved strip under the Home control. The exploratory pass is not a valid paired calibration and does not count toward the five-pass requirement. Preserve for provenance; restart using2.0s.

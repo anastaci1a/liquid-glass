@@ -1,9 +1,0 @@
-# Shadow/glow block
-
-Hard15minute actual cap08:33:36–08:48:36UTC. Geometry, accepted blur1.7px, neutral body grading, foreground, source/case/masks/registration and unresolved outline unchanged. No optical ray tracing or source repair. No blueglow evidence for this circle; do not transplant slider effects.
-
-Use existing crowned_tensor.gaussian_coverage_shadow ONLY (no inherited mapping/lighting). Its silhouette p.shape half[1,1]/radius1 is exactly the actual G05 circular footprint and nativeAA4phase. Parameters are dimensionless sigma/L and offset/L; neutralblack opacity is a single coefficient. Padding accounts for the finite OpenCV Gaussian and shift. This is an ordinary UI-compositing shadow behind shape coverage, not a3D self-shadow/caustic/radiance claim. Source photo at original180 had no control, so no supplied lens shadow is reused.
-
-At most6declared kernel shapes: sigma/L[.015,.03,.06], yoffset/L[.01,.025], xoffset0. Fit ONE bounded opacity[0,.15] analytically per shape against original full exterior mask, then actualnative composite/scores. No extra shade/source/normal coefficients, targetresidualoverlay or per-pixel opacity. Reuse actual clear premultiplied field: C=alpha*accepted_lens+(1-opacity*K)*clearPremult, fixed foreground afterward. Original body/FG/SSIM/coverage and full exterior guards strict; near/far/quadrants/crop errors advisory. At most6actualcomposites plus zero-control, no optimizer/backtrack extension.
-
-A numerical exterior improvement alone does not establish a real shadow: inspect its strength/location versus source/reference; imperceptible or unidentifiable fits remain negative/uncertain, not successful passes. Stop at cap/completed family, preserve all source/geometry/score evidence; no speculative glow. Zero-opacity must recover native incumbent bitexact.
