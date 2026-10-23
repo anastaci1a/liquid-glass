@@ -1,0 +1,28 @@
+{
+  "status": "active-path-and-role-audit",
+  "started_at": "2026-10-23T20:01:10.407Z",
+  "deadline": "2026-10-23T20:48:30.082Z",
+  "overall_deadline": "2026-10-23T21:43:30.082Z",
+  "cap_reason": "Reserve the remaining shadow15/foreground20/dispersion-review5/final-review15 blocks inside the original four-hour deadline. Review/coordination delay is not hidden research time.",
+  "first_checkpoint_deadline": "2026-10-23T20:16:10.407Z",
+  "visible_defect": "Missing thin bright contour and cap/body lighting in expanded playback.",
+  "hypothesis": "Audit actual reflected paths and polarization-independent power bounds on the selected H1 solid; distinguish a missing reflection/scene component from geometric displacement or extra blur.",
+  "frozen": [
+    "H1 geometry and explicit flat front/back/closed footprint",
+    "Incident source sigma6.75 and current neutral response",
+    "Original paired inputs, masks, foreground and source confidence"
+  ],
+  "budgets": {
+    "launches": 256,
+    "maximum_interface_encounters_per_launch": 64,
+    "total_interface_encounters": 16384,
+    "level_points": 2000000,
+    "RGB_queries": 0,
+    "native_images": 0,
+    "fits": 0
+  },
+  "power_model": "First normal-front/unpolarized-back split is exact. Later intensity uses min/max s/p power bounds, not a falsely fixed polarization basis or exact scalar unpolarized product.",
+  "source_rule": "Reuse original primary-source proof; audit every sampled secondary background endpoint with finite incident kernel+bilinear. Unknown endpoints prohibit an image but may be counted in this bounded geometry-only audit; no RGB sampling.",
+  "stop": "First unresolved geometric boundary/branch, cap or deadline. Never substitute normals, endpoints, copied context or a fitted halo.",
+  "scope_limit": "Sparse diagnostics are not a full native reflected-source proof. Front environmental radiance is unobserved; no reflection image is authorized."
+}
