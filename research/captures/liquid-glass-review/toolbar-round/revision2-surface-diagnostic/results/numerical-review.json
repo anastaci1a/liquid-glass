@@ -1,0 +1,116 @@
+{
+  "new_selected_point_derivative_refinement": [
+    {
+      "x": 1.5,
+      "y": 0.88,
+      "finite_h": 1e-05,
+      "signed_boundary_L": -0.09529211991904452,
+      "curl": 1.5166875847683057,
+      "M": 0.3648746267175645,
+      "K": 0.42699471038574127,
+      "rho": 0.2815310909602853,
+      "necessary_margin_c_times_K_minus_Mc": -0.19171857153897287
+    },
+    {
+      "x": 1.52,
+      "y": 0.88,
+      "finite_h": 1e-05,
+      "signed_boundary_L": -0.09102379644166492,
+      "curl": 1.5142625841901847,
+      "M": 0.38643431841851944,
+      "K": 0.4646827288917757,
+      "rho": 0.3068706403653791,
+      "necessary_margin_c_times_K_minus_Mc": -0.1824388115371483
+    },
+    {
+      "x": 1.0,
+      "y": 0.5,
+      "finite_h": 1e-05,
+      "signed_boundary_L": -0.49997690802705663,
+      "curl": 4.467398673213552e-07,
+      "M": 2.3395238552842643e-06,
+      "K": 2.738644391678655e-07,
+      "rho": 0.613028876983718,
+      "necessary_margin_c_times_K_minus_Mc": 1.223456963038857e-13
+    },
+    {
+      "x": 0.5,
+      "y": 0.5,
+      "finite_h": 1e-05,
+      "signed_boundary_L": -0.4999999988260915,
+      "curl": 2.4980018054066022e-11,
+      "M": 1.2520749357150568e-06,
+      "K": 1.361011171545555e-07,
+      "rho": 5448.399471128572,
+      "necessary_margin_c_times_K_minus_Mc": 3.3998083629180546e-18
+    },
+    {
+      "x": 1.5,
+      "y": 0.88,
+      "finite_h": 1e-06,
+      "signed_boundary_L": -0.09529211991904452,
+      "curl": 1.5166875875771701,
+      "M": 0.3648746267175645,
+      "K": 0.4269947101921184,
+      "rho": 0.28153109031123563,
+      "necessary_margin_c_times_K_minus_Mc": -0.19171857374212387
+    },
+    {
+      "x": 1.52,
+      "y": 0.88,
+      "finite_h": 1e-06,
+      "signed_boundary_L": -0.09102379644166492,
+      "curl": 1.5142625868769244,
+      "M": 0.38643431841851944,
+      "K": 0.46468272868171595,
+      "rho": 0.306870639682181,
+      "necessary_margin_c_times_K_minus_Mc": -0.18243881375111395
+    },
+    {
+      "x": 1.0,
+      "y": 0.5,
+      "finite_h": 1e-06,
+      "signed_boundary_L": -0.49997690802705663,
+      "curl": 4.46753745109163e-07,
+      "M": 2.3395238552842643e-06,
+      "K": 2.738644387978713e-07,
+      "rho": 0.6130098332604986,
+      "necessary_margin_c_times_K_minus_Mc": 1.2234949674215486e-13
+    },
+    {
+      "x": 0.5,
+      "y": 0.5,
+      "finite_h": 1e-06,
+      "signed_boundary_L": -0.4999999988260915,
+      "curl": 2.7755575615628914e-11,
+      "M": 1.2520749357150568e-06,
+      "K": 1.3610111705005857e-07,
+      "rho": 4903.559520250817,
+      "necessary_margin_c_times_K_minus_Mc": 3.7775648446898985e-18
+    }
+  ],
+  "saved_grid_02_boundary_crossing_diagnostics": {
+    "near_boundary_points": 6,
+    "robust_classified_near_boundary": 0,
+    "limits": "Boundary switch F=identity outside footprint can pollute central derivatives. All6near-boundary nodes are unresolved/notrobust, not used to argue exact surface incompatibility."
+  },
+  "representative_n1_5_g2": {
+    "path_height_RMS_L_grid04_RK02": 0.02706975961683266,
+    "path_height_RMS_L_grid04_RK01": 0.02706949436087429,
+    "path_height_RMS_L_grid02_RK01": 0.02713905491224271,
+    "forward_map_vector_RMS_px_grid04": [
+      8.671220186429661,
+      31.26402149817811
+    ],
+    "forward_map_vector_RMS_px_grid02": [
+      11.002257750247027,
+      31.261992041231277
+    ]
+  },
+  "limits": [
+    "Path mismatch stable under RK/spatial refinement, whereas forward-map stencil errors are NOT spatially converged; no best-approximation/lower-bound claim",
+    "Required-clearance PDE residual is ill-conditioned near small curl and branch-transition sets; retain full fields/threshold sensitivity, not a recovered h",
+    "Wrong-branch necessary condition is numerical evidence for exact-map mismatch in this specified camera/interface family, not all Apple surfaces or all close approximations"
+  ],
+  "new_optical_renders": 0
+}

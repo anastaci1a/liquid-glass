@@ -1,0 +1,497 @@
+--- a/docs/liquid-glass/recreation-models.md
++++ b/docs/liquid-glass/recreation-models.md
+@@ -166,6 +166,31 @@
+ 
+ The `regular-light` and `regular-dark` recipes independently specify field parameters and material coefficients. Neither uses Gaussian blur. Their nearly uniform backdrops cannot identify an optical model; high scores here validate tone/rim approximation, **not refraction**.
+ 
++The first current reconstruction checkpoint adds a **shared generated exterior**, with the original independent body recipes, source PNGs and native 4×4 coverage unchanged. This empirical component improves exterior reconstruction; optical scores tie. It does not identify refraction, the incident background, or Apple's lighting setup.
++
++Let L=106.5 pixels, p=(pixel−center)/L, and sd be the original rounded-rectangle signed distance in normalized units. With K offset (0,.06) and H offset (0,−.4):
++
++```text
++alpha_i = opacity_i exp(−.5 [max(sd(p−offset_i),0)/sigma_i]²)
++B1 = B (1−alpha_K)
++B_out = B1 + alpha_H (1−B1)
++complete = body coverage_4x4 + B_out (1−coverage_4x4)
++K: opacity .028644737086080185, sigma .7
++H: opacity .0391166614246353, sigma .11786013768786802
++```
++
++Both themes use these exact coefficients. B is the existing frozen source PNG, not a fitted background plane. The light paper is polynomial-estimated; dark underbody source0 remains an assumption. No copied target residual or reference shadow enters this exterior law. Gaussian distance falloff is an exterior opacity law, not image blur or chromatic dispersion. The black sigma reaches its declared .7L limit; upper light far bands regress and the broader dark gray field remains unresolved.
++
++For exact native replay, coordinates/signed distances retain the existing float32 staging and Gaussian parameters/compositing use float64. A pure-float64 coordinate control differs by up to 4.63e−9; no regression tolerance was changed. [Recipe and original independent body materials](experiments/reconstruction/studies/light-dark/review-round/pass-01.json) · [Independent verification](experiments/reconstruction/studies/light-dark/review-round/pass-01-verification.json).
++
++Run the standalone [replay](experiments/reconstruction/regular_exterior.py) from the reconstruction directory, with the four frozen regular-light/dark source/target PNGs in INPUTS:
++
++```sh
++python regular_exterior.py INPUTS OUTPUT --recipe studies/light-dark/review-round/pass-01.json
++```
++
++This performs the original native body render and separately generates the exterior; it never invokes the old context compositor. Reuse immutable native material arrays with --material-cache CACHE when those arrays already match the recipe. Output includes all original score checks, frozen-range/full-visible exterior scores and 720/1080-width per-side comparisons with explicit 64px captions.
++
+ ## Music and switch profile family
+ 
+ The newer [paired studies](reconstruction.md#apple-music-studies) use one normalized image-map family. Each `studies/<id>/paired/accepted.json` supplies the shared coefficients; `a.json` and `b.json` supply measured poses and frozen input hashes. Home's corrected chain protects the retained single-background result; the earlier invalid pairing is archived separately.
+--- a/docs/liquid-glass/reconstruction.md
++++ b/docs/liquid-glass/reconstruction.md
+@@ -90,6 +90,8 @@
+ 
+ These test tone, broad lighting and rim. Nearly uniform backdrops cannot identify refraction: high similarity here does not validate an optical model. Neither recipe uses Gaussian blur.
+ 
++Current round: **1/3 verified reconstruction passes**, exterior-only, with all original optical scores unchanged. One common generated shadow/glow law improves frozen near-exterior RMSE light6.082354→3.805386/dark6.752748→2.120522 and full-visible exterior6.613297→4.615888/5.963654→4.041905. Comparisons use the frozen source PNGs and original4×4 body coverage; no copied reference context/shadow. Removing the previous display context earns no credit. Sources remain estimated/unobserved; upper far-light regressions, the .7L shadow-width bound and unresolved broad dark glow remain explicit. [Recipe](experiments/reconstruction/studies/light-dark/review-round/pass-01.json) · [Independent verification](experiments/reconstruction/studies/light-dark/review-round/pass-01-verification.json).
++
+ <details>
+ <summary>Full-resolution light and dark comparisons</summary>
+ 
+--- /dev/null
++++ b/docs/liquid-glass/experiments/reconstruction/regular_exterior.py
+@@ -0,0 +1,56 @@
++"""Replay legacy light/dark bodies with the declared shared generated exterior.
++No fitting, source construction, compose(), or contact_context().
++"""
++import argparse,hashlib,json
++from pathlib import Path
++import cv2,numpy as np
++from PIL import Image,ImageDraw
++from reproduce import CASES,points,scores
++from render import case_geometry
++from settled import RECIPES,render
++
++def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
++def exterior(case,source,material,record):
++ """Normalized empirical distance falloffs, independent of target pixels."""
++ x0,y0,x1,y1=case['crop'];L=min(case['half']);_,_,x,y=points(case)
++ # Native coordinates/distances are float32; parameters and RGB compositing float64.
++ assert x.dtype==y.dtype==np.float32
++ coverage=np.zeros(x.shape,np.float64)
++ for dy in [-.375,-.125,.125,.375]:
++  for dx in [-.375,-.125,.125,.375]:coverage+=(case_geometry(case,x+dx,y+dy)[0]<=0)/16
++ p=record['parameters'];offsets=record['offsets_L'];alphas=[]
++ for key in ['K','H']:
++  ox,oy=offsets[key];sd=case_geometry(case,x-ox*L,y-oy*L)[0]
++  d=np.maximum(sd,0)/L
++  alphas.append(np.float64(p['opacity'+key])*np.exp(-.5*(d/np.float64(p['sigma'+key+'_L']))**2))
++ K,H=alphas;B=source[y0:y1,x0:x1];background=B*(1-K[...,None]);background+=H[...,None]*(1-background)
++ complete=material*coverage[...,None]+background*(1-coverage[...,None])
++ sd=case_geometry(case,x,y)[0]
++ return complete,coverage,sd
++
++def pair(target,complete,width):
++ ims=[Image.fromarray(np.rint(np.clip(a,0,1)*255).astype(np.uint8)) for a in [target,complete]]
++ h=round(ims[0].height*width/ims[0].width);out=Image.new('RGB',(2*width,h+64),'white');d=ImageDraw.Draw(out)
++ for i,(im,label) in enumerate(zip(ims,['Apple reference','Generated exterior / unchanged body'])):
++  d.text((i*width+12,24),label,fill='black');out.paste(im.resize((width,h),Image.Resampling.LANCZOS),(i*width,64))
++ return out
++
++def main():
++ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('inputs',type=Path);ap.add_argument('out',type=Path);ap.add_argument('--recipe',type=Path,required=True);ap.add_argument('--material-cache',type=Path);ap.add_argument('--expected',type=Path);a=ap.parse_args();cv2.setNumThreads(1)
++ a.out.mkdir(parents=True,exist_ok=False);record=json.loads(a.recipe.read_text());verification=[]
++ for name in ['regular-light','regular-dark']:
++  c=CASES[name];x0,y0,x1,y1=c['crop'];src=a.inputs/f'{name}-source.png';tgt=a.inputs/f'{name}-target.png';frozen=record['inputs'][name]
++  assert sha(src)==frozen['source_sha256'] and sha(tgt)==frozen['target_sha256']
++  source=np.asarray(Image.open(src).convert('RGB')).astype(np.float64)/255;target=(np.asarray(Image.open(tgt).convert('RGB')).astype(np.float32)/255)[y0:y1,x0:x1]
++  if a.material_cache:assert sha(a.material_cache/f'{name}-native-material.npy')==frozen['material_sha256']
++  material=np.load(a.material_cache/f'{name}-native-material.npy') if a.material_cache else render(source,c,record['body_recipes'][name],samples=4)
++  complete,coverage,sd=exterior(c,source,material,record)
++  native=scores(material,target,c);candidate=scores(complete.astype(np.float32),target,c);assert native==candidate and native==record['original_scores'][name]
++  if a.expected:assert np.array_equal(complete,np.load(a.expected/f'{name}-complete.npy'))
++  mse=lambda m:float(np.sqrt(np.mean(((complete-target)[m]*255)**2)))
++  guard=(sd>0)&(sd<.35*min(c['half']));full=sd>0
++  np.save(a.out/f'{name}-complete.npy',complete)
++  for suffix,width in [('',720),('-full',1080)]:pair(target,complete,width).save(a.out/f'match-{name}{suffix}.png')
++  verification.append(dict(theme=name,input_sha256={'source':sha(src),'target':sha(tgt)},body_scores=native,complete_scores=candidate,all_original_metrics_exact=True,supplemental_exterior_rmse=mse(guard),full_visible_exterior_rmse=mse(full),supplemental_pixels=int(guard.sum()),full_visible_pixels=int(full.sum()),complete_sha256=sha(a.out/f'{name}-complete.npy'),comparison_caption_height=64,comparison_side_width=720,full_comparison_side_width=1080,material_cache_used=bool(a.material_cache)))
++ (a.out/'replay-verification.json').write_text(json.dumps(dict(scope='Exterior-only reconstruction; Eoptical tie',observations=verification,source_adoption=False,estimated_source_limits=record['limitations']),indent=2)+'\n')
++if __name__=='__main__':main()
+--- /dev/null
++++ b/docs/liquid-glass/experiments/reconstruction/studies/light-dark/review-round/pass-01.json
+@@ -0,0 +1,244 @@
++{
++  "family": "empirical shared generated exterior shadow+possible glow; NOT physical identification",
++  "parameters": {
++    "opacityK": 0.028644737086080185,
++    "sigmaK_L": 0.7,
++    "opacityH": 0.0391166614246353,
++    "sigmaH_L": 0.11786013768786802
++  },
++  "offsets_L": {
++    "K": [
++      0,
++      0.06
++    ],
++    "H": [
++      0,
++      -0.4
++    ]
++  },
++  "formula": "B1=B*(1-alphaK); Bout=B1+alphaH*(1-B1); complete=M*coverage+Bout*(1-coverage)",
++  "alpha": "opacity*exp(-.5*(max(sd_of_translated_original_shape/L,0)/sigma_L)^2)",
++  "geometry": "original fixed rounded rectangle; L106.5; shared both themes",
++  "source_adopted": false,
++  "optical_renders": 0,
++  "source_fit": false,
++  "theme_specific_coefficients": false,
++  "source_proof": "unchanged material/map/kernel/source; original whole and ALL-scored native source proof transfers, estimated/unobserved input limitations retained",
++  "input_hashes": [
++    {
++      "theme": "regular-light",
++      "zero_bit_exact": true,
++      "shadow_never_increases": true,
++      "glow_never_decreases": true,
++      "source_sha256": "de11242e22d7d4bb6365a3c1c1dd7f717d69a9e7354c3098a3f9d870fb12216f",
++      "material_sha256": "f37efcfb9eaaacbd99d759dd7e8a22176884b462b57f7b7e7c51d1bc73403ba8",
++      "exterior_mask_sha256": "46e6c6968f940f19905482f1604837770cc309b4a4d5570ed7ef0bc8b07df39b"
++    },
++    {
++      "theme": "regular-dark",
++      "zero_bit_exact": true,
++      "shadow_never_increases": true,
++      "glow_never_decreases": true,
++      "source_sha256": "97f9f289b2ecac128a12a1eab86dc6036c03b31de2ed75a0e3e77129dbbd1812",
++      "material_sha256": "e337b6740a0eb0f1296dabf7875d4f3ce489e1c16033dfe2c19d829601b943a7",
++      "exterior_mask_sha256": "46e6c6968f940f19905482f1604837770cc309b4a4d5570ed7ef0bc8b07df39b"
++    }
++  ],
++  "inputs": {
++    "regular-light": {
++      "source_sha256": "de11242e22d7d4bb6365a3c1c1dd7f717d69a9e7354c3098a3f9d870fb12216f",
++      "target_sha256": "66c287fc5c153eb76883cd35ab83b6163f417a278d420f1c050017cb95786782",
++      "material_sha256": "f37efcfb9eaaacbd99d759dd7e8a22176884b462b57f7b7e7c51d1bc73403ba8"
++    },
++    "regular-dark": {
++      "source_sha256": "97f9f289b2ecac128a12a1eab86dc6036c03b31de2ed75a0e3e77129dbbd1812",
++      "target_sha256": "1694d6ff967746e1d01288188f499ff9a02861ddf76812310005de51d63f58cd",
++      "material_sha256": "e337b6740a0eb0f1296dabf7875d4f3ce489e1c16033dfe2c19d829601b943a7"
++    }
++  },
++  "body_recipes": {
++    "regular-light": {
++      "model": "field",
++      "shape": {
++        "half": [
++          2.300469483568075,
++          1
++        ],
++        "radius": 1
++      },
++      "parameters": {
++        "edge": 0.4,
++        "band": 0.55,
++        "core": 0.012,
++        "rim": 0.35,
++        "kind": 2
++      },
++      "source_sigma": 0,
++      "rim_width": 0.022669234406356136,
++      "thin_rim": 0.013145539906103286,
++      "blur_transition": null,
++      "material": [
++        0.1156499587516341,
++        0.1261637185355332,
++        0.13334502177712704,
++        0.8,
++        0.794600344793925,
++        0.7981231194453705,
++        -0.12262668869890934,
++        0.008872312135103845,
++        -0.10205949487434135,
++        0.1553097725649258,
++        -0.0048079662039135,
++        0.050245535751207264,
++        0.0029311944554996244,
++        0.005952658981868768,
++        -0.0023122407442389397,
++        -0.007721529993112877,
++        0.005138109899550356,
++        -0.0010083990646738413,
++        0.006287177168919927,
++        0.002010460292542334,
++        0.12088539333639757,
++        0.13135705249170498,
++        0.1386314007056985
++      ],
++      "reference_length": 106.5
++    },
++    "regular-dark": {
++      "model": "field",
++      "shape": {
++        "half": [
++          2.300469483568075,
++          1
++        ],
++        "radius": 1
++      },
++      "parameters": {
++        "edge": 0.4,
++        "band": 0.55,
++        "core": 0.012,
++        "rim": 0.35,
++        "kind": 2
++      },
++      "source_sigma": 0,
++      "rim_width": 0.0239938801729732,
++      "thin_rim": 0.013145539906103286,
++      "blur_transition": null,
++      "material": [
++        1,
++        1,
++        1,
++        0.08821031967684755,
++        0.08821031967684757,
++        0.08821031967684755,
++        -0.049358800392969804,
++        -0.0037720868046247427,
++        -0.05182075142033589,
++        0.07506426311893138,
++        0.0026696554852221753,
++        0.023761770264178243,
++        -0.000819106369100136,
++        0.0018362365351123856,
++        -0.0022273114889382207,
++        -0.0000628580464757196,
++        0.003252870065616739,
++        -0.001504945059070967,
++        0.0012406176633239622,
++        0.002061561419270751,
++        1,
++        1,
++        1
++      ],
++      "reference_length": 106.5
++    }
++  },
++  "round_pass": 1,
++  "accepted": true,
++  "scope": "RECONSTRUCTION exterior-only; NOT optical gain",
++  "primary_verification": "pass-01-verification.json",
++  "limitations": "Incident sources remain estimated: light polynomial paper and dark source0 underbody. No refraction/lighting identification; no source adoption. K sigma .7L bound, local far-upper light regressions and dark glow tail retained. Old copied-context removal gets no credit.",
++  "original_scores": {
++    "regular-light": {
++      "train": {
++        "pixels": 70319,
++        "rmse": 1.527794361114502,
++        "mae": 0.6471757888793945,
++        "opponent_chroma_rmse": 0.13416042923927307
++      },
++      "held_blocks": {
++        "pixels": 23260,
++        "rmse": 1.5441131591796875,
++        "mae": 0.6524240374565125,
++        "opponent_chroma_rmse": 0.10684777796268463
++      },
++      "all_glass": {
++        "pixels": 93579,
++        "rmse": 1.5318667888641357,
++        "mae": 0.6484802961349487,
++        "opponent_chroma_rmse": 0.12791737914085388
++      },
++      "rim": {
++        "pixels": 23426,
++        "rmse": 2.8937501907348633,
++        "mae": 1.256956696510315,
++        "opponent_chroma_rmse": 0.23943395912647247
++      },
++      "outer_rim": {
++        "pixels": 3780,
++        "rmse": 6.895771503448486,
++        "mae": 4.622230529785156,
++        "opponent_chroma_rmse": 0.5316447615623474
++      },
++      "interior": {
++        "pixels": 70153,
++        "rmse": 0.5779083371162415,
++        "mae": 0.4452933967113495,
++        "opponent_chroma_rmse": 0.05180029571056366
++      },
++      "ssim": 0.999122142791748,
++      "gradient_mae": 0.47616663575172424,
++      "selection_loss": 0.000174252328984052
++    },
++    "regular-dark": {
++      "train": {
++        "pixels": 70319,
++        "rmse": 0.8664501905441284,
++        "mae": 0.36083757877349854,
++        "opponent_chroma_rmse": 0
++      },
++      "held_blocks": {
++        "pixels": 23260,
++        "rmse": 0.8863470554351807,
++        "mae": 0.3623865246772766,
++        "opponent_chroma_rmse": 0
++      },
++      "all_glass": {
++        "pixels": 93579,
++        "rmse": 0.8714381456375122,
++        "mae": 0.36122259497642517,
++        "opponent_chroma_rmse": 0
++      },
++      "rim": {
++        "pixels": 23426,
++        "rmse": 1.663673996925354,
++        "mae": 0.684956967830658,
++        "opponent_chroma_rmse": 0
++      },
++      "outer_rim": {
++        "pixels": 3780,
++        "rmse": 3.9965388774871826,
++        "mae": 2.658055067062378,
++        "opponent_chroma_rmse": 0
++      },
++      "interior": {
++        "pixels": 70153,
++        "rmse": 0.29789721965789795,
++        "mae": 0.2531188428401947,
++        "opponent_chroma_rmse": 0
++      },
++      "ssim": 0.999718964099884,
++      "gradient_mae": 0.14477184414863586,
++      "selection_loss": 0.00005766628804208722
++    }
++  }
++}
+--- /dev/null
++++ b/docs/liquid-glass/experiments/reconstruction/studies/light-dark/review-round/pass-01-verification.json
+@@ -0,0 +1,135 @@
++{
++  "accepted": true,
++  "visual_review": true,
++  "round_pass": 1,
++  "scope": "Generated exterior reconstruction ONLY. Original material/ray/AA/source unchanged; optical E ties, no refractive improvement claimed.",
++  "observations": [
++    {
++      "theme": "regular-light",
++      "independent_composite_max_difference": 0.0,
++      "original_scored_pixels_bit_exact": {
++        "train": true,
++        "held": true,
++        "all_glass": true,
++        "rim": true,
++        "interior": true,
++        "outer_rim": true
++      },
++      "original_metrics": {
++        "train": {
++          "pixels": 70319,
++          "rmse": 1.527794361114502,
++          "mae": 0.6471757888793945,
++          "opponent_chroma_rmse": 0.13416042923927307
++        },
++        "held_blocks": {
++          "pixels": 23260,
++          "rmse": 1.5441131591796875,
++          "mae": 0.6524240374565125,
++          "opponent_chroma_rmse": 0.10684777796268463
++        },
++        "all_glass": {
++          "pixels": 93579,
++          "rmse": 1.5318667888641357,
++          "mae": 0.6484802961349487,
++          "opponent_chroma_rmse": 0.12791737914085388
++        },
++        "rim": {
++          "pixels": 23426,
++          "rmse": 2.8937501907348633,
++          "mae": 1.256956696510315,
++          "opponent_chroma_rmse": 0.23943395912647247
++        },
++        "outer_rim": {
++          "pixels": 3780,
++          "rmse": 6.895771503448486,
++          "mae": 4.622230529785156,
++          "opponent_chroma_rmse": 0.5316447615623474
++        },
++        "interior": {
++          "pixels": 70153,
++          "rmse": 0.5779083371162415,
++          "mae": 0.4452933967113495,
++          "opponent_chroma_rmse": 0.05180029571056366
++        },
++        "ssim": 0.999122142791748,
++        "gradient_mae": 0.47616663575172424,
++        "selection_loss": 0.000174252328984052
++      },
++      "supplemental_exterior": {
++        "before": 6.082353686183841,
++        "after": 3.8053860466303377,
++        "pixels": 49800
++      },
++      "full_visible_exterior_advisory": {
++        "before": 6.613296837033075,
++        "after": 4.615888110965729,
++        "pixels": 171369
++      }
++    },
++    {
++      "theme": "regular-dark",
++      "independent_composite_max_difference": 0.0,
++      "original_scored_pixels_bit_exact": {
++        "train": true,
++        "held": true,
++        "all_glass": true,
++        "rim": true,
++        "interior": true,
++        "outer_rim": true
++      },
++      "original_metrics": {
++        "train": {
++          "pixels": 70319,
++          "rmse": 0.8664501905441284,
++          "mae": 0.36083757877349854,
++          "opponent_chroma_rmse": 0.0
++        },
++        "held_blocks": {
++          "pixels": 23260,
++          "rmse": 0.8863470554351807,
++          "mae": 0.3623865246772766,
++          "opponent_chroma_rmse": 0.0
++        },
++        "all_glass": {
++          "pixels": 93579,
++          "rmse": 0.8714381456375122,
++          "mae": 0.36122259497642517,
++          "opponent_chroma_rmse": 0.0
++        },
++        "rim": {
++          "pixels": 23426,
++          "rmse": 1.663673996925354,
++          "mae": 0.684956967830658,
++          "opponent_chroma_rmse": 0.0
++        },
++        "outer_rim": {
++          "pixels": 3780,
++          "rmse": 3.9965388774871826,
++          "mae": 2.658055067062378,
++          "opponent_chroma_rmse": 0.0
++        },
++        "interior": {
++          "pixels": 70153,
++          "rmse": 0.29789721965789795,
++          "mae": 0.2531188428401947,
++          "opponent_chroma_rmse": 0.0
++        },
++        "ssim": 0.999718964099884,
++        "gradient_mae": 0.14477184414863586,
++        "selection_loss": 5.766628804208722e-05
++      },
++      "supplemental_exterior": {
++        "before": 6.75274842748077,
++        "after": 2.1205224922424657,
++        "pixels": 49800
++      },
++      "full_visible_exterior_advisory": {
++        "before": 5.9636542420187215,
++        "after": 4.04190506498867,
++        "pixels": 171369
++      }
++    }
++  ],
++  "limits": "Original independent theme materials and modeled/unobserved smooth/black inputs retained. Adding shared analytic underlay is model progress; removing target-derived display context gets no credit. Gaussian distance-falloff is empirical, not measured light transport. Black falloff width is at predeclared.7L upper bound; tail/source ambiguity and local far-band regressions remain."
++}
+--- /dev/null
++++ b/docs/liquid-glass/experiments/reconstruction/studies/light-dark/review-round/pass-01-float-order-audit.json
+@@ -0,0 +1,5 @@
++{
++  "initial_independent_reference": "float64 coordinates and combined sigma*L arithmetic",
++  "max_difference_regular_light": 4.628705752018902e-9,
++  "status": "Initial strict exact-composite assertion failed; retained. Native compositor uses original float32 coordinate/distance stage followed by float64 Gaussian parameters. Replaying that declared arithmetic order is required for exact arrays; no regression tolerance or scoring change."
++}

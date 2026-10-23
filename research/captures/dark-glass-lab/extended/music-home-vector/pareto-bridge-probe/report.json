@@ -1,0 +1,230 @@
+{
+  "scope": "Private joint feasibility search, not counted or adopted. Frozen inputs, masks and strict desired thresholds; actual metrics remain separate.",
+  "targets": [
+    {
+      "glass": {
+        "pixels": 15221,
+        "rmse": 5.888642311096191
+      },
+      "rim": {
+        "pixels": 8296,
+        "rmse": 7.319240093231201
+      },
+      "held": {
+        "pixels": 2797,
+        "rmse": 7.1194586753845215
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.469886064529419
+      },
+      "ssim": 0.9780262112617493,
+      "loss": 40.34465845033153
+    },
+    {
+      "glass": {
+        "pixels": 15289,
+        "rmse": 9.730605125427246
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 12.651615142822266
+      },
+      "held": {
+        "pixels": 2804,
+        "rmse": 13.018393516540527
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.964904308319092
+      },
+      "ssim": 0.9711480736732483,
+      "loss": 114.2982829915206
+    }
+  ],
+  "optimization_limits": [
+    {
+      "glass": {
+        "pixels": 15221,
+        "rmse": 5.888642311096191
+      },
+      "rim": {
+        "pixels": 8296,
+        "rmse": 7.319240093231201
+      },
+      "held": {
+        "pixels": 2797,
+        "rmse": 7.1194586753845215
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.469886064529419
+      },
+      "ssim": 0.9780262112617493,
+      "loss": 40.34465845033153
+    },
+    {
+      "glass": {
+        "pixels": 15289,
+        "rmse": 11.273186683654785
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 14.910605430603027
+      },
+      "held": {
+        "pixels": 2804,
+        "rmse": 13.843043327331543
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.471651077270508
+      },
+      "ssim": 0.9746275544166565,
+      "loss": 155.65716289531065
+    }
+  ],
+  "keys": [
+    "c0",
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "c5",
+    "c6",
+    "core_x",
+    "gamma",
+    "post_sigma",
+    "rim_width",
+    "thin_width",
+    "shape_dx",
+    "shape_dy",
+    "half_x_delta"
+  ],
+  "best": {
+    "parameters": {
+      "sigma": 6.644470218349408,
+      "amplitude": 1.2289680366372868,
+      "band": 0.43987339501423806,
+      "power": 2.351669476828825,
+      "tangent": 0,
+      "tangent_band": 0.4,
+      "core_x": 0.007376192694966,
+      "core_y": 0,
+      "post_sigma": 0.17924994244587938,
+      "coupling": 0,
+      "gamma": 1.0,
+      "rim_width": 0.035159899572437585,
+      "thin_width": 0.010668084005011331,
+      "spline": true,
+      "shape_dx": -0.004005277907672262,
+      "shape_dy": -0.004950768082564813,
+      "half_x_delta": 0.0017122124201763907,
+      "half_y_delta": 0,
+      "radius_delta": 0,
+      "c0": -2.4665775113707293,
+      "c1": 0.813544615462612,
+      "c2": 0.673371319553467,
+      "c3": 0.7538448903000997,
+      "c4": 0.683035683159479,
+      "c5": 0.035192412856533004,
+      "c6": -0.03767689337640524,
+      "shadow": {
+        "opacity": 0.06397813905839193,
+        "sigma": 0.2381474908903573,
+        "offset": [
+          0.049999833528026554,
+          -0.0999999719363685
+        ]
+      }
+    },
+    "material": [
+      0.6372950473521909,
+      0.6484392405294043,
+      0.6561126017724032,
+      0.4071723497031554,
+      0.4004998022735545,
+      0.38422824080589435,
+      -1.0066625274300915,
+      0.5020908693538046,
+      -0.014043905220554681,
+      0.34439570255787566,
+      0.07862509160763448,
+      0.25100292886347053,
+      0.0135382325343612,
+      -0.01171698790890426,
+      0.029855739102798207,
+      0.002565326393908127,
+      -0.001263877818093021,
+      -0.02788780331299538,
+      -0.03966830131416663,
+      0.008099770419209255,
+      0.6022729324881284,
+      0.6150571428458145,
+      0.6426237373192131
+    ],
+    "scores": [
+      {
+        "glass": {
+          "pixels": 15221,
+          "rmse": 5.877045631408691
+        },
+        "rim": {
+          "pixels": 8296,
+          "rmse": 7.31043004989624
+        },
+        "held": {
+          "pixels": 2797,
+          "rmse": 6.993953704833984
+        },
+        "interior": {
+          "pixels": 6925,
+          "rmse": 3.448857307434082
+        },
+        "ssim": 0.9784278869628906,
+        "loss": 40.21048200188977
+      },
+      {
+        "glass": {
+          "pixels": 15289,
+          "rmse": 11.269149780273438
+        },
+        "rim": {
+          "pixels": 8364,
+          "rmse": 14.90502643585205
+        },
+        "held": {
+          "pixels": 2804,
+          "rmse": 13.839666366577148
+        },
+        "interior": {
+          "pixels": 6925,
+          "rmse": 3.471651077270508
+        },
+        "ssim": 0.9746272563934326,
+        "loss": 155.54355965520034
+      }
+    ],
+    "violation": 0,
+    "permitted": false,
+    "source_support": [
+      {
+        "source_defined_fraction": 1.0,
+        "gaussian_3sigma_defined_fraction": 1.0,
+        "source_observed_fraction": 1.0,
+        "gaussian_3sigma_observed_fraction": 1.0,
+        "source_gaussian_radius_native_px": 21
+      },
+      {
+        "source_defined_fraction": 1.0,
+        "gaussian_3sigma_defined_fraction": 1.0,
+        "source_observed_fraction": 1.0,
+        "gaussian_3sigma_observed_fraction": 1.0,
+        "source_gaussian_radius_native_px": 21
+      }
+    ]
+  },
+  "evaluations": 1800,
+  "seconds": 517.7081549167633,
+  "solver_message": "Stopped at1800evaluations; retained native-feasible best only"
+}

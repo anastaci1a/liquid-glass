@@ -1,0 +1,302 @@
+{
+  "status": "CORRECTED_SKY_ONLY_SINGLE_INPUT_PROPOSAL_BEFORE_ANYFIT",
+  "selected_source_model": "affine",
+  "affine_coefficients_rgb": [
+    [
+      0.34382369704987137,
+      0.5655410332733909,
+      0.7526310157911913
+    ],
+    [
+      -0.012393433665540035,
+      -0.011457525120844601,
+      -0.00510697931386344
+    ],
+    [
+      0.08356574410387833,
+      0.08252330288469727,
+      0.06818329500258288
+    ]
+  ],
+  "affine_controls": [
+    {
+      "name": "held_clean_upper_lower",
+      "pixels": 8886,
+      "rgb_rmse": 0.9207512893530349,
+      "signed_rgb": [
+        0.038972601125062116,
+        -0.031292198852827545,
+        -0.10631430882344453
+      ],
+      "p95_absolute": 1.8019402178310997
+    },
+    {
+      "name": "independent_left_upper_UNCHANGED",
+      "pixels": 2737,
+      "rgb_rmse": 0.9686406314431006,
+      "signed_rgb": [
+        -0.51615381751896,
+        -0.9153504600156886,
+        -0.4271891627479298
+      ],
+      "p95_absolute": 1.682184945934645
+    },
+    {
+      "name": "independent_right_lower_UNCHANGED",
+      "pixels": 1701,
+      "rgb_rmse": 1.4432138620762491,
+      "signed_rgb": [
+        -0.6015133652888344,
+        -1.5715980804129868,
+        -1.1690405909845172
+      ],
+      "p95_absolute": 2.4981944643487193
+    }
+  ],
+  "affine_held_block_residuals": [
+    {
+      "rect": [
+        1140,
+        260,
+        1250,
+        320
+      ],
+      "pixels": 1680,
+      "mean_error_rgb": [
+        0.11861285202665986,
+        -0.2098246853395308,
+        -0.33487732468072956
+      ]
+    },
+    {
+      "rect": [
+        1140,
+        790,
+        1250,
+        850
+      ],
+      "pixels": 1206,
+      "mean_error_rgb": [
+        -0.09199521990642576,
+        0.6217476304347483,
+        0.15970401975019188
+      ]
+    },
+    {
+      "rect": [
+        1250,
+        260,
+        1360,
+        320
+      ],
+      "pixels": 1680,
+      "mean_error_rgb": [
+        -0.057722012446516334,
+        -0.14968042194153552,
+        -0.12998348615560118
+      ]
+    },
+    {
+      "rect": [
+        1250,
+        790,
+        1360,
+        850
+      ],
+      "pixels": 1725,
+      "mean_error_rgb": [
+        0.349712683386304,
+        -0.2338356518157616,
+        0.012654432762686952
+      ]
+    },
+    {
+      "rect": [
+        1360,
+        260,
+        1490,
+        320
+      ],
+      "pixels": 1728,
+      "mean_error_rgb": [
+        -0.05782286291132234,
+        0.42757985698145906,
+        -0.015913311963473124
+      ]
+    },
+    {
+      "rect": [
+        1360,
+        790,
+        1490,
+        850
+      ],
+      "pixels": 928,
+      "mean_error_rgb": [
+        -0.16423709998317648,
+        -0.8229004989359907,
+        -0.4277833354563287
+      ]
+    }
+  ],
+  "affine_max_abs_held_block_mean_native": 0.8229004989359907,
+  "quadratic": null,
+  "selected_controls": [
+    {
+      "name": "held_clean_upper_lower",
+      "pixels": 8886,
+      "rgb_rmse": 0.9207512893530349,
+      "signed_rgb": [
+        0.038972601125062116,
+        -0.031292198852827545,
+        -0.10631430882344453
+      ],
+      "p95_absolute": 1.8019402178310997
+    },
+    {
+      "name": "independent_left_upper_UNCHANGED",
+      "pixels": 2737,
+      "rgb_rmse": 0.9686406314431006,
+      "signed_rgb": [
+        -0.51615381751896,
+        -0.9153504600156886,
+        -0.4271891627479298
+      ],
+      "p95_absolute": 1.682184945934645
+    },
+    {
+      "name": "independent_right_lower_UNCHANGED",
+      "pixels": 1701,
+      "rgb_rmse": 1.4432138620762491,
+      "signed_rgb": [
+        -0.6015133652888344,
+        -1.5715980804129868,
+        -1.1690405909845172
+      ],
+      "p95_absolute": 2.4981944643487193
+    }
+  ],
+  "source_training_pixels": 26616,
+  "source_held_pixels": 8886,
+  "train_overlap_excluded": 0,
+  "held_overlap_excluded": 0,
+  "source_observed_hidden": 0,
+  "source_defined_domain": [
+    1140,
+    250,
+    1491,
+    851
+  ],
+  "source_center_rgb": [
+    0.34382369704987137,
+    0.5655410332733909,
+    0.7526310157911913
+  ],
+  "pose": {
+    "center": [
+      1317.485,
+      552.268
+    ],
+    "radius": 113.698,
+    "ridge_p10_p50_p90": [
+      112.5,
+      113.75,
+      114.5
+    ],
+    "residual_p95": 0.9717517131063225,
+    "not_physical_alpha_truth": true
+  },
+  "canonical_vector": {
+    "kind": "ONEgenuineoriginalfont solidoutline",
+    "font": "SFSymbolsFallback.otf",
+    "font_sha256": "bba5e09ec296a17e7dfc4644caa2e3b2b1524c5630a7dfd708140cc51628c7ca",
+    "glyph": "forward.end.tag.fill.color.large",
+    "default_weight": 400,
+    "ink_bounds": [
+      165,
+      215,
+      1307,
+      1228
+    ],
+    "exposed_white_bbox": [
+      1276,
+      516,
+      1364,
+      590
+    ],
+    "uniform_placement": [
+      1277.7882527147087,
+      515.5,
+      1361.2117472852913,
+      589.5
+    ],
+    "exact_target_weight": false,
+    "stage": "Unvalidatedstyle/proportions; proposalunscoreduntilprimaryfreeze; no targetmatte/artifacttrace"
+  },
+  "glyph_candidate_sha256": "4d3524ec61e4ddbcb5e15ac754ac3766d8456f6af7b5ec767371f9aa2cf0c50d",
+  "mask_pixel_counts": {
+    "glass": 31119,
+    "rim": 13909,
+    "held": 8377,
+    "interior": 17210,
+    "glyph": 8600,
+    "exterior": 33399,
+    "full_visible_exterior": 59242
+  },
+  "case_sha256": "fe383031c15817e8de228c0f84719586df185841fd20b07f7392be42eb526d81",
+  "optical_renders": 0,
+  "material_fits": 0,
+  "accepted_count": 0,
+  "paired": false,
+  "ray_support": "NOTmeasured/NOTclaimed: no opticalmap/kernel/nativebodyrenderer frozen. Onceprimaryacceptsinputsandconditionalopticalseed, checkWHOLE+ALLscored includingoutsidecorrectedoutline andkernel beforeANYmaterialfit.",
+  "source_limits": "Smoothestimatedsky cannotidentifyrefraction, dispersion orblur. No actualsourcepixelrecoveryunderthecircle, no originalshadow retained; sourcecorrectionnot opticalgain.",
+  "proposal": "Primarysource/pose/canonicalvector/nativeprotocolfreeze review FIRST; then separatelyauthorized sharedneutral boundedtransmission model/tone ifsupported, not23RGBMusiccast/no perimageRGBbias.",
+  "control_correction": "Original lowerband crossed VISIBLEblurredstalk atlower-right. Changedlowertrain/held x<=1420; independentleft/right controls, pose/glyph/target/native masks unchanged. Priorplane/quadresults preserved, source-onlyquality correctionCOUNT0.",
+  "prior_source_audit": "../input-proposal.json andcontrol-context-native.png preserved",
+  "source_domain_excluded_photo": [
+    1430,
+    785,
+    1491,
+    851
+  ],
+  "pose_glyph_target_native_masks_REUSED_unchanged": true,
+  "completed_at": "2026-10-21T22:57:45.470Z",
+  "elapsed_seconds": 573.537,
+  "mask_pixel_counts_draft_v1": {
+    "glass": 31306,
+    "rim": 13909,
+    "held": 8424,
+    "interior": 17397,
+    "glyph": 8600,
+    "exterior": 33399,
+    "full_visible_exterior": 59242
+  },
+  "preferred_mask_file": "canonical-public-protocol-masks-PROPOSED-v2.npz",
+  "protocol_reconciliation": {
+    "status": "PREFIT_PROTOCOL_RECONCILIATION_NO_SCORING_EPOCH_ACTIVE",
+    "preferred": "canonical-public-protocol-masks-PROPOSED-v2.npz",
+    "counts": {
+      "glass": 31119,
+      "rim": 13909,
+      "held": 8377,
+      "interior": 17210,
+      "glyph": 8600,
+      "exterior": 33399,
+      "full_visible_exterior": 59242
+    },
+    "draft_v1_counts": {
+      "glass": 31306,
+      "rim": 13909,
+      "held": 8424,
+      "interior": 17397,
+      "glyph": 8600,
+      "exterior": 33399,
+      "full_visible_exterior": 59242
+    },
+    "changed_glass_pixels": 187,
+    "reason": "Initialdraftglass exclusion used half-open glyphbox likeglyphcompositor. Public Study glass-scoring exclusion uses inclusive right/bottom edges. Canonicalv2 reusesexactcommittedpublicStudy maskdefinition; wholeboxglyphguard remainsrendererhalf-open. Keep v1 unchanged asdraft, selectv2BEFORE anyfit/acceptedepoch. No source/pose/glyph/materialinput changed; no opticalrender/rays/fit/coefficientinheritance. Primary choosesprotocolbeforebaselinefreeze.",
+    "code": "Committedf2bf snapshot constructor only; no Study.render or23RGBmaterial called",
+    "source_case_hash_unchanged": true
+  },
+  "scoring_epoch_active": false
+}

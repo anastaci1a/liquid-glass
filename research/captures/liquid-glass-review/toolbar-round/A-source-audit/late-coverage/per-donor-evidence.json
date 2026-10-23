@@ -1,0 +1,120 @@
+[
+  {
+    "requested_seconds": 724.5,
+    "patches": [
+      {
+        "center_A_xy": [
+          320,
+          320
+        ],
+        "zero_shift_gradient_NCC": 0.9470292329788208,
+        "phase_shift_xy": [
+          0.1374404727484908,
+          -0.07493736331983314
+        ],
+        "phase_response": 0.9764543291595247,
+        "raw_RGB_rmse_255": 20.921328055183128
+      },
+      {
+        "center_A_xy": [
+          448,
+          448
+        ],
+        "zero_shift_gradient_NCC": 0.8982943892478943,
+        "phase_shift_xy": [
+          -0.4588467916605268,
+          0.04669021240333748
+        ],
+        "phase_response": 1.0730438230352268,
+        "raw_RGB_rmse_255": 11.100100881673704
+      }
+    ],
+    "patch_count": 2,
+    "gradient_NCC_median": 0.9226618111133575,
+    "fraction_NCC_atleast_.85": 1.0,
+    "phase_responsive_count": 2,
+    "responsive_phase_displacement_px": {
+      "n": 2,
+      "rms": 0.3444022692449086,
+      "median": 0.3088792347349092,
+      "p95": 0.44598247518750267,
+      "max": 0.4612161685711242
+    },
+    "image_patch_check_passed": false,
+    "conditional_geometry_union_eligible": false,
+    "heldout_paper_RGB_difference": {
+      "pixels": 6770,
+      "rmse_255": 1.400903555930321,
+      "signed_mean_RGB_255": [
+        0.8082717872968981,
+        0.807533234859675,
+        0.8097488921713442
+      ],
+      "channel_rmse_255": [
+        1.4014130872314257,
+        1.4045189780927658,
+        1.3967677395216394
+      ]
+    },
+    "heldout_dark_ink_RGB_difference": {
+      "pixels": 241,
+      "rmse_255": 27.432325884944838,
+      "signed_mean_RGB_255": [
+        24.435684647302903,
+        24.57676348547718,
+        24.1701244813278
+      ],
+      "channel_rmse_255": [
+        27.457775958385866,
+        27.582768690447036,
+        27.25543837772245
+      ]
+    },
+    "content_coverage": {
+      "glass": {
+        "rays": 3020132,
+        "center_fraction": 0.5898308418307544,
+        "source_kernel_fraction": 0.4596332213293988
+      },
+      "rim": {
+        "rays": 979764,
+        "center_fraction": 0.6144255147157887,
+        "source_kernel_fraction": 0.43801670606390924
+      },
+      "d": {
+        "rays": 189440,
+        "center_fraction": 1.0,
+        "source_kernel_fraction": 0.8297719594594595
+      },
+      "underside": {
+        "rays": 591914,
+        "center_fraction": 0.1262294860402018,
+        "source_kernel_fraction": 0.06089904952408627
+      }
+    },
+    "far_RGB_context_coverage": {
+      "glass": {
+        "rays": 3020132,
+        "center_fraction": 0.0,
+        "source_kernel_fraction": 0.0
+      },
+      "rim": {
+        "rays": 979764,
+        "center_fraction": 0.0,
+        "source_kernel_fraction": 0.0
+      },
+      "d": {
+        "rays": 189440,
+        "center_fraction": 0.0,
+        "source_kernel_fraction": 0.0
+      },
+      "underside": {
+        "rays": 591914,
+        "center_fraction": 0.0,
+        "source_kernel_fraction": 0.0
+      }
+    },
+    "new_dark_cores_in_old_estimated_query_domain": 0,
+    "limits": "No patch search/refit or correction applied to M. Phase/NCC are heldout diagnostics. RGB ink residual mixes registration/codec/photometry; paper is flat/far-control only, not under-glass RGB truth."
+  }
+]

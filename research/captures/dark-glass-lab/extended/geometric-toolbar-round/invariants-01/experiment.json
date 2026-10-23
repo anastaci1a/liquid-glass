@@ -1,0 +1,38 @@
+{
+  "stage": "IMPLEMENTATION_AND_GEOMETRY_ONLY_INVARIANTS",
+  "started_at": "2026-10-22T03:31:37.369Z",
+  "deadline_at": "2026-10-22T03:46:37.369Z",
+  "authority": "liquid-glass-review/geometric-toolbar-round/next-authority.md",
+  "interface_agreement": "Agree with restricted flat-front orthographic primary Snell interface and same-function height/gradient/sections. rho=sqrt(T) is a convex level coordinate, not a homogeneous mathematical norm or Euclidean distance; homogeneity is unnecessary for the concavity proof. Explicit rim crease is not a unique surface normal. Transmitted-primary completeness is not full radiance completeness.",
+  "defect": "Toolbar cap/body continuity and shallow crown with progressive d-stroke stretch; no image fidelity claim in this task.",
+  "hypothesis": "Compose lead-owned decreasing concave bevel_profile with accepted convex crowned rho; share all Snell/path calculations with circle.",
+  "allowed": {
+    "toolbar_eta": [
+      0.02,
+      0.04
+    ],
+    "core": 0,
+    "power": 3,
+    "edge": 0,
+    "index": 1.5,
+    "background_distance": 2,
+    "camera": "orthographic",
+    "footprint_softness": 0.1,
+    "normalized_half": [
+      2.3058823529411763,
+      1
+    ]
+  },
+  "frozen": "Original source/target/masks/registration/glyphs; no image sampling, blur, material or source adoption. Proposal B inactive.",
+  "budget": {
+    "wall_seconds": 900,
+    "geometry_rays_max": 50000,
+    "actual_toolbar_parameter_sets": 2,
+    "image_renders": 0,
+    "fits": 0,
+    "source_registrations": 0
+  },
+  "intermediate_checkpoint": "After analytic-gradient and exact true-circle equality tests, before remaining invariants.",
+  "stop": "Budget or first invalid certificate/invariant; preserve failure without widening, and send readiness before packaging.",
+  "scope_limits": "Coordinate transforms and rejection fixtures are invariants, not additional toolbar candidate parameter sets. Held-out Mail is tone/placement only, not optical transfer evidence."
+}

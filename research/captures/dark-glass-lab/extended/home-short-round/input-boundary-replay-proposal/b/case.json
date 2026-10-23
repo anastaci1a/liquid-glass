@@ -1,0 +1,97 @@
+{
+  "id": "music-home-vector-b",
+  "category": "Detached selected navigation control with tinted foreground",
+  "radial": true,
+  "center": [
+    408,
+    673
+  ],
+  "half": [
+    89,
+    89
+  ],
+  "radius": 89,
+  "crop": [
+    290,
+    555,
+    525,
+    795
+  ],
+  "foreground": [
+    [
+      362,
+      625,
+      455,
+      720
+    ]
+  ],
+  "foreground_layers": [
+    {
+      "mode": "transmission",
+      "box": [
+        362,
+        625,
+        455,
+        720
+      ],
+      "vector_asset": "home.svg",
+      "vector_box": [
+        364.696765408755,
+        627.071705103172,
+        451.76616106500825,
+        716.7602002958461
+      ],
+      "vector_sha256": "59ae42b6317ff70d4e459b5ba183c50795ccdd130f41ab1f8d21fe8657838e40"
+    }
+  ],
+  "reference": {
+    "video": "music",
+    "seconds": 2,
+    "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4"
+  },
+  "foreground_method": "Solid clean-traced SVG coverage, independently rasterized at each output resolution. Color/transmission applied separately. Fixed original glass mask is unchanged.",
+  "background": "Masked temporal translation mosaic with frozen observed-pixel confidence.",
+  "input_names": {
+    "source.png": "source-2.0.png",
+    "target.png": "target-2.0.png",
+    "known.png": "known-2.0.png"
+  },
+  "source_sha256": {
+    "source.png": "3d5bbe9809f082ebbfd34f0a589e1173b7f2d1f7d8d34a4132329db4c70555ed",
+    "target.png": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d",
+    "known.png": "a2f32becc8c9f3b819da2f3a7c67eff1606bdce63ed1f5704a4883ad08dfd8e3",
+    "observed.png": "3ea34a68ee0ab03d82e310c4659742557d66d78bbcb38bcb6c8c5d2655ae8a54"
+  },
+  "foreground_provenance": {
+    "kind": "clean symmetric vector trace",
+    "source": "Official Apple WWDC25 Music video",
+    "original_vector": false,
+    "collection": "Private localica-feedback/liquid-glass-icons/clean/home.svg"
+  },
+  "foreground_response": [
+    [
+      0.981852780258496,
+      0.5368761771654439,
+      1.026092263616352
+    ],
+    [
+      0.18322434212306798,
+      0.9999999999999986,
+      0.978065523818989
+    ],
+    [
+      0.4117126664496811,
+      0.9902138500957417,
+      1.0499884013005976
+    ]
+  ],
+  "continuation": {
+    "baseline": "music-home",
+    "additional_single_pass_minimum": 10,
+    "paired_pass_minimum": 20
+  },
+  "target_observation_mask": "observed.png",
+  "allow_estimated_background": true,
+  "source_observation_mask": "observed.png",
+  "background_estimate": "Nearest defined incident RGB extends the finite recovered mosaic beyond its observation domain. Original observed pixels remain bit-exact. This boundary assumption is not recovered Apple imagery, not an optical calibration, and may not match offscreen content."
+}

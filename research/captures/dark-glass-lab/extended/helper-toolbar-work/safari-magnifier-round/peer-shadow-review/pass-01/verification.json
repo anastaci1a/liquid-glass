@@ -1,0 +1,204 @@
+{
+  "status": "INDEPENDENT_REPLAY_SOURCE_VISUAL_REVIEW_PASSES_FOR_LEAD_ACCEPTANCE",
+  "reviewer": "localica-agent",
+  "committed_compositor": "main6d3b453a vector_revision.py SHA25637dfaade301cbfc45474d7d3b901f20053a22c479590e3931e3cc867e8986a7b EXACT toprivatef2bf snapshot",
+  "observations": {
+    "plus": {
+      "before": {
+        "near": 5.808764934539795,
+        "full": 5.356508255004883,
+        "glyph": 29.32256507873535
+      },
+      "after": {
+        "near": 5.4101243019104,
+        "full": 5.163377285003662,
+        "glyph": 29.32256507873535
+      },
+      "baseline_complete_exact": true,
+      "candidate_complete_exact": true,
+      "material_exact": true,
+      "alpha_exact": true,
+      "only_opacity_minus_005": true,
+      "source_case_vector_recipe_unchanged": true,
+      "all_glass_complete_pixels_exact": true,
+      "all_glyph_complete_pixels_exact": true,
+      "native_optical_scores_exact": {
+        "glass": {
+          "pixels": 11725,
+          "rmse": 23.7161865234375
+        },
+        "rim": {
+          "pixels": 5767,
+          "rmse": 24.227746963500977
+        },
+        "held": {
+          "pixels": 4483,
+          "rmse": 22.358642578125
+        },
+        "interior": {
+          "pixels": 5958,
+          "rmse": 23.210290908813477
+        },
+        "ssim": 0.9832056164741516,
+        "loss": 569.8153691283642,
+        "E": 23.870805791350325
+      },
+      "advisory": [
+        {
+          "name": "upper_near",
+          "pixels": 7120,
+          "before": 7.13389253616333,
+          "after": 6.6213603019714355,
+          "worsens": false
+        },
+        {
+          "name": "lower_near",
+          "pixels": 7114,
+          "before": 4.071437835693359,
+          "after": 3.831993579864502,
+          "worsens": false
+        },
+        {
+          "name": "left_near",
+          "pixels": 7114,
+          "before": 6.486580848693848,
+          "after": 6.015788555145264,
+          "worsens": false
+        },
+        {
+          "name": "right_near",
+          "pixels": 7120,
+          "before": 5.041308403015137,
+          "after": 4.728107452392578,
+          "worsens": false
+        },
+        {
+          "name": "far",
+          "pixels": 17964,
+          "before": 4.96901273727417,
+          "after": 4.9591546058654785,
+          "worsens": false
+        }
+      ],
+      "source_proof": "Opacity-only generated exterior: original fixed map/kernel/geometry/AA/source/vector/mask finite support proofs transfer; source observed0, not hiddenRGB truth. No new opticalrender/rays needed.",
+      "local_advisory": {
+        "exterior_pixels_MSE_worse": 12853,
+        "exterior_pixels_MSE_better": 19480,
+        "max_pointwise_MSE_worsening": 31.58601951599121,
+        "parent_boundary_rect": [
+          1495,
+          795,
+          1520,
+          815
+        ],
+        "parent_boundary_RMSE_before": 23.33643341064453,
+        "parent_boundary_RMSE_after": 23.336605072021484,
+        "advisory_only": true
+      }
+    },
+    "search_advisory": {
+      "before": {
+        "near": 7.5061187744140625,
+        "full": 6.9344072341918945,
+        "glyph": 27.144643783569336
+      },
+      "after": {
+        "near": 6.962193489074707,
+        "full": 6.671898365020752,
+        "glyph": 27.144643783569336
+      },
+      "baseline_complete_exact": true,
+      "candidate_complete_exact": true,
+      "material_exact": true,
+      "alpha_exact": true,
+      "only_opacity_minus_005": true,
+      "source_case_vector_recipe_unchanged": true,
+      "all_glass_complete_pixels_exact": true,
+      "all_glyph_complete_pixels_exact": true,
+      "native_optical_scores_exact": {
+        "glass": {
+          "pixels": 9922,
+          "rmse": 7.27180814743042
+        },
+        "rim": {
+          "pixels": 5555,
+          "rmse": 8.591703414916992
+        },
+        "held": {
+          "pixels": 3789,
+          "rmse": 6.072876453399658
+        },
+        "interior": {
+          "pixels": 4367,
+          "rmse": 5.122986793518066
+        },
+        "ssim": 0.9863481521606445,
+        "loss": 59.1606458840937,
+        "E": 7.691595795678143
+      },
+      "advisory": [
+        {
+          "name": "upper_near",
+          "pixels": 6889,
+          "before": 9.324490547180176,
+          "after": 8.592307090759277,
+          "worsens": false
+        },
+        {
+          "name": "lower_near",
+          "pixels": 6847,
+          "before": 5.054677963256836,
+          "after": 4.791764736175537,
+          "worsens": false
+        },
+        {
+          "name": "left_near",
+          "pixels": 6882,
+          "before": 8.020103454589844,
+          "after": 7.428878307342529,
+          "worsens": false
+        },
+        {
+          "name": "right_near",
+          "pixels": 6854,
+          "before": 6.951903820037842,
+          "after": 6.459768772125244,
+          "worsens": false
+        },
+        {
+          "name": "far",
+          "pixels": 16873,
+          "before": 6.431570529937744,
+          "after": 6.425897121429443,
+          "worsens": false
+        }
+      ],
+      "source_proof": "Opacity-only generated exterior: original fixed map/kernel/geometry/AA/source/vector/mask finite support proofs transfer; source observed0, not hiddenRGB truth. No new opticalrender/rays needed.",
+      "local_advisory": {
+        "exterior_pixels_MSE_worse": 12470,
+        "exterior_pixels_MSE_better": 18285,
+        "max_pointwise_MSE_worsening": 22.51173973083496,
+        "parent_boundary_rect": [
+          405,
+          795,
+          430,
+          815
+        ],
+        "parent_boundary_RMSE_before": 20.802783966064453,
+        "parent_boundary_RMSE_after": 20.804237365722656,
+        "advisory_only": true
+      }
+    }
+  },
+  "scope": "LeadPLUS source-limited SINGLE generated-exterior reconstruction only; Aextraadvisory, not activepair oragentApass. OpticalE ties, severePLUSbody/cyan mismatch remains.",
+  "new_material_renders": 0,
+  "optical_fits": 0,
+  "agent_accepted_passes": 0,
+  "visual_review": {
+    "plus_triptych": true,
+    "search_triptych": true,
+    "full_body_retained": true,
+    "new_artifacts_seen": false,
+    "limitations": "Minor shadow-lightening only. LargePLUSbodybrightness/cyan mismatch, imperfectglyphweight/rasterrim andmissingparentboundary persist unchanged. Sourceestimatedobserved0; no pairedopticsvalidation/no physicalshadowinference."
+  }
+}

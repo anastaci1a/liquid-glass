@@ -1,0 +1,533 @@
+{
+  "method": "Test an isotropic component of the existing source-derived reflected field.\n\nR(d)*[A(n)+rho*(1-A(n))], rho in[0,1], interpolates directional and\nisotropic angular reflection using the SAME radial profile/environment.\nC=(1-weight)*transmission+weight*environment; no target-colored outlines.\nShared scalar on both references. Existing geometry/material/sources fixed.\nThis is an empirical environment proxy, not measured Fresnel reflection.\nExact quadratic native residuals constrain proposals before rendering checks.\n",
+  "baseline": "64b970e switch revision5",
+  "quadratics": [
+    {
+      "glass": {
+        "a": 73.47416481526828,
+        "b": 6.3945083990376395,
+        "c": 125.9158935546875,
+        "limit": 125.9158935546875
+      },
+      "rim": {
+        "a": 250.72096862061355,
+        "b": 21.82042277976605,
+        "c": 373.8348388671875,
+        "limit": 373.8348388671875
+      },
+      "shadow": {
+        "a": 8.283561651291944,
+        "b": -7.763558130375902,
+        "c": 42.699195861816406,
+        "limit": 42.699195861816406
+      },
+      "crop_upper-left": {
+        "a": 121.33918252250339,
+        "b": -53.08120271056044,
+        "c": 133.64292907714844,
+        "limit": 146.08904125190438
+      },
+      "crop_lower-left": {
+        "a": 27.99910348240387,
+        "b": -53.67912530751289,
+        "c": 198.56298828125,
+        "limit": 207.30403282967657
+      },
+      "crop_right-rim": {
+        "a": 229.77873865254188,
+        "b": 52.772291446588966,
+        "c": 190.3861083984375,
+        "limit": 200.13513431880708
+      },
+      "crop_center": {
+        "a": 0.0,
+        "b": 0.0,
+        "c": 3.371800661087036,
+        "limit": 3.371843788921786
+      },
+      "loss": {
+        "a": 126.64820595687186,
+        "b": 11.022282713256162,
+        "c": 200.2915771484375,
+        "limit": 200.2915771484375
+      }
+    },
+    {
+      "glass": {
+        "a": 34.64036570582957,
+        "b": -40.080162132504746,
+        "c": 186.0882110595703,
+        "limit": 186.0882110595703
+      },
+      "rim": {
+        "a": 118.73052390075944,
+        "b": -137.37553143726848,
+        "c": 361.3088073730469,
+        "limit": 361.3088073730469
+      },
+      "shadow": {
+        "a": 5.70935555743778,
+        "b": -9.815973221009044,
+        "c": 19.917068481445312,
+        "limit": 19.917068481445312
+      },
+      "crop_upper-left": {
+        "a": 45.651217471255286,
+        "b": -79.76829742911393,
+        "c": 154.32080078125,
+        "limit": 171.9145016703322
+      },
+      "crop_lower-left": {
+        "a": 51.058186068464195,
+        "b": -83.61029594332096,
+        "c": 140.55833435058594,
+        "limit": 140.56238384138308
+      },
+      "crop_right-rim": {
+        "a": 35.94669826064855,
+        "b": -41.493775494650976,
+        "c": 140.446533203125,
+        "limit": 140.50484105247875
+      },
+      "crop_center": {
+        "a": 0.0,
+        "b": 0.0,
+        "c": 33.119327545166016,
+        "limit": 33.11933895409135
+      },
+      "loss": {
+        "a": 59.86741316430853,
+        "b": -69.26877292393385,
+        "c": 238.6543899536133,
+        "limit": 238.6543899536133
+      }
+    }
+  ],
+  "feasible_upper": 0.0,
+  "limiting_bounds": [
+    {
+      "observation": "A",
+      "region": "glass",
+      "upper": 0.0
+    },
+    {
+      "observation": "A",
+      "region": "rim",
+      "upper": 0.0
+    },
+    {
+      "observation": "A",
+      "region": "crop_right-rim",
+      "upper": 0.12099435438566385
+    },
+    {
+      "observation": "A",
+      "region": "crop_upper-left",
+      "upper": 0.6065657063832413
+    },
+    {
+      "observation": "A",
+      "region": "shadow",
+      "upper": 0.9372246452907199
+    }
+  ],
+  "best_rho": 0.0,
+  "trials": [
+    {
+      "rho": 0.0,
+      "ratios": [
+        0.9999999728000898,
+        0.9999999894472924
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.22122507935214
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.334808132448142
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.757026211176436
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.811028903500881
+          },
+          "loss": 200.29156625261183,
+          "shadow": {
+            "rmse": 6.534462234755288
+          },
+          "crop_upper-left": {
+            "rmse": 11.560403538461074
+          },
+          "crop_lower-left": {
+            "rmse": 14.091238427264916
+          },
+          "crop_right-rim": {
+            "rmse": 13.798047409736629
+          },
+          "crop_center": {
+            "rmse": 1.8362462762153793
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.641415635415933
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.00812374924593
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.706782598272305
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.672736944262974
+          },
+          "loss": 238.65438491671335,
+          "shadow": {
+            "rmse": 4.4628542737437185
+          },
+          "crop_upper-left": {
+            "rmse": 12.422592355831771
+          },
+          "crop_lower-left": {
+            "rmse": 11.85573017093163
+          },
+          "crop_right-rim": {
+            "rmse": 11.851013630669666
+          },
+          "crop_center": {
+            "rmse": 5.754939494507454
+          }
+        }
+      ],
+      "allowed": true,
+      "numeric_pass": false
+    },
+    {
+      "rho": 0.1,
+      "ratios": [
+        1.0058957479111637,
+        0.9866528250681483
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.282290758026274
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.45569472960222
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.815611800076441
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.811028903500881
+          },
+          "loss": 202.66027654749305,
+          "shadow": {
+            "rmse": 6.48117863512325
+          },
+          "crop_upper-left": {
+            "rmse": 11.381924332553456
+          },
+          "crop_lower-left": {
+            "rmse": 13.909531944497326
+          },
+          "crop_right-rim": {
+            "rmse": 14.069865981605242
+          },
+          "crop_center": {
+            "rmse": 1.8362462762153793
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.506539452460746
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 18.67507752482327
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.604212254305047
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.672736944262974
+          },
+          "loss": 232.32618175406282,
+          "shadow": {
+            "rmse": 4.358045949676363
+          },
+          "crop_upper-left": {
+            "rmse": 12.11612492757481
+          },
+          "crop_lower-left": {
+            "rmse": 11.519891065171395
+          },
+          "crop_right-rim": {
+            "rmse": 11.690021962734638
+          },
+          "crop_center": {
+            "rmse": 5.754939494507454
+          }
+        }
+      ],
+      "allowed": false,
+      "numeric_pass": false
+    },
+    {
+      "rho": 0.25,
+      "ratios": [
+        1.0262931793786394,
+        0.9711418796725692
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.493765902869399
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.873599864495564
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.040478271260667
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.811028903500881
+          },
+          "loss": 210.96264971319766,
+          "shadow": {
+            "rmse": 6.424642384343584
+          },
+          "crop_upper-left": {
+            "rmse": 11.311778293726851
+          },
+          "crop_lower-left": {
+            "rmse": 13.670887427194616
+          },
+          "crop_right-rim": {
+            "rmse": 14.76280312367173
+          },
+          "crop_center": {
+            "rmse": 1.8362462762153793
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.350400850120932
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 18.286211836837776
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.490803010918995
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.672736944262974
+          },
+          "loss": 225.07890500374856,
+          "shadow": {
+            "rmse": 4.221363485785301
+          },
+          "crop_upper-left": {
+            "rmse": 11.714603175008383
+          },
+          "crop_lower-left": {
+            "rmse": 11.083632100182639
+          },
+          "crop_right-rim": {
+            "rmse": 11.503032156624727
+          },
+          "crop_center": {
+            "rmse": 5.754939494507454
+          }
+        }
+      ],
+      "allowed": false,
+      "numeric_pass": false
+    },
+    {
+      "rho": 0.5,
+      "ratios": [
+        1.0888504635905456,
+        0.9579091160133794
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 12.144203867703865
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 21.152429144359523
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.757036314395561
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.811028903500881
+          },
+          "loss": 237.46475891839248,
+          "shadow": {
+            "rmse": 6.394396612846004
+          },
+          "crop_upper-left": {
+            "rmse": 11.723358058854533
+          },
+          "crop_lower-left": {
+            "rmse": 13.368740165600077
+          },
+          "crop_right-rim": {
+            "rmse": 16.55949703785751
+          },
+          "crop_center": {
+            "rmse": 1.8362462762153793
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.217724119260387
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 17.952816873804505
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.41235932416754
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.672736944262974
+          },
+          "loss": 218.98685173632236,
+          "shadow": {
+            "rmse": 4.054185557451707
+          },
+          "crop_upper-left": {
+            "rmse": 11.218264413026196
+          },
+          "crop_lower-left": {
+            "rmse": 10.560195852209254
+          },
+          "crop_right-rim": {
+            "rmse": 11.343998889322402
+          },
+          "crop_center": {
+            "rmse": 5.754939494507454
+          }
+        }
+      ],
+      "allowed": false,
+      "numeric_pass": false
+    },
+    {
+      "rho": 1.0,
+      "ratios": [
+        1.29898048825057,
+        0.9801054944755653
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 14.345193107339467
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 25.423929598038622
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 16.22741057118307
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.811028903500881
+          },
+          "loss": 337.9620545626091,
+          "shadow": {
+            "rmse": 6.574131137493061
+          },
+          "crop_upper-left": {
+            "rmse": 14.209183989286906
+          },
+          "crop_lower-left": {
+            "rmse": 13.148497197696473
+          },
+          "crop_right-rim": {
+            "rmse": 21.747117999830568
+          },
+          "crop_center": {
+            "rmse": 1.8362462762153793
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.440551480519693
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 18.511179349043434
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.673398860452977
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.672736944262974
+          },
+          "loss": 229.2530251380857,
+          "shadow": {
+            "rmse": 3.9762357297507314
+          },
+          "crop_upper-left": {
+            "rmse": 10.963745745756679
+          },
+          "crop_lower-left": {
+            "rmse": 10.39260448695748
+          },
+          "crop_right-rim": {
+            "rmse": 11.61462210568651
+          },
+          "crop_center": {
+            "rmse": 5.754939494507454
+          }
+        }
+      ],
+      "allowed": false,
+      "numeric_pass": false
+    }
+  ],
+  "accepted": false
+}

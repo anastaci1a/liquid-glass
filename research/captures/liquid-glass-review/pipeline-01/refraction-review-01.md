@@ -1,0 +1,9 @@
+# First two refraction families: interim review
+
+R1 actual core/sag family:25 declared patch settings (baseline reused) /60,825,600 new patch rays /ONE full candidate. Feature-selected core+.02/sag1.03 improves signed gradient analysis .07517613->.07210754 but worsens original glass13.08076->13.25709, rim14.65082->14.96636, outer-rim26.43441->28.95082. Reject; G05 remains incumbent. Its thinner returned strip is not a demonstrated visible fix.
+
+R2 actual curvature redistribution:15 declared settings (baseline reused) /35,481,600 new patch rays /ONE full candidate. Best beta4/edge-slope.98 improves feature loss to.07209347 but worsens glass to13.43132/rim15.27575. Reject; desired edge reversal remains, but correspondence and rim fit do not improve consistently. All source FIRST patch and full candidate address checks passed; no source/mask/ordinary-blur/color/outline change.
+
+These are two bounded hypotheses, not40 successful passes. Both candidate render/comparison artifacts and all rejected settings retained. Clock wall for deterministic grids17.33s/11.04s, beneath their35/25min caps; preparation/review/API integration also consumes the overall120-minute block. Do not confuse fast NumPy throughput with native Android performance.
+
+One remaining full candidate is permitted in ORIGINAL R1 budget before07:37:25UTC: grid member dc+.01/amp.94 has feature loss-.00299790 (~4%) and sum local RGB reduction, unlike its feature-best member. It is the second and final R1 full candidate, not a new parameter search or bound extension. Original local upper-right RGB worsens+.31780 in the patch; bottom-left-.27278/top-left-.29063. Verify original native metrics and visually inspect the tradeoff; never conceal the local regression. No additional R1 grid evaluation or derivative will repeat.

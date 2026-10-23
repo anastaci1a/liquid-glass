@@ -1,0 +1,11 @@
+# Existing generated shadow — negative, no glow fallback
+
+Actual cap08:52:54–09:07:54UTC. One existing common Gaussian SDF operator, fixed historical sigma.20714593L/offset[-.05,.09402144]L and three predeclared opacities.10758153/.05379076/.02689538. Existing extended_shadow.shadow only; no optimization/refit/main, no old optical field/Study.render or target context. All original source/geometry/AA/coverage/blur/commoncolor/SVG/artwork/masks stay fixed;0new rays/source queries. Pixel-center opacity modulates ONLY cached clear-premultiplied underlay, a declared empirical reconstruction approximation, not traced area-light/Apple illumination.
+
+Zero-shadow body+foreground composition is native PIXEL EXACT. All fully-covered original glass pixels remain exact for every shadow trial. Original glass also includes16partially covered lower-left cap pixels (x323–369,y427–492); ALL are retained and scored. Shadow changes their clear contribution, so it is false to call all optical pixels unchanged. CSV lists preserve coverage/target/before/after/error for every one.
+
+All three trials fail B glass/rim/held/E; A guards pass. At full prior opacity original exterior improves A19.25429→8.72973/B21.74403→6.72759, but B E19.81851→19.82030. Half/quarter fail similarly. No epsilon waiver, tie pass, mask change, per-background opacity or extra glow. Active shadow remains0.
+
+Known-outside advisory error improves A17.8401→9.8710/B19.2569→8.7595 at fullopacity; B left exterior worsens9.9787→10.0777 while other broad cohorts improve. Original exterior mask/scores remain authoritative and unchanged. The local tradeoff reinforces the missing correct cap/rim illumination, not a license to drop those16 pixels or fit a compensating painted highlight. Native clipping0.
+
+Files: result.json/ledger.json/zero-control.json, shared-unit-opacity-field.npy, a/b-comparison.png, a/b-left-cap-crop.png (2x native only), advisory-exterior-before-after.json and a/b-16partial-glass.csv. Historical public pass03 remains the best accepted full model; no new reconstruction or optical acceptance is counted. Outline crease erratum remains separate and unpatched; native positive-height/source proofs still transfer to these unchanged fields.

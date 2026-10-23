@@ -1,0 +1,49 @@
+{
+  "counts": {
+    "whole": 64655,
+    "scored": 31220,
+    "postfootprint": 69908,
+    "scored_outside_outline": 0,
+    "whole_bad": 0,
+    "scored_bad": 0,
+    "postfootprint_bad": 0
+  },
+  "minimum_defined_confidence": {
+    "whole": 1.0,
+    "scored": 1.0,
+    "postfootprint": 1.0
+  },
+  "source_bounds": [
+    1346.607421875,
+    640.6630249023438,
+    1475.893798828125,
+    769.9464721679688
+  ],
+  "source_kernel": {
+    "sigma": 0.14639838479412015,
+    "radius": 1,
+    "centerline_nonzero": [
+      7.384370198648682e-11,
+      1.0,
+      7.384370198648682e-11
+    ],
+    "dtype": "float32matchesRGBnativefield",
+    "operator": "ActualOpenCV GaussianBlur ksize0/default border; nonzero finiteimpulse support, notinfiniteGaussian theorem"
+  },
+  "post_kernel": {
+    "sigma": 0.46847483134118445,
+    "radius": 2,
+    "centerline_nonzero": [
+      7.589737651869655e-05,
+      0.07054955512285233,
+      0.6885203719139099,
+      0.07054955512285233,
+      7.589737651869655e-05
+    ],
+    "dtype": "float32matchesRGBnativefield",
+    "operator": "ActualOpenCV GaussianBlur ksize0/default border; nonzero finiteimpulse support, notinfiniteGaussian theorem"
+  },
+  "observed_confidence": 0.0,
+  "passed": true,
+  "limits": "Actualnative2x2 WHOLE+ALLscored(notintersection)+all postkernelneighbor subrays, actualfiniteGaussian/bilinear lookup. Modeledsource definition only, hiddenobserved0; notcontinuous/infinitekernel/photographicopticsproof. Outside-map and source-border semantics preservedexact."
+}

@@ -1,0 +1,155 @@
+{
+  "status": "CONDITIONAL_MAIL_SOURCE_POSE_NEUTRAL_BASELINE_AND_FOLDER_TRACE_INPUT_PEER_PASS",
+  "source_controls": {
+    "train": {
+      "pixels": 93153,
+      "inside_nominal_body": 0,
+      "minimum_nominal_body_clearance_px": 62.83202690646594
+    },
+    "held": {
+      "pixels": 31030,
+      "inside_nominal_body": 0,
+      "minimum_nominal_body_clearance_px": 62.83202690646594
+    }
+  },
+  "held_RGB_RMSE": 2.1321256929701766,
+  "independent_controls": {
+    "upper": {
+      "pixels": 5071,
+      "train_overlap": 0,
+      "source_held_overlap": 0,
+      "rmse": 1.9045102161887664
+    },
+    "lower": {
+      "pixels": 3861,
+      "train_overlap": 0,
+      "source_held_overlap": 0,
+      "rmse": 2.235396228985105
+    }
+  },
+  "sourcePNGreconstructed_exact": true,
+  "source_hidden_observed0": true,
+  "geometry": {
+    "landmarks": 580,
+    "train": 435,
+    "held": 145,
+    "capsule_vs_free_crown_improvement_px": 0.040639424544162805,
+    "softness_prior": 0.1,
+    "not_identified": true,
+    "limit": "Normalprojection imagegradient landmarks only, nottruephysicalalpha/Euclidean-distanceglobalproof"
+  },
+  "vectors": [
+    {
+      "name": "trash",
+      "blob_verified": true,
+      "literalpath_exact": true,
+      "SVG_sha256": "cf6556346a59a56a864328e7aa969c817e32f550632ed6879162c1835ee4c4d2",
+      "no_JS_executed": true,
+      "exact_Apple_UIweight_unproven": true
+    },
+    {
+      "name": "folder",
+      "blob_verified": true,
+      "literalpath_exact": true,
+      "SVG_sha256": "a9bb9ac97d780d2286064e02a6f9f1ed92947d964f8a22d1eec9f06111f2bbca",
+      "no_JS_executed": true,
+      "exact_Apple_UIweight_unproven": true
+    },
+    {
+      "name": "reply",
+      "blob_verified": true,
+      "literalpath_exact": true,
+      "SVG_sha256": "6e3055e58c78245d1dfe4975a20e511f149b483541b0e8ffae67d08ab1561477",
+      "no_JS_executed": true,
+      "exact_Apple_UIweight_unproven": true
+    }
+  ],
+  "folder_trace": {
+    "SVG_sha256": "48faf392bc6f9069aae15de0136fb11a23a7e1e6cb4989eb993cb89ee8407664",
+    "layer": {
+      "mode": "mask",
+      "box": [
+        605,
+        659,
+        698,
+        739
+      ],
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "threshold": 0.3,
+      "vector_asset": "folder-clean-trace.svg",
+      "vector_box": [
+        611.5,
+        665.5,
+        690.5,
+        731.5
+      ],
+      "vector_sha256": "48faf392bc6f9069aae15de0136fb11a23a7e1e6cb4989eb993cb89ee8407664",
+      "opacity": 1.0
+    },
+    "material_unchanged_exact": true,
+    "complete_candidate_exact": true,
+    "outside_folder_exact": true,
+    "full_box_RMSE_before": 39.357540130615234,
+    "full_box_RMSE_after": 33.84400939941406,
+    "kind": "Reusablecleanapproximation, NOToriginalfont; uniform6walls/rail,8/2corners/tab, no bakedtargetmatte/residual",
+    "count": 0
+  },
+  "baseline_complete_exact": true,
+  "baseline_alpha_exact": true,
+  "all_native_optical_scores_exact": {
+    "glass": {
+      "pixels": 66774,
+      "rmse": 25.297927856445312
+    },
+    "rim": {
+      "pixels": 20736,
+      "rmse": 28.344911575317383
+    },
+    "held": {
+      "pixels": 16634,
+      "rmse": 25.089012145996094
+    },
+    "interior": {
+      "pixels": 46038,
+      "rmse": 23.798446655273438
+    },
+    "ssim": 0.9828240275382996,
+    "loss": 689.0198113447066
+  },
+  "material_neutral_tau1": true,
+  "source_native_proof_REUSED": {
+    "counts": {
+      "whole": 373019,
+      "scored": 267096,
+      "whole_bad": 0,
+      "scored_bad": 0
+    },
+    "bounds": [
+      375.74261474609375,
+      641.6386108398438,
+      930.1027221679688,
+      758.5113525390625
+    ],
+    "ordinary_blur": 0,
+    "observed_hidden_fraction": 0,
+    "limits": "Modeled plane definedness only, no recovered hidden RGB/physical solid/optical validation"
+  },
+  "new_optical_material_renders": 0,
+  "new_ray_or_source_fit": 0,
+  "accepted_passes": 0,
+  "limits": "Sourcefieldestimatedobserved0/parentboundary+shadowconfound; retainlower-held4.755levels andindependentlower2.235. No grayrefraction/blur/crownidentification orphysicalAppleproof. FolderINPUT correctionrequiresnewexplicitcasefingerprintbeforetaufit; originalbaseline/sourcecaseuntouched.",
+  "visual_review": {
+    "triptych_720_per_side": true,
+    "full_pill_preserved": true,
+    "folder_rail_improvement_visible": true,
+    "new_artifacts_seen": false,
+    "remaining": "Missingwhitehighlights/bodybrightness,residualiconweight/color/sourceparentboundarymismatch retained. No optical/refraction/crown/materialidentificationclaim."
+  },
+  "original_case_hash": "9c566421c2e731261f8328d93e606bb6b635cdc7c07709edb921df2fb5cc1a69",
+  "native_E_unchanged": 26.249186870162408,
+  "inputs_snapshotted_immutable": true
+}

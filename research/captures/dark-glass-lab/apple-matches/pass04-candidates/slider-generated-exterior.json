@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "contact_opacity": 0.07195139944026338,
+    "contact_spread_px": 2.9999999999999996,
+    "contact_sigma_px": 7.999999999999999,
+    "halo_strength": 1.8721062569740017,
+    "halo_sigma_px": 38.135559293178424
+  },
+  "source_derived_chroma": [
+    -0.017444107508659358,
+    0.00252398493289948,
+    0.02636375668048859
+  ],
+  "scores": {
+    "training_rmse": 6.135277793618522,
+    "withheld_rmse": 7.162555503140756,
+    "outer_8px_rmse": 12.952182895108937
+  },
+  "unmodified_background_scores": {
+    "training_rmse": 8.024866104125977,
+    "withheld_rmse": 8.831151008605957,
+    "outer_8px_rmse": 21.177200317382812
+  },
+  "formulas": {
+    "contact": "alpha_c*exp(-0.5*(max(d-spread,0)/sigma_c)^2)",
+    "halo": "strength*exp(-0.5*(max(d,0)/sigma_h)^2)*source_chroma",
+    "output": "clip(background*(1-contact)+halo,0,1)"
+  },
+  "limits": "Exterior-only approximation in encoded RGB; hue comes from mean source under lens minus neighboring page, projected off neutral luma. No recovered Apple lighting rig or physical scattering claim. Interior is composed separately; no reference exterior pixels need be retained in this crop."
+}

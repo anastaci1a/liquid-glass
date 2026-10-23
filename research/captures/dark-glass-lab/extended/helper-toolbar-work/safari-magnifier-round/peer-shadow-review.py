@@ -1,0 +1,23 @@
+"""Independent peer review: committed clean compositor + cached M ONLY."""
+from pathlib import Path
+import os,sys,json,copy,hashlib
+import cv2,numpy as np
+from PIL import Image,ImageDraw
+R=Path('/evidence/extended/helper-toolbar-work/safari-magnifier-round');P=Path('/evidence/extended/safari-plus-shadow-round/pass-01');D=R/'peer-shadow-review/pass-01';D.mkdir(parents=True);os.umask(0o002);cv2.setNumThreads(1);sys.path.insert(0,str(R/'code'))
+from extended_fit import Study
+from vector_revision import composite
+proposal=json.loads((P/'proposal.json').read_text());out={};checks_all=[]
+for name,folder,arrfile,recfile in [('plus',Path('/evidence/extended/safari-plus-source-round/b-proposed'),Path('/evidence/extended/safari-plus-source-round/unfitted-native-arrays.npz'),Path('/evidence/extended/safari-plus-source-round/transfer-recipe.json')),('search_advisory',R/'foreground-control/proposed-a',R/'foreground-control/proposed-baseline-native-arrays.npz',R/'foreground-control/proposed-baseline-recipe.json')]:
+ s=Study(folder);arr=np.load(arrfile);cand=np.load(P/(name+'-native.npz'));oldrec=json.loads(recfile.read_text());newrec=json.loads((P/(name+'-recipe.json')).read_text());oldp=oldrec['parameters'];p=newrec['parameters'];reverted=copy.deepcopy(p);reverted['shadow']['opacity']=oldp['shadow']['opacity'];assert reverted==oldp;assert p['shadow']['opacity']==oldp['shadow']['opacity']-.005;assert newrec['material']==oldrec['material'];assert newrec['case_sha256']==oldrec['case_sha256'] and newrec['vector_sha256']==oldrec['vector_sha256'];assert np.array_equal(arr['material'],cand['material']) and np.array_equal(arr['alpha'],cand['alpha'])
+ old=composite(s,oldp,arr['material']);C=composite(s,p,arr['material']);assert np.array_equal(old,arr['complete']) and np.array_equal(C,cand['complete']);near=(s.sd>0)&(s.sd<=.35);full=s.sd>0;glyph=arr['glyph_mask'];rmse=lambda v,m:float(np.sqrt(np.mean(((v-s.target_crop)[m]*255)**2)))
+ def measure(v):return {n:rmse(v,m) for n,m in [('near',near),('full',full),('glyph',glyph)]}
+ before=measure(old);after=measure(C);claimed=proposal['observations'][name];assert before==claimed['before'] and after==claimed['after'];scores=s.scores(arr['material']);scores['E']=float(np.sqrt(scores['loss']));assert scores==claimed['native_optical_scores_unchanged'];glass_exact=np.array_equal(old[s.valid],C[s.valid]);glyph_exact=np.array_equal(old[glyph],C[glyph]);assert glass_exact and glyph_exact;assert after['near']<before['near'] and after['full']<before['full']
+ # Advisory quadrants and farther band ONLY; no changed guard/scoring mask.
+ x0,y0,x1,y1=s.crop;yy,xx=np.mgrid[y0:y1,x0:x1];ann=[]
+ for n,m in [('upper_near',near&(yy<s.case['center'][1])),('lower_near',near&(yy>=s.case['center'][1])),('left_near',near&(xx<s.case['center'][0])),('right_near',near&(xx>=s.case['center'][0])),('far',s.sd>.35)]:ann.append(dict(name=n,pixels=int(m.sum()),before=rmse(old,m),after=rmse(C,m),worsens=rmse(C,m)>rmse(old,m)))
+ np.savez_compressed(D/(name+'-replayed-composite.npz'),complete=C,material=arr['material'],alpha=arr['alpha']);result=dict(before=before,after=after,baseline_complete_exact=True,candidate_complete_exact=True,material_exact=True,alpha_exact=True,only_opacity_minus_005=True,source_case_vector_recipe_unchanged=True,all_glass_complete_pixels_exact=bool(glass_exact),all_glyph_complete_pixels_exact=bool(glyph_exact),native_optical_scores_exact=scores,advisory=ann,source_proof='Opacity-only generated exterior: original fixed map/kernel/geometry/AA/source/vector/mask finite support proofs transfer; source observed0, not hiddenRGB truth. No new opticalrender/rays needed.');out[name]=result
+ w=2*(x1-x0);h=2*(y1-y0);sheet=Image.new('RGB',(3*w+4,h+64),'#222');draw=ImageDraw.Draw(sheet)
+ for i,(im,title) in enumerate([(s.target_crop,'Reference'),(old,'Baseline generated shadow'),(C,'Opacity -.005 proposal')]):sheet.paste(Image.fromarray(np.uint8(np.rint(np.clip(im,0,1)*255))).resize((w,h),Image.Resampling.LANCZOS),(i*(w+2),64));draw.text((i*(w+2)+6,20),title,fill='white')
+ sheet.save(D/(name+'-triptych.png'))
+result=dict(status='NUMERICAL_SOURCE_REPLAY_VERIFIED_PENDING_VISUAL',reviewer='localica-agent',committed_compositor='main6d3b453a vector_revision.py SHA25637dfaade301cbfc45474d7d3b901f20053a22c479590e3931e3cc867e8986a7b EXACT toprivatef2bf snapshot',observations=out,scope='LeadPLUS source-limited SINGLE generated-exterior reconstruction only; Aextraadvisory, not activepair oragentApass. OpticalE ties, severePLUSbody/cyan mismatch remains.',new_material_renders=0,optical_fits=0,agent_accepted_passes=0)
+(D/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True)

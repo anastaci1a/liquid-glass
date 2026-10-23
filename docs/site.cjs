@@ -9,7 +9,7 @@ const {prepareStudies}=require('./guide-studies.cjs');
   const dest=path.join(out,'liquid-glass');fs.mkdirSync(dest,{recursive:true});
   const oldManifest=fs.existsSync(path.join(out,'build.json'))?JSON.parse(fs.readFileSync(path.join(out,'build.json'),'utf8')):{files:{}};
   const source=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
-  const repo='https://github.com/anastaci1a/localica/blob/main/';
+  const repo='https://github.com/anastaci1a/localica/blob/main/'; // App-document compatibility links remain on the original project.
   const escape=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
   const slug=s=>s.replace(/<[^>]*>/g,'').toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu,'').replace(/\s/g,'-');
   const pages=['README.md','sources.md','specification.md','controls.md','optics.md','model.md','reconstruction.md','recreation-models.md','geometric-optics.md'];
@@ -33,7 +33,7 @@ const {prepareStudies}=require('./guide-studies.cjs');
     if(name==='reconstruction.md')parsed=await prepareStudies(parsed,root,write);
     const content=prepareMedia(parsed,root,{comparisons:name==='reconstruction.md'});
     write('liquid-glass/'+(name==='README.md'?'index.html':name.replace('.md','.html')),
-      `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Localica · ${name==='README.md'?'Liquid Glass':name.replace('.md','')}</title><link rel="stylesheet" href="lab.css"><link rel="stylesheet" href="guide.css"></head><body class="guide"><script src="guide-media.js" defer></script><script src="guide-comparison.js" defer></script><nav><a href="index.html">Field guide</a><a href="lab.html">Live lab</a><a href="optics.html">Optical evidence</a></nav><main>${content}</main><footer>Source <a href="https://github.com/anastaci1a/localica/tree/${source}/docs/liquid-glass">${source.slice(0,8)}</a> · Original studies; no claim of iOS parity.</footer></body></html>`);
+      `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Liquid Glass · ${name==='README.md'?'Liquid Glass':name.replace('.md','')}</title><link rel="stylesheet" href="lab.css"><link rel="stylesheet" href="guide.css"></head><body class="guide"><script src="guide-media.js" defer></script><script src="guide-comparison.js" defer></script><nav><a href="index.html">Field guide</a><a href="lab.html">Live lab</a><a href="optics.html">Optical evidence</a></nav><main>${content}</main><footer>Source <a href="https://github.com/anastaci1a/liquid-glass/tree/${source}/docs">${source.slice(0,8)}</a> · Original studies; no claim of iOS parity.</footer></body></html>`);
   }
   for(const name of ['lab.html','lab.js','software.js','model.js','lab.css','guide.css','guide-media.js','guide-comparison.js','comparison-panels.json'])write('liquid-glass/'+name,fs.readFileSync(path.join(root,name)));
   for(const name of fs.readdirSync(path.join(root,'assets')))if(/\.(png|gif|svg|mp4)$/.test(name))write('liquid-glass/assets/'+name,fs.readFileSync(path.join(root,'assets',name)));
@@ -45,7 +45,7 @@ const {prepareStudies}=require('./guide-studies.cjs');
   write('liquid-glass/experiments/context-sources.json',fs.readFileSync(path.join(root,'experiments/context-sources.json')));
   write('liquid-glass/experiments/model-fixtures.json',fs.readFileSync(path.join(root,'experiments/model-fixtures.json')));
   write('.nojekyll','');
-  write('index.html','<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=liquid-glass/lab.html"><title>Localica Liquid Glass lab</title><a href="liquid-glass/lab.html">Open the Liquid Glass lab</a></html>');
+  write('index.html','<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=liquid-glass/lab.html"><title>Liquid Glass lab</title><a href="liquid-glass/lab.html">Open the Liquid Glass lab</a></html>');
   // Remove only previously managed files. Preserve unrelated Pages contents.
   for(const name of Object.keys(oldManifest.files||{}))if(!(name in manifest.files)){
     const file=path.resolve(out,name);

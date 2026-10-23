@@ -1,0 +1,70 @@
+{
+  "status": "PASS_GEOMETRY_CHECKPOINT",
+  "rays": 5023,
+  "RGB_samples": 0,
+  "images": 0,
+  "checks": {
+    "same_height_gradient": {
+      "pass": true,
+      "details": {
+        "FD_steps": [
+          1e-05,
+          5e-06
+        ],
+        "errors": [
+          2.1007711403786544e-09,
+          5.235172018114298e-10
+        ]
+      }
+    },
+    "frozen_rounded_outline": {
+      "pass": true,
+      "details": {
+        "different_grid_classifications": 0,
+        "analytic": "rho=distance to frozen core rectangle / radius. rho<=1 is exactly the same rounded rectangle; no fitted silhouette change."
+      }
+    },
+    "concavity_global_certificate": {
+      "pass": true,
+      "details": {
+        "proof": "Distance to convex core box is convex; rho^power convex for power>=3; h1 concave. h2 longitudinal quadratic concave. Shared harmonic_cap increasing concave, nonnegative weights summing<=1. Height bound at center; gradient bound max(power*depth/radius,2*crown_depth/majorhalf).",
+        "global_slope_bound": 0.4480437045882295,
+        "maximum_height": 0.10909090909090907,
+        "regularity": "Actual height/gradient C1; second derivatives can jump at the frozen capsule/core-box joins. No false global C2 claim or independent normals."
+      }
+    },
+    "regular_primary_paths": {
+      "pass": true,
+      "details": {
+        "regular_count": 3791,
+        "boundary_unresolved": 174,
+        "min_discriminant": 0.6775549722491743
+      }
+    },
+    "meaningful_circle_limit": {
+      "pass": true,
+      "details": {
+        "max_difference": 1.1102230246251565e-16,
+        "scope": "Same harmonic law and physical depths, true circle plus isotropic quadratic. Longitudinal pill profile is intentionally not falsely called rotationally symmetric."
+      }
+    }
+  },
+  "scene": {
+    "center": [
+      961.2086505368733,
+      413.1445363169052
+    ],
+    "original_reference_L": 88.5,
+    "surface_half": [
+      7.225022904390323,
+      1.012503164339156
+    ],
+    "surface_radius": 1.0043663048754772,
+    "depth": 0.15,
+    "crown_depth": 0.4,
+    "index": 1.5,
+    "D": 2
+  },
+  "central_hxx": -0.0011399050293899328,
+  "finished_unix": 1792652746.8995466
+}

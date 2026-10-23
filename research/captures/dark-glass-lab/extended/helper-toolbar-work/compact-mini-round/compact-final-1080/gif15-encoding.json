@@ -1,0 +1,96 @@
+{
+  "commands": [
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "2",
+      "-filter_threads",
+      "1",
+      "-y",
+      "-i",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/motion.mp4",
+      "-vf",
+      "fps=15,palettegen=max_colors=256:stats_mode=full",
+      "-frames:v",
+      "1",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/palette-15fps-256.png"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "2",
+      "-filter_complex_threads",
+      "1",
+      "-y",
+      "-i",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/motion.mp4",
+      "-i",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/palette-15fps-256.png",
+      "-lavfi",
+      "fps=15[x];[x][1:v]paletteuse=dither=none:diff_mode=rectangle",
+      "-loop",
+      "0",
+      "-gifflags",
+      "+transdiff",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/motion-15fps-256.gif"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "2",
+      "-y",
+      "-i",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/motion-15fps-256.gif",
+      "-c:v",
+      "copy",
+      "-loop",
+      "0",
+      "-final_delay",
+      "7",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/motion-6s.gif"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "2",
+      "-y",
+      "-i",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/b/final/motion.gif",
+      "-c:v",
+      "copy",
+      "-loop",
+      "0",
+      "-final_delay",
+      "7",
+      "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/b/final/motion-6s.gif"
+    ]
+  ],
+  "exports": [
+    {
+      "reference": "a",
+      "preferred_gif": "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/motion-6s.gif",
+      "source_gif": "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/a/final/motion-15fps-256.gif",
+      "bytes": 4171016,
+      "palette_colors": 256,
+      "dither": "none",
+      "note": "Only encoding/timing, no optical render. Original helper GIF unchanged."
+    },
+    {
+      "reference": "b",
+      "preferred_gif": "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/b/final/motion-6s.gif",
+      "source_gif": "/evidence/extended/helper-toolbar-work/compact-mini-round/compact-final-1080/b/final/motion.gif",
+      "bytes": 7693147,
+      "palette_colors": 256,
+      "dither": "sierra2_4a",
+      "note": "Only encoding/timing, no optical render. Original helper GIF unchanged."
+    }
+  ]
+}

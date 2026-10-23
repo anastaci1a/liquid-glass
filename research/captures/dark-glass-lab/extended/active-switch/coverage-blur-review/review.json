@@ -1,0 +1,60 @@
+{
+  "observations": [
+    {
+      "observation": "a",
+      "scores": {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 12.114312171936035
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 20.951139450073242
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 13.353886604309082
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 5.062946319580078
+        },
+        "ssim": 0.9616051316261292,
+        "loss": 234.4146648563069,
+        "shadow": {
+          "rmse": 7.022716045379639
+        }
+      },
+      "ratio": 1.0259037351481144
+    },
+    {
+      "observation": "b",
+      "scores": {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 14.17850399017334
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 19.5802059173584
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 14.433191299438477
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 11.220975875854492
+        },
+        "ssim": 0.9315934181213379,
+        "loss": 255.73632190939998,
+        "shadow": {
+          "rmse": 4.476111888885498
+        }
+      },
+      "ratio": 0.9807826988949114
+    }
+  ],
+  "model": "Test normalized covered-color blur instead of filtering nonexistent exterior glass.\n\nF = G_sigma(alpha*C)/max(G_sigma(alpha),epsilon), with sharp alpha retained\nfor the final composite. Reflection stays after blur. No new fit parameter.\n",
+  "accepted": false
+}

@@ -1,0 +1,188 @@
+{
+  "parameters": {
+    "sigma": 4.339320119358678,
+    "amplitude": 0.7839488678764915,
+    "band": 0.41709079115813363,
+    "power": 2.793583791362869,
+    "tangent": 0.0,
+    "tangent_band": 0.9999992768775775,
+    "core_x": -0.3878350176400587,
+    "core_y": -0.27725760977841146,
+    "post_sigma": 2.163537921629955,
+    "coupling": 0.0,
+    "gamma": 1.5497479697761347,
+    "rim_width": 0.04878846511595129,
+    "thin_width": 0.011095946046562786,
+    "spline": true,
+    "shape_dx": 0.001167965417146694,
+    "shape_dy": 0.004755085677013721,
+    "half_x_delta": -0.0025334994195777482,
+    "half_y_delta": 0.011224253113150662,
+    "radius_delta": 0.012043263143639911,
+    "c0": 0.5825744554180238,
+    "c1": 0.9357855379848372,
+    "c2": -0.7313250023304061,
+    "c3": 0.6119443772170838,
+    "c4": 0.44738001208281564,
+    "c5": 0.08689122301998892,
+    "c6": -0.02671418074585203,
+    "shadow": {
+      "opacity": 0.06759092205628288,
+      "sigma": 0.08711570318601433,
+      "offset": [
+        0.0028197038845270807,
+        0.0999999991388537
+      ]
+    },
+    "blur_transition": 0.0,
+    "tangent_exponent": 3.000273143553201,
+    "cap_normal_gain": -0.6743904455132721,
+    "cap_tangent_fade": 0.9997199664179274,
+    "material_chroma_sensitivity": 10.0,
+    "material_chroma_floor": 0.0,
+    "grazing_reflection": {
+      "strength": 1.0,
+      "width": 0.03895748531996116,
+      "angular_power": 1.5519447192573868,
+      "source_sigma": 0.007,
+      "direction": [
+        0,
+        1
+      ]
+    },
+    "directional_transmission": {
+      "strength": 0.3849814426989986,
+      "length": 0.08,
+      "angle": 1.3571487177940904,
+      "fade_center": -0.395271178284122,
+      "fade_width": 0.3577136899555915
+    },
+    "crown_softness": 0.08,
+    "deformation_response": {
+      "reference_depth_coordinate": 0.06461554767350706,
+      "coupling": 1.0,
+      "support": "paraxial-core"
+    }
+  },
+  "material": [
+    0.5712047568853427,
+    0.8200329825544259,
+    0.6438301512294202,
+    0.3481360084763358,
+    0.34890336476052025,
+    0.34037632796273726,
+    -0.6545370831597284,
+    -0.033799889912977416,
+    -1.8691927497844842,
+    -0.10839726736869078,
+    0.008407267097342769,
+    0.597804889977873,
+    0.061925178165588984,
+    0.03997939590694431,
+    -0.0027464229056555203,
+    -0.008900726844234414,
+    0.04190770633808308,
+    -0.04892869904880554,
+    -0.11261605830791394,
+    0.000315950826333684,
+    0.7486030235876473,
+    0.7219225032359249,
+    0.7529008705643548
+  ],
+  "scores": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.742294311523438
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 20.234466552734375
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 13.073878288269043
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 5.0313897132873535
+      },
+      "ssim": 0.9619085192680359,
+      "loss": 219.3471239910228
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.669450759887695
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 20.898557662963867
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 13.614236831665039
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 9.160297393798828
+      },
+      "ssim": 0.9348497986793518,
+      "loss": 261.8226325715637
+    }
+  ],
+  "ratios": [
+    0.9923850074960587,
+    0.9923849778077809
+  ],
+  "numeric_pass": true,
+  "accepted": false,
+  "history": [
+    {
+      "iteration": 1,
+      "losses": [
+        219.36066423893527,
+        261.7947807053788
+      ],
+      "maximum_relative_squared_error": 0.9848887963108621,
+      "solver_success": true
+    },
+    {
+      "iteration": 2,
+      "losses": [
+        219.34758313519416,
+        261.82509986368603
+      ],
+      "maximum_relative_squared_error": 0.9848372247292977,
+      "solver_success": true
+    },
+    {
+      "iteration": 3,
+      "losses": [
+        219.34713839394826,
+        261.8227610943868
+      ],
+      "maximum_relative_squared_error": 0.984828427608368,
+      "solver_success": true
+    },
+    {
+      "iteration": 4,
+      "losses": [
+        219.3471239910228,
+        261.8226325715637
+      ],
+      "maximum_relative_squared_error": 0.9848280031029526,
+      "solver_success": true
+    },
+    {
+      "iteration": 5,
+      "losses": [
+        219.3471239910228,
+        261.8226325715637
+      ],
+      "maximum_relative_squared_error": 0.9848280031029526,
+      "solver_success": true
+    }
+  ],
+  "method": "Shared23-term material with minimax normalized error and separate whole-glass constraints; deformation-aware displacement using fixed-volume height/radius approximation, no per-reference coefficients or altered inputs"
+}

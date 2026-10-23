@@ -1,0 +1,282 @@
+{
+  "parameters": {
+    "sigma": 6.769470218349409,
+    "amplitude": 1.2289680366372868,
+    "band": 0.43987339501423806,
+    "power": 2.351669476828825,
+    "tangent": 0,
+    "tangent_band": 0.4,
+    "core_x": 0.009966916126055573,
+    "core_y": 0,
+    "post_sigma": 0.18099456713643639,
+    "coupling": 0,
+    "gamma": 1,
+    "rim_width": 0.030561777593608914,
+    "thin_width": 0.012742241466702995,
+    "spline": true,
+    "shape_dx": -0.00587506468335941,
+    "shape_dy": -0.007886399981648917,
+    "half_x_delta": 0.004142310840469692,
+    "half_y_delta": 0,
+    "radius_delta": 0,
+    "c0": -2.5,
+    "c1": 0.9682518163041112,
+    "c2": 0.6757163045320522,
+    "c3": 0.7989154249496436,
+    "c4": 0.7050863084650834,
+    "c5": 0.026319148293094945,
+    "c6": -0.03254983876128028,
+    "shadow": {
+      "opacity": 0.06397813905839193,
+      "sigma": 0.2381474908903573,
+      "offset": [
+        0.049999833528026554,
+        -0.0999999719363685
+      ]
+    },
+    "material_context_inset": 0.08,
+    "ambient_rim_response": [
+      -7.745393160298575,
+      -0.7282705296949193,
+      0.42730961759319347
+    ],
+    "ambient_rim_luma_range": [
+      0.4128481986763243,
+      0.43633079011162007
+    ],
+    "grazing_reflection": {
+      "strength": 0.5,
+      "width": 0.00675,
+      "angular_power": 0.0,
+      "source_sigma": 0.0,
+      "direction": [
+        0.0,
+        1.0
+      ],
+      "environment_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "material": [
+    0.5981542568550385,
+    0.6125690398065319,
+    0.6158969646280311,
+    0.4010396848034286,
+    0.394572282172151,
+    0.3869446209098596,
+    -2.0141754867269777,
+    0.6302075755929527,
+    0.3070583223320848,
+    0.3893084100039711,
+    0.1026738402172382,
+    0.2875552623136832,
+    0.06978999685070547,
+    -0.012586033099832597,
+    -0.0036397207115102413,
+    0.0021961745562627,
+    0.0006034130286824433,
+    -0.024129091262675255,
+    -0.023636176012478017,
+    0.02475164341779444,
+    0.6096678056795105,
+    0.6210476546148547,
+    0.6325501818901632
+  ],
+  "cases": [
+    {
+      "id": "music-home-vector-a",
+      "category": "Detached selected navigation control with tinted foreground",
+      "radial": true,
+      "center": [
+        408,
+        673
+      ],
+      "half": [
+        89,
+        89
+      ],
+      "radius": 89,
+      "crop": [
+        290,
+        555,
+        525,
+        795
+      ],
+      "foreground": [
+        [
+          362,
+          625,
+          455,
+          720
+        ]
+      ],
+      "foreground_layers": [
+        {
+          "mode": "transmission",
+          "box": [
+            362,
+            625,
+            455,
+            720
+          ],
+          "vector_asset": "home.svg",
+          "vector_box": [
+            364.696765408755,
+            627.071705103172,
+            451.76616106500825,
+            716.7602002958461
+          ],
+          "vector_sha256": "59ae42b6317ff70d4e459b5ba183c50795ccdd130f41ab1f8d21fe8657838e40"
+        }
+      ],
+      "reference": {
+        "video": "music",
+        "seconds": 2.5,
+        "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4"
+      },
+      "foreground_method": "Solid clean-traced SVG coverage, independently rasterized at each output resolution. Color/transmission applied separately. Fixed original glass mask is unchanged.",
+      "background": "Masked temporal translation mosaic with frozen observed-pixel confidence.",
+      "input_names": {
+        "source.png": "source-2.5.png",
+        "target.png": "target-2.5.png",
+        "known.png": "known-2.5.png"
+      },
+      "source_sha256": {
+        "source.png": "84da0d24f30dc1f4080b568756d79044a9ac6568ecbff9595d02a38cd3239fb1",
+        "target.png": "efffc64b8a6ee5b84f0bfc295369aad38db8531e4686674861074592fbee54de",
+        "known.png": "03433579b8ddf8771df2bacf7aa1566e84b71bc81df71da1cd64069c00ff2413"
+      },
+      "foreground_provenance": {
+        "kind": "clean symmetric vector trace",
+        "source": "Official Apple WWDC25 Music video",
+        "original_vector": false,
+        "collection": "Private localica-feedback/liquid-glass-icons/clean/home.svg"
+      },
+      "foreground_response": [
+        [
+          0.981852780258496,
+          0.5368761771654439,
+          1.026092263616352
+        ],
+        [
+          0.18322434212306798,
+          0.9999999999999986,
+          0.978065523818989
+        ],
+        [
+          0.4117126664496811,
+          0.9902138500957417,
+          1.0499884013005976
+        ]
+      ],
+      "continuation": {
+        "baseline": "music-home",
+        "additional_single_pass_minimum": 10,
+        "paired_pass_minimum": 20
+      }
+    },
+    {
+      "id": "music-home-vector-b",
+      "category": "Detached selected navigation control with tinted foreground",
+      "radial": true,
+      "center": [
+        408,
+        673
+      ],
+      "half": [
+        89,
+        89
+      ],
+      "radius": 89,
+      "crop": [
+        290,
+        555,
+        525,
+        795
+      ],
+      "foreground": [
+        [
+          362,
+          625,
+          455,
+          720
+        ]
+      ],
+      "foreground_layers": [
+        {
+          "mode": "transmission",
+          "box": [
+            362,
+            625,
+            455,
+            720
+          ],
+          "vector_asset": "home.svg",
+          "vector_box": [
+            364.696765408755,
+            627.071705103172,
+            451.76616106500825,
+            716.7602002958461
+          ],
+          "vector_sha256": "59ae42b6317ff70d4e459b5ba183c50795ccdd130f41ab1f8d21fe8657838e40"
+        }
+      ],
+      "reference": {
+        "video": "music",
+        "seconds": 2,
+        "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4"
+      },
+      "foreground_method": "Solid clean-traced SVG coverage, independently rasterized at each output resolution. Color/transmission applied separately. Fixed original glass mask is unchanged.",
+      "background": "Masked temporal translation mosaic with frozen observed-pixel confidence.",
+      "input_names": {
+        "source.png": "source-2.0.png",
+        "target.png": "target-2.0.png",
+        "known.png": "known-2.0.png"
+      },
+      "source_sha256": {
+        "source.png": "9789b4af085d505a23bdfac7615b0688125b0ea81587d1d58e23b68c6608268f",
+        "target.png": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d",
+        "known.png": "9d009193ae95ac9818a906fde1995dba531387f15926a5dd32e64ba34d3ff575"
+      },
+      "foreground_provenance": {
+        "kind": "clean symmetric vector trace",
+        "source": "Official Apple WWDC25 Music video",
+        "original_vector": false,
+        "collection": "Private localica-feedback/liquid-glass-icons/clean/home.svg"
+      },
+      "foreground_response": [
+        [
+          0.981852780258496,
+          0.5368761771654439,
+          1.026092263616352
+        ],
+        [
+          0.18322434212306798,
+          0.9999999999999986,
+          0.978065523818989
+        ],
+        [
+          0.4117126664496811,
+          0.9902138500957417,
+          1.0499884013005976
+        ]
+      ],
+      "continuation": {
+        "baseline": "music-home",
+        "additional_single_pass_minimum": 10,
+        "paired_pass_minimum": 20
+      }
+    }
+  ],
+  "vector_sha256": {
+    "a": {
+      "home.svg": "59ae42b6317ff70d4e459b5ba183c50795ccdd130f41ab1f8d21fe8657838e40"
+    },
+    "b": {
+      "home.svg": "59ae42b6317ff70d4e459b5ba183c50795ccdd130f41ab1f8d21fe8657838e40"
+    }
+  }
+}

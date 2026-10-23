@@ -1,0 +1,69 @@
+{
+  "baseline_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "sampling": "native4x4 rays in fixed destination masks AND actual silhouette",
+  "source_ray_extrema_xyxy": [
+    640.9201049804688,
+    444.6466979980469,
+    1279.0799560546875,
+    639.3533325195312
+  ],
+  "sigma_native_pixels": [
+    11.0
+  ],
+  "conservative_3sigma_plus_bilinear_radii": {
+    "11.0": 34
+  },
+  "regions": {
+    "glass": {
+      "rays": 3020132,
+      "center_outside_estimated": 1561758,
+      "kernel_outside_estimated": {
+        "11.0": 1171013
+      },
+      "center_outside_estimated_fraction": 0.5171158081832185,
+      "kernel_outside_estimated_fraction": {
+        "11.0": 0.38773570161833987
+      }
+    },
+    "rim": {
+      "rays": 979764,
+      "center_outside_estimated": 508816,
+      "kernel_outside_estimated": {
+        "11.0": 337758
+      },
+      "center_outside_estimated_fraction": 0.519325061953695,
+      "kernel_outside_estimated_fraction": {
+        "11.0": 0.34473403799282276
+      }
+    },
+    "d": {
+      "rays": 189440,
+      "center_outside_estimated": 181664,
+      "kernel_outside_estimated": {
+        "11.0": 123344
+      },
+      "center_outside_estimated_fraction": 0.9589527027027027,
+      "kernel_outside_estimated_fraction": {
+        "11.0": 0.651097972972973
+      }
+    },
+    "underside": {
+      "rays": 591914,
+      "center_outside_estimated": 49954,
+      "kernel_outside_estimated": {
+        "11.0": 23362
+      },
+      "center_outside_estimated_fraction": 0.08439401669837172,
+      "kernel_outside_estimated_fraction": {
+        "11.0": 0.039468571447879255
+      }
+    }
+  },
+  "limits": [
+    "No source RGB/masks/registration/score changes; no gain or new experiment",
+    "Outside replaced rectangle does not prove all RGB or registration accurate; inside is estimated paper",
+    "3sigma proxy truncates Gaussian tails; not an exhaustive optical kernel proof",
+    "Foreground boxes excluded by frozen destination masks; filters never applied to solid glyphs",
+    "HQ source-domain proof still required for a qualifying candidate"
+  ]
+}

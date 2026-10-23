@@ -1,0 +1,1833 @@
+{
+  "scope": "Play button only; no slider or toolbar changes.",
+  "geometry": {
+    "model": "C2 radial inverse-map splice; C3 at inner endpoint, not recovered surface curvature",
+    "radius": 245.0,
+    "amplitude_px": 155.28325941791476,
+    "original_band_px": 23.142232433327653,
+    "original_power": 2.10022237760162,
+    "inner_endpoint_power": 4.0,
+    "tail_start_depth_px": 11.571116216663826,
+    "baseline_tail_width_px": 11.571116216663826,
+    "outer_gain_ramp_start_px": 5.785558108331913,
+    "material": "Fixed pass04 coefficients and source sigma; no per-candidate nuisance refit",
+    "baseline_max_displacement_error_px": 1.4210854715202004e-14,
+    "baseline_rerender_RGB_max_error_255": 1.1267504232055148,
+    "baseline_rerender_rounded_uint8_max_error": 1.0
+  },
+  "geometry_trials": [
+    {
+      "key": "q4-w1-g0.75",
+      "width_factor": 1,
+      "shoulder_gain": 0.75,
+      "tail_width_px": 11.571116216663826,
+      "quiet_center_starts_at_depth_px": 23.142232433327653,
+      "shoulder_displacement_px": 27.161638734426088,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.559662818908691,
+          "mae": 4.109895706176758,
+          "opponent_chroma_rmse": 1.8335953950881958
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.126535415649414,
+          "mae": 4.704162120819092,
+          "opponent_chroma_rmse": 1.8625563383102417
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.70583724975586,
+          "mae": 4.259488582611084,
+          "opponent_chroma_rmse": 1.840928554534912
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.92231559753418,
+          "mae": 6.033435821533203,
+          "opponent_chroma_rmse": 2.122128963470459
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9471417665481567,
+        "gradient_mae": 7.239738464355469,
+        "selection_loss": 0.0031437721232044284
+      }
+    },
+    {
+      "key": "q4-w1.5-g0.75",
+      "width_factor": 1.5,
+      "shoulder_gain": 0.75,
+      "tail_width_px": 17.35667432499574,
+      "quiet_center_starts_at_depth_px": 28.927790541659565,
+      "shoulder_displacement_px": 27.161638734426088,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.527729034423828,
+          "mae": 4.093489170074463,
+          "opponent_chroma_rmse": 1.829667329788208
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.114971160888672,
+          "mae": 4.703282833099365,
+          "opponent_chroma_rmse": 1.8567085266113281
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.679296493530273,
+          "mae": 4.246991157531738,
+          "opponent_chroma_rmse": 1.8365118503570557
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.883315086364746,
+          "mae": 6.008286952972412,
+          "opponent_chroma_rmse": 2.1144142150878906
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9477828145027161,
+        "gradient_mae": 7.194890022277832,
+        "selection_loss": 0.0031331102631773893
+      }
+    },
+    {
+      "key": "q4-w2-g0.75",
+      "width_factor": 2,
+      "shoulder_gain": 0.75,
+      "tail_width_px": 23.142232433327653,
+      "quiet_center_starts_at_depth_px": 34.71334864999148,
+      "shoulder_displacement_px": 27.161638734426088,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.5234375,
+          "mae": 4.093076705932617,
+          "opponent_chroma_rmse": 1.8280653953552246
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.11758804321289,
+          "mae": 4.706286430358887,
+          "opponent_chroma_rmse": 1.8551325798034668
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.676834106445312,
+          "mae": 4.247437953948975,
+          "opponent_chroma_rmse": 1.8349164724349976
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.879695892333984,
+          "mae": 6.009186744689941,
+          "opponent_chroma_rmse": 2.1116254329681396
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9479049444198608,
+        "gradient_mae": 7.19492769241333,
+        "selection_loss": 0.003133276145391143
+      }
+    },
+    {
+      "key": "q4-w2.5-g0.75",
+      "width_factor": 2.5,
+      "shoulder_gain": 0.75,
+      "tail_width_px": 28.927790541659565,
+      "quiet_center_starts_at_depth_px": 40.49890675832339,
+      "shoulder_displacement_px": 27.161638734426088,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.522750854492188,
+          "mae": 4.093770980834961,
+          "opponent_chroma_rmse": 1.8273948431015015
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.119887351989746,
+          "mae": 4.709382057189941,
+          "opponent_chroma_rmse": 1.8546329736709595
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.676937103271484,
+          "mae": 4.248737335205078,
+          "opponent_chroma_rmse": 1.8342894315719604
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.879846572875977,
+          "mae": 6.011800765991211,
+          "opponent_chroma_rmse": 2.1105287075042725
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9479324817657471,
+        "gradient_mae": 7.195858478546143,
+        "selection_loss": 0.003133596372443922
+      }
+    },
+    {
+      "key": "q4-w3-g0.75",
+      "width_factor": 3,
+      "shoulder_gain": 0.75,
+      "tail_width_px": 34.71334864999148,
+      "quiet_center_starts_at_depth_px": 46.284464866655306,
+      "shoulder_displacement_px": 27.161638734426088,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.522581100463867,
+          "mae": 4.094203948974609,
+          "opponent_chroma_rmse": 1.8271069526672363
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.12104606628418,
+          "mae": 4.710860729217529,
+          "opponent_chroma_rmse": 1.8544310331344604
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.677118301391602,
+          "mae": 4.249433517456055,
+          "opponent_chroma_rmse": 1.8340234756469727
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.88011360168457,
+          "mae": 6.01320219039917,
+          "opponent_chroma_rmse": 2.1100635528564453
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9479417204856873,
+        "gradient_mae": 7.1961989402771,
+        "selection_loss": 0.00313381810624434
+      }
+    },
+    {
+      "key": "q4-w3.5-g0.75",
+      "width_factor": 3.5,
+      "shoulder_gain": 0.75,
+      "tail_width_px": 40.49890675832339,
+      "quiet_center_starts_at_depth_px": 52.07002297498722,
+      "shoulder_displacement_px": 27.161638734426088,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.522526741027832,
+          "mae": 4.094458103179932,
+          "opponent_chroma_rmse": 1.8269670009613037
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.121683120727539,
+          "mae": 4.711643218994141,
+          "opponent_chroma_rmse": 1.8543329238891602
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.677248001098633,
+          "mae": 4.249820232391357,
+          "opponent_chroma_rmse": 1.8338942527770996
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.880303382873535,
+          "mae": 6.013980388641357,
+          "opponent_chroma_rmse": 2.109837770462036
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9479436278343201,
+        "gradient_mae": 7.1963725090026855,
+        "selection_loss": 0.0031338940135297888
+      }
+    },
+    {
+      "key": "q4-w4-g0.75",
+      "width_factor": 4,
+      "shoulder_gain": 0.75,
+      "tail_width_px": 46.284464866655306,
+      "quiet_center_starts_at_depth_px": 57.85558108331913,
+      "shoulder_displacement_px": 27.161638734426088,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.522489547729492,
+          "mae": 4.09459114074707,
+          "opponent_chroma_rmse": 1.8268918991088867
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.122016906738281,
+          "mae": 4.7120513916015625,
+          "opponent_chroma_rmse": 1.8542754650115967
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.677308082580566,
+          "mae": 4.2500224113464355,
+          "opponent_chroma_rmse": 1.8338236808776855
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.880392074584961,
+          "mae": 6.014388084411621,
+          "opponent_chroma_rmse": 2.1097142696380615
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9479449391365051,
+        "gradient_mae": 7.196482181549072,
+        "selection_loss": 0.003133967978750838
+      }
+    },
+    {
+      "key": "q4-w1-g1",
+      "width_factor": 1,
+      "shoulder_gain": 1,
+      "tail_width_px": 11.571116216663826,
+      "quiet_center_starts_at_depth_px": 23.142232433327653,
+      "shoulder_displacement_px": 36.21551831256812,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.504732131958008,
+          "mae": 4.137773513793945,
+          "opponent_chroma_rmse": 1.8141292333602905
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.067831993103027,
+          "mae": 4.7679033279418945,
+          "opponent_chroma_rmse": 1.8467614650726318
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.649931907653809,
+          "mae": 4.296394348144531,
+          "opponent_chroma_rmse": 1.8223986625671387
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.840152740478516,
+          "mae": 6.107699394226074,
+          "opponent_chroma_rmse": 2.08969783782959
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.94559645652771,
+        "gradient_mae": 7.510763168334961,
+        "selection_loss": 0.00311610380001275
+      }
+    },
+    {
+      "key": "q4-w1.5-g1",
+      "width_factor": 1.5,
+      "shoulder_gain": 1,
+      "tail_width_px": 17.35667432499574,
+      "quiet_center_starts_at_depth_px": 28.927790541659565,
+      "shoulder_displacement_px": 36.21551831256812,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.483417510986328,
+          "mae": 4.130789279937744,
+          "opponent_chroma_rmse": 1.8089239597320557
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.077306747436523,
+          "mae": 4.778467178344727,
+          "opponent_chroma_rmse": 1.8413325548171997
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.636761665344238,
+          "mae": 4.293827533721924,
+          "opponent_chroma_rmse": 1.8171364068984985
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.82079029083252,
+          "mae": 6.102534294128418,
+          "opponent_chroma_rmse": 2.080456256866455
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.946293830871582,
+        "gradient_mae": 7.4484148025512695,
+        "selection_loss": 0.0031152212141932773
+      }
+    },
+    {
+      "key": "q4-w2-g1",
+      "width_factor": 2,
+      "shoulder_gain": 1,
+      "tail_width_px": 23.142232433327653,
+      "quiet_center_starts_at_depth_px": 34.71334864999148,
+      "shoulder_displacement_px": 36.21551831256812,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.484704971313477,
+          "mae": 4.136254787445068,
+          "opponent_chroma_rmse": 1.8065510988235474
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.089255332946777,
+          "mae": 4.7886762619018555,
+          "opponent_chroma_rmse": 1.8398168087005615
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.640871047973633,
+          "mae": 4.300487041473389,
+          "opponent_chroma_rmse": 1.8149824142456055
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.826830863952637,
+          "mae": 6.1159348487854,
+          "opponent_chroma_rmse": 2.076669216156006
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9463041424751282,
+        "gradient_mae": 7.440584182739258,
+        "selection_loss": 0.003118666371727388
+      }
+    },
+    {
+      "key": "q4-w2.5-g1",
+      "width_factor": 2.5,
+      "shoulder_gain": 1,
+      "tail_width_px": 28.927790541659565,
+      "quiet_center_starts_at_depth_px": 40.49890675832339,
+      "shoulder_displacement_px": 36.21551831256812,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.485893249511719,
+          "mae": 4.139204025268555,
+          "opponent_chroma_rmse": 1.8056682348251343
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.093672752380371,
+          "mae": 4.792499542236328,
+          "opponent_chroma_rmse": 1.8393880128860474
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.642913818359375,
+          "mae": 4.303656101226807,
+          "opponent_chroma_rmse": 1.8142155408859253
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.829834938049316,
+          "mae": 6.122311592102051,
+          "opponent_chroma_rmse": 2.075320243835449
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.946308434009552,
+        "gradient_mae": 7.437227725982666,
+        "selection_loss": 0.003120096610678144
+      }
+    },
+    {
+      "key": "q4-w3-g1",
+      "width_factor": 3,
+      "shoulder_gain": 1,
+      "tail_width_px": 34.71334864999148,
+      "quiet_center_starts_at_depth_px": 46.284464866655306,
+      "shoulder_displacement_px": 36.21551831256812,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.486557960510254,
+          "mae": 4.140670299530029,
+          "opponent_chroma_rmse": 1.8053051233291626
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.09550666809082,
+          "mae": 4.794076919555664,
+          "opponent_chroma_rmse": 1.8392125368118286
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.643887519836426,
+          "mae": 4.305150508880615,
+          "opponent_chroma_rmse": 1.8139002323150635
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.831265449523926,
+          "mae": 6.125319004058838,
+          "opponent_chroma_rmse": 2.074765682220459
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.946308434009552,
+        "gradient_mae": 7.435961723327637,
+        "selection_loss": 0.003120738592184489
+      }
+    },
+    {
+      "key": "q4-w3.5-g1",
+      "width_factor": 3.5,
+      "shoulder_gain": 1,
+      "tail_width_px": 40.49890675832339,
+      "quiet_center_starts_at_depth_px": 52.07002297498722,
+      "shoulder_displacement_px": 36.21551831256812,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.48694133758545,
+          "mae": 4.141443252563477,
+          "opponent_chroma_rmse": 1.805130124092102
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.096412658691406,
+          "mae": 4.794845104217529,
+          "opponent_chroma_rmse": 1.8391329050064087
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.6444091796875,
+          "mae": 4.305922031402588,
+          "opponent_chroma_rmse": 1.8137495517730713
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.832033157348633,
+          "mae": 6.126871109008789,
+          "opponent_chroma_rmse": 2.074500560760498
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9463072419166565,
+        "gradient_mae": 7.435340881347656,
+        "selection_loss": 0.0031210929777376628
+      }
+    },
+    {
+      "key": "q4-w4-g1",
+      "width_factor": 4,
+      "shoulder_gain": 1,
+      "tail_width_px": 46.284464866655306,
+      "quiet_center_starts_at_depth_px": 57.85558108331913,
+      "shoulder_displacement_px": 36.21551831256812,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.487147331237793,
+          "mae": 4.141857147216797,
+          "opponent_chroma_rmse": 1.8050371408462524
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.09691333770752,
+          "mae": 4.795262336730957,
+          "opponent_chroma_rmse": 1.8390865325927734
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.644693374633789,
+          "mae": 4.306337356567383,
+          "opponent_chroma_rmse": 1.8136684894561768
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.832450866699219,
+          "mae": 6.127707004547119,
+          "opponent_chroma_rmse": 2.0743579864501953
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9463073015213013,
+        "gradient_mae": 7.434971332550049,
+        "selection_loss": 0.0031212329964480107
+      }
+    },
+    {
+      "key": "q4-w1-g1.25",
+      "width_factor": 1,
+      "shoulder_gain": 1.25,
+      "tail_width_px": 11.571116216663826,
+      "quiet_center_starts_at_depth_px": 23.142232433327653,
+      "shoulder_displacement_px": 45.26939789071015,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.525836944580078,
+          "mae": 4.194847583770752,
+          "opponent_chroma_rmse": 1.804874062538147
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.112683296203613,
+          "mae": 4.817676067352295,
+          "opponent_chroma_rmse": 1.8512855768203735
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.677300453186035,
+          "mae": 4.351630687713623,
+          "opponent_chroma_rmse": 1.8166688680648804
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.880380630493164,
+          "mae": 6.218848705291748,
+          "opponent_chroma_rmse": 2.079634189605713
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9442232847213745,
+        "gradient_mae": 7.690549373626709,
+        "selection_loss": 0.003160066131651135
+      }
+    },
+    {
+      "key": "q4-w1.5-g1.25",
+      "width_factor": 1.5,
+      "shoulder_gain": 1.25,
+      "tail_width_px": 17.35667432499574,
+      "quiet_center_starts_at_depth_px": 28.927790541659565,
+      "shoulder_displacement_px": 45.26939789071015,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.52256965637207,
+          "mae": 4.203639030456543,
+          "opponent_chroma_rmse": 1.7989404201507568
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.145180702209473,
+          "mae": 4.839221954345703,
+          "opponent_chroma_rmse": 1.846451759338379
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.683503150939941,
+          "mae": 4.363632678985596,
+          "opponent_chroma_rmse": 1.811017632484436
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.889495849609375,
+          "mae": 6.243000030517578,
+          "opponent_chroma_rmse": 2.069692373275757
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9446731805801392,
+        "gradient_mae": 7.616100788116455,
+        "selection_loss": 0.003170879829967161
+      }
+    },
+    {
+      "key": "q4-w2-g1.25",
+      "width_factor": 2,
+      "shoulder_gain": 1.25,
+      "tail_width_px": 23.142232433327653,
+      "quiet_center_starts_at_depth_px": 34.71334864999148,
+      "shoulder_displacement_px": 45.26939789071015,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.52905559539795,
+          "mae": 4.214189529418945,
+          "opponent_chroma_rmse": 1.7963330745697021
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.162178993225098,
+          "mae": 4.851279258728027,
+          "opponent_chroma_rmse": 1.8451498746871948
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.69277286529541,
+          "mae": 4.374561786651611,
+          "opponent_chroma_rmse": 1.8087456226348877
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.903120994567871,
+          "mae": 6.264992713928223,
+          "opponent_chroma_rmse": 2.065690517425537
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9447150230407715,
+        "gradient_mae": 7.601240634918213,
+        "selection_loss": 0.003174758330119544
+      }
+    },
+    {
+      "key": "q4-w2.5-g1.25",
+      "width_factor": 2.5,
+      "shoulder_gain": 1.25,
+      "tail_width_px": 28.927790541659565,
+      "quiet_center_starts_at_depth_px": 40.49890675832339,
+      "shoulder_displacement_px": 45.26939789071015,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.532271385192871,
+          "mae": 4.21924352645874,
+          "opponent_chroma_rmse": 1.7955288887023926
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.168511390686035,
+          "mae": 4.856191158294678,
+          "opponent_chroma_rmse": 1.8447922468185425
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.69681453704834,
+          "mae": 4.379580974578857,
+          "opponent_chroma_rmse": 1.8080562353134155
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.90906047821045,
+          "mae": 6.275091648101807,
+          "opponent_chroma_rmse": 2.0644757747650146
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9447381496429443,
+        "gradient_mae": 7.597578525543213,
+        "selection_loss": 0.0031759678966536632
+      }
+    },
+    {
+      "key": "q4-w3-g1.25",
+      "width_factor": 3,
+      "shoulder_gain": 1.25,
+      "tail_width_px": 34.71334864999148,
+      "quiet_center_starts_at_depth_px": 46.284464866655306,
+      "shoulder_displacement_px": 45.26939789071015,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.533828735351562,
+          "mae": 4.221706390380859,
+          "opponent_chroma_rmse": 1.7952219247817993
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.171463012695312,
+          "mae": 4.8585968017578125,
+          "opponent_chroma_rmse": 1.8446396589279175
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.69874095916748,
+          "mae": 4.382029056549072,
+          "opponent_chroma_rmse": 1.8077889680862427
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.911890029907227,
+          "mae": 6.2800188064575195,
+          "opponent_chroma_rmse": 2.06400465965271
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9447434544563293,
+        "gradient_mae": 7.595974445343018,
+        "selection_loss": 0.003176603961919699
+      }
+    },
+    {
+      "key": "q4-w3.5-g1.25",
+      "width_factor": 3.5,
+      "shoulder_gain": 1.25,
+      "tail_width_px": 40.49890675832339,
+      "quiet_center_starts_at_depth_px": 52.07002297498722,
+      "shoulder_displacement_px": 45.26939789071015,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.534629821777344,
+          "mae": 4.222939968109131,
+          "opponent_chroma_rmse": 1.795084834098816
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.172966957092285,
+          "mae": 4.85982608795166,
+          "opponent_chroma_rmse": 1.844562292098999
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.699728965759277,
+          "mae": 4.383261680603027,
+          "opponent_chroma_rmse": 1.8076671361923218
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.913341522216797,
+          "mae": 6.282498359680176,
+          "opponent_chroma_rmse": 2.0637900829315186
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.944746732711792,
+        "gradient_mae": 7.595096111297607,
+        "selection_loss": 0.003176798373091588
+      }
+    },
+    {
+      "key": "q4-w4-g1.25",
+      "width_factor": 4,
+      "shoulder_gain": 1.25,
+      "tail_width_px": 46.284464866655306,
+      "quiet_center_starts_at_depth_px": 57.85558108331913,
+      "shoulder_displacement_px": 45.26939789071015,
+      "radial_derivative_sign_changes": 1,
+      "scores": {
+        "train": {
+          "pixels": 100630,
+          "rmse": 8.535078048706055,
+          "mae": 4.2236199378967285,
+          "opponent_chroma_rmse": 1.7950135469436646
+        },
+        "held_blocks": {
+          "pixels": 33853,
+          "rmse": 9.173802375793457,
+          "mae": 4.860530376434326,
+          "opponent_chroma_rmse": 1.844522476196289
+        },
+        "all_glass": {
+          "pixels": 134483,
+          "rmse": 8.70028018951416,
+          "mae": 4.383947372436523,
+          "opponent_chroma_rmse": 1.8076039552688599
+        },
+        "rim": {
+          "pixels": 66832,
+          "rmse": 11.914151191711426,
+          "mae": 6.283878326416016,
+          "opponent_chroma_rmse": 2.063678503036499
+        },
+        "outer_rim": {
+          "pixels": 5100,
+          "rmse": 24.996562957763672,
+          "mae": 16.32025146484375,
+          "opponent_chroma_rmse": 4.070472240447998
+        },
+        "interior": {
+          "pixels": 67651,
+          "rmse": 3.200752019882202,
+          "mae": 2.507017135620117,
+          "opponent_chroma_rmse": 1.5126453638076782
+        },
+        "ssim": 0.9447491765022278,
+        "gradient_mae": 7.594638347625732,
+        "selection_loss": 0.0031768787042754467
+      }
+    }
+  ],
+  "blur_trials": [
+    {
+      "post_refraction_sigma_px": 0,
+      "detail_highpass_rmse_255": 1.6408372366674289,
+      "detail_highpass_rms_255": 1.6809368138625354,
+      "detail_RGB_rmse_255": 4.241610728729603
+    },
+    {
+      "post_refraction_sigma_px": 0.25,
+      "detail_highpass_rmse_255": 1.6398960469126826,
+      "detail_highpass_rms_255": 1.6799758155435291,
+      "detail_RGB_rmse_255": 4.240564157943101
+    },
+    {
+      "post_refraction_sigma_px": 0.5,
+      "detail_highpass_rmse_255": 1.3656162557836384,
+      "detail_highpass_rms_255": 1.3977446495909078,
+      "detail_RGB_rmse_255": 3.9363370389092704
+    },
+    {
+      "post_refraction_sigma_px": 0.75,
+      "detail_highpass_rmse_255": 1.0550727293758455,
+      "detail_highpass_rms_255": 1.0672635210018948,
+      "detail_RGB_rmse_255": 3.582921855044382
+    },
+    {
+      "post_refraction_sigma_px": 1,
+      "detail_highpass_rmse_255": 0.8366888781743942,
+      "detail_highpass_rms_255": 0.8145399035685436,
+      "detail_RGB_rmse_255": 3.317418622725306
+    },
+    {
+      "post_refraction_sigma_px": 1.25,
+      "detail_highpass_rmse_255": 0.6909725197058568,
+      "detail_highpass_rms_255": 0.6150943636271738,
+      "detail_RGB_rmse_255": 3.1267415027974343
+    },
+    {
+      "post_refraction_sigma_px": 1.5,
+      "detail_highpass_rmse_255": 0.6133746104751219,
+      "detail_highpass_rms_255": 0.46857872147233876,
+      "detail_RGB_rmse_255": 3.011200173867031
+    },
+    {
+      "post_refraction_sigma_px": 1.75,
+      "detail_highpass_rmse_255": 0.583448340771069,
+      "detail_highpass_rms_255": 0.36638859803350404,
+      "detail_RGB_rmse_255": 2.9537802174411603
+    },
+    {
+      "post_refraction_sigma_px": 2,
+      "detail_highpass_rmse_255": 0.5793005136427273,
+      "detail_highpass_rms_255": 0.29846022654222354,
+      "detail_RGB_rmse_255": 2.933573509994795
+    },
+    {
+      "post_refraction_sigma_px": 2.25,
+      "detail_highpass_rmse_255": 0.5858611619532215,
+      "detail_highpass_rms_255": 0.2554168982631781,
+      "detail_RGB_rmse_255": 2.9332110960996474
+    },
+    {
+      "post_refraction_sigma_px": 2.5,
+      "detail_highpass_rmse_255": 0.595192289039094,
+      "detail_highpass_rms_255": 0.22909969641440692,
+      "detail_RGB_rmse_255": 2.9410206775062133
+    },
+    {
+      "post_refraction_sigma_px": 2.75,
+      "detail_highpass_rmse_255": 0.6039040843668179,
+      "detail_highpass_rms_255": 0.2130949599174055,
+      "detail_RGB_rmse_255": 2.9503737156096346
+    },
+    {
+      "post_refraction_sigma_px": 3,
+      "detail_highpass_rmse_255": 0.6109303451062602,
+      "detail_highpass_rms_255": 0.20301147799204114,
+      "detail_RGB_rmse_255": 2.958134467859504
+    },
+    {
+      "post_refraction_sigma_px": 3.25,
+      "detail_highpass_rmse_255": 0.6162215851231203,
+      "detail_highpass_rms_255": 0.19621031600961406,
+      "detail_RGB_rmse_255": 2.9632030728744643
+    },
+    {
+      "post_refraction_sigma_px": 3.5,
+      "detail_highpass_rmse_255": 0.6200870140917722,
+      "detail_highpass_rms_255": 0.19125104174820962,
+      "detail_RGB_rmse_255": 2.9654819118669997
+    },
+    {
+      "post_refraction_sigma_px": 4,
+      "detail_highpass_rmse_255": 0.6249686469081552,
+      "detail_highpass_rms_255": 0.18422634083986272,
+      "detail_RGB_rmse_255": 2.962924520460972
+    },
+    {
+      "post_refraction_sigma_px": 4.5,
+      "detail_highpass_rmse_255": 0.627769583004088,
+      "detail_highpass_rms_255": 0.17925919874148413,
+      "detail_RGB_rmse_255": 2.953174999527463
+    },
+    {
+      "post_refraction_sigma_px": 5,
+      "detail_highpass_rmse_255": 0.6296018510164263,
+      "detail_highpass_rms_255": 0.17543958130565984,
+      "detail_RGB_rmse_255": 2.9382156984612693
+    }
+  ],
+  "icon_trials": [
+    {
+      "name": "Pass04 response",
+      "train_rmse": 3.006865851430997,
+      "held_rmse": 2.944730170664437,
+      "RGB_percentiles": {
+        "5": [
+          253.84245312668807,
+          233.8410435173346,
+          207.50917195725162
+        ],
+        "50": [
+          254.45446646102357,
+          241.45905831190876,
+          220.0637267708026
+        ],
+        "95": [
+          254.97526500794294,
+          252.31578767904378,
+          239.68865242219263
+        ],
+        "99": [
+          254.99999999321358,
+          254.9963781493326,
+          254.08610178289618
+        ],
+        "100": [
+          254.9999999994061,
+          254.99876077818863,
+          254.44243594521149
+        ]
+      },
+      "near_white_fraction": 0.021891123004966487
+    },
+    {
+      "name": "White plateau",
+      "train_rmse": 2.6801745185723718,
+      "held_rmse": 2.7241847025827624,
+      "RGB_percentiles": {
+        "5": [
+          253.47825093500546,
+          230.71141056149085,
+          208.17963179482481
+        ],
+        "50": [
+          254.87357009471987,
+          242.42075165253374,
+          219.73264414919876
+        ],
+        "95": [
+          255.0,
+          254.99412319585574,
+          242.759563269201
+        ],
+        "99": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "100": [
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "near_white_fraction": 0.034813636144462125
+    },
+    {
+      "name": "Plateau + chroma",
+      "train_rmse": 2.617121406805086,
+      "held_rmse": 2.6557320747054654,
+      "RGB_percentiles": {
+        "5": [
+          253.42186074974614,
+          230.55868882978282,
+          208.07639287038907
+        ],
+        "50": [
+          255.0,
+          242.58432499917524,
+          219.9058554179904
+        ],
+        "95": [
+          255.0,
+          254.99329837636049,
+          242.13197700126645
+        ],
+        "99": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "100": [
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "near_white_fraction": 0.03360817782921067
+    },
+    {
+      "name": "Ordered response",
+      "train_rmse": 3.13978393516925,
+      "held_rmse": 3.1789153457585186,
+      "RGB_percentiles": {
+        "5": [
+          253.9973295247205,
+          232.58189400165926,
+          206.99859915967733
+        ],
+        "50": [
+          255.0,
+          241.59855665910194,
+          219.73413867467056
+        ],
+        "95": [
+          255.0,
+          255.0,
+          246.5239064649994
+        ],
+        "99": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "100": [
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "near_white_fraction": 0.040889146053329474
+    },
+    {
+      "name": "Shared monotone curve",
+      "train_rmse": 3.0090748145150865,
+      "held_rmse": 3.0458134992284127,
+      "RGB_percentiles": {
+        "5": [
+          252.4883278950989,
+          231.8676733759911,
+          207.95884902426423
+        ],
+        "50": [
+          254.45759458236574,
+          242.54679204245747,
+          219.4038064637944
+        ],
+        "95": [
+          255.0,
+          254.93071371471822,
+          247.9192321102028
+        ],
+        "99": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "100": [
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "near_white_fraction": 0.03804426442933603
+    }
+  ],
+  "geometry_selected": "q4-w1.5-g1",
+  "blur_reference": {
+    "crop": [
+      920,
+      680,
+      1040,
+      728
+    ],
+    "highpass_sigma_px": 1,
+    "reference_highpass_rms_255": 0.6653699814818387,
+    "limits": "Single-frame detail diagnostic. Source registration, video compression and material errors confound blur identification; no recovered Apple blur-stage claim."
+  },
+  "blur_selected_by_detail_diagnostic": 2,
+  "icon_ordered_model": {
+    "parameters": [
+      0.3820121925025063,
+      1.2366670095817598,
+      6.988273814878755e-14,
+      4.102616280322831e-11,
+      0.3779674096102484,
+      4.3502490968820156e-16
+    ],
+    "formula": "gamma=[gB+dG+dR,gB+dG,gB]; C0=1-a*max(1-B/t,0)^gamma; C=clip(L+(1+s*(1-L))*(C0-L),0,1)",
+    "bounds": {
+      "strength": [
+        0,
+        0.5
+      ],
+      "gblue": [
+        0.1,
+        12
+      ],
+      "delta_green": [
+        0,
+        12
+      ],
+      "delta_red": [
+        0,
+        12
+      ],
+      "white_threshold": [
+        0.3,
+        1
+      ],
+      "chroma": [
+        0,
+        3
+      ]
+    },
+    "reason": "Moving the unconstrained response over other dunes exposed pink reversals. Common strength and ordered exponents preserve R>=G>=B for warm RGB inputs. This is a constraint of this scene/control response, not a universal Apple material law."
+  },
+  "icon_shared_model": {
+    "parameters": [
+      0.8022681589011239,
+      0.0010000007853255344,
+      5.876988189121494,
+      6.607893976377706,
+      0.4378386660378357
+    ],
+    "formula": "w=[w1,w2,w3,1]; cumulative=[0,cumsum(w)/sum(w)]; values=[floor+(1-floor)*cumulative,1]; knots=[threshold*[0,.3,.55,.8,1],1]; apply same monotone PCHIP to each RGB component.",
+    "notes": "Five parameters; shared scalar function preserves component order and neutral grays for every RGB input. White plateau and C1 transitions. Still an empirical encoded-RGB response, not recovered Apple shading."
+  },
+  "icon_illumination_trials": [
+    {
+      "sigma_px": 0,
+      "parameters": [
+        0.9999999999776447,
+        0.9999999999999999,
+        0.3085444665726846,
+        2.097061088850281,
+        2.597603501090734,
+        1.342387065945572,
+        0.438439635205676,
+        2.9999999999969083
+      ],
+      "metrics": {
+        "train_rmse": 2.617121406805086,
+        "held_rmse": 2.6557320747054654,
+        "RGB_percentiles": {
+          "5": [
+            253.42186074974614,
+            230.55868882978282,
+            208.07639287038907
+          ],
+          "50": [
+            255.0,
+            242.58432499917524,
+            219.9058554179904
+          ],
+          "95": [
+            255.0,
+            254.99329837636049,
+            242.13197700126645
+          ],
+          "99": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "100": [
+            255.0,
+            255.0,
+            255.0
+          ]
+        },
+        "near_white_fraction": 0.03360817782921067
+      }
+    },
+    {
+      "sigma_px": 1,
+      "parameters": [
+        0.9999999999996568,
+        0.9999999999999999,
+        0.30916357450182813,
+        2.1558453171950918,
+        2.640754665594374,
+        1.363264890958275,
+        0.44260822821089935,
+        2.9999999999999942
+      ],
+      "metrics": {
+        "train_rmse": 2.650616938257111,
+        "held_rmse": 2.6973075030668365,
+        "RGB_percentiles": {
+          "5": [
+            253.4224147398374,
+            229.9733905499531,
+            208.28263093651526
+          ],
+          "50": [
+            255.0,
+            242.84788794259538,
+            220.1645315798073
+          ],
+          "95": [
+            255.0,
+            255.0,
+            243.0015578728019
+          ],
+          "99": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "100": [
+            255.0,
+            255.0,
+            255.0
+          ]
+        },
+        "near_white_fraction": 0.0343796711509716
+      }
+    },
+    {
+      "sigma_px": 2,
+      "parameters": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.30999270011183094,
+        2.4103719798999546,
+        2.8311277437558364,
+        1.445497117875578,
+        0.4608707219992344,
+        2.9999999999999996
+      ],
+      "metrics": {
+        "train_rmse": 2.7577946143058476,
+        "held_rmse": 2.8176866726721,
+        "RGB_percentiles": {
+          "5": [
+            253.46949299014713,
+            230.33683784514787,
+            208.4920351355671
+          ],
+          "50": [
+            255.0,
+            242.76230255087282,
+            220.13837965338493
+          ],
+          "95": [
+            255.0,
+            255.0,
+            244.1709426213369
+          ],
+          "99": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "100": [
+            255.0,
+            255.0,
+            255.0
+          ]
+        },
+        "near_white_fraction": 0.03423501615314142
+      }
+    },
+    {
+      "sigma_px": 3,
+      "parameters": [
+        0.9999999999979053,
+        0.9999999999999999,
+        0.30786286276823593,
+        2.775731650358265,
+        3.1063704255064537,
+        1.5447652984036482,
+        0.4875382046787773,
+        2.999999999999962
+      ],
+      "metrics": {
+        "train_rmse": 2.883090489636762,
+        "held_rmse": 2.957190105982477,
+        "RGB_percentiles": {
+          "5": [
+            253.61162521723452,
+            230.82190386411992,
+            208.74977635173508
+          ],
+          "50": [
+            254.77172364213553,
+            242.61461532410593,
+            220.0549694643986
+          ],
+          "95": [
+            255.0,
+            254.99059062820342,
+            245.1492146387643
+          ],
+          "99": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "100": [
+            255.0,
+            255.0,
+            255.0
+          ]
+        },
+        "near_white_fraction": 0.03211340951829886
+      }
+    },
+    {
+      "sigma_px": 4,
+      "parameters": [
+        0.9999999998649932,
+        0.9999999999999999,
+        0.3023440283540513,
+        3.12444138942395,
+        3.3721484451423387,
+        1.6152909131644837,
+        0.5135980130446878,
+        2.999999999999797
+      ],
+      "metrics": {
+        "train_rmse": 3.000308767031153,
+        "held_rmse": 3.0945784512736783,
+        "RGB_percentiles": {
+          "5": [
+            253.74434478038953,
+            231.09113220561355,
+            209.02508588648627
+          ],
+          "50": [
+            254.62928982132672,
+            242.51288354852446,
+            219.92325420329934
+          ],
+          "95": [
+            255.0,
+            254.9782719348163,
+            245.29014580567207
+          ],
+          "99": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "100": [
+            255.0,
+            255.0,
+            255.0
+          ]
+        },
+        "near_white_fraction": 0.027821977916003663
+      }
+    },
+    {
+      "sigma_px": 6,
+      "parameters": [
+        0.9999999999999845,
+        0.9999999999999999,
+        0.28781650591110275,
+        3.625782745741857,
+        3.7599073753393655,
+        1.6573165495418307,
+        0.5522803866780269,
+        2.9999999999999996
+      ],
+      "metrics": {
+        "train_rmse": 3.1968794439228305,
+        "held_rmse": 3.3565581525027675,
+        "RGB_percentiles": {
+          "5": [
+            253.88780188397823,
+            231.375318188686,
+            209.56696326278546
+          ],
+          "50": [
+            254.5186673022546,
+            242.46183456787364,
+            219.68105691774554
+          ],
+          "95": [
+            255.0,
+            254.9553590299603,
+            244.70724515219413
+          ],
+          "99": [
+            255.0,
+            255.0,
+            254.3654908101998
+          ],
+          "100": [
+            255.0,
+            255.0,
+            255.0
+          ]
+        },
+        "near_white_fraction": 0.017599691402671296
+      }
+    },
+    {
+      "sigma_px": 8,
+      "parameters": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.27415189698287373,
+        3.8724554023569877,
+        3.9512036927735896,
+        1.6118111533819488,
+        0.5720080765513332,
+        2.9999999999999996
+      ],
+      "metrics": {
+        "train_rmse": 3.3523114766545445,
+        "held_rmse": 3.5849367987200984,
+        "RGB_percentiles": {
+          "5": [
+            253.93620335777197,
+            231.40578369403445,
+            209.97076524388297
+          ],
+          "50": [
+            254.49439973026793,
+            242.5063213003867,
+            219.51023438251175
+          ],
+          "95": [
+            255.0,
+            254.9415552927737,
+            243.90155491408396
+          ],
+          "99": [
+            255.0,
+            255.0,
+            252.46532044857577
+          ],
+          "100": [
+            255.0,
+            255.0,
+            254.5597588272617
+          ]
+        },
+        "near_white_fraction": 0.007329186556728868
+      }
+    }
+  ],
+  "icon_illumination_selected_by_training_loss": 0,
+  "icon_reference": {
+    "train_rmse": 0.0,
+    "held_rmse": 0.0,
+    "RGB_percentiles": {
+      "5": [
+        253.0,
+        227.0,
+        206.0
+      ],
+      "50": [
+        255.0,
+        245.0,
+        223.0
+      ],
+      "95": [
+        255.0,
+        252.0,
+        230.0
+      ],
+      "99": [
+        255.0,
+        255.0,
+        255.0
+      ],
+      "100": [
+        255.0,
+        255.0,
+        255.0
+      ]
+    },
+    "near_white_fraction": 0.018564058054872462
+  },
+  "icon_models": {
+    "white_plateau": {
+      "parameters": [
+        0.9999999999532313,
+        0.9999999999999999,
+        0.3711919644641183,
+        2.7015508822610412,
+        2.5264717140944266,
+        1.4740257009173834,
+        0.43378605576803553
+      ],
+      "formula": "C=1-a_RGB*max(1-B/t,0)^gamma_RGB"
+    },
+    "plateau_chroma": {
+      "parameters": [
+        0.9999999999776447,
+        0.9999999999999999,
+        0.3085444665726846,
+        2.097061088850281,
+        2.597603501090734,
+        1.342387065945572,
+        0.438439635205676,
+        2.9999999999969083
+      ],
+      "formula": "C0=plateau; L=dot(C0,luma); C=clip(L+(1+s*(1-L))*(C0-L),0,1)"
+    },
+    "notes": "Encoded-RGB empirical responses of the refracted background; no positional gradient or copied interior colors. Same mask and feather. Two optimizer starts; block-withheld check on the same scene."
+  },
+  "combined": {
+    "geometry": "q4-w1.5-g1",
+    "post_sigma_px": 2,
+    "icon_model": "shared_curve_response",
+    "icon_color_input_sigma_px": 0,
+    "icon_parameters": [
+      0.801023547675061,
+      0.0010001268137353647,
+      5.908704560164057,
+      6.537549578723345,
+      0.44119948001350917
+    ],
+    "icon_metrics": {
+      "train_rmse": 3.1703990087480296,
+      "held_rmse": 3.2482493204633083,
+      "RGB_percentiles": {
+        "5": [
+          252.3073024647113,
+          231.3874753491677,
+          208.04489072963645
+        ],
+        "50": [
+          254.47546753333435,
+          242.9161706054156,
+          219.9461102570745
+        ],
+        "95": [
+          255.0,
+          255.0,
+          250.69745572628815
+        ],
+        "99": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "100": [
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "near_white_fraction": 0.042383914364241285
+    },
+    "additional_geometry_control": "q4-w2-g1, same icon parameters and blur"
+  }
+}

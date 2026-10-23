@@ -1,0 +1,7 @@
+# Segmented selector: existing blocker retained
+
+- Reviewed original source-and-model-audit, crown model-review/followup, clear-local report and prior selector-short-round primary verification. No new render or fit; no overwritten historical artifacts.
+- A shared material candidate already improved both numerical scores and passed exact native replay/source/exterior checks, but primary visual review rejected the unchanged ordinary blur and typography. It remains unaccepted; no count or implicit epoch reset.
+- Prior clear crown, orthographic physical, perspective and parallel-plate comparisons failed original image guards. Existing correspondence favors a label-centered content transform, but selected-content size is not independently observed without glass. Do not promote per-caption shifts or fit assumed input pixels to disguise that ambiguity.
+- New clear optical work needs independent selected-content evidence or an explicitly declared new experimental baseline. No adopted source/model reset is justified by this read-only intake. Preserve the blocked selector and continue an independent element rather than repeat old sweeps.
+- Lead next: blue active slider (distinct from agent's green switch). Start with existing native recipe/source/protocol and measured shadow notes; identify a genuinely different supported background before paired calibration. No claim that a translated identical track is an independent background.

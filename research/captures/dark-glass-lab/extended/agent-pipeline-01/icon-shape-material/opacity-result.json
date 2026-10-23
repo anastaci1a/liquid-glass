@@ -1,0 +1,220 @@
+{
+  "family": "ONE shared blackfill opacity (codedRGBA), not source/Appleopacity truth",
+  "tau": 0.34476567281781456,
+  "blackfill_fixed": [
+    0,
+    0,
+    0
+  ],
+  "training_core_only": true,
+  "held_excluded": true,
+  "native_candidate_pairs": 1,
+  "new_rays": 0,
+  "new_source_queries": 0,
+  "cases": {
+    "a": {
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 40.865726470947266
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 64.40684509277344
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 41.96078109741211
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 25.214065551757812
+        },
+        "ssim": 0.8712174892425537,
+        "loss": 2413.47782844015,
+        "E": 49.127159783974385,
+        "exterior": {
+          "pixels": 46409,
+          "rmse": 19.254291534423828
+        },
+        "foreground_MSE": [
+          2268.92041015625,
+          905.52880859375,
+          1405.534912109375,
+          454.8016052246094,
+          519.501708984375
+        ]
+      },
+      "baseline_scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 40.865726470947266
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 64.40684509277344
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 41.96078109741211
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 25.214065551757812
+        },
+        "ssim": 0.8712174892425537,
+        "loss": 2413.47782844015,
+        "E": 49.127159783974385,
+        "exterior": {
+          "pixels": 46409,
+          "rmse": 19.254291534423828
+        },
+        "foreground_MSE": [
+          2268.92041015625,
+          905.52880859375,
+          1283.60791015625,
+          454.8016052246094,
+          519.501708984375
+        ]
+      },
+      "guards": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "exterior": true,
+        "E": true,
+        "ssim": true,
+        "foreground0": true,
+        "foreground1": true,
+        "foreground2": false,
+        "foreground3": true,
+        "foreground4": true
+      },
+      "all_guards": false,
+      "advisory_core_edges": {
+        "core_train": {
+          "pixels": 409,
+          "before_rmse": 6.432124137878418,
+          "after_rmse": 27.955677032470703
+        },
+        "core_held": {
+          "pixels": 192,
+          "before_rmse": 6.610846996307373,
+          "after_rmse": 27.844091415405273
+        },
+        "partial_edge": {
+          "pixels": 498,
+          "before_rmse": 26.379850387573242,
+          "after_rmse": 37.84689712524414
+        }
+      },
+      "outside_artist_canvas_exact": true,
+      "clipping": 0
+    },
+    "b": {
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 16.518491744995117
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 25.933950424194336
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 16.930212020874023
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 10.29792308807373
+        },
+        "ssim": 0.9140862226486206,
+        "loss": 392.77333405200113,
+        "E": 19.81850988475171,
+        "exterior": {
+          "pixels": 46409,
+          "rmse": 21.74403190612793
+        },
+        "foreground_MSE": [
+          2799.075927734375,
+          627.9297485351562,
+          129.61050415039062,
+          129.16749572753906,
+          189.0576934814453
+        ]
+      },
+      "baseline_scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 16.518491744995117
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 25.933950424194336
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 16.930212020874023
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 10.29792308807373
+        },
+        "ssim": 0.9140862226486206,
+        "loss": 392.77333405200113,
+        "E": 19.81850988475171,
+        "exterior": {
+          "pixels": 46409,
+          "rmse": 21.74403190612793
+        },
+        "foreground_MSE": [
+          2799.075927734375,
+          627.9297485351562,
+          249.8277130126953,
+          129.16749572753906,
+          189.0576934814453
+        ]
+      },
+      "guards": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "exterior": true,
+        "E": true,
+        "ssim": true,
+        "foreground0": true,
+        "foreground1": true,
+        "foreground2": true,
+        "foreground3": true,
+        "foreground4": true
+      },
+      "all_guards": true,
+      "advisory_core_edges": {
+        "core_train": {
+          "pixels": 409,
+          "before_rmse": 29.2115478515625,
+          "after_rmse": 15.164413452148438
+        },
+        "core_held": {
+          "pixels": 192,
+          "before_rmse": 29.529747009277344,
+          "after_rmse": 14.529167175292969
+        },
+        "partial_edge": {
+          "pixels": 498,
+          "before_rmse": 34.748779296875,
+          "after_rmse": 19.248573303222656
+        }
+      },
+      "outside_artist_canvas_exact": true,
+      "clipping": 0
+    }
+  },
+  "paired_qualifier": false,
+  "status": "NEGATIVE_SHARED_BLACK_OPACITY_NO_MORE_CANDIDATES",
+  "source_model_limits": "Computed on fixed imperfect physical backdrop; corevariation/coverage/codec and materialvibrancy remain confounded. No perimagefit, source/SVG/mask/boxchange, screenshotmatte, inputadoption or physicalopacity claim.",
+  "finished_unix": 1792660551.7652361
+}

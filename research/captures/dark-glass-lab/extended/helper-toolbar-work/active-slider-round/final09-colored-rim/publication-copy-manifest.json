@@ -1,0 +1,27 @@
+{
+  "copy": [
+    {
+      "from": "switch-round09-crops.png",
+      "to": "docs/liquid-glass/assets/switch-round09-crops.png"
+    },
+    {
+      "from": "a-final09-comparison.png",
+      "to": "docs/liquid-glass/assets/switch-round09-a-comparison.png"
+    },
+    {
+      "from": "b-final09-comparison.png",
+      "to": "docs/liquid-glass/assets/switch-round09-b-comparison.png"
+    },
+    {
+      "from": "pass-09-crops.json",
+      "to": "docs/liquid-glass/experiments/reconstruction/studies/active-switch/review-round/pass-09-crops.json"
+    }
+  ],
+  "replace_section": {
+    "file": "docs/liquid-glass/reconstruction.md",
+    "section_summary": "Colored rim — localized crops and measurements",
+    "with": "colored-rim-final09-section.md"
+  },
+  "preserve": "Historicalpass06JSON/crops andsnapshot24 untouched",
+  "public_edits_performed": false
+}

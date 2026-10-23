@@ -1,0 +1,322 @@
+{
+  "status": "CACHED_ONE_MIXTURE_DIRECTION_COMPLETE",
+  "approval": "e90c7b70-8ca4-4333-a267-21355dadce19",
+  "formula": "Hc=(1-c)*G*(n dot ell)^2+c*G; G=exp(-(max(-sd,0)/w)^2), ell=(1,1)/sqrt2, c[0,1], a.125/w.028FIXED",
+  "zero_c_returns_original_field_exact": true,
+  "floating_component_bound_overshoot": 0,
+  "conservative_base_plus_max_rim": 0.945098054409027,
+  "predictions": [
+    {
+      "mixture": 0.25,
+      "prediction_ONLY": {
+        "glass": {
+          "pixels": 1406,
+          "rmse": 3.6483161449432373
+        },
+        "rim": {
+          "pixels": 544,
+          "rmse": 3.8450748920440674
+        },
+        "held": {
+          "pixels": 143,
+          "rmse": 1.8963857889175415
+        },
+        "interior": {
+          "pixels": 862,
+          "rmse": 3.5184850692749023
+        },
+        "ssim": 0.9916625022888184,
+        "loss": 13.752527763045748,
+        "E": 3.7084400713838894,
+        "glyph": {
+          "pixels": 342,
+          "rmse": 31.302234649658203
+        },
+        "exterior": {
+          "pixels": 1162,
+          "rmse": 2.729917049407959
+        },
+        "full_visible_exterior": {
+          "pixels": 1431,
+          "rmse": 2.648005485534668
+        }
+      },
+      "checks": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "glyph": true,
+        "exterior": true,
+        "full_visible_exterior": true,
+        "E": true,
+        "SSIM": false,
+        "meaningful_E_improvement": true
+      },
+      "supported": false,
+      "no_native_body_render": true
+    },
+    {
+      "mixture": 0.125,
+      "prediction_ONLY": {
+        "glass": {
+          "pixels": 1406,
+          "rmse": 3.661428213119507
+        },
+        "rim": {
+          "pixels": 544,
+          "rmse": 3.8771541118621826
+        },
+        "held": {
+          "pixels": 143,
+          "rmse": 1.925158143043518
+        },
+        "interior": {
+          "pixels": 862,
+          "rmse": 3.5184850692749023
+        },
+        "ssim": 0.9916634559631348,
+        "loss": 13.893936794018202,
+        "E": 3.7274571485153523,
+        "glyph": {
+          "pixels": 342,
+          "rmse": 31.302234649658203
+        },
+        "exterior": {
+          "pixels": 1162,
+          "rmse": 2.727884292602539
+        },
+        "full_visible_exterior": {
+          "pixels": 1431,
+          "rmse": 2.646303653717041
+        }
+      },
+      "checks": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "glyph": true,
+        "exterior": true,
+        "full_visible_exterior": true,
+        "E": true,
+        "SSIM": false,
+        "meaningful_E_improvement": true
+      },
+      "supported": false,
+      "no_native_body_render": true
+    },
+    {
+      "mixture": 0.0625,
+      "prediction_ONLY": {
+        "glass": {
+          "pixels": 1406,
+          "rmse": 3.6682069301605225
+        },
+        "rim": {
+          "pixels": 544,
+          "rmse": 3.89367938041687
+        },
+        "held": {
+          "pixels": 143,
+          "rmse": 1.9408698081970215
+        },
+        "interior": {
+          "pixels": 862,
+          "rmse": 3.5184850692749023
+        },
+        "ssim": 0.9916653037071228,
+        "loss": 13.96724119297943,
+        "E": 3.7372772432587107,
+        "glyph": {
+          "pixels": 342,
+          "rmse": 31.302234649658203
+        },
+        "exterior": {
+          "pixels": 1162,
+          "rmse": 2.7317259311676025
+        },
+        "full_visible_exterior": {
+          "pixels": 1431,
+          "rmse": 2.649519681930542
+        }
+      },
+      "checks": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "glyph": true,
+        "exterior": true,
+        "full_visible_exterior": true,
+        "E": true,
+        "SSIM": false,
+        "meaningful_E_improvement": true
+      },
+      "supported": false,
+      "no_native_body_render": true
+    }
+  ],
+  "normal_angle_cohorts": [
+    {
+      "normal_angle_radians": [
+        -3.141592653589793,
+        -2.356194490192345
+      ],
+      "pixels": 70,
+      "baseline_signed_RGB": [
+        -3.308265988315855,
+        -3.308265988315855,
+        -2.4773011718477522
+      ],
+      "baseline_RGB_RMSE": 4.379891023356822,
+      "direction_mean_native255": 0.07415448129177094,
+      "advisory_only": true
+    },
+    {
+      "normal_angle_radians": [
+        -2.356194490192345,
+        -1.5707963267948966
+      ],
+      "pixels": 67,
+      "baseline_signed_RGB": [
+        -2.5090654839330644,
+        -2.5090654839330644,
+        -1.7231090789410606
+      ],
+      "baseline_RGB_RMSE": 4.873335323389974,
+      "direction_mean_native255": 0.07627047598361969,
+      "advisory_only": true
+    },
+    {
+      "normal_angle_radians": [
+        -1.5707963267948966,
+        -0.7853981633974483
+      ],
+      "pixels": 67,
+      "baseline_signed_RGB": [
+        -0.19153172845271096,
+        -0.19153172845271096,
+        0.9559105092020177
+      ],
+      "baseline_RGB_RMSE": 2.329443655297499,
+      "direction_mean_native255": 0.2653651833534241,
+      "advisory_only": true
+    },
+    {
+      "normal_angle_radians": [
+        -0.7853981633974483,
+        0
+      ],
+      "pixels": 68,
+      "baseline_signed_RGB": [
+        -0.8392015099525452,
+        -0.8392015099525452,
+        -0.007454082369804382
+      ],
+      "baseline_RGB_RMSE": 2.018186169625456,
+      "direction_mean_native255": 0.3171628415584564,
+      "advisory_only": true
+    },
+    {
+      "normal_angle_radians": [
+        0,
+        0.7853981633974483
+      ],
+      "pixels": 67,
+      "baseline_signed_RGB": [
+        -2.024825820282324,
+        -2.024825820282324,
+        -0.999283763899732
+      ],
+      "baseline_RGB_RMSE": 5.2563131822786655,
+      "direction_mean_native255": 0.10110080242156982,
+      "advisory_only": true
+    },
+    {
+      "normal_angle_radians": [
+        0.7853981633974483,
+        1.5707963267948966
+      ],
+      "pixels": 70,
+      "baseline_signed_RGB": [
+        -1.537920355796814,
+        -1.537920355796814,
+        0.13526514172554016
+      ],
+      "baseline_RGB_RMSE": 5.020630250996966,
+      "direction_mean_native255": 0.09822183102369308,
+      "advisory_only": true
+    },
+    {
+      "normal_angle_radians": [
+        1.5707963267948966,
+        2.356194490192345
+      ],
+      "pixels": 68,
+      "baseline_signed_RGB": [
+        -0.8292487263679504,
+        -0.8292487263679504,
+        0.10227352380752563
+      ],
+      "baseline_RGB_RMSE": 3.0769613075839697,
+      "direction_mean_native255": 0.32515859603881836,
+      "advisory_only": true
+    },
+    {
+      "normal_angle_radians": [
+        2.356194490192345,
+        3.141592653589793
+      ],
+      "pixels": 67,
+      "baseline_signed_RGB": [
+        -0.9165673069099882,
+        -0.9165673069099882,
+        0.5882052610169596
+      ],
+      "baseline_RGB_RMSE": 2.6904090489614774,
+      "direction_mean_native255": 0.27229782938957214,
+      "advisory_only": true
+    }
+  ],
+  "baseline": {
+    "glass": {
+      "pixels": 1406,
+      "rmse": 3.675133466720581
+    },
+    "rim": {
+      "pixels": 544,
+      "rmse": 3.9105236530303955
+    },
+    "held": {
+      "pixels": 143,
+      "rmse": 1.9574376344680786
+    },
+    "interior": {
+      "pixels": 862,
+      "rmse": 3.5184850692749023
+    },
+    "ssim": 0.9916671514511108,
+    "loss": 14.042282771019801,
+    "E": 3.747303399915705,
+    "glyph": {
+      "pixels": 342,
+      "rmse": 31.302234649658203
+    },
+    "exterior": {
+      "pixels": 1162,
+      "rmse": 2.7387917041778564
+    },
+    "full_visible_exterior": {
+      "pixels": 1431,
+      "rmse": 2.6554365158081055
+    }
+  },
+  "body_renders": 0,
+  "extra_glyph_fit": false,
+  "limits": "Cached ideal-unclipped additive direction integrated on frozen2x2output/postkernel, float32predictionNOTactualnative. All original masks/source/pose/map/kernel/SVG/tint fixed. Interior/glyph exactties mayhold; no fabricatedstrictimprovement there. Convexneutralenvironmentlightingproxy, notFresnel/Applephysics. No per-angle/crop/pointwisecoefficients or altered masks.",
+  "next": "Ifprediction supported, authorizealreadyqueued first c.25/backtracks.125,.0625 max3actualnative stopfirstqualifier; elseSTOPboundednegative.",
+  "new_optical_body_source_ray_queries": 0,
+  "cached_prediction_composites": 3,
+  "exterior_queries": "Publiccompositor reuses fixedoriginalunrefractedsourcecoordinates; no new opticalbody source sampling/ray map."
+}

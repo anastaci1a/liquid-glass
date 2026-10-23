@@ -1,0 +1,113 @@
+{
+  "selected_map_start": 1,
+  "projection": {
+    "start": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "z": [
+      -0.4556335005557394,
+      -0.11883494253459574,
+      -0.9999999999999999
+    ],
+    "parameters": [
+      -0.013669005016672182,
+      -0.003565048276037872,
+      -0.14999999999999997
+    ],
+    "success": true,
+    "status": 2,
+    "message": "`ftol` termination condition is satisfied.",
+    "nfev": 10,
+    "optimality": 5.048310281557731e-07,
+    "active_mask": [
+      0,
+      0,
+      -1
+    ],
+    "cost": 31.149305037426036,
+    "map_vector_RMSE_L": 0.10999621285775067,
+    "bounds": {
+      "height_lower": 0.2737555750152454,
+      "height_upper": 0.7262444249847546,
+      "background": 2.5,
+      "minimum_gap": 1.7737555750152454,
+      "gradient_norm_upper": 0.6634401870757183,
+      "critical_gradient": 0.8944271909999159,
+      "global_subcritical_positive_clearance": true,
+      "no_reentry_sufficient_product": 0.27427042115001155,
+      "displacement_norm_upper": 0.920343699278722
+    }
+  },
+  "native_E": 13.374449189870615,
+  "native_foreground": {
+    "archivebox": 14.024082905192717,
+    "plus": 6.230235310842624
+  },
+  "guard_order": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "guard_before": [
+    5.843130588531494,
+    8.813648223876953,
+    11.46944201723165,
+    13.242044387461515,
+    3.667139623528374
+  ],
+  "guard_after": [
+    13.230318069458008,
+    13.704861640930176,
+    11.483750903251343,
+    14.024082905192717,
+    6.230235310842624
+  ],
+  "all_native_guards": false,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 13.374449189870615,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": -0.9466512615360414,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": false,
+          "shadow": false
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "advisory_crops": {
+    "upper": {
+      "conditional_native_RMSE": 16.88847541809082,
+      "complete_native_RMSE": 16.772626693939397
+    },
+    "d": {
+      "conditional_native_RMSE": 10.862256050109863,
+      "complete_native_RMSE": 10.862255613553113
+    },
+    "underside": {
+      "conditional_native_RMSE": 6.856142044067383,
+      "complete_native_RMSE": 6.8409279942094345
+    }
+  },
+  "new_native_comparison_renders": 1,
+  "target_image_fits": 0,
+  "counted_passes": 0,
+  "limitations": "Map fitting is a proposal and not a lower bound on best attainable image score. Physical ray geometry only; frozen empirical shading/blur/shadow/foreground. No identified Apple surface, source correction or epoch change."
+}

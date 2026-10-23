@@ -1,0 +1,533 @@
+{
+  "accepted_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "frozen_native_error_parts": {
+    "glass": {
+      "pixels": 188771,
+      "RGB_MSE": 34.142179125865724,
+      "neutral_mean_MSE": 34.01143212290726,
+      "orthogonal_chroma_MSE": 0.13074700295847122,
+      "encoded_Rec709_luma_proxy_RMSE": 5.801213625405732,
+      "channel_RMSE": [
+        5.81830974650178,
+        5.790833585866955,
+        5.919464118664488
+      ]
+    },
+    "rim": {
+      "pixels": 61248,
+      "RGB_MSE": 77.68039709325534,
+      "neutral_mean_MSE": 77.48582393030775,
+      "orthogonal_chroma_MSE": 0.19457316294760493,
+      "encoded_Rec709_luma_proxy_RMSE": 8.791370504103478,
+      "channel_RMSE": [
+        8.796920644933186,
+        8.7901263771723,
+        8.853759468149903
+      ]
+    }
+  },
+  "diagnostic_float64_E": 6.870490849719735,
+  "perfect_pure_chroma_removal_E_floor": 6.859573577499362,
+  "perfect_pure_chroma_removal_reduction_percent": 0.15890090619679054,
+  "pure_chroma_bound_scope": "Exact RGBmean/orthogonal-chroma decomposition of diagnostic residuals only. Not a bound on dispersion that also changes neutral content. No correction applied. Native float32 E/gates remain authoritative.",
+  "source_cohorts": {
+    "full": {
+      "all": {
+        "pixels": 188771,
+        "RGB_MSE": 34.142179125865724,
+        "neutral_mean_MSE": 34.01143212290726,
+        "orthogonal_chroma_MSE": 0.13074700295847122,
+        "encoded_Rec709_luma_proxy_RMSE": 5.801213625405732,
+        "channel_RMSE": [
+          5.81830974650178,
+          5.790833585866955,
+          5.919464118664488
+        ]
+      },
+      "observed_kernel_proxy": {
+        "pixels": 63571,
+        "RGB_MSE": 20.20046045827134,
+        "neutral_mean_MSE": 19.99971333363025,
+        "orthogonal_chroma_MSE": 0.20074712464108888,
+        "encoded_Rec709_luma_proxy_RMSE": 4.413278510953086,
+        "channel_RMSE": [
+          4.446896276170153,
+          4.393534422127427,
+          4.639326477558986
+        ]
+      },
+      "estimated_kernel_proxy": {
+        "pixels": 57948,
+        "RGB_MSE": 13.14527817103168,
+        "neutral_mean_MSE": 13.13280555814428,
+        "orthogonal_chroma_MSE": 0.012472612887398612,
+        "encoded_Rec709_luma_proxy_RMSE": 3.6309117794687484,
+        "channel_RMSE": [
+          3.625170510999858,
+          3.6350948940021524,
+          3.6166363365525163
+        ]
+      },
+      "mixed_or_uncertain": {
+        "pixels": 67252,
+        "RGB_MSE": 65.41288355024517,
+        "neutral_mean_MSE": 65.24639357131046,
+        "orthogonal_chroma_MSE": 0.16648997893469247,
+        "encoded_Rec709_luma_proxy_RMSE": 8.043240136398031,
+        "channel_RMSE": [
+          8.062607693791445,
+          8.030824503466922,
+          8.169385877853076
+        ]
+      }
+    },
+    "upper": {
+      "all": {
+        "pixels": 37001,
+        "RGB_MSE": 84.65329860069117,
+        "neutral_mean_MSE": 84.40736170926529,
+        "orthogonal_chroma_MSE": 0.24593689142587885,
+        "encoded_Rec709_luma_proxy_RMSE": 9.183769073160907,
+        "channel_RMSE": [
+          9.184190343792233,
+          9.186999969312003,
+          9.230903265386834
+        ]
+      },
+      "observed_kernel_proxy": {
+        "pixels": 27609,
+        "RGB_MSE": 24.56297767138277,
+        "neutral_mean_MSE": 24.351511094874038,
+        "orthogonal_chroma_MSE": 0.21146657650873438,
+        "encoded_Rec709_luma_proxy_RMSE": 4.94342893413593,
+        "channel_RMSE": [
+          4.934185620722896,
+          4.955569930445232,
+          4.978460800173818
+        ]
+      },
+      "estimated_kernel_proxy": {
+        "pixels": 0
+      },
+      "mixed_or_uncertain": {
+        "pixels": 9392,
+        "RGB_MSE": 261.296576979873,
+        "neutral_mean_MSE": 260.9493101348113,
+        "orthogonal_chroma_MSE": 0.3472668450616798,
+        "encoded_Rec709_luma_proxy_RMSE": 16.138077488605052,
+        "channel_RMSE": [
+          16.147334861636207,
+          16.13437579855349,
+          16.212193725614647
+        ]
+      }
+    },
+    "d": {
+      "all": {
+        "pixels": 11840,
+        "RGB_MSE": 9.674796654747665,
+        "neutral_mean_MSE": 9.454124875214461,
+        "orthogonal_chroma_MSE": 0.22067177953320238,
+        "encoded_Rec709_luma_proxy_RMSE": 2.8623992764510855,
+        "channel_RMSE": [
+          2.9888017700507663,
+          2.7707457732415275,
+          3.523410535780473
+        ]
+      },
+      "observed_kernel_proxy": {
+        "pixels": 6980,
+        "RGB_MSE": 11.519815239079186,
+        "neutral_mean_MSE": 11.318592185389644,
+        "orthogonal_chroma_MSE": 0.201223053689543,
+        "encoded_Rec709_luma_proxy_RMSE": 3.132332876827629,
+        "channel_RMSE": [
+          3.2784817582378922,
+          3.027923273957815,
+          3.826575979274894
+        ]
+      },
+      "estimated_kernel_proxy": {
+        "pixels": 0
+      },
+      "mixed_or_uncertain": {
+        "pixels": 4860,
+        "RGB_MSE": 7.024955148855889,
+        "neutral_mean_MSE": 6.776350837143933,
+        "orthogonal_chroma_MSE": 0.24860431171195607,
+        "encoded_Rec709_luma_proxy_RMSE": 2.4226591561964566,
+        "channel_RMSE": [
+          2.515050697919362,
+          2.3527057994617864,
+          3.0354836278000215
+        ]
+      }
+    },
+    "underside": {
+      "all": {
+        "pixels": 37001,
+        "RGB_MSE": 25.74492270031488,
+        "neutral_mean_MSE": 25.701210123733276,
+        "orthogonal_chroma_MSE": 0.043712576581607196,
+        "encoded_Rec709_luma_proxy_RMSE": 5.08075366666337,
+        "channel_RMSE": [
+          5.073010451126358,
+          5.087652396092177,
+          5.061138820487437
+        ]
+      },
+      "observed_kernel_proxy": {
+        "pixels": 0
+      },
+      "estimated_kernel_proxy": {
+        "pixels": 26880,
+        "RGB_MSE": 19.797437813050415,
+        "neutral_mean_MSE": 19.78692007235104,
+        "orthogonal_chroma_MSE": 0.010517740699377455,
+        "encoded_Rec709_luma_proxy_RMSE": 4.468587398943166,
+        "channel_RMSE": [
+          4.455240479102658,
+          4.47874187550828,
+          4.414070335312427
+        ]
+      },
+      "mixed_or_uncertain": {
+        "pixels": 10121,
+        "RGB_MSE": 41.54063397090759,
+        "neutral_mean_MSE": 41.40876042322487,
+        "orthogonal_chroma_MSE": 0.13187354768271733,
+        "encoded_Rec709_luma_proxy_RMSE": 6.429593038060643,
+        "channel_RMSE": [
+          6.43183960831177,
+          6.430771526921578,
+          6.472906513631226
+        ]
+      }
+    }
+  },
+  "source_limits": "Saved strict legacy source-kernel proxies are advisory, not new score masks or under-glass RGB truth. A-source-audit found no extra reliable hiddenink. Underside observed cohort zero.",
+  "law": {
+    "name": "centroid-anchored one-coefficient Cauchy-form RGB image-map PROXY",
+    "F_channel": "x+(1+B*k_channel)*(F0-x)",
+    "nominal_wavelength_um": [
+      0.65,
+      0.55,
+      0.45
+    ],
+    "k_inverse_um_squared": [
+      -1.1701096394181083,
+      -0.23118842077660995,
+      1.4012980601947196
+    ],
+    "anchor": "equal-band mean inverse wavelength squared; sumk=0, no common achromatic-ray rescale at first order on neutral input",
+    "B_interval_um_squared": [
+      0,
+      0.007065678703403978
+    ],
+    "geometry_max_displacement_bound_L": 2.0199731182685365,
+    "declared_added_channel_ray_bound_L": 0.02,
+    "physical_limit": "No inferred IOR/spectra/sensor bands or Apple dispersion. Existing encodedRGB empirical map/material; fixed bands are proxy convention."
+  },
+  "single_new_analytic_direction": {
+    "source_gradient": "continuous bilinear gradient at original4x4native query locations, actual shade-clipping/gain and common blur/postfilter. Not derivative of quantized cv2.remap;22must validate with new native points if supported",
+    "native_source_query_min_xy": [
+      640.9200956721038,
+      444.6466969497505
+    ],
+    "native_source_query_max_xy": [
+      1279.0799043278962,
+      639.3533030502495
+    ],
+    "predicted_positive_B_objective_MSE_derivative": -2.840779265286914,
+    "positive_B_quadratic_proposal": 0.0008048147805638171,
+    "predicted_E_at_proposal": 6.870407656428554
+  },
+  "features": {
+    "full": {
+      "all": {
+        "pixels": 188771,
+        "spectral_direction_RMS_per_B": 33.83811824334312,
+        "spectral_cosine_to_desired": 0.004517083953526028,
+        "ordinary_blur_secant_RMS": 0.5409103594785388,
+        "spectral_blur_cosine": -0.0009532264820599509,
+        "positive_B_MSE_derivative": -1.786240697031534,
+        "direction_neutral_chroma_parts": {
+          "pixels": 188771,
+          "RGB_MSE": 1145.0182462504702,
+          "neutral_mean_MSE": 0.5761083233154162,
+          "orthogonal_chroma_MSE": 1144.4421379271548,
+          "encoded_Rec709_luma_proxy_RMSE": 9.437019026709946,
+          "channel_RMSE": [
+            36.277889312696345,
+            7.003501943691683,
+            45.496378386545274
+          ]
+        }
+      },
+      "observed_kernel_proxy": {
+        "pixels": 63571,
+        "spectral_direction_RMS_per_B": 36.5680576784253,
+        "spectral_cosine_to_desired": 0.021499456713015765,
+        "ordinary_blur_secant_RMS": 0.7326581977689817,
+        "spectral_blur_cosine": -0.0004773449512035095,
+        "positive_B_MSE_derivative": -7.067080022903457,
+        "direction_neutral_chroma_parts": {
+          "pixels": 63571,
+          "RGB_MSE": 1337.2228423726394,
+          "neutral_mean_MSE": 0.4466865695381354,
+          "orthogonal_chroma_MSE": 1336.7761558031016,
+          "encoded_Rec709_luma_proxy_RMSE": 10.29661290177588,
+          "channel_RMSE": [
+            39.39028748908747,
+            7.634949671403994,
+            49.00797202660074
+          ]
+        }
+      },
+      "estimated_kernel_proxy": {
+        "pixels": 57948,
+        "spectral_direction_RMS_per_B": 0.27726036890073746,
+        "spectral_cosine_to_desired": 0.011110629424603712,
+        "ordinary_blur_secant_RMS": 0.0032723874306763425,
+        "spectral_blur_cosine": -0.0021086510903828536,
+        "positive_B_MSE_derivative": -0.0223378487245647,
+        "direction_neutral_chroma_parts": {
+          "pixels": 57948,
+          "RGB_MSE": 0.07687331216297302,
+          "neutral_mean_MSE": 1.3104111530190301e-05,
+          "orthogonal_chroma_MSE": 0.07686020805144284,
+          "encoded_Rec709_luma_proxy_RMSE": 0.0791058854668674,
+          "channel_RMSE": [
+            0.30061263286647405,
+            0.058586786032834716,
+            0.369891294777733
+          ]
+        }
+      },
+      "mixed_or_uncertain": {
+        "pixels": 67252,
+        "spectral_direction_RMS_per_B": 44.15742228211147,
+        "spectral_cosine_to_desired": -0.0023599875727134145,
+        "ordinary_blur_secant_RMS": 0.5602173912816658,
+        "spectral_blur_cosine": -0.0014909390113277553,
+        "positive_B_MSE_derivative": 1.6856797593312765,
+        "direction_neutral_chroma_parts": {
+          "pixels": 67252,
+          "RGB_MSE": 1949.8779426007145,
+          "neutral_mean_MSE": 1.1948413880837847,
+          "orthogonal_chroma_MSE": 1948.6831012126304,
+          "encoded_Rec709_luma_proxy_RMSE": 12.23740760913213,
+          "channel_RMSE": [
+            47.19533215134795,
+            9.086909931831975,
+            59.49506297850893
+          ]
+        }
+      }
+    },
+    "upper": {
+      "all": {
+        "pixels": 37001,
+        "spectral_direction_RMS_per_B": 51.02581777378571,
+        "spectral_cosine_to_desired": 0.011820150006436225,
+        "ordinary_blur_secant_RMS": 0.5353192981021391,
+        "spectral_blur_cosine": -0.0004875242334597012,
+        "positive_B_MSE_derivative": -11.098515687579381,
+        "direction_neutral_chroma_parts": {
+          "pixels": 37001,
+          "RGB_MSE": 2603.6340794835855,
+          "neutral_mean_MSE": 1.136396936029355,
+          "orthogonal_chroma_MSE": 2602.497682547556,
+          "encoded_Rec709_luma_proxy_RMSE": 14.280595564791488,
+          "channel_RMSE": [
+            54.80378329074311,
+            10.593168549341597,
+            68.52176556071298
+          ]
+        }
+      },
+      "observed_kernel_proxy": {
+        "pixels": 27609,
+        "spectral_direction_RMS_per_B": 49.55574613485202,
+        "spectral_cosine_to_desired": 0.03559605810794264,
+        "ordinary_blur_secant_RMS": 0.5531148745116052,
+        "spectral_blur_cosine": 0.0006147357846878362,
+        "positive_B_MSE_derivative": -17.485031896908165,
+        "direction_neutral_chroma_parts": {
+          "pixels": 27609,
+          "RGB_MSE": 2455.771974981901,
+          "neutral_mean_MSE": 0.8262276738005379,
+          "orthogonal_chroma_MSE": 2454.9457473081006,
+          "encoded_Rec709_luma_proxy_RMSE": 13.9510651519375,
+          "channel_RMSE": [
+            53.37527392648498,
+            10.345006901667018,
+            66.41819698262583
+          ]
+        }
+      },
+      "estimated_kernel_proxy": {
+        "pixels": 0
+      },
+      "mixed_or_uncertain": {
+        "pixels": 9392,
+        "spectral_direction_RMS_per_B": 55.12072096455703,
+        "spectral_cosine_to_desired": -0.004307185232925097,
+        "ordinary_blur_secant_RMS": 0.4791953110669232,
+        "spectral_blur_cosine": -0.0038614849440856557,
+        "positive_B_MSE_derivative": 7.675475584072922,
+        "direction_neutral_chroma_parts": {
+          "pixels": 9392,
+          "RGB_MSE": 3038.2938796525573,
+          "neutral_mean_MSE": 2.0481796405518655,
+          "orthogonal_chroma_MSE": 3036.2457000120057,
+          "encoded_Rec709_luma_proxy_RMSE": 15.208002616299181,
+          "channel_RMSE": [
+            58.80246342179938,
+            11.29113315225293,
+            74.36169878790894
+          ]
+        }
+      }
+    },
+    "d": {
+      "all": {
+        "pixels": 11840,
+        "spectral_direction_RMS_per_B": 1.3896038782465963,
+        "spectral_cosine_to_desired": -0.05166146825949985,
+        "ordinary_blur_secant_RMS": 0.9706524253536419,
+        "spectral_blur_cosine": -0.005765314300234427,
+        "positive_B_MSE_derivative": 0.4465896780362271,
+        "direction_neutral_chroma_parts": {
+          "pixels": 11840,
+          "RGB_MSE": 1.930998938437981,
+          "neutral_mean_MSE": 0.0003718890295653259,
+          "orthogonal_chroma_MSE": 1.9306270494084155,
+          "encoded_Rec709_luma_proxy_RMSE": 0.39551203491249326,
+          "channel_RMSE": [
+            1.504827673645447,
+            0.2929913902406433,
+            1.8554370194618985
+          ]
+        }
+      },
+      "observed_kernel_proxy": {
+        "pixels": 6980,
+        "spectral_direction_RMS_per_B": 1.8087233148955637,
+        "spectral_cosine_to_desired": -0.06283653368118654,
+        "ordinary_blur_secant_RMS": 1.02520552822116,
+        "spectral_blur_cosine": -0.007207324076529662,
+        "positive_B_MSE_derivative": 0.7715020935023413,
+        "direction_neutral_chroma_parts": {
+          "pixels": 6980,
+          "RGB_MSE": 3.2714800298467965,
+          "neutral_mean_MSE": 0.0006295259496242261,
+          "orthogonal_chroma_MSE": 3.2708505038971722,
+          "encoded_Rec709_luma_proxy_RMSE": 0.5148068937594458,
+          "channel_RMSE": [
+            1.95870926338399,
+            0.38136303388927556,
+            2.4150487256899935
+          ]
+        }
+      },
+      "estimated_kernel_proxy": {
+        "pixels": 0
+      },
+      "mixed_or_uncertain": {
+        "pixels": 4860,
+        "spectral_direction_RMS_per_B": 0.07603446096426592,
+        "spectral_cosine_to_desired": 0.04975542953577175,
+        "ordinary_blur_secant_RMS": 0.886448419607882,
+        "spectral_blur_cosine": 0.0037023260257980084,
+        "positive_B_MSE_derivative": -0.020054079155846668,
+        "direction_neutral_chroma_parts": {
+          "pixels": 4860,
+          "RGB_MSE": 0.005781239254126477,
+          "neutral_mean_MSE": 1.8672801803212887e-06,
+          "orthogonal_chroma_MSE": 0.0057793719739461565,
+          "encoded_Rec709_luma_proxy_RMSE": 0.021497591439671115,
+          "channel_RMSE": [
+            0.08201664284136859,
+            0.015952825598444006,
+            0.10179634283625562
+          ]
+        }
+      }
+    },
+    "underside": {
+      "all": {
+        "pixels": 37001,
+        "spectral_direction_RMS_per_B": 32.41061797491147,
+        "spectral_cosine_to_desired": -0.01334789191110434,
+        "ordinary_blur_secant_RMS": 0.0921914278417993,
+        "spectral_blur_cosine": 0.002154415622133502,
+        "positive_B_MSE_derivative": 4.390113866945295,
+        "direction_neutral_chroma_parts": {
+          "pixels": 37001,
+          "RGB_MSE": 1050.4481575156544,
+          "neutral_mean_MSE": 0.7782658859882463,
+          "orthogonal_chroma_MSE": 1049.669891629666,
+          "encoded_Rec709_luma_proxy_RMSE": 8.928552646887965,
+          "channel_RMSE": [
+            34.54133597240395,
+            6.632751332182844,
+            43.752110709700624
+          ]
+        }
+      },
+      "observed_kernel_proxy": {
+        "pixels": 0
+      },
+      "estimated_kernel_proxy": {
+        "pixels": 26880,
+        "spectral_direction_RMS_per_B": 0.4049188138094503,
+        "spectral_cosine_to_desired": 0.012886819048089306,
+        "ordinary_blur_secant_RMS": 0.003341220204513199,
+        "spectral_blur_cosine": -0.0028430697163150617,
+        "positive_B_MSE_derivative": -0.04643529144472722,
+        "direction_neutral_chroma_parts": {
+          "pixels": 26880,
+          "RGB_MSE": 0.16395924577685225,
+          "neutral_mean_MSE": 2.8094584518211006e-05,
+          "orthogonal_chroma_MSE": 0.16393115119233403,
+          "encoded_Rec709_luma_proxy_RMSE": 0.11551747861916789,
+          "channel_RMSE": [
+            0.43900277157976625,
+            0.08555429256844022,
+            0.540217333023435
+          ]
+        }
+      },
+      "mixed_or_uncertain": {
+        "pixels": 10121,
+        "spectral_direction_RMS_per_B": 61.96660549675016,
+        "spectral_cosine_to_desired": -0.02024724456205371,
+        "ordinary_blur_secant_RMS": 0.17618878319155545,
+        "spectral_blur_cosine": 0.002156502143687843,
+        "positive_B_MSE_derivative": 16.17298526083165,
+        "direction_neutral_chroma_parts": {
+          "pixels": 10121,
+          "RGB_MSE": 3839.860196789867,
+          "neutral_mean_MSE": 2.8451596546802933,
+          "orthogonal_chroma_MSE": 3837.0150371351865,
+          "encoded_Rec709_luma_proxy_RMSE": 17.070634922128047,
+          "channel_RMSE": [
+            66.04024355649693,
+            12.681262314279273,
+            83.65077649062557
+          ]
+        }
+      }
+    }
+  },
+  "saved_blur6_evidence": "Rejected same-baseline best-raw material secant reused, not independent source/outputsigma Jacobians or new blur test",
+  "new_optical_renders_or_fits": 0,
+  "new_counted_passes": 0,
+  "limits": [
+    "Channel/luma/edge response is in encodedRGB, not spectral radiometry",
+    "A source estimate, material color, environmental highlights or video chroma processing can mimic wavelength response",
+    "A directional cosine or linearized coefficient is not a native qualifying optical result"
+  ]
+}

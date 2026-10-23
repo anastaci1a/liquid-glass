@@ -1,0 +1,35 @@
+{
+  "implicit_source_vertical_edge_output_slope_dxdy": {
+    "min": -2.593296598233569e-05,
+    "median": 8.60715749738033e-07,
+    "max": 6.737920885940239e-06,
+    "p01_p99": [
+      -1.982339610284883e-05,
+      5.9923383086642134e-06
+    ]
+  },
+  "implicit_source_vertical_edge_x_second_derivative_per_native_px": {
+    "min": -1.5525304748809922e-07,
+    "median": 1.5463643212354303e-07,
+    "max": 9.506285023797021e-07,
+    "p01_p99": [
+      -1.5524912568203336e-07,
+      8.864484395082488e-07
+    ]
+  },
+  "horizontal_width_factor_derivative_along_edge_per_native_px": {
+    "min": -2.993147756318713e-06,
+    "median": 1.0007814583048693e-07,
+    "max": 7.775853124676772e-07,
+    "p01_p99": [
+      -2.2912391322260103e-06,
+      6.9209223966277e-07
+    ]
+  },
+  "formulas": {
+    "slope": "q=-Jxy/Jxx",
+    "curvature": "x_second=-(Fxx*q*q+2*Fxy*q+Fyy)/Jxx",
+    "width_derivative": "d(1/Jxx)/dy_along_edge=-(Fxx*q+Fxy)/(Jxx^2)"
+  },
+  "limits": "Evaluated on fixed registered d stem band, not a newly fitted/inverted glyph edge. Assumes intrinsically vertical source edge and geometric width, omits font contour/PSF/contrast. Numerical Hessian convergence verified on stem band, not globally near core."
+}

@@ -1,0 +1,47 @@
+{
+  "accepted_primary": true,
+  "accepted_pass": 1,
+  "controls": [
+    {
+      "control": "flower-next-round",
+      "case_source_hashes_exact": true,
+      "independent_radial_normal_response_max_difference": 2.384185791015625e-07,
+      "upper_unclipped_bound": 0.8803921699523926,
+      "clipping_impossible": true,
+      "source_queries_and_kernels_unchanged": true,
+      "nonregression_checks": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "glyph": true,
+        "exterior": true,
+        "full_visible_exterior": true,
+        "E": true,
+        "ssim": true
+      }
+    },
+    {
+      "control": "safari-right-circle-round",
+      "case_source_hashes_exact": true,
+      "independent_radial_normal_response_max_difference": 2.384185791015625e-07,
+      "upper_unclipped_bound": 0.6607207417488098,
+      "clipping_impossible": true,
+      "source_queries_and_kernels_unchanged": true,
+      "nonregression_checks": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "glyph": true,
+        "exterior": true,
+        "full_visible_exterior": true,
+        "E": true,
+        "ssim": true
+      }
+    }
+  ],
+  "invariants": "finite/nonnegative<=1, normal inversion, exact a0 branch; empirical neutral boundary response only; constant continuation outside silhouette before fixed postfilter",
+  "no_ray_rerender": true,
+  "float32_order_tolerance": 9.5367431640625e-07
+}

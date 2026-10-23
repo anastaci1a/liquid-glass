@@ -1,0 +1,245 @@
+{
+  "completed": [
+    {
+      "label": "text-A",
+      "target_seconds": 400,
+      "donors": [
+        {
+          "donor": 396,
+          "matched": 416,
+          "train_matches": 314,
+          "ransac_inliers": 223,
+          "held_matches": 102,
+          "held_inliers_under3px": 71,
+          "held_inlier_rms_px": 0.30858865767727356,
+          "held_all_median_px": 0.17214776792142764,
+          "similarity": [
+            [
+              0.9986821026087913,
+              -6.022652832715342e-05,
+              1.1540868004604
+            ],
+            [
+              6.022652832715342e-05,
+              0.9986821026087913,
+              -216.63048089762702
+            ]
+          ],
+          "scale": 0.998682104424802,
+          "rotation_degrees": 0.003455279587642223,
+          "accepted_registration": true,
+          "held_pixel_count": 112727,
+          "held_pixel_rgb_rmse": 6.928027760350361,
+          "held_pixel_signed_rgb": [
+            -1.1909683661911072,
+            -1.192047750732965,
+            -1.1481489329586074
+          ],
+          "button_original_disk_observed_fraction": 0.18625119517516978,
+          "source_observed_mask": "Eroded exposed original donor only; no glass/shadow/corner source or fills"
+        },
+        {
+          "donor": 398,
+          "matched": 605,
+          "train_matches": 450,
+          "ransac_inliers": 406,
+          "held_matches": 155,
+          "held_inliers_under3px": 137,
+          "held_inlier_rms_px": 0.26383605705279234,
+          "held_all_median_px": 0.06638043351087164,
+          "similarity": [
+            [
+              0.9999966533717601,
+              1.7348763911248264e-05,
+              -0.009126634657582742
+            ],
+            [
+              -1.7348763911248264e-05,
+              0.9999966533717601,
+              -36.97108962621078
+            ]
+          ],
+          "scale": 0.9999966535222504,
+          "rotation_degrees": -0.0009940142783799286,
+          "accepted_registration": true,
+          "held_pixel_count": 162534,
+          "held_pixel_rgb_rmse": 2.155479230095468,
+          "held_pixel_signed_rgb": [
+            -0.08991541769722028,
+            -0.08962624743130668,
+            -0.08859261754463682
+          ],
+          "button_original_disk_observed_fraction": 0.0,
+          "source_observed_mask": "Eroded exposed original donor only; no glass/shadow/corner source or fills"
+        },
+        {
+          "donor": 402,
+          "matched": 549,
+          "train_matches": 422,
+          "ransac_inliers": 338,
+          "held_matches": 127,
+          "held_inliers_under3px": 98,
+          "held_inlier_rms_px": 0.31245794091061535,
+          "held_all_median_px": 0.11910673908614988,
+          "similarity": [
+            [
+              0.9999967604203277,
+              1.0335134910996901e-05,
+              0.0015978305561471827
+            ],
+            [
+              -1.0335134910996901e-05,
+              0.9999967604203277,
+              6.709880842535426
+            ]
+          ],
+          "scale": 0.9999967604737354,
+          "rotation_degrees": -0.0005921615294318077,
+          "accepted_registration": true,
+          "held_pixel_count": 174501,
+          "held_pixel_rgb_rmse": 3.6993334779619,
+          "held_pixel_signed_rgb": [
+            0.13649921776952567,
+            0.13522558609979313,
+            0.1316267528552845
+          ],
+          "button_original_disk_observed_fraction": 0.0,
+          "source_observed_mask": "Eroded exposed original donor only; no glass/shadow/corner source or fills"
+        }
+      ],
+      "button_disk_pixels": 40789,
+      "union_observed_pixels": 7597,
+      "union_observed_fraction": 0.18625119517516978,
+      "remaining_hidden_pixels": 33192,
+      "union_full_disk": false,
+      "source_adopted": false,
+      "limits": "Registration fit only exposed background; held pixel RMSE not optical score. No model/footprint/optical source-ray bounds selected yet; full_disk is provisional circle diagnostic, never whole/ALL-scored optical proof. Gaussian source support remains unassigned.",
+      "bright_ridge_not_physical_shape": {
+        "assumed_center": [
+          960,
+          532
+        ],
+        "median_radius_px": 114.5,
+        "radius_p10_p90": [
+          113.25,
+          116.5
+        ],
+        "note": "Same camera/button position appears fixed. Ridge location depends on exterior/content/material and is not alpha truth."
+      }
+    }
+  ],
+  "current": {
+    "label": "photo-B",
+    "target": 410,
+    "tests": [
+      {
+        "donor": 404,
+        "matched": 0,
+        "accepted_registration": false,
+        "reason": "Too few exposed feature matches"
+      },
+      {
+        "donor": 406,
+        "matched": 84,
+        "train_matches": 69,
+        "ransac_inliers": 62,
+        "held_matches": 15,
+        "held_inliers_under3px": 13,
+        "held_inlier_rms_px": 0.5637170274208876,
+        "held_all_median_px": 0.5094864693580122,
+        "similarity": [
+          [
+            0.9999092207077608,
+            9.966912384078575e-05,
+            0.011851288550744575
+          ],
+          [
+            -9.966912384078575e-05,
+            0.9999092207077608,
+            -267.2256095445753
+          ]
+        ],
+        "scale": 0.9999092256751788,
+        "rotation_degrees": -0.005711138578048678,
+        "accepted_registration": true,
+        "held_pixel_count": 97173,
+        "held_pixel_rgb_rmse": 3.4611657160061347,
+        "held_pixel_signed_rgb": [
+          -1.0661404245681672,
+          -0.9002696764887108,
+          -1.2798887740003653
+        ],
+        "button_original_disk_observed_fraction": 0.1042683076319596,
+        "source_observed_mask": "Eroded exposed original donor only; no glass/shadow/corner source or fills"
+      },
+      {
+        "donor": 408,
+        "matched": 225,
+        "train_matches": 183,
+        "ransac_inliers": 167,
+        "held_matches": 42,
+        "held_inliers_under3px": 40,
+        "held_inlier_rms_px": 0.8424974197053392,
+        "held_all_median_px": 0.32852063299251555,
+        "similarity": [
+          [
+            0.9999982144298377,
+            9.459302939050723e-05,
+            -0.016060058329299937
+          ],
+          [
+            -9.459302939050723e-05,
+            0.9999982144298377,
+            -43.909553277724875
+          ]
+        ],
+        "scale": 0.9999982189037663,
+        "rotation_degrees": -0.005419791016684971,
+        "accepted_registration": true,
+        "held_pixel_count": 160291,
+        "held_pixel_rgb_rmse": 3.05717473666668,
+        "held_pixel_signed_rgb": [
+          -0.22514946327109756,
+          -0.2715813787502105,
+          -0.21762024931413804
+        ],
+        "button_original_disk_observed_fraction": 0.0,
+        "source_observed_mask": "Eroded exposed original donor only; no glass/shadow/corner source or fills"
+      },
+      {
+        "donor": 412,
+        "matched": 160,
+        "train_matches": 122,
+        "ransac_inliers": 101,
+        "held_matches": 38,
+        "held_inliers_under3px": 34,
+        "held_inlier_rms_px": 0.49655660031113485,
+        "held_all_median_px": 0.32096702675654865,
+        "similarity": [
+          [
+            1.0022415128033544,
+            0.00010369238492493734,
+            -3.8886664645712257
+          ],
+          [
+            -0.00010369238492493734,
+            1.0022415128033544,
+            263.17505701966377
+          ]
+        ],
+        "scale": 1.0022415181673863,
+        "rotation_degrees": -0.005927848653992487,
+        "accepted_registration": true,
+        "held_pixel_count": 99366,
+        "held_pixel_rgb_rmse": 5.5536690979469965,
+        "held_pixel_signed_rgb": [
+          0.552165131228866,
+          0.7032430334885675,
+          0.5088988208680535
+        ],
+        "button_original_disk_observed_fraction": 0.9707028855818971,
+        "source_observed_mask": "Eroded exposed original donor only; no glass/shadow/corner source or fills"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+"""Pure crown geometry reused unchanged from sealed toolbar curvature audit.
+No renderer, source, target or fit dependency.
+"""
+from functools import lru_cache
+import numpy as np
+from scipy.special import expit
+from scipy.optimize import minimize_scalar
+
+class CrownGeometry:
+    def __init__(self,half,softness):
+        self.half=tuple(map(float,half));self.softness=float(softness)
+        self.a=max(self.half);self.b=min(self.half);self.L=self.b
+        self.horizontal=self.half[0]>=self.half[1]
+        self.circle=self.softness==0 and abs(self.a-self.b)<1e-14*self.b
+        if not(self.b>0 and (self.circle or 0<self.softness<=1)):
+            raise ValueError('Smooth crown or an explicit true circle is required')
+        if not self.circle:
+            self.e=self.softness*self.b;self.neck=self.a-self.b
+            self.qbase=np.logaddexp(0.,(self.e-self.neck)/self.e)
+            self.qden=np.logaddexp(0.,(np.hypot(self.a,self.e)-self.neck)/self.e)-self.qbase
+
+    def field_hessian(self,x,y):
+        x,y=np.broadcast_arrays(np.asarray(x,float),np.asarray(y,float))
+        if self.circle:
+            r2=self.b**2;z=np.zeros_like(x);two=np.full_like(x,2/r2)
+            return (x*x+y*y)/r2-1,2*x/r2,2*y/r2,two,z,two
+        major,minor=(x,y) if self.horizontal else (y,x)
+        radius=np.hypot(major,self.e);s=expit((radius-self.neck)/self.e)
+        q=self.b*(np.logaddexp(0.,(radius-self.neck)/self.e)-self.qbase)/self.qden
+        qd=self.b/self.qden*s*major/(self.e*radius)
+        qdd=self.b/self.qden*(s*(1-s)*major**2/(self.e**2*radius**2)+s*self.e/radius**3)
+        f=(q*q+minor*minor)/self.b**2-1;ga=2*q*qd/self.b**2;gb=2*minor/self.b**2
+        haa=2*(qd*qd+q*qdd)/self.b**2;hbb=np.full_like(f,2/self.b**2);zero=np.zeros_like(f)
+        return (f,ga,gb,haa,zero,hbb) if self.horizontal else (f,gb,ga,hbb,zero,haa)
+
+    def boundary(self,x,y):
+        f,gx,gy,*_=self.field_hessian(x,y);norm=np.hypot(gx,gy)
+        return self.b*(np.sqrt(np.maximum(f+1,0))-1),gx/np.maximum(norm,1e-30),gy/np.maximum(norm,1e-30)
+
+    def closest_boundary(self,x,y):
+        x,y=np.broadcast_arrays(np.asarray(x,float),np.asarray(y,float))
+        if self.circle:
+            radius=np.hypot(x,y)
+            if np.any(radius<1e-14*self.b):raise ValueError('Circle center has no unique closest boundary point')
+            return self.b*x/radius,self.b*y/radius
+        sd,nx,ny=self.boundary(x,y);qx=x-sd*nx;qy=y-sd*ny
+        for _ in range(24):
+            f,fx,fy,fxx,fxy,fyy=self.field_hessian(qx,qy)
+            dx,qdy=qx-x,qy-y;cross=dx*fy-qdy*fx
+            if max(float(np.max(np.abs(f))),float(np.max(np.abs(cross))))<2e-13:break
+            g1=fy+dx*fxy-qdy*fxx;g2=-fx+dx*fyy-qdy*fxy;det=fx*g2-fy*g1
+            if np.any(np.abs(det)<1e-15/self.b**2):raise ValueError('Ambiguous closest-boundary projection')
+            sx=(f*g2-fy*cross)/det;sy=(fx*cross-f*g1)/det
+            factor=np.minimum(1.,.25*self.b/np.maximum(np.hypot(sx,sy),1e-30));qx-=factor*sx;qy-=factor*sy
+        f,fx,fy,*_=self.field_hessian(qx,qy);cross=(qx-x)*fy-(qy-y)*fx
+        if max(float(np.max(np.abs(f))),float(np.max(np.abs(cross))))>2e-10:
+            raise ValueError('Closest-boundary residual exceeds declared tolerance')
+        return qx,qy
+
+    def curvature(self,x,y):
+        _,fx,fy,fxx,fxy,fyy=self.field_hessian(x,y)
+        return (fxx*fy*fy-2*fxy*fx*fy+fyy*fx*fx)/np.maximum(np.hypot(fx,fy)**3,1e-30)
+
+    def radial_boundary(self,theta):
+        theta=np.asarray(theta,float);cos=np.cos(theta);sin=np.sin(theta)
+        if self.circle:return self.b*cos,self.b*sin
+        lo=np.full_like(theta,self.b);hi=np.full_like(theta,self.a)
+        for _ in range(56):
+            mid=(lo+hi)/2;outside=self.field_hessian(mid*cos,mid*sin)[0]>0;hi=np.where(outside,mid,hi);lo=np.where(outside,lo,mid)
+        radius=(lo+hi)/2
+        return radius*cos,radius*sin
+
+    @lru_cache(maxsize=4)
+    def arc_table(self,n=4096):
+        theta=np.arange(n)*2*np.pi/n;x,y=self.radial_boundary(theta);_,gx,gy,*_=self.field_hessian(x,y)
+        radius=np.hypot(x,y);radial=gx*np.cos(theta)+gy*np.sin(theta)
+        derivative=-radius*(-gx*np.sin(theta)+gy*np.cos(theta))/radial
+        speed=np.hypot(radius,derivative);curvature=self.curvature(x,y);perimeter=float(2*np.pi*np.mean(speed))
+        return {'theta':theta,'x':x,'y':y,'speed':speed,'curvature':curvature,'perimeter':perimeter,'total_turn':float(2*np.pi*np.mean(speed*curvature))}
+
+    @property
+    def perimeter(self):return self.arc_table(4096)['perimeter']
+
+    def displacement_bound(self,maximum_fraction=.12):
+        if self.circle:return {'lambda_max':0.,'feature_abs_max':0.,'maximum_displacement_fraction':maximum_fraction}
+        table=self.arc_table(8192);mean=2*np.pi*self.L/table['perimeter'];i=int(np.argmax(table['curvature']));theta=table['theta'][i];h=2*np.pi/8192
+        fit=minimize_scalar(lambda t:-float(self.curvature(*self.radial_boundary(t))),bounds=(theta-h,theta+h),method='bounded',options={'xatol':1e-13})
+        kmax=max(float(table['curvature'].max()),-float(fit.fun));kmin=min(0.,float(table['curvature'].min()))
+        maximum=max(abs(self.L*kmin-mean),abs(self.L*kmax-mean));conservative=maximum*(1+1e-4)+1e-10
+        return {'lambda_max':maximum_fraction/conservative,'feature_abs_max':maximum,'feature_abs_bound':conservative,'maximum_displacement_fraction':maximum_fraction,'curvature_min':kmin,'curvature_max':kmax,'perimeter':table['perimeter'],'normalized_mean_curvature':mean,'boundary_samples':8192,'extremum_refined':bool(fit.success)}
+

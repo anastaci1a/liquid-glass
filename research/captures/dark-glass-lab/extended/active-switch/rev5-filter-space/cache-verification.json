@@ -1,0 +1,73 @@
+{
+  "rows": [
+    {
+      "observation": "a",
+      "maximum_cache_difference": 0.0,
+      "derivative_checks": [
+        {
+          "epsilon": 0.001,
+          "relative_RMS_error": 0.0029043168857251734,
+          "smooth_region_error": 9.979003224300997e-05,
+          "nonsmooth_output_pixels": 63595,
+          "total_pixels": 486750
+        },
+        {
+          "epsilon": 0.0003,
+          "relative_RMS_error": 0.004909008947718685,
+          "smooth_region_error": 0.00033386899747093037,
+          "nonsmooth_output_pixels": 45679,
+          "total_pixels": 486750
+        },
+        {
+          "epsilon": 0.0001,
+          "relative_RMS_error": 0.007740178346180151,
+          "smooth_region_error": 0.000990121723266465,
+          "nonsmooth_output_pixels": 24722,
+          "total_pixels": 486750
+        },
+        {
+          "epsilon": 5e-05,
+          "relative_RMS_error": 0.015390417790366609,
+          "smooth_region_error": 0.0019639985274669245,
+          "nonsmooth_output_pixels": 15705,
+          "total_pixels": 486750
+        }
+      ]
+    },
+    {
+      "observation": "b",
+      "maximum_cache_difference": 0.0,
+      "derivative_checks": [
+        {
+          "epsilon": 0.001,
+          "relative_RMS_error": 0.0032112437310550684,
+          "smooth_region_error": 0.00011352300761020923,
+          "nonsmooth_output_pixels": 24956,
+          "total_pixels": 447450
+        },
+        {
+          "epsilon": 0.0003,
+          "relative_RMS_error": 0.00558786404602158,
+          "smooth_region_error": 0.00037871183439079474,
+          "nonsmooth_output_pixels": 18512,
+          "total_pixels": 447450
+        },
+        {
+          "epsilon": 0.0001,
+          "relative_RMS_error": 0.0067701758969545165,
+          "smooth_region_error": 0.0011144442398085734,
+          "nonsmooth_output_pixels": 11005,
+          "total_pixels": 447450
+        },
+        {
+          "epsilon": 5e-05,
+          "relative_RMS_error": 0.013524304879992146,
+          "smooth_region_error": 0.002192428611908572,
+          "nonsmooth_output_pixels": 9032,
+          "total_pixels": 447450
+        }
+      ]
+    }
+  ],
+  "limits": "Continuous chain rule compared against finite native float32 differences; clipping and rounded transfer knees prevent global differentiability. Actual native scores decide acceptance."
+}

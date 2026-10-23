@@ -1,0 +1,44 @@
+{
+  "status": "CONDITIONAL_UNIT_RADIANCE_AND_MATERIAL_ROLE_LIMIT_NO_IMAGE",
+  "root_commit": "61eba112b04b88e2981d9405f506a617343357b5",
+  "root_core_imported_directly_not_copied": "/evidence/extended/playback-pipeline-01/outline/code-o1/geometric_optics.py",
+  "sha256": "793362af55f4891b1bbbbddaddbe6f5aa20106617688d57501ddf395a1fb1434",
+  "new_rays": 0,
+  "new_level_points": 0,
+  "new_source_RGB_queries": 0,
+  "new_images": 0,
+  "fits": 0,
+  "global_slope_bound": 0.4480437045882295,
+  "R_s_at_bound": 0.07195096225609697,
+  "R_p_at_bound": 0.016839306282440916,
+  "R_p_global_bound_for_M_below_Brewster": 0.04000000000000001,
+  "back_unpolarized_conservative_bound": 0.05597548112804849,
+  "front_normal_reflectance": 0.04000000000000001,
+  "all_nonprimary_initial_power_bound": 0.09373646188292656,
+  "current_encoded_response_ceiling": 0.9262129976035591,
+  "cases": {
+    "a": {
+      "original_rim_fully_covered_pixels": 45750,
+      "target_any_channel_above_ceiling": 3307,
+      "target_luma_above_ceiling": 1216,
+      "maximum_channel_excess_levels": 18.815685611092423,
+      "fraction_any_channel_above_ceiling": 0.07228415300546448
+    },
+    "b": {
+      "original_rim_fully_covered_pixels": 45750,
+      "target_any_channel_above_ceiling": 5387,
+      "target_luma_above_ceiling": 5367,
+      "maximum_channel_excess_levels": 18.815685611092423,
+      "fraction_any_channel_above_ceiling": 0.11774863387978142
+    }
+  },
+  "assumptions": "Lossless primary n1.5 air/glass/air; radiance support<=1 for conditional power envelope. Source-video camera/display response and reflected environment are NOT known. Ceiling applies ONLY if all reflected+transmitted color then goes through same bounded encoded gain/bias and frost filter. It is not automatically the correct material role.",
+  "derivation": "q=sqrt(1-(n^2-1)s^2). Rs=((n-q)/(n+q))^2 increases; Rp=((1-nq)/(1+nq))^2 decreases for0<=s<=M<1/n. Hence R_unpol<=(Rs(M)+Rp(0))/2; all nonprimary power<=Rfront+(1-Rfront)*Rbound, regardless further paths. No extra normal or source field.",
+  "blockers": [
+    "O1 zero-height crease classification remains uncorrected; no path continuation performed.",
+    "Frozen source is only scrolling background plane. Front reflected environment and many secondary terminations have no independently supported RGB.",
+    "Frosted transmitted-color response and specular reflection may need distinct grade/PSF roles; implementing that is shared material-interface work, not an independently painted rim. No role extension adopted."
+  ],
+  "claim_limits": "Conditional bound/material ceiling only, NOT a complete Apple radiance model or global impossibility. Unobserved HDR, camera transfer, external lighting and a different actual surface remain outside it. Saved target reads are statistics, not new source samples or scoring-mask change.",
+  "finished_unix": 1792658457.0726333
+}

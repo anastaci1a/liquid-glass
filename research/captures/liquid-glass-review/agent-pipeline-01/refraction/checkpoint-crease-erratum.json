@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-22T08:35:33.803Z",
+  "status": "APPENDED_ERRATUM_ORIGINAL_EVIDENCE_NOT_REWRITTEN",
+  "affected_settings": [
+    "H1 p3/D2",
+    "H2 p3/D.5",
+    "H3 p4/D2",
+    "H3 p5/D2"
+  ],
+  "defect": "Two existing grid representatives at exactlong-axis endpoints have actualh0 but rho .9999999999999998, boundaryfalse, completeTrue. These are unresolved creases; prior allregularcheckpoint PASS overstates those two paths. More generally the same arithmetic affects parameterized end segment abs(x)==a,abs(y)<=b-r.",
+  "representative_points": [
+    {
+      "x_over_L": -7.225022904390323,
+      "y_over_L": 0,
+      "rho_float64": 0.9999999999999998,
+      "h": 0,
+      "hx": 0.1107262925787925,
+      "hy": 0,
+      "inside": true,
+      "boundary_mask": false,
+      "prior_complete": true,
+      "native_world_pixel": [
+        321.79412349832967,
+        413.1445363169052
+      ]
+    },
+    {
+      "x_over_L": 7.225022904390323,
+      "y_over_L": 0,
+      "rho_float64": 0.9999999999999998,
+      "h": 0,
+      "hx": -0.1107262925787925,
+      "hy": 0,
+      "inside": true,
+      "boundary_mask": false,
+      "prior_complete": true,
+      "native_world_pixel": [
+        1600.6231775754168,
+        413.1445363169052
+      ]
+    }
+  ],
+  "interpretation": {
+    "previous_regular_count": 3791,
+    "physically_regular_count_after_excluding_zeroheight": 3789,
+    "previous_explicit_boundary_count": 174,
+    "crease_count_including_2missed": 176
+  },
+  "source_and_native_scope": {
+    "whole_subrays": 890848,
+    "h_nonpositive": 0,
+    "minimum_positive_h_L": 1.1969070170732663e-7,
+    "same_geometry_both_references": true,
+    "images_rerendered": 0,
+    "score_or_mask_change": false
+  },
+  "scope_proof": "H2 changesD only. For0<=rho<1,p4/p5 h1 are no smaller thanp3, H increasing; sameh2/XY lattice. Native nozero-height certificate therefore transfers. No rerender/retrace/rescore/maskfix.",
+  "active_correction": false,
+  "root_review_required": true
+}

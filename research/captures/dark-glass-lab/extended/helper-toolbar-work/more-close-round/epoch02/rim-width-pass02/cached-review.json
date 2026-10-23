@@ -1,0 +1,143 @@
+{
+  "stage": "NEW_EPOCH02_CACHED_EXISTING_WIDTH_REVIEW",
+  "assignment": "d2e65b87-acbf-4d7f-bc01-fe9f3eba7abc",
+  "proposal_model": "Source-independent delta of exact neutral_rim fields at fixed amplitude .125, each2x2averaged/postfiltered; no repeated amplitude derivative. Proposal only, actualnativefloat32operationorder decides.",
+  "base": {
+    "glass": {
+      "pixels": 1345,
+      "rmse": 2.9372386932373047
+    },
+    "rim": {
+      "pixels": 544,
+      "rmse": 3.9105236530303955
+    },
+    "held": {
+      "pixels": 143,
+      "rmse": 1.9574376344680786
+    },
+    "interior": {
+      "pixels": 801,
+      "rmse": 2.0250802040100098
+    },
+    "ssim": 0.9921990036964417,
+    "loss": 10.62681837100833,
+    "E": 3.259880116048492,
+    "glyph": {
+      "pixels": 400,
+      "rmse": 8.30663013458252
+    },
+    "exterior": {
+      "pixels": 1162,
+      "rmse": 2.7387917041778564
+    },
+    "full_visible_exterior": {
+      "pixels": 1431,
+      "rmse": 2.6554365158081055
+    }
+  },
+  "predictions": [
+    {
+      "width": 0.027,
+      "prediction_ONLY": {
+        "glass": {
+          "pixels": 1345,
+          "rmse": 2.9833929538726807
+        },
+        "rim": {
+          "pixels": 544,
+          "rmse": 3.995974540710449
+        },
+        "held": {
+          "pixels": 143,
+          "rmse": 1.9642013311386108
+        },
+        "interior": {
+          "pixels": 801,
+          "rmse": 2.0250802040100098
+        },
+        "ssim": 0.9921941757202148,
+        "loss": 11.020787221053837,
+        "E": 3.3197571027190884,
+        "glyph": {
+          "pixels": 400,
+          "rmse": 8.30663013458252
+        },
+        "exterior": {
+          "pixels": 1162,
+          "rmse": 2.7390687465667725
+        },
+        "full_visible_exterior": {
+          "pixels": 1431,
+          "rmse": 2.6556687355041504
+        }
+      },
+      "checks": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": true,
+        "glyph": true,
+        "exterior": false,
+        "full_visible_exterior": false,
+        "E": false,
+        "SSIM": false,
+        "meaningful_E_improvement": false
+      },
+      "supported": false
+    },
+    {
+      "width": 0.029,
+      "prediction_ONLY": {
+        "glass": {
+          "pixels": 1345,
+          "rmse": 2.8897440433502197
+        },
+        "rim": {
+          "pixels": 544,
+          "rmse": 3.8220343589782715
+        },
+        "held": {
+          "pixels": 143,
+          "rmse": 1.9505470991134644
+        },
+        "interior": {
+          "pixels": 801,
+          "rmse": 2.0250802040100098
+        },
+        "ssim": 0.9921948313713074,
+        "loss": 10.227818437617788,
+        "E": 3.1980960644761423,
+        "glyph": {
+          "pixels": 400,
+          "rmse": 8.30663013458252
+        },
+        "exterior": {
+          "pixels": 1162,
+          "rmse": 2.738544464111328
+        },
+        "full_visible_exterior": {
+          "pixels": 1431,
+          "rmse": 2.655229330062866
+        }
+      },
+      "checks": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "glyph": true,
+        "exterior": true,
+        "full_visible_exterior": true,
+        "E": true,
+        "SSIM": false,
+        "meaningful_E_improvement": true
+      },
+      "supported": false
+    }
+  ],
+  "selected_first_supported_width": null,
+  "old_epoch_predictions_not_reclassified": true,
+  "new_native_renders": 0,
+  "source_adopted": true,
+  "epoch02_accepted_count": 1
+}

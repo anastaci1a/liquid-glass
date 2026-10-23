@@ -1,0 +1,50 @@
+{
+  "all_crop_rays": 7126400,
+  "whole_lens_rays": 3017148,
+  "all_original_scored_subrays": 2151728,
+  "incomplete": 0,
+  "unsupported_bilinear": 0,
+  "unsupported_registered_frame_texels": 0,
+  "source_query_bounds": [
+    619.625,
+    219.625,
+    1299.375,
+    874.375
+  ],
+  "source_hashes": {
+    "media-source.png": "ae20f4366287078794c6e84d70aff6e786400456264d88ffd832fd478d7b23f6",
+    "media-target.png": "f47fba56384d84de3c106812e8b153fe7a826cfbd0dc082a75f62bc4e2df6bb9"
+  },
+  "actual_registered_frame_domain": "Every four sampled registered texels maps into original frame180 with one-texel bilinear margin",
+  "source_is_not": "A certificate of exact hidden scene RGB, PSF or registration; temporal registered photograph uncertainty remains",
+  "source_registration": {
+    "matrix": [
+      [
+        1.0363366146417339,
+        -3.760268039362286e-05,
+        -34.88401301474385
+      ],
+      [
+        3.760268039362286e-05,
+        1.0363366146417339,
+        -19.61159160676978
+      ]
+    ],
+    "sift_inliers": 71,
+    "exterior_mae_255": 1.4186182022094727,
+    "exterior_pixels": 123730,
+    "source_frame": {
+      "requested_seconds": 180,
+      "presentation_seconds": 180.01316666666668,
+      "frame_index": 5395,
+      "native_size": [
+        1920,
+        1080
+      ]
+    }
+  },
+  "source_blur": 0,
+  "post_blur": 0,
+  "sampling": "4x4 pixel integration; exact continuous bilinear interpolation, distinct from old OpenCV table interpolation",
+  "saved_before_source_RGB_sampling": true
+}

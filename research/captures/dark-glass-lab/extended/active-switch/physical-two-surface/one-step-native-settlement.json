@@ -1,0 +1,717 @@
+{
+  "parameters": {
+    "sigma": 4.339320119358678,
+    "amplitude": 0.7839488678764915,
+    "band": 0.41709079115813363,
+    "power": 2.793583791362869,
+    "tangent": 0,
+    "tangent_band": 0.9999992768775775,
+    "core_x": -0.48636618103316787,
+    "core_y": -0.6136971567801134,
+    "post_sigma": 2.163537921629955,
+    "coupling": 0,
+    "gamma": 1.5497479697761347,
+    "rim_width": 0.04878846511595129,
+    "thin_width": 0.011095946046562786,
+    "spline": true,
+    "shape_dx": 0.001167965417146694,
+    "shape_dy": 0.004755085677013721,
+    "half_x_delta": -0.0025334994195777482,
+    "half_y_delta": 0.011224253113150662,
+    "radius_delta": 0.012043263143639911,
+    "c0": 0.5825744554180238,
+    "c1": 1.3388234553429594,
+    "c2": -0.8083295666489414,
+    "c3": 1.0304313912343226,
+    "c4": 0.7184704183774985,
+    "c5": 0.2901299541876391,
+    "c6": 0.20008253902374495,
+    "shadow": {
+      "opacity": 0.058660798600097784,
+      "sigma": 0.12480880219622643,
+      "offset": [
+        0.0014367206241543645,
+        0.15973501069093624
+      ]
+    },
+    "blur_transition": 0,
+    "tangent_exponent": 3.000273143553201,
+    "cap_normal_gain": -0.11946436603381186,
+    "cap_tangent_fade": 0.9997199664179274,
+    "material_chroma_sensitivity": 10,
+    "material_chroma_floor": 0,
+    "grazing_reflection": {
+      "strength": 1,
+      "width": 0.03895748531996116,
+      "angular_power": 1.5519447192573868,
+      "source_sigma": 0.007,
+      "direction": [
+        0,
+        1
+      ]
+    },
+    "directional_transmission": {
+      "strength": 0.3849814426989986,
+      "length": 0.08,
+      "angle": 1.3571487177940904,
+      "fade_center": -0.395271178284122,
+      "fade_width": 0.3577136899555915
+    },
+    "crown_softness": 0.08,
+    "cap_edge_profile": [
+      0.2322370122582555,
+      3.758106496066732,
+      -0.205634698814882
+    ],
+    "ambient_rim_response": [
+      2.793309293559158,
+      1.311646931057974,
+      6.458550793933152e-18
+    ],
+    "euclidean_surface": {
+      "t0": 0.8,
+      "bx": 0.039405532871118955,
+      "by": 0.03376877635571598,
+      "profile": [
+        0.37554696383165453,
+        0.47546999999999995,
+        -0.10202767742082718,
+        0.11147362282542292,
+        0.12617315540951288,
+        0.030341703382188952,
+        0.0141616455300438
+      ],
+      "width": 0.75,
+      "n": 1.5,
+      "gap": 10.8,
+      "longitudinal": 0.13642772745586756
+    },
+    "front_crown": 0.0007825923097103997,
+    "front_profile": "ellipse",
+    "front_back_coupling": -1.0
+  },
+  "material": [
+    0.5499320206251561,
+    0.7115747107190714,
+    0.6265716468488288,
+    0.3510945302078741,
+    0.3752696983579124,
+    0.3448867684806515,
+    -1.6620089656440955,
+    0.11176574485481887,
+    -2.4875457061229853,
+    -0.30687214514918804,
+    -0.028643023462204053,
+    0.837395684041109,
+    0.08600962891106649,
+    0.034208047946241125,
+    -0.03000898382672077,
+    -0.004085459459985091,
+    0.044302663951202345,
+    -0.042306302609311675,
+    -0.10262930241382831,
+    0.01784678054755684,
+    0.7299992966875127,
+    0.6803527862903158,
+    0.7336250480454777
+  ],
+  "scores": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.422196388244629
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 19.63994598388672
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 12.997995376586914
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.965199947357178
+      },
+      "loss": 207.04484270713647,
+      "shadow": {
+        "rmse": 6.534102439880371
+      },
+      "crop_upper-left": {
+        "rmse": 12.289214134216309
+      },
+      "crop_lower-left": {
+        "rmse": 14.480945587158203
+      },
+      "crop_right-rim": {
+        "rmse": 13.945389747619629
+      },
+      "crop_center": {
+        "rmse": 1.874281883239746
+      }
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.99156379699707
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 18.95683479309082
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 14.335508346557617
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 11.330087661743164
+      },
+      "loss": 244.84317585156896,
+      "shadow": {
+        "rmse": 4.511796474456787
+      },
+      "crop_upper-left": {
+        "rmse": 10.729011535644531
+      },
+      "crop_lower-left": {
+        "rmse": 12.573927879333496
+      },
+      "crop_right-rim": {
+        "rmse": 12.494579315185547
+      },
+      "crop_center": {
+        "rmse": 5.327435493469238
+      }
+    }
+  ],
+  "baseline": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.221224784851074
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 19.334808349609375
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 12.757025718688965
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.811028957366943
+      },
+      "loss": 200.29156414534654,
+      "shadow": {
+        "rmse": 6.534461975097656
+      },
+      "crop_upper-left": {
+        "rmse": 11.560403823852539
+      },
+      "crop_lower-left": {
+        "rmse": 14.091238021850586
+      },
+      "crop_right-rim": {
+        "rmse": 13.798047065734863
+      },
+      "crop_center": {
+        "rmse": 1.836246371269226
+      }
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.6414155960083
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 19.00812530517578
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 13.706783294677734
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 10.672737121582031
+      },
+      "loss": 238.65440190929212,
+      "shadow": {
+        "rmse": 4.462854385375977
+      },
+      "crop_upper-left": {
+        "rmse": 12.422592163085938
+      },
+      "crop_lower-left": {
+        "rmse": 11.855730056762695
+      },
+      "crop_right-rim": {
+        "rmse": 11.851014137268066
+      },
+      "crop_center": {
+        "rmse": 5.754939556121826
+      }
+    }
+  ],
+  "initial_scores": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.423681259155273
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 19.639860153198242
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 12.99998950958252
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.970168590545654
+      },
+      "loss": 207.067577508698,
+      "shadow": {
+        "rmse": 6.534269332885742
+      },
+      "crop_upper-left": {
+        "rmse": 12.302142143249512
+      },
+      "crop_lower-left": {
+        "rmse": 14.483833312988281
+      },
+      "crop_right-rim": {
+        "rmse": 13.94411849975586
+      },
+      "crop_center": {
+        "rmse": 1.8726238012313843
+      }
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.991823196411133
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 18.968107223510742
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 14.328813552856445
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 11.32276725769043
+      },
+      "loss": 244.97650894452016,
+      "shadow": {
+        "rmse": 4.511800765991211
+      },
+      "crop_upper-left": {
+        "rmse": 10.741362571716309
+      },
+      "crop_lower-left": {
+        "rmse": 12.580778121948242
+      },
+      "crop_right-rim": {
+        "rmse": 12.51888370513916
+      },
+      "crop_center": {
+        "rmse": 5.323039531707764
+      }
+    }
+  ],
+  "ratios": [
+    1.016718859429151,
+    1.012882989137649
+  ],
+  "numeric_pass": false,
+  "accepted": false,
+  "history": [
+    {
+      "iteration": 1,
+      "seconds": 988.7566232681274,
+      "gain": 0.00011350853271618888,
+      "solver_success": true,
+      "solver_message": "Optimization terminated successfully",
+      "trials": [
+        {
+          "alpha": 1,
+          "allowed": true,
+          "scores": [
+            {
+              "glass": {
+                "pixels": 240456,
+                "rmse": 11.422196388244629
+              },
+              "rim": {
+                "pixels": 70466,
+                "rmse": 19.63994598388672
+              },
+              "held": {
+                "pixels": 61420,
+                "rmse": 12.997995376586914
+              },
+              "interior": {
+                "pixels": 169990,
+                "rmse": 4.965199947357178
+              },
+              "loss": 207.04484270713647,
+              "shadow": {
+                "rmse": 6.534102439880371
+              },
+              "crop_upper-left": {
+                "rmse": 12.289214134216309
+              },
+              "crop_lower-left": {
+                "rmse": 14.480945587158203
+              },
+              "crop_right-rim": {
+                "rmse": 13.945389747619629
+              },
+              "crop_center": {
+                "rmse": 1.874281883239746
+              }
+            },
+            {
+              "glass": {
+                "pixels": 208969,
+                "rmse": 13.99156379699707
+              },
+              "rim": {
+                "pixels": 60968,
+                "rmse": 18.95683479309082
+              },
+              "held": {
+                "pixels": 53183,
+                "rmse": 14.335508346557617
+              },
+              "interior": {
+                "pixels": 148001,
+                "rmse": 11.330087661743164
+              },
+              "loss": 244.84317585156896,
+              "shadow": {
+                "rmse": 4.511796474456787
+              },
+              "crop_upper-left": {
+                "rmse": 10.729011535644531
+              },
+              "crop_lower-left": {
+                "rmse": 12.573927879333496
+              },
+              "crop_right-rim": {
+                "rmse": 12.494579315185547
+              },
+              "crop_center": {
+                "rmse": 5.327435493469238
+              }
+            }
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "allowed": true,
+          "scores": [
+            {
+              "glass": {
+                "pixels": 240456,
+                "rmse": 11.42280387878418
+              },
+              "rim": {
+                "pixels": 70466,
+                "rmse": 19.639785766601562
+              },
+              "held": {
+                "pixels": 61420,
+                "rmse": 12.998860359191895
+              },
+              "interior": {
+                "pixels": 169990,
+                "rmse": 4.96743631362915
+              },
+              "loss": 207.05266940461843,
+              "shadow": {
+                "rmse": 6.534185409545898
+              },
+              "crop_upper-left": {
+                "rmse": 12.29557991027832
+              },
+              "crop_lower-left": {
+                "rmse": 14.48232650756836
+              },
+              "crop_right-rim": {
+                "rmse": 13.944551467895508
+              },
+              "crop_center": {
+                "rmse": 1.8733848333358765
+              }
+            },
+            {
+              "glass": {
+                "pixels": 208969,
+                "rmse": 13.99162769317627
+              },
+              "rim": {
+                "pixels": 60968,
+                "rmse": 18.962276458740234
+              },
+              "held": {
+                "pixels": 53183,
+                "rmse": 14.332090377807617
+              },
+              "interior": {
+                "pixels": 148001,
+                "rmse": 11.326447486877441
+              },
+              "loss": 244.90633040242818,
+              "shadow": {
+                "rmse": 4.5117998123168945
+              },
+              "crop_upper-left": {
+                "rmse": 10.734993934631348
+              },
+              "crop_lower-left": {
+                "rmse": 12.577323913574219
+              },
+              "crop_right-rim": {
+                "rmse": 12.506528854370117
+              },
+              "crop_center": {
+                "rmse": 5.325233459472656
+              }
+            }
+          ]
+        },
+        {
+          "alpha": 0.25,
+          "allowed": true,
+          "scores": [
+            {
+              "glass": {
+                "pixels": 240456,
+                "rmse": 11.423210144042969
+              },
+              "rim": {
+                "pixels": 70466,
+                "rmse": 19.63979721069336
+              },
+              "held": {
+                "pixels": 61420,
+                "rmse": 12.999393463134766
+              },
+              "interior": {
+                "pixels": 169990,
+                "rmse": 4.968739986419678
+              },
+              "loss": 207.05930133962391,
+              "shadow": {
+                "rmse": 6.534226894378662
+              },
+              "crop_upper-left": {
+                "rmse": 12.298835754394531
+              },
+              "crop_lower-left": {
+                "rmse": 14.483063697814941
+              },
+              "crop_right-rim": {
+                "rmse": 13.944291114807129
+              },
+              "crop_center": {
+                "rmse": 1.8729873895645142
+              }
+            },
+            {
+              "glass": {
+                "pixels": 208969,
+                "rmse": 13.991708755493164
+              },
+              "rim": {
+                "pixels": 60968,
+                "rmse": 18.96514129638672
+              },
+              "held": {
+                "pixels": 53183,
+                "rmse": 14.330436706542969
+              },
+              "interior": {
+                "pixels": 148001,
+                "rmse": 11.324612617492676
+              },
+              "loss": 244.9405150465547,
+              "shadow": {
+                "rmse": 4.511800765991211
+              },
+              "crop_upper-left": {
+                "rmse": 10.738130569458008
+              },
+              "crop_lower-left": {
+                "rmse": 12.579044342041016
+              },
+              "crop_right-rim": {
+                "rmse": 12.512650489807129
+              },
+              "crop_center": {
+                "rmse": 5.324135780334473
+              }
+            }
+          ]
+        },
+        {
+          "alpha": 0.125,
+          "allowed": true,
+          "scores": [
+            {
+              "glass": {
+                "pixels": 240456,
+                "rmse": 11.423436164855957
+              },
+              "rim": {
+                "pixels": 70466,
+                "rmse": 19.639822006225586
+              },
+              "held": {
+                "pixels": 61420,
+                "rmse": 12.99968147277832
+              },
+              "interior": {
+                "pixels": 169990,
+                "rmse": 4.969437122344971
+              },
+              "loss": 207.06320819964412,
+              "shadow": {
+                "rmse": 6.534248352050781
+              },
+              "crop_upper-left": {
+                "rmse": 12.300482749938965
+              },
+              "crop_lower-left": {
+                "rmse": 14.483443260192871
+              },
+              "crop_right-rim": {
+                "rmse": 13.944192886352539
+              },
+              "crop_center": {
+                "rmse": 1.872801423072815
+              }
+            },
+            {
+              "glass": {
+                "pixels": 208969,
+                "rmse": 13.991762161254883
+              },
+              "rim": {
+                "pixels": 60968,
+                "rmse": 18.966611862182617
+              },
+              "held": {
+                "pixels": 53183,
+                "rmse": 14.329621315002441
+              },
+              "interior": {
+                "pixels": 148001,
+                "rmse": 11.323692321777344
+              },
+              "loss": 244.95829552319265,
+              "shadow": {
+                "rmse": 4.511800765991211
+              },
+              "crop_upper-left": {
+                "rmse": 10.739733695983887
+              },
+              "crop_lower-left": {
+                "rmse": 12.579910278320312
+              },
+              "crop_right-rim": {
+                "rmse": 12.515752792358398
+              },
+              "crop_center": {
+                "rmse": 5.323587417602539
+              }
+            }
+          ]
+        },
+        {
+          "alpha": 0.0625,
+          "allowed": true,
+          "scores": [
+            {
+              "glass": {
+                "pixels": 240456,
+                "rmse": 11.42355728149414
+              },
+              "rim": {
+                "pixels": 70466,
+                "rmse": 19.63983917236328
+              },
+              "held": {
+                "pixels": 61420,
+                "rmse": 12.999833106994629
+              },
+              "interior": {
+                "pixels": 169990,
+                "rmse": 4.969799041748047
+              },
+              "loss": 207.06534748939302,
+              "shadow": {
+                "rmse": 6.534258842468262
+              },
+              "crop_upper-left": {
+                "rmse": 12.301310539245605
+              },
+              "crop_lower-left": {
+                "rmse": 14.483637809753418
+              },
+              "crop_right-rim": {
+                "rmse": 13.944153785705566
+              },
+              "crop_center": {
+                "rmse": 1.8727115392684937
+              }
+            },
+            {
+              "glass": {
+                "pixels": 208969,
+                "rmse": 13.991791725158691
+              },
+              "rim": {
+                "pixels": 60968,
+                "rmse": 18.967355728149414
+              },
+              "held": {
+                "pixels": 53183,
+                "rmse": 14.329216003417969
+              },
+              "interior": {
+                "pixels": 148001,
+                "rmse": 11.323229789733887
+              },
+              "loss": 244.96733997160214,
+              "shadow": {
+                "rmse": 4.511800765991211
+              },
+              "crop_upper-left": {
+                "rmse": 10.740545272827148
+              },
+              "crop_lower-left": {
+                "rmse": 12.580343246459961
+              },
+              "crop_right-rim": {
+                "rmse": 12.517314910888672
+              },
+              "crop_center": {
+                "rmse": 5.3233137130737305
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "method": "Four bounded native joint steps for the constant-thickness two-interface crown.\nFront f and back h0-f share the same complete height derivatives. Same accepted\nsource, material family, kernels and native publication guards. Solver steps\nare not passes; intermediate infeasible progress cannot be published.\n",
+  "early_stop_reason": "Saved first-step local model predicts only tiny extra benefit from the new parameter (worst ratio1.01672984 vs material-only1.01674005). Retain one completed native validation; stop the remaining expensive steps. No claim of global convergence or a qualifying pass."
+}

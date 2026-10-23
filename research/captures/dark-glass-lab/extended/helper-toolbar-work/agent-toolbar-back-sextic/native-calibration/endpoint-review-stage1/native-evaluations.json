@@ -1,0 +1,2860 @@
+{
+  "baseline": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "pixels": 188771,
+          "rmse": 5.843130588531494,
+          "mae": 3.8693673610687256,
+          "opponent_chroma_rmse": 0.6442244648933411
+        },
+        "rim": {
+          "pixels": 61248,
+          "rmse": 8.813648223876953,
+          "mae": 5.903055191040039,
+          "opponent_chroma_rmse": 0.7896908521652222
+        },
+        "shadow": 11.46944201723165
+      }
+    }
+  },
+  "normalized_scales": [
+    0.03,
+    0.03,
+    0.15,
+    0.02
+  ],
+  "guard_order": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "evaluations": [
+    {
+      "index": 0,
+      "z": [
+        -0.19653563191088527,
+        0.842833146297972,
+        -0.9999999999999999,
+        -0.9999999999999999
+      ],
+      "parameters": [
+        -0.005896068957326558,
+        0.02528499438893916,
+        -0.14999999999999997,
+        -0.019999999999999997
+      ],
+      "E": 12.094453031319594,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.375489234924316,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.625290870666504,
+              "pixels": 61248
+            },
+            "shadow": 11.471834027618803
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.545430949227748,
+        "plus": 4.5614253910392435
+      },
+      "MSE": [
+        129.401755333879,
+        185.64855131026798,
+        131.60297595723264,
+        183.47869960029695,
+        20.806601598017515
+      ],
+      "guard_MSE_ratios": [
+        3.790085284578848,
+        2.3899022562412737,
+        1.0004171536534239,
+        1.0463466177251024,
+        1.547199299212366
+      ],
+      "max_guard_excess_ratio": 2.790085284578848,
+      "merit": 30.999677234179575,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.094453031319594,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7603478032454545,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "inherited",
+      "native_actual_render": false,
+      "inherited_from": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic",
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0000.npz",
+      "seconds": 0.29225921630859375
+    },
+    {
+      "index": 1,
+      "z": [
+        -0.4556335005557394,
+        -0.11883494253459574,
+        -0.9999999999999999,
+        0.0
+      ],
+      "parameters": [
+        -0.013669005016672182,
+        -0.003565048276037872,
+        -0.14999999999999997,
+        0.0
+      ],
+      "E": 13.374449189870615,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 13.230318069458008,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.704861640930176,
+              "pixels": 61248
+            },
+            "shadow": 11.483750903251343
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 14.024082905192717,
+        "plus": 6.230235310842624
+      },
+      "MSE": [
+        175.04131621902707,
+        187.82323259703935,
+        131.87653480792602,
+        196.67490133171862,
+        38.81583202847029
+      ],
+      "guard_MSE_ratios": [
+        5.1268355292654615,
+        2.417897496048853,
+        1.0024966884418798,
+        1.1216022254799596,
+        2.886383335110158
+      ],
+      "max_guard_excess_ratio": 4.1268355292654615,
+      "merit": 45.057806426694476,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 13.374449189870615,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.9466512615360414,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "inherited",
+      "native_actual_render": false,
+      "inherited_from": "/tmp/agent-toolbar-back-surface",
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0001.npz",
+      "seconds": 0.25754261016845703
+    },
+    {
+      "index": 2,
+      "z": [
+        -0.17653563191088528,
+        0.842833146297972,
+        -0.9999999999999999,
+        -0.9999999999999999
+      ],
+      "parameters": [
+        -0.0052960689573265584,
+        0.02528499438893916,
+        -0.14999999999999997,
+        -0.019999999999999997
+      ],
+      "E": 12.058128589254842,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.310240745544434,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.64470386505127,
+              "pixels": 61248
+            },
+            "shadow": 11.472457953872452
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.533732695096925,
+        "plus": 4.475470854683745
+      },
+      "MSE": [
+        127.9215457221735,
+        186.17794356494505,
+        131.6172915033713,
+        183.16192066233546,
+        20.02983937112365
+      ],
+      "guard_MSE_ratios": [
+        3.7467309989051945,
+        2.396717260909826,
+        1.000525977316543,
+        1.0445400833915552,
+        1.4894384982741034
+      ],
+      "max_guard_excess_ratio": 2.7467309989051945,
+      "merit": 30.547548331278925,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.058128589254842,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7550607802087603,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0002.npz",
+      "seconds": 4.1486592292785645
+    },
+    {
+      "index": 3,
+      "z": [
+        -0.21653563191088526,
+        0.842833146297972,
+        -0.9999999999999999,
+        -0.9999999999999999
+      ],
+      "parameters": [
+        -0.006496068957326557,
+        0.02528499438893916,
+        -0.14999999999999997,
+        -0.019999999999999997
+      ],
+      "E": 12.131382156731352,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.441523551940918,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.605698585510254,
+              "pixels": 61248
+            },
+            "shadow": 11.471206946891316
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.558262690048387,
+        "plus": 4.653452439103845
+      },
+      "MSE": [
+        130.90846118961872,
+        185.11503399975572,
+        131.5885888184076,
+        183.82648717235813,
+        21.654619603001528
+      ],
+      "guard_MSE_ratios": [
+        3.834215626375941,
+        2.383034148652295,
+        1.0003077857582994,
+        1.0483299888221607,
+        1.6102587496877259
+      ],
+      "max_guard_excess_ratio": 2.834215626375941,
+      "merit": 31.45993340422302,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.131382156731352,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7657228379515317,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0003.npz",
+      "seconds": 3.8066563606262207
+    },
+    {
+      "index": 4,
+      "z": [
+        -0.19653563191088527,
+        0.862833146297972,
+        -0.9999999999999999,
+        -0.9999999999999999
+      ],
+      "parameters": [
+        -0.005896068957326558,
+        0.02588499438893916,
+        -0.14999999999999997,
+        -0.019999999999999997
+      ],
+      "E": 12.066846790282822,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.33609676361084,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.620306968688965,
+              "pixels": 61248
+            },
+            "shadow": 11.472191135941676
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.540493681711247,
+        "plus": 4.558568523388787
+      },
+      "MSE": [
+        128.50708983394816,
+        185.51276192131718,
+        131.61116945957878,
+        183.3449691444622,
+        20.780546982431023
+      ],
+      "guard_MSE_ratios": [
+        3.763881169053836,
+        2.388154203995583,
+        1.0004794388733131,
+        1.0455839765550137,
+        1.5452618524464072
+      ],
+      "max_guard_excess_ratio": 2.763881169053836,
+      "merit": 30.723505756528304,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.066846790282822,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.756329714486988,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0004.npz",
+      "seconds": 4.042491912841797
+    },
+    {
+      "index": 5,
+      "z": [
+        -0.19653563191088527,
+        0.822833146297972,
+        -0.9999999999999999,
+        -0.9999999999999999
+      ],
+      "parameters": [
+        -0.005896068957326558,
+        0.02468499438893916,
+        -0.14999999999999997,
+        -0.019999999999999997
+      ],
+      "E": 12.12256290431339,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.415535926818848,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.63040828704834,
+              "pixels": 61248
+            },
+            "shadow": 11.471462722505063
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.550368883194091,
+        "plus": 4.564393938137918
+      },
+      "MSE": [
+        130.31446049649185,
+        185.78803007163606,
+        131.59445699382326,
+        183.6124968706347,
+        20.833692022510174
+      ],
+      "guard_MSE_ratios": [
+        3.8168177689802585,
+        2.3916978027410374,
+        1.0003523943494332,
+        1.047109639926501,
+        1.5492137697443724
+      ],
+      "max_guard_excess_ratio": 2.8168177689802585,
+      "merit": 31.281423364920787,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.12256290431339,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7644391956421175,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0005.npz",
+      "seconds": 4.029598951339722
+    },
+    {
+      "index": 6,
+      "z": [
+        -0.19653563191088527,
+        0.842833146297972,
+        -0.9799999999999999,
+        -0.9999999999999999
+      ],
+      "parameters": [
+        -0.005896068957326558,
+        0.02528499438893916,
+        -0.14699999999999996,
+        -0.019999999999999997
+      ],
+      "E": 11.924009555506322,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.129762649536133,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.598023414611816,
+              "pixels": 61248
+            },
+            "shadow": 11.476887586054628
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.53414948883525,
+        "plus": 4.5508825472215495
+      },
+      "MSE": [
+        123.87161663500956,
+        184.9062407843312,
+        131.71894866293485,
+        183.17320238613948,
+        20.7105319586057
+      ],
+      "guard_MSE_ratios": [
+        3.628111459338337,
+        2.3803462990940347,
+        1.001298752897637,
+        1.044604421069826,
+        1.540055466613211
+      ],
+      "max_guard_excess_ratio": 2.628111459338337,
+      "merit": 29.293212827703254,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.924009555506322,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.735539753022064,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0006.npz",
+      "seconds": 4.396606683731079
+    },
+    {
+      "index": 7,
+      "z": [
+        -0.19653563191088527,
+        0.842833146297972,
+        -1.0,
+        -0.9999999999999999
+      ],
+      "parameters": [
+        -0.005896068957326558,
+        0.02528499438893916,
+        -0.15,
+        -0.019999999999999997
+      ],
+      "E": 12.094453031319594,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.375489234924316,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.625290870666504,
+              "pixels": 61248
+            },
+            "shadow": 11.471834027618803
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.545430949227748,
+        "plus": 4.5614253910392435
+      },
+      "MSE": [
+        129.401755333879,
+        185.64855131026798,
+        131.60297595723264,
+        183.47869960029695,
+        20.806601598017515
+      ],
+      "guard_MSE_ratios": [
+        3.790085284578848,
+        2.3899022562412737,
+        1.0004171536534239,
+        1.0463466177251024,
+        1.547199299212366
+      ],
+      "max_guard_excess_ratio": 2.790085284578848,
+      "merit": 30.999677234179575,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.094453031319594,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7603478032454545,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0007.npz",
+      "seconds": 4.3742687702178955
+    },
+    {
+      "index": 8,
+      "z": [
+        -0.19653563191088527,
+        0.842833146297972,
+        -0.9999999999999999,
+        -0.9799999999999999
+      ],
+      "parameters": [
+        -0.005896068957326558,
+        0.02528499438893916,
+        -0.14999999999999997,
+        -0.0196
+      ],
+      "E": 12.08653718039583,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.357641220092773,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.636613845825195,
+              "pixels": 61248
+            },
+            "shadow": 11.472824637931751
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.545028478220022,
+        "plus": 4.561069268506079
+      },
+      "MSE": [
+        128.99601408435046,
+        185.95723718015142,
+        131.6257051727338,
+        183.4677964757914,
+        20.803352872110583
+      ],
+      "guard_MSE_ratios": [
+        3.7782014122525647,
+        2.393876050012879,
+        1.0005899361981274,
+        1.0462844391317623,
+        1.5469577207680025
+      ],
+      "max_guard_excess_ratio": 2.7782014122525647,
+      "merit": 30.876783461148953,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.08653718039583,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7591956510358109,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0008.npz",
+      "seconds": 4.365569114685059
+    },
+    {
+      "index": 9,
+      "z": [
+        -0.19653563191088527,
+        0.842833146297972,
+        -0.9999999999999999,
+        -1.0
+      ],
+      "parameters": [
+        -0.005896068957326558,
+        0.02528499438893916,
+        -0.14999999999999997,
+        -0.02
+      ],
+      "E": 12.094453031319594,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.375489234924316,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.625290870666504,
+              "pixels": 61248
+            },
+            "shadow": 11.471834027618803
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.545430949227748,
+        "plus": 4.5614253910392435
+      },
+      "MSE": [
+        129.401755333879,
+        185.64855131026798,
+        131.60297595723264,
+        183.47869960029695,
+        20.806601598017515
+      ],
+      "guard_MSE_ratios": [
+        3.790085284578848,
+        2.3899022562412737,
+        1.0004171536534239,
+        1.0463466177251024,
+        1.547199299212366
+      ],
+      "max_guard_excess_ratio": 2.790085284578848,
+      "merit": 30.999677234179575,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.094453031319594,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7603478032454545,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0009.npz",
+      "seconds": 4.262842178344727
+    },
+    {
+      "index": 10,
+      "z": [
+        -0.3222947793277443,
+        1.0,
+        -0.7999999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.009668843379832329,
+        0.03,
+        -0.11999999999999997,
+        -0.02
+      ],
+      "E": 11.776299436721956,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.37170696258545,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.535085678100586,
+              "pixels": 61248
+            },
+            "shadow": 11.469656076467087
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.486034415845511,
+        "plus": 5.112796214550273
+      },
+      "MSE": [
+        107.57230531774348,
+        211.26871566972477,
+        131.5530105124384,
+        181.87312426536957,
+        26.1406851315196
+      ],
+      "guard_MSE_ratios": [
+        3.1507162353481566,
+        2.71971731903488,
+        1.000037327227019,
+        1.0371903051674927,
+        1.9438469817325614
+      ],
+      "max_guard_excess_ratio": 2.1507162353481566,
+      "merit": 24.445097337295486,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.776299436721956,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7140405432235031,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-trial1",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0010.npz",
+      "seconds": 4.113508462905884
+    },
+    {
+      "index": 11,
+      "z": [
+        -0.3022947793277443,
+        1.0,
+        -0.7999999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.009068843379832329,
+        0.03,
+        -0.11999999999999997,
+        -0.02
+      ],
+      "E": 11.748734102807427,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.316551208496094,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.55230712890625,
+              "pixels": 61248
+            },
+            "shadow": 11.469136299515842
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.469138626198001,
+        "plus": 4.995208373736238
+      },
+      "MSE": [
+        106.43122883752221,
+        211.76964277401567,
+        131.54108745687194,
+        181.41769533173897,
+        24.952106697044634
+      ],
+      "guard_MSE_ratios": [
+        3.1172949176457267,
+        2.7261658843929606,
+        0.9999466907560283,
+        1.0345930743970728,
+        1.8554631237432866
+      ],
+      "max_guard_excess_ratio": 2.1172949176457267,
+      "merit": 24.097146334324854,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.748734102807427,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7100284084972355,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0011.npz",
+      "seconds": 3.9935407638549805
+    },
+    {
+      "index": 12,
+      "z": [
+        -0.3422947793277443,
+        1.0,
+        -0.7999999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.01026884337983233,
+        0.03,
+        -0.11999999999999997,
+        -0.02
+      ],
+      "E": 11.808179800360035,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.430708885192871,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.522778511047363,
+              "pixels": 61248
+            },
+            "shadow": 11.470350878074873
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.50418661549286,
+        "plus": 5.234098081336901
+      },
+      "MSE": [
+        108.79968784764151,
+        210.91109568093907,
+        131.568949266153,
+        182.3630561460565,
+        27.39578272505463
+      ],
+      "guard_MSE_ratios": [
+        3.186665395798979,
+        2.7151135835785905,
+        1.0001584901605163,
+        1.0399843001510478,
+        2.0371772696228025
+      ],
+      "max_guard_excess_ratio": 2.186665395798979,
+      "merit": 24.820517411673073,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.808179800360035,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7186807305847362,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0012.npz",
+      "seconds": 4.607851505279541
+    },
+    {
+      "index": 13,
+      "z": [
+        -0.3222947793277443,
+        0.98,
+        -0.7999999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.009668843379832329,
+        0.0294,
+        -0.11999999999999997,
+        -0.02
+      ],
+      "E": 11.760928747610157,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.367719650268555,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.500197410583496,
+              "pixels": 61248
+            },
+            "shadow": 11.46965631401345
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.490692640553648,
+        "plus": 5.114290476309031
+      },
+      "MSE": [
+        107.48961074656472,
+        210.25572494589233,
+        131.5530159615886,
+        181.99878792188838,
+        26.155967076065252
+      ],
+      "guard_MSE_ratios": [
+        3.1482941702337346,
+        2.70667682505121,
+        1.000037368650272,
+        1.0379069428058445,
+        1.9449833621155015
+      ],
+      "max_guard_excess_ratio": 2.1482941702337346,
+      "merit": 24.41321237448214,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.760928747610157,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7118033392141727,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0013.npz",
+      "seconds": 4.340210199356079
+    },
+    {
+      "index": 14,
+      "z": [
+        -0.3222947793277443,
+        1.0,
+        -0.7799999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.009668843379832329,
+        0.03,
+        -0.11699999999999997,
+        -0.02
+      ],
+      "E": 11.947819576028458,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.435348510742188,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.891031265258789,
+              "pixels": 61248
+            },
+            "shadow": 11.468827228733506
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.475025405735058,
+        "plus": 5.104559661412856
+      },
+      "MSE": [
+        108.89649854064919,
+        221.74281214291477,
+        131.53399800253908,
+        181.57630968520527,
+        26.056529336923333
+      ],
+      "guard_MSE_ratios": [
+        3.189500912071626,
+        2.8545530967271624,
+        0.9998927982686202,
+        1.0354976240403484,
+        1.937589074317426
+      ],
+      "max_guard_excess_ratio": 2.189500912071626,
+      "merit": 24.919148560519474,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.947819576028458,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7390053018329803,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0014.npz",
+      "seconds": 4.289623260498047
+    },
+    {
+      "index": 15,
+      "z": [
+        -0.3222947793277443,
+        1.0,
+        -0.8199999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.009668843379832329,
+        0.03,
+        -0.12299999999999997,
+        -0.02
+      ],
+      "E": 11.683806009026737,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.36984634399414,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.28725814819336,
+              "pixels": 61248
+            },
+            "shadow": 11.475926962290043
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.497270929740647,
+        "plus": 5.121223107027933
+      },
+      "MSE": [
+        107.53371319804864,
+        204.12574539311754,
+        131.69689964381556,
+        182.17632255082196,
+        26.226926111956836
+      ],
+      "guard_MSE_ratios": [
+        3.149585899638423,
+        2.6277639983122327,
+        1.0011311410576484,
+        1.038919391438402,
+        1.950259945611708
+      ],
+      "max_guard_excess_ratio": 2.149585899638423,
+      "merit": 24.387824950729204,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.683806009026737,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.700578123564153,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0015.npz",
+      "seconds": 4.277778625488281
+    },
+    {
+      "index": 16,
+      "z": [
+        -0.3222947793277443,
+        1.0,
+        -0.7999999999999998,
+        -0.98
+      ],
+      "parameters": [
+        -0.009668843379832329,
+        0.03,
+        -0.11999999999999997,
+        -0.0196
+      ],
+      "E": 11.803419670721754,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.385860443115234,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.584746360778809,
+              "pixels": 61248
+            },
+            "shadow": 11.469304667610555
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.485560273262486,
+        "plus": 5.112567565129136
+      },
+      "MSE": [
+        107.86609714386577,
+        212.7148264082507,
+        131.54494955847326,
+        181.8603358837954,
+        26.13834710801046
+      ],
+      "guard_MSE_ratios": [
+        3.1593211887666217,
+        2.738333480014245,
+        0.9999760496110467,
+        1.0371173752860652,
+        1.9436731240115954
+      ],
+      "max_guard_excess_ratio": 2.1593211887666217,
+      "merit": 24.544694290398052,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.803419670721754,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7179878936511259,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0016.npz",
+      "seconds": 4.092375755310059
+    },
+    {
+      "index": 17,
+      "z": [
+        -0.1222947793277443,
+        0.8,
+        -0.9999999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.0036688433798323285,
+        0.024,
+        -0.14999999999999997,
+        -0.02
+      ],
+      "E": 12.030205131801303,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.230093002319336,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.716819763183594,
+              "pixels": 61248
+            },
+            "shadow": 11.473296271031534
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.517857003975621,
+        "plus": 4.2828456309149345
+      },
+      "MSE": [
+        126.11498884074172,
+        188.15114441566402,
+        131.6365273228661,
+        182.73245797993275,
+        18.342766698247143
+      ],
+      "guard_MSE_ratios": [
+        3.6938182340481585,
+        2.422118790476675,
+        1.0006722038258389,
+        1.0420909335657162,
+        1.363986119859573
+      ],
+      "max_guard_excess_ratio": 2.6938182340481585,
+      "merit": 30.004171155622696,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.030205131801303,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7509965205965179,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-trial2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0017.npz",
+      "seconds": 4.290308237075806
+    },
+    {
+      "index": 18,
+      "z": [
+        -0.2222947793277443,
+        0.9,
+        -0.8999999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.006668843379832329,
+        0.027,
+        -0.13499999999999995,
+        -0.02
+      ],
+      "E": 11.504457411475157,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.413406372070312,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.716804504394531,
+              "pixels": 61248
+            },
+            "shadow": 11.495549764458547
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.490830088672874,
+        "plus": 4.6226764577059445
+      },
+      "MSE": [
+        108.43903226987459,
+        188.1507258117781,
+        132.14766438714295,
+        182.00249648144134,
+        21.369137632628778
+      ],
+      "guard_MSE_ratios": [
+        3.1761020506993023,
+        2.422113401679594,
+        1.0045577564377859,
+        1.0379280920659675,
+        1.589030030407564
+      ],
+      "max_guard_excess_ratio": 2.1761020506993023,
+      "merit": 24.564883458454297,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.504457411475157,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6744739327506035,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-trial2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0018.npz",
+      "seconds": 3.900744676589966
+    },
+    {
+      "index": 19,
+      "z": [
+        -0.2722947793277443,
+        0.95,
+        -0.8499999999999999,
+        -1.0
+      ],
+      "parameters": [
+        -0.008168843379832329,
+        0.028499999999999998,
+        -0.12749999999999997,
+        -0.02
+      ],
+      "E": 11.550150038220503,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.307452201843262,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.028003692626953,
+              "pixels": 61248
+            },
+            "shadow": 11.487222049794246
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.485225362100186,
+        "plus": 4.852350573393825
+      },
+      "MSE": [
+        106.2435708932835,
+        196.78488760035543,
+        131.95627042127913,
+        181.8513030666301,
+        23.545306087115385
+      ],
+      "guard_MSE_ratios": [
+        3.1117985500643264,
+        2.5332632199444665,
+        1.0031028212042683,
+        1.0370658627251519,
+        1.7508520507835654
+      ],
+      "max_guard_excess_ratio": 2.1117985500643264,
+      "merit": 23.944165068987928,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.550150038220503,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6811244951950062,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-trial2",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0019.npz",
+      "seconds": 4.050912857055664
+    },
+    {
+      "index": 20,
+      "z": [
+        -0.2522947793277443,
+        0.95,
+        -0.8499999999999999,
+        -1.0
+      ],
+      "parameters": [
+        -0.007568843379832328,
+        0.028499999999999998,
+        -0.12749999999999997,
+        -0.02
+      ],
+      "E": 11.489248432047946,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.227758407592773,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.997368812561035,
+              "pixels": 61248
+            },
+            "shadow": 11.48364258932821
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.47073106784112,
+        "plus": 4.745171688493237
+      },
+      "MSE": [
+        104.60704204408466,
+        195.92633367485632,
+        131.87404711943273,
+        181.46059550209995,
+        22.516654353277755
+      ],
+      "guard_MSE_ratios": [
+        3.063865785217872,
+        2.522210831174538,
+        1.0024777775758942,
+        1.034837726491593,
+        1.674360499088799
+      ],
+      "max_guard_excess_ratio": 2.063865785217872,
+      "merit": 23.43511224804338,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.489248432047946,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6722602655880652,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model3",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0020.npz",
+      "seconds": 4.227367162704468
+    },
+    {
+      "index": 21,
+      "z": [
+        -0.29229477932774434,
+        0.95,
+        -0.8499999999999999,
+        -1.0
+      ],
+      "parameters": [
+        -0.008768843379832329,
+        0.028499999999999998,
+        -0.12749999999999997,
+        -0.02
+      ],
+      "E": 11.611487234453552,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.388202667236328,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.057774543762207,
+              "pixels": 61248
+            },
+            "shadow": 11.49082711761597
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.500912888075343,
+        "plus": 4.9636846342799155
+      },
+      "MSE": [
+        107.91475465557596,
+        197.62102512324873,
+        132.03910784693855,
+        182.2746488113989,
+        24.638165148586538
+      ],
+      "guard_MSE_ratios": [
+        3.160746332642307,
+        2.5440270365128543,
+        1.003732533268083,
+        1.0394801287360411,
+        1.8321181223272798
+      ],
+      "max_guard_excess_ratio": 2.160746332642307,
+      "merit": 24.46373951144126,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.611487234453552,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6900521249411777,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model3",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0021.npz",
+      "seconds": 4.464519023895264
+    },
+    {
+      "index": 22,
+      "z": [
+        -0.2722947793277443,
+        0.97,
+        -0.8499999999999999,
+        -1.0
+      ],
+      "parameters": [
+        -0.008168843379832329,
+        0.029099999999999997,
+        -0.12749999999999997,
+        -0.02
+      ],
+      "E": 11.55365736105652,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.30061149597168,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.049339294433594,
+              "pixels": 61248
+            },
+            "shadow": 11.487275764844773
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.480460464241798,
+        "plus": 4.8505387088395
+      },
+      "MSE": [
+        106.10259719094392,
+        197.38393461011583,
+        131.95750449759007,
+        181.72281432798619,
+        23.527725765950365
+      ],
+      "guard_MSE_ratios": [
+        3.107669530690739,
+        2.5409749084554543,
+        1.003112202383542,
+        1.0363331141424081,
+        1.749544760861263
+      ],
+      "max_guard_excess_ratio": 2.107669530690739,
+      "merit": 23.904591533320726,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.55365736105652,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6816349860815032,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model3",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0022.npz",
+      "seconds": 4.2475152015686035
+    },
+    {
+      "index": 23,
+      "z": [
+        -0.2722947793277443,
+        0.9299999999999999,
+        -0.8499999999999999,
+        -1.0
+      ],
+      "parameters": [
+        -0.008168843379832329,
+        0.027899999999999998,
+        -0.12749999999999997,
+        -0.02
+      ],
+      "E": 11.546763841865065,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.314628601074219,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.006386756896973,
+              "pixels": 61248
+            },
+            "shadow": 11.48714817420586
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.490016165007575,
+        "plus": 4.854150883567266
+      },
+      "MSE": [
+        106.3915631780983,
+        196.1788699837789,
+        131.95457317616103,
+        181.98053613216567,
+        23.562780800436872
+      ],
+      "guard_MSE_ratios": [
+        3.116133138721648,
+        2.52546179699257,
+        1.0030899191166238,
+        1.0378028560726957,
+        1.7521514876030564
+      ],
+      "max_guard_excess_ratio": 2.116133138721648,
+      "merit": 23.98585407732353,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.546763841865065,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6806316342694052,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model3",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0023.npz",
+      "seconds": 4.160625457763672
+    },
+    {
+      "index": 24,
+      "z": [
+        -0.2722947793277443,
+        0.95,
+        -0.8299999999999998,
+        -1.0
+      ],
+      "parameters": [
+        -0.008168843379832329,
+        0.028499999999999998,
+        -0.12449999999999997,
+        -0.02
+      ],
+      "E": 11.520448793716431,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.216267585754395,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.102039337158203,
+              "pixels": 61248
+            },
+            "shadow": 11.474789164912277
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.473995803829936,
+        "plus": 4.843164140950738
+      },
+      "MSE": [
+        104.37212338373593,
+        198.86751346675737,
+        131.6707863791882,
+        181.54856292162674,
+        23.4562388961911
+      ],
+      "guard_MSE_ratios": [
+        3.056985184909449,
+        2.5600734062986925,
+        1.0009326337086992,
+        1.0353393891483065,
+        1.7442289271210256
+      ],
+      "max_guard_excess_ratio": 2.056985184909449,
+      "merit": 23.38151504790863,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.520448793716431,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6768014786533731,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model3",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0024.npz",
+      "seconds": 3.9138247966766357
+    },
+    {
+      "index": 25,
+      "z": [
+        -0.2722947793277443,
+        0.95,
+        -0.8699999999999999,
+        -1.0
+      ],
+      "parameters": [
+        -0.008168843379832329,
+        0.028499999999999998,
+        -0.13049999999999998,
+        -0.02
+      ],
+      "E": 11.58851408240095,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.410933494567871,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 13.954973220825195,
+              "pixels": 61248
+            },
+            "shadow": 11.49649161689631
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.4965843333564,
+        "plus": 4.861375048811693
+      },
+      "MSE": [
+        108.38753622831518,
+        194.74127759394833,
+        132.16931949736716,
+        182.15778866740143,
+        23.63296736520889
+      ],
+      "guard_MSE_ratios": [
+        3.174593768305259,
+        2.506955294939293,
+        1.0047223738681665,
+        1.038813695974718,
+        1.7573706293892737
+      ],
+      "max_guard_excess_ratio": 2.174593768305259,
+      "merit": 24.59092285013353,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.58851408240095,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6867083823473872,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model3",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0025.npz",
+      "seconds": 3.855814218521118
+    },
+    {
+      "index": 26,
+      "z": [
+        -0.2722947793277443,
+        0.95,
+        -0.8499999999999999,
+        -0.98
+      ],
+      "parameters": [
+        -0.008168843379832329,
+        0.028499999999999998,
+        -0.12749999999999997,
+        -0.0196
+      ],
+      "E": 11.544008641226041,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.297083854675293,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 14.02892017364502,
+              "pixels": 61248
+            },
+            "shadow": 11.484847984548395
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.484758527241159,
+        "plus": 4.852092898405332
+      },
+      "MSE": [
+        106.02993591021459,
+        196.8106012385042,
+        131.90173322818532,
+        181.83871253800314,
+        23.542805494755456
+      ],
+      "guard_MSE_ratios": [
+        3.1055413335102573,
+        2.533594238319747,
+        1.002688241343241,
+        1.0369940611641375,
+        1.7506661042834284
+      ],
+      "max_guard_excess_ratio": 2.1055413335102573,
+      "merit": 23.878588253942894,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.544008641226041,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6802306147789128,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model3",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0026.npz",
+      "seconds": 3.9724137783050537
+    },
+    {
+      "index": 27,
+      "z": [
+        -0.07229477932774431,
+        0.75,
+        -0.7935953982740551,
+        -0.75
+      ],
+      "parameters": [
+        -0.002168843379832329,
+        0.0225,
+        -0.11903930974110827,
+        -0.015
+      ],
+      "E": 11.95195630220788,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.164158821105957,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 15.333207130432129,
+              "pixels": 61248
+            },
+            "shadow": 11.466223675772673
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.402589466455371,
+        "plus": 4.0511835973776265
+      },
+      "MSE": [
+        103.31012454066604,
+        235.10724090473468,
+        131.47428538284979,
+        179.62940440634046,
+        16.412088539661525
+      ],
+      "guard_MSE_ratios": [
+        3.0258799948988995,
+        3.026596876362531,
+        0.9994388759420753,
+        1.0243947670983207,
+        1.2204189986314284
+      ],
+      "max_guard_excess_ratio": 2.026596876362531,
+      "merit": 23.292202678056857,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.95195630220788,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7396074023846724,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-trial3",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0027.npz",
+      "seconds": 3.8963072299957275
+    },
+    {
+      "index": 28,
+      "z": [
+        -0.052294779327744303,
+        0.75,
+        -0.7935953982740551,
+        -0.75
+      ],
+      "parameters": [
+        -0.001568843379832329,
+        0.0225,
+        -0.11903930974110827,
+        -0.015
+      ],
+      "E": 11.951447708027999,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.143056869506836,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 15.364459037780762,
+              "pixels": 61248
+            },
+            "shadow": 11.465969408237319
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.398809218475519,
+        "plus": 4.014308081710188
+      },
+      "MSE": [
+        102.88160265804981,
+        236.06660152364293,
+        131.46845447063404,
+        179.52808847310453,
+        16.11466937488373
+      ],
+      "guard_MSE_ratios": [
+        3.0133288940484264,
+        3.0389469760077796,
+        0.9993945506176695,
+        1.0238169802255448,
+        1.1983026178688736
+      ],
+      "max_guard_excess_ratio": 2.0389469760077796,
+      "merit": 23.415446128017443,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.951447708027999,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7395333764948717,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model4",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0028.npz",
+      "seconds": 3.678103446960449
+    },
+    {
+      "index": 29,
+      "z": [
+        -0.09229477932774431,
+        0.75,
+        -0.7935953982740551,
+        -0.75
+      ],
+      "parameters": [
+        -0.002768843379832329,
+        0.0225,
+        -0.11903930974110827,
+        -0.015
+      ],
+      "E": 11.954510193304408,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.187789916992188,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 15.303220748901367,
+              "pixels": 61248
+            },
+            "shadow": 11.466587999822815
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.40729553848352,
+        "plus": 4.096950566023983
+      },
+      "MSE": [
+        103.79106339276768,
+        234.18856528960532,
+        131.4826403576806,
+        179.7555736562401,
+        16.785003940444234
+      ],
+      "guard_MSE_ratios": [
+        3.039966351466703,
+        3.014770525389923,
+        0.9995023886406164,
+        1.0251142880464255,
+        1.248149353540107
+      ],
+      "max_guard_excess_ratio": 2.039966351466703,
+      "merit": 23.427190857117388,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.954510193304408,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7399791212685161,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model4",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0029.npz",
+      "seconds": 3.9508516788482666
+    },
+    {
+      "index": 30,
+      "z": [
+        -0.07229477932774431,
+        0.77,
+        -0.7935953982740551,
+        -0.75
+      ],
+      "parameters": [
+        -0.002168843379832329,
+        0.0231,
+        -0.11903930974110827,
+        -0.015
+      ],
+      "E": 11.966286157399992,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.166448593139648,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 15.366883277893066,
+              "pixels": 61248
+            },
+            "shadow": 11.466212994655514
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.398102066322311,
+        "plus": 4.04844833136871
+      },
+      "MSE": [
+        103.35667699695114,
+        236.14110167638955,
+        131.47404043880698,
+        179.50913897959018,
+        16.38993389176209
+      ],
+      "guard_MSE_ratios": [
+        3.027243483199904,
+        3.039906035919009,
+        0.9994370139308226,
+        1.0237089146109009,
+        1.2187715572872557
+      ],
+      "max_guard_excess_ratio": 2.039906035919009,
+      "merit": 23.432555259071584,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.966286157399992,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7416931130028324,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model4",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0030.npz",
+      "seconds": 3.896611452102661
+    },
+    {
+      "index": 31,
+      "z": [
+        -0.07229477932774431,
+        0.73,
+        -0.7935953982740551,
+        -0.75
+      ],
+      "parameters": [
+        -0.002168843379832329,
+        0.0219,
+        -0.11903930974110827,
+        -0.015
+      ],
+      "E": 11.937729716844489,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.162203788757324,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 15.299250602722168,
+              "pixels": 61248
+            },
+            "shadow": 11.466234454123494
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.407101698385262,
+        "plus": 4.053975949249424
+      },
+      "MSE": [
+        103.27038584423372,
+        234.06706900489462,
+        131.47453255692872,
+        179.75037595084495,
+        16.43472099709277
+      ],
+      "guard_MSE_ratios": [
+        3.0247160767728443,
+        3.0132064720056886,
+        0.9994407549055767,
+        1.025084646450578,
+        1.2221019703609595
+      ],
+      "max_guard_excess_ratio": 2.0247160767728443,
+      "merit": 23.26619463042992,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.937729716844489,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7375367226914877,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model4",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0031.npz",
+      "seconds": 3.7071592807769775
+    },
+    {
+      "index": 32,
+      "z": [
+        -0.07229477932774431,
+        0.75,
+        -0.7735953982740551,
+        -0.75
+      ],
+      "parameters": [
+        -0.002168843379832329,
+        0.0225,
+        -0.11603930974110827,
+        -0.015
+      ],
+      "E": 12.10588953255354,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.233773231506348,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 15.624924659729004,
+              "pixels": 61248
+            },
+            "shadow": 11.465719233486547
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.392972100484613,
+        "plus": 4.041993970347424
+      },
+      "MSE": [
+        104.73011455389587,
+        244.13827062220753,
+        131.46271754114335,
+        179.37170168435924,
+        16.337715256324934
+      ],
+      "guard_MSE_ratios": [
+        3.067470491407275,
+        3.142855679060641,
+        0.9993509397294653,
+        1.0229251339904395,
+        1.2148885283469653
+      ],
+      "max_guard_excess_ratio": 2.142855679060641,
+      "merit": 24.533244439572307,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 12.10588953255354,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7620123861556414,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model4",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0032.npz",
+      "seconds": 3.832223415374756
+    },
+    {
+      "index": 33,
+      "z": [
+        -0.07229477932774431,
+        0.75,
+        -0.8135953982740551,
+        -0.75
+      ],
+      "parameters": [
+        -0.002168843379832329,
+        0.0225,
+        -0.12203930974110827,
+        -0.015
+      ],
+      "E": 11.777478955266995,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.08568000793457,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 15.000483512878418,
+              "pixels": 61248
+            },
+            "shadow": 11.467853938564069
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.412259863528304,
+        "plus": 4.060702128910075
+      },
+      "MSE": [
+        101.72094122245107,
+        225.01450562013724,
+        131.51167395623943,
+        179.88871464681228,
+        16.489301779734813
+      ],
+      "guard_MSE_ratios": [
+        2.979333946946737,
+        2.8966704607882274,
+        0.999723095731921,
+        1.0258735676002333,
+        1.226160650883889
+      ],
+      "max_guard_excess_ratio": 1.979333946946737,
+      "merit": 22.731863012083053,
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.777478955266995,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.7142122221637799,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "seed1-model4",
+      "native_actual_render": true,
+      "inherited_from": null,
+      "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0033.npz",
+      "seconds": 3.749871015548706
+    }
+  ],
+  "counted_passes": 0
+}

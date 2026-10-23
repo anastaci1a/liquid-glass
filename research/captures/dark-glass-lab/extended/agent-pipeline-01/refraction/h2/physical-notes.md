@@ -1,0 +1,9 @@
+# Physical interpretation retained with H1/H2
+
+The front is a plane at z=0, viewed orthographically. Its normal-incidence air-to-index1.5 ray stays vertical. It reaches the actual back (x,y,-h); that back's actual derivative gives the Snell normal. The solid between a concave positive h and the flat front is convex; an outgoing ray cannot exit and later reenter that solid. The global slope bound is subcritical, and D>maximum_height puts the source plane below every back hit. Complete paths and folds are separate statements.
+
+For one fixed surface let v=exit_direction_xy/(-exit_direction_z). Then the source map is F_D(x)=x+(D-h(x))*v(x). In particular F_D2-F_D1=(D2-D1)*v; no independent displacement coefficient was used. The map derivative is I+(D-h)Dv-v tensor grad(h). Changes to this derivative can produce a local image reversal even though every transmitted path is valid. No no-fold objective or Jacobian brightness multiplier is applied. Sampling radiance is not multiplying color by map area. Fresnel, environment/rim light and a calibrated radiance/display transfer remain absent, deferred separate stages.
+
+A lower D is an actual source-plane hypothesis, not a coordinate warp, but an unobserved effective gap and shape thickness are not independently identified by this one screen recording. A/B use the same D, index and surface; they are different frozen backgrounds of the same control, not independently fitted optics. The circle equality is a mathematical fixture of the shared harmonic law, not a second successful visual transfer.
+
+At the exact zero-thickness projected boundary the front/back meeting has no unique interface normal. These rays remain unresolved; native AA grids have zero such required hits. Smooth regular interior height/gradient does not imply a globallyC2 closed edge. A later outline/surface family would need its own geometry and source proof, not an independent normal or image correction.

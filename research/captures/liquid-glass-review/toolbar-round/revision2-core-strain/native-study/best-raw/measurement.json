@@ -1,0 +1,69 @@
+{
+  "index": 5,
+  "amplitude": 0.0001981642959250268,
+  "E": 6.868778657475951,
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 5.841306686401367,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 8.812021255493164,
+          "pixels": 61248
+        },
+        "shadow": 11.469441737323065
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 13.241577489359303,
+    "plus": 3.668512866747895
+  },
+  "guard_values": [
+    5.841306686401367,
+    8.812021255493164,
+    11.469441737323065,
+    13.241577489359303,
+    3.668512866747895
+  ],
+  "all_nonregression": false,
+  "nonregression": {
+    "glass": true,
+    "rim": true,
+    "exterior": true,
+    "archivebox": true,
+    "plus": false
+  },
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 6.868778657475951,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": 0.00024917295926796257,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "phase": "local-native-guard-cone",
+  "native_actual_render": true,
+  "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0005.npz",
+  "seconds": 6.560398101806641
+}

@@ -1,0 +1,28 @@
+{
+  "gamma_MSE_derivative_per_unit": {
+    "glass": -47.62565994262695,
+    "rim": 15.138028144836426,
+    "exterior": 0.4447214475925602,
+    "archivebox": 26.406064619401786,
+    "plus": 34.752202598635115
+  },
+  "saved_blur6_secant": {
+    "all": {
+      "gamma_vs_saved_blur6_aggregate_secant_cosine": 0.12931475949373603,
+      "saved_secant_change_RMS_255": 0.5409103594785388
+    },
+    "observed_kernel_proxy": {
+      "gamma_vs_saved_blur6_aggregate_secant_cosine": 0.09446956379096094,
+      "saved_secant_change_RMS_255": 0.7326581977689817
+    },
+    "estimated_kernel_proxy": {
+      "gamma_vs_saved_blur6_aggregate_secant_cosine": 0.12127159231383625,
+      "saved_secant_change_RMS_255": 0.003272387430676342
+    },
+    "mixed_or_uncertain": {
+      "gamma_vs_saved_blur6_aggregate_secant_cosine": 0.20924541549471548,
+      "saved_secant_change_RMS_255": 0.5602173912816658
+    }
+  },
+  "limits": "Blur6 secant combines source/output width changes, not independent source-PSF Jacobians or a new trial. Guard slopes are local and do not prove nonlinear feasibility. Current native candidate derivatives only; no source/epoch adoption."
+}

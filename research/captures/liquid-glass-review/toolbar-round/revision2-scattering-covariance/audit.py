@@ -1,0 +1,44 @@
+"""Queue24 geometry/source audit and reusable native ray atlas; no image fit."""
+import sys,json,hashlib
+from pathlib import Path
+sys.path.insert(0,'/tmp/agent-toolbar-code')
+import numpy as np
+import cv2
+from numpy.polynomial.hermite import hermgauss
+import toolbar_scattering_covariance as cov
+cv2.setNumThreads(1)
+out=Path('/evidence/extended/helper-toolbar-work/agent-toolbar-scattering-covariance');out.mkdir(exist_ok=True);package=Path('/tmp/agent-toolbar-evidence-package');p=json.loads((package/'recipe.json').read_text());case=p['case'];x0,y0,x1,y1=case['crop'];L=min(case['half']);H,W=y1-y0,x1-x0;masks=np.load('/tmp/agent-toolbar-run/frozen-masks.npz');cohorts=np.load('/tmp/agent-toolbar-revision2-identifiability/support-cohorts.npz');Y,X=np.mgrid[:H,:W];x=(X+x0-case['center'][0])/L;y=(Y+y0-case['center'][1])/L
+assert hashlib.sha256((package/'inputs/source.png').read_bytes()).hexdigest()=='6c68d31ac994001701ae3763d67f494bca91d03fda950789dddf01cbb60ea21b'
+A,J,flags=cov.scattering_factor(x,y,p);M=np.einsum('...ik,...jk->...ij',A,A);eig=np.linalg.eigvalsh(M);trace=np.trace(M,axis1=-2,axis2=-1);AA=(5/64)*np.einsum('...ik,...jk->...ij',J,J);sd,nx,ny=cov.baseline.boundary(x,y,p);normal=np.stack([nx,ny],axis=-1);tangent=np.stack([-ny,nx],axis=-1);vn=np.einsum('...i,...ij,...j->...',normal,M,normal);vt=np.einsum('...i,...ij,...j->...',tangent,M,tangent)
+def stats(v):
+    v=np.asarray(v);v=v[np.isfinite(v)]
+    return {'n':len(v),'mean':float(np.mean(v)),'median':float(np.median(v)),'p95':float(np.quantile(v,.95)),'min':float(np.min(v)),'max':float(np.max(v))} if len(v) else {'n':0}
+regions={}
+for name,mask in {'glass':masks['glass'],'rim':masks['rim'],'upper':masks['glass']&(X+x0>=650)&(X+x0<1270)&(Y+y0>=369)&(Y+y0<435),'d':masks['glass']&(X+x0>=960)&(X+x0<1120)&(Y+y0>=450)&(Y+y0<550),'underside':masks['glass']&(X+x0>=650)&(X+x0<1270)&(Y+y0>=650)&(Y+y0<726),'source_observed_proxy':cohorts['observed_kernel_proxy'],'source_estimated_proxy':cohorts['estimated_kernel_proxy'],'source_mixed_proxy':cohorts['mixed_or_uncertain']}.items():
+    n=int(mask.sum());B=M[mask];mean=B.mean(0);iso=np.eye(2)*np.trace(mean)/2;energy=np.sum(B*B);constant_resid=float(np.sum((B-mean)**2)/energy) if energy else None;isoresid=float(np.sum((B-iso)**2)/energy) if energy else None
+    regions[name]={'pixels':n,'M_trace':stats(trace[mask]),'M_max_eigen':stats(eig[...,1][mask]),'M_min_eigen':stats(eig[...,0][mask]),'normal_variance_factor':stats(vn[mask]),'tangent_variance_factor':stats(vt[mask]),'constant_matrix_approx_residual_fraction_energy':constant_resid,'constant_isotropic_approx_residual_fraction_energy':isoresid,'mean_M':mean.tolist(),'native_AA_source_variance_trace_px2':stats(np.trace(AA,axis1=-2,axis2=-1)[mask]),'max_rho_added_scattering_variance_trace_px2':stats((.02*L)**2*trace[mask]),'undefined_normal_pixelcenters':int((mask&flags['undefined_normal_branch']).sum())}
+np.savez_compressed(out/'pixel-center-field.npz',A=A,J=J,M=M,inside=flags['inside'],undefined_normal=flags['undefined_normal_branch'])
+# Measure existing finite Gaussian support on a synthetic impulse, not on a
+# target/source image or a repeated optical derivative/sigma trial.
+def gaussian_radius(sigma):
+    a=np.zeros((1,1025),float);a[0,512]=1.;r=cv2.GaussianBlur(a,(0,0),sigma);nz=np.flatnonzero(r[0]>0);return int(max(512-nz.min(),nz.max()-512))
+source_radius=gaussian_radius(p['source_sigma']*L);post_radius=gaussian_radius(p['post_sigma']*L);orders={}
+for n in [3,5,7,9]:
+    nodes,weights=hermgauss(n);nodes*=np.sqrt(2);weights/=np.sqrt(np.pi);orders[n]={'order_per_axis':n,'nodes_total':n*n,'weights_sum':float(weights.sum()**2),'max_coordinate_standard_normal':float(np.max(np.abs(nodes))),'max_node_norm':float(np.sqrt(2)*np.max(np.abs(nodes))),'rho_max_source_offset_norm_bound_px':float(.02*L*np.sqrt(2)*np.max(np.abs(nodes))),'nodes_1d':nodes.tolist(),'weights_1d':weights.tolist()}
+atlas=out/'native-atlas';atlas.mkdir(exist_ok=True);shape=(H*4,W*4);recipehash=hashlib.sha256((package/'recipe.json').read_bytes()).hexdigest();codehash=hashlib.sha256(Path('/tmp/agent-toolbar-code/toolbar_scattering_covariance.py').read_bytes()).hexdigest();progress=atlas/'progress.json'
+if progress.exists():
+    state=json.loads(progress.read_text());assert state['recipe_sha256']==recipehash and state['code_sha256']==codehash;start=state['next_top'];Sx=np.load(atlas/'sx.npy',mmap_mode='r+');Sy=np.load(atlas/'sy.npy',mmap_mode='r+');Af=np.load(atlas/'A.npy',mmap_mode='r+');inside_map=np.load(atlas/'inside.npy',mmap_mode='r+')
+else:
+    Sx=np.lib.format.open_memmap(atlas/'sx.npy',mode='w+',dtype=np.float64,shape=shape);Sy=np.lib.format.open_memmap(atlas/'sy.npy',mode='w+',dtype=np.float64,shape=shape);Af=np.lib.format.open_memmap(atlas/'A.npy',mode='w+',dtype=np.float64,shape=(*shape,2,2));inside_map=np.lib.format.open_memmap(atlas/'inside.npy',mode='w+',dtype=np.uint8,shape=shape);start=0;state={'next_top':0,'recipe_sha256':recipehash,'code_sha256':codehash,'inside_rays':0,'undefined_normal_inside_rays':0,'source_min_xy':[1e9,1e9],'source_max_xy':[-1e9,-1e9],'order_envelopes':{str(n):{'min':[1e9,1e9],'max':[-1e9,-1e9]} for n in orders}}
+for top in range(start,H,16):
+    bot=min(top+16,H);qy,qx=np.mgrid[top*4:bot*4,0:W*4];xx=(x0+(qx+.5)/4-.5-case['center'][0])/L;yy=(y0+(qy+.5)/4-.5-case['center'][1])/L;a,j,f=cov.scattering_factor(xx,yy,p);fx,fy=cov.baseline.mapping(xx,yy,p);sx=fx*L+case['center'][0];sy=fy*L+case['center'][1];inside=f['inside'];sl=slice(top*4,bot*4);Sx[sl]=sx;Sy[sl]=sy;Af[sl]=a;inside_map[sl]=inside
+    if inside.any():
+        state['inside_rays']+=int(inside.sum());state['undefined_normal_inside_rays']+=int((inside&f['undefined_normal_branch']).sum());state['source_min_xy']=np.minimum(state['source_min_xy'],[sx[inside].min(),sy[inside].min()]).tolist();state['source_max_xy']=np.maximum(state['source_max_xy'],[sx[inside].max(),sy[inside].max()]).tolist()
+        for n,info in orders.items():
+            m=.02*L*info['max_coordinate_standard_normal'];dx=m*np.abs(a[...,0,:]).sum(-1);dy=m*np.abs(a[...,1,:]).sum(-1);e=state['order_envelopes'][str(n)];e['min']=np.minimum(e['min'],[(sx-dx)[inside].min(),(sy-dy)[inside].min()]).tolist();e['max']=np.maximum(e['max'],[(sx+dx)[inside].max(),(sy+dy)[inside].max()]).tolist()
+    Sx.flush();Sy.flush();Af.flush();inside_map.flush();state['next_top']=bot;progress.write_text(json.dumps(state,indent=2)+'\n')
+    if top%64==0:print('ATLAS24',bot,H,state['inside_rays'],flush=True)
+support={}
+for n,e in state['order_envelopes'].items():
+    low=np.array(e['min'])-source_radius-1;high=np.array(e['max'])+source_radius+1;support[n]={'actual_cartesian_node_envelope':e,'ordinary_source_Gaussian_finite_radius_px':source_radius,'bilinear_corner_margin_px':1,'source_image_safe_margin_xy_px':[float(low[0]),float(low[1]),float(1919-high[0]),float(1079-high[1])],'all_finite_nodes_and_existing_source_kernel_defined':bool(np.min(low)>0 and high[0]<1919 and high[1]<1079)}
+report={'accepted_commit':'bb1ee80131d39e7661c3d55174767c4d15182e05','recipe_sha256':recipehash,'old_source_sha256':'6c68d31ac994001701ae3763d67f494bca91d03fda950789dddf01cbb60ea21b','rho_bounds':[0,.02],'label':'ONE empirical geometry-conditioned scattering covariance, not derived physicalroughness','regions_advisory_only':regions,'ordinary_source_radius_px_measured':source_radius,'fixed_postfilter_radius_px_measured':post_radius,'quadrature_nodes_and_bounds':orders,'native_atlas':state,'source_support':support,'supported_for_small_quadrature_native_control':bool(all(s['all_finite_nodes_and_existing_source_kernel_defined'] for s in support.values())),'native_AA_unchanged_4x4':True,'source_confidence_limit':'Definedinput is NOT observedbackgroundtruth. Existing strict legacy cohorts preserved; addedscatter kernels can only reduce genuinely observedsupport, especiallyunderside0fullyobserved. Typography input proposal remains unadopted.','saved_blur6_limit':'Existingrejectedglobalsource/outputGaussiansecant retained; thisfield is not a scalarconstantisotropic kernel. No old sigma trial repeated.','new_optical_fits_renders':0,'counted_passes':0,'limits':['Nativeatlas andJacobian checks are geometry/support only, not an optical improvement','Quadratureorder convergence atsame4x4AA must precede fitting; do not retuneAA/masks/source to gain score','Scatteringisachromatic/sharedchannels and leavesordinaryblur/transition/post/glyphs/shadow unchanged','Near-center flags explicit; actualnative4x4inside-ray count must be inspected, not assumedzero']};(out/'audit.json').write_text(json.dumps(report,indent=2)+'\n');print('AUDIT24 COMPLETE',json.dumps({'supported':report['supported_for_small_quadrature_native_control'],'undefined_native':state['undefined_normal_inside_rays'],'glass_M':regions['glass'],'underside_M':regions['underside'],'source_support':support}),flush=True)

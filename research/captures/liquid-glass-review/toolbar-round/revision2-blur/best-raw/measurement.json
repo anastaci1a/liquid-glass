@@ -1,0 +1,69 @@
+{
+  "v": [
+    0.061721393239561766,
+    0.007268945451128871
+  ],
+  "native_E": 6.8486684775140105,
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 5.823710918426514,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 8.786985397338867,
+          "pixels": 61248
+        },
+        "shadow": 11.469437169669805
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 13.269200601151638,
+    "plus": 3.8979908727322194
+  },
+  "guard_values": [
+    5.823710918426514,
+    8.786985397338867,
+    11.469437169669805,
+    13.269200601151638,
+    3.8979908727322194
+  ],
+  "nonregression": {
+    "glass": true,
+    "rim": true,
+    "exterior": true,
+    "archivebox": false,
+    "plus": false
+  },
+  "all_nonregression": false,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 6.8486684775140105,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": 0.0031762099263138444,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "phase": "saved-best",
+  "seconds": 0.0496981143951416
+}

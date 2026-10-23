@@ -1,0 +1,789 @@
+{
+  "before": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "pixels": 188771,
+          "rmse": 5.843130588531494,
+          "mae": 3.8693673610687256,
+          "opponent_chroma_rmse": 0.6442244648933411
+        },
+        "rim": {
+          "pixels": 61248,
+          "rmse": 8.813648223876953,
+          "mae": 5.903055191040039,
+          "opponent_chroma_rmse": 0.7896908521652222
+        },
+        "shadow": 11.46944201723165
+      }
+    }
+  },
+  "fixed_width": 0.2,
+  "amplitude_bounds": [
+    -0.21960679960734011,
+    0.21960679960734011
+  ],
+  "evaluations": [
+    {
+      "index": 0,
+      "amplitude": 0.0,
+      "E": 6.870490597949865,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.843130588531494,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.813648223876953,
+              "pixels": 61248
+            },
+            "shadow": 11.46944201723165
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.843130588531494,
+        8.813648223876953,
+        11.46944201723165,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.870490597949865,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "baseline",
+      "native_actual_render": false,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0000.npz",
+      "seconds": 0.2847297191619873
+    },
+    {
+      "index": 1,
+      "amplitude": -0.05490169990183503,
+      "E": 6.858158255913589,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.834201812744141,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.795414924621582,
+              "pixels": 61248
+            },
+            "shadow": 11.469441359696365
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.834201812744141,
+        8.795414924621582,
+        11.469441359696365,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.858158255913589,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.001794972551153129,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0001.npz",
+      "seconds": 7.017363786697388
+    },
+    {
+      "index": 2,
+      "amplitude": 0.05490169990183503,
+      "E": 6.993370917422997,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.932186603546143,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.995119094848633,
+              "pixels": 61248
+            },
+            "shadow": 11.469442834062349
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.932186603546143,
+        8.995119094848633,
+        11.469442834062349,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": false,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.993370917422997,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.01788523217101834,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0002.npz",
+      "seconds": 6.908189058303833
+    },
+    {
+      "index": 3,
+      "amplitude": -0.10980339980367006,
+      "E": 6.948281274493545,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.89946985244751,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.928604125976562,
+              "pixels": 61248
+            },
+            "shadow": 11.469440797242255
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.89946985244751,
+        8.928604125976562,
+        11.469440797242255,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.948281274493545,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.011322434029222395,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0003.npz",
+      "seconds": 7.051630258560181
+    },
+    {
+      "index": 4,
+      "amplitude": 0.10980339980367006,
+      "E": 7.2333048171797625,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.106715679168701,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 9.348139762878418,
+              "pixels": 61248
+            },
+            "shadow": 11.46944379068219
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.106715679168701,
+        9.348139762878418,
+        11.46944379068219,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": false,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 7.2333048171797625,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.05280761454475469,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0004.npz",
+      "seconds": 7.285364866256714
+    },
+    {
+      "index": 5,
+      "amplitude": -0.1647050997055051,
+      "E": 7.129683228839259,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.031219482421875,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 9.195915222167969,
+              "pixels": 61248
+            },
+            "shadow": 11.469440228984457
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.031219482421875,
+        9.195915222167969,
+        11.469440228984457,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 7.129683228839259,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.03772549095209232,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0005.npz",
+      "seconds": 6.985423803329468
+    },
+    {
+      "index": 6,
+      "amplitude": 0.1647050997055051,
+      "E": 7.588833833975108,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.366763591766357,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 9.86837100982666,
+              "pixels": 61248
+            },
+            "shadow": 11.469444792069808
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.366763591766357,
+        9.86837100982666,
+        11.469444792069808,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": false,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 7.588833833975108,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.10455486777604994,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0006.npz",
+      "seconds": 7.015971660614014
+    },
+    {
+      "index": 7,
+      "amplitude": -0.21960679960734011,
+      "E": 7.385213272472433,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.217599868774414,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 9.570857048034668,
+              "pixels": 61248
+            },
+            "shadow": 11.469439909415549
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.217599868774414,
+        9.570857048034668,
+        11.469439909415549,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 7.385213272472433,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.07491789227921508,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0007.npz",
+      "seconds": 7.186355352401733
+    },
+    {
+      "index": 8,
+      "amplitude": 0.21960679960734011,
+      "E": 8.033734150716505,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.69432258605957,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 10.51524543762207,
+              "pixels": 61248
+            },
+            "shadow": 11.46944534607278
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.69432258605957,
+        10.51524543762207,
+        11.46944534607278,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": false,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 8.033734150716505,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.16931011493032955,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0008.npz",
+      "seconds": 6.462022304534912
+    },
+    {
+      "index": 9,
+      "amplitude": -0.051901699901835026,
+      "E": 6.856105772241496,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.832716941833496,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.792378425598145,
+              "pixels": 61248
+            },
+            "shadow": 11.469441447158315
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.832716941833496,
+        8.792378425598145,
+        11.469441447158315,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.856105772241496,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0020937115775490067,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-1",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0009.npz",
+      "seconds": 6.778425931930542
+    },
+    {
+      "index": 10,
+      "amplitude": -0.05790169990183503,
+      "E": 6.860515126653308,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.835906982421875,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.798901557922363,
+              "pixels": 61248
+            },
+            "shadow": 11.46944134257661
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.835906982421875,
+        8.798901557922363,
+        11.46944134257661,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.860515126653308,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0014519299829234278,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-1",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0010.npz",
+      "seconds": 7.376421689987183
+    }
+  ],
+  "counted_passes": 0
+}

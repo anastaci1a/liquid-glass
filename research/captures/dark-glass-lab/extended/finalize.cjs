@@ -1,0 +1,12 @@
+const fs=require('fs'),cp=require('child_process'),path=require('path');
+const [id,inputs='music-recovery-verify']=process.argv.slice(2);if(!id)throw Error('Need study ID');
+const root='/mnt/user/live/projects/localica/localica-feedback/dark-glass-lab/extended',repo='/mnt/user/live/projects/localica/localica-docs-publish';
+const run=(cmd,args)=>cp.execFileSync(cmd,args,{cwd:repo,stdio:'inherit',env:{...process.env,LC_ALL:'C'}});
+const py=(script,args)=>run('docker',['exec','-e','PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps','-e','OPENBLAS_NUM_THREADS=1','localica-dark-lab-check','python3','/workspace/docs/liquid-glass/experiments/reconstruction/'+script,...args]);
+py('extended_verify.py',['--study',id]);py('extended_replay.py',['/evidence/extended/'+inputs,'/evidence/extended/'+id+'-replay','--study',id]);
+py('extended_diagnostics.py',['/evidence/extended/'+id]);py('extended_media.py',['/evidence/extended/'+id,'--frames','90','--travel','45']);
+const dest=path.join(repo,'docs/liquid-glass/experiments/reconstruction/studies',id),asset=path.join(repo,'docs/liquid-glass/assets/study-'+id);
+for(const[a,b]of[['comparison.png','.png'],['motion.gif','.gif'],['motion.mp4','.mp4']])fs.copyFileSync(root+'/'+id+'/final/'+a,asset+b);
+fs.copyFileSync(root+'/'+id+'/final/verification.json',dest+'/media.json');fs.copyFileSync(root+'/'+id+'/diagnostics.json',dest+'/diagnostics.json');
+for(const p of [dest,asset+'.png',asset+'.gif',asset+'.mp4',root+'/'+id,root+'/'+id+'-replay'])run('/mnt/user/live/projects/localica/fix-permissions.sh',[p]);
+run('git',['add','docs/liquid-glass/experiments/reconstruction',path.relative(repo,asset+'.png'),path.relative(repo,asset+'.gif'),path.relative(repo,asset+'.mp4')]);run('git',['diff','--cached','--check']);run('git',['commit','-m',`Capture ${id} comparison, source support and motion (#222) [skip ci]`]);run('git',['push']);

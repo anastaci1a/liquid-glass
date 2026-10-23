@@ -1,0 +1,6 @@
+- Reconstruct two active switch frames from Apple's Details video with one shared model and explicit hidden-track estimates.24 initial +24 paired experiments preserve the single-to-paired boundary and both frozen native loss/glass gates.
+- Separate source-context material response, source-derived grazing reflection and directional chromatic transmission. Final native losses232.758/276.129; glass RMSE12.061/14.677. Remaining upper-rim/spectral mismatch is documented; this is not recovered Apple geometry.
+- Publish4× comparison stills and six rim crops with measurements. Both current4× motion exports and GIFs are verified; each GIF is under10MB (60frames,3.99sec), nearest early video frame0.
+- Add primary-only Wipe/Side-by-side controls to17 comparisons, centered at50% by default. Existing image halves/gutter are reused; dropdown figures/media remain unchanged. Pointer/touch/keyboard, exact crop, phone/desktop and no-JS fallback pass.
+- Native/cache/HQ/prepared/moving-source/default identity/source-confidence and independent24-pass replay pass. Guide links/layout and on-open media network tests pass; initial3PNG/.74MB, no closed GIF/video requests.
+- No Android app/live-lab changes. Docs-only Actions skipped as requested; Pages builds provide deployment.

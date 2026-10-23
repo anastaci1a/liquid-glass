@@ -1,0 +1,5 @@
+- **Problem:** The deployed motion lab is light-themed and visually cramped on phones; the user reports a Chrome sad-face failure. Guide media still includes the superseded non-refracting demo.
+- **Expected behavior:** A fully restructured dark lab, an original gradient backdrop with vertical lines behind the lens, robust rendering/fallback, and current captures throughout the guide.
+- **Cause:** Browser failure not yet reproduced; no driver or device cause established.
+- **Scope:** Docs/demo only; preserve app candidates. Capture desktop/mobile evidence, refresh linked media, publish through Pages.
+- **Owner:** Codex; begins on current main 9133e01, branch docs/dark-glass-lab. — Codex

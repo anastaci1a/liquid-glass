@@ -1,0 +1,13 @@
+# G03 — closed two-interface geometric discriminator
+
+Started 2026-10-22 04:02:32 UTC. Stop by 04:22:32 UTC (20 minutes), at most 30000 geometry rays, two fixed circle surfaces eta=.15, kappa=0 and1/3, n=1.5, D=2; zero images, fits, source changes or material trials. Intermediate checkpoint: analytic shape/gradient/convexity and zero-index identity before refractive paths. Stop on an invariant failure or at the budget. Do not replace a failing ray with a sample.
+
+Visible defects: play-button dune crossings and unwanted outer reversed strip; toolbar missing longitudinal d-stroke curvature. The first flat-front families under-refract. Toolbar A has exactly zero central longitudinal height curvature, so a depth-only sweep cannot answer that defect.
+
+Hypothesis: a closed oval with actual curved front and back and a shared longitudinal depth term supplies a distinct physical degree of freedom. F=T+(1+kappa*(x/a)^2)*u^2-1, u=(z+eta)/eta, kappa in[0,1/3]. Circle T=x²+y²,a=1; helper's continuous crowned toolbar T and a use the same equation. T and normals come from the same F. For |x/a|<=1, the added term is convex: its x/u Hessian determinant is 4*kappa*u²*(1-3*kappa*(x/a)²)/a²>=0. T is convex, the solid lies in this x slab, and the level gradient is nonzero on the boundary. Intersections are ordered roots on a convex solid, then the existing shared Snell routine is used at both interfaces.
+
+Root owns shared tracing and circle surface in localica-geometric-playback. Helper owns only the toolbar implicit-surface adapter/tests in its isolated worktree. Shared interface: level_gradient(points)->(F,gradient), front_height(x,y)->(z,strict_inside), boundary_mask(x,y), half_extents=(a,1,eta), center=(0,0,-eta). Exact projected tangencies are reported unresolved. Circle κ=0 is a true oblate ellipsoid, not the crown's a=b approximation.
+
+Freeze all references, original local windows, sources, masks, registrations and historical filtered baselines. No source is sampled or rendered in G03. Ray/section arrays use exactly this F and its gradient. Geometry tests cover numerical intersection convergence, finite differences, symmetry, index1 identity, Snell reciprocity, ordered entry/exit, tangent status, critical/TIR and upward exits. Missing transmission is a limitation, not a mandate to paint an edge. Fresnel/environment/radiance and device speed remain separate unimplemented claims.
+
+This is a new declared discriminating experiment after the completed G01/G02 results, not an extension of their budgets. Two geometric proposals only; review before any image or additional shape/camera experiment.

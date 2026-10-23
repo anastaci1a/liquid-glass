@@ -1,0 +1,174 @@
+[
+  {
+    "seed": 1,
+    "start": [
+      0.06470588235294118,
+      0.007352941176470588
+    ],
+    "final": {
+      "v": [
+        0.061722168057909275,
+        0.007268220155736321
+      ],
+      "native_E": 6.84866974522611,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.823709964752197,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.78699016571045,
+              "pixels": 61248
+            },
+            "shadow": 11.469437692189834
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.269192746829477,
+        "plus": 3.897924301349837
+      },
+      "guard_values": [
+        5.823709964752197,
+        8.78699016571045,
+        11.469437692189834,
+        13.269192746829477,
+        3.897924301349837
+      ],
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": false,
+        "plus": false
+      },
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.84866974522611,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0031760254108005315,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-Powell-1",
+      "seconds": 0.04462742805480957
+    },
+    "success": true,
+    "message": "Optimization terminated successfully.",
+    "nfev": 63,
+    "unique_evaluations": 62,
+    "nit": 3,
+    "seconds": 163.95833086967468,
+    "near_bounds": [
+      false,
+      false
+    ]
+  },
+  {
+    "seed": 2,
+    "start": [
+      0.08,
+      0.012
+    ],
+    "final": {
+      "v": [
+        0.06172484997053168,
+        0.007272139929956144
+      ],
+      "native_E": 6.848669305938931,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.823695659637451,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.78701114654541,
+              "pixels": 61248
+            },
+            "shadow": 11.469435006328258
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.269150190023828,
+        "plus": 3.8975931567787514
+      },
+      "guard_values": [
+        5.823695659637451,
+        8.78701114654541,
+        11.469435006328258,
+        13.269150190023828,
+        3.8975931567787514
+      ],
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": false,
+        "plus": false
+      },
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.848669305938931,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0031760893490553332,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-Powell-2",
+      "seconds": 0.051520347595214844
+    },
+    "success": true,
+    "message": "Optimization terminated successfully.",
+    "nfev": 119,
+    "unique_evaluations": 119,
+    "nit": 4,
+    "seconds": 396.24851512908936,
+    "near_bounds": [
+      false,
+      false
+    ]
+  }
+]

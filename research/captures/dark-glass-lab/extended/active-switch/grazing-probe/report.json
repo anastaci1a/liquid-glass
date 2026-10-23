@@ -1,0 +1,338 @@
+{
+  "baseline_pass": 22,
+  "baseline": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 12.614958763122559
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 21.859037399291992
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 13.881340026855469
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 5.199476718902588
+      },
+      "ssim": 0.9590278267860413,
+      "loss": 254.74128402379165
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 15.075286865234375
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 21.28322982788086
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 15.146924018859863
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 11.588092803955078
+      },
+      "ssim": 0.9309626817703247,
+      "loss": 294.9777534202949
+    }
+  ],
+  "model": "Cout=(1-F)Ctransmitted+F E; F=a exp(-(d/w)^2)*((1+ny)/2)^p,0<=a<=1. E=Gaussian(unrefracted source,sigma=.007L), an incident-environment proxy. Normal orientation expresses one shared directional light lobe; no target pixels or region-specific correction.",
+  "best": {
+    "parameters": [
+      2.327969493091299e-06,
+      0.0010000000146014373,
+      1.072718155138562
+    ],
+    "scores": [
+      {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 12.614958763122559
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 21.859037399291992
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 13.881340026855469
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 5.199476718902588
+        },
+        "loss": 254.74128402379165
+      },
+      {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 15.075285911560059
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 21.283227920532227
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 15.146924018859863
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 11.588092803955078
+        },
+        "loss": 294.9777089358936
+      }
+    ]
+  },
+  "trials": [
+    {
+      "parameters": [
+        0.1,
+        0.003,
+        1.0
+      ],
+      "losses": [
+        255.2752800497542,
+        291.4834201897549
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.3,
+        0.003,
+        1.0
+      ],
+      "losses": [
+        256.77482548625994,
+        284.95415057744356
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.6,
+        0.003,
+        1.0
+      ],
+      "losses": [
+        260.1030650155167,
+        276.3088641714067
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        1.0,
+        0.003,
+        1.0
+      ],
+      "losses": [
+        266.5546783786968,
+        266.9260114163826
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.1,
+        0.006,
+        1.0
+      ],
+      "losses": [
+        255.45568369476632,
+        290.06788281550314
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.3,
+        0.006,
+        1.0
+      ],
+      "losses": [
+        257.68805562455964,
+        281.0848309442345
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.6,
+        0.006,
+        1.0
+      ],
+      "losses": [
+        263.04526291111614,
+        269.70215818076355
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        1.0,
+        0.006,
+        1.0
+      ],
+      "losses": [
+        273.9377457578444,
+        258.43011228701863
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.1,
+        0.012,
+        1.0
+      ],
+      "losses": [
+        255.72354903162702,
+        288.1938563424013
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.3,
+        0.012,
+        1.0
+      ],
+      "losses": [
+        259.15056609877416,
+        276.1177486369386
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.6,
+        0.012,
+        1.0
+      ],
+      "losses": [
+        267.9472621838416,
+        261.7330313352759
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        1.0,
+        0.012,
+        1.0
+      ],
+      "losses": [
+        286.50102613792797,
+        249.51497379635182
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.1,
+        0.024,
+        1.0
+      ],
+      "losses": [
+        256.06161316338984,
+        287.3760852134083
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.3,
+        0.024,
+        1.0
+      ],
+      "losses": [
+        260.51128605933036,
+        273.95645568340984
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.6,
+        0.024,
+        1.0
+      ],
+      "losses": [
+        271.7082118225251,
+        258.28656584597843
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        1.0,
+        0.024,
+        1.0
+      ],
+      "losses": [
+        295.07935519023846,
+        245.71780065701086
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.1,
+        0.05,
+        1.0
+      ],
+      "losses": [
+        256.44352949943374,
+        286.8287231472015
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.3,
+        0.05,
+        1.0
+      ],
+      "losses": [
+        262.3009067553106,
+        272.6073267015962
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        0.6,
+        0.05,
+        1.0
+      ],
+      "losses": [
+        277.2192845218444,
+        256.4671622304013
+      ],
+      "allowed": false
+    },
+    {
+      "parameters": [
+        1.0,
+        0.05,
+        1.0
+      ],
+      "losses": [
+        308.5573373586383,
+        244.63842976286242
+      ],
+      "allowed": false
+    }
+  ],
+  "evaluations": 183,
+  "seconds": 65.34486436843872,
+  "limits": "Empirical reflected-field approximation, not a ray-traced environmental reconstruction or Apple formula. New source coverage/HQ/cache equations require verification before adoption."
+}

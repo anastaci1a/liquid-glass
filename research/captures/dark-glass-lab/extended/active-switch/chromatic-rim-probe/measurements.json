@@ -1,0 +1,220 @@
+{
+  "method": "Subtract RGB mean, project onto the nonnegative chroma direction of the estimated track; measure orthogonal RGB residual on a fixed measured-outline annulus. Common achromatic interpolation/blur and scalar brightness changes cannot rotate that chroma direction.",
+  "assumptions": "Uniform estimated hidden track/white background. Channel gains, channel-separated rays, colored reflection/tint, source-estimation error and codec processing can all violate the baseline; this does not identify physical dispersion.",
+  "samples": [
+    {
+      "sample": "a",
+      "reference": {
+        "video": "details",
+        "seconds": 9.4,
+        "frame_index": 564,
+        "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-details/large_2x.mp4"
+      },
+      "source_sha256": {
+        "source.png": "bbd52a46c6c0e5008d4d9e746c9ea5c17acad781e1c2391607b8b7b5f6c64002",
+        "target.png": "76a17ebdea7a2cc8f6187faa461bfecc164e78e371cf8b234d47cd0b1cc1c780",
+        "known.png": "a2f32becc8c9f3b819da2f3a7c67eff1606bdce63ed1f5704a4883ad08dfd8e3",
+        "observed.png": "43ef8e3a5ca09a655bfcf1f86d56ff7c6c933bedf693ab63d8ba137b38264c50"
+      },
+      "track_rgb": [
+        121.0,
+        192.0,
+        132.0
+      ],
+      "annulus_pixels": 99488,
+      "annulus_inner_distance_over_L": [
+        0.009237875288683603,
+        0.3
+      ],
+      "annulus_orthogonal_chroma_rmse_quantiles": {
+        "median": 0.5119362001830817,
+        "p90": 8.554885658481272,
+        "p95": 19.447407700931148,
+        "p99": 35.533306617527536
+      },
+      "observed_source_orthogonal_chroma_p95": 2.8310687127941492e-14,
+      "samples": [
+        {
+          "region": "upper_left",
+          "position": [
+            839,
+            409
+          ],
+          "rgb_3x3_filtered": [
+            143.38462829589844,
+            221.53846740722656,
+            234.6970977783203
+          ],
+          "orthogonal_chroma_rmse": 34.68517908205647
+        },
+        {
+          "region": "lower_left",
+          "position": [
+            841,
+            712
+          ],
+          "rgb_3x3_filtered": [
+            235.71400451660156,
+            231.31727600097656,
+            146.15638732910156
+          ],
+          "orthogonal_chroma_rmse": 38.92088153858899
+        },
+        {
+          "region": "right",
+          "position": [
+            1301,
+            393
+          ],
+          "rgb_3x3_filtered": [
+            72.0217056274414,
+            212.4158935546875,
+            205.75965881347656
+          ],
+          "orthogonal_chroma_rmse": 49.04138097473473
+        }
+      ],
+      "resting_edge_control": {
+        "frame_index": 540,
+        "seconds": 9.0,
+        "median_track_rgb": [
+          95.0,
+          190.0,
+          114.0
+        ],
+        "pixels": 11046,
+        "orthogonal_chroma_quantiles": {
+          "median": 0.0,
+          "p95": 1.6035674514745462,
+          "p99": 2.4053511772118172
+        },
+        "limits": "Different resting frame, not a controlled codec-only simulation. Left half excludes the opaque resting knob at right."
+      },
+      "channel_order_tests": [
+        {
+          "channel_pair": "R-G",
+          "source_max_native_rgb": 2.0,
+          "target_p99": 2.0,
+          "target_fraction_over_source_plus4": 0.0013669990350595046
+        },
+        {
+          "channel_pair": "B-G",
+          "source_max_native_rgb": 3.0,
+          "target_p99": 5.0,
+          "target_fraction_over_source_plus4": 0.007206899324541653
+        }
+      ]
+    },
+    {
+      "sample": "b",
+      "reference": {
+        "video": "details",
+        "seconds": 10.5,
+        "frame_index": 630,
+        "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-details/large_2x.mp4"
+      },
+      "source_sha256": {
+        "source.png": "8d4176c394424213d60d7fdbc9d3236c03a726407731f93e87bd0cfccb1e892b",
+        "target.png": "3fa84e404edc62aeadd9934619252b337a7767bccf5ffc211f251f1454200599",
+        "known.png": "a2f32becc8c9f3b819da2f3a7c67eff1606bdce63ed1f5704a4883ad08dfd8e3",
+        "observed.png": "17ee433888006f32b7b9cd1a1fb9bf1c70a8b5f4f225a85b9802652fe32ed363"
+      },
+      "track_rgb": [
+        190.0,
+        195.0,
+        189.0
+      ],
+      "annulus_pixels": 86184,
+      "annulus_inner_distance_over_L": [
+        0.01,
+        0.3
+      ],
+      "annulus_orthogonal_chroma_rmse_quantiles": {
+        "median": 9.766087789120832e-15,
+        "p90": 2.4930009553630073,
+        "p95": 4.76603123819399,
+        "p99": 9.67870959140932
+      },
+      "observed_source_orthogonal_chroma_p95": 2.8310687127941492e-14,
+      "samples": [
+        {
+          "region": "upper_left",
+          "position": [
+            718,
+            349
+          ],
+          "rgb_3x3_filtered": [
+            215.5984649658203,
+            207.168212890625,
+            193.6706085205078
+          ],
+          "orthogonal_chroma_rmse": 8.657281260522474
+        },
+        {
+          "region": "lower_left",
+          "position": [
+            689,
+            713
+          ],
+          "rgb_3x3_filtered": [
+            226.44717407226562,
+            253.81008911132812,
+            254.31248474121094
+          ],
+          "orthogonal_chroma_rmse": 12.222261648544064
+        },
+        {
+          "region": "right",
+          "position": [
+            1160,
+            565
+          ],
+          "rgb_3x3_filtered": [
+            250.60580444335938,
+            236.12257385253906,
+            208.89434814453125
+          ],
+          "orthogonal_chroma_rmse": 16.35412461048968
+        }
+      ],
+      "resting_edge_control": {
+        "frame_index": 600,
+        "seconds": 10.0,
+        "median_track_rgb": [
+          197.0,
+          197.0,
+          197.0
+        ],
+        "pixels": 10700,
+        "orthogonal_chroma_quantiles": {
+          "median": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "limits": "Different resting frame, not a controlled codec-only simulation. Right half excludes the opaque resting knob at left."
+      },
+      "channel_order_tests": [
+        {
+          "channel_pair": "R-G",
+          "source_max_native_rgb": 2.0,
+          "target_p99": 13.0,
+          "target_fraction_over_source_plus4": 0.023623874501067482
+        },
+        {
+          "channel_pair": "B-G",
+          "source_max_native_rgb": 1.0,
+          "target_p99": 3.0,
+          "target_fraction_over_source_plus4": 0.001113895850737956
+        }
+      ]
+    }
+  ],
+  "diagnostic_crops": {
+    "snapshot_pass": 6,
+    "reference_left": true,
+    "rendering_right": true,
+    "output_scale": 4,
+    "native_patch_size": 48
+  },
+  "order_test": "Positive-weight shared-channel sampling/filtering, positive achromatic scaling/addition and a common monotone per-channel curve preserve G>=R and G>=B when the entire estimated source does. Channel-dependent processing, colored light, codec artifacts or a wrong source estimate can break it."
+}

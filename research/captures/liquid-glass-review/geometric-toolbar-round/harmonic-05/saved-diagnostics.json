@@ -1,0 +1,51 @@
+{
+  "scope": "Cached geometry only and analytic derivative diagnostic checked in checkpoint. No image/source resampling or new rays.",
+  "folds": {
+    "valid_complete_interior_subray_stencils": 3857028,
+    "negative_determinant_stencils": 628320,
+    "determinant_range": [
+      -63.557186344317444,
+      0.9890100229365573
+    ],
+    "negative_stencil_reference_bounds": [
+      568.375,
+      372.375,
+      1351.625,
+      711.625
+    ],
+    "limits": "Native4x4 lattice finite differences, strict interior fivepoint stencils. Numerical fold evidence, not rigorousglobalcaustic locus."
+  },
+  "d_crop_exact_analytic": {
+    "rectangle": [
+      960,
+      468,
+      1120,
+      550
+    ],
+    "points": 13120,
+    "Jxx_range": [
+      0.9787588650634685,
+      0.9906372317080759
+    ],
+    "hxx_range": [
+      -0.02229985798377375,
+      -0.00985974242827545
+    ],
+    "source_X_x_at_x960_top_center_bottom": [
+      0.9906372317080759,
+      0.9894193222145419,
+      0.989420365025003
+    ],
+    "limits": "Derivative of same actual height + Snell/background equation, never used to generate/render coordinates. Not a fitted warp."
+  },
+  "frozen_alpha_exact_historical": true,
+  "raw_material_range": [
+    0.0,
+    0.874509803921569
+  ],
+  "raw_complete_range": [
+    0.0,
+    0.874509803921569
+  ],
+  "out_of_range_values": 0
+}

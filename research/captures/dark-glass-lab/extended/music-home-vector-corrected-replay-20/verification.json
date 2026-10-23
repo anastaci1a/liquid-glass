@@ -1,0 +1,63 @@
+{
+  "paired_passes": 20,
+  "record_count": 20,
+  "excluded_passes": [],
+  "scores": [
+    {
+      "glass": {
+        "pixels": 15221,
+        "rmse": 5.86127233505249
+      },
+      "rim": {
+        "pixels": 8296,
+        "rmse": 7.336642265319824
+      },
+      "held": {
+        "pixels": 2797,
+        "rmse": 6.7899346351623535
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.32079815864563
+      },
+      "ssim": 0.9784106016159058,
+      "loss": 40.19605528873933
+    },
+    {
+      "glass": {
+        "pixels": 15289,
+        "rmse": 9.222742080688477
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 12.069869041442871
+      },
+      "held": {
+        "pixels": 2804,
+        "rmse": 11.380032539367676
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.4407711029052734
+      },
+      "ssim": 0.9767364859580994,
+      "loss": 103.24580164410571
+    }
+  ],
+  "foreground_mse": [
+    8.949767290185129,
+    11.652942301008027
+  ],
+  "foreground_style_scores": null,
+  "initial_boundary": {
+    "single_loss": 40.34465845033153,
+    "paired_initial_loss": 40.344559562032984,
+    "same_reference_protocol": true
+  },
+  "gate": "Both references retain non-increasing native overall loss and whole-glass RMSE; exact shared normalized recipe replay.",
+  "background_estimates": [
+    null,
+    null
+  ],
+  "scope": "Two observed instances; diagnostics distinguish direct source evidence from any explicit source estimate. Does not establish generality across devices, apps or lighting."
+}

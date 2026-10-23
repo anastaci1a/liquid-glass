@@ -1,0 +1,638 @@
+{
+  "numerical_qualifier": true,
+  "classification": "EXTERIOR-ONLY; Eoptical TIE",
+  "primary_acceptance": false,
+  "count": 0,
+  "evaluations": 27,
+  "evaluation_cap": 120,
+  "solver_success": true,
+  "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "observations": [
+    {
+      "theme": "regular-light",
+      "baseline_exterior_rmse": 6.082353686183842,
+      "candidate_exterior_rmse": 3.8053860466303377,
+      "exterior_improves": true,
+      "original_scored_pixels_bit_exact": {
+        "train": true,
+        "held": true,
+        "all_glass": true,
+        "rim": true,
+        "outer_rim": true,
+        "interior": true
+      },
+      "far_bands_advisory": [
+        {
+          "sd_L": [
+            0.2,
+            0.35
+          ],
+          "region": "upper",
+          "pixels": 11224,
+          "baseline_rmse": 2.690218136525462,
+          "candidate_rmse": 1.4087333863593021
+        },
+        {
+          "sd_L": [
+            0.2,
+            0.35
+          ],
+          "region": "lower",
+          "pixels": 11256,
+          "baseline_rmse": 7.936645730009946,
+          "candidate_rmse": 3.0404730320700493
+        },
+        {
+          "sd_L": [
+            0.35,
+            0.7
+          ],
+          "region": "upper",
+          "pixels": 29512,
+          "baseline_rmse": 1.636897608114611,
+          "candidate_rmse": 2.5277049621117
+        },
+        {
+          "sd_L": [
+            0.35,
+            0.7
+          ],
+          "region": "lower",
+          "pixels": 29586,
+          "baseline_rmse": 11.250619325841727,
+          "candidate_rmse": 7.368147034387606
+        },
+        {
+          "sd_L": [
+            0.7,
+            1.2
+          ],
+          "region": "upper",
+          "pixels": 26520,
+          "baseline_rmse": 0.8939417296703285,
+          "candidate_rmse": 2.464294366488646
+        },
+        {
+          "sd_L": [
+            0.7,
+            1.2
+          ],
+          "region": "lower",
+          "pixels": 24928,
+          "baseline_rmse": 8.391027947771857,
+          "candidate_rmse": 6.1485802953193875
+        }
+      ],
+      "complete_sha256": "c2493a18c930ea712a9edc9ed32f360a19f0d0612218bccb520d7baddf5fdca8",
+      "output_range": [
+        0.6954694445472804,
+        0.999954342842102
+      ]
+    },
+    {
+      "theme": "regular-dark",
+      "baseline_exterior_rmse": 6.75274842748077,
+      "candidate_exterior_rmse": 2.120522492242466,
+      "exterior_improves": true,
+      "original_scored_pixels_bit_exact": {
+        "train": true,
+        "held": true,
+        "all_glass": true,
+        "rim": true,
+        "outer_rim": true,
+        "interior": true
+      },
+      "far_bands_advisory": [
+        {
+          "sd_L": [
+            0.2,
+            0.35
+          ],
+          "region": "upper",
+          "pixels": 11224,
+          "baseline_rmse": 9.083809639304503,
+          "candidate_rmse": 1.4213004173043744
+        },
+        {
+          "sd_L": [
+            0.2,
+            0.35
+          ],
+          "region": "lower",
+          "pixels": 11256,
+          "baseline_rmse": 0.0,
+          "candidate_rmse": 0.04934431170023209
+        },
+        {
+          "sd_L": [
+            0.35,
+            0.7
+          ],
+          "region": "upper",
+          "pixels": 29512,
+          "baseline_rmse": 8.86835815493318,
+          "candidate_rmse": 6.06112278654215
+        },
+        {
+          "sd_L": [
+            0.35,
+            0.7
+          ],
+          "region": "lower",
+          "pixels": 29586,
+          "baseline_rmse": 0.032369630812526494,
+          "candidate_rmse": 0.03237662373023857
+        },
+        {
+          "sd_L": [
+            0.7,
+            1.2
+          ],
+          "region": "upper",
+          "pixels": 26520,
+          "baseline_rmse": 7.121416434443152,
+          "candidate_rmse": 7.091385511037762
+        },
+        {
+          "sd_L": [
+            0.7,
+            1.2
+          ],
+          "region": "lower",
+          "pixels": 24928,
+          "baseline_rmse": 0.1414837559653058,
+          "candidate_rmse": 0.14148375593507753
+        }
+      ],
+      "complete_sha256": "e601a069230855fb9e26647f107d0edf15aa6ba8f26659878d15aa44ffb2397a",
+      "output_range": [
+        7.524811825468094e-61,
+        0.13992434740066528
+      ]
+    }
+  ],
+  "original_scores_reused": [
+    {
+      "theme": "regular-light",
+      "case": {
+        "video": "219",
+        "time": 915,
+        "source_time": null,
+        "center": [
+          960,
+          541
+        ],
+        "half": [
+          245,
+          106.5
+        ],
+        "radius": 106.5,
+        "crop": [
+          610,
+          350,
+          1310,
+          730
+        ],
+        "foreground": [],
+        "sigma_max": 0,
+        "models": [
+          "identity",
+          "default"
+        ]
+      },
+      "recipe": {
+        "model": "field",
+        "shape": {
+          "half": [
+            2.300469483568075,
+            1
+          ],
+          "radius": 1
+        },
+        "parameters": {
+          "edge": 0.4,
+          "band": 0.55,
+          "core": 0.012,
+          "rim": 0.35,
+          "kind": 2
+        },
+        "source_sigma": 0,
+        "rim_width": 0.022669234406356136,
+        "thin_rim": 0.013145539906103286,
+        "blur_transition": null,
+        "material": [
+          0.1156499587516341,
+          0.1261637185355332,
+          0.13334502177712704,
+          0.8,
+          0.794600344793925,
+          0.7981231194453705,
+          -0.12262668869890934,
+          0.008872312135103845,
+          -0.10205949487434135,
+          0.1553097725649258,
+          -0.0048079662039135,
+          0.050245535751207264,
+          0.0029311944554996244,
+          0.005952658981868768,
+          -0.0023122407442389397,
+          -0.007721529993112877,
+          0.005138109899550356,
+          -0.0010083990646738413,
+          0.006287177168919927,
+          0.002010460292542334,
+          0.12088539333639757,
+          0.13135705249170498,
+          0.1386314007056985
+        ],
+        "reference_length": 106.5
+      },
+      "native_scores": {
+        "train": {
+          "pixels": 70319,
+          "rmse": 1.527794361114502,
+          "mae": 0.6471757888793945,
+          "opponent_chroma_rmse": 0.13416042923927307
+        },
+        "held_blocks": {
+          "pixels": 23260,
+          "rmse": 1.5441131591796875,
+          "mae": 0.6524240374565125,
+          "opponent_chroma_rmse": 0.10684777796268463
+        },
+        "all_glass": {
+          "pixels": 93579,
+          "rmse": 1.5318667888641357,
+          "mae": 0.6484802961349487,
+          "opponent_chroma_rmse": 0.12791737914085388
+        },
+        "rim": {
+          "pixels": 23426,
+          "rmse": 2.8937501907348633,
+          "mae": 1.256956696510315,
+          "opponent_chroma_rmse": 0.23943395912647247
+        },
+        "outer_rim": {
+          "pixels": 3780,
+          "rmse": 6.895771503448486,
+          "mae": 4.622230529785156,
+          "opponent_chroma_rmse": 0.5316447615623474
+        },
+        "interior": {
+          "pixels": 70153,
+          "rmse": 0.5779083371162415,
+          "mae": 0.4452933967113495,
+          "opponent_chroma_rmse": 0.05180029571056366
+        },
+        "ssim": 0.999122142791748,
+        "gradient_mae": 0.47616663575172424,
+        "selection_loss": 0.000174252328984052
+      },
+      "archived_score_exact": {
+        "all_glass": true,
+        "rim": true,
+        "held_blocks": true,
+        "interior": true,
+        "outer_rim": true
+      },
+      "derived_E_for_protocol_review": 2.0383248394431295,
+      "source_domain": {
+        "native_subsamples_per_axis": 4,
+        "cohorts": {
+          "whole": {
+            "rays": 1514164,
+            "undefined": 0,
+            "outside_footprint": 0,
+            "min_x": 723.3199726169709,
+            "max_x": 1196.680027383029,
+            "min_y": 442.8199726169706,
+            "max_y": 639.1800273830295,
+            "source_rgb_min": [
+              0.7294117647058823,
+              0.7450980392156862,
+              0.764705882352941
+            ],
+            "source_rgb_max": [
+              0.815686274509804,
+              0.823529411764706,
+              0.835294117647059
+            ],
+            "light_black_splice_rays": 0,
+            "dark_copied_top_rays": 0
+          },
+          "ALL_scored": {
+            "rays": 1497264,
+            "undefined": 0,
+            "outside_footprint": 0,
+            "min_x": 724.6928649201535,
+            "max_x": 1195.3071350798464,
+            "min_y": 444.58411402345905,
+            "max_y": 637.415885976541,
+            "source_rgb_min": [
+              0.7319048713235293,
+              0.7450980392156862,
+              0.764705882352941
+            ],
+            "source_rgb_max": [
+              0.815686274509804,
+              0.823529411764706,
+              0.835294117647059
+            ],
+            "light_black_splice_rays": 0,
+            "dark_copied_top_rays": 0
+          }
+        },
+        "source_gaussian_sigma_native": 0,
+        "defined_finite_RGB_domain_pass": true,
+        "observed_confidence": "NOT AVAILABLE: archivedsource has no separateconfidence/observedmask; reconstruction/inference explicitly retained, no maskadoption",
+        "limits": "Originallegacy4x4 whole+ALLscored ray domain only; in-image finiteRGB is not directobservation/sourcecertainty. No source/shadow adoption, no output/HQepoch."
+      },
+      "original_frame_and_source_provenance": {
+        "requested_seconds": 915,
+        "presentation_seconds": 915.0141000000001,
+        "frame_index": 27423,
+        "native_size": [
+          1920,
+          1080
+        ]
+      },
+      "source_construction": {
+        "method": "smooth page field from uncovered light gradient; no optical-detail calibration",
+        "page_field": {
+          "background_samples": 16751,
+          "background_mae_255": 0.48114819864489233,
+          "background_coefficients": [
+            [
+              0.7757853953391498,
+              0.785039364815106,
+              0.8037767488687965
+            ],
+            [
+              -0.08165117814817233,
+              -0.06817489775626885,
+              -0.05801127819565557
+            ],
+            [
+              0.02018957984909496,
+              0.0058100076325912735,
+              0.00418525320924294
+            ],
+            [
+              0.040578215045841054,
+              -0.0060008494688555,
+              -0.0006816819413724123
+            ],
+            [
+              0.01771051520229707,
+              -0.006804897991384771,
+              0.0021861940477290506
+            ],
+            [
+              -0.15306256897587323,
+              -0.14157129888947087,
+              -0.13511471333425285
+            ],
+            [
+              -0.0485454799649999,
+              -0.04066877028570521,
+              -0.052455209239105315
+            ],
+            [
+              0.025286937916040034,
+              0.003171963695121623,
+              -0.010858639936115959
+            ],
+            [
+              0.018613658701084366,
+              -0.005123156680309651,
+              -0.013212544375092566
+            ],
+            [
+              0.032628572026667024,
+              0.02617554715964612,
+              -0.0002466048203780898
+            ],
+            [
+              0.024968268909152904,
+              0.01738758070217836,
+              0.0014305352017947646
+            ],
+            [
+              0.00892087133064257,
+              -0.00029524023535458565,
+              -0.009106562822241133
+            ],
+            [
+              0.0369849986171659,
+              0.03452892864571095,
+              0.03861529362373717
+            ],
+            [
+              0.007214878909245947,
+              0.006366958153948914,
+              0.017467390911975512
+            ],
+            [
+              -0.012555440715777296,
+              -0.006283056443336184,
+              0.010215053191195632
+            ]
+          ]
+        },
+        "exterior_mae_255": null
+      },
+      "exterior_guard": "NONE in original settled scores; publish.contact_context is targetderived unscored residual/distanttarget, not generatedshadow or cleanindependentexteriorbaseline"
+    },
+    {
+      "theme": "regular-dark",
+      "case": {
+        "video": "219",
+        "time": 920,
+        "source_time": null,
+        "center": [
+          960,
+          541
+        ],
+        "half": [
+          245,
+          106.5
+        ],
+        "radius": 106.5,
+        "crop": [
+          610,
+          350,
+          1310,
+          730
+        ],
+        "foreground": [],
+        "sigma_max": 0,
+        "models": [
+          "identity",
+          "default"
+        ]
+      },
+      "recipe": {
+        "model": "field",
+        "shape": {
+          "half": [
+            2.300469483568075,
+            1
+          ],
+          "radius": 1
+        },
+        "parameters": {
+          "edge": 0.4,
+          "band": 0.55,
+          "core": 0.012,
+          "rim": 0.35,
+          "kind": 2
+        },
+        "source_sigma": 0,
+        "rim_width": 0.0239938801729732,
+        "thin_rim": 0.013145539906103286,
+        "blur_transition": null,
+        "material": [
+          1,
+          1,
+          1,
+          0.08821031967684755,
+          0.08821031967684757,
+          0.08821031967684755,
+          -0.049358800392969804,
+          -0.0037720868046247427,
+          -0.05182075142033589,
+          0.07506426311893138,
+          0.0026696554852221753,
+          0.023761770264178243,
+          -0.000819106369100136,
+          0.0018362365351123856,
+          -0.0022273114889382207,
+          -6.28580464757196e-05,
+          0.003252870065616739,
+          -0.001504945059070967,
+          0.0012406176633239622,
+          0.002061561419270751,
+          1,
+          1,
+          1
+        ],
+        "reference_length": 106.5
+      },
+      "native_scores": {
+        "train": {
+          "pixels": 70319,
+          "rmse": 0.8664501905441284,
+          "mae": 0.36083757877349854,
+          "opponent_chroma_rmse": 0.0
+        },
+        "held_blocks": {
+          "pixels": 23260,
+          "rmse": 0.8863470554351807,
+          "mae": 0.3623865246772766,
+          "opponent_chroma_rmse": 0.0
+        },
+        "all_glass": {
+          "pixels": 93579,
+          "rmse": 0.8714381456375122,
+          "mae": 0.36122259497642517,
+          "opponent_chroma_rmse": 0.0
+        },
+        "rim": {
+          "pixels": 23426,
+          "rmse": 1.663673996925354,
+          "mae": 0.684956967830658,
+          "opponent_chroma_rmse": 0.0
+        },
+        "outer_rim": {
+          "pixels": 3780,
+          "rmse": 3.9965388774871826,
+          "mae": 2.658055067062378,
+          "opponent_chroma_rmse": 0.0
+        },
+        "interior": {
+          "pixels": 70153,
+          "rmse": 0.29789721965789795,
+          "mae": 0.2531188428401947,
+          "opponent_chroma_rmse": 0.0
+        },
+        "ssim": 0.999718964099884,
+        "gradient_mae": 0.14477184414863586,
+        "selection_loss": 5.766628804208722e-05
+      },
+      "archived_score_exact": {
+        "all_glass": true,
+        "rim": true,
+        "held_blocks": true,
+        "interior": true,
+        "outer_rim": true
+      },
+      "derived_E_for_protocol_review": 1.1670160494115653,
+      "source_domain": {
+        "native_subsamples_per_axis": 4,
+        "cohorts": {
+          "whole": {
+            "rays": 1514164,
+            "undefined": 0,
+            "outside_footprint": 0,
+            "min_x": 723.3199726169709,
+            "max_x": 1196.680027383029,
+            "min_y": 442.8199726169706,
+            "max_y": 639.1800273830295,
+            "source_rgb_min": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source_rgb_max": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "light_black_splice_rays": 0,
+            "dark_copied_top_rays": 0
+          },
+          "ALL_scored": {
+            "rays": 1497264,
+            "undefined": 0,
+            "outside_footprint": 0,
+            "min_x": 724.6928649201535,
+            "max_x": 1195.3071350798464,
+            "min_y": 444.58411402345905,
+            "max_y": 637.415885976541,
+            "source_rgb_min": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source_rgb_max": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "light_black_splice_rays": 0,
+            "dark_copied_top_rays": 0
+          }
+        },
+        "source_gaussian_sigma_native": 0,
+        "defined_finite_RGB_domain_pass": true,
+        "observed_confidence": "NOT AVAILABLE: archivedsource has no separateconfidence/observedmask; reconstruction/inference explicitly retained, no maskadoption",
+        "limits": "Originallegacy4x4 whole+ALLscored ray domain only; in-image finiteRGB is not directobservation/sourcecertainty. No source/shadow adoption, no output/HQepoch."
+      },
+      "original_frame_and_source_provenance": {
+        "requested_seconds": 920,
+        "presentation_seconds": 919.9857333333334,
+        "frame_index": 27572,
+        "native_size": [
+          1920,
+          1080
+        ]
+      },
+      "source_construction": {
+        "method": "black field observed outside control; no optical-detail calibration",
+        "exterior_mae_255": 0
+      },
+      "exterior_guard": "NONE in original settled scores; publish.contact_context is targetderived unscored residual/distanttarget, not generatedshadow or cleanindependentexteriorbaseline"
+    }
+  ],
+  "limitations": "Far bands advisory; generated glow is not proof of incident source black or Apple lighting. Removing target-derived old context earns no credit. No adoption or optical pass before independent primary review."
+}

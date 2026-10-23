@@ -1,0 +1,9 @@
+# Reversal criterion correction — Ana's current steering
+
+Ana asked whether edge reversal is actually desired. Root had incorrectly generalized an earlier complaint about a particular mirrored outer strip into a blanket no-fold aim. The correct success criterion is correspondence with Apple's reference: location/onset, extent/orientation and transition of each reversed region. A reversed mapping is neither automatically wrong nor automatically accurate. Absence of reversal is not a success criterion.
+
+Existing protocols/results remain preserved as historical experiments. G01/G04 were visibly inaccurate at the dune crossings; their absence of folds is only a measured property. G03 is incomplete as a primary-only full-image model because of TIR; its transmitted folds alone are not a rejection criterion. G05 is a real-surface baseline whose edge folds must be localized against the reference. It is not claimed improved merely for being geometric, and not rejected merely for folding.
+
+Before any further circle fit, label the specific reference/baseline reversed edge patches and source-feature correspondences. Preserve original masks/crops/source/registration and frozen evidence. Never optimize away all folds globally. The helper must apply the same reference-led interpretation to its different control and held-out comparison. This clarification changes interpretation, not any saved render, score, source or accepted baseline.
+
+Ana subsequently confirmed that her earlier no-reversal claim was specifically about this lens and was incorrect: she had misinterpreted its refraction. That earlier claim is now explicitly SUPERSEDED. Edge reversal belongs in this lens; match the reference's location, strength/extent and transition. Do not preserve the old claim as an active constraint, and do not infer that all edge detail is necessarily refraction rather than reflection/highlight without checking the feature correspondence.

@@ -1,0 +1,103 @@
+{
+  "status": "NEW_INPUT_ONE_TRANSFERRED_PRIOR_BASELINE_COUNT0_NO_FIT",
+  "at": "2026-10-22T01:05:13.857Z",
+  "body_baseline_renders": 1,
+  "optical_fits": 0,
+  "accepted_count": 0,
+  "prior_commit": "4d27add70e78da7152eb86cccae67b37d7445b4b",
+  "prior": "g1,b.07500000000000001, all14light0, neutralrim a.125/w.028. Inheritedbestprior transferred, no b0 baseline.",
+  "source_hidden_observed_fraction": 0,
+  "limits": "Sourceheaderupper3.785/posep95.463/SFxmarkweight-AAuncertainty, glyphbaseline35.785 remains. No physical/paired/refraction/blurvalidation. No source/variantfix counted.",
+  "command": "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps localica-dark-lab-check python3 /evidence/extended/helper-toolbar-work/more-close-round/latest-circle-baseline/code/neutral_rim.py /evidence/extended/helper-toolbar-work/more-close-round/latest-circle-baseline/inputs/a /evidence/extended/helper-toolbar-work/more-close-round/latest-circle-baseline/baseline-recipe.json /evidence/extended/helper-toolbar-work/more-close-round/latest-circle-baseline/selected-public-neutral-rim-pass03.json /evidence/extended/more-close-primary-baseline",
+  "command_scope": "Public helper independently rebuilds material/complete/nativeglassscores. Primary can compare saved arrays and use frozen full masks for allguards. Agent did NOT execute an extra replay.",
+  "files": {
+    "baseline-recipe.json": {
+      "bytes": 2038,
+      "sha256": "899309d2743476a85a213440206392432225bb85d312b245f9543c86964fc97b"
+    },
+    "baseline-native.json": {
+      "bytes": 5316,
+      "sha256": "5fc464c04b9c5bf3f1dadcd6c5a93a45261f795c45a0043a232f6a8809893771"
+    },
+    "baseline-native-arrays.npz": {
+      "bytes": 31131,
+      "sha256": "c5dc62d1d23ac5f03ea947ffe6b97886fd981a56be3bc44fbcfc160a46a45ab0"
+    },
+    "canonical-masks-FIRST.npz": {
+      "bytes": 2521,
+      "sha256": "bfa1b23a66b1a6645f92907cf73b2fa33c8b295c42198b7b1ba7bade1dc30d67"
+    },
+    "mask-protocol-FIRST.json": {
+      "bytes": 463,
+      "sha256": "36d7fb09ad31b82a2670139202dd0c526c76d7fd5374daed6765d0b188b83102"
+    },
+    "source-proof-FIRST.json": {
+      "bytes": 1573,
+      "sha256": "9847996a28ffbe4068cf75c324506c514c93c4975b153b9ddf6f854beec291d3"
+    },
+    "native-raw-clip-proof.json": {
+      "bytes": 2089,
+      "sha256": "b55ecbcc96aa9024c34890f1d65919522821d432bccfc5434f18eb2ea9b00a00"
+    },
+    "code-snapshot.json": {
+      "bytes": 11092,
+      "sha256": "dd38267c2bfd42472ad3bbb4500a3eaa6530b0f3c8739d8b8ff8f94a6ba934cf"
+    },
+    "selected-public-next-pass03.json": {
+      "bytes": 4215,
+      "sha256": "584b82d6030f11939e4f65879c34dc50e2a65d2ac45c5bbd2fb1c47c25691351"
+    },
+    "selected-public-neutral-rim-pass03.json": {
+      "bytes": 4582,
+      "sha256": "b736daea2337466af1100acad4e0ec6af675f389a6df5bc9bb9d686149c76ab6"
+    },
+    "baseline-comparison.png": {
+      "bytes": 18071,
+      "sha256": "ef78b4c29bcd3af28899c8a0abe34de74bbc3ec9682d749a1bc8d2b8b262a0c6"
+    },
+    "code/neutral_rim.py": {
+      "bytes": 2831,
+      "sha256": "4ae3711c075ad815a716dde1e691d5f568ffa16c8513aa56153761e80baf8fa3"
+    },
+    "code/settled.py": {
+      "bytes": 7890,
+      "sha256": "1544860fa4ca253d66d7e5349ca0e0ab0d278bc37949f1e47c192c8b54ad3123"
+    },
+    "code/extended_fit.py": {
+      "bytes": 32425,
+      "sha256": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f"
+    },
+    "code/vector_revision.py": {
+      "bytes": 5043,
+      "sha256": "37dfaade301cbfc45474d7d3b901f20053a22c479590e3931e3cc867e8986a7b"
+    },
+    "inputs/a/case.json": {
+      "bytes": 3339,
+      "sha256": "d31cad66b23e22eaee338fd3e5f176782b7635c0007de72c94ce1f2878a40809"
+    },
+    "inputs/a/known.png": {
+      "bytes": 2288,
+      "sha256": "3a721ec734fc2993ebb4c4696c5d684b9a8e22480e190b6a4a544c8eae1fb11e"
+    },
+    "inputs/a/observed.png": {
+      "bytes": 2090,
+      "sha256": "06da5431a575e89e972435a0219b390d3dbb32e73ad342de409a935744365f76"
+    },
+    "inputs/a/source.png": {
+      "bytes": 7228,
+      "sha256": "0791430758dfd144edc914ac528e161f7ad1fe4ca5b791c21fc1aadee40b2430"
+    },
+    "inputs/a/target-visible.png": {
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+    },
+    "inputs/a/target.png": {
+      "bytes": 170266,
+      "sha256": "edae65724bac014ac7644e8812c5ddec69daaf6e2fcf72ad6ed4f057710bcdc8"
+    },
+    "inputs/a/xmark-pinned.svg": {
+      "bytes": 451,
+      "sha256": "9158df2c121853f26f67c74159e91957f41a9f886cce1a461d2987d7b7229424"
+    }
+  }
+}

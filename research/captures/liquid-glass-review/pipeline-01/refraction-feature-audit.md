@@ -1,0 +1,5 @@
+# Refraction feature audit after three proposals
+
+Budget:15minutes, cached/reference/source image analysis only, zero geometric rays/new optical images/parameter fitting. At most ONE straight upper-background horizon model from the unchanged source's uncovered image region, and ONE fixed angular cohort. This source-feature line is a diagnostic landmark, not a modified source/registration/scoring epoch or fitted lens. Keep all detected candidates/ambiguities. No new surface family after R1/R2/R3 review in this pipeline block.
+
+The first two proposals reduce a normalized gradient score while worsening RGB/rim, and R3 moves one crossing at the expense of others. A signed-gradient aggregate is therefore supporting evidence, not enough to accept geometry. Locate normal and reversed instances of the same SOURCE horizon, retaining branch polarity and possible contour-light interference. Compare all fixed cases from cached patch arrays where applicable. No shift/blur/color registration to improve the image. Measurement uncertainty remains if target peak choices compete or return edge merges with lighting.

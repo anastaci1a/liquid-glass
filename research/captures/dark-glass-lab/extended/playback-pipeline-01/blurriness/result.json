@@ -1,0 +1,103 @@
+{
+  "classification": "NUMERICAL_CANDIDATE_PENDING_VISUAL",
+  "selected": 7,
+  "selected_recipe": {
+    "trial": 7,
+    "source_sigma_native_px": 0,
+    "output_sigma_native_px": 2.5,
+    "source_sigma_over_L": 0.0,
+    "output_sigma_over_L": 0.01020408163265306,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 12.532868385314941,
+        "mae": 8.067386627197266,
+        "opponent_chroma_rmse": 1.5184952020645142
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 12.458719253540039,
+        "mae": 8.3721342086792,
+        "opponent_chroma_rmse": 1.5492734909057617
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 12.514244079589844,
+        "mae": 8.144099235534668,
+        "opponent_chroma_rmse": 1.526301383972168
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 13.734347343444824,
+        "mae": 8.259028434753418,
+        "opponent_chroma_rmse": 1.909854531288147
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 25.903656005859375,
+        "mae": 17.434911727905273,
+        "opponent_chroma_rmse": 3.9564011096954346
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 11.178910255432129,
+        "mae": 8.030562400817871,
+        "opponent_chroma_rmse": 1.0137072801589966
+      },
+      "ssim": 0.9696048498153687,
+      "gradient_mae": 4.893864631652832,
+      "selection_loss": 0.005129949565472363,
+      "foreground_fullbox_MSE": 5.534182071685791,
+      "exterior_MSE": 24.08176040649414
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 12.862966537475586,
+        "luma_RMSE": 12.809841771631016
+      },
+      "top-left": {
+        "RGB_RMSE": 8.003213882446289,
+        "luma_RMSE": 8.04805743256388
+      },
+      "upper-right": {
+        "RGB_RMSE": 6.26432466506958,
+        "luma_RMSE": 6.349463094100703
+      },
+      "center-texture": {
+        "RGB_RMSE": 20.370431900024414,
+        "luma_RMSE": 20.396211072577874
+      }
+    },
+    "guards": {
+      "train": true,
+      "held_blocks": true,
+      "all_glass": true,
+      "rim": true,
+      "outer_rim": true,
+      "interior": true,
+      "ssim": true,
+      "foreground": true,
+      "exterior": true
+    },
+    "qualifies_numerically": true
+  },
+  "trials": 11,
+  "new_geometric_rays": 0,
+  "wall_seconds": 5.112299680709839,
+  "fixed_geometry": "G05",
+  "fixed_color": "unit body; historical icon separately frozen",
+  "proof": {
+    "new_geometric_rays": 0,
+    "cached_query_count": 7126400,
+    "source_kernel_radii": [
+      0,
+      2,
+      3
+    ],
+    "unsupported": 0,
+    "output_max_radius": 8,
+    "crop_min_lens_padding_native": 77,
+    "original_registered_source_proof_sha256": "4acea258c432b4a0da0839ef957f6afbff57e53b918aa1a630571023aa06501b",
+    "saved_before_candidate_RGB": true
+  }
+}

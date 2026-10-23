@@ -1,0 +1,83 @@
+{
+  "status": "FROZEN_INPUT_BASELINE_NO_OPTICAL_FIT_OR_PASS",
+  "scores": {
+    "glass": {
+      "pixels": 23072,
+      "rmse": 27.23141098022461
+    },
+    "rim": {
+      "pixels": 8302,
+      "rmse": 33.101524353027344
+    },
+    "held": {
+      "pixels": 4527,
+      "rmse": 27.301130294799805
+    },
+    "interior": {
+      "pixels": 14770,
+      "rmse": 23.291221618652344
+    },
+    "ssim": 0.9828431606292725,
+    "loss": 847.7980951299469,
+    "E": 29.11697262989315
+  },
+  "source_support": {
+    "ALL_rectangular_rays": 264600,
+    "bad": 0,
+    "bounds": [
+      1068.18994140625,
+      651.9404907226562,
+      1276.2738037109375,
+      757.4781494140625
+    ],
+    "filters": 0,
+    "observed_hidden_fraction": 0
+  },
+  "source_controls": {
+    "train": 0.8046036268699193,
+    "held": 0.8050072359457339,
+    "independent_lower": 4.298076612667625
+  },
+  "quadratic": {
+    "quadratic_errors": {
+      "train": 0.6974789909869785,
+      "held": 0.6970079343881894,
+      "independent_lower": 1.9989231637228033
+    },
+    "requires_held_improvement_and_20percent_lower": true,
+    "quadratic_supported": true,
+    "coefficient_rgb": [
+      [
+        0.5699869013247932,
+        0.5832724584450081,
+        0.6126042199594032
+      ],
+      [
+        -0.04908739572236506,
+        -0.04988036966714458,
+        -0.05130217429016113
+      ],
+      [
+        0.01830638256816853,
+        0.01588862783181847,
+        0.01335936411261153
+      ],
+      [
+        -4.245726563625502e-05,
+        0.000258577337153464,
+        -3.0981405370708924e-05
+      ],
+      [
+        -0.0014763327581186218,
+        -0.0018428811239000183,
+        -0.0026687588323139944
+      ],
+      [
+        -0.002456991614128535,
+        -0.0031022903733256405,
+        -0.0037188929531471954
+      ]
+    ]
+  },
+  "limits": "Smooth RGB source cannot identify lensing/blur. Missing angular highlight/outline, exact fontweight unresolved. No target-matte/refshadow."
+}

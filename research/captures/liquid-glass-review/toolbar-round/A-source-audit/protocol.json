@@ -1,0 +1,38 @@
+{
+  "task": "14source-only A donor/unocclusion audit",
+  "A_reference": "original710s/frame21279/PTS710.0093",
+  "bounded_interval": [
+    706,
+    724
+  ],
+  "donors": [
+    706,
+    708,
+    712,
+    716,
+    718,
+    722
+  ],
+  "geometry_control_exclusion_xyxy": [
+    490,
+    330,
+    1430,
+    820
+  ],
+  "RGB_shadow_context_exclusion_xyxy": [
+    380,
+    200,
+    1540,
+    1030
+  ],
+  "SIFT_ratio": 0.7,
+  "mutual_matches": true,
+  "registration_family": "similarity/4DOF",
+  "RANSAC_threshold_native_px": 1,
+  "holdout": "target128px spatial blocks, oneoffour; independent of fitting",
+  "bootstrap": "200resamples of training-inlier spatialblocks; conditional on correct correspondence/model",
+  "source_scene_content_vs_absolute_RGB_separate": true,
+  "keep_current_source_history_count_unchanged": true,
+  "no_target_glass_pixels_for_alignment": true,
+  "no_accepted_source_or_pair_epoch": true
+}

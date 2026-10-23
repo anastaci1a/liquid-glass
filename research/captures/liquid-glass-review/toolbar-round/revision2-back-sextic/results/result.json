@@ -1,0 +1,121 @@
+{
+  "selected_map_start": 2,
+  "projection": {
+    "start": [
+      -0.18082214139758046,
+      0.886978968936731,
+      -1.0,
+      -0.9999999999999999
+    ],
+    "z": [
+      -0.19653563191088527,
+      0.842833146297972,
+      -0.9999999999999999,
+      -0.9999999999999999
+    ],
+    "parameters": [
+      -0.005896068957326558,
+      0.02528499438893916,
+      -0.14999999999999997,
+      -0.019999999999999997
+    ],
+    "success": true,
+    "status": 2,
+    "message": "`ftol` termination condition is satisfied.",
+    "nfev": 6,
+    "optimality": 1.4987219305767563e-06,
+    "active_mask": [
+      0,
+      0,
+      -1,
+      -1
+    ],
+    "cost": 19.667268325333644,
+    "map_vector_RMSE_L": 0.08740284582259542,
+    "bounds": {
+      "height_lower": 0.2733650561211429,
+      "height_upper": 0.7266349438788571,
+      "background": 2.5,
+      "minimum_gap": 1.773365056121143,
+      "gradient_norm_upper": 0.7774168060849762,
+      "critical_gradient": 0.8944271909999159,
+      "extra_height_bound": 0.019999999999999997,
+      "extra_slope_bound": 0.11999999999999998,
+      "global_subcritical_positive_clearance": true,
+      "no_reentry_sufficient_product": 0.43374308001588296,
+      "displacement_norm_upper": 1.2423033449619585
+    }
+  },
+  "cached_parent_map_points_available": 203,
+  "cached_parent_map_points_reused": 7,
+  "native_E": 12.094453031319594,
+  "native_foreground": {
+    "archivebox": 13.545430949227748,
+    "plus": 4.5614253910392435
+  },
+  "guard_order": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "guard_before": [
+    5.843130588531494,
+    8.813648223876953,
+    11.46944201723165,
+    13.242044387461515,
+    3.667139623528374
+  ],
+  "guard_after": [
+    11.375489234924316,
+    13.625290870666504,
+    11.471834027618803,
+    13.545430949227748,
+    4.5614253910392435
+  ],
+  "all_native_guards": false,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 12.094453031319594,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": -0.7603478032454545,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": false,
+          "shadow": false
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "advisory_crops": {
+    "upper": {
+      "conditional_native_RMSE": 15.603452682495117,
+      "complete_native_RMSE": 15.501203190355472
+    },
+    "d": {
+      "conditional_native_RMSE": 7.655765056610107,
+      "complete_native_RMSE": 7.655764854721549
+    },
+    "underside": {
+      "conditional_native_RMSE": 6.846667289733887,
+      "complete_native_RMSE": 6.831471055528654
+    }
+  },
+  "new_native_comparison_renders": 1,
+  "target_image_fits": 0,
+  "counted_passes": 0,
+  "limitations": "Map fitting is a proposal and not a lower bound on best attainable image score. Physical ray geometry only; frozen empirical shading/blur/shadow/foreground. No identified Apple surface, source correction or epoch change."
+}

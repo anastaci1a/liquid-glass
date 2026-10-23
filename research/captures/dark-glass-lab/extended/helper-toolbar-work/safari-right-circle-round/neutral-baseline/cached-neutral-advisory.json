@@ -1,0 +1,188 @@
+{
+  "status": "ADVISORY_CACHED_LINEAR_NEUTRAL_BASIS_ONLY_NOT_FIT",
+  "directions": [
+    "common g",
+    "common b"
+  ],
+  "parameters_at_baseline": {
+    "g": 1,
+    "b": 0
+  },
+  "metrics": {
+    "glass": {
+      "pixels": 7805,
+      "signed_rgb": [
+        -22.172353797448437,
+        -23.776690939788555,
+        -25.366720303100777
+      ],
+      "continuous_mse_gradient_g_b": [
+        -6210.855398491081,
+        -12123.680056857422
+      ],
+      "continuous_mse_hessian_g_b": [
+        [
+          34230.57490610543,
+          66655.21601643706
+        ],
+        [
+          66655.21601643706,
+          130050.0
+        ]
+      ]
+    },
+    "rim": {
+      "pixels": 5194,
+      "signed_rgb": [
+        -23.125373107862785,
+        -24.5037685768176,
+        -26.253917742897833
+      ],
+      "continuous_mse_gradient_g_b": [
+        -6433.164915231078,
+        -12560.120102688297
+      ],
+      "continuous_mse_hessian_g_b": [
+        [
+          34227.71751771914,
+          66651.01307771803
+        ],
+        [
+          66651.01307771803,
+          130050.0
+        ]
+      ]
+    },
+    "held": {
+      "pixels": 3065,
+      "signed_rgb": [
+        -21.597596058691888,
+        -23.445967906256485,
+        -25.088428217765752
+      ],
+      "continuous_mse_gradient_g_b": [
+        -6112.220757378372,
+        -11922.438671061402
+      ],
+      "continuous_mse_hessian_g_b": [
+        [
+          34314.75584228556,
+          66732.59865006588
+        ],
+        [
+          66732.59865006588,
+          130050.0
+        ]
+      ]
+    },
+    "interior": {
+      "pixels": 2611,
+      "signed_rgb": [
+        -20.276535222844025,
+        -22.330332744947935,
+        -23.601839605166692
+      ],
+      "continuous_mse_gradient_g_b": [
+        -5768.620381276342,
+        -11255.48028740297
+      ],
+      "continuous_mse_hessian_g_b": [
+        [
+          34236.25904064405,
+          66663.57682214152
+        ],
+        [
+          66663.57682214152,
+          130050.0
+        ]
+      ]
+    },
+    "glyph": {
+      "pixels": 7735,
+      "signed_rgb": [
+        -12.966397750708223,
+        -14.039644388973223,
+        -15.018945051641152
+      ],
+      "continuous_mse_gradient_g_b": [
+        -3773.27348871771,
+        -7354.516004624531
+      ],
+      "continuous_mse_hessian_g_b": [
+        [
+          27908.318659520926,
+          54313.68207138141
+        ],
+        [
+          54313.68207138141,
+          105872.93923974702
+        ]
+      ]
+    },
+    "exterior": {
+      "pixels": 12761,
+      "signed_rgb": [
+        -3.40543791307251,
+        -3.9245543510700296,
+        -4.286637578733792
+      ],
+      "continuous_mse_gradient_g_b": [
+        -54.17366788037707,
+        -105.55171508377934
+      ],
+      "continuous_mse_hessian_g_b": [
+        [
+          52.26081565697181,
+          101.83436555147723
+        ],
+        [
+          101.83436555147723,
+          198.72854791944204
+        ]
+      ]
+    },
+    "full_visible_exterior": {
+      "pixels": 22835,
+      "signed_rgb": [
+        -1.7869845608574362,
+        -2.2003609002523983,
+        -2.4584532983850695
+      ],
+      "continuous_mse_gradient_g_b": [
+        -30.27414827333004,
+        -58.98600552590796
+      ],
+      "continuous_mse_hessian_g_b": [
+        [
+          29.205179268605963,
+          56.90862004827681
+        ],
+        [
+          56.90862004827681,
+          111.05649222684475
+        ]
+      ]
+    },
+    "weighted_E_squared": {
+      "continuous_gradient_g_b": [
+        -6277.54825351308,
+        -12254.612070606683
+      ],
+      "continuous_hessian_g_b": [
+        [
+          34229.71768958954,
+          66653.95513482134
+        ],
+        [
+          66653.95513482134,
+          130050.0
+        ]
+      ]
+    }
+  },
+  "scope": "Continuous unclipped encoded-RGB C=clip(g*S+b). At neutralbaseline defined samples inside0..1, derivative dM/dg=M, dM/db=1; complete derivative carries original alpha and fixed black SVG. Post blur linear in ideal arithmetic.",
+  "limits": "NOT exact floating-point finite-native derivative, no candidate or optimum predicted/scored. SSIM nonlinear/rounding and native strict guards still require actual authorized native trial. No material calibration, map/source/glyph/protocol change or scoreepoch.",
+  "extra_body_renders": 0,
+  "material_fits": 0,
+  "accepted_count": 0
+}

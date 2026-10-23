@@ -1,0 +1,228 @@
+{
+  "status": "PASS_GEOMETRY_ONLY",
+  "rays": 9403,
+  "checks": {
+    "gradient_0.02": {
+      "pass": true,
+      "details": {
+        "FD_steps": [
+          1e-05,
+          5e-06
+        ],
+        "max_errors": [
+          3.5949992982509116e-12,
+          4.05946803949675e-12
+        ]
+      }
+    },
+    "circle_height_exact_0.02": {
+      "pass": true,
+      "details": "True radial fixture, not equal-half softened crown"
+    },
+    "circle_trace_exact_0.02": {
+      "pass": true,
+      "details": "All shared tracer output arrays bit-exact"
+    },
+    "gradient_0.04": {
+      "pass": true,
+      "details": {
+        "FD_steps": [
+          1e-05,
+          5e-06
+        ],
+        "max_errors": [
+          7.650758498956023e-12,
+          5.676403791454732e-12
+        ]
+      }
+    },
+    "circle_height_exact_0.04": {
+      "pass": true,
+      "details": "True radial fixture, not equal-half softened crown"
+    },
+    "circle_trace_exact_0.04": {
+      "pass": true,
+      "details": "All shared tracer output arrays bit-exact"
+    },
+    "C2_center_0.02": {
+      "pass": true,
+      "details": {
+        "Hessian_estimates": [
+          0.0006000000000000001,
+          0.00030000000000000003,
+          0.00015000000000000001
+        ],
+        "analytic_limit": "zero; norm(convex smooth coordinate)^3 is C2 at origin"
+      }
+    },
+    "mirror_rotation_0.02": {
+      "pass": true,
+      "details": {
+        "max_error": 0.0
+      }
+    },
+    "rotation_rays_0.02": {
+      "pass": true,
+      "details": "Quarter-turn covariance"
+    },
+    "scale_0.02": {
+      "pass": true,
+      "details": {
+        "scale": 2.5,
+        "max_error": 8.881784197001252e-16,
+        "all_lengths_scaled": true
+      }
+    },
+    "n1_identity_0.02": {
+      "pass": true,
+      "details": "No displacement at index1"
+    },
+    "height_slope_0.02": {
+      "pass": true,
+      "details": {
+        "height_range": [
+          0.0,
+          0.02
+        ],
+        "observed_slope": 0.06,
+        "analytic_slope_bound": 0.06,
+        "n1.5_limit": 0.8944271909999159
+      }
+    },
+    "concavity_numeric_0.02": {
+      "pass": true,
+      "details": {
+        "max_eigenvalue": -1.0836720495561077e-17,
+        "global_proof": "q>=0,q convex; rho=norm(q,abs(y))/b convex; shared profile decreasing concave; hypograph solid convex. Numerical check is corroboration only."
+      }
+    },
+    "closure_crease_0.02": {
+      "pass": true,
+      "details": {
+        "max_front_back_gap": 0.0,
+        "edge_normal": "No unique whole-solid normal; back-face limit only. Exact crease rays excluded from fixture."
+      }
+    },
+    "same_section_0.02": {
+      "pass": true,
+      "details": "Section and mesh call actual height"
+    },
+    "branch_0.02": {
+      "pass": true,
+      "details": {
+        "max_plane_z_error": 0.0,
+        "min_discriminant": 0.9927676764143339,
+        "no_reentry": "Analytic convex-solid/back concavity certificate, not sampled intersections"
+      }
+    },
+    "Snell_reciprocity_0.02": {
+      "pass": true,
+      "details": {
+        "tangent_error": 2.7755575615628914e-16,
+        "reverse_error": 2.220446049250313e-16
+      }
+    },
+    "C2_center_0.04": {
+      "pass": true,
+      "details": {
+        "Hessian_estimates": [
+          0.0012000000000000001,
+          0.0006000000000000001,
+          0.00030000000000000003
+        ],
+        "analytic_limit": "zero; norm(convex smooth coordinate)^3 is C2 at origin"
+      }
+    },
+    "mirror_rotation_0.04": {
+      "pass": true,
+      "details": {
+        "max_error": 0.0
+      }
+    },
+    "rotation_rays_0.04": {
+      "pass": true,
+      "details": "Quarter-turn covariance"
+    },
+    "scale_0.04": {
+      "pass": true,
+      "details": {
+        "scale": 2.5,
+        "max_error": 8.881784197001252e-16,
+        "all_lengths_scaled": true
+      }
+    },
+    "n1_identity_0.04": {
+      "pass": true,
+      "details": "No displacement at index1"
+    },
+    "height_slope_0.04": {
+      "pass": true,
+      "details": {
+        "height_range": [
+          0.0,
+          0.04
+        ],
+        "observed_slope": 0.12,
+        "analytic_slope_bound": 0.12,
+        "n1.5_limit": 0.8944271909999159
+      }
+    },
+    "concavity_numeric_0.04": {
+      "pass": true,
+      "details": {
+        "max_eigenvalue": -2.5441725356838897e-20,
+        "global_proof": "q>=0,q convex; rho=norm(q,abs(y))/b convex; shared profile decreasing concave; hypograph solid convex. Numerical check is corroboration only."
+      }
+    },
+    "closure_crease_0.04": {
+      "pass": true,
+      "details": {
+        "max_front_back_gap": 0.0,
+        "edge_normal": "No unique whole-solid normal; back-face limit only. Exact crease rays excluded from fixture."
+      }
+    },
+    "same_section_0.04": {
+      "pass": true,
+      "details": "Section and mesh call actual height"
+    },
+    "branch_0.04": {
+      "pass": true,
+      "details": {
+        "max_plane_z_error": 2.220446049250313e-16,
+        "min_discriminant": 0.9712035065727376,
+        "no_reentry": "Analytic convex-solid/back concavity certificate, not sampled intersections"
+      }
+    },
+    "Snell_reciprocity_0.04": {
+      "pass": true,
+      "details": {
+        "tangent_error": 3.3306690738754696e-16,
+        "reverse_error": 2.220446049250313e-16
+      }
+    },
+    "invalid_scene_rejection": {
+      "pass": true,
+      "details": [
+        {
+          "fixture": "insufficient_gap",
+          "reason": "Invalid index or background clearance"
+        },
+        {
+          "fixture": "unsupported_global_slope",
+          "reason": "Cannot certify a transmitted branch across footprint"
+        }
+      ]
+    },
+    "explicit_TIR": {
+      "pass": true,
+      "details": {
+        "discriminant": -0.6875,
+        "no_replacement_ray": true
+      }
+    }
+  },
+  "image_renders": 0,
+  "fits": 0,
+  "source_registrations": 0,
+  "finished_unix": 1792640159.2842562
+}

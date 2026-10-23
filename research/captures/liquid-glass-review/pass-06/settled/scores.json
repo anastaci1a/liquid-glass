@@ -1,0 +1,96 @@
+{
+  "current_glass": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 7.976223945617676,
+      "mae": 3.8546507358551025,
+      "opponent_chroma_rmse": 1.7314776182174683
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 8.368267059326172,
+      "mae": 4.4445929527282715,
+      "opponent_chroma_rmse": 1.7564228773117065
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 8.076704025268555,
+      "mae": 4.00315523147583,
+      "opponent_chroma_rmse": 1.737790822982788
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 11.148216247558594,
+      "mae": 5.8776445388793945,
+      "opponent_chroma_rmse": 1.9825319051742554
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 23.858327865600586,
+      "mae": 16.24490737915039,
+      "opponent_chroma_rmse": 3.9261252880096436
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 2.626490592956543,
+      "mae": 2.1513583660125732,
+      "opponent_chroma_rmse": 1.4561676979064941
+    },
+    "ssim": 0.9727470874786377,
+    "gradient_mae": 4.576143264770508,
+    "selection_loss": 0.003044792361390211
+  },
+  "pass04_glass": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 8.491089820861816,
+      "mae": 4.131499290466309,
+      "opponent_chroma_rmse": 1.8118174076080322
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 9.071847915649414,
+      "mae": 4.773776531219482,
+      "opponent_chroma_rmse": 1.843954086303711
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 8.640959739685059,
+      "mae": 4.293177604675293,
+      "opponent_chroma_rmse": 1.8199604749679565
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 11.826961517333984,
+      "mae": 6.101227283477783,
+      "opponent_chroma_rmse": 2.0854175090789795
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 24.996627807617188,
+      "mae": 16.32029914855957,
+      "opponent_chroma_rmse": 4.0704665184021
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 3.200752019882202,
+      "mae": 2.507017135620117,
+      "opponent_chroma_rmse": 1.5126454830169678
+    },
+    "ssim": 0.9459496736526489,
+    "gradient_mae": 7.476745128631592,
+    "selection_loss": 0.0031141916404254103
+  },
+  "settled_icon": {
+    "all_rmse": 3.22750231408408,
+    "training_rmse": 3.2289240957081784,
+    "withheld_rmse": 3.2224852434825833,
+    "near_white_fraction": 0.006268383239307585,
+    "reference_near_white_fraction": 0.018564058054872462
+  },
+  "limits": [
+    "Identical reference/source/geometry coverage and score exclusions; settled filters and map changed.",
+    "Glass score excludes foreground icon and exterior context.",
+    "Encoded-RGB RMSE on0..255; not a perceptual percentage, independent-scene or temporal validation."
+  ]
+}

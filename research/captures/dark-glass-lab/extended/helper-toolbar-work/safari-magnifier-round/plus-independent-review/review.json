@@ -1,0 +1,172 @@
+{
+  "status": "INDEPENDENT_PLUS_SOURCE_TRANSFER_REVIEW_ONLY_NOT_ADOPTED",
+  "fit_count": 0,
+  "optical_render_count": 0,
+  "accepted_count": 0,
+  "source_control_checks": {
+    "train": {
+      "pixels": 28316,
+      "overlap_target_circle": 0,
+      "minimum_measured_center_distance": 115.31958177170084,
+      "outside_declared_source_domain": 0
+    },
+    "held": {
+      "pixels": 9526,
+      "overlap_target_circle": 0,
+      "minimum_measured_center_distance": 115.31867992654094,
+      "outside_declared_source_domain": 0
+    }
+  },
+  "source_png_reconstruction_exact": true,
+  "field_held_rmse": 0.704718590148669,
+  "held_claim": 0.704718578542864,
+  "source_observed_hidden_fraction": 0,
+  "source_limit": "Upper/left held good, lower5.6215levels andcurvedparent boundary unresolved. Mathematical affine domain not panel truth; no targetresidual/shadow copied.",
+  "canonical_glyph": {
+    "path_exact_known_font_glyph": true,
+    "font_sha256": "bba5e09ec296a17e7dfc4644caa2e3b2b1524c5630a7dfd708140cc51628c7ca",
+    "glyph": "plus.tag.color.large",
+    "font_bounds": [
+      165,
+      133,
+      1346,
+      1315
+    ],
+    "svg_sha256": "6e512cbe3431ff6f61c64e8468eb6c886e17eab3a2c803857211dc682808efc3",
+    "exact_Safari_weight": false
+  },
+  "pose_scaling": {
+    "L_A": 72.894,
+    "L_B": 74.224,
+    "ratio": 1.0182456717974044,
+    "only_parameter_changes": {
+      "sigma": [
+        5.554174315475217,
+        5.655513957140951
+      ],
+      "post_sigma": [
+        1.2089179687310392,
+        1.2309754892184905
+      ]
+    },
+    "all_material_equal": true,
+    "geometry_dimensionless_equal": true
+  },
+  "source_support": {
+    "counts": {
+      "whole": 69241,
+      "scored": 46900,
+      "postblur": 79628,
+      "scored_outside_outline": 0,
+      "whole_bad": 0,
+      "scored_bad": 0,
+      "postblur_bad": 0
+    },
+    "minimum_confidence": {
+      "whole_defined": 1.0,
+      "scored_defined": 1.0,
+      "postblur_defined": 1.0
+    },
+    "source_gaussian_3sigma_radius": 18,
+    "post_gaussian_3sigma_radius": 4,
+    "observed_confidence": 0,
+    "limits": "Fresh fixed-map native2x2 WHOLE+ALLscored+postblur footprint; finite3sigma only, no opticalRGB/image render. Not infinite-kernel/continuous/photographicproof"
+  },
+  "saved_native_scores_exact": true,
+  "native_replay_not_repeated": "Not needed: source/hash/case/recipe/scaling/nativearrays/masks/scores verified; no repeated A or B material render",
+  "material_context_analysis": {
+    "coefficients": {
+      "A": {
+        "mean_source": [
+          0.706694126436262,
+          0.7221835110101967,
+          0.7448186975807892
+        ],
+        "chroma": 0.038124571144527275,
+        "saved_material_mean_signed_rgb": [
+          0.09194846184857788,
+          3.0834044679185357,
+          -1.3267817635241594
+        ]
+      },
+      "B": {
+        "mean_source": [
+          0.5066799673403278,
+          0.5222993865118263,
+          0.5537637306691429
+        ],
+        "chroma": 0.04708376332881503,
+        "saved_material_mean_signed_rgb": [
+          19.785165419176952,
+          26.781083213977976,
+          21.685166500473837
+        ]
+      }
+    },
+    "affine_components": {
+      "A": {
+        "1.0": {
+          "rim_affine_base": [
+            0.8038445594697323,
+            0.8334223859547207,
+            0.8425132592760223
+          ],
+          "core_affine_base": [
+            0.8089326298162254,
+            0.8316049986878777,
+            0.839871954304124
+          ],
+          "warning": "Affine material sourcecolor component ONLY; excludes neutralspatiallight, clips, pixelaveraging/postblur; NOT predictedwholeimage score"
+        },
+        "0.0": {
+          "rim_affine_base": [
+            0.8194188374458334,
+            0.829190128213683,
+            0.8434748299971235
+          ],
+          "core_affine_base": [
+            0.8190482523478262,
+            0.8288112989114133,
+            0.8430839484489296
+          ],
+          "warning": "Affine material sourcecolor component ONLY; excludes neutralspatiallight, clips, pixelaveraging/postblur; NOT predictedwholeimage score"
+        }
+      },
+      "B": {
+        "1.0": {
+          "rim_affine_base": [
+            0.6597547862729498,
+            0.7123604474849535,
+            0.7283231658757383
+          ],
+          "core_affine_base": [
+            0.6633848497087043,
+            0.7110523679767262,
+            0.7263679935396417
+          ],
+          "warning": "Affine material sourcecolor component ONLY; excludes neutralspatiallight, clips, pixelaveraging/postblur; NOT predictedwholeimage score"
+        },
+        "0.0": {
+          "rim_affine_base": [
+            0.6935559704508915,
+            0.703361469071278,
+            0.7231271032499444
+          ],
+          "core_affine_base": [
+            0.6932915779951073,
+            0.7030888035494842,
+            0.7228377611263159
+          ],
+          "warning": "Affine material sourcecolor component ONLY; excludes neutralspatiallight, clips, pixelaveraging/postblur; NOT predictedwholeimage score"
+        }
+      }
+    },
+    "contraction": "A(t)=t I +(1-t)1 luma^T; t=floor+(1-floor)clip(sensitivity*ptp(mean),0,1). Empirical coefficient response, not physicalroughness/dispersion.",
+    "chroma_B_ge_A": true,
+    "selective_context_limit": "IfchromaB>=chromaA, everysharednonnegative sensitivity/floor yieldstB>=tA; cannot keepcurrentA(tA=1) whileuniquelyneutralizingB(tB~0). Fullcontraction canneutralize coefficientcast inB butalsochangesA; it doesnot automaticallyfixoveralltoo-brightB orproveagreatsharedmaterial. Needsjointactualguardedreview, notper-controlfit.",
+    "brightness_confound": "A~.72 vsB~.52 mean sourcebrightness, closegraychroma; currentcontractionuseschroma, notbrightness. Sourceestimate/shadow/light andgenericmaterialtransfer confounded."
+  },
+  "B_active": false,
+  "A_epoch_unchanged": true,
+  "next": "Primary decidesdefensible sharedmaterial/source staging; no B activation/nativefit/source adoption. Requestnextshorttaskbefore queueends."
+}

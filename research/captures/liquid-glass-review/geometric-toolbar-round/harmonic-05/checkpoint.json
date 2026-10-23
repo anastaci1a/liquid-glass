@@ -1,0 +1,102 @@
+{
+  "rays": 11501,
+  "checks": {
+    "actual_gradient": {
+      "pass": true,
+      "details": {
+        "FD_steps": [
+          1e-05,
+          5e-06
+        ],
+        "errors": [
+          4.155191468679931e-11,
+          1.2408560290388948e-11
+        ]
+      }
+    },
+    "shared_circle_isotropic_fixture": {
+      "pass": true,
+      "details": {
+        "X": 1.1102230246251565e-16,
+        "Y": 1.1102230246251565e-16,
+        "back": 0.0,
+        "outward_normal": 5.551115123125783e-17,
+        "exit_direction": 5.551115123125783e-17,
+        "discriminant": 0.0,
+        "path_length": 0.0
+      }
+    },
+    "global_certificates": {
+      "pass": true,
+      "details": {
+        "maximum_height": 0.10909090909090907,
+        "global_slope_bound": 0.44999999999999996,
+        "observed_slope_max": 0.43922090545148257,
+        "proof": "h1,h2 concave and nonnegative; shared H increasing concave with nonnegative weights summing<=1. Gradient bound=max(bounds). Exact crease unresolved, no boundary normal claimed."
+      }
+    },
+    "all_regular_primary_paths_complete": {
+      "pass": true,
+      "details": {
+        "regular_inside": 4381,
+        "tangent": 4,
+        "minimum_discriminant": 0.6361360556785729
+      }
+    },
+    "unit_index_identity": {
+      "pass": true,
+      "details": "Boundary remains unresolved"
+    },
+    "analytic_actual_source_Jxx": {
+      "pass": true,
+      "details": {
+        "steps": [
+          1e-05,
+          5e-06
+        ],
+        "max_errors": [
+          7.316369732279782e-12,
+          1.488809076022335e-11
+        ],
+        "meaning": "Analytic derivative of actual h/H and shared flatfront Snell/background equation, not a renderer warp."
+      }
+    }
+  },
+  "status": "PASS_CHECKPOINT",
+  "centerline": {
+    "y": [
+      -0.95,
+      -0.75,
+      -0.5,
+      -0.25,
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.95
+    ],
+    "hxx": [
+      -0.00038780495047761773,
+      -0.004776233605350915,
+      -0.009183673469387756,
+      -0.0109371273280324,
+      -0.01119110150384998,
+      -0.0109371273280324,
+      -0.009183673469387756,
+      -0.004776233605350915,
+      -0.00038780495047761773
+    ],
+    "source_X_x": [
+      0.999594857228175,
+      0.9953424388166561,
+      0.9912567541989908,
+      0.9896517614130008,
+      0.9894193222145419,
+      0.9896517614130008,
+      0.9912567541989908,
+      0.9953424388166561,
+      0.999594857228175
+    ]
+  },
+  "finished_unix": 1792642745.2073433
+}

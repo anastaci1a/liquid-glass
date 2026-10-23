@@ -1,0 +1,23 @@
+{
+  "status": "SAVED_MASK_QC_NO_REFIT",
+  "train_held_disjoint": true,
+  "validation_cohorts_disjoint_from_train_and_held": {
+    "left": true,
+    "right": true,
+    "upper": true,
+    "lower": true
+  },
+  "validation_cohort_pairwise_overlap_pixels": {
+    "left/right": 0,
+    "left/upper": 6251,
+    "left/lower": 0,
+    "right/upper": 6251,
+    "right/lower": 0,
+    "upper/lower": 0
+  },
+  "interpretation": "Four regional guards in one independent-validation pool, NOT four mutually independent samples: upper corner strips overlap left/right guards. No duplicated pixels enter training/source fit. Existing regional upper regression remains valid; no weighting/threshold/mask changed after fit.",
+  "failed_hidden_field_arrays": "DIAGNOSTIC MODEL ESTIMATES ONLY, source-assessment.npz affine_field/quadratic_field; neither adopted as source, no sourcePNG/known/case/bodyrender produced.",
+  "new_source_fit": false,
+  "optical_renders": 0,
+  "finished_at": "2026-10-22T00:44:41.196146+00:00"
+}

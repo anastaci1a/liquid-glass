@@ -1,0 +1,178 @@
+{
+  "formula": "C=1-strength_RGB*(1-GaussianBlur(B,sigma))**exponent",
+  "mask": "Reference silhouette and edge coverage only; no copied RGB interior; 0.35px Gaussian opacity feather",
+  "selection": "Lowest training error; 32px spatial blocks withheld; same frame, not independent validation",
+  "limits": "Encoded RGB; fitted nuisance color response, not an identified Apple shader. The underlying glass is an imperfect reconstruction.",
+  "trials": [
+    {
+      "name": "White mask",
+      "parameters": {},
+      "kind": "constant white",
+      "training_rmse": 22.32860695289886,
+      "withheld_rmse": 20.882548567738436
+    },
+    {
+      "name": "Constant RGB",
+      "parameters": {
+        "color": [
+          0.9979046280661991,
+          0.950614150693548,
+          0.8677487278263144
+        ]
+      },
+      "kind": "constant color control",
+      "training_rmse": 8.154913895757652,
+      "withheld_rmse": 7.721308962420954
+    },
+    {
+      "name": "Uncovered background, sigma 0px",
+      "parameters": {
+        "strength_RGB": [
+          0.18717716763172818,
+          0.9999999999999999,
+          0.8406235899601322
+        ],
+        "exponent": 10.090865605352931,
+        "blur_sigma": 0
+      },
+      "kind": "Uncovered background",
+      "training_rmse": 4.393247894852227,
+      "withheld_rmse": 4.185078217294961
+    },
+    {
+      "name": "Uncovered background, sigma 3px",
+      "parameters": {
+        "strength_RGB": [
+          0.18461831025530498,
+          0.9999999999999999,
+          0.8381682282521615
+        ],
+        "exponent": 10.051635196197534,
+        "blur_sigma": 3
+      },
+      "kind": "Uncovered background",
+      "training_rmse": 4.559539188851472,
+      "withheld_rmse": 4.487118353548308
+    },
+    {
+      "name": "Uncovered background, sigma 12px",
+      "parameters": {
+        "strength_RGB": [
+          0.037392472770922225,
+          0.35797566570213046,
+          0.44748615127898356
+        ],
+        "exponent": 6.270233306073877,
+        "blur_sigma": 12
+      },
+      "kind": "Uncovered background",
+      "training_rmse": 5.304827680092754,
+      "withheld_rmse": 5.464798608216799
+    },
+    {
+      "name": "Uncovered background, sigma 24px",
+      "parameters": {
+        "strength_RGB": [
+          0.021449223390081408,
+          0.2508686566703615,
+          0.36079301356564075
+        ],
+        "exponent": 4.808885646904972,
+        "blur_sigma": 24
+      },
+      "kind": "Uncovered background",
+      "training_rmse": 5.382039618966817,
+      "withheld_rmse": 5.802835952977233
+    },
+    {
+      "name": "Uncovered background, sigma 48px",
+      "parameters": {
+        "strength_RGB": [
+          0.027356548827217823,
+          0.30303656660559664,
+          0.41058821320391675
+        ],
+        "exponent": 4.831594281981626,
+        "blur_sigma": 48
+      },
+      "kind": "Uncovered background",
+      "training_rmse": 5.194102475815168,
+      "withheld_rmse": 6.06293688522115
+    },
+    {
+      "name": "Reconstructed glass, sigma 0px",
+      "parameters": {
+        "strength_RGB": [
+          0.07881197288739857,
+          0.609671057553905,
+          0.6547176523977378
+        ],
+        "exponent": 6.61062151268774,
+        "blur_sigma": 0
+      },
+      "kind": "Reconstructed glass",
+      "training_rmse": 3.4679551204571957,
+      "withheld_rmse": 3.376088971440957
+    },
+    {
+      "name": "Reconstructed glass, sigma 3px",
+      "parameters": {
+        "strength_RGB": [
+          0.07005640626279207,
+          0.565104973654328,
+          0.6241030573102037
+        ],
+        "exponent": 6.379035785473048,
+        "blur_sigma": 3
+      },
+      "kind": "Reconstructed glass",
+      "training_rmse": 3.6317382765848687,
+      "withheld_rmse": 3.6032796972797567
+    },
+    {
+      "name": "Reconstructed glass, sigma 12px",
+      "parameters": {
+        "strength_RGB": [
+          0.03366416952091405,
+          0.3477739055497982,
+          0.4598433221504676
+        ],
+        "exponent": 4.911740743017908,
+        "blur_sigma": 12
+      },
+      "kind": "Reconstructed glass",
+      "training_rmse": 4.270561317279925,
+      "withheld_rmse": 4.581934486738701
+    },
+    {
+      "name": "Reconstructed glass, sigma 24px",
+      "parameters": {
+        "strength_RGB": [
+          0.02249973698720671,
+          0.26746126379826374,
+          0.38899917879139206
+        ],
+        "exponent": 4.0429084324768025,
+        "blur_sigma": 24
+      },
+      "kind": "Reconstructed glass",
+      "training_rmse": 4.499836089351647,
+      "withheld_rmse": 5.014332497476695
+    },
+    {
+      "name": "Reconstructed glass, sigma 48px",
+      "parameters": {
+        "strength_RGB": [
+          0.024682231631178966,
+          0.28866632006297005,
+          0.40960138243769645
+        ],
+        "exponent": 3.9324494302195157,
+        "blur_sigma": 48
+      },
+      "kind": "Reconstructed glass",
+      "training_rmse": 4.430483815820245,
+      "withheld_rmse": 5.285287283835731
+    }
+  ]
+}

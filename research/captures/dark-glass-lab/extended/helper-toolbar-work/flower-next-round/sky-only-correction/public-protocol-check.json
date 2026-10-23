@@ -1,0 +1,26 @@
+{
+  "status": "PREFIT_PROTOCOL_RECONCILIATION_NO_SCORING_EPOCH_ACTIVE",
+  "preferred": "canonical-public-protocol-masks-PROPOSED-v2.npz",
+  "counts": {
+    "glass": 31119,
+    "rim": 13909,
+    "held": 8377,
+    "interior": 17210,
+    "glyph": 8600,
+    "exterior": 33399,
+    "full_visible_exterior": 59242
+  },
+  "draft_v1_counts": {
+    "glass": 31306,
+    "rim": 13909,
+    "held": 8424,
+    "interior": 17397,
+    "glyph": 8600,
+    "exterior": 33399,
+    "full_visible_exterior": 59242
+  },
+  "changed_glass_pixels": 187,
+  "reason": "Initialdraftglass exclusion used half-open glyphbox likeglyphcompositor. Public Study glass-scoring exclusion uses inclusive right/bottom edges. Canonicalv2 reusesexactcommittedpublicStudy maskdefinition; wholeboxglyphguard remainsrendererhalf-open. Keep v1 unchanged asdraft, selectv2BEFORE anyfit/acceptedepoch. No source/pose/glyph/materialinput changed; no opticalrender/rays/fit/coefficientinheritance. Primary choosesprotocolbeforebaselinefreeze.",
+  "code": "Committedf2bf snapshot constructor only; no Study.render or23RGBmaterial called",
+  "source_case_hash_unchanged": true
+}

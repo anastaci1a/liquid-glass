@@ -1,0 +1,51 @@
+{
+  "status": "GRADIENT_AND_CIRCLE_CHECKPOINT_PASS",
+  "rays": 2400,
+  "checks": {
+    "gradient_0.02": {
+      "pass": true,
+      "details": {
+        "FD_steps": [
+          1e-05,
+          5e-06
+        ],
+        "max_errors": [
+          3.5949992982509116e-12,
+          4.05946803949675e-12
+        ]
+      }
+    },
+    "circle_height_exact_0.02": {
+      "pass": true,
+      "details": "True radial fixture, not equal-half softened crown"
+    },
+    "circle_trace_exact_0.02": {
+      "pass": true,
+      "details": "All shared tracer output arrays bit-exact"
+    },
+    "gradient_0.04": {
+      "pass": true,
+      "details": {
+        "FD_steps": [
+          1e-05,
+          5e-06
+        ],
+        "max_errors": [
+          7.650758498956023e-12,
+          5.676403791454732e-12
+        ]
+      }
+    },
+    "circle_height_exact_0.04": {
+      "pass": true,
+      "details": "True radial fixture, not equal-half softened crown"
+    },
+    "circle_trace_exact_0.04": {
+      "pass": true,
+      "details": "All shared tracer output arrays bit-exact"
+    }
+  },
+  "image_renders": 0,
+  "fits": 0,
+  "source_registrations": 0
+}

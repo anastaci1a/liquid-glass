@@ -1,0 +1,164 @@
+{
+  "seed": "archived",
+  "stage": 2,
+  "experiment": "Clear-source phase refinement",
+  "parameters": {
+    "sigma": 2.8060327242724443,
+    "amplitude": 0.5267679257572784,
+    "band": 1.0,
+    "power": 4.616458746391088,
+    "tangent": 0.0,
+    "tangent_band": 0.2681646270760464,
+    "core_x": 0.0,
+    "core_y": 0.0,
+    "post_sigma": 0.0,
+    "coupling": 0.0,
+    "gamma": 0.7322463177793165,
+    "rim_width": 0.1557680404851933,
+    "thin_width": 0.03474943676338922,
+    "spline": true,
+    "shape_dx": 0.0,
+    "shape_dy": 0.0,
+    "half_x_delta": 0.0,
+    "half_y_delta": 0.0,
+    "radius_delta": 0.0,
+    "c0": 2.112165641845632,
+    "c1": 0.3103449705971834,
+    "c2": 0.03515867667526251,
+    "c3": 0.39544726735551355,
+    "c4": -1.5566074813904258,
+    "c5": 0.6794348506363402,
+    "c6": 0.00811207533252288,
+    "shadow": {
+      "opacity": 0.030792257176537066,
+      "sigma": 0.14035990212261495,
+      "offset": [
+        0.0081036453594727,
+        0.09999999835491878
+      ]
+    },
+    "cap_normal_gain": 0.0,
+    "cap_join_width": 0.0,
+    "anchor_x": 0.1,
+    "anchor_y": 0.1,
+    "anchor_band": 0.9
+  },
+  "material": [
+    0.05,
+    1.0958178747025717,
+    1.1771950074793078,
+    0.7085787486540804,
+    -0.31929806664824983,
+    -0.3952435816928342,
+    0.021324629904075392,
+    -0.074626960166227,
+    -0.011351620314499768,
+    0.27818739410438387,
+    0.11375280567372607,
+    -0.019176765204405845,
+    -0.10580734900607262,
+    -0.03713736673626708,
+    -0.04183720179940811,
+    -0.020891760325619943,
+    0.07283819601711691,
+    -0.005004518730385781,
+    0.09272472516483549,
+    0.00787499989170735,
+    0.3171509903712629,
+    1.4173957300586861,
+    1.4999982358484885
+  ],
+  "training_loss": 0.010438116420901486,
+  "scores": [
+    {
+      "glass": {
+        "pixels": 186310,
+        "rmse": 22.81059455871582
+      },
+      "rim": {
+        "pixels": 46479,
+        "rmse": 22.908842086791992
+      },
+      "held": {
+        "pixels": 45815,
+        "rmse": 22.53636360168457
+      },
+      "interior": {
+        "pixels": 139831,
+        "rmse": 22.77784538269043
+      },
+      "ssim": 0.9007138609886169,
+      "loss": 521.6707706127527
+    },
+    {
+      "glass": {
+        "pixels": 177426,
+        "rmse": 17.33428382873535
+      },
+      "rim": {
+        "pixels": 43962,
+        "rmse": 15.472414016723633
+      },
+      "held": {
+        "pixels": 44654,
+        "rmse": 18.31961441040039
+      },
+      "interior": {
+        "pixels": 133464,
+        "rmse": 17.905231475830078
+      },
+      "ssim": 0.9258142113685608,
+      "loss": 282.1528557500809
+    },
+    {
+      "glass": {
+        "pixels": 171306,
+        "rmse": 28.373201370239258
+      },
+      "rim": {
+        "pixels": 41340,
+        "rmse": 16.483951568603516
+      },
+      "held": {
+        "pixels": 42039,
+        "rmse": 28.80647087097168
+      },
+      "interior": {
+        "pixels": 129966,
+        "rmse": 31.219833374023438
+      },
+      "ssim": 0.8771960735321045,
+      "loss": 645.0431869921226
+    }
+  ],
+  "source_support": [
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0169502442166282,
+      "gaussian_3sigma_observed_fraction": 0.007133272502817884,
+      "source_gaussian_radius_native_px": 9
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.002124829506385761,
+      "gaussian_3sigma_observed_fraction": 0.0,
+      "source_gaussian_radius_native_px": 9
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.008931385940947778,
+      "gaussian_3sigma_observed_fraction": 0.0020081024599255134,
+      "source_gaussian_radius_native_px": 8
+    }
+  ],
+  "supported": [
+    true,
+    true,
+    true
+  ],
+  "evaluations": 371,
+  "seconds": 4.027796745300293
+}

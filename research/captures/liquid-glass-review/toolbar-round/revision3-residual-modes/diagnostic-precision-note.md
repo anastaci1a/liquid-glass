@@ -1,0 +1,1 @@
+Diagnostic accumulation note: inventory/projection RMSE uses float64 arithmetic for numerical summaries and differs slightly from original native float32 gate reductions. These numbers NEVER replace frozen native scoring or create a precision/epoch gain.

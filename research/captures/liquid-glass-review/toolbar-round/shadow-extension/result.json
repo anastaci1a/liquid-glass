@@ -1,0 +1,76 @@
+{
+  "fixed_exterior_rmse": 10.929248298449226,
+  "tail_bands_advisory": [
+    {
+      "band": [
+        0,
+        10
+      ],
+      "pixels": 19860,
+      "before_rmse": 14.856234417577221,
+      "after_rmse": 14.335852646669956
+    },
+    {
+      "band": [
+        10,
+        20
+      ],
+      "pixels": 20484,
+      "before_rmse": 8.615009486454058,
+      "after_rmse": 8.685168568997922
+    },
+    {
+      "band": [
+        20,
+        35
+      ],
+      "pixels": 31964,
+      "before_rmse": 10.680273642782291,
+      "after_rmse": 9.705879445105555
+    },
+    {
+      "band": [
+        35,
+        55
+      ],
+      "pixels": 44780,
+      "before_rmse": 15.765414121129087,
+      "after_rmse": 13.217023151108334
+    },
+    {
+      "band": [
+        55,
+        80
+      ],
+      "pixels": 59488,
+      "before_rmse": 18.271628137786394,
+      "after_rmse": 14.27016779643675
+    }
+  ],
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.998512744608417,
+        "candidate_error": 6.998512744608417,
+        "required_error_max": 6.963520180885375,
+        "relative_reduction": 0.0,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "counted_passes": 0,
+  "note": "same glass/rim E; separate provisional shadow analysis, not an optical pass; wider bracket/offset and unknown source field do not identify physical lighting"
+}

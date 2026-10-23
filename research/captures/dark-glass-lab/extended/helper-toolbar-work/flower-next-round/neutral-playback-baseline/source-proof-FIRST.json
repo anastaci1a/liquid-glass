@@ -1,0 +1,51 @@
+{
+  "counts": {
+    "whole": 162445,
+    "scored": 124476,
+    "postfootprint": 174484,
+    "scored_outside_outline": 0,
+    "whole_bad": 0,
+    "scored_bad": 0,
+    "postfootprint_bad": 0
+  },
+  "minimum_defined_confidence": {
+    "whole": 1.0,
+    "scored": 1.0,
+    "postfootprint": 1.0
+  },
+  "source_bounds": [
+    1215.0306396484375,
+    449.8213195800781,
+    1419.94091796875,
+    654.718505859375
+  ],
+  "source_kernel": {
+    "sigma": 0.23203673469387756,
+    "radius": 1,
+    "centerline_nonzero": [
+      9.262367530027404e-05,
+      0.9996294379234314,
+      9.262367530027404e-05
+    ],
+    "dtype": "float32matchesRGBnativefield",
+    "operator": "ActualOpenCV GaussianBlur ksize0/default border; nonzero finiteimpulse support, notinfiniteGaussian theorem"
+  },
+  "post_kernel": {
+    "sigma": 0.7425175510204082,
+    "radius": 3,
+    "centerline_nonzero": [
+      8.234604320023209e-05,
+      0.007672522217035294,
+      0.11655084788799286,
+      0.2886519432067871,
+      0.11655084788799286,
+      0.007672522217035294,
+      8.234604320023209e-05
+    ],
+    "dtype": "float32matchesRGBnativefield",
+    "operator": "ActualOpenCV GaussianBlur ksize0/default border; nonzero finiteimpulse support, notinfiniteGaussian theorem"
+  },
+  "observed_confidence": 0.0,
+  "passed": true,
+  "limits": "Actualnative2x2 WHOLE+ALLscored(notintersection)+all postkernelneighbor subrays, actualfiniteGaussian/bilinear lookup. Modeledsource definition only, hiddenobserved0; notcontinuous/infinitekernel/photographicopticsproof. Outside-map and source-border semantics preservedexact."
+}

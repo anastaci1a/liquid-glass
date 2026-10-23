@@ -1,0 +1,164 @@
+{
+  "classification": "FIXED_GEOMETRIC_DIAGNOSTICS_NOT_ACCEPTED_FIDELITY",
+  "source_uncertainty": "Estimated blank paper/unknown hidden text remains; direct-observation footprint fractions in preflight, not source truth",
+  "shadow": "ZERO generated shadow/highlights in new diagnostics; historical control retains its original shading/shadow/filter",
+  "source_sigma": 0,
+  "post_sigma": 0,
+  "metrics": {
+    "0.15": {
+      "glass": {
+        "pixels": 188771,
+        "RGB_RMSE": 50.99490403870204,
+        "luma_RMSE": 50.844350143372644,
+        "chroma_RMSE": 0.5823992586636453,
+        "signed_RGB": [
+          -7.685844541179191,
+          -7.873485063210713,
+          -7.3216462569494425
+        ]
+      },
+      "rim": {
+        "pixels": 61248,
+        "RGB_RMSE": 47.828798261345476,
+        "luma_RMSE": 47.49404918230205,
+        "chroma_RMSE": 0.7024592569797636,
+        "signed_RGB": [
+          7.706116720214523,
+          7.449538058654925,
+          8.212930747331987
+        ]
+      },
+      "held": {
+        "pixels": 47010,
+        "RGB_RMSE": 47.654342464710616,
+        "luma_RMSE": 47.51174715655029,
+        "chroma_RMSE": 0.5758927196970381,
+        "signed_RGB": [
+          -5.675864067055372,
+          -5.868820536876137,
+          -5.302455478718595
+        ]
+      },
+      "exterior": {
+        "pixels": 71384,
+        "RGB_RMSE": 19.555949198517478,
+        "luma_RMSE": 19.545372803238994,
+        "chroma_RMSE": 0.33750380700000926,
+        "signed_RGB": [
+          16.006611322113933,
+          15.996605449640585,
+          15.997910852921493
+        ]
+      },
+      "full": {
+        "pixels": 543200,
+        "RGB_RMSE": 37.533063504645256,
+        "luma_RMSE": 37.45015075276057,
+        "chroma_RMSE": 0.440522337930334,
+        "signed_RGB": [
+          4.557494652766942,
+          4.472569221457031,
+          4.712934398026469
+        ]
+      },
+      "crops": {
+        "upper": {
+          "historical": {
+            "pixels": 61380,
+            "RGB_RMSE": 10.802674331890248,
+            "luma_RMSE": 10.77720826222609,
+            "chroma_RMSE": 0.4775116051204203,
+            "signed_RGB": [
+              -0.3112285719670989,
+              -0.40037294889561426,
+              -0.14566221174244742
+            ]
+          },
+          "new": {
+            "pixels": 61380,
+            "RGB_RMSE": 51.74087452836569,
+            "luma_RMSE": 51.469282228631634,
+            "chroma_RMSE": 0.7293914973448653,
+            "signed_RGB": [
+              10.020299389709194,
+              9.720764866238472,
+              10.600548250314004
+            ]
+          }
+        },
+        "d-stroke": {
+          "historical": {
+            "pixels": 13120,
+            "RGB_RMSE": 3.4370514099288667,
+            "luma_RMSE": 3.205128170606613,
+            "chroma_RMSE": 0.4517232131040344,
+            "signed_RGB": [
+              1.7561812903637364,
+              1.5328536856181911,
+              2.2010573555783903
+            ]
+          },
+          "new": {
+            "pixels": 13120,
+            "RGB_RMSE": 90.2463050841677,
+            "luma_RMSE": 90.13893578170129,
+            "chroma_RMSE": 0.9093023841406429,
+            "signed_RGB": [
+              -32.33588135447061,
+              -32.86211916649124,
+              -31.306515474929235
+            ]
+          }
+        },
+        "underside": {
+          "historical": {
+            "pixels": 47120,
+            "RGB_RMSE": 6.975874550043021,
+            "luma_RMSE": 6.963059726360742,
+            "chroma_RMSE": 0.1957277822747751,
+            "signed_RGB": [
+              0.4247542579631449,
+              0.5252215077596952,
+              0.23177239663459373
+            ]
+          },
+          "new": {
+            "pixels": 47120,
+            "RGB_RMSE": 11.944717458442,
+            "luma_RMSE": 11.944717458442,
+            "chroma_RMSE": 1.633779519889897e-14,
+            "signed_RGB": [
+              -5.17254402424837,
+              -5.17254402424837,
+              -5.17254402424837
+            ]
+          }
+        }
+      }
+    }
+  },
+  "crop_rectangles": {
+    "upper": [
+      650,
+      369,
+      1270,
+      468
+    ],
+    "d-stroke": [
+      960,
+      468,
+      1120,
+      550
+    ],
+    "underside": [
+      650,
+      650,
+      1270,
+      726
+    ]
+  },
+  "additional_section_rays": 31,
+  "checkpoint_rays_total_including_failed441_and_sections": 11532,
+  "finished_unix": 1792642782.9092138,
+  "native_images": 1
+}

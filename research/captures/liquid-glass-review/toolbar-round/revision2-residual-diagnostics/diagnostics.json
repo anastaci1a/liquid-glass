@@ -1,0 +1,174 @@
+{
+  "baseline_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "fixed_depth_bins": [
+    {
+      "inward_native_px": [
+        0.75,
+        2
+      ],
+      "pixels": 2288,
+      "rmse": 29.0457820892334,
+      "signed_RGB_mean": [
+        1.7940917015075684,
+        1.9346014261245728,
+        1.5068424940109253
+      ]
+    },
+    {
+      "inward_native_px": [
+        2,
+        4
+      ],
+      "pixels": 3884,
+      "rmse": 9.050653457641602,
+      "signed_RGB_mean": [
+        -1.4139385223388672,
+        -1.2716615200042725,
+        -1.6951816082000732
+      ]
+    },
+    {
+      "inward_native_px": [
+        4,
+        8
+      ],
+      "pixels": 7644,
+      "rmse": 8.514609336853027,
+      "signed_RGB_mean": [
+        4.577299118041992,
+        4.640583038330078,
+        4.452883720397949
+      ]
+    },
+    {
+      "inward_native_px": [
+        8,
+        16
+      ],
+      "pixels": 15080,
+      "rmse": 6.966529369354248,
+      "signed_RGB_mean": [
+        1.341062068939209,
+        1.295696496963501,
+        1.4332624673843384
+      ]
+    },
+    {
+      "inward_native_px": [
+        16,
+        34
+      ],
+      "pixels": 32352,
+      "rmse": 6.1491007804870605,
+      "signed_RGB_mean": [
+        -3.4903221130371094,
+        -3.5952861309051514,
+        -3.284505844116211
+      ]
+    },
+    {
+      "inward_native_px": [
+        34,
+        68
+      ],
+      "pixels": 55600,
+      "rmse": 4.219208717346191,
+      "signed_RGB_mean": [
+        2.5804336071014404,
+        2.6148767471313477,
+        2.5181102752685547
+      ]
+    },
+    {
+      "inward_native_px": [
+        68,
+        170
+      ],
+      "pixels": 71728,
+      "rmse": 3.116834878921509,
+      "signed_RGB_mean": [
+        -0.43379566073417664,
+        -0.45984694361686707,
+        -0.3878090977668762
+      ]
+    }
+  ],
+  "local_map_blur_proxies": [
+    {
+      "region": "upper-rim",
+      "box": [
+        650,
+        369,
+        1270,
+        435
+      ],
+      "fixed_crop_glass_rmse": 9.200722694396973,
+      "derivative_samples": 35992,
+      "inverse_map_singular_medians": [
+        1.4659302020951503,
+        0.5390055707493888
+      ],
+      "negative_determinant_fraction": 0.8963380751278062,
+      "linear_proxy_valid_fraction": 0.9516003556345854,
+      "source_sigma_native_px": 11.000000000000002,
+      "linearized_output_source_blur_major_minor_median_px": [
+        18.86676233954213,
+        7.122539550880273
+      ],
+      "fixed_post_sigma_native_px": 1.25
+    },
+    {
+      "region": "d-stroke",
+      "box": [
+        960,
+        450,
+        1120,
+        550
+      ],
+      "fixed_crop_glass_rmse": 3.110433340072632,
+      "derivative_samples": 11840,
+      "inverse_map_singular_medians": [
+        1.0013634274065542,
+        0.9983777999947318
+      ],
+      "negative_determinant_fraction": 0.0,
+      "linear_proxy_valid_fraction": 1.0,
+      "source_sigma_native_px": 11.000000000000002,
+      "linearized_output_source_blur_major_minor_median_px": [
+        11.017873193953278,
+        10.985022718963378
+      ],
+      "fixed_post_sigma_native_px": 1.25
+    },
+    {
+      "region": "underside",
+      "box": [
+        650,
+        650,
+        1270,
+        726
+      ],
+      "fixed_crop_glass_rmse": 5.073945045471191,
+      "derivative_samples": 35992,
+      "inverse_map_singular_medians": [
+        1.4659302020951503,
+        0.5390055707493888
+      ],
+      "negative_determinant_fraction": 0.8963380751278062,
+      "linear_proxy_valid_fraction": 0.9516003556345854,
+      "source_sigma_native_px": 11.000000000000002,
+      "linearized_output_source_blur_major_minor_median_px": [
+        18.86676233954213,
+        7.122539550880273
+      ],
+      "fixed_post_sigma_native_px": 1.25
+    }
+  ],
+  "limits": [
+    "Pure diagnostics, no fit/pixel/mask/epoch changes or optical score gain",
+    "Source blur and output blur do not commute with the nonlinear inverse map",
+    "Local Jacobian proxy ignores folds/nonlinear kernel integration; do not infer Apple PSF or a physical solid",
+    "Advisory regions retain their fixed crop positions; native full-mask gates remain authoritative",
+    "No dispersion claim from a neutral page"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "status": "STRICT_NUMERICAL_CANDIDATE_PENDING_PEER_VISUAL_REVIEW",
+  "source_sigma_over_L": 0,
+  "post_sigma_over_L": 0.0069387755102040816,
+  "post_sigma_native_px": 1.7,
+  "finite_radius_native_px": 6,
+  "scores": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 12.585246086120605,
+      "mae": 7.980888843536377,
+      "opponent_chroma_rmse": 1.5761111974716187
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 12.521955490112305,
+      "mae": 8.325145721435547,
+      "opponent_chroma_rmse": 1.6069767475128174
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 12.569343566894531,
+      "mae": 8.067547798156738,
+      "opponent_chroma_rmse": 1.5839375257492065
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 13.872037887573242,
+      "mae": 8.214303970336914,
+      "opponent_chroma_rmse": 1.9819753170013428
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 25.81536293029785,
+      "mae": 16.89735221862793,
+      "opponent_chroma_rmse": 4.150359153747559
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 11.133749961853027,
+      "mae": 7.922568321228027,
+      "opponent_chroma_rmse": 1.051985263824463
+    },
+    "ssim": 0.9697988629341125,
+    "gradient_mae": 4.502345561981201,
+    "selection_loss": 0.005157371750851086,
+    "foreground_fullbox_MSE": 5.534182071685791,
+    "exterior_MSE": 24.06739616394043
+  },
+  "baseline_scores": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 13.072810173034668,
+      "mae": 8.141929626464844,
+      "opponent_chroma_rmse": 1.710876226425171
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 13.104354858398438,
+      "mae": 8.552945137023926,
+      "opponent_chroma_rmse": 1.7543330192565918
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 13.080758094787598,
+      "mae": 8.245393753051758,
+      "opponent_chroma_rmse": 1.7219187021255493
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 14.650822639465332,
+      "mae": 8.467361450195312,
+      "opponent_chroma_rmse": 2.1504666805267334
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 26.43440818786621,
+      "mae": 16.52752113342285,
+      "opponent_chroma_rmse": 4.5414557456970215
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 11.317817687988281,
+      "mae": 8.026113510131836,
+      "opponent_chroma_rmse": 1.1513434648513794
+    },
+    "ssim": 0.9329528212547302,
+    "gradient_mae": 8.269547462463379,
+    "selection_loss": 0.005364266173935459,
+    "foreground_fullbox_MSE": 5.534182071685791,
+    "exterior_MSE": 24.090118408203125
+  },
+  "guards": {
+    "train": true,
+    "held_blocks": true,
+    "all_glass": true,
+    "rim": true,
+    "outer_rim": true,
+    "interior": true,
+    "ssim": true,
+    "foreground": true,
+    "exterior": true
+  },
+  "all_candidate_evaluations_total": 12,
+  "geometry": "G05 unchanged",
+  "output_blur_last_body_color_operation": true,
+  "new_geometric_rays": 0,
+  "alpha_changed": false,
+  "reason": "Selected texture fidelity instead of score-minimizing overblur2.5px"
+}

@@ -1,0 +1,6 @@
+- Pushed `2c955cb` on PR414: closed-body Snell/Fresnel path series, explicit TIR/residual accounting, measured oval support, C2 cap joins and independent transverse geometry. `model.md` records equations, domains and limitations; no recovered-Apple-solid claim.
+- Exact-index numerical/source controls pass: analytic ellipsoid intersections, Snell/energy/scale/mirror limits, height normals, silhouette/longitudinal invariance and20px source tracks.200 local Pages links checked. Native app/main/deployment unchanged.
+- Complete private pass04 review prepared: refined toolbar blur/stretch, white-mask icon response, outer-return playback control, computed slider exterior and previous/new slider comparison on corrected input. Prior images retained.
+- Preferred crown0.6 body still fits optics worse overall; corrected previous map matches the exposed20px center and40px near-edge blue span better. Preserve that negative evidence rather than promoting a shape-only preference as optical success.
+- Remaining: owner review of images, further cross-scene/temporal calibration, public comparison-record consolidation and eventual measured Android integration. Runtime120Hz performance is not yet verified.
+— Codex

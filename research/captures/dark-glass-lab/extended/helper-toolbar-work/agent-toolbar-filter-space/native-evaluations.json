@@ -1,0 +1,637 @@
+{
+  "predeclared_six_comparators": true,
+  "raw_native_renders": 3,
+  "completed_operator_results": [
+    {
+      "transfer": "srgb",
+      "operator": "source",
+      "E": 11.185951289098513,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.067816734313965,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 11.456862449645996,
+              "pixels": 61248
+            },
+            "shadow": 11.468721102443673
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 15.560612936988623,
+        "plus": 11.259067256953637
+      },
+      "guard_order": [
+        "glass",
+        "rim",
+        "exterior",
+        "archivebox",
+        "plus"
+      ],
+      "guard_before": [
+        5.843130588531494,
+        8.813648223876953,
+        11.46944201723165,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "guard_after": [
+        11.067816734313965,
+        11.456862449645996,
+        11.468721102443673,
+        15.560612936988623,
+        11.259067256953637
+      ],
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.185951289098513,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6281153623056219,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "advisory_fixed_cohorts": {
+        "all": {
+          "pixels": 188771,
+          "old_RMSE_255": 5.843130935197818,
+          "new_RMSE_255": 11.067816734313965,
+          "change_RMS_255": 8.001005325420342,
+          "desired_change_cosine": -0.2602974762228305
+        },
+        "observed_kernel_proxy": {
+          "pixels": 63571,
+          "old_RMSE_255": 4.4944922358672885,
+          "new_RMSE_255": 12.811064720153809,
+          "change_RMS_255": 10.48699319561967,
+          "desired_change_cosine": -0.36010199112262103
+        },
+        "estimated_kernel_proxy": {
+          "pixels": 57948,
+          "old_RMSE_255": 3.6256417598863355,
+          "new_RMSE_255": 3.6256659030914307,
+          "change_RMS_255": 0.00017542027906676785,
+          "desired_change_cosine": -0.13807943636994288
+        },
+        "mixed_or_uncertain": {
+          "pixels": 67252,
+          "old_RMSE_255": 8.087823165119596,
+          "new_RMSE_255": 13.318073272705078,
+          "change_RMS_255": 8.702330252808665,
+          "desired_change_cosine": -0.25736093274494565
+        }
+      },
+      "counted_passes": 0,
+      "source23_adopted": false,
+      "model_sha256": "9175d20229b53ab78335272695c4e6ff5ca8ae6e0805f6af67bc038f35b21d2e"
+    },
+    {
+      "transfer": "srgb",
+      "operator": "output",
+      "E": 6.874198208975829,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.846325874328613,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.818339347839355,
+              "pixels": 61248
+            },
+            "shadow": 11.46918046875733
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.24244114515185,
+        "plus": 3.6675567092272
+      },
+      "guard_order": [
+        "glass",
+        "rim",
+        "exterior",
+        "archivebox",
+        "plus"
+      ],
+      "guard_before": [
+        5.843130588531494,
+        8.813648223876953,
+        11.46944201723165,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "guard_after": [
+        5.846325874328613,
+        8.818339347839355,
+        11.46918046875733,
+        13.24244114515185,
+        3.6675567092272
+      ],
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.874198208975829,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.0005396428352686389,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "advisory_fixed_cohorts": {
+        "all": {
+          "pixels": 188771,
+          "old_RMSE_255": 5.843130935197818,
+          "new_RMSE_255": 5.846325874328613,
+          "change_RMS_255": 0.06699809631197179,
+          "desired_change_cosine": -0.04195647647660169
+        },
+        "observed_kernel_proxy": {
+          "pixels": 63571,
+          "old_RMSE_255": 4.4944922358672885,
+          "new_RMSE_255": 4.495041847229004,
+          "change_RMS_255": 0.019188691533825363,
+          "desired_change_cosine": -0.02651438520853541
+        },
+        "estimated_kernel_proxy": {
+          "pixels": 57948,
+          "old_RMSE_255": 3.6256417598863355,
+          "new_RMSE_255": 3.6253695487976074,
+          "change_RMS_255": 0.001622394634240757,
+          "desired_change_cosine": 0.16799313391378712
+        },
+        "mixed_or_uncertain": {
+          "pixels": 67252,
+          "old_RMSE_255": 8.087823165119596,
+          "new_RMSE_255": 8.0941162109375,
+          "change_RMS_255": 0.1106762331308017,
+          "desired_change_cosine": -0.0500416583918711
+        }
+      },
+      "counted_passes": 0,
+      "source23_adopted": false,
+      "model_sha256": "9175d20229b53ab78335272695c4e6ff5ca8ae6e0805f6af67bc038f35b21d2e"
+    },
+    {
+      "transfer": "srgb",
+      "operator": "both",
+      "E": 11.194086070735331,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 11.073577880859375,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 11.470349311828613,
+              "pixels": 61248
+            },
+            "shadow": 11.468468132209717
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 15.561754240936098,
+        "plus": 11.261903576832243
+      },
+      "guard_order": [
+        "glass",
+        "rim",
+        "exterior",
+        "archivebox",
+        "plus"
+      ],
+      "guard_before": [
+        5.843130588531494,
+        8.813648223876953,
+        11.46944201723165,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "guard_after": [
+        11.073577880859375,
+        11.470349311828613,
+        11.468468132209717,
+        15.561754240936098,
+        11.261903576832243
+      ],
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 11.194086070735331,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.6292993798835289,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "advisory_fixed_cohorts": {
+        "all": {
+          "pixels": 188771,
+          "old_RMSE_255": 5.843130935197818,
+          "new_RMSE_255": 11.073577880859375,
+          "change_RMS_255": 8.008414137238015,
+          "desired_change_cosine": -0.26015241656665933
+        },
+        "observed_kernel_proxy": {
+          "pixels": 63571,
+          "old_RMSE_255": 4.4944922358672885,
+          "new_RMSE_255": 12.814696311950684,
+          "change_RMS_255": 10.491463047444313,
+          "desired_change_cosine": -0.35994100195078677
+        },
+        "estimated_kernel_proxy": {
+          "pixels": 57948,
+          "old_RMSE_255": 3.6256417598863355,
+          "new_RMSE_255": 3.625394105911255,
+          "change_RMS_255": 0.0016870049043673607,
+          "desired_change_cosine": 0.14717423972455781
+        },
+        "mixed_or_uncertain": {
+          "pixels": 67252,
+          "old_RMSE_255": 8.087823165119596,
+          "new_RMSE_255": 13.328274726867676,
+          "change_RMS_255": 8.716354873481857,
+          "desired_change_cosine": -0.25714209845449887
+        }
+      },
+      "counted_passes": 0,
+      "source23_adopted": false,
+      "model_sha256": "9175d20229b53ab78335272695c4e6ff5ca8ae6e0805f6af67bc038f35b21d2e"
+    },
+    {
+      "transfer": "bt709",
+      "operator": "source",
+      "E": 10.424424684744743,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.195128440856934,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 10.940776824951172,
+              "pixels": 61248
+            },
+            "shadow": 11.468821403791596
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 15.061964353129321,
+        "plus": 10.025822519060593
+      },
+      "guard_order": [
+        "glass",
+        "rim",
+        "exterior",
+        "archivebox",
+        "plus"
+      ],
+      "guard_before": [
+        5.843130588531494,
+        8.813648223876953,
+        11.46944201723165,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "guard_after": [
+        10.195128440856934,
+        10.940776824951172,
+        11.468821403791596,
+        15.061964353129321,
+        10.025822519060593
+      ],
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 10.424424684744743,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.5172751546818741,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "advisory_fixed_cohorts": {
+        "all": {
+          "pixels": 188771,
+          "old_RMSE_255": 5.843130935197818,
+          "new_RMSE_255": 10.195128440856934,
+          "change_RMS_255": 6.972612985167759,
+          "desired_change_cosine": -0.25994298940257815
+        },
+        "observed_kernel_proxy": {
+          "pixels": 63571,
+          "old_RMSE_255": 4.4944922358672885,
+          "new_RMSE_255": 11.54470157623291,
+          "change_RMS_255": 9.144567055730622,
+          "desired_change_cosine": -0.35835085426282787
+        },
+        "estimated_kernel_proxy": {
+          "pixels": 57948,
+          "old_RMSE_255": 3.6256417598863355,
+          "new_RMSE_255": 3.625661849975586,
+          "change_RMS_255": 0.00014620319955113004,
+          "desired_change_cosine": -0.13768947398559045
+        },
+        "mixed_or_uncertain": {
+          "pixels": 67252,
+          "old_RMSE_255": 8.087823165119596,
+          "new_RMSE_255": 12.427435874938965,
+          "change_RMS_255": 7.577527917199478,
+          "desired_change_cosine": -0.2578852068789873
+        }
+      },
+      "counted_passes": 0,
+      "source23_adopted": false,
+      "model_sha256": "9175d20229b53ab78335272695c4e6ff5ca8ae6e0805f6af67bc038f35b21d2e"
+    },
+    {
+      "transfer": "bt709",
+      "operator": "output",
+      "E": 6.87346110052392,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.845703601837158,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.817386627197266,
+              "pixels": 61248
+            },
+            "shadow": 11.46922354157104
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242372603785018,
+        "plus": 3.6674783522664596
+      },
+      "guard_order": [
+        "glass",
+        "rim",
+        "exterior",
+        "archivebox",
+        "plus"
+      ],
+      "guard_before": [
+        5.843130588531494,
+        8.813648223876953,
+        11.46944201723165,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "guard_after": [
+        5.845703601837158,
+        8.817386627197266,
+        11.46922354157104,
+        13.242372603785018,
+        3.6674783522664596
+      ],
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.87346110052392,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.0004323566900652498,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "advisory_fixed_cohorts": {
+        "all": {
+          "pixels": 188771,
+          "old_RMSE_255": 5.843130935197818,
+          "new_RMSE_255": 5.845703601837158,
+          "change_RMS_255": 0.05548407131161344,
+          "desired_change_cosine": -0.04162496062933476
+        },
+        "observed_kernel_proxy": {
+          "pixels": 63571,
+          "old_RMSE_255": 4.4944922358672885,
+          "new_RMSE_255": 4.494937419891357,
+          "change_RMS_255": 0.015815624277301085,
+          "desired_change_cosine": -0.02640435755406392
+        },
+        "estimated_kernel_proxy": {
+          "pixels": 57948,
+          "old_RMSE_255": 3.6256417598863355,
+          "new_RMSE_255": 3.625417947769165,
+          "change_RMS_255": 0.0013544956971194963,
+          "desired_change_cosine": 0.16544640900961197
+        },
+        "mixed_or_uncertain": {
+          "pixels": 67252,
+          "old_RMSE_255": 8.087823165119596,
+          "new_RMSE_255": 8.092891693115234,
+          "change_RMS_255": 0.09166804261982514,
+          "desired_change_cosine": -0.04964271487829144
+        }
+      },
+      "counted_passes": 0,
+      "source23_adopted": false,
+      "model_sha256": "9175d20229b53ab78335272695c4e6ff5ca8ae6e0805f6af67bc038f35b21d2e"
+    },
+    {
+      "transfer": "bt709",
+      "operator": "both",
+      "E": 10.43158128419661,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 10.200301170349121,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 10.952258110046387,
+              "pixels": 61248
+            },
+            "shadow": 11.468607936071562
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 15.06300685963268,
+        "plus": 10.028671104207435
+      },
+      "guard_order": [
+        "glass",
+        "rim",
+        "exterior",
+        "archivebox",
+        "plus"
+      ],
+      "guard_before": [
+        5.843130588531494,
+        8.813648223876953,
+        11.46944201723165,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "guard_after": [
+        10.200301170349121,
+        10.952258110046387,
+        11.468607936071562,
+        15.06300685963268,
+        10.028671104207435
+      ],
+      "all_nonregression": false,
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 10.43158128419661,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.5183167978294541,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "advisory_fixed_cohorts": {
+        "all": {
+          "pixels": 188771,
+          "old_RMSE_255": 5.843130935197818,
+          "new_RMSE_255": 10.200301170349121,
+          "change_RMS_255": 6.979605417600718,
+          "desired_change_cosine": -0.25977980744495943
+        },
+        "observed_kernel_proxy": {
+          "pixels": 63571,
+          "old_RMSE_255": 4.4944922358672885,
+          "new_RMSE_255": 11.548064231872559,
+          "change_RMS_255": 9.14881051338592,
+          "desired_change_cosine": -0.3581849735222987
+        },
+        "estimated_kernel_proxy": {
+          "pixels": 57948,
+          "old_RMSE_255": 3.6256417598863355,
+          "new_RMSE_255": 3.6254382133483887,
+          "change_RMS_255": 0.001408747634095064,
+          "desired_change_cosine": 0.14480972779592438
+        },
+        "mixed_or_uncertain": {
+          "pixels": 67252,
+          "old_RMSE_255": 8.087823165119596,
+          "new_RMSE_255": 12.43644905090332,
+          "change_RMS_255": 7.590743859019046,
+          "desired_change_cosine": -0.25762872182440066
+        }
+      },
+      "counted_passes": 0,
+      "source23_adopted": false,
+      "model_sha256": "9175d20229b53ab78335272695c4e6ff5ca8ae6e0805f6af67bc038f35b21d2e"
+    }
+  ],
+  "new_passes": 0
+}

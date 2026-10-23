@@ -1,0 +1,105 @@
+{
+  "best_grid_index": 23,
+  "dc": 0.02,
+  "amplitude": 1.03,
+  "surface_kind": "curvature",
+  "index": 1.5,
+  "distance": 2.0,
+  "scores": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 13.309052467346191,
+      "mae": 8.20051383972168,
+      "opponent_chroma_rmse": 1.764983057975769
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 13.101410865783691,
+      "mae": 8.568474769592285,
+      "opponent_chroma_rmse": 1.7689735889434814
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 13.25709056854248,
+      "mae": 8.293139457702637,
+      "opponent_chroma_rmse": 1.7659883499145508
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 14.96635913848877,
+      "mae": 8.56343936920166,
+      "opponent_chroma_rmse": 2.2212185859680176
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 28.950815200805664,
+      "mae": 17.77629852294922,
+      "opponent_chroma_rmse": 4.856659889221191
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 11.317817687988281,
+      "mae": 8.026113510131836,
+      "opponent_chroma_rmse": 1.1513434648513794
+    },
+    "ssim": 0.9339277148246765,
+    "gradient_mae": 8.237296104431152,
+    "selection_loss": 0.006675732744826087
+  },
+  "baseline_scores": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 13.072810173034668,
+      "mae": 8.141929626464844,
+      "opponent_chroma_rmse": 1.710876226425171
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 13.104354858398438,
+      "mae": 8.552945137023926,
+      "opponent_chroma_rmse": 1.7543330192565918
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 13.080758094787598,
+      "mae": 8.245393753051758,
+      "opponent_chroma_rmse": 1.7219187021255493
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 14.650822639465332,
+      "mae": 8.467361450195312,
+      "opponent_chroma_rmse": 2.1504666805267334
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 26.43440818786621,
+      "mae": 16.52752113342285,
+      "opponent_chroma_rmse": 4.5414557456970215
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 11.317817687988281,
+      "mae": 8.026113510131836,
+      "opponent_chroma_rmse": 1.1513434648513794
+    },
+    "ssim": 0.9329528212547302,
+    "gradient_mae": 8.269547462463379,
+    "selection_loss": 0.005364266173935459
+  },
+  "source": {
+    "rays": 7126400,
+    "scored_subrays": 2151728,
+    "incomplete": 0,
+    "unsupported": 0,
+    "source_bounds": [
+      619.625,
+      219.625,
+      1299.375,
+      874.375
+    ],
+    "max_height": 0.019136076916928445,
+    "slope_bound": 0.6170740868078368,
+    "model_source_not_truth": true
+  }
+}

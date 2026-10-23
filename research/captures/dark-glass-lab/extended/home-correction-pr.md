@@ -1,0 +1,5 @@
+- Preserve the invalid Home paired chain and its receipts; begin a corrected chain that protects the original single-background loss40.344658 and the previous second-background loss114.298283. Current baseline40.344560/103.328859; glass5.870895/9.226412.
+- Add three shared neutral rim responses to source brightness, using a defined0.08L inset footprint and bounded C2 interpolation. The earlier full-footprint trial read87 unknown source pixels and was rejected. This is a narrow empirical calibration, not Apple's lighting model.
+- Verify native/cache/HQ/prepared/profile/source motion, clipping derivatives, unknown-color exclusion and retained shared icon response. Existing switch replay remains unchanged. Source confidence now covers the separate context-mean input too.
+- Extend missing display context with nearby known RGB, keeping original benchmark inputs/masks/scores frozen and reporting display deltas. Remove diagnostic-color seams without hiding uncertainty.
+- Corrected paired pass1 is published; remaining19 experiments, final replay and new motion captures are pending. No app or live-lab changes.

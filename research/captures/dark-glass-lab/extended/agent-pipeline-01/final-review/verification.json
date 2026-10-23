@@ -1,0 +1,224 @@
+{
+  "status": "FINAL_DATA_AND_PROTOCOL_AUDIT",
+  "new_rays": 0,
+  "new_images": 0,
+  "new_fits": 0,
+  "independent_full_public_replay": false,
+  "primary_acceptance": false,
+  "cases": {
+    "a": {
+      "canonical_case_sha256": "51d55987f53b0266f974a835eb7794c70156bfd91b637c1a594966134dd37f21",
+      "input_hashes": {
+        "source.png": "38dd774b3b87ab4acaa9bb9588b63995df18d7da7ac89fb77697da6e1a1d3830",
+        "target.png": "f1eae5af7870bdc4088000595045187b31d26f4401a79fd61d0a2634e7529d0d",
+        "known.png": "89104ca1981763478097dd344e6a433002e8a14445226f238a07433301fd4412",
+        "jupiter.jpg": "5df8cd3fd2dd4cb5da35a41744bfe32aa8005e9ba44ae0676571aa8973089a09",
+        "title.svg": "315646b31db3d6dc0f68211cf5f7afa64d8e5c2cdb2bd194546fde30235f3805",
+        "artist.svg": "d9053598a02e959d995573a27b2d12abf9d8442d3904a183ff14d1cab7c84803",
+        "play.svg": "e2ff010b70a623cd1c7da1f04c4189504aeb95da79afdf1e2b70896988181584",
+        "forward.svg": "ca91b5ca526207178ffe09c948fb19151278eb1b43c5501f2a5f85bc734f0f6d"
+      },
+      "original_mask_counts": {
+        "glass": 155428,
+        "rim": 45766,
+        "held": 38118,
+        "exterior": 46409
+      },
+      "known_values": [
+        0,
+        255
+      ],
+      "final_arrays": {
+        "material": "983de4725694ca6f097840427e8b4e5d9946b15141631c088c46440d7fb70c63",
+        "complete": "e19bdee8c71a09eeb688053dd949a76057d9a28d3b0762809d7fbe7807060025",
+        "lens": "a4184738dc7cdc19e737d25086a30d625ecf9ae9512b88f0c5bc4d4657158cd5"
+      },
+      "supported_required_pixels": 253378,
+      "scores": "Exact stored native color-grading halfstep; no rescore/image here",
+      "historical_adoption": false
+    },
+    "b": {
+      "canonical_case_sha256": "d78bb30b15eb0092a65ec5c2344c0d327fb1eb4350888e1343dedcfae9349bc0",
+      "input_hashes": {
+        "source.png": "afb6c22b3013749c12321c8ef4dd676c29a6f89bc356cada69f290f110b99ffc",
+        "target.png": "cd320a2e26ef1abc716248b7ffcf5d496c5a843a1830b387b5cf0e7d3b450ce8",
+        "known.png": "d9714fa75734a791a94a391810a116d20f889893eb05d8f1585a6b3422a67a9c",
+        "jupiter.jpg": "5df8cd3fd2dd4cb5da35a41744bfe32aa8005e9ba44ae0676571aa8973089a09",
+        "title.svg": "315646b31db3d6dc0f68211cf5f7afa64d8e5c2cdb2bd194546fde30235f3805",
+        "artist.svg": "d9053598a02e959d995573a27b2d12abf9d8442d3904a183ff14d1cab7c84803",
+        "play.svg": "e2ff010b70a623cd1c7da1f04c4189504aeb95da79afdf1e2b70896988181584",
+        "forward.svg": "ca91b5ca526207178ffe09c948fb19151278eb1b43c5501f2a5f85bc734f0f6d"
+      },
+      "original_mask_counts": {
+        "glass": 155428,
+        "rim": 45766,
+        "held": 38118,
+        "exterior": 46409
+      },
+      "known_values": [
+        0,
+        255
+      ],
+      "final_arrays": {
+        "material": "ebd85003054ae64b2202fe10b6e72f08d416021f6dfc77a569e30b408b83b32d",
+        "complete": "8415ed3202bdb7f4e4d34451c68dc5a5503a0dc7016ca673c522692378fdff39",
+        "lens": "92ee353cabdb052b1245207e0f77edcf4c1b3da0633d9117a5ddd0bb6e114ffe"
+      },
+      "supported_required_pixels": 253378,
+      "scores": "Exact stored native color-grading halfstep; no rescore/image here",
+      "historical_adoption": false
+    }
+  },
+  "refraction_trials": 8,
+  "source_proofs": {
+    "h1": {
+      "status": "PASS_REQUIRED_SOURCE",
+      "sha256": "478056dec6d167877c495e8a37353b4a07736e6c6bff23c63d1c8e312cac4d76"
+    },
+    "h2": {
+      "status": "PASS_REQUIRED_SOURCE",
+      "sha256": "89625d6e308e76a044a3a129d990e9eb755866e7b6f50c7a2a881691239296a2"
+    },
+    "h3/p4": {
+      "status": "PASS_REQUIRED_SOURCE",
+      "sha256": "692247a74b1b39182e235aa6bb9aa5200c7645a82bd6cacdbf33e290068e62ce"
+    },
+    "h3/p5": {
+      "status": "PASS_REQUIRED_SOURCE",
+      "sha256": "83375202350d41f910f90e91fbe4bc8c52706d8b09126370f64f4cddcc6a325a"
+    }
+  },
+  "crease_erratum": "refraction/checkpoint-crease-erratum.json: two false regular endpoint checkpoints retained. Native wholehpositive scope proof preserved, no rerender. Rootdbff69 publishes correct safetyguard; helper did not replay/adopt a new optical image.",
+  "selected_local_scores": {
+    "a": {
+      "glass": {
+        "pixels": 155428,
+        "rmse": 40.865726470947266
+      },
+      "rim": {
+        "pixels": 45766,
+        "rmse": 64.40684509277344
+      },
+      "held": {
+        "pixels": 38118,
+        "rmse": 41.96078109741211
+      },
+      "interior": {
+        "pixels": 109662,
+        "rmse": 25.214065551757812
+      },
+      "ssim": 0.8712174892425537,
+      "loss": 2413.47782844015,
+      "E": 49.127159783974385,
+      "exterior": {
+        "pixels": 46409,
+        "rmse": 19.254291534423828
+      },
+      "foreground_MSE": [
+        2268.92041015625,
+        905.52880859375,
+        1283.60791015625,
+        454.8016052246094,
+        519.501708984375
+      ]
+    },
+    "b": {
+      "glass": {
+        "pixels": 155428,
+        "rmse": 16.518491744995117
+      },
+      "rim": {
+        "pixels": 45766,
+        "rmse": 25.933950424194336
+      },
+      "held": {
+        "pixels": 38118,
+        "rmse": 16.930212020874023
+      },
+      "interior": {
+        "pixels": 109662,
+        "rmse": 10.29792308807373
+      },
+      "ssim": 0.9140862226486206,
+      "loss": 392.77333405200113,
+      "E": 19.81850988475171,
+      "exterior": {
+        "pixels": 46409,
+        "rmse": 21.74403190612793
+      },
+      "foreground_MSE": [
+        2799.075927734375,
+        627.9297485351562,
+        249.8277130126953,
+        129.16749572753906,
+        189.0576934814453
+      ]
+    }
+  },
+  "historical_scores": [
+    {
+      "glass": {
+        "pixels": 155428,
+        "rmse": 4.365644454956055
+      },
+      "rim": {
+        "pixels": 45766,
+        "rmse": 7.23183536529541
+      },
+      "held": {
+        "pixels": 38118,
+        "rmse": 4.463747024536133
+      },
+      "interior": {
+        "pixels": 109662,
+        "rmse": 2.2773499488830566
+      },
+      "loss": 29.0310288801832,
+      "E": 5.388044996117163,
+      "foreground_mse": {
+        "jupiter.jpg": 2254.289512708783,
+        "title.svg": 244.49775417451747,
+        "artist.svg": 16.063819968985626,
+        "play.svg": 97.28136549820192,
+        "forward.svg": 140.63028253731318
+      },
+      "exterior": {
+        "pixels": 46409,
+        "rmse": 6.519184480442686
+      }
+    },
+    {
+      "glass": {
+        "pixels": 155428,
+        "rmse": 2.5704739093780518
+      },
+      "rim": {
+        "pixels": 45766,
+        "rmse": 4.118942737579346
+      },
+      "held": {
+        "pixels": 38118,
+        "rmse": 2.627451181411743
+      },
+      "interior": {
+        "pixels": 109662,
+        "rmse": 1.5114268064498901
+      },
+      "loss": 9.714842065792588,
+      "E": 3.1168641397713484,
+      "foreground_mse": {
+        "jupiter.jpg": 2798.2244638726115,
+        "title.svg": 580.9656610479578,
+        "artist.svg": 171.14651273586787,
+        "play.svg": 119.06825226615183,
+        "forward.svg": 176.20372489909641
+      },
+      "exterior": {
+        "pixels": 46409,
+        "rmse": 5.929097299870822
+      }
+    }
+  ],
+  "outcome": "Overall physical prototype remains worse than historical accepted full model. Local blur/color improvements only; no new accepted optical replacement.",
+  "finished_unix": 1792662432.381869
+}

@@ -1,0 +1,282 @@
+{
+  "status": "FORMED_TWO_FIXED_NATIVE_DIAGNOSTICS",
+  "new_rays": 0,
+  "native_images": 2,
+  "AA": 2,
+  "bilinear": "exact 4texel",
+  "nuisance": "unit transmission; zero added optical blur, lighting, outline, shadow; fixed foreground styles/artwork",
+  "historical_comparison": "different nuisances, NOT a same-nuisance gain claim",
+  "cases": {
+    "a": {
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 71.25296020507812
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 91.76921081542969
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 73.58619689941406
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 60.67254638671875
+        },
+        "ssim": 0.6746500730514526,
+        "loss": 6080.365452696546,
+        "exterior": {
+          "pixels": 46409,
+          "rmse": 19.254291534423828
+        },
+        "E": 77.97669813922968,
+        "foreground": [
+          {
+            "box": [
+              376,
+              356,
+              491,
+              474
+            ],
+            "rmse": 48.230323791503906
+          },
+          {
+            "box": [
+              515,
+              360,
+              805,
+              413
+            ],
+            "rmse": 64.12686157226562
+          },
+          {
+            "box": [
+              515,
+              421,
+              666,
+              465
+            ],
+            "rmse": 81.2822265625
+          },
+          {
+            "box": [
+              1270,
+              375,
+              1347,
+              456
+            ],
+            "rmse": 51.879302978515625
+          },
+          {
+            "box": [
+              1415,
+              375,
+              1535,
+              456
+            ],
+            "rmse": 50.623409271240234
+          }
+        ]
+      },
+      "advisory_crops": {
+        "left_shoulder": {
+          "original_glass_pixels": 5976,
+          "rmse": 84.85478210449219,
+          "signed_RGB": [
+            -26.002445220947266,
+            -43.03315734863281,
+            -57.9251708984375
+          ]
+        },
+        "right_shoulder": {
+          "original_glass_pixels": 7368,
+          "rmse": 102.4655990600586,
+          "signed_RGB": [
+            -25.585248947143555,
+            -22.434843063354492,
+            -3.9822521209716797
+          ]
+        },
+        "middle": {
+          "original_glass_pixels": 32560,
+          "rmse": 55.84141159057617,
+          "signed_RGB": [
+            18.250364303588867,
+            7.170971393585205,
+            -39.432037353515625
+          ]
+        },
+        "B_text": {
+          "original_glass_pixels": 67408,
+          "rmse": 61.47562026977539,
+          "signed_RGB": [
+            17.767044067382812,
+            5.1450982093811035,
+            -50.50172805786133
+          ]
+        },
+        "upper": {
+          "original_glass_pixels": 20860,
+          "rmse": 69.00350189208984,
+          "signed_RGB": [
+            -22.81473731994629,
+            -37.22003936767578,
+            -77.7686996459961
+          ]
+        },
+        "lower": {
+          "original_glass_pixels": 19708,
+          "rmse": 81.7513656616211,
+          "signed_RGB": [
+            48.7890625,
+            61.715545654296875,
+            95.79087829589844
+          ]
+        }
+      },
+      "supported_pixels": 337250,
+      "unavailable_presentation_pixels": 2750,
+      "RGB_supported_subrays_sampled": 1349500,
+      "new_native_images": 1,
+      "path_cache_sha256": "1e377e87d3fa747575edd315e28f6a91284c48e463a96f57e4947f53a342244a"
+    },
+    "b": {
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 51.061275482177734
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 47.386329650878906
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 51.988792419433594
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 52.51896667480469
+        },
+        "ssim": 0.7438771724700928,
+        "loss": 2498.716969041321,
+        "exterior": {
+          "pixels": 46409,
+          "rmse": 21.74403190612793
+        },
+        "E": 49.987168043822216,
+        "foreground": [
+          {
+            "box": [
+              376,
+              356,
+              491,
+              474
+            ],
+            "rmse": 52.9769287109375
+          },
+          {
+            "box": [
+              515,
+              360,
+              805,
+              413
+            ],
+            "rmse": 41.316219329833984
+          },
+          {
+            "box": [
+              515,
+              421,
+              666,
+              465
+            ],
+            "rmse": 64.0216064453125
+          },
+          {
+            "box": [
+              1270,
+              375,
+              1347,
+              456
+            ],
+            "rmse": 20.32811164855957
+          },
+          {
+            "box": [
+              1415,
+              375,
+              1535,
+              456
+            ],
+            "rmse": 21.894363403320312
+          }
+        ]
+      },
+      "advisory_crops": {
+        "left_shoulder": {
+          "original_glass_pixels": 5976,
+          "rmse": 78.25724029541016,
+          "signed_RGB": [
+            0.42215994000434875,
+            0.38604679703712463,
+            0.3817569613456726
+          ]
+        },
+        "right_shoulder": {
+          "original_glass_pixels": 7368,
+          "rmse": 47.58820343017578,
+          "signed_RGB": [
+            10.399325370788574,
+            10.403510093688965,
+            10.422161102294922
+          ]
+        },
+        "middle": {
+          "original_glass_pixels": 32560,
+          "rmse": 55.95398712158203,
+          "signed_RGB": [
+            13.83377742767334,
+            13.786582946777344,
+            13.858646392822266
+          ]
+        },
+        "B_text": {
+          "original_glass_pixels": 67408,
+          "rmse": 64.23391723632812,
+          "signed_RGB": [
+            10.373994827270508,
+            10.338164329528809,
+            10.410421371459961
+          ]
+        },
+        "upper": {
+          "original_glass_pixels": 20860,
+          "rmse": 48.41783142089844,
+          "signed_RGB": [
+            28.115657806396484,
+            28.2680721282959,
+            28.300382614135742
+          ]
+        },
+        "lower": {
+          "original_glass_pixels": 19708,
+          "rmse": 36.43280029296875,
+          "signed_RGB": [
+            33.545291900634766,
+            33.439395904541016,
+            33.56303024291992
+          ]
+        }
+      },
+      "supported_pixels": 337250,
+      "unavailable_presentation_pixels": 2750,
+      "RGB_supported_subrays_sampled": 1349500,
+      "new_native_images": 1,
+      "path_cache_sha256": "1e377e87d3fa747575edd315e28f6a91284c48e463a96f57e4947f53a342244a"
+    }
+  },
+  "finished_unix": 1792653081.09775
+}

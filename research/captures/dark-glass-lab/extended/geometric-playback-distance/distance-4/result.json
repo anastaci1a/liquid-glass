@@ -1,0 +1,37 @@
+{
+  "classification": "USEFUL_GEOMETRIC_REALIZABILITY_DIAGNOSTIC_NOT_APPLE_FIDELITY",
+  "rows": [
+    {
+      "nodes": 257,
+      "max_map_error_L": 1.5075161517441593e-05,
+      "change_from_previous_L": null,
+      "actual_height_max": 0.009668581904385347,
+      "actual_slope_bound": 0.3057587576072453,
+      "curvature_min": 0.0,
+      "minimum_map_jacobian": -13.101458771988842,
+      "fold_present": true,
+      "minimum_Snell_discriminant": 0.8076349700428822,
+      "ray_paths_complete": true
+    },
+    {
+      "nodes": 513,
+      "max_map_error_L": 3.7686460027108737e-06,
+      "change_from_previous_L": 1.1306517551212814e-05,
+      "actual_height_max": 0.009668176913080792,
+      "actual_slope_bound": 0.3057560767396456,
+      "curvature_min": 0.0,
+      "minimum_map_jacobian": -13.10145457653889,
+      "fold_present": true,
+      "minimum_Snell_discriminant": 0.8076380549149014,
+      "ray_paths_complete": true
+    }
+  ],
+  "rhs_calls": 568,
+  "geometry_rays": 32770,
+  "wall_seconds": 0.0665280818939209,
+  "fits": 0,
+  "image_renders": 0,
+  "conclusion": "A globally concave back height can realize the historical folded radial map with subcritical transmitted paths. Copying it into geometry preserves the unwanted fold. This neither establishes Apple geometry nor rules out other flat-front shapes/cameras.",
+  "surface_definition": "Nonnegative continuous piecewise-linear curvature integrated twice; one C2 concave height and its exact polynomial derivative define every normal and path.",
+  "limits": "ODE/convergence are numerical; indices/background depth fixed hypotheses. Orthographic primary transmission only. No full radiance/dispersion/device-performance claim."
+}

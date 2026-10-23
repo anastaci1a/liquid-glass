@@ -1,0 +1,109 @@
+{
+  "spacing_L": 0.02,
+  "inside_points": 20755,
+  "robust_nonzero_curl_points": 14364,
+  "robust_wrong_branch_compatibility_points": 9248,
+  "robust_possible_branch_points": 5116,
+  "nearzero_or_derivative_ambiguous_points": 6391,
+  "direct_map_curl_fd_difference": {
+    "n": 20755,
+    "rms": 0.2783228018627418,
+    "median": 0.0,
+    "p95_abs": 3.1094626873340303e-07,
+    "max_abs": 20.04842029759198
+  },
+  "direct_K_fd_difference": {
+    "n": 20755,
+    "rms": 0.23605311466167614,
+    "median": 0.0,
+    "p95_abs": 9.215548564256437e-07,
+    "max_abs": 17.00360818135676
+  },
+  "threshold_sensitivity": [
+    {
+      "curl_floor": 1e-05,
+      "robust_points": 14364,
+      "wrong_branch_compatibility_points": 9248,
+      "fraction_of_robust": 0.6438318017265385,
+      "fraction_of_all_inside": 0.445579378463021
+    },
+    {
+      "curl_floor": 0.0001,
+      "robust_points": 13120,
+      "wrong_branch_compatibility_points": 8776,
+      "fraction_of_robust": 0.6689024390243903,
+      "fraction_of_all_inside": 0.42283787039267645
+    },
+    {
+      "curl_floor": 0.001,
+      "robust_points": 10460,
+      "wrong_branch_compatibility_points": 7668,
+      "fraction_of_robust": 0.7330783938814531,
+      "fraction_of_all_inside": 0.3694531438207661
+    }
+  ],
+  "IOR_dependence": [
+    {
+      "n": 1.33,
+      "necessary_valid_clearance_points": 5116,
+      "required_clearance_L": {
+        "n": 5116,
+        "rms": 2.073345205592547,
+        "median": 0.23940906824904273,
+        "p95_abs": 6.039259590343406,
+        "max_abs": 7.3292501046139265
+      },
+      "required_clearance_PDE_stencil_points": 2232,
+      "required_clearance_PDE_gradient_error": {
+        "n": 2232,
+        "rms": 48.49776592174866,
+        "median": 1.173859073719397,
+        "p95_abs": 116.96198057120729,
+        "max_abs": 145.54973857908456
+      },
+      "limits": "Necessary clearance only, no gap/surface promotion. Nearzero curl and violation boundary omitted from derivative stencil, retained in full fields."
+    },
+    {
+      "n": 1.5,
+      "necessary_valid_clearance_points": 5116,
+      "required_clearance_L": {
+        "n": 5116,
+        "rms": 1.7768546088453425,
+        "median": 0.20626463318809882,
+        "p95_abs": 5.194396959118362,
+        "max_abs": 6.305928620457447
+      },
+      "required_clearance_PDE_stencil_points": 2232,
+      "required_clearance_PDE_gradient_error": {
+        "n": 2232,
+        "rms": 42.111893413873936,
+        "median": 0.9876562421566102,
+        "p95_abs": 101.48141283981425,
+        "max_abs": 126.16947304536971
+      },
+      "limits": "Necessary clearance only, no gap/surface promotion. Nearzero curl and violation boundary omitted from derivative stencil, retained in full fields."
+    },
+    {
+      "n": 1.8,
+      "necessary_valid_clearance_points": 5116,
+      "required_clearance_L": {
+        "n": 5116,
+        "rms": 1.5255480082339565,
+        "median": 0.17830481784057192,
+        "p95_abs": 4.480407422283009,
+        "max_abs": 5.441412007148977
+      },
+      "required_clearance_PDE_stencil_points": 2232,
+      "required_clearance_PDE_gradient_error": {
+        "n": 2232,
+        "rms": 36.771716375397695,
+        "median": 0.842179944810145,
+        "p95_abs": 88.51895492505714,
+        "max_abs": 109.92712183406242
+      },
+      "limits": "Necessary clearance only, no gap/surface promotion. Nearzero curl and violation boundary omitted from derivative stencil, retained in full fields."
+    }
+  ],
+  "optical_passes": 0,
+  "claim": "Necessary local condition for EXACT specified flat-front orthographic single-back surface. Does not bound all approximate surfaces or infer Apple geometry."
+}

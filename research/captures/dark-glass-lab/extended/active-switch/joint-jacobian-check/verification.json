@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "method": "Reuse exact public clipped-affine material derivatives in a joint Jacobian. Optical columns retain native finite differences. Full nonlinear output still decides acceptance.",
+  "observations": [
+    {
+      "observation": "A",
+      "directional_checks": [
+        {
+          "direction": 0,
+          "relative_l2": 0.0005013532655196855,
+          "max_abs": 0.006848394870758057,
+          "finite_seconds": 0.7021117210388184
+        },
+        {
+          "direction": 1,
+          "relative_l2": 0.0006419879986775622,
+          "max_abs": 0.0037780553102493286,
+          "finite_seconds": 0.6507449150085449
+        },
+        {
+          "direction": 2,
+          "relative_l2": 0.00077825398399916,
+          "max_abs": 0.003541231155395508,
+          "finite_seconds": 0.9277887344360352
+        }
+      ],
+      "analytic_three_direction_seconds": 3.990633964538574,
+      "forms_max_abs_difference": 0.0,
+      "analytic_form_seconds": 5.3387367725372314,
+      "original_form_seconds": 4.912541389465332
+    },
+    {
+      "observation": "B",
+      "directional_checks": [
+        {
+          "direction": 0,
+          "relative_l2": 0.00048641220726177836,
+          "max_abs": 0.0063512325286865234,
+          "finite_seconds": 0.6031513214111328
+        },
+        {
+          "direction": 1,
+          "relative_l2": 0.0010046183988331005,
+          "max_abs": 0.006775319576263428,
+          "finite_seconds": 0.7304162979125977
+        },
+        {
+          "direction": 2,
+          "relative_l2": 0.0009737470986959834,
+          "max_abs": 0.009253323078155518,
+          "finite_seconds": 0.6103787422180176
+        }
+      ],
+      "analytic_three_direction_seconds": 5.677969217300415,
+      "forms_max_abs_difference": 0.0,
+      "analytic_form_seconds": 5.017392635345459,
+      "original_form_seconds": 4.134385585784912
+    }
+  ]
+}

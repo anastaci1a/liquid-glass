@@ -1,0 +1,105 @@
+{
+  "transfer": "bt709",
+  "operator": "source",
+  "E": 10.424424684744743,
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 10.195128440856934,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 10.940776824951172,
+          "pixels": 61248
+        },
+        "shadow": 11.468821403791596
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 15.061964353129321,
+    "plus": 10.025822519060593
+  },
+  "guard_order": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "guard_before": [
+    5.843130588531494,
+    8.813648223876953,
+    11.46944201723165,
+    13.242044387461515,
+    3.667139623528374
+  ],
+  "guard_after": [
+    10.195128440856934,
+    10.940776824951172,
+    11.468821403791596,
+    15.061964353129321,
+    10.025822519060593
+  ],
+  "all_nonregression": false,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 10.424424684744743,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": -0.5172751546818741,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": false,
+          "shadow": true
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "advisory_fixed_cohorts": {
+    "all": {
+      "pixels": 188771,
+      "old_RMSE_255": 5.843130935197818,
+      "new_RMSE_255": 10.195128440856934,
+      "change_RMS_255": 6.972612985167759,
+      "desired_change_cosine": -0.25994298940257815
+    },
+    "observed_kernel_proxy": {
+      "pixels": 63571,
+      "old_RMSE_255": 4.4944922358672885,
+      "new_RMSE_255": 11.54470157623291,
+      "change_RMS_255": 9.144567055730622,
+      "desired_change_cosine": -0.35835085426282787
+    },
+    "estimated_kernel_proxy": {
+      "pixels": 57948,
+      "old_RMSE_255": 3.6256417598863355,
+      "new_RMSE_255": 3.625661849975586,
+      "change_RMS_255": 0.00014620319955113004,
+      "desired_change_cosine": -0.13768947398559045
+    },
+    "mixed_or_uncertain": {
+      "pixels": 67252,
+      "old_RMSE_255": 8.087823165119596,
+      "new_RMSE_255": 12.427435874938965,
+      "change_RMS_255": 7.577527917199478,
+      "desired_change_cosine": -0.2578852068789873
+    }
+  },
+  "counted_passes": 0,
+  "source23_adopted": false,
+  "model_sha256": "9175d20229b53ab78335272695c4e6ff5ca8ae6e0805f6af67bc038f35b21d2e"
+}

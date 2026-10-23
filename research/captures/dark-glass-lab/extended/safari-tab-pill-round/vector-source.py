@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,hashlib,shutil
+import cv2,numpy as np
+from PIL import Image
+from fontTools.ttLib import TTFont
+from fontTools.pens.svgPathPen import SVGPathPen
+from fontTools.pens.boundsPen import BoundsPen
+R=Path('/evidence/extended/safari-tab-pill-round');a=np.load(R/'source-control-evidence.npz');T=np.asarray(Image.open('/evidence/apple-matches/219-290.png')).astype(float)/255;yy,xx=np.mgrid[:1080,:1920];u=(xx-1173)/150;v=(yy-706)/100;X=np.stack([np.ones_like(u),u,v,u*u,u*v,v*v],-1);co=np.linalg.lstsq(X[a['train']],T[a['train']],rcond=None)[0];P=X@co;errors={k:float(np.sqrt(np.mean(((P-T)[a[k]]*255)**2)))for k in ['train','held','independent_lower']};old=json.loads((R/'source-pose-proposal.json').read_text());adopt=errors['held']<old['source_rmse_levels']['held'] and errors['independent_lower']<=.8*old['source_rmse_levels']['independent_lower'];report={'quadratic_errors':errors,'requires_held_improvement_and_20percent_lower':True,'quadratic_supported':adopt,'coefficient_rgb':co.tolist()}
+(R/'quadratic-source-control.json').write_text(json.dumps(report,indent=2)+'\n')
+font=Path('/evidence/extended/icon-source/fonts/Library/Fonts/SF-Pro-Text-Regular.otf');f=TTFont(font);g=f.getGlyphSet();name=f.getBestCmap()[ord('1')];pen=SVGPathPen(g);g[name].draw(pen);bp=BoundsPen(g);g[name].draw(bp);x,y,z,w=bp.bounds;svg=f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x} {-w} {z-x} {w-y}"><g transform="scale(1,-1)"><path d="{pen.getCommands()}"/></g></svg>';(R/'count-one.svg').write_text(svg);shutil.copyfile('/evidence/extended/safari-plus-source-round/plus.svg',R/'plus.svg');(R/'glyph-provenance.json').write_text(json.dumps({'count':{'font':str(font),'sha256':hashlib.sha256(font.read_bytes()).hexdigest(),'glyph':name,'svg_sha256':hashlib.sha256(svg.encode()).hexdigest(),'limits':'Original SF Pro Text Regular numeral; exact UI weight/variant not established. Uniform aspect from glyph ink bounds, solid black, no screenshot matte.'},'plus':{'source':'Previously frozen Safari original SF plus vector','svg_sha256':hashlib.sha256((R/'plus.svg').read_bytes()).hexdigest()}},indent=2)+'\n');print(json.dumps(report))

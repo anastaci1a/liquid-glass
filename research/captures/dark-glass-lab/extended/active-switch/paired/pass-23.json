@@ -1,0 +1,525 @@
+{
+  "pass_number": 23,
+  "experiment": "Separate source-derived grazing reflection from transmission scattering",
+  "execution_script": "retain-switch-reflection.py",
+  "execution_code_sha256": "cc31dbe3e59b1c0f4a04a88d519a1d242c187d94cea521c63efb1b40249c339d",
+  "accepted": true,
+  "previous": {
+    "parameters": {
+      "sigma": 4.339320119358678,
+      "amplitude": 0.7839488678764915,
+      "band": 0.41709079115813363,
+      "power": 2.793583791362869,
+      "tangent": 0.0,
+      "tangent_band": 0.9999992768775775,
+      "core_x": -0.3878350176400587,
+      "core_y": -0.27725760977841146,
+      "post_sigma": 2.163537921629955,
+      "coupling": 0.0,
+      "gamma": 1.5497479697761347,
+      "rim_width": 0.05739819425406035,
+      "thin_width": 0.011095946046562786,
+      "spline": true,
+      "shape_dx": 0.001167965417146694,
+      "shape_dy": 0.004755085677013721,
+      "half_x_delta": -0.0025334994195777482,
+      "half_y_delta": 0.011224253113150662,
+      "radius_delta": 0.012043263143639911,
+      "c0": 0.5825744554180238,
+      "c1": 0.9357855379848372,
+      "c2": -0.7313250023304061,
+      "c3": 0.6119443772170838,
+      "c4": 0.44738001208281564,
+      "c5": 0.08689122301998892,
+      "c6": -0.02671418074585203,
+      "shadow": {
+        "opacity": 0.06759092205628288,
+        "sigma": 0.08711570318601433,
+        "offset": [
+          0.0028197038845270807,
+          0.0999999991388537
+        ]
+      },
+      "blur_transition": 0.0,
+      "tangent_exponent": 3.000273143553201,
+      "cap_normal_gain": -0.6743904455132721,
+      "cap_tangent_fade": 0.9997199664179274,
+      "material_chroma_sensitivity": 10.0,
+      "material_chroma_floor": 0.0
+    },
+    "material": [
+      0.5289809048548212,
+      0.7857798632253756,
+      0.6161393398202761,
+      0.36312435312184477,
+      0.36419531120925025,
+      0.35229461973346105,
+      -0.5051570286866971,
+      -0.06770119787396664,
+      -1.3944789493065854,
+      -0.13192596208224594,
+      0.030371443225044502,
+      0.4788321681882631,
+      0.07826489873015918,
+      0.03213310835712344,
+      -0.016068936081217573,
+      -0.005440223508025608,
+      0.04350352297425695,
+      -0.05210761104350207,
+      -0.11469817398111504,
+      -0.0017491593072620115,
+      0.7143610534881728,
+      0.7003611565569473,
+      0.7258540997298115
+    ],
+    "scores": [
+      {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 12.614958763122559
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 21.859037399291992
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 13.881340026855469
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 5.199476718902588
+        },
+        "ssim": 0.9590278267860413,
+        "loss": 254.74128402379165
+      },
+      {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 15.075286865234375
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 21.28322982788086
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 15.146924018859863
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 11.588092803955078
+        },
+        "ssim": 0.9309626817703247,
+        "loss": 294.9777534202949
+      }
+    ]
+  },
+  "current": {
+    "parameters": {
+      "sigma": 4.339320119358678,
+      "amplitude": 0.7839488678764915,
+      "band": 0.41709079115813363,
+      "power": 2.793583791362869,
+      "tangent": 0.0,
+      "tangent_band": 0.9999992768775775,
+      "core_x": -0.3878350176400587,
+      "core_y": -0.27725760977841146,
+      "post_sigma": 2.163537921629955,
+      "coupling": 0.0,
+      "gamma": 1.5497479697761347,
+      "rim_width": 0.05739819425406035,
+      "thin_width": 0.011095946046562786,
+      "spline": true,
+      "shape_dx": 0.001167965417146694,
+      "shape_dy": 0.004755085677013721,
+      "half_x_delta": -0.0025334994195777482,
+      "half_y_delta": 0.011224253113150662,
+      "radius_delta": 0.012043263143639911,
+      "c0": 0.5825744554180238,
+      "c1": 0.9357855379848372,
+      "c2": -0.7313250023304061,
+      "c3": 0.6119443772170838,
+      "c4": 0.44738001208281564,
+      "c5": 0.08689122301998892,
+      "c6": -0.02671418074585203,
+      "shadow": {
+        "opacity": 0.06759092205628288,
+        "sigma": 0.08711570318601433,
+        "offset": [
+          0.0028197038845270807,
+          0.0999999991388537
+        ]
+      },
+      "blur_transition": 0.0,
+      "tangent_exponent": 3.000273143553201,
+      "cap_normal_gain": -0.6743904455132721,
+      "cap_tangent_fade": 0.9997199664179274,
+      "material_chroma_sensitivity": 10.0,
+      "material_chroma_floor": 0.0,
+      "grazing_reflection": {
+        "strength": 1.0,
+        "width": 0.03895748531996116,
+        "angular_power": 1.5519447192573868,
+        "source_sigma": 0.007,
+        "direction": [
+          0,
+          1
+        ]
+      }
+    },
+    "material": [
+      0.5289809048548212,
+      0.7857798632253756,
+      0.6161393398202761,
+      0.36312435312184477,
+      0.36419531120925025,
+      0.35229461973346105,
+      -0.5051570286866971,
+      -0.06770119787396664,
+      -1.3944789493065854,
+      -0.13192596208224594,
+      0.030371443225044502,
+      0.4788321681882631,
+      0.07826489873015918,
+      0.03213310835712344,
+      -0.016068936081217573,
+      -0.005440223508025608,
+      0.04350352297425695,
+      -0.05210761104350207,
+      -0.11469817398111504,
+      -0.0017491593072620115,
+      0.7143610534881728,
+      0.7003611565569473,
+      0.7258540997298115
+    ],
+    "scores": [
+      {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 12.614958763122559
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 21.859037399291992
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 13.883342742919922
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 5.199476718902588
+        },
+        "ssim": 0.9590246677398682,
+        "loss": 254.74128402379165
+      },
+      {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 14.734081268310547
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 20.44784164428711
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 15.00894832611084
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 11.588092803955078
+        },
+        "ssim": 0.9309520125389099,
+        "loss": 277.39947394777846
+      }
+    ]
+  },
+  "trials": [
+    {
+      "parameters": [
+        0.1,
+        0.001,
+        1.0
+      ],
+      "losses": [
+        254.74128402379165,
+        294.9777534202949
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.3,
+        0.001,
+        1.0
+      ],
+      "losses": [
+        254.74128402379165,
+        294.9777534202949
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.6,
+        0.001,
+        1.0
+      ],
+      "losses": [
+        254.74128402379165,
+        294.9777534202949
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        1.0,
+        0.001,
+        1.0
+      ],
+      "losses": [
+        254.74128402379165,
+        294.9777534202949
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.1,
+        0.003,
+        1.0
+      ],
+      "losses": [
+        254.74124216532329,
+        294.97741767285106
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.3,
+        0.003,
+        1.0
+      ],
+      "losses": [
+        254.74120030685833,
+        294.9766974652316
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.6,
+        0.003,
+        1.0
+      ],
+      "losses": [
+        254.74120030685833,
+        294.9756658688166
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        1.0,
+        0.003,
+        1.0
+      ],
+      "losses": [
+        254.74120030685833,
+        294.974274172233
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.1,
+        0.006,
+        1.0
+      ],
+      "losses": [
+        254.73618548894592,
+        294.9529299660338
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.3,
+        0.006,
+        1.0
+      ],
+      "losses": [
+        254.726591416505,
+        294.9041558626682
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.6,
+        0.006,
+        1.0
+      ],
+      "losses": [
+        254.71375774591687,
+        294.8332174047052
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        1.0,
+        0.006,
+        1.0
+      ],
+      "losses": [
+        254.6994257891965,
+        294.7428566930157
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.1,
+        0.012,
+        1.0
+      ],
+      "losses": [
+        254.69777660476208,
+        294.6786227534404
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.3,
+        0.012,
+        1.0
+      ],
+      "losses": [
+        254.62458338483765,
+        294.1011375982689
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.6,
+        0.012,
+        1.0
+      ],
+      "losses": [
+        254.54929175248168,
+        293.2870722133923
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        1.0,
+        0.012,
+        1.0
+      ],
+      "losses": [
+        254.51329870735597,
+        292.2988601642322
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.1,
+        0.024,
+        1.0
+      ],
+      "losses": [
+        254.55758532779464,
+        293.3421483138718
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.3,
+        0.024,
+        1.0
+      ],
+      "losses": [
+        254.34653045934175,
+        290.25427891433924
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        0.6,
+        0.024,
+        1.0
+      ],
+      "losses": [
+        254.42081301209072,
+        286.08102061081263
+      ],
+      "allowed": true
+    },
+    {
+      "parameters": [
+        1.0,
+        0.024,
+        1.0
+      ],
+      "losses": [
+        255.24945091657645,
+        281.3725574381783
+      ],
+      "allowed": false
+    }
+  ],
+  "evaluations": 912,
+  "seconds": 182.6410698890686,
+  "proposed_source_support": [
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0,
+      "gaussian_3sigma_observed_fraction": 0.0,
+      "source_gaussian_radius_native_px": 13,
+      "reflection_source_defined_fraction": 1.0,
+      "reflection_gaussian_3sigma_defined_fraction": 1.0,
+      "reflection_source_observed_fraction": 0.0,
+      "reflection_gaussian_3sigma_observed_fraction": 0.0,
+      "reflection_source_gaussian_radius_native_px": 5
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0,
+      "gaussian_3sigma_observed_fraction": 0.0,
+      "source_gaussian_radius_native_px": 12,
+      "reflection_source_defined_fraction": 1.0,
+      "reflection_gaussian_3sigma_defined_fraction": 1.0,
+      "reflection_source_observed_fraction": 0.0,
+      "reflection_gaussian_3sigma_observed_fraction": 0.0,
+      "reflection_source_gaussian_radius_native_px": 5
+    }
+  ],
+  "supplementary_contour": [
+    {
+      "definition": "Fitted-footprint inward distance0..0.025L, outward normal ny>0; supplementary, not a native-score mask.",
+      "pixels": 4755,
+      "previous_mse": 7510.73388671875,
+      "current_mse": 1124.220703125
+    },
+    {
+      "definition": "Fitted-footprint inward distance0..0.025L, outward normal ny>0; supplementary, not a native-score mask.",
+      "pixels": 4181,
+      "previous_mse": 10205.2451171875,
+      "current_mse": 1687.5869140625
+    }
+  ],
+  "gate": "Frozen per-background native loss/glass plus separately reported lower-contour check; no native masks changed.",
+  "limits": "Directional incident field is an empirical source proxy. Colored inner rainbow and remaining upper/side rim mismatch are unresolved; not an Apple reflection law."
+}

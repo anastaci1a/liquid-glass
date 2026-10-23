@@ -1,0 +1,2127 @@
+{
+  "baseline_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch_unchanged": true,
+  "assessment_not_a_fit_or_pass": true,
+  "source_confidence_proxy": {
+    "native_ray_samples_per_axis": 4,
+    "source_kernel_radius": 35,
+    "post_kernel_radius": 5,
+    "observed_definition": "All contributing rays outside documented source-estimated rectangle under conservative3sigma+bilinear kernel proxy",
+    "estimated_definition": "All contributing source kernels inside documented estimated rectangle; mixed separately retained"
+  },
+  "regions": {
+    "full-glass": {
+      "box": null,
+      "cohorts": {
+        "all": {
+          "residual": {
+            "pixels": 188771,
+            "rmse": 5.843130948161729,
+            "signed_RGB_mean": [
+              0.2808669273328309,
+              0.26680546659924165,
+              0.3079251288498097
+            ],
+            "signed_luma_mean": 0.27276377276569364
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 188771,
+              "direction_rms": 0.7154124116939939,
+              "cosine_to_desired": 0.08872171580909916,
+              "signed_sensitivity": 0.724634623252674,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 188771,
+              "direction_rms": 0.5409103594844689,
+              "cosine_to_desired": 0.0821282514261794,
+              "signed_sensitivity": 0.8871823569511468,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 188771,
+              "direction_rms": 1.036938755392439,
+              "cosine_to_desired": 0.09797275763533933,
+              "signed_sensitivity": 0.5520746999172116,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 188771,
+              "direction_rms": 3.7906346233977373,
+              "cosine_to_desired": 0.04488896932653718,
+              "signed_sensitivity": 0.0691947792287799,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 188771,
+              "direction_rms": 16.584356458657727,
+              "cosine_to_desired": -0.05113924914109738,
+              "signed_sensitivity": -0.018017782605372686,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 188771,
+              "direction_rms": 44.18778817839813,
+              "cosine_to_desired": -0.057378232670221366,
+              "signed_sensitivity": -0.007587357070524309,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 188771,
+              "direction_rms": 92.84873563644227,
+              "cosine_to_desired": -0.03189180110106943,
+              "signed_sensitivity": -0.002007006005293838,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 2288,
+              "rmse": 29.04578160825813,
+              "signed_RGB_mean": [
+                1.7940915384805285,
+                1.9346036421773316,
+                1.5068441345193586
+              ],
+              "signed_luma_mean": 1.8738465324784856
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 3884,
+              "rmse": 9.050653748305324,
+              "signed_RGB_mean": [
+                -1.4139378418422752,
+                -1.2716587738322918,
+                -1.6951780616009395
+              ],
+              "signed_luma_mean": -1.332485396268111
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 7644,
+              "rmse": 8.514609543915503,
+              "signed_RGB_mean": [
+                4.577297550636334,
+                4.64057451025751,
+                4.4528896176786965
+              ],
+              "signed_luma_mean": 4.613570979397857
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 15080,
+              "rmse": 6.966529533680287,
+              "signed_RGB_mean": [
+                1.3410611868220867,
+                1.2956973049345004,
+                1.4332610378847197
+              ],
+              "signed_luma_mean": 1.315273767742807
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 32352,
+              "rmse": 6.149100981302108,
+              "signed_RGB_mean": [
+                -3.490313894258173,
+                -3.5952755316012306,
+                -3.2844912496871665
+              ],
+              "signed_luma_mean": -3.5505220623479015
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 55600,
+              "rmse": 4.219208954626928,
+              "signed_RGB_mean": [
+                2.5804444936410986,
+                2.6148896539682966,
+                2.5181064945437925
+              ],
+              "signed_luma_mean": 2.600578868772285
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 71728,
+              "rmse": 3.1168349201305596,
+              "signed_RGB_mean": [
+                -0.4337914350459,
+                -0.45984345219386175,
+                -0.3878087950469446
+              ],
+              "signed_luma_mean": -0.4491038911021977
+            }
+          ]
+        },
+        "observed_kernel_proxy": {
+          "residual": {
+            "pixels": 63571,
+            "rmse": 4.494492234754785,
+            "signed_RGB_mean": [
+              0.16217533442476445,
+              0.04113022621509306,
+              0.39661773749313384
+            ],
+            "signed_luma_mean": 0.09253061453474373
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 63571,
+              "direction_rms": 0.45358191927877584,
+              "cosine_to_desired": 0.10783279730586783,
+              "signed_sensitivity": 1.0685030631594454,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 63571,
+              "direction_rms": 0.7326581978416836,
+              "cosine_to_desired": 0.16399205124250835,
+              "signed_sensitivity": 1.0060093547608597,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 63571,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 63571,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 63571,
+              "direction_rms": 5.696813968565386e-49,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 63571,
+              "direction_rms": 0.0076927025097868725,
+              "cosine_to_desired": 0.048660342485445915,
+              "signed_sensitivity": 28.429999881459786,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 63571,
+              "direction_rms": 41.622880258936554,
+              "cosine_to_desired": 0.1880199572082225,
+              "signed_sensitivity": 0.02030263721285487,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 204,
+              "rmse": 9.699298616037058,
+              "signed_RGB_mean": [
+                -3.111353609491797,
+                -3.5177398762282204,
+                -2.307102890867813
+              ],
+              "signed_luma_mean": -3.343934165577035
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 13932,
+              "rmse": 6.796570763341646,
+              "signed_RGB_mean": [
+                -2.1016043875149326,
+                -2.421166239260874,
+                -1.4786276955509405
+              ],
+              "signed_luma_mean": -2.28517610672383
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 24555,
+              "rmse": 3.779508833325577,
+              "signed_RGB_mean": [
+                1.1272249872148996,
+                1.1250614090476543,
+                1.1267214496177949
+              ],
+              "signed_luma_mean": 1.125641240695175
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 24880,
+              "rmse": 3.2981853904171516,
+              "signed_RGB_mean": [
+                0.5042165227833285,
+                0.37934540561445274,
+                0.7482970674824676
+              ],
+              "signed_luma_mean": 0.4325313151114262
+            }
+          ]
+        },
+        "estimated_kernel_proxy": {
+          "residual": {
+            "pixels": 57948,
+            "rmse": 3.625641759801709,
+            "signed_RGB_mean": [
+              0.10874401706135807,
+              0.19726189882614403,
+              -0.058783826753862276
+            ],
+            "signed_luma_mean": 0.1599564957760741
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 57948,
+              "direction_rms": 0.0038882246143409353,
+              "cosine_to_desired": 0.10673095209919292,
+              "signed_sensitivity": 99.52310768441106,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 57948,
+              "direction_rms": 0.0032723874306763425,
+              "cosine_to_desired": -0.01926069403293332,
+              "signed_sensitivity": -21.339886577590757,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 57948,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 57948,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 57948,
+              "direction_rms": 1.6356404743064193e-58,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 57948,
+              "direction_rms": 0.0019581986378315952,
+              "cosine_to_desired": 0.17316554639837017,
+              "signed_sensitivity": 320.6192795006971,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 57948,
+              "direction_rms": 38.42686121719166,
+              "cosine_to_desired": 0.5436416041249388,
+              "signed_sensitivity": 0.05129353894247158,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 12719,
+              "rmse": 5.075664264560045,
+              "signed_RGB_mean": [
+                -4.4896782061824805,
+                -4.414426438598872,
+                -4.637529047440504
+              ],
+              "signed_luma_mean": -4.446532972745512
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 23948,
+              "rmse": 3.880461453050814,
+              "signed_RGB_mean": [
+                3.3568175504233295,
+                3.448395873606454,
+                3.1851177190238973
+              ],
+              "signed_luma_mean": 3.4099176393368613
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 21281,
+              "rmse": 1.8579619510390029,
+              "signed_RGB_mean": [
+                -0.7980523139152932,
+                -0.705049668502933,
+                -0.9726456639030745
+              ],
+              "signed_luma_mean": -0.744142461785491
+            }
+          ]
+        },
+        "mixed_or_uncertain": {
+          "residual": {
+            "pixels": 67252,
+            "rmse": 8.087823192026041,
+            "signed_RGB_mean": [
+              0.541372513146933,
+              0.5400510410323615,
+              0.5400635445884767
+            ],
+            "signed_luma_mean": 0.5403328887606709
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 67252,
+              "direction_rms": 1.1145110785400711,
+              "cosine_to_desired": 0.09229374500026415,
+              "signed_sensitivity": 0.669760494682459,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 67252,
+              "direction_rms": 0.5602173912078452,
+              "cosine_to_desired": 0.0481904167951472,
+              "signed_sensitivity": 0.6957220120369183,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 67252,
+              "direction_rms": 1.7372732898729872,
+              "cosine_to_desired": 0.11858625088718701,
+              "signed_sensitivity": 0.5520746999172116,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 67252,
+              "direction_rms": 6.35077843185092,
+              "cosine_to_desired": 0.05433361994808099,
+              "signed_sensitivity": 0.06919477922877987,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 67252,
+              "direction_rms": 27.785208485581812,
+              "cosine_to_desired": -0.06189896023342172,
+              "signed_sensitivity": -0.01801778260537268,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 67252,
+              "direction_rms": 74.03162754481724,
+              "cosine_to_desired": -0.06945505318075919,
+              "signed_sensitivity": -0.007587840610132258,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 67252,
+              "direction_rms": 145.9046462684024,
+              "cosine_to_desired": -0.12463614929819858,
+              "signed_sensitivity": -0.006908862497801766,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 2288,
+              "rmse": 29.04578160825813,
+              "signed_RGB_mean": [
+                1.7940915384805285,
+                1.9346036421773316,
+                1.5068441345193586
+              ],
+              "signed_luma_mean": 1.8738465324784856
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 3884,
+              "rmse": 9.050653748305324,
+              "signed_RGB_mean": [
+                -1.4139378418422752,
+                -1.2716587738322918,
+                -1.6951780616009395
+              ],
+              "signed_luma_mean": -1.332485396268111
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 7644,
+              "rmse": 8.514609543915503,
+              "signed_RGB_mean": [
+                4.577297550636334,
+                4.64057451025751,
+                4.4528896176786965
+              ],
+              "signed_luma_mean": 4.613570979397857
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 14876,
+              "rmse": 6.921558655652805,
+              "signed_RGB_mean": [
+                1.4021187707457243,
+                1.3617057201642124,
+                1.4845540092120604
+              ],
+              "signed_luma_mean": 1.3791671811870965
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 5701,
+              "rmse": 6.649019804888887,
+              "signed_RGB_mean": [
+                -4.654423026793088,
+                -4.637006855015168,
+                -4.678984020534596
+              ],
+              "signed_luma_mean": -4.643740284485657
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 7097,
+              "rmse": 6.2632904458248015,
+              "signed_RGB_mean": [
+                4.98867656585111,
+                4.956995558735349,
+                5.08142549895528
+              ],
+              "signed_luma_mean": 4.972714782532038
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 25567,
+              "rmse": 3.7142071571176944,
+              "signed_RGB_mean": [
+                -1.0433976550784283,
+                -1.0723824787905496,
+                -1.0065908364911687
+              ],
+              "signed_luma_mean": -1.0614701486953373
+            }
+          ]
+        }
+      }
+    },
+    "upper-rim": {
+      "box": [
+        650,
+        369,
+        1270,
+        435
+      ],
+      "cohorts": {
+        "all": {
+          "residual": {
+            "pixels": 37001,
+            "rmse": 9.200722764724597,
+            "signed_RGB_mean": [
+              -0.17994258013523184,
+              -0.30843667460500845,
+              0.06668597428058502
+            ],
+            "signed_luma_mean": -0.25403497487119414
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 37001,
+              "direction_rms": 0.7065091264709781,
+              "cosine_to_desired": 0.07054596959299608,
+              "signed_sensitivity": 0.9187056247043579,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 37001,
+              "direction_rms": 0.5353192980217238,
+              "cosine_to_desired": 0.08635200638577087,
+              "signed_sensitivity": 1.4841625808546257,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 37001,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 37001,
+              "direction_rms": 8.527542656362733,
+              "cosine_to_desired": 0.061242295139560476,
+              "signed_sensitivity": 0.06607687604284322,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 37001,
+              "direction_rms": 22.550192013456325,
+              "cosine_to_desired": -0.10754000116733074,
+              "signed_sensitivity": -0.04387748611046606,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 37001,
+              "direction_rms": 57.57040057047413,
+              "cosine_to_desired": 0.037179480537252396,
+              "signed_sensitivity": 0.005941909202820005,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 37001,
+              "direction_rms": 121.14972164785098,
+              "cosine_to_desired": -0.003931865914617306,
+              "signed_sensitivity": -0.0002986057890716249,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 690,
+              "rmse": 49.66270510319328,
+              "signed_RGB_mean": [
+                4.839577997853791,
+                4.651888653506403,
+                5.221631850798925
+              ],
+              "signed_luma_mean": 4.732926866959177
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 1261,
+              "rmse": 10.603608262188619,
+              "signed_RGB_mean": [
+                -6.138974078868137,
+                -6.3078252263337635,
+                -5.794548664747204
+              ],
+              "signed_luma_mean": -6.234868904636021
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 2514,
+              "rmse": 8.360617316466314,
+              "signed_RGB_mean": [
+                0.04522037627019859,
+                -0.12652736959138747,
+                0.38394412384112864
+              ],
+              "signed_luma_mean": -0.053157756995386676
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 5050,
+              "rmse": 9.43092689585151,
+              "signed_RGB_mean": [
+                2.6156720169109873,
+                2.4513924819644135,
+                2.937531230272633
+              ],
+              "signed_luma_mean": 2.521417528721908
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 11377,
+              "rmse": 6.819481823147615,
+              "signed_RGB_mean": [
+                -1.9884816777562597,
+                -2.3250184845733677,
+                -1.3358617314997294
+              ],
+              "signed_luma_mean": -2.1820536418721335
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 16109,
+              "rmse": 2.891573664733152,
+              "signed_RGB_mean": [
+                0.43727173777634193,
+                0.47937129025086617,
+                0.3457556833204991
+              ],
+              "signed_luma_mean": 0.4607738785744098
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        },
+        "observed_kernel_proxy": {
+          "residual": {
+            "pixels": 27609,
+            "rmse": 4.956105089448392,
+            "signed_RGB_mean": [
+              -0.5809818414682549,
+              -0.6962904371309058,
+              -0.3631669276242255
+            ],
+            "signed_luma_mean": -0.6477243123066438
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 27609,
+              "direction_rms": 0.49181838034630543,
+              "cosine_to_desired": 0.2907938207537716,
+              "signed_sensitivity": 2.930359646183031,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 27609,
+              "direction_rms": 0.5531148744182027,
+              "cosine_to_desired": 0.02876738192446076,
+              "signed_sensitivity": 0.2577659263202661,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 27609,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 27609,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 27609,
+              "direction_rms": 6.020053547800936e-49,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 27609,
+              "direction_rms": 0.010430752467400948,
+              "cosine_to_desired": 0.05149069313808082,
+              "signed_sensitivity": 24.465472373006552,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 27609,
+              "direction_rms": 57.073092479936264,
+              "cosine_to_desired": 0.20268084926145913,
+              "signed_sensitivity": 0.017600370768616917,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 123,
+              "rmse": 10.811594729576525,
+              "signed_RGB_mean": [
+                -3.7510734723835455,
+                -4.019020279733146,
+                -3.2386592529653533
+              ],
+              "signed_luma_mean": -3.9057127223579866
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 11377,
+              "rmse": 6.819481823147615,
+              "signed_RGB_mean": [
+                -1.9884816777562597,
+                -2.3250184845733677,
+                -1.3358617314997294
+              ],
+              "signed_luma_mean": -2.1820536418721335
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 16109,
+              "rmse": 2.891573664733152,
+              "signed_RGB_mean": [
+                0.43727173777634193,
+                0.47937129025086617,
+                0.3457556833204991
+              ],
+              "signed_luma_mean": 0.4607738785744098
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        },
+        "estimated_kernel_proxy": {
+          "residual": {
+            "pixels": 0
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 0
+            },
+            "tested_ordinary_blur": {
+              "pixels": 0
+            },
+            "grazing_down": {
+              "pixels": 0
+            },
+            "grazing_up": {
+              "pixels": 0
+            },
+            "neutral_thin": {
+              "pixels": 0
+            },
+            "neutral_rim": {
+              "pixels": 0
+            },
+            "neutral_wide_rim": {
+              "pixels": 0
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        },
+        "mixed_or_uncertain": {
+          "residual": {
+            "pixels": 9392,
+            "rmse": 16.16467074031802,
+            "signed_RGB_mean": [
+              0.9989642518647078,
+              0.8317096764999212,
+              1.3302942332978245
+            ],
+            "signed_luma_mean": 0.9032658042232835
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 9392,
+              "direction_rms": 1.1204611149490957,
+              "cosine_to_desired": -0.015294906977437319,
+              "signed_sensitivity": -0.22065659574924149,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 9392,
+              "direction_rms": 0.4791953110299351,
+              "cosine_to_desired": 0.18638587962422445,
+              "signed_sensitivity": 6.287345275342073,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 9392,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 9392,
+              "direction_rms": 16.925892932765382,
+              "cosine_to_desired": 0.06918854996800079,
+              "signed_sensitivity": 0.0660768760428432,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 9392,
+              "direction_rms": 44.75874833042023,
+              "cosine_to_desired": -0.12149343402903252,
+              "signed_sensitivity": -0.04387748611046607,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 9392,
+              "direction_rms": 114.26860743886985,
+              "cosine_to_desired": 0.04199932307653941,
+              "signed_sensitivity": 0.005941310076887856,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 9392,
+              "direction_rms": 219.6533180610188,
+              "cosine_to_desired": -0.05232778496150116,
+              "signed_sensitivity": -0.00385089295231067,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 690,
+              "rmse": 49.66270510319328,
+              "signed_RGB_mean": [
+                4.839577997853791,
+                4.651888653506403,
+                5.221631850798925
+              ],
+              "signed_luma_mean": 4.732926866959177
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 1261,
+              "rmse": 10.603608262188619,
+              "signed_RGB_mean": [
+                -6.138974078868137,
+                -6.3078252263337635,
+                -5.794548664747204
+              ],
+              "signed_luma_mean": -6.234868904636021
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 2514,
+              "rmse": 8.360617316466314,
+              "signed_RGB_mean": [
+                0.04522037627019859,
+                -0.12652736959138747,
+                0.38394412384112864
+              ],
+              "signed_luma_mean": -0.053157756995386676
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 4927,
+              "rmse": 9.393863413576366,
+              "signed_RGB_mean": [
+                2.7746145164407676,
+                2.61292298119088,
+                3.091716622892538
+              ],
+              "signed_luma_mean": 2.6818675025158654
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        }
+      }
+    },
+    "d-stroke": {
+      "box": [
+        960,
+        450,
+        1120,
+        550
+      ],
+      "cohorts": {
+        "all": {
+          "residual": {
+            "pixels": 11840,
+            "rmse": 3.110433515488364,
+            "signed_RGB_mean": [
+              1.5931006397145826,
+              1.410230299578728,
+              1.9484754581054724
+            ],
+            "signed_luma_mean": 1.4879698343372414
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 11840,
+              "direction_rms": 0.0074516477187935816,
+              "cosine_to_desired": -0.09830232355058181,
+              "signed_sensitivity": -41.032916928017826,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 11840,
+              "direction_rms": 0.9706524252118814,
+              "cosine_to_desired": -0.012519847800692653,
+              "signed_sensitivity": -0.04011956617693207,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 11840,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 11840,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 11840,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 11840,
+              "direction_rms": 3.172205115230743e-88,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 11840,
+              "direction_rms": 0.00011669540802032194,
+              "cosine_to_desired": 0.1084240203710466,
+              "signed_sensitivity": 2889.9655313546405,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 11732,
+              "rmse": 3.1163023777621417,
+              "signed_RGB_mean": [
+                1.62503339883678,
+                1.439898839439502,
+                1.9862129418030152
+              ],
+              "signed_luma_mean": 1.5187023249580087
+            }
+          ]
+        },
+        "observed_kernel_proxy": {
+          "residual": {
+            "pixels": 6980,
+            "rmse": 3.394085331415903,
+            "signed_RGB_mean": [
+              2.1689390098553334,
+              1.9477505268203494,
+              2.604011413472088
+            ],
+            "signed_luma_mean": 2.0421572343298426
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 6980,
+              "direction_rms": 0.009702372682639402,
+              "cosine_to_desired": -0.12205447915559411,
+              "signed_sensitivity": -42.69711449827703,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 6980,
+              "direction_rms": 1.025205528235546,
+              "cosine_to_desired": -0.02783743021121826,
+              "signed_sensitivity": -0.09215968012464902,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 6980,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 6980,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 6980,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 6980,
+              "direction_rms": 4.1315156385258456e-88,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 6980,
+              "direction_rms": 0.00015198541256530472,
+              "cosine_to_desired": 0.12941118466658108,
+              "signed_sensitivity": 2889.9655314569663,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 6980,
+              "rmse": 3.394085331415903,
+              "signed_RGB_mean": [
+                2.1689390098553334,
+                1.9477505268203494,
+                2.604011413472088
+              ],
+              "signed_luma_mean": 2.0421572343298426
+            }
+          ]
+        },
+        "estimated_kernel_proxy": {
+          "residual": {
+            "pixels": 0
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 0
+            },
+            "tested_ordinary_blur": {
+              "pixels": 0
+            },
+            "grazing_down": {
+              "pixels": 0
+            },
+            "grazing_up": {
+              "pixels": 0
+            },
+            "neutral_thin": {
+              "pixels": 0
+            },
+            "neutral_rim": {
+              "pixels": 0
+            },
+            "neutral_wide_rim": {
+              "pixels": 0
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        },
+        "mixed_or_uncertain": {
+          "residual": {
+            "pixels": 4860,
+            "rmse": 2.6504631955156817,
+            "signed_RGB_mean": [
+              0.7660735155206649,
+              0.6382362283551644,
+              1.0069855468999211
+            ],
+            "signed_luma_mean": 0.6920381364054812
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 4860,
+              "direction_rms": 0.00027621304016357356,
+              "cosine_to_desired": 0.3030602219087465,
+              "signed_sensitivity": 2908.081253941746,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 4860,
+              "direction_rms": 0.886448419205822,
+              "cosine_to_desired": 0.020017203425850567,
+              "signed_sensitivity": 0.05985104131033329,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 4860,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 4860,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 4860,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 4860,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 4860,
+              "direction_rms": 3.143724098544195e-15,
+              "cosine_to_desired": -0.40742605766450934,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 4752,
+              "rmse": 2.6561161436020164,
+              "signed_RGB_mean": [
+                0.8261148035275414,
+                0.6939382380257151,
+                1.0787564324911194
+              ],
+              "signed_luma_mean": 0.7498228494918056
+            }
+          ]
+        }
+      }
+    },
+    "underside": {
+      "box": [
+        650,
+        650,
+        1270,
+        726
+      ],
+      "cohorts": {
+        "all": {
+          "residual": {
+            "pixels": 37001,
+            "rmse": 5.073945476177667,
+            "signed_RGB_mean": [
+              1.1814182060064038,
+              1.2930257471715214,
+              0.9671510745327504
+            ],
+            "signed_luma_mean": 1.2457698325552982
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 37001,
+              "direction_rms": 1.2977534344332742,
+              "cosine_to_desired": 0.10125800627798247,
+              "signed_sensitivity": 0.39589770232841226,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 37001,
+              "direction_rms": 0.09219142784179932,
+              "cosine_to_desired": -0.37697485961111277,
+              "signed_sensitivity": -20.74758931859478,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 37001,
+              "direction_rms": 2.282352864808134,
+              "cosine_to_desired": 0.27249946826860727,
+              "signed_sensitivity": 0.6057991582290024,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 37001,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 37001,
+              "direction_rms": 22.55019201345631,
+              "cosine_to_desired": -0.07271155078401655,
+              "signed_sensitivity": -0.016360589920754124,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 37001,
+              "direction_rms": 57.57040057047425,
+              "cosine_to_desired": -0.13886624329595304,
+              "signed_sensitivity": -0.01223892382167394,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 37001,
+              "direction_rms": 121.14972164785105,
+              "cosine_to_desired": -0.09939124626960226,
+              "signed_sensitivity": -0.004162665481371779,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 690,
+              "rmse": 12.960370825590333,
+              "signed_RGB_mean": [
+                2.7151885024015456,
+                3.213677429202674,
+                1.698887687921524
+              ],
+              "signed_luma_mean": 2.998330864044255
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 1261,
+              "rmse": 8.066132629878329,
+              "signed_RGB_mean": [
+                -1.2541959981990183,
+                -0.7587219811355567,
+                -2.255155557540558
+              ],
+              "signed_luma_mean": -0.9721022613796897
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 2514,
+              "rmse": 7.364451816925424,
+              "signed_RGB_mean": [
+                6.206541520101074,
+                6.40715390050231,
+                5.797758268854783
+              ],
+              "signed_luma_mean": 6.320505343824056
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 5050,
+              "rmse": 3.967518515254837,
+              "signed_RGB_mean": [
+                2.0490711348835786,
+                2.11066324873726,
+                1.936568222199336
+              ],
+              "signed_luma_mean": 2.0849991044159286
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 11377,
+              "rmse": 4.586183014936497,
+              "signed_RGB_mean": [
+                -4.063536495182503,
+                -3.9884378027337566,
+                -4.201631125209725
+              ],
+              "signed_luma_mean": -4.019796342631125
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 16109,
+              "rmse": 4.311929660148101,
+              "signed_RGB_mean": [
+                3.954405377150041,
+                4.046966244513721,
+                3.7807312101112767
+              ],
+              "signed_luma_mean": 4.0080656346283465
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        },
+        "observed_kernel_proxy": {
+          "residual": {
+            "pixels": 0
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 0
+            },
+            "tested_ordinary_blur": {
+              "pixels": 0
+            },
+            "grazing_down": {
+              "pixels": 0
+            },
+            "grazing_up": {
+              "pixels": 0
+            },
+            "neutral_thin": {
+              "pixels": 0
+            },
+            "neutral_rim": {
+              "pixels": 0
+            },
+            "neutral_wide_rim": {
+              "pixels": 0
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        },
+        "estimated_kernel_proxy": {
+          "residual": {
+            "pixels": 26880,
+            "rmse": 4.449431178646568,
+            "signed_RGB_mean": [
+              0.7168697895903495,
+              0.8026597097626932,
+              0.5569916303735226
+            ],
+            "signed_luma_mean": 0.7666835374021547
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 26880,
+              "direction_rms": 0.005636348108249148,
+              "cosine_to_desired": 0.1089461852111324,
+              "signed_sensitivity": 86.00401252072358,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 26880,
+              "direction_rms": 0.003341220204513199,
+              "cosine_to_desired": -0.006786629171858858,
+              "signed_sensitivity": -9.037608294835708,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 26880,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 26880,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 26880,
+              "direction_rms": 2.3967793564333355e-58,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 26880,
+              "direction_rms": 0.0027326048864798687,
+              "cosine_to_desired": 0.18093881092196856,
+              "signed_sensitivity": 294.61807329948005,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 26880,
+              "direction_rms": 52.291088356386155,
+              "cosine_to_desired": 0.5438641012526612,
+              "signed_sensitivity": 0.046277214055435736,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 10771,
+              "rmse": 4.647491336854378,
+              "signed_RGB_mean": [
+                -4.12515609287173,
+                -4.049492733678427,
+                -4.264401080609253
+              ],
+              "signed_luma_mean": -4.081095146491329
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 16109,
+              "rmse": 4.311929660148101,
+              "signed_RGB_mean": [
+                3.954405377150041,
+                4.046966244513721,
+                3.7807312101112767
+              ],
+              "signed_luma_mean": 4.0080656346283465
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        },
+        "mixed_or_uncertain": {
+          "residual": {
+            "pixels": 10121,
+            "rmse": 6.445202397990996,
+            "signed_RGB_mean": [
+              2.415195642352964,
+              2.5953712748416433,
+              2.0564787950149204
+            ],
+            "signed_luma_mean": 2.5181578983310606
+          },
+          "directions": {
+            "tested_inner_tangent": {
+              "pixels": 10121,
+              "direction_rms": 2.481328304631057,
+              "cosine_to_desired": 0.15196438860766873,
+              "signed_sensitivity": 0.39472456749692864,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "tested_ordinary_blur": {
+              "pixels": 10121,
+              "direction_rms": 0.17618878319155545,
+              "cosine_to_desired": -0.5674706347306876,
+              "signed_sensitivity": -20.75877379650917,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_down": {
+              "pixels": 10121,
+              "direction_rms": 4.363930325767757,
+              "cosine_to_desired": 0.4101756864523246,
+              "signed_sensitivity": 0.6057991582290023,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "grazing_up": {
+              "pixels": 10121,
+              "direction_rms": 0.0,
+              "cosine_to_desired": null,
+              "signed_sensitivity": null,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_thin": {
+              "pixels": 10121,
+              "direction_rms": 43.116675031615024,
+              "cosine_to_desired": -0.10944795762481466,
+              "signed_sensitivity": -0.016360589920754124,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_rim": {
+              "pixels": 10121,
+              "direction_rms": 110.07641306665887,
+              "cosine_to_desired": -0.20903453954272175,
+              "signed_sensitivity": -0.012239406045215404,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            },
+            "neutral_wide_rim": {
+              "pixels": 10121,
+              "direction_rms": 215.3972287355376,
+              "cosine_to_desired": -0.40296624787383484,
+              "signed_sensitivity": -0.012057717930506364,
+              "note": "Projection only, no parameter applied or optical fit; sensitivities across different bases have different units"
+            }
+          },
+          "depth_profile": [
+            {
+              "inward_native_px": [
+                0.75,
+                2
+              ],
+              "pixels": 690,
+              "rmse": 12.960370825590333,
+              "signed_RGB_mean": [
+                2.7151885024015456,
+                3.213677429202674,
+                1.698887687921524
+              ],
+              "signed_luma_mean": 2.998330864044255
+            },
+            {
+              "inward_native_px": [
+                2,
+                4
+              ],
+              "pixels": 1261,
+              "rmse": 8.066132629878329,
+              "signed_RGB_mean": [
+                -1.2541959981990183,
+                -0.7587219811355567,
+                -2.255155557540558
+              ],
+              "signed_luma_mean": -0.9721022613796897
+            },
+            {
+              "inward_native_px": [
+                4,
+                8
+              ],
+              "pixels": 2514,
+              "rmse": 7.364451816925424,
+              "signed_RGB_mean": [
+                6.206541520101074,
+                6.40715390050231,
+                5.797758268854783
+              ],
+              "signed_luma_mean": 6.320505343824056
+            },
+            {
+              "inward_native_px": [
+                8,
+                16
+              ],
+              "pixels": 5050,
+              "rmse": 3.967518515254837,
+              "signed_RGB_mean": [
+                2.0490711348835786,
+                2.11066324873726,
+                1.936568222199336
+              ],
+              "signed_luma_mean": 2.0849991044159286
+            },
+            {
+              "inward_native_px": [
+                16,
+                34
+              ],
+              "pixels": 606,
+              "rmse": 3.312285488894309,
+              "signed_RGB_mean": [
+                -2.968314239884367,
+                -2.9032518931544655,
+                -3.0859624954930234
+              ],
+              "signed_luma_mean": -2.930275853558086
+            },
+            {
+              "inward_native_px": [
+                34,
+                68
+              ],
+              "pixels": 0
+            },
+            {
+              "inward_native_px": [
+                68,
+                170
+              ],
+              "pixels": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limits": [
+    "Confidence truncates Gaussian tails and is conservative; outside estimated rectangle does not prove all RGB correct",
+    "Source pixels/masks/registration/epoch and accepted baseline remain unchanged",
+    "Reflection layers are an existing empirical unrefracted source-environment proxy, not Apple reflection rays",
+    "Geometry/filter directions use saved rejected SAME-baseline native material arrays, no reruns or new fits",
+    "Neutral basis projections are center-sampled diagnostic proxies, not fitted colors or exact native derivatives",
+    "Crops and cohort splits are advisory; they never replace full native gates or exclude bad score pixels",
+    "Projection signs/correlations cannot uniquely identify optics; compare cohort sample sizes and mixed support"
+  ]
+}

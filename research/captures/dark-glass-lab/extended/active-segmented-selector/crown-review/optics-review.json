@@ -1,0 +1,502 @@
+{
+  "trials": [
+    {
+      "experiment": 1,
+      "parameters": {
+        "sigma": 0.0,
+        "amplitude": 0.5267679257572784,
+        "band": 1.0,
+        "power": 4.616458746391088,
+        "tangent": 0.002461338720552479,
+        "tangent_band": 0.20039802184683514,
+        "core_x": 0.021436581086020326,
+        "core_y": 0.0465145514832763,
+        "post_sigma": 0.0,
+        "coupling": 0.18504198214059728,
+        "gamma": 1.0,
+        "rim_width": 0.1705705488126561,
+        "thin_width": 0.047778307705552935,
+        "spline": true,
+        "shape_dx": 0.0,
+        "shape_dy": 0.0,
+        "half_x_delta": 0.0,
+        "half_y_delta": 0.0,
+        "radius_delta": 0.0,
+        "c0": -1.335170816543767,
+        "c1": 0.6319267170504741,
+        "c2": 0.5190329799030309,
+        "c3": 0.458881885871582,
+        "c4": 0.3540609895350942,
+        "c5": 0.17771293581856842,
+        "c6": 0.0799759449691967,
+        "shadow": {
+          "opacity": 0.030792257176537066,
+          "sigma": 0.14035990212261495,
+          "offset": [
+            0.0081036453594727,
+            0.09999999835491878
+          ]
+        },
+        "blur_transition": 0.0,
+        "tangent_exponent": 4.008891334418213,
+        "cap_normal_gain": -0.007687273029034311,
+        "cap_tangent_fade": 0.0026703291691001206,
+        "cap_join_width": 0.0,
+        "crown_softness": 0.185
+      },
+      "material": [
+        0.3887747147148127,
+        1.0786557377038377,
+        1.14098057527147,
+        0.8,
+        0.19656585439041396,
+        0.14154414558668216,
+        0.03581886469621468,
+        -0.0019075183996716501,
+        -0.0015935262143638219,
+        -0.2296063755546895,
+        -0.016199105381860313,
+        0.0030244377806544335,
+        0.016436869060558357,
+        -0.0008006104299578034,
+        0.11430866862771172,
+        0.005780518429473127,
+        -0.10987558953934107,
+        -0.01457154412517763,
+        0.024023758599366563,
+        0.0015904753853724766,
+        0.18135116226981146,
+        0.8573053556442546,
+        0.9208352898321864
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 186310,
+            "rmse": 20.785757064819336
+          },
+          "rim": {
+            "pixels": 46479,
+            "rmse": 8.809503555297852
+          },
+          "held": {
+            "pixels": 45815,
+            "rmse": 23.501611709594727
+          },
+          "interior": {
+            "pixels": 139831,
+            "rmse": 23.449127197265625
+          },
+          "ssim": 0.9251732230186462,
+          "loss": 325.7155935976225
+        },
+        {
+          "glass": {
+            "pixels": 177426,
+            "rmse": 21.97673225402832
+          },
+          "rim": {
+            "pixels": 43962,
+            "rmse": 3.4900543689727783
+          },
+          "held": {
+            "pixels": 44654,
+            "rmse": 23.10652732849121
+          },
+          "interior": {
+            "pixels": 133464,
+            "rmse": 25.259719848632812
+          },
+          "ssim": 0.9187245965003967,
+          "loss": 341.73787624518985
+        }
+      ],
+      "support": [
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 0.0013311148086522463,
+          "gaussian_3sigma_observed_fraction": 0.0013311148086522463,
+          "source_gaussian_radius_native_px": 0
+        },
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 0.0013301319986924126,
+          "gaussian_3sigma_observed_fraction": 0.0013301319986924126,
+          "source_gaussian_radius_native_px": 0
+        }
+      ],
+      "numeric_gate": {
+        "accepted": false,
+        "epoch": "e0e3eb6530eac6186e427c2774126b2b0643c872bd4d91ea099cc9e74762fd71",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 17.56435196266832,
+            "candidate_error": 18.04759245987183,
+            "required_error_max": 17.476530202854978,
+            "relative_reduction": -0.027512571954297016,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false
+            },
+            "passed": false
+          },
+          "B": {
+            "previous_error": 16.311998723186953,
+            "candidate_error": 18.486153635767227,
+            "required_error_max": 16.230438729571016,
+            "relative_reduction": -0.13328562302360814,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": true
+        }
+      },
+      "evaluations": 143,
+      "seconds": 2.107809543609619,
+      "accepted": false
+    },
+    {
+      "experiment": 2,
+      "parameters": {
+        "sigma": 0.0,
+        "amplitude": 0.5267679257572784,
+        "band": 1.0,
+        "power": 4.616458746391088,
+        "tangent": 0.06884379454178928,
+        "tangent_band": 0.5725089050638112,
+        "core_x": 0.021436581086020326,
+        "core_y": 0.0465145514832763,
+        "post_sigma": 0.0,
+        "coupling": 0.0016248130447595144,
+        "gamma": 1.0,
+        "rim_width": 0.16676430536738227,
+        "thin_width": 0.049904907727718766,
+        "spline": true,
+        "shape_dx": 0.0,
+        "shape_dy": 0.0,
+        "half_x_delta": 0.0,
+        "half_y_delta": 0.0,
+        "radius_delta": 0.0,
+        "c0": -1.335170816543767,
+        "c1": 0.6319267170504741,
+        "c2": 0.5190329799030309,
+        "c3": 0.458881885871582,
+        "c4": 0.3540609895350942,
+        "c5": 0.17771293581856842,
+        "c6": 0.0799759449691967,
+        "shadow": {
+          "opacity": 0.030792257176537066,
+          "sigma": 0.14035990212261495,
+          "offset": [
+            0.0081036453594727,
+            0.09999999835491878
+          ]
+        },
+        "blur_transition": 0.0,
+        "tangent_exponent": 4.911374076091611,
+        "cap_normal_gain": -0.02318594725591587,
+        "cap_tangent_fade": 0.9999987467000022,
+        "cap_join_width": 0.0,
+        "crown_softness": 0.185
+      },
+      "material": [
+        0.41131640944732295,
+        1.1010231523988327,
+        1.1641883761083758,
+        0.8,
+        0.19686770703775464,
+        0.14110184005887036,
+        0.04380018524523475,
+        -2.2564729948479177e-05,
+        -0.000739876375651206,
+        -0.25486900921429106,
+        -0.010927451703971903,
+        2.7802905243284435e-05,
+        0.016509911339721513,
+        -0.0025944583412916503,
+        0.1161404037707964,
+        0.005445223631522431,
+        -0.10964577422747082,
+        -0.015418510279061593,
+        0.021874555850676537,
+        0.0019475095725009944,
+        0.18189719059907028,
+        0.8577573124022307,
+        0.9221511291526855
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 186310,
+            "rmse": 20.9178524017334
+          },
+          "rim": {
+            "pixels": 46479,
+            "rmse": 9.616713523864746
+          },
+          "held": {
+            "pixels": 45815,
+            "rmse": 24.044965744018555
+          },
+          "interior": {
+            "pixels": 139831,
+            "rmse": 23.50016212463379
+          },
+          "ssim": 0.9241873025894165,
+          "loss": 334.0339380705175
+        },
+        {
+          "glass": {
+            "pixels": 177426,
+            "rmse": 21.978729248046875
+          },
+          "rim": {
+            "pixels": 43962,
+            "rmse": 3.3358893394470215
+          },
+          "held": {
+            "pixels": 44654,
+            "rmse": 23.10860824584961
+          },
+          "interior": {
+            "pixels": 133464,
+            "rmse": 25.268888473510742
+          },
+          "ssim": 0.9187029600143433,
+          "loss": 341.48362485677666
+        }
+      ],
+      "support": [
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 0.0013257474102302614,
+          "gaussian_3sigma_observed_fraction": 0.0013257474102302614,
+          "source_gaussian_radius_native_px": 0
+        },
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 0.0013301319986924126,
+          "gaussian_3sigma_observed_fraction": 0.0013301319986924126,
+          "source_gaussian_radius_native_px": 0
+        }
+      ],
+      "numeric_gate": {
+        "accepted": false,
+        "epoch": "e0e3eb6530eac6186e427c2774126b2b0643c872bd4d91ea099cc9e74762fd71",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 17.56435196266832,
+            "candidate_error": 18.276595363210223,
+            "required_error_max": 17.476530202854978,
+            "relative_reduction": -0.04055050832821627,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false
+            },
+            "passed": false
+          },
+          "B": {
+            "previous_error": 16.311998723186953,
+            "candidate_error": 18.479275550106845,
+            "required_error_max": 16.230438729571016,
+            "relative_reduction": -0.1328639649682648,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": true
+        }
+      },
+      "evaluations": 997,
+      "seconds": 4.283518552780151,
+      "accepted": false
+    },
+    {
+      "experiment": 3,
+      "parameters": {
+        "sigma": 0.0,
+        "amplitude": 0.5267679257572784,
+        "band": 1.0,
+        "power": 4.616458746391088,
+        "tangent": 0.06884379454178928,
+        "tangent_band": 0.5725089050638112,
+        "core_x": 0.021436581086020326,
+        "core_y": 0.0465145514832763,
+        "post_sigma": 0.0,
+        "coupling": 0.0016248130447595144,
+        "gamma": 1.0,
+        "rim_width": 0.16676430536738227,
+        "thin_width": 0.049904907727718766,
+        "spline": true,
+        "shape_dx": 0.0,
+        "shape_dy": 0.0,
+        "half_x_delta": 0.0,
+        "half_y_delta": 0.0,
+        "radius_delta": 0.0,
+        "c0": -1.2400352856401555,
+        "c1": 0.6341098182704564,
+        "c2": 0.518943708840736,
+        "c3": 0.4591098340704609,
+        "c4": 0.35505635632255644,
+        "c5": 0.17433241775719907,
+        "c6": 0.0799759449691967,
+        "shadow": {
+          "opacity": 0.030792257176537066,
+          "sigma": 0.14035990212261495,
+          "offset": [
+            0.0081036453594727,
+            0.09999999835491878
+          ]
+        },
+        "blur_transition": 0.0,
+        "tangent_exponent": 4.911374076091611,
+        "cap_normal_gain": -0.02318594725591587,
+        "cap_tangent_fade": 0.9999987467000022,
+        "cap_join_width": 0.0,
+        "crown_softness": 0.185
+      },
+      "material": [
+        0.40874790988439436,
+        1.0984819116931572,
+        1.161706978320491,
+        0.8,
+        0.19705857858945586,
+        0.14124608576759912,
+        0.044377578204078116,
+        0.002987568843895637,
+        -0.0002646613914977411,
+        -0.25286125001578824,
+        -0.010844897656305991,
+        2.8560198769348994e-06,
+        0.01718592397309683,
+        -0.0034577772312504185,
+        0.11646002478187038,
+        0.005604833082259385,
+        -0.11001876430511469,
+        -0.015474035663414359,
+        0.02114815875140903,
+        0.002022652974253261,
+        0.18167075691480378,
+        0.8573771571959374,
+        0.9218234513352666
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 186310,
+            "rmse": 20.965280532836914
+          },
+          "rim": {
+            "pixels": 46479,
+            "rmse": 9.727593421936035
+          },
+          "held": {
+            "pixels": 45815,
+            "rmse": 24.226917266845703
+          },
+          "interior": {
+            "pixels": 139831,
+            "rmse": 23.541269302368164
+          },
+          "ssim": 0.9238492250442505,
+          "loss": 336.0679136091333
+        },
+        {
+          "glass": {
+            "pixels": 177426,
+            "rmse": 21.971158981323242
+          },
+          "rim": {
+            "pixels": 43962,
+            "rmse": 3.2258598804473877
+          },
+          "held": {
+            "pixels": 44654,
+            "rmse": 23.104494094848633
+          },
+          "interior": {
+            "pixels": 133464,
+            "rmse": 25.264841079711914
+          },
+          "ssim": 0.9187262654304504,
+          "loss": 341.0341304782907
+        }
+      ],
+      "support": [
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 0.0012720734260104128,
+          "gaussian_3sigma_observed_fraction": 0.0012720734260104128,
+          "source_gaussian_radius_native_px": 0
+        },
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 0.0012399535581030965,
+          "gaussian_3sigma_observed_fraction": 0.0012399535581030965,
+          "source_gaussian_radius_native_px": 0
+        }
+      ],
+      "numeric_gate": {
+        "accepted": false,
+        "epoch": "e0e3eb6530eac6186e427c2774126b2b0643c872bd4d91ea099cc9e74762fd71",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 17.56435196266832,
+            "candidate_error": 18.332155181787364,
+            "required_error_max": 17.476530202854978,
+            "relative_reduction": -0.043713723156479256,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false
+            },
+            "passed": false
+          },
+          "B": {
+            "previous_error": 16.311998723186953,
+            "candidate_error": 18.467109424008154,
+            "required_error_max": 16.230438729571016,
+            "relative_reduction": -0.1321181258896118,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": true
+        }
+      },
+      "evaluations": 183,
+      "seconds": 2.151411294937134,
+      "accepted": false
+    }
+  ],
+  "review_due": true,
+  "qualifying_passes": 0,
+  "limits": "Crown geometry from silhouette. No ordinary blur; same source, material law and parameters on A/B. No independent replay or visual acceptance yet. Private sharp seed is not reset as acceptance baseline."
+}

@@ -1,0 +1,75 @@
+{
+  "accepted_original_epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "UNADOPTED_numerical_comparator_epoch": "e724a4a9cc51aea9acbe75a3bf103122833943180a24d05f2da2b517e799cccf",
+  "old_E": 6.870490597949865,
+  "full_fraction_E_protocol_only": 6.8704572100176815,
+  "E_delta_is_NOT_optical_gain": true,
+  "new_scores": {
+    "glass": {
+      "rmse": 5.843090534210205,
+      "pixels": 188771
+    },
+    "rim": {
+      "rmse": 8.813623428344727,
+      "pixels": 61248
+    },
+    "shadow": 11.469441853272365
+  },
+  "old_foreground": {
+    "archivebox": 13.242044387461515,
+    "plus": 3.667139623528374
+  },
+  "new_foreground": {
+    "archivebox": 13.241999757232657,
+    "plus": 3.6675543196696117
+  },
+  "advisory_crops": {
+    "upper": {
+      "conditional_RMSE": 9.200677871704102,
+      "complete_RMSE": 8.964339923470666
+    },
+    "d": {
+      "conditional_RMSE": 3.1094658374786377,
+      "complete_RMSE": 3.109465901515547
+    },
+    "underside": {
+      "conditional_RMSE": 5.073972225189209,
+      "complete_RMSE": 5.062337886615093
+    }
+  },
+  "source_unchanged_sha256": {
+    "source.png": "6c68d31ac994001701ae3763d67f494bca91d03fda950789dddf01cbb60ea21b",
+    "target.png": "5bb59714854d0bd019d689b3e8c444dd82b057d6abdc9275ca88a8295692bbf8"
+  },
+  "model_sha256": "d547dbe26b60941711b1ab1db1171687b8b94fbcad428bf15d7d091e39f863e1",
+  "coverage_exact": true,
+  "gate_expected_protocol_refusal": {
+    "accepted": false,
+    "expected_protocol_epoch_refusal": true,
+    "reason": "Epoch mismatch: remeasure source/protocol changes separately"
+  },
+  "cohorts": {
+    "all": {
+      "pixels": 188771,
+      "material_change_RMS_255": 0.003168693045154214,
+      "material_change_max_255": 0.03801316022872925
+    },
+    "observed_kernel_proxy": {
+      "pixels": 63571,
+      "material_change_RMS_255": 0.0037874069530516863,
+      "material_change_max_255": 0.026720166206359863
+    },
+    "estimated_kernel_proxy": {
+      "pixels": 57948,
+      "material_change_RMS_255": 1.763604632287752e-05,
+      "material_change_max_255": 0.0001671910285949707
+    },
+    "mixed_or_uncertain": {
+      "pixels": 67252,
+      "material_change_RMS_255": 0.0038240847643464804,
+      "material_change_max_255": 0.03801316022872925
+    }
+  },
+  "new_native_protocol_comparison_renders": 1,
+  "new_optical_trials_or_passes": 0
+}

@@ -1,0 +1,301 @@
+{
+  "method": "Sensitivity to recorded exposed-track color ranges, not an optical pass.\n\nFrozen reference files/hashes/masks/recipes are unchanged. Only the in-memory\nmodeled track color is perturbed, within prior recorded componentwise5/95\npercentiles. These are not joint confidence intervals or verified hidden RGB.\nReported scores are conditional sensitivity, never a new scoring epoch.\n",
+  "baseline": "Proposed existing-parameter joint settlement; not accepted by these sensitivity checks",
+  "observations": [
+    {
+      "observation": "A",
+      "trials": [
+        {
+          "label": "baseline",
+          "track_rgb_255": [
+            121.0,
+            192.0,
+            132.0
+          ],
+          "E": 14.075942720072991,
+          "scores": {
+            "glass": {
+              "pixels": 240456,
+              "rmse": 11.155917167663574
+            },
+            "rim": {
+              "pixels": 70466,
+              "rmse": 19.23659896850586
+            },
+            "held": {
+              "pixels": 61420,
+              "rmse": 12.677449226379395
+            },
+            "interior": {
+              "pixels": 169990,
+              "rmse": 4.759103775024414
+            },
+            "loss": 198.1321634587758
+          }
+        },
+        {
+          "label": "low",
+          "track_rgb_255": [
+            120.0,
+            190.0,
+            132.0
+          ],
+          "E": 14.085944207522676,
+          "scores": {
+            "glass": {
+              "pixels": 240456,
+              "rmse": 11.17473030090332
+            },
+            "rim": {
+              "pixels": 70466,
+              "rmse": 19.235523223876953
+            },
+            "held": {
+              "pixels": 61420,
+              "rmse": 12.700233459472656
+            },
+            "interior": {
+              "pixels": 169990,
+              "rmse": 4.822913646697998
+            },
+            "loss": 198.41382421744163
+          }
+        },
+        {
+          "label": "half-low",
+          "track_rgb_255": [
+            120.5,
+            191.0,
+            132.0
+          ],
+          "E": 14.075079078389884,
+          "scores": {
+            "glass": {
+              "pixels": 240456,
+              "rmse": 11.158355712890625
+            },
+            "rim": {
+              "pixels": 70466,
+              "rmse": 19.231191635131836
+            },
+            "held": {
+              "pixels": 61420,
+              "rmse": 12.6823091506958
+            },
+            "interior": {
+              "pixels": 169990,
+              "rmse": 4.776218891143799
+            },
+            "loss": 198.1078510629286
+          }
+        },
+        {
+          "label": "half-high",
+          "track_rgb_255": [
+            121.5,
+            192.5,
+            132.5
+          ],
+          "E": 14.08210271318403,
+          "scores": {
+            "glass": {
+              "pixels": 240456,
+              "rmse": 11.16256332397461
+            },
+            "rim": {
+              "pixels": 70466,
+              "rmse": 19.242630004882812
+            },
+            "held": {
+              "pixels": 61420,
+              "rmse": 12.681554794311523
+            },
+            "interior": {
+              "pixels": 169990,
+              "rmse": 4.771022796630859
+            },
+            "loss": 198.30561682466504
+          }
+        },
+        {
+          "label": "high",
+          "track_rgb_255": [
+            122.0,
+            193.0,
+            133.0
+          ],
+          "E": 14.093209320790926,
+          "scores": {
+            "glass": {
+              "pixels": 240456,
+              "rmse": 11.175283432006836
+            },
+            "rim": {
+              "pixels": 70466,
+              "rmse": 19.252504348754883
+            },
+            "held": {
+              "pixels": 61420,
+              "rmse": 12.691285133361816
+            },
+            "interior": {
+              "pixels": 169990,
+              "rmse": 4.79656457901001
+            },
+            "loss": 198.61854895962824
+          }
+        }
+      ],
+      "source_file_sha256": "bbd52a46c6c0e5008d4d9e746c9ea5c17acad781e1c2391607b8b7b5f6c64002",
+      "direct_observed_pixels_preserved": true
+    },
+    {
+      "observation": "B",
+      "trials": [
+        {
+          "label": "baseline",
+          "track_rgb_255": [
+            190.0,
+            195.0,
+            189.0
+          ],
+          "E": 15.317415659821096,
+          "scores": {
+            "glass": {
+              "pixels": 208969,
+              "rmse": 13.641358375549316
+            },
+            "rim": {
+              "pixels": 60968,
+              "rmse": 18.651412963867188
+            },
+            "held": {
+              "pixels": 53183,
+              "rmse": 13.763863563537598
+            },
+            "interior": {
+              "pixels": 148001,
+              "rmse": 10.928814888000488
+            },
+            "loss": 234.62322249573253
+          }
+        },
+        {
+          "label": "low",
+          "track_rgb_255": [
+            188.0,
+            193.0,
+            187.0
+          ],
+          "E": 15.698787378871238,
+          "scores": {
+            "glass": {
+              "pixels": 208969,
+              "rmse": 14.062018394470215
+            },
+            "rim": {
+              "pixels": 60968,
+              "rmse": 18.97662353515625
+            },
+            "held": {
+              "pixels": 53183,
+              "rmse": 14.20123291015625
+            },
+            "interior": {
+              "pixels": 148001,
+              "rmse": 11.439071655273438
+            },
+            "loss": 246.4519251670069
+          }
+        },
+        {
+          "label": "half-low",
+          "track_rgb_255": [
+            189.0,
+            194.0,
+            188.0
+          ],
+          "E": 15.495799869570323,
+          "scores": {
+            "glass": {
+              "pixels": 208969,
+              "rmse": 13.837825775146484
+            },
+            "rim": {
+              "pixels": 60968,
+              "rmse": 18.804256439208984
+            },
+            "held": {
+              "pixels": 53183,
+              "rmse": 13.96939468383789
+            },
+            "interior": {
+              "pixels": 148001,
+              "rmse": 11.167069435119629
+            },
+            "loss": 240.11981359777565
+          }
+        },
+        {
+          "label": "half-high",
+          "track_rgb_255": [
+            190.5,
+            195.49999999999997,
+            189.5
+          ],
+          "E": 15.237718643143888,
+          "scores": {
+            "glass": {
+              "pixels": 208969,
+              "rmse": 13.554001808166504
+            },
+            "rim": {
+              "pixels": 60968,
+              "rmse": 18.582284927368164
+            },
+            "held": {
+              "pixels": 53183,
+              "rmse": 13.671426773071289
+            },
+            "interior": {
+              "pixels": 148001,
+              "rmse": 10.82335090637207
+            },
+            "loss": 232.1880694476148
+          }
+        },
+        {
+          "label": "high",
+          "track_rgb_255": [
+            191.0,
+            196.0,
+            190.0
+          ],
+          "E": 15.164557032358942,
+          "scores": {
+            "glass": {
+              "pixels": 208969,
+              "rmse": 13.474191665649414
+            },
+            "rim": {
+              "pixels": 60968,
+              "rmse": 18.518108367919922
+            },
+            "held": {
+              "pixels": 53183,
+              "rmse": 13.586163520812988
+            },
+            "interior": {
+              "pixels": 148001,
+              "rmse": 10.72753620147705
+            },
+            "loss": 229.96378998766704
+          }
+        }
+      ],
+      "source_file_sha256": "8d4176c394424213d60d7fdbc9d3236c03a726407731f93e87bd0cfccb1e892b",
+      "direct_observed_pixels_preserved": true
+    }
+  ],
+  "limits": "The empirical percentiles contain measurement/encoding/lighting variation; varying all channels together is a stress test, not a joint uncertainty distribution. No input changes adopted and no score improvements counted."
+}

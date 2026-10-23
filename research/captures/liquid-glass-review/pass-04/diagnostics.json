@@ -1,0 +1,322 @@
+{
+  "icon_parameters": [
+    0.9999999999999285,
+    0.9999999999999999,
+    0.4829334270156419,
+    11.731766541351298,
+    8.166089277320348,
+    5.294455609674747
+  ],
+  "icon_training_rmse": 3.022585485085071,
+  "icon_withheld_rmse": 2.9094451497946623,
+  "toolbar": {
+    "model": "tensor",
+    "parameters": {
+      "coefficients": [
+        0.9180036027973915,
+        1.5150856266302508,
+        1.085822474823523,
+        0.783477673025246,
+        0.4878329850763419,
+        0.1286226062453273,
+        0.0011939158137037609
+      ],
+      "core_x": 0.0011986333630788215,
+      "core_y": 0.0029007818254599416,
+      "tangent": 0.19928550849212562,
+      "tangent_band": 0.40361651491050377,
+      "tensor": true
+    },
+    "sigma": 11.0,
+    "rim_width": 5.449582717221569,
+    "blur_transition": 3.0467426505841964,
+    "material": [
+      0.29594431029673285,
+      0.28896638148469694,
+      0.3099884391198181,
+      0.40551985553194003,
+      0.4089050817523047,
+      0.39855919076434054,
+      -0.013231978974221952,
+      -0.039734761940994984,
+      0.04287281802992216,
+      0.05239229687809742,
+      0.059253032680357955,
+      -0.04442713214541931,
+      0.18462719542148856,
+      -0.03367091728900438,
+      0.022965458999240924,
+      0.0025982875460498337,
+      0.06745132318031079,
+      -0.017346049366512118,
+      -0.014966145049336849,
+      0.012531012452486322,
+      0.5671252693277675,
+      0.5615518040168006,
+      0.5783931727092605
+    ],
+    "fit_loss": 0.0016525855279562478,
+    "seed": 3301,
+    "search_iterations": 80,
+    "fit_subpixels_per_axis": 2,
+    "refinement_losses": [
+      0.003603989549137328,
+      0.003603989549137328,
+      0.003603989549137328
+    ],
+    "sampling": "native-grid, deterministic 6500 subset; outer 4px weight 2.5, other rim 1.3",
+    "scores": {
+      "train": {
+        "pixels": 141761,
+        "rmse": 6.171090126037598,
+        "mae": 4.090258598327637,
+        "opponent_chroma_rmse": 0.6664921045303345
+      },
+      "held_blocks": {
+        "pixels": 47010,
+        "rmse": 5.978177070617676,
+        "mae": 4.392732620239258,
+        "opponent_chroma_rmse": 0.6366292238235474
+      },
+      "all_glass": {
+        "pixels": 188771,
+        "rmse": 6.123616695404053,
+        "mae": 4.165584087371826,
+        "opponent_chroma_rmse": 0.6591817736625671
+      },
+      "rim": {
+        "pixels": 61248,
+        "rmse": 8.984253883361816,
+        "mae": 6.047589302062988,
+        "opponent_chroma_rmse": 0.824112594127655
+      },
+      "outer_rim": {
+        "pixels": 6172,
+        "rmse": 19.592098236083984,
+        "mae": 10.524581909179688,
+        "opponent_chroma_rmse": 1.1461573839187622
+      },
+      "interior": {
+        "pixels": 127523,
+        "rmse": 4.091632843017578,
+        "mae": 3.26167631149292,
+        "opponent_chroma_rmse": 0.5630471706390381
+      },
+      "ssim": 0.9805347919464111,
+      "gradient_mae": 3.4093117713928223,
+      "selection_loss": 0.0016523351678079045
+    },
+    "material_refit_subpixels": 2,
+    "material_lighting_bound": 4,
+    "material_refit_loss": 0.0018490153155411887,
+    "role": "Tensor map refinement, not a recovered 3D body"
+  },
+  "slider_new": {
+    "model": "solid",
+    "parameters": {
+      "height": 1.9526333083056182,
+      "gap": 0.7043875823627661,
+      "shoulder": 1,
+      "ior": 1.0277178042982889,
+      "rear": 1,
+      "beta": 0.5,
+      "crown_x": 0.6,
+      "crown_y": 0,
+      "cross_curvature": 1,
+      "cross_section_power": 1.5883384969274084
+    },
+    "sigma": 0.0,
+    "rim_width": 4.0,
+    "ray_bounces": 32,
+    "intersection_steps": 30,
+    "material": [
+      0.8505400175650836,
+      0.797163087497246,
+      0.6653343281392485,
+      0.11616001910508325,
+      0.1839847100611791,
+      0.3148918838499677,
+      0.5186080828907443,
+      -0.7040195142311708,
+      2.6393602697118195,
+      0.06673835223079662,
+      0.4055003176053723,
+      -1.4520092129869935,
+      2.434251798917605,
+      -0.02225175463473837,
+      0.2692977532285161,
+      -1.6968993237891,
+      2.755237571632983,
+      0.07463810340053163,
+      0.018267798489221297,
+      0.020587533602415765,
+      -0.01436411768778059,
+      -0.005927941018683209,
+      0.015321090808469833,
+      0.8759213678781022,
+      0.800773388055675,
+      0.6728915993620282
+    ],
+    "fit_loss": 0.004570974874753722,
+    "ray_diagnostics": {
+      "untraced_energy_mean": 1.1850523521984067e-06,
+      "untraced_energy_max": 0.00245665541557968,
+      "unknown_background_energy_mean": 2.4227822027973753e-05,
+      "unknown_background_energy_max": 0.004894938215207647
+    },
+    "seed": 3662,
+    "role": "Preferred crown-0.6 shape held fixed; effective height/gap/index fitted. Shape preference is provisional.",
+    "scores": {
+      "train": {
+        "pixels": 16850,
+        "rmse": 11.947572708129883,
+        "mae": 5.267472743988037,
+        "opponent_chroma_rmse": 9.661381721496582
+      },
+      "held_blocks": {
+        "pixels": 5796,
+        "rmse": 10.080297470092773,
+        "mae": 4.98505973815918,
+        "opponent_chroma_rmse": 8.750622749328613
+      },
+      "all_glass": {
+        "pixels": 22646,
+        "rmse": 11.49857234954834,
+        "mae": 5.195192813873291,
+        "opponent_chroma_rmse": 9.43665599822998
+      },
+      "rim": {
+        "pixels": 5866,
+        "rmse": 13.764361381530762,
+        "mae": 6.907820701599121,
+        "opponent_chroma_rmse": 9.601981163024902
+      },
+      "outer_rim": {
+        "pixels": 1922,
+        "rmse": 16.120132446289062,
+        "mae": 10.262221336364746,
+        "opponent_chroma_rmse": 9.727893829345703
+      },
+      "interior": {
+        "pixels": 16780,
+        "rmse": 10.592774391174316,
+        "mae": 4.596487045288086,
+        "opponent_chroma_rmse": 9.378173828125
+      },
+      "ssim": 0.9648994207382202,
+      "gradient_mae": 8.2708158493042,
+      "selection_loss": 0.004473455943989951
+    }
+  },
+  "slider_exterior": {
+    "parameters": {
+      "contact_opacity": 0.07195139944026338,
+      "contact_spread_px": 2.9999999999999996,
+      "contact_sigma_px": 7.999999999999999,
+      "halo_strength": 1.8721062569740017,
+      "halo_sigma_px": 38.135559293178424
+    },
+    "source_derived_chroma": [
+      -0.017444107508659358,
+      0.00252398493289948,
+      0.02636375668048859
+    ],
+    "scores": {
+      "training_rmse": 6.135277793618522,
+      "withheld_rmse": 7.162555503140756,
+      "outer_8px_rmse": 12.952182895108937
+    },
+    "unmodified_background_scores": {
+      "training_rmse": 8.024866104125977,
+      "withheld_rmse": 8.831151008605957,
+      "outer_8px_rmse": 21.177200317382812
+    },
+    "formulas": {
+      "contact": "alpha_c*exp(-0.5*(max(d-spread,0)/sigma_c)^2)",
+      "halo": "strength*exp(-0.5*(max(d,0)/sigma_h)^2)*source_chroma",
+      "output": "clip(background*(1-contact)+halo,0,1)"
+    },
+    "limits": "Exterior-only approximation in encoded RGB; hue comes from mean source under lens minus neighboring page, projected off neutral luma. No recovered Apple lighting rig or physical scattering claim. Interior is composed separately; no reference exterior pixels need be retained in this crop."
+  },
+  "playback": {
+    "model": "single-turn-phase-control",
+    "parameters": {
+      "amplitude": 0.6338092221139378,
+      "band": 0.09445809156460266,
+      "power": 2.10022237760162
+    },
+    "sigma": 0.5,
+    "rim_width": 11.999722243264221,
+    "material": [
+      0.8853375039382628,
+      0.8739139303953917,
+      0.8726988845274525,
+      0.06720573586347557,
+      0.0568629910033272,
+      0.048211278104950864,
+      -0.07743602581890278,
+      -0.13582045230735357,
+      -0.09557942813857251,
+      0.017180927893189167,
+      0.004344494139017303,
+      0.026727230149273987,
+      0.11470545419570037,
+      0.020699586063734447,
+      -0.04248564996980731,
+      -0.017362433218174194,
+      0.07521078255715721,
+      -0.1513495169707272,
+      -0.09256519150113504,
+      -0.008462240929695232,
+      0.996512079578769,
+      1.0214902295658694,
+      1.0545887735422994
+    ],
+    "fit_loss": 0.0031103071012898325,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 8.491089820861816,
+        "mae": 4.131499290466309,
+        "opponent_chroma_rmse": 1.8118174076080322
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 9.071847915649414,
+        "mae": 4.773776531219482,
+        "opponent_chroma_rmse": 1.843954086303711
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 8.640959739685059,
+        "mae": 4.293177604675293,
+        "opponent_chroma_rmse": 1.8199604749679565
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 11.826961517333984,
+        "mae": 6.101227283477783,
+        "opponent_chroma_rmse": 2.0854175090789795
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 24.996627807617188,
+        "mae": 16.32029914855957,
+        "opponent_chroma_rmse": 4.0704665184021
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 3.200752019882202,
+        "mae": 2.507017135620117,
+        "opponent_chroma_rmse": 1.5126454830169678
+      },
+      "ssim": 0.9459496736526489,
+      "gradient_mae": 7.476745128631592,
+      "selection_loss": 0.0031141916404254103
+    },
+    "seed": 3461,
+    "outer_source_derivative": -13.092390491539431,
+    "sampled_derivative_sign_changes": 1,
+    "limits": "Radial phase-map approximation with one or zero derivative sign changes, no outer return. It can retain an inverted rim; this distinguishes removal of the outer mirrored strip from global noninversion. No recovered solid claim."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "stage": "SAVED_RESIDUAL_MODEL_REVIEW_NO_FIT",
+  "residuals": {
+    "glass": {
+      "pixels": 1345,
+      "signed_RGB_mean": [
+        -0.8807035420907031,
+        -0.702264891016439,
+        0.552320857251887
+      ],
+      "signed_neutral_mean": -0.3435491919517517,
+      "RGB_RMSE": 2.9372388009459334
+    },
+    "rim": {
+      "pixels": 544,
+      "signed_RGB_mean": [
+        -1.527023920789361,
+        -1.527023920789361,
+        -0.43463118374347687
+      ],
+      "signed_neutral_mean": -1.162893008440733,
+      "RGB_RMSE": 3.9105236348667853
+    },
+    "held": {
+      "pixels": 143,
+      "signed_RGB_mean": [
+        0.17550838368755955,
+        0.17550838368755955,
+        1.7868308941801112
+      ],
+      "signed_neutral_mean": 0.7126158871850767,
+      "RGB_RMSE": 1.957437670313971
+    },
+    "interior": {
+      "pixels": 801,
+      "signed_RGB_mean": [
+        -0.4417543710394298,
+        -0.14212892073370545,
+        1.2226103832212727
+      ],
+      "signed_neutral_mean": 0.21290903048271245,
+      "RGB_RMSE": 2.0250802305161364
+    },
+    "SSIM_safe": {
+      "pixels": 94,
+      "signed_RGB_mean": [
+        -0.6577479395460575,
+        -0.6577479395460575,
+        0.8219727017778031
+      ],
+      "signed_neutral_mean": -0.1645077257714373,
+      "RGB_RMSE": 1.4196874367945593
+    }
+  },
+  "findings": [
+    "Increasing rim amplitude and width improve squared RGB error but strict SSIM worsens; not evidence to waive SSIM or alter scoring masks.",
+    "Glyph residual now improves from a separate one-gray reconstruction adjustment; do not conflate with material/refraction identification.",
+    "Smooth locally estimated header remains unknown under control and does not identify refraction or ordinary blur; sourceupper3.785/posep95.463/AA and weight uncertainty retained.",
+    "Existing common neutral material bias could be considered only if supported by signed residuals and original nonlinear guards, not authorized here. No per-channel/background/crop coefficients or new operator proposed."
+  ],
+  "body_renders": 0,
+  "additional_optical_or_source_fits": 0,
+  "source_or_mask_changes": 0,
+  "new_epoch_count": 1
+}

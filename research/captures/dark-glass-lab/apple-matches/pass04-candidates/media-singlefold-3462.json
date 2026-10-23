@@ -1,0 +1,81 @@
+{
+  "model": "single-turn-phase-control",
+  "parameters": {
+    "amplitude": 0.6339318804427977,
+    "band": 0.09447686644259391,
+    "power": 2.1002233644028374
+  },
+  "sigma": 0.5,
+  "rim_width": 11.999722243264221,
+  "material": [
+    0.8853892822588536,
+    0.8739837611283344,
+    0.872793362484627,
+    0.0671993585702847,
+    0.05685528182248509,
+    0.04820359194870996,
+    -0.07739351931087136,
+    -0.13574905477463547,
+    -0.09535107407629329,
+    0.017192746153137296,
+    0.004328357234685469,
+    0.02667095249848848,
+    0.11464831328495066,
+    0.020687796760201924,
+    -0.04249775162081807,
+    -0.017358105227260955,
+    0.07521527641914748,
+    -0.15130550066011994,
+    -0.09253075675662747,
+    -0.008476543229565594,
+    0.9965007960448924,
+    1.0214790196032006,
+    1.0545735478079783
+  ],
+  "fit_loss": 0.0031103099515433705,
+  "scores": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 8.490633964538574,
+      "mae": 4.131407260894775,
+      "opponent_chroma_rmse": 1.8118102550506592
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 9.071868896484375,
+      "mae": 4.773738861083984,
+      "opponent_chroma_rmse": 1.8439635038375854
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 8.640628814697266,
+      "mae": 4.2930989265441895,
+      "opponent_chroma_rmse": 1.8199574947357178
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 11.826549530029297,
+      "mae": 6.101249694824219,
+      "opponent_chroma_rmse": 2.0854198932647705
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 24.99448585510254,
+      "mae": 16.317716598510742,
+      "opponent_chroma_rmse": 4.0710673332214355
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 3.2004830837249756,
+      "mae": 2.506838321685791,
+      "opponent_chroma_rmse": 1.512635350227356
+    },
+    "ssim": 0.9459449648857117,
+    "gradient_mae": 7.4774041175842285,
+    "selection_loss": 0.003114196628502148
+  },
+  "seed": 3462,
+  "outer_source_derivative": -13.092323304930684,
+  "sampled_derivative_sign_changes": 1,
+  "limits": "Radial phase-map approximation with one or zero derivative sign changes, no outer return. It can retain an inverted rim; this distinguishes removal of the outer mirrored strip from global noninversion. No recovered solid claim."
+}

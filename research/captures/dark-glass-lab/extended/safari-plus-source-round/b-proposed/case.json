@@ -1,0 +1,184 @@
+{
+  "id": "safari-isolated-plus-transfer-proposal",
+  "category": "Safari isolated plus \u2014 unfitted transfer",
+  "radial": true,
+  "center": [
+    1407.604,
+    705.318
+  ],
+  "half": [
+    74.224,
+    74.224
+  ],
+  "radius": 74.224,
+  "crop": [
+    1295,
+    595,
+    1520,
+    815
+  ],
+  "foreground": [
+    [
+      1372,
+      671,
+      1442,
+      742
+    ]
+  ],
+  "foreground_layers": [
+    {
+      "mode": "mask",
+      "box": [
+        1372,
+        671,
+        1442,
+        742
+      ],
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "threshold": 0.33,
+      "vector_asset": "plus.svg",
+      "vector_box": [
+        1377.0,
+        676.5,
+        1436.0,
+        735.5
+      ],
+      "vector_sha256": "6e512cbe3431ff6f61c64e8468eb6c886e17eab3a2c803857211dc682808efc3",
+      "opacity": 1.0
+    }
+  ],
+  "reference": {
+    "video": "219",
+    "seconds": 300,
+    "original_file": "apple-matches/219-hd.mp4",
+    "video_sha256": "3d58f9e843f0b8c22e99d76de6b5201ef5b17de5bb4bf5732862ba7dbf9be60e"
+  },
+  "source_observation_mask": "observed.png",
+  "target_observation_mask": "target-visible.png",
+  "allow_estimated_background": true,
+  "background_estimate": {
+    "kind": "Affine RGB plane from uncovered upper/left controls; not recovered hidden content",
+    "basis": [
+      "1",
+      "(x-1408)/100",
+      "(y-705)/100"
+    ],
+    "coefficient_rgb": [
+      [
+        0.5064698803383073,
+        0.5220897578425582,
+        0.5535528897309484
+      ],
+      [
+        -0.029857013738877787,
+        -0.029872336701381504,
+        -0.029871409568306407
+      ],
+      [
+        0.026491153751140733,
+        0.02646743432523375,
+        0.026534381802238532
+      ]
+    ],
+    "source_defined_domain": [
+      1180,
+      525,
+      1541,
+      831
+    ],
+    "controls": [
+      {
+        "name": "held_train_domains",
+        "pixels": 9526,
+        "rmse": 0.704718578542864,
+        "signed_rgb": [
+          0.19628574324368722,
+          0.21271982549370483,
+          0.15211544636512253
+        ],
+        "p95": 1.4119869247074046
+      },
+      {
+        "name": "upper",
+        "pixels": 4442,
+        "rmse": 0.7486329318376552,
+        "signed_rgb": [
+          0.19530287296086996,
+          0.22463645427984688,
+          0.11772227930848843
+        ],
+        "p95": 1.448927690255521
+      },
+      {
+        "name": "left",
+        "pixels": 5084,
+        "rmse": 0.6639764726567633,
+        "signed_rgb": [
+          0.19714449812100251,
+          0.2023080109641925,
+          0.182165495158507
+        ],
+        "p95": 1.3301635501482116
+      },
+      {
+        "name": "independent_right",
+        "pixels": 2436,
+        "rmse": 1.5249681266316217,
+        "signed_rgb": [
+          1.2663361352719003,
+          0.9277462417525102,
+          -0.1799981690424732
+        ],
+        "p95": 3.364233237890382
+      },
+      {
+        "name": "independent_lower",
+        "pixels": 1616,
+        "rmse": 5.621529128619403,
+        "signed_rgb": [
+          5.577423365919366,
+          5.554781678719044,
+          5.5970196704227275
+        ],
+        "p95": 6.844772091204854
+      }
+    ],
+    "observed_hidden_fraction": 0,
+    "uncertainty": "Estimated field does not reproduce curved parent boundary visible in lower-right crop; exterior errors retained, no target shadow"
+  },
+  "foreground_provenance": {
+    "bbox": [
+      1378,
+      677,
+      1436,
+      736
+    ],
+    "ink_median": [
+      0.0,
+      0.0,
+      2.0
+    ],
+    "svg_sha256": "6e512cbe3431ff6f61c64e8468eb6c886e17eab3a2c803857211dc682808efc3",
+    "provenance": "Existing canonical original SF plus.tag.color.large outline; this Safari weight remains unverified",
+    "placement": "Independently exposed ink bounding box; no vector geometry/weight fitted"
+  },
+  "exterior_reference_shape": {
+    "shape_dx": 0,
+    "shape_dy": 0,
+    "half_x_delta": 0,
+    "half_y_delta": 0,
+    "radius_delta": 0,
+    "cap_join_width": 0
+  },
+  "source_sha256": {
+    "source.png": "72a47d2f3404cbf543a3922720442215652611f0c0338396909d4694aa7a1a81",
+    "target.png": "d0b1b8bd6195dae6d36caeba60535b6dff97d41e5c11d7857d0260ad7a169b79",
+    "known.png": "2b2ff2cfb7ef58d5c695d4b01c37d044f5ff11e6d870fa423c6f677c804828d8",
+    "observed.png": "06da5431a575e89e972435a0219b390d3dbb32e73ad342de409a935744365f76",
+    "target-visible.png": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+  }
+}

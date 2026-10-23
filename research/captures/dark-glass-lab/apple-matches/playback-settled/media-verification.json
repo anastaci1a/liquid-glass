@@ -1,0 +1,52 @@
+{
+  "probes": {
+    "playback-final.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "30/1",
+          "duration": "6.000000",
+          "nb_frames": "180",
+          "nb_read_frames": "180"
+        }
+      ]
+    },
+    "playback-final.gif": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "gif",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "bgra",
+          "r_frame_rate": "15/1",
+          "duration": "5.990000",
+          "nb_frames": "90",
+          "nb_read_frames": "90"
+        }
+      ]
+    }
+  },
+  "gif_attempts": [
+    {
+      "fps": 15,
+      "colors": 192,
+      "dither": "bayer:bayer_scale=3",
+      "bytes": 10485973
+    },
+    {
+      "fps": 15,
+      "colors": 128,
+      "dither": "bayer:bayer_scale=4",
+      "bytes": 7960291
+    }
+  ],
+  "selected_gif_bytes": 7960291,
+  "gif_duration_seconds": 5.99,
+  "strict_decimal_limit_bytes": 10000000,
+  "final_blur": "Calculated icon-color blur is last; sharp alpha coverage follows it."
+}

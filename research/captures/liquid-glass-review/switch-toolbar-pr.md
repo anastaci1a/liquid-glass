@@ -1,0 +1,4 @@
+- Update the active switch and Archive/Plus reconstructions with six and three independently accepted improvements, respectively; preserve input hashes, source-domain evidence and unresolved local defects.
+- Add finite-camera/refraction compatibility controls, reconstruction-page improvements and precision-safe raster utilities. Scope is entirely `docs/liquid-glass/`; no Android app or live-lab changes.
+- Adopt Ana's shorter three-pass, non-regressive rounds; enlarge the toolbar rim diagnostic and retain original crop scores separately.
+- Validation: per-pass native/HQ replay and source/visual evidence linked in the reconstruction page; 14 acceptance-gate tests pass. Pages publisher checks links, desktop/mobile interactions and deployed file hashes. Apple rendering parity remains unproven.

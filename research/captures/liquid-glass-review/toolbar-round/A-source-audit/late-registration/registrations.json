@@ -1,0 +1,120 @@
+{
+  "records": [
+    {
+      "requested_seconds": 724.5,
+      "presentation_seconds": 724.4904333333334,
+      "frame_index": 21713,
+      "png_sha256": "178ec87000ce826f2b1a1f000208b0b32baa633b62ee38717b6e26efa6dc5ab9",
+      "mutual_ratio_matches": 61,
+      "train_matches": 46,
+      "heldout_matches": 15,
+      "source_and_target_control_regions_excluded": [
+        490,
+        330,
+        1430,
+        820
+      ],
+      "status": "registered-provisional-source-evidence",
+      "matrix": [
+        [
+          0.9518834085384769,
+          -0.0012877864231199965,
+          45.96307584970807
+        ],
+        [
+          0.0012877864231199965,
+          0.9518834085384769,
+          254.62130143787613
+        ]
+      ],
+      "scale": 0.951884279649948,
+      "rotation_radians": 0.0013528816931723255,
+      "train_inliers": 14,
+      "train_inlier_residual_px": {
+        "n": 14,
+        "rms": 0.37747011043530015,
+        "median": 0.30698111396258665,
+        "p95": 0.6911020886159955,
+        "max": 0.8141225598998384
+      },
+      "heldout_ALL_candidate_residual_px": {
+        "n": 15,
+        "rms": 296.38868360843014,
+        "median": 1.6233907355531616,
+        "p95": 520.6095106725428,
+        "max": 520.6095106725428
+      },
+      "heldout_fraction_below1_5px": 0.4666666666666667,
+      "heldout_below1_5px_SELECTED_residual": {
+        "n": 7,
+        "rms": 0.6393057633250665,
+        "median": 0.44474864047394713,
+        "p95": 0.9961395084839756,
+        "max": 0.9961395084839756
+      },
+      "training_spatial_blocks": 7,
+      "train_control_span_xy": [
+        358.06607818603516,
+        203.06634521484375
+      ],
+      "bootstrap_samples": 200,
+      "query_A_native_xy": [
+        [
+          640.0,
+          444.0
+        ],
+        [
+          1280.0,
+          444.0
+        ],
+        [
+          640.0,
+          640.0
+        ],
+        [
+          1280.0,
+          640.0
+        ],
+        [
+          960.0,
+          542.0
+        ]
+      ],
+      "bootstrap_conditional_q95_displacement_px": [
+        0.8638453711129607,
+        2.1800610638769755,
+        0.9524372172811454,
+        2.2036973345261264,
+        1.553869547670991
+      ],
+      "bootstrap_mean_displacement_xy": [
+        [
+          0.026639510404116322,
+          -0.029927653829158202
+        ],
+        [
+          0.08881551584514455,
+          -0.04398469818626978
+        ],
+        [
+          0.030944480238438245,
+          -0.010886252162798656
+        ],
+        [
+          0.09312048567946021,
+          -0.024943296519907676
+        ],
+        [
+          0.05987999804190451,
+          -0.027435475174480074
+        ]
+      ],
+      "uncertainty_limits": "Conditional on inlier correspondences and similarity model; not a complete error bound. All heldout candidates/outliers reported, not removed from primary heldout RMS.",
+      "source_confidence_erosion_px": 4,
+      "registration_evidence_sufficient": false,
+      "seconds": 0.4033067226409912
+    }
+  ],
+  "no_source_pixels_promoted": true,
+  "no_optical_fit_or_epoch_change": true
+}

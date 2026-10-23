@@ -1,0 +1,1343 @@
+{
+  "protocol": "Source-informed alternative cap branch; frozen rev3 baseline.\n\nA right-rim transmission is plain background although observed A is green.\nB's corresponding rim is bright despite gray source in its current map.\nA sufficiently inward folded ray can reach the green A track while exiting\nB's shifted gray track on its opposite side. Test this EXISTING normal-field\norientation term globally; previous fits stayed near its negative-gain branch.\nThis is an empirical inverse-map hypothesis, not proof of a physical solid.\n",
+  "baseline": {
+    "parameters": {
+      "sigma": 4.339320119358678,
+      "amplitude": 0.7839488678764915,
+      "band": 0.41709079115813363,
+      "power": 2.793583791362869,
+      "tangent": 0,
+      "tangent_band": 0.9999992768775775,
+      "core_x": -0.48636618103316787,
+      "core_y": -0.6136971567801134,
+      "post_sigma": 2.163537921629955,
+      "coupling": 0,
+      "gamma": 1.5497479697761347,
+      "rim_width": 0.04878846511595129,
+      "thin_width": 0.011095946046562786,
+      "spline": true,
+      "shape_dx": 0.001167965417146694,
+      "shape_dy": 0.004755085677013721,
+      "half_x_delta": -0.0025334994195777482,
+      "half_y_delta": 0.011224253113150662,
+      "radius_delta": 0.012043263143639911,
+      "c0": 0.5825744554180238,
+      "c1": 1.3388234553429594,
+      "c2": -0.8083295666489414,
+      "c3": 1.0304313912343226,
+      "c4": 0.7184704183774985,
+      "c5": 0.2901299541876391,
+      "c6": 0.20008253902374495,
+      "shadow": {
+        "opacity": 0.0644744543534254,
+        "sigma": 0.105,
+        "offset": [
+          0.002735677612552694,
+          0.11499500237810438
+        ]
+      },
+      "blur_transition": 0,
+      "tangent_exponent": 3.000273143553201,
+      "cap_normal_gain": -0.11946436603381186,
+      "cap_tangent_fade": 0.9997199664179274,
+      "material_chroma_sensitivity": 10,
+      "material_chroma_floor": 0,
+      "grazing_reflection": {
+        "strength": 1,
+        "width": 0.03895748531996116,
+        "angular_power": 1.5519447192573868,
+        "source_sigma": 0.007,
+        "direction": [
+          0,
+          1
+        ]
+      },
+      "directional_transmission": {
+        "strength": 0.3849814426989986,
+        "length": 0.08,
+        "angle": 1.3571487177940904,
+        "fade_center": -0.395271178284122,
+        "fade_width": 0.3577136899555915
+      },
+      "crown_softness": 0.08
+    },
+    "material": [
+      0.5599596881338905,
+      0.7998531609442425,
+      0.6352577145349837,
+      0.35271553057881444,
+      0.34598186351481325,
+      0.3448575578393852,
+      -0.7449222138670937,
+      -0.014928382342389968,
+      -1.995391657801683,
+      -0.08203963643431976,
+      -0.009511064299458217,
+      0.6713499713305283,
+      0.08522166868314952,
+      0.03605006533559551,
+      -0.027106608026761236,
+      -0.006665966049888116,
+      0.04479436578522937,
+      -0.056581134061443605,
+      -0.12181774252248757,
+      0.00606904826295323,
+      0.7410422243688338,
+      0.7281416440653709,
+      0.7464289324085407
+    ],
+    "parameter_length_reference": 216.5,
+    "units": "Geometry normalized by each pose L; sigma and post_sigma are lengths in the declared 216.5 reference-pixel basis; divide by 216.5 for dimensionless kernels."
+  },
+  "baseline_scores": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.492169380187988
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 19.840557098388672
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 12.96753978729248
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.861898422241211
+      },
+      "ssim": 0.9632399082183838,
+      "loss": 210.5432817363776,
+      "shadow": {
+        "rmse": 6.705331325531006,
+        "pixels": 152521
+      }
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.861527442932129
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 19.731285095214844
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 13.816197395324707
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 10.531586647033691
+      },
+      "ssim": 0.933897078037262,
+      "loss": 251.2964435884066,
+      "shadow": {
+        "rmse": 4.592496395111084,
+        "pixels": 132594
+      }
+    }
+  ],
+  "trials": [
+    {
+      "c0": 0.5825744554180238,
+      "cap_normal_gain": -0.11946436603381186,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.492169380187988
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.840557098388672
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.96753978729248
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.861898422241211
+          },
+          "loss": 210.5432817363776,
+          "shadow": {
+            "rmse": 6.705331325531006
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.861527442932129
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.731285095214844
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.816197395324707
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.531586647033691
+          },
+          "loss": 251.2964435884066,
+          "shadow": {
+            "rmse": 4.592496395111084
+          }
+        }
+      ],
+      "ratios": [
+        1.0,
+        1.0
+      ],
+      "glass_rim_guards": true,
+      "numeric_milestone": false,
+      "seconds": 8.254058599472046
+    },
+    {
+      "c0": 0.5825744554180238,
+      "cap_normal_gain": 0.0,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 12.005595207214355
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 20.626346588134766
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.295829772949219
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 5.246145725250244
+          },
+          "loss": 228.5278734677994,
+          "shadow": {
+            "rmse": 6.706037998199463
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 14.062588691711426
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.898378372192383
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 14.064889907836914
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.77560806274414
+          },
+          "loss": 257.2131190514551,
+          "shadow": {
+            "rmse": 4.594362735748291
+          }
+        }
+      ],
+      "ratios": [
+        1.0418348846540029,
+        1.0117038128050257
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3705081939697266
+    },
+    {
+      "c0": 0.5825744554180238,
+      "cap_normal_gain": 0.3,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 18.682865142822266
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 31.540647506713867
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 20.12199592590332
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 9.020038604736328
+          },
+          "loss": 542.778348504251,
+          "shadow": {
+            "rmse": 6.708294868469238
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 15.188554763793945
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 21.863384246826172
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 15.488823890686035
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 11.349550247192383
+          },
+          "loss": 304.88680828624746,
+          "shadow": {
+            "rmse": 4.599246501922607
+          }
+        }
+      ],
+      "ratios": [
+        1.6056118459162652,
+        1.1014788075850985
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3849122524261475
+    },
+    {
+      "c0": 0.5825744554180238,
+      "cap_normal_gain": 0.6,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 24.148393630981445
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 37.82238006591797
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 25.364126205444336
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 15.227511405944824
+          },
+          "loss": 837.3611706250024,
+          "shadow": {
+            "rmse": 6.711297988891602
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 16.798139572143555
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 24.95479965209961
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 17.40920066833496
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 11.911520004272461
+          },
+          "loss": 384.3468528625799,
+          "shadow": {
+            "rmse": 4.6036810874938965
+          }
+        }
+      ],
+      "ratios": [
+        1.994278077229456,
+        1.2367117682637796
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3704826831817627
+    },
+    {
+      "c0": 0.5825744554180238,
+      "cap_normal_gain": 1.0,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 31.428266525268555
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 40.740074157714844
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 32.449378967285156
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 26.630138397216797
+          },
+          "loss": 1189.3412484611526,
+          "shadow": {
+            "rmse": 6.715901851654053
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 18.74250030517578
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 27.485530853271484
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 19.67087745666504
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 13.593564987182617
+          },
+          "loss": 472.53324426850156,
+          "shadow": {
+            "rmse": 4.608872413635254
+          }
+        }
+      ],
+      "ratios": [
+        2.376744768369705,
+        1.3712701198753885
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3840820789337158
+    },
+    {
+      "c0": 0.5825744554180238,
+      "cap_normal_gain": 1.5,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 34.79093933105469
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 42.463157653808594
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 35.7164306640625
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 31.059831619262695
+          },
+          "loss": 1388.2225490556505,
+          "shadow": {
+            "rmse": 6.720419406890869
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 21.939287185668945
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 28.861360549926758
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 23.332101821899414
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 18.34323501586914
+          },
+          "loss": 586.8260653885409,
+          "shadow": {
+            "rmse": 4.614818096160889
+          }
+        }
+      ],
+      "ratios": [
+        2.5677861568533276,
+        1.5281343101838625
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3923547267913818
+    },
+    {
+      "c0": 0.5825744554180238,
+      "cap_normal_gain": 1.8,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 35.871395111083984
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 43.11717224121094
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 36.24376678466797
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 32.39610290527344
+          },
+          "loss": 1458.4570536743252,
+          "shadow": {
+            "rmse": 6.722243309020996
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 22.954818725585938
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 29.375717163085938
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 24.016407012939453
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 19.710580825805664
+          },
+          "loss": 627.7264195608441,
+          "shadow": {
+            "rmse": 4.617114067077637
+          }
+        }
+      ],
+      "ratios": [
+        2.631940873399963,
+        1.5804910197571116
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3819944858551025
+    },
+    {
+      "c0": 1.0,
+      "cap_normal_gain": -0.11946436603381186,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.479862213134766
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.816232681274414
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.930000305175781
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.861898422241211
+          },
+          "loss": 210.05598880631405,
+          "shadow": {
+            "rmse": 6.707556247711182
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.871078491210938
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.7542781829834
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.818357467651367
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.531586647033691
+          },
+          "loss": 251.75422491574244,
+          "shadow": {
+            "rmse": 4.593005657196045
+          }
+        }
+      ],
+      "ratios": [
+        0.9988421021863582,
+        1.0009104248111915
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3986191749572754
+    },
+    {
+      "c0": 1.0,
+      "cap_normal_gain": 0.0,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.992829322814941
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 20.600988388061523
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.304405212402344
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 5.246145725250244
+          },
+          "loss": 227.99978538583264,
+          "shadow": {
+            "rmse": 6.7083258628845215
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 14.074529647827148
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.927297592163086
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 14.07156753540039
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.77560806274414
+          },
+          "loss": 257.7938261632844,
+          "shadow": {
+            "rmse": 4.594916343688965
+          }
+        }
+      ],
+      "ratios": [
+        1.0406304390250318,
+        1.0128452249831592
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3944687843322754
+    },
+    {
+      "c0": 1.0,
+      "cap_normal_gain": 0.3,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 18.718828201293945
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 31.613327026367188
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 20.19684410095215
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 9.020038604736328
+          },
+          "loss": 545.0969041635017,
+          "shadow": {
+            "rmse": 6.710054874420166
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 15.31162166595459
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 22.155656814575195
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 15.574861526489258
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 11.349550247192383
+          },
+          "loss": 311.3739692945007,
+          "shadow": {
+            "rmse": 4.5998687744140625
+          }
+        }
+      ],
+      "ratios": [
+        1.6090374923133364,
+        1.1131353637347432
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.395298719406128
+    },
+    {
+      "c0": 1.0,
+      "cap_normal_gain": 0.6,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 24.181686401367188
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 37.894893646240234
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 25.4300594329834
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 15.227511405944824
+          },
+          "loss": 840.1346593878043,
+          "shadow": {
+            "rmse": 6.714080810546875
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 16.886850357055664
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 25.159175872802734
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 17.4666748046875
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 11.911520004272461
+          },
+          "loss": 389.51123966669945,
+          "shadow": {
+            "rmse": 4.604587554931641
+          }
+        }
+      ],
+      "ratios": [
+        1.9975780483754642,
+        1.2449927599235664
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3977749347686768
+    },
+    {
+      "c0": 1.0,
+      "cap_normal_gain": 1.0,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 31.444660186767578
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 40.78321838378906
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 32.468589782714844
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 26.630138397216797
+          },
+          "loss": 1191.1179285048493,
+          "shadow": {
+            "rmse": 6.719024658203125
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 18.787891387939453
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 27.591543197631836
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 19.6973819732666
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 13.593564987182617
+          },
+          "loss": 475.4773807715417,
+          "shadow": {
+            "rmse": 4.60961389541626
+          }
+        }
+      ],
+      "ratios": [
+        2.378519338608024,
+        1.3755353620423483
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.400745153427124
+    },
+    {
+      "c0": 1.0,
+      "cap_normal_gain": 1.5,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 34.79551315307617
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 42.47594451904297
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 35.7132453918457
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 31.059831619262695
+          },
+          "loss": 1388.7711737455727,
+          "shadow": {
+            "rmse": 6.723854064941406
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 21.9541072845459
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 28.899961471557617
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 23.339130401611328
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 18.34323501586914
+          },
+          "loss": 587.9503105802003,
+          "shadow": {
+            "rmse": 4.615334510803223
+          }
+        }
+      ],
+      "ratios": [
+        2.5682935004806784,
+        1.529597414586686
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3967950344085693
+    },
+    {
+      "c0": 1.0,
+      "cap_normal_gain": 1.8,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 35.8743782043457
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 43.12562942504883
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 36.239158630371094
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 32.39610290527344
+          },
+          "loss": 1458.825682075895,
+          "shadow": {
+            "rmse": 6.725826740264893
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 22.965208053588867
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 29.40353775024414
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 24.023149490356445
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 19.710580825805664
+          },
+          "loss": 628.5509563302458,
+          "shadow": {
+            "rmse": 4.617599964141846
+          }
+        }
+      ],
+      "ratios": [
+        2.632273466964134,
+        1.5815286894018044
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.403052568435669
+    },
+    {
+      "c0": 1.4,
+      "cap_normal_gain": -0.11946436603381186,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.514695167541504
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.885074615478516
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.034249305725098
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.861898422241211
+          },
+          "loss": 211.43660109992697,
+          "shadow": {
+            "rmse": 6.711562156677246
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.970660209655762
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.993358612060547
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.893797874450684
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.531586647033691
+          },
+          "loss": 256.54585926269783,
+          "shadow": {
+            "rmse": 4.591488361358643
+          }
+        }
+      ],
+      "ratios": [
+        1.0021192169831714,
+        1.0103906844967494
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.3872134685516357
+    },
+    {
+      "c0": 1.4,
+      "cap_normal_gain": 0.0,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 12.04165267944336
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 20.69794464111328
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.39359188079834
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 5.246145725250244
+          },
+          "loss": 230.0224531866188,
+          "shadow": {
+            "rmse": 6.712667942047119
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 14.194267272949219
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 20.21630096435547
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 14.167879104614258
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.77560806274414
+          },
+          "loss": 263.64370379556203,
+          "shadow": {
+            "rmse": 4.593356132507324
+          }
+        }
+      ],
+      "ratios": [
+        1.0452361496217495,
+        1.0242725427043002
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.4146554470062256
+    },
+    {
+      "c0": 1.4,
+      "cap_normal_gain": 0.3,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 18.729429244995117
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 31.634748458862305
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 20.207242965698242
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 9.020038604736328
+          },
+          "loss": 545.7812569069421,
+          "shadow": {
+            "rmse": 6.715830326080322
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 15.332261085510254
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 22.204524993896484
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 15.590228080749512
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 11.349550247192383
+          },
+          "loss": 312.4670400573485,
+          "shadow": {
+            "rmse": 4.598397254943848
+          }
+        }
+      ],
+      "ratios": [
+        1.6100472245422481,
+        1.1150874693713086
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.4166676998138428
+    },
+    {
+      "c0": 1.4,
+      "cap_normal_gain": 0.6,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 24.189128875732422
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 37.911102294921875
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 25.436540603637695
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 15.227511405944824
+          },
+          "loss": 840.7552722015637,
+          "shadow": {
+            "rmse": 6.7195281982421875
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 16.901071548461914
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 25.191884994506836
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 17.475812911987305
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 11.911520004272461
+          },
+          "loss": 390.34167451329773,
+          "shadow": {
+            "rmse": 4.603180408477783
+          }
+        }
+      ],
+      "ratios": [
+        1.9983157239708287,
+        1.2463192106060899
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.39790940284729
+    },
+    {
+      "c0": 1.4,
+      "cap_normal_gain": 1.0,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 31.449386596679688
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 40.795650482177734
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 32.47112274169922
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 26.630138397216797
+          },
+          "loss": 1191.6302715943937,
+          "shadow": {
+            "rmse": 6.723850727081299
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 18.79677963256836
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 27.612285614013672
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 19.703834533691406
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 13.593564987182617
+          },
+          "loss": 476.05474223769556,
+          "shadow": {
+            "rmse": 4.608134746551514
+          }
+        }
+      ],
+      "ratios": [
+        2.3790308273962193,
+        1.3763702494656933
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.5276446342468262
+    },
+    {
+      "c0": 1.4,
+      "cap_normal_gain": 1.5,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 34.798641204833984
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 42.484683990478516
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 35.71468734741211
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 31.059831619262695
+          },
+          "loss": 1389.1463129231852,
+          "shadow": {
+            "rmse": 6.728163719177246
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 21.94087791442871
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 28.865507125854492
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 23.308515548706055
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 18.34323501586914
+          },
+          "loss": 586.9467370489328,
+          "shadow": {
+            "rmse": 4.613638401031494
+          }
+        }
+      ],
+      "ratios": [
+        2.5686403547626973,
+        1.5282914206434046
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.5061447620391846
+    },
+    {
+      "c0": 1.4,
+      "cap_normal_gain": 1.8,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 35.85917663574219
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 43.08247756958008
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 36.18246841430664
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 32.39610290527344
+          },
+          "loss": 1456.946346355362,
+          "shadow": {
+            "rmse": 6.729977130889893
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 22.894983291625977
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 29.215227127075195
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 23.964712142944336
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 19.710580825805664
+          },
+          "loss": 622.9850307726599,
+          "shadow": {
+            "rmse": 4.615843772888184
+          }
+        }
+      ],
+      "ratios": [
+        2.6305774042121723,
+        1.5745107659442443
+      ],
+      "glass_rim_guards": false,
+      "numeric_milestone": false,
+      "seconds": 1.5246551036834717
+    }
+  ],
+  "accepted": false,
+  "limits": "Fixed-material global branch screen. No source support/independent replay/visual acceptance inferred from score."
+}

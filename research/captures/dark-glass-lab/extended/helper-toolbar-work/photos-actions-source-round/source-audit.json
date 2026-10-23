@@ -1,0 +1,187 @@
+{
+  "target_seconds": 310,
+  "donor_batch": [
+    {
+      "donor_seconds": 307,
+      "matches": 702,
+      "train_ransac_inliers": 532,
+      "held_matches": 158,
+      "held_median_geometric_px": 0.11029857870507977,
+      "held_p90_geometric_px": 0.339083246396255,
+      "similarity": [
+        [
+          1.0000428790146634,
+          -0.0002823821000027131,
+          0.06424125100966543
+        ],
+        [
+          0.0002823821000027131,
+          1.0000428790146634,
+          -0.4464477086798658
+        ]
+      ],
+      "held_pixel_count": 113973,
+      "held_pixel_rgb_rmse": 3.7010692569203614,
+      "provisional_disk_potential_support": {
+        "person": 0,
+        "bulb": 0
+      },
+      "masked_menu": false
+    },
+    {
+      "donor_seconds": 309.5,
+      "matches": 722,
+      "train_ransac_inliers": 542,
+      "held_matches": 166,
+      "held_median_geometric_px": 0.1071879352604589,
+      "held_p90_geometric_px": 0.37899275308741287,
+      "similarity": [
+        [
+          0.9998450885461398,
+          0.00019215882593998126,
+          0.08285441908953182
+        ],
+        [
+          -0.00019215882593998126,
+          0.9998450885461398,
+          0.1863623342056337
+        ]
+      ],
+      "held_pixel_count": 113770,
+      "held_pixel_rgb_rmse": 2.9751326772101856,
+      "provisional_disk_potential_support": {
+        "person": 0,
+        "bulb": 0
+      },
+      "masked_menu": false
+    },
+    {
+      "donor_seconds": 311.5,
+      "matches": 0,
+      "registration_attempted": false,
+      "reason": "Insufficient exposed same-background matches; menu/scene transition not a clean donor"
+    }
+  ],
+  "observations": [
+    {
+      "label": "person",
+      "center_estimate": [
+        663,
+        644
+      ],
+      "provisional_radius": 46,
+      "disk_pixels": 6621,
+      "potential_observed_donor_pixels": 0,
+      "partial_modeled_paper_pixels": 2609,
+      "photo_unknown_pixels": 2901,
+      "seam_unknown_pixels": 910,
+      "no_optical_ray_proof": "No opticalmap/kernel selected. These are provisional image-domain masks, not emitted/ALL-scored opticalsupport proof.",
+      "observed_style": "Same native shot/resting circular action family; different actual foregrounds and photo-floor/footer regions. Consistent pose/style is evidence for a shared model, not proof of proprietary material identity.",
+      "bright_ridge_diagnostic": {
+        "median": 44.125,
+        "p10_p90": [
+          41.0,
+          46.75
+        ],
+        "not_physical_alpha": true
+      }
+    },
+    {
+      "label": "bulb",
+      "center_estimate": [
+        1225,
+        646
+      ],
+      "provisional_radius": 46,
+      "disk_pixels": 6621,
+      "potential_observed_donor_pixels": 0,
+      "partial_modeled_paper_pixels": 2820,
+      "photo_unknown_pixels": 2719,
+      "seam_unknown_pixels": 910,
+      "no_optical_ray_proof": "No opticalmap/kernel selected. These are provisional image-domain masks, not emitted/ALL-scored opticalsupport proof.",
+      "observed_style": "Same native shot/resting circular action family; different actual foregrounds and photo-floor/footer regions. Consistent pose/style is evidence for a shared model, not proof of proprietary material identity.",
+      "bright_ridge_diagnostic": {
+        "median": 44.5,
+        "p10_p90": [
+          43.0,
+          47.0
+        ],
+        "not_physical_alpha": true
+      }
+    }
+  ],
+  "temporal_background_diversity": false,
+  "spatial_backgrounds": "Left person and right bulb are distinct same-style controls with different photo-floor/footer surroundings, not two temporal backgrounds of identical icon.",
+  "paper_estimated_proposal": {
+    "kind": "SEPARATE estimated uncovered-footer RGB affine field; NOT observed truth or optical gain",
+    "basis": [
+      "1",
+      "(x-960)/700",
+      "(y-680)/100"
+    ],
+    "coefficient_rgb": [
+      [
+        0.7840031793992691,
+        0.7874157177931423,
+        0.7881389011660815
+      ],
+      [
+        0.018213956287263855,
+        0.006792447423730715,
+        0.009312325083457976
+      ],
+      [
+        -0.0052249925930988985,
+        -0.005024469257888556,
+        -0.004384108097024633
+      ]
+    ],
+    "training_pixels": 23215,
+    "controls": [
+      {
+        "name": "spatial_heldout",
+        "pixels": 6951,
+        "rmse": 2.347698199383782,
+        "signed_rgb": [
+          0.05555955107666576,
+          0.011493026066183172,
+          0.03611101380663747
+        ],
+        "p95_abs": 4.929718398370834
+      },
+      {
+        "name": "independent_left_footer",
+        "pixels": 915,
+        "rmse": 2.2227211877729816,
+        "signed_rgb": [
+          0.7024044515088345,
+          1.1596599002336212,
+          1.1480801859978005
+        ],
+        "p95_abs": 4.3362979739141005
+      },
+      {
+        "name": "independent_right_footer",
+        "pixels": 915,
+        "rmse": 10.62506098842007,
+        "signed_rgb": [
+          1.2399094576079293,
+          0.7682699943468208,
+          0.3789420440068358
+        ],
+        "p95_abs": 6.041318726508781
+      }
+    ],
+    "allowed_domain": "ONLY x630..1260/y650..730 footer paper; photo, seam and hidden object/word details remain UNKNOWN",
+    "under_disk_modeled_paper_fraction": {
+      "person": 0.39404923727533603,
+      "bulb": 0.4259175351155415
+    },
+    "source_adopted": false,
+    "optical_gain": false,
+    "uncertainty": "Held residuals are empirical validation, not a guarantee/CI for hidden pixels. Native video texture/moire, illumination and faint shadow tail may remain. No paper field applied over photo or glass target."
+  },
+  "optical_fit": false,
+  "source_adopted": false,
+  "hidden_photodetail_filled": 0
+}

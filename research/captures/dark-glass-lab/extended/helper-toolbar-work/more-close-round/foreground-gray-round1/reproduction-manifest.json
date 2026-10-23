@@ -1,0 +1,78 @@
+{
+  "stage": "FOREGROUND_ONLY_CANDIDATE_PENDING_PRIMARY_NO_COUNT",
+  "at": "2026-10-22T01:16:29.290Z",
+  "approval": "6a9a563d-4f4b-4795-8230-adaacdbab0f2",
+  "foreground_gray": 0.1422113443266031,
+  "opacity": 1,
+  "uniform_gray_analytic_LS_solves": 1,
+  "prior_core_only_diagnostic_estimates": 1,
+  "actual_native_candidate_composites": 1,
+  "new_body_renders": 0,
+  "optical_fits": 0,
+  "accepted_count": 0,
+  "body_and_glass_metrics": "Exactties atE3.747303399915705; Mbitexact unchanged",
+  "foreground_RMSE": [
+    35.785369873046875,
+    31.302234649658203
+  ],
+  "advisory_partial_edge_RMSE": [
+    36.5926369062883,
+    47.93515543036032
+  ],
+  "source_and_SVG_unmodified": true,
+  "case_fingerprint": "f5c3921820dc50fd9230bfeab581a26954e408b98817f7e433463b2bf3041506",
+  "source_proof_transfer": "Originalwhole/scored/post +base/rimrawclip proofs, unchangedactualsourcequeries andbody, no needrepeat/rayrender",
+  "command": "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps localica-dark-lab-check python3 /evidence/extended/helper-toolbar-work/more-close-round/replay-foreground.py --baseline /evidence/extended/helper-toolbar-work/more-close-round/latest-circle-baseline --candidate /evidence/extended/helper-toolbar-work/more-close-round/foreground-gray-round1 --output /evidence/extended/more-close-primary-foreground-pass01 --code <independently frozen current public code>",
+  "command_status": "Syntax only checked, agent did NOT run extra body/candidate replay. Primaryvisual/source/edge review required beforeacceptance.",
+  "limitations": "Empiricalencodedgrayopaque model; physicalfillversusopacity/AA/PSF andtrueSVGweight unproven. Coreimproves/partialedgesworsen explicit, no opticalgain/pairedclaim. Sourceupper3.785/sourcehidden0/pose.463 unchanged.",
+  "files": {
+    "foreground-gray-round1/candidate-native.json": {
+      "bytes": 5400,
+      "sha256": "00c0fafa05373b1b8ed05af5f748cc4ca8ed51ac24a996e9ae13fb0731f3fa29"
+    },
+    "foreground-gray-round1/candidate-native.npz": {
+      "bytes": 28468,
+      "sha256": "f6409c58cc1ce1c16ec8de2425661f9c26fbfa9900247e10802c287c2c9395b0"
+    },
+    "foreground-gray-round1/candidate-comparison.png": {
+      "bytes": 17786,
+      "sha256": "8648487f340833b1d0bda2fff449f0a1ed44249287ace354c8354bbf88726fe6"
+    },
+    "foreground-gray-round1/verification.json": {
+      "bytes": 2072,
+      "sha256": "d79e787e56e41f8395e4be1be1868187c11b348450365c84c4a378170f3fac36"
+    },
+    "foreground-gray-round1/unchanged-input-proof.json": {
+      "bytes": 1065,
+      "sha256": "c8bed5eb284cdbf051f757290897305925713ff25d86edb7b4ab1d464e66b671"
+    },
+    "foreground-gray-candidate.py": {
+      "bytes": 5713,
+      "sha256": "0a0b3a044b2bf3c723275f8d1b31c92ad06cec0e454e61ba516bcedbadd84f8d"
+    },
+    "replay-foreground.py": {
+      "bytes": 2438,
+      "sha256": "4d0391fe918991b6fa77b7e2a859e7ca7df55b60581578f620a8f387bbb16eec"
+    },
+    "latest-circle-baseline/inputs/a/case.json": {
+      "bytes": 3339,
+      "sha256": "d31cad66b23e22eaee338fd3e5f176782b7635c0007de72c94ce1f2878a40809"
+    },
+    "latest-circle-baseline/inputs/a/xmark-pinned.svg": {
+      "bytes": 451,
+      "sha256": "9158df2c121853f26f67c74159e91957f41a9f886cce1a461d2987d7b7229424"
+    },
+    "latest-circle-baseline/source-proof-FIRST.json": {
+      "bytes": 1573,
+      "sha256": "9847996a28ffbe4068cf75c324506c514c93c4975b153b9ddf6f854beec291d3"
+    },
+    "latest-circle-baseline/native-raw-clip-proof.json": {
+      "bytes": 2089,
+      "sha256": "b55ecbcc96aa9024c34890f1d65919522821d432bccfc5434f18eb2ea9b00a00"
+    },
+    "latest-circle-baseline/code-snapshot.json": {
+      "bytes": 11092,
+      "sha256": "dd38267c2bfd42472ad3bbb4500a3eaa6530b0f3c8739d8b8ff8f94a6ba934cf"
+    }
+  }
+}

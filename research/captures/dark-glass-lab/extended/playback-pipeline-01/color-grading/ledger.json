@@ -1,0 +1,858 @@
+[
+  {
+    "trial": 0,
+    "family": "common_affine",
+    "gain": 1.0944102285071984,
+    "bias": -0.014279195286297277,
+    "highlight_lift": 0,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 11.34127426147461,
+        "mae": 8.265957832336426,
+        "opponent_chroma_rmse": 3.176121950149536
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 11.230682373046875,
+        "mae": 8.256609916687012,
+        "opponent_chroma_rmse": 3.270059108734131
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 11.313536643981934,
+        "mae": 8.263604164123535,
+        "opponent_chroma_rmse": 3.20002818107605
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 13.267504692077637,
+        "mae": 8.754144668579102,
+        "opponent_chroma_rmse": 3.4472599029541016
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 26.77332305908203,
+        "mae": 16.84539222717285,
+        "opponent_chroma_rmse": 5.491520881652832
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 8.974799156188965,
+        "mae": 7.7790021896362305,
+        "opponent_chroma_rmse": 2.9354143142700195
+      },
+      "ssim": 0.9700992107391357,
+      "gradient_mae": 4.6249775886535645,
+      "selection_loss": 0.0046311727930303135,
+      "foreground_MSE": 5.534182071685791,
+      "exterior_MSE": 24.141281127929688
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 10.051912307739258,
+        "signed_RGB": [
+          -2.834892511367798,
+          -4.377026081085205,
+          -5.484865188598633
+        ],
+        "luma_RMSE": 9.715387049031749
+      },
+      "top-left": {
+        "RGB_RMSE": 8.944186210632324,
+        "signed_RGB": [
+          5.032646656036377,
+          3.672865867614746,
+          1.9912422895431519
+        ],
+        "luma_RMSE": 8.959050388091594
+      },
+      "upper-right": {
+        "RGB_RMSE": 8.088558197021484,
+        "signed_RGB": [
+          5.0603108406066895,
+          3.4498748779296875,
+          2.0243351459503174
+        ],
+        "luma_RMSE": 8.143761351327234
+      },
+      "center-texture": {
+        "RGB_RMSE": 14.249336242675781,
+        "signed_RGB": [
+          -11.230377197265625,
+          -14.040544509887695,
+          -16.534053802490234
+        ],
+        "luma_RMSE": 13.739465938366537
+      }
+    },
+    "guards": {
+      "train": true,
+      "held_blocks": true,
+      "all_glass": true,
+      "rim": true,
+      "outer_rim": false,
+      "interior": true,
+      "ssim": true,
+      "foreground": true,
+      "exterior": false
+    },
+    "strict_pass": false,
+    "clipping": {
+      "applied_after_AA_before_output_blur": true,
+      "covered_pixels": 189313,
+      "minimum_preclip": 0.0804909709247359,
+      "maximum_preclip": 0.940177960494521,
+      "clipped_channels": 0
+    }
+  },
+  {
+    "trial": 1,
+    "family": "common_affine",
+    "gain": 1.0472051142535992,
+    "bias": -0.007139597643148639,
+    "highlight_lift": 0,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 11.546416282653809,
+        "mae": 7.90002965927124,
+        "opponent_chroma_rmse": 2.0992684364318848
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 11.42973804473877,
+        "mae": 8.068774223327637,
+        "opponent_chroma_rmse": 2.169792652130127
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 11.517157554626465,
+        "mae": 7.942508220672607,
+        "opponent_chroma_rmse": 2.1172425746917725
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 13.18588924407959,
+        "mae": 8.222708702087402,
+        "opponent_chroma_rmse": 2.4517502784729004
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 26.071147918701172,
+        "mae": 16.64441680908203,
+        "opponent_chroma_rmse": 4.661803245544434
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 9.587553977966309,
+        "mae": 7.665698528289795,
+        "opponent_chroma_rmse": 1.7241969108581543
+      },
+      "ssim": 0.9703697562217712,
+      "gradient_mae": 4.531101703643799,
+      "selection_loss": 0.004650200649626001,
+      "foreground_MSE": 5.534182071685791,
+      "exterior_MSE": 24.1015682220459
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 11.266274452209473,
+        "signed_RGB": [
+          -5.138217449188232,
+          -5.937382698059082,
+          -6.369248390197754
+        ],
+        "luma_RMSE": 11.085567433998111
+      },
+      "top-left": {
+        "RGB_RMSE": 8.263261795043945,
+        "signed_RGB": [
+          3.1617202758789062,
+          2.5609242916107178,
+          1.5456385612487793
+        ],
+        "luma_RMSE": 8.305893490555322
+      },
+      "upper-right": {
+        "RGB_RMSE": 7.131558418273926,
+        "signed_RGB": [
+          3.3277292251586914,
+          2.5293781757354736,
+          1.8105881214141846
+        ],
+        "luma_RMSE": 7.227191926958939
+      },
+      "center-texture": {
+        "RGB_RMSE": 17.250484466552734,
+        "signed_RGB": [
+          -15.859155654907227,
+          -17.132408142089844,
+          -18.235857009887695
+        ],
+        "luma_RMSE": 17.06544183796104
+      }
+    },
+    "guards": {
+      "train": true,
+      "held_blocks": true,
+      "all_glass": true,
+      "rim": true,
+      "outer_rim": false,
+      "interior": true,
+      "ssim": true,
+      "foreground": true,
+      "exterior": false
+    },
+    "strict_pass": false,
+    "clipping": {
+      "applied_after_AA_before_output_blur": true,
+      "covered_pixels": 189313,
+      "minimum_preclip": 0.0835428541009551,
+      "maximum_preclip": 0.9061490292668682,
+      "clipped_channels": 0
+    }
+  },
+  {
+    "trial": 2,
+    "family": "common_affine",
+    "gain": 1.0236025571267997,
+    "bias": -0.0035697988215743193,
+    "highlight_lift": 0,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 11.971107482910156,
+        "mae": 7.85731315612793,
+        "opponent_chroma_rmse": 1.7250432968139648
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 11.874886512756348,
+        "mae": 8.119989395141602,
+        "opponent_chroma_rmse": 1.7784065008163452
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 11.946958541870117,
+        "mae": 7.923435211181641,
+        "opponent_chroma_rmse": 1.7386305332183838
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 13.437259674072266,
+        "mae": 8.13511848449707,
+        "opponent_chroma_rmse": 2.120364189147949
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 25.88608741760254,
+        "mae": 16.716812133789062,
+        "opponent_chroma_rmse": 4.357667446136475
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 10.264388084411621,
+        "mae": 7.714315414428711,
+        "opponent_chroma_rmse": 1.2520229816436768
+      },
+      "ssim": 0.9701931476593018,
+      "gradient_mae": 4.508434772491455,
+      "selection_loss": 0.004842768273582825,
+      "foreground_MSE": 5.534182071685791,
+      "exterior_MSE": 24.083789825439453
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 12.052397727966309,
+        "signed_RGB": [
+          -6.290665149688721,
+          -6.717307090759277,
+          -6.811412334442139
+        ],
+        "luma_RMSE": 11.937818394454997
+      },
+      "top-left": {
+        "RGB_RMSE": 8.06781005859375,
+        "signed_RGB": [
+          2.2265429496765137,
+          2.004927396774292,
+          1.3225277662277222
+        ],
+        "luma_RMSE": 8.113905338045157
+      },
+      "upper-right": {
+        "RGB_RMSE": 6.774409770965576,
+        "signed_RGB": [
+          2.4614455699920654,
+          2.0691888332366943,
+          1.7036932706832886
+        ],
+        "luma_RMSE": 6.876368990101676
+      },
+      "center-texture": {
+        "RGB_RMSE": 18.80938720703125,
+        "signed_RGB": [
+          -18.173583984375,
+          -18.67833709716797,
+          -19.08664894104004
+        ],
+        "luma_RMSE": 18.740604115262695
+      }
+    },
+    "guards": {
+      "train": true,
+      "held_blocks": true,
+      "all_glass": true,
+      "rim": true,
+      "outer_rim": false,
+      "interior": true,
+      "ssim": true,
+      "foreground": true,
+      "exterior": false
+    },
+    "strict_pass": false,
+    "clipping": {
+      "applied_after_AA_before_output_blur": true,
+      "covered_pixels": 189313,
+      "minimum_preclip": 0.08506879568906472,
+      "maximum_preclip": 0.8891345636530421,
+      "clipped_channels": 0
+    }
+  },
+  {
+    "trial": 3,
+    "family": "common_affine",
+    "gain": 1.0118012785633999,
+    "bias": -0.0017848994107871597,
+    "highlight_lift": 0,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 12.25606918334961,
+        "mae": 7.892035961151123,
+        "opponent_chroma_rmse": 1.6163266897201538
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 12.174958229064941,
+        "mae": 8.197771072387695,
+        "opponent_chroma_rmse": 1.658896565437317
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 12.235701560974121,
+        "mae": 7.968998432159424,
+        "opponent_chroma_rmse": 1.6271475553512573
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 13.632645606994629,
+        "mae": 8.145492553710938,
+        "opponent_chroma_rmse": 2.0232791900634766
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 25.836339950561523,
+        "mae": 16.795425415039062,
+        "opponent_chroma_rmse": 4.240866661071777
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 10.677698135375977,
+        "mae": 7.794639587402344,
+        "opponent_chroma_rmse": 1.1041134595870972
+      },
+      "ssim": 0.9700242877006531,
+      "gradient_mae": 4.503203868865967,
+      "selection_loss": 0.00498481548451431,
+      "foreground_MSE": 5.534182071685791,
+      "exterior_MSE": 24.075420379638672
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 12.480896949768066,
+        "signed_RGB": [
+          -6.86647367477417,
+          -7.107259750366211,
+          -7.032470226287842
+        ],
+        "luma_RMSE": 12.396174952060742
+      },
+      "top-left": {
+        "RGB_RMSE": 8.010008811950684,
+        "signed_RGB": [
+          1.7592538595199585,
+          1.7267870903015137,
+          1.211036205291748
+        ],
+        "luma_RMSE": 8.054858469511144
+      },
+      "upper-right": {
+        "RGB_RMSE": 6.632379531860352,
+        "signed_RGB": [
+          2.0283145904541016,
+          1.8390640020370483,
+          1.65025794506073
+        ],
+        "luma_RMSE": 6.733099535483408
+      },
+      "center-texture": {
+        "RGB_RMSE": 19.599397659301758,
+        "signed_RGB": [
+          -19.330781936645508,
+          -19.45127296447754,
+          -19.512126922607422
+        ],
+        "luma_RMSE": 19.580319072582995
+      }
+    },
+    "guards": {
+      "train": true,
+      "held_blocks": true,
+      "all_glass": true,
+      "rim": true,
+      "outer_rim": false,
+      "interior": true,
+      "ssim": true,
+      "foreground": true,
+      "exterior": false
+    },
+    "strict_pass": false,
+    "clipping": {
+      "applied_after_AA_before_output_blur": true,
+      "covered_pixels": 189313,
+      "minimum_preclip": 0.08583176648311953,
+      "maximum_preclip": 0.8806273308461289,
+      "clipped_channels": 0
+    }
+  },
+  {
+    "trial": 4,
+    "family": "source_luminance_highlight_lift",
+    "gain": 1,
+    "bias": 0,
+    "highlight_lift": 0.03,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 11.51431655883789,
+        "mae": 7.692080020904541,
+        "opponent_chroma_rmse": 1.5761111974716187
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 11.351001739501953,
+        "mae": 7.830183506011963,
+        "opponent_chroma_rmse": 1.6069767475128174
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 11.473424911499023,
+        "mae": 7.726844787597656,
+        "opponent_chroma_rmse": 1.5839375257492065
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 13.275699615478516,
+        "mae": 8.075264930725098,
+        "opponent_chroma_rmse": 1.9819751977920532
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 26.348058700561523,
+        "mae": 16.48107147216797,
+        "opponent_chroma_rmse": 4.150359153747559
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 9.358139038085938,
+        "mae": 7.3826422691345215,
+        "opponent_chroma_rmse": 1.0519853830337524
+      },
+      "ssim": 0.9700294733047485,
+      "gradient_mae": 4.60113525390625,
+      "selection_loss": 0.0046703224623366665,
+      "foreground_MSE": 5.534182071685791,
+      "exterior_MSE": 24.1037540435791
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 11.307327270507812,
+        "signed_RGB": [
+          -6.038590431213379,
+          -6.093294143676758,
+          -5.849644660949707
+        ],
+        "luma_RMSE": 11.232615629539966
+      },
+      "top-left": {
+        "RGB_RMSE": 8.15815544128418,
+        "signed_RGB": [
+          2.0100326538085938,
+          2.16737699508667,
+          1.818075180053711
+        ],
+        "luma_RMSE": 8.203687710310716
+      },
+      "upper-right": {
+        "RGB_RMSE": 7.096171855926514,
+        "signed_RGB": [
+          2.21877121925354,
+          2.2325353622436523,
+          2.2204160690307617
+        ],
+        "luma_RMSE": 7.1915954521175545
+      },
+      "center-texture": {
+        "RGB_RMSE": 17.242746353149414,
+        "signed_RGB": [
+          -17.391586303710938,
+          -17.127843856811523,
+          -16.841064453125
+        ],
+        "luma_RMSE": 17.255516763257503
+      }
+    },
+    "guards": {
+      "train": true,
+      "held_blocks": true,
+      "all_glass": true,
+      "rim": true,
+      "outer_rim": false,
+      "interior": true,
+      "ssim": true,
+      "foreground": true,
+      "exterior": false
+    },
+    "strict_pass": false,
+    "clipping": {
+      "applied_after_AA_before_output_blur": true,
+      "covered_pixels": 189313,
+      "minimum_preclip": 0.08659473727717433,
+      "maximum_preclip": 0.9021200980392157,
+      "clipped_channels": 0
+    }
+  },
+  {
+    "trial": 5,
+    "family": "source_luminance_highlight_lift",
+    "gain": 1,
+    "bias": 0,
+    "highlight_lift": 0.06,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 11.455338478088379,
+        "mae": 7.877380847930908,
+        "opponent_chroma_rmse": 1.5761111974716187
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 11.334067344665527,
+        "mae": 7.853133201599121,
+        "opponent_chroma_rmse": 1.6069767475128174
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 11.424932479858398,
+        "mae": 7.87127685546875,
+        "opponent_chroma_rmse": 1.5839375257492065
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 13.601153373718262,
+        "mae": 8.521272659301758,
+        "opponent_chroma_rmse": 1.9819753170013428
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 27.50484848022461,
+        "mae": 16.588520050048828,
+        "opponent_chroma_rmse": 4.150359153747559
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 8.759345054626465,
+        "mae": 7.229150772094727,
+        "opponent_chroma_rmse": 1.051985263824463
+      },
+      "ssim": 0.9689037799835205,
+      "gradient_mae": 4.900350093841553,
+      "selection_loss": 0.004783949611554053,
+      "foreground_MSE": 5.534182071685791,
+      "exterior_MSE": 24.14834213256836
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 10.357449531555176,
+        "signed_RGB": [
+          -4.633886814117432,
+          -4.6886372566223145,
+          -4.445006370544434
+        ],
+        "luma_RMSE": 10.265377378753929
+      },
+      "top-left": {
+        "RGB_RMSE": 8.712202072143555,
+        "signed_RGB": [
+          2.728461503982544,
+          2.8857948780059814,
+          2.536470413208008
+        ],
+        "luma_RMSE": 8.759420086374051
+      },
+      "upper-right": {
+        "RGB_RMSE": 8.03358268737793,
+        "signed_RGB": [
+          2.84238338470459,
+          2.8561322689056396,
+          2.844031810760498
+        ],
+        "luma_RMSE": 8.12412317163631
+      },
+      "center-texture": {
+        "RGB_RMSE": 14.336764335632324,
+        "signed_RGB": [
+          -14.295120239257812,
+          -14.03137493133545,
+          -13.744647979736328
+        ],
+        "luma_RMSE": 14.330680708710585
+      }
+    },
+    "guards": {
+      "train": true,
+      "held_blocks": true,
+      "all_glass": true,
+      "rim": true,
+      "outer_rim": false,
+      "interior": true,
+      "ssim": false,
+      "foreground": true,
+      "exterior": false
+    },
+    "strict_pass": false,
+    "clipping": {
+      "applied_after_AA_before_output_blur": true,
+      "covered_pixels": 189313,
+      "minimum_preclip": 0.08659473727717433,
+      "maximum_preclip": 0.9321200980392157,
+      "clipped_channels": 0
+    }
+  },
+  {
+    "trial": 6,
+    "family": "source_luminance_highlight_lift",
+    "gain": 1,
+    "bias": 0,
+    "highlight_lift": 0.09,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 12.42273235321045,
+        "mae": 8.441500663757324,
+        "opponent_chroma_rmse": 1.5761111974716187
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 12.47585391998291,
+        "mae": 8.5708589553833,
+        "opponent_chroma_rmse": 1.6069767475128174
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 12.436125755310059,
+        "mae": 8.4740629196167,
+        "opponent_chroma_rmse": 1.5839375257492065
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 14.787662506103516,
+        "mae": 9.570606231689453,
+        "opponent_chroma_rmse": 1.9819751977920532
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 29.211685180664062,
+        "mae": 17.34706687927246,
+        "opponent_chroma_rmse": 4.1503586769104
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 9.5610933303833,
+        "mae": 7.390796184539795,
+        "opponent_chroma_rmse": 1.051985263824463
+      },
+      "ssim": 0.9665994644165039,
+      "gradient_mae": 5.305086612701416,
+      "selection_loss": 0.005498253132328191,
+      "foreground_MSE": 5.534182071685791,
+      "exterior_MSE": 24.2011661529541
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 10.268715858459473,
+        "signed_RGB": [
+          -3.2302989959716797,
+          -3.2850751876831055,
+          -3.0414302349090576
+        ],
+        "luma_RMSE": 10.165281631216795
+      },
+      "top-left": {
+        "RGB_RMSE": 9.576859474182129,
+        "signed_RGB": [
+          3.4466583728790283,
+          3.6039838790893555,
+          3.254682779312134
+        ],
+        "luma_RMSE": 9.623990770098844
+      },
+      "upper-right": {
+        "RGB_RMSE": 9.220561027526855,
+        "signed_RGB": [
+          3.4659762382507324,
+          3.479745388031006,
+          3.467637300491333
+        ],
+        "luma_RMSE": 9.304902323478416
+      },
+      "center-texture": {
+        "RGB_RMSE": 11.860115051269531,
+        "signed_RGB": [
+          -11.198620796203613,
+          -10.934891700744629,
+          -10.64818000793457
+        ],
+        "luma_RMSE": 11.82679122945918
+      }
+    },
+    "guards": {
+      "train": true,
+      "held_blocks": true,
+      "all_glass": true,
+      "rim": false,
+      "outer_rim": false,
+      "interior": true,
+      "ssim": false,
+      "foreground": true,
+      "exterior": false
+    },
+    "strict_pass": false,
+    "clipping": {
+      "applied_after_AA_before_output_blur": true,
+      "covered_pixels": 189313,
+      "minimum_preclip": 0.08659473727717433,
+      "maximum_preclip": 0.9621200980392156,
+      "clipped_channels": 0
+    }
+  },
+  {
+    "trial": 7,
+    "family": "source_luminance_highlight_lift",
+    "gain": 1,
+    "bias": 0,
+    "highlight_lift": 0.12,
+    "scores": {
+      "train": {
+        "pixels": 100630,
+        "rmse": 14.20837688446045,
+        "mae": 9.75669002532959,
+        "opponent_chroma_rmse": 1.5761111974716187
+      },
+      "held_blocks": {
+        "pixels": 33853,
+        "rmse": 14.505268096923828,
+        "mae": 10.094117164611816,
+        "opponent_chroma_rmse": 1.6069767475128174
+      },
+      "all_glass": {
+        "pixels": 134483,
+        "rmse": 14.28369426727295,
+        "mae": 9.841629028320312,
+        "opponent_chroma_rmse": 1.5839375257492065
+      },
+      "rim": {
+        "pixels": 66832,
+        "rmse": 16.652175903320312,
+        "mae": 10.951692581176758,
+        "opponent_chroma_rmse": 1.9819753170013428
+      },
+      "outer_rim": {
+        "pixels": 5100,
+        "rmse": 31.37894058227539,
+        "mae": 18.704669952392578,
+        "opponent_chroma_rmse": 4.150359153747559
+      },
+      "interior": {
+        "pixels": 67651,
+        "rmse": 11.473442077636719,
+        "mae": 8.74500560760498,
+        "opponent_chroma_rmse": 1.051985263824463
+      },
+      "ssim": 0.963280439376831,
+      "gradient_mae": 5.776679515838623,
+      "selection_loss": 0.006813233021914172,
+      "foreground_MSE": 5.534182071685791,
+      "exterior_MSE": 24.262224197387695
+    },
+    "local": {
+      "bottom-left": {
+        "RGB_RMSE": 11.061869621276855,
+        "signed_RGB": [
+          -1.826727032661438,
+          -1.8814705610275269,
+          -1.6378352642059326
+        ],
+        "luma_RMSE": 10.956121005689383
+      },
+      "top-left": {
+        "RGB_RMSE": 10.67693042755127,
+        "signed_RGB": [
+          4.165217399597168,
+          4.322505474090576,
+          3.9732048511505127
+        ],
+        "luma_RMSE": 10.7229552258393
+      },
+      "upper-right": {
+        "RGB_RMSE": 10.57338809967041,
+        "signed_RGB": [
+          4.089585304260254,
+          4.103353977203369,
+          4.091241836547852
+        ],
+        "luma_RMSE": 10.651691727884216
+      },
+      "center-texture": {
+        "RGB_RMSE": 10.132665634155273,
+        "signed_RGB": [
+          -8.102169036865234,
+          -7.838446140289307,
+          -7.551707744598389
+        ],
+        "luma_RMSE": 10.063130886356522
+      }
+    },
+    "guards": {
+      "train": false,
+      "held_blocks": false,
+      "all_glass": false,
+      "rim": false,
+      "outer_rim": false,
+      "interior": false,
+      "ssim": false,
+      "foreground": true,
+      "exterior": false
+    },
+    "strict_pass": false,
+    "clipping": {
+      "applied_after_AA_before_output_blur": true,
+      "covered_pixels": 189313,
+      "minimum_preclip": 0.08659473727717433,
+      "maximum_preclip": 0.9921200980392156,
+      "clipped_channels": 0
+    }
+  }
+]

@@ -1,0 +1,6 @@
+# Curvature-cap geometry screen — no qualifier
+
+- Added geometry direction is distinct from existing12normal/cap/core map directions:43.94%/44.82% interior vector norm remains after projection. Pure CrownGeometry reused from sealed toolbar audit; no target-derived shape/field. Mirror/rotation/unit scaling/explicit radial-circle/zero map and uniform optical-field checks pass. The scalar defines an empirical geometry-conditioned image map, not a physical solid.
+- Five predeclared fixed-material paired native probes lambda0, ±.002, ±.02 completed. Best negative endpoint E ratios0.9999612508109442/0.9997294065936743 (~.00387%/.02706% improvement); original glass/exterior guards pass. Positive probes regress both. No optical pass or new baseline; local screen, not global impossibility or arbitrary additional sweep.
+- All native arrays, scores, center-domain reports and failed mirror fixture are retained. Boundary continuation correction recorded in model.md; initial inside-only gate would add a new artificial discontinuity before the fixed output filter. No image score existed before that correction.
+- This narrow cap-edge mode cannot by itself visibly repair the unresolved broad colored rim/blur. No optimizer/HQ proposal is justified by the declared screen. Do not import these coefficients into public recipe6.

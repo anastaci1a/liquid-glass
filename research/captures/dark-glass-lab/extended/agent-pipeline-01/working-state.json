@@ -1,0 +1,50 @@
+{
+  "status": "EXPERIMENTAL_PHYSICAL_PIPELINE_NOT_HISTORICAL_ADOPTION",
+  "source_epoch": "frozen expanded pass03 input",
+  "geometry": {
+    "adapter": "ExpandedHarmonicBack",
+    "half": "refraction/h1/geometry-checkpoint.json.scene.surface_half",
+    "radius": "same scene.surface_radius",
+    "depth": 0.15,
+    "crown_depth": 0.4,
+    "power": 3,
+    "index": 1.5,
+    "D": 2,
+    "L": 88.5
+  },
+  "ordinary_output_sigma_native_px": 6.75,
+  "source_sigma_native_px": 0,
+  "color": {
+    "class": "common encoded-RGB neutral affine",
+    "g": 0.701980827595718,
+    "b": 0.22423217000784113,
+    "all_channels_tied": true,
+    "same_both_references": true
+  },
+  "outline": "none",
+  "shadow": "none",
+  "foreground": "original canonical source/styles/artwork frozen",
+  "arrays": {
+    "a": {
+      "material": "color-grading/a-step0.5-material.npy",
+      "complete": "color-grading/a-step0.5-complete.npy",
+      "lens": "color-grading/a-step0.5-lens.npy"
+    },
+    "b": {
+      "material": "color-grading/b-step0.5-material.npy",
+      "complete": "color-grading/b-step0.5-complete.npy",
+      "lens": "color-grading/b-step0.5-lens.npy"
+    }
+  },
+  "historical_pass03_unchanged": true,
+  "primary_acceptance": true,
+  "primary_stage_acceptance": {
+    "blur": true,
+    "color_halfstep": true,
+    "refraction_fidelity": false,
+    "historical_public_replacement": false,
+    "evidence": "liquid-glass-review/agent-pipeline-01/primary-stage-acceptance.json",
+    "scope": "Incremental component results only; pipeline COMPLETE AND STOPPED"
+  },
+  "primary_acceptance_scope": "Blur and color components only, not geometry fidelity or historical replacement"
+}

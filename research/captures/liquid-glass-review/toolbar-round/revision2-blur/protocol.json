@@ -1,0 +1,84 @@
+{
+  "status": "complete/rejected; accepted baseline remains unchanged",
+  "accepted_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "native_samples": [
+    4,
+    4
+  ],
+  "source_sigma_bounds_L": [
+    0.045,
+    0.085
+  ],
+  "post_sigma_bounds_L": [
+    0.004,
+    0.014
+  ],
+  "fixed": [
+    "blur_transition",
+    "source pixels",
+    "shape/pose",
+    "all inverse-map parameters",
+    "material",
+    "shadow",
+    "masks",
+    "foreground coverage/color/placement"
+  ],
+  "ordinary_blur_not_dispersion": true,
+  "glyphs_composited_after_glass_filters": true,
+  "advisory_crops": {
+    "upper": [
+      650,
+      369,
+      1270,
+      435
+    ],
+    "d": [
+      960,
+      450,
+      1120,
+      550
+    ],
+    "underside": [
+      650,
+      650,
+      1270,
+      726
+    ]
+  },
+  "frozen": {
+    "accepted_recipe": {
+      "file": "evidence-package/recipe.json",
+      "sha256": "489fa8d32be7f6d9f2ccd253ef996329e80c41df89e1d98e6a9597d7eccdbce9"
+    },
+    "source": {
+      "file": "evidence-package/inputs/source.png",
+      "sha256": "6c68d31ac994001701ae3763d67f494bca91d03fda950789dddf01cbb60ea21b"
+    },
+    "target": {
+      "file": "evidence-package/inputs/target.png",
+      "sha256": "5bb59714854d0bd019d689b3e8c444dd82b057d6abdc9275ca88a8295692bbf8"
+    },
+    "archive_vector": {
+      "file": "evidence-package/inputs/archivebox.svg",
+      "sha256": "0a585750c7ef62d1a337bd4465deb1da651128450183bec9451adff649763cd6"
+    },
+    "plus_vector": {
+      "file": "evidence-package/inputs/plus.svg",
+      "sha256": "846f23109fbb184ad823c1f53029617bcee88f85750e17a97235fe0496762c6e"
+    },
+    "frozen_native_masks": {
+      "file": "frozen-masks.npz",
+      "sha256": "da7d9dec1b557f91321e9ed5aaef5a4416371cbd5657b83e2ff6fccb86b0aa53"
+    },
+    "renderer": {
+      "file": "evidence-package/code/crowned_tensor.py",
+      "sha256": "256ee8e084139ec1c81d07cd1e423d8962a665bfc44d4ab9d48744fae1b746f3"
+    },
+    "gate": {
+      "file": "evidence-package/code/progress_gate.py",
+      "sha256": "f0152d7e62340c2c5966c9d01c31f8defb384629ba0a6d776286b817f319e7ae"
+    }
+  },
+  "started_at": "2026-10-21T08:09:42.300Z"
+}

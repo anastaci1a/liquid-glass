@@ -1,0 +1,197 @@
+{
+  "status": "PASS_CLOSED_B_GEOMETRY_ONLY",
+  "geometry_rays": 0,
+  "images": 0,
+  "fits": 0,
+  "source_work": 0,
+  "checks": {
+    "gradient_0.0": {
+      "pass": true,
+      "details": {
+        "steps": [
+          1e-06,
+          5e-07
+        ],
+        "absolute_errors": [
+          5.613798315096119e-10,
+          1.1340306471652184e-09
+        ]
+      }
+    },
+    "gradient_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "steps": [
+          1e-06,
+          5e-07
+        ],
+        "absolute_errors": [
+          7.048408523502303e-10,
+          9.91656534665708e-10
+        ]
+      }
+    },
+    "true_circle_ellipsoid": {
+      "pass": true,
+      "details": {
+        "level_error": 0.0,
+        "gradient_error": 0.0,
+        "fixture": "True radial T=x\u00b2+y\u00b2, kappa0; not softened equal-half crown. Root circle adapter equality awaits its independently owned implementation."
+      }
+    },
+    "circle_front_API": {
+      "pass": true,
+      "details": "Front z finite at tangent but strict_insideFalse, outsideNaN; exact projected tangent separate"
+    },
+    "mesh_boundary_0.0": {
+      "pass": true,
+      "details": {
+        "vertices": 1986,
+        "triangles": 3968,
+        "max_F_residual": 5.551115123125783e-16
+      }
+    },
+    "closed_mesh_0.0": {
+      "pass": true,
+      "details": {
+        "every_edge_faces": 2,
+        "minimum_double_area": 0.0017813023195750526,
+        "caveat": "Piecewise planar facets approximate actual smooth boundary; vertices/normals satisfy actual F."
+      }
+    },
+    "regular_boundary_0.0": {
+      "pass": true,
+      "details": {
+        "analytic_global_lower_bound": 0.28911564625850344,
+        "observed_minimum": 1.9937044012678482,
+        "proof": "Boundary sum q\u00b2/b\u00b2+y\u00b2/b\u00b2+s*u\u00b2=1; one >=1/3. qprime>=q/a, same-sign kappa term. Thus normgradF>=min(2/(3a),2/(sqrt3 b),2/(sqrt3 eta))>0."
+      }
+    },
+    "center_reflections_0.0": {
+      "pass": true,
+      "details": {
+        "maximum_error": 3.552713678800501e-15,
+        "z_symmetry": "About z=-eta, not front plane"
+      }
+    },
+    "rigid_rotation_0.0": {
+      "pass": true,
+      "details": {
+        "level_error": 8.881784197001252e-16,
+        "gradient_error": 8.881784197001252e-16
+      }
+    },
+    "all_length_scale_0.0": {
+      "pass": true,
+      "details": {
+        "level_error": 8.881784197001252e-16,
+        "gradient_error": 5.329070518200751e-15,
+        "center_extents_scale": true
+      }
+    },
+    "convexity_certificate_0.0": {
+      "pass": true,
+      "details": {
+        "analytic": "G=u\u00b2+kappa*X\u00b2u\u00b2 has nonnegative diagonal Hessian and determinant4*kappa*u\u00b2*(1-3*kappa*X\u00b2)>=0 on |X|<=1. T convex. F convex on enclosing strip; all F<=0 lies in strip because q(a)=b and added terms nonnegative. Sublevel is convex/compact.",
+        "sample_minimum_Hessian_eigenvalue": 7.640100709511942e-16,
+        "sample_minimum_G_determinant": 0.0,
+        "numerical_role": "Corroboration, not global proof"
+      }
+    },
+    "convex_chords_0.0": {
+      "pass": true,
+      "details": {
+        "max_chord_F": 0.0
+      }
+    },
+    "equator_tangent_0.0": {
+      "pass": true,
+      "details": "Smooth regular implicit equator, projected orthographic tangency, NOT A crease. No entry normal fabricated."
+    },
+    "actual_sections_0.0": {
+      "pass": true,
+      "details": {
+        "max_section_F": 6.661338147750939e-16,
+        "center_back": -0.3,
+        "front_center_xx": -0.0,
+        "expected_limit": "kappa0 retains zero centerline longitudinal second curvature; kappa1/3 introduces true curved front/back independent of projected silhouette."
+      }
+    },
+    "mesh_boundary_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "vertices": 1986,
+        "triangles": 3968,
+        "max_F_residual": 6.661338147750939e-16
+      }
+    },
+    "closed_mesh_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "every_edge_faces": 2,
+        "minimum_double_area": 0.0015665476852013422,
+        "caveat": "Piecewise planar facets approximate actual smooth boundary; vertices/normals satisfy actual F."
+      }
+    },
+    "regular_boundary_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "analytic_global_lower_bound": 0.28911564625850344,
+        "observed_minimum": 1.9937044012678482,
+        "proof": "Boundary sum q\u00b2/b\u00b2+y\u00b2/b\u00b2+s*u\u00b2=1; one >=1/3. qprime>=q/a, same-sign kappa term. Thus normgradF>=min(2/(3a),2/(sqrt3 b),2/(sqrt3 eta))>0."
+      }
+    },
+    "center_reflections_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "maximum_error": 3.552713678800501e-15,
+        "z_symmetry": "About z=-eta, not front plane"
+      }
+    },
+    "rigid_rotation_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "level_error": 1.1102230246251565e-15,
+        "gradient_error": 3.552713678800501e-15
+      }
+    },
+    "all_length_scale_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "level_error": 1.3322676295501878e-15,
+        "gradient_error": 5.329070518200751e-15,
+        "center_extents_scale": true
+      }
+    },
+    "convexity_certificate_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "analytic": "G=u\u00b2+kappa*X\u00b2u\u00b2 has nonnegative diagonal Hessian and determinant4*kappa*u\u00b2*(1-3*kappa*X\u00b2)>=0 on |X|<=1. T convex. F convex on enclosing strip; all F<=0 lies in strip because q(a)=b and added terms nonnegative. Sublevel is convex/compact.",
+        "sample_minimum_Hessian_eigenvalue": 7.336269162730608e-06,
+        "sample_minimum_G_determinant": 7.724517126170475e-07,
+        "numerical_role": "Corroboration, not global proof"
+      }
+    },
+    "convex_chords_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "max_chord_F": -2.220446049250313e-16
+      }
+    },
+    "equator_tangent_0.3333333333333333": {
+      "pass": true,
+      "details": "Smooth regular implicit equator, projected orthographic tangency, NOT A crease. No entry normal fabricated."
+    },
+    "actual_sections_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "max_section_F": 6.661338147750939e-16,
+        "center_back": -0.3,
+        "front_center_xx": -0.009403633902540608,
+        "expected_limit": "kappa0 retains zero centerline longitudinal second curvature; kappa1/3 introduces true curved front/back independent of projected silhouette."
+      }
+    }
+  },
+  "level_points": 18701,
+  "finished_unix": 1792641854.8744671
+}

@@ -1,0 +1,142 @@
+{
+  "stage": "EPOCH02_FINITE_PROCEDURAL_REVIEW_NOT_GLOBAL_IMPOSSIBILITY",
+  "accepted_foreground": {
+    "count": 1,
+    "gray": 0.24982225414468506,
+    "before_RMSE": 17.85308837890625,
+    "after_RMSE": 8.30663013458252,
+    "only_actual_cached_composite": 1,
+    "body_guards_bit_exact": true,
+    "optical_gain_claim": false
+  },
+  "trials": [
+    {
+      "family": "rim-amplitude-pass02",
+      "amplitude": 0.13125,
+      "E": 3.234930729932002,
+      "rim": 3.8748302459716797,
+      "SSIM": 0.9921982288360596,
+      "failed_guards": [
+        "SSIM"
+      ],
+      "prediction_only": true,
+      "actual_native_body_render": false
+    },
+    {
+      "family": "rim-amplitude-pass02",
+      "amplitude": 0.1375,
+      "E": 3.2101334156644477,
+      "rim": 3.8393008708953857,
+      "SSIM": 0.992197573184967,
+      "failed_guards": [
+        "SSIM"
+      ],
+      "prediction_only": true,
+      "actual_native_body_render": false
+    },
+    {
+      "family": "rim-amplitude-pass02",
+      "amplitude": 0.15,
+      "E": 3.161007533177462,
+      "rim": 3.768751382827759,
+      "SSIM": 0.9921955466270447,
+      "failed_guards": [
+        "SSIM"
+      ],
+      "prediction_only": true,
+      "actual_native_body_render": false
+    },
+    {
+      "family": "rim-width-pass02",
+      "width": 0.027,
+      "E": 3.3197571027190884,
+      "rim": 3.995974540710449,
+      "SSIM": 0.9921941757202148,
+      "failed_guards": [
+        "glass",
+        "rim",
+        "held",
+        "exterior",
+        "full_visible_exterior",
+        "E",
+        "SSIM",
+        "meaningful_E_improvement"
+      ],
+      "prediction_only": true,
+      "actual_native_body_render": false
+    },
+    {
+      "family": "rim-width-pass02",
+      "width": 0.029,
+      "E": 3.1980960644761423,
+      "rim": 3.8220343589782715,
+      "SSIM": 0.9921948313713074,
+      "failed_guards": [
+        "SSIM"
+      ],
+      "prediction_only": true,
+      "actual_native_body_render": false
+    },
+    {
+      "family": "coupled-pass02",
+      "amplitude": 0.13125,
+      "t": 1,
+      "bias": 0.07450000000000001,
+      "E": 3.260283044657454,
+      "rim": 3.914574146270752,
+      "SSIM": 0.9921724200248718,
+      "failed_guards": [
+        "rim",
+        "E",
+        "SSIM",
+        "meaningful_E_improvement"
+      ],
+      "prediction_only": true,
+      "actual_native_body_render": false
+    },
+    {
+      "family": "coupled-pass02",
+      "amplitude": 0.128125,
+      "t": 0.5,
+      "bias": 0.07475000000000001,
+      "E": 3.259486519613211,
+      "rim": 3.9120702743530273,
+      "SSIM": 0.9921644330024719,
+      "failed_guards": [
+        "rim",
+        "SSIM"
+      ],
+      "prediction_only": true,
+      "actual_native_body_render": false
+    }
+  ],
+  "source_protocol": {
+    "case_fingerprint": "6e0f6b9a7f5558ee5d229d2466de2cadf2d9e8929d87f0bbd19833997c68850b",
+    "source_revision_adopted_by_primary": true,
+    "revision_is_count0": true,
+    "glass_mask_pixels": 1345,
+    "foreground_paint_guard_halfopen": 400,
+    "foreground_glass_exclusion_inclusive": 441,
+    "SSIM_safe": 94,
+    "old_epoch_count_separate": 1,
+    "current_epoch_count": 1,
+    "whole_subrays": 7731,
+    "all_scored_subrays": 5380,
+    "post_subrays": 8752,
+    "hidden_observed_fraction": 0,
+    "defined_modeled_confidence": 1,
+    "source_upper_holdout_RMSE": 3.78504886,
+    "pose_p95_native_px": 0.4633718361
+  },
+  "conclusion": [
+    "Tint is a source/body-fixed foreground-only improvement, independently accepted.",
+    "Three tested existing material/lighting families offer no strict all-guard cached qualifier. Conditional native-render budget remained unused.",
+    "Lighting amplitude/width improve RGB E but reduce SSIM; predeclared negative commonbias improves held/interior/foreground but rim/SSIM reject.",
+    "These finite proposal failures cannot prove that the full existing material family has no feasible direction; floating native operation order was not evaluated because the required cached gate failed.",
+    "Estimated smooth hidden source cannot independently identify refraction, ordinary blur, spectral dispersion, exact UI weight, or physical illumination. No new source fit, mask change, shadow copy, nonlinear operator, or extra coefficient sweep proposed.",
+    "SSIM stays an original strict guard; no waiver or tolerance. All arrays and old epoch failures retained. Request next bounded direction before any further study."
+  ],
+  "native_body_renders_in_these_three_families": 0,
+  "additional_optical_derivatives": 0,
+  "source_or_epoch_adoptions_after_primary_epoch02": 0
+}

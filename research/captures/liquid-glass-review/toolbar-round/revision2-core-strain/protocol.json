@@ -1,0 +1,54 @@
+{
+  "accepted_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "fixed_width": 0.3,
+  "width_origin": "accepted material core transition .30L; fixed before scoring",
+  "potential": "Psi=.5*lambda*(e dot position)^2*S(d/w_core)",
+  "S": "quintic10u^3-15u^4+6u^5, clipped to0/1",
+  "actual_gradient": "grad(d)=-L*grad(T)/(2sqrt(T)); never unit normal for crowned coordinate",
+  "axis": "deterministic major axis; horizontal in accepted toolbar",
+  "lambda_bounds": [
+    -0.006341257469600858,
+    0.006341257469600858
+  ],
+  "bound": {
+    "lambda_max": 0.006341257469600858,
+    "maximum_added_displacement_fraction": 0.12,
+    "unit_displacement_bound": 18.921799307958473,
+    "conservative_unit_bound": 18.92369148788927,
+    "max_depth_gradient_bound": 1,
+    "fixed_width": 0.3,
+    "major_half": 2.3058823529411763,
+    "minor_half": 1,
+    "S_prime_max": 1.875,
+    "origin": "analytic triangle bound from fixed geometry, independent of target pixels"
+  },
+  "regularity": "C2 potential/C1 added gradient; total inherited map empirical",
+  "source_and_mask_epoch_unchanged": true,
+  "unverified_curvature_combined": false,
+  "pre_fit_sensitivity_fractions": [
+    0,
+    -0.25,
+    0.25,
+    -0.5,
+    0.5
+  ],
+  "all_native_guards": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "counted_passes": 0,
+  "status": "invariants passed; sensitivity before bounded fitting",
+  "local_native_constraint_analysis": {
+    "finite_h_fractions": [
+      0.03125,
+      0.015625
+    ],
+    "purpose": "admissible scalar proposals under all native guards after mandatory sensitivity",
+    "confirmation": "fine-model nonzero proposal, at most4backtracking scales, original exact nonlinear guards",
+    "global_exhaustion_claim": false
+  }
+}

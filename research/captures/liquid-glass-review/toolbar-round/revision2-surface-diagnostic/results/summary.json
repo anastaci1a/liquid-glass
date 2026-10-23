@@ -1,0 +1,16 @@
+{
+  "coarse": "coarse-08.json",
+  "fine": "fine-04.json",
+  "RK_refinement": "fine-04-RK01.json",
+  "equation": "grad(h)=v/(n*sqrt(|v|\u00b2+(G-h)\u00b2)-(G-h)); unknown h, fixed planeG",
+  "necessary_local_compatibility": "D*curl(v)-(n/R)*(v_y*v dot dxv-v_x*v dot dyv)=0",
+  "native_input_or_output_score_changes": false,
+  "new_optical_fits": 0,
+  "counted_passes": 0,
+  "limitations": [
+    "Two integration paths are diagnostics, not a least-squares best surface or global impossibility proof",
+    "Near-boundary stencil and nonpositive-height/invalid branches kept separate",
+    "No camera/IOR/gap/thickness inferred from footage; finite grid cannot certify surface clearance or sidewall exclusion",
+    "Source shading/blur/spectral response unchanged and not identified by map geometry"
+  ]
+}

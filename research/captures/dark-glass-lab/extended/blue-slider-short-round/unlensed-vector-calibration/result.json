@@ -1,0 +1,76 @@
+{
+  "status": "Source proposal only, no B source or optical epoch adoption",
+  "color_rgb": [
+    0.04485942492910918,
+    0.41178192727541935,
+    0.8877287496298321
+  ],
+  "source_psf_sigma_native_px": 0.5822342842362257,
+  "parameters": [
+    426.0350944718593,
+    525.8025838282225,
+    97.27049531545208,
+    1434.385374383479,
+    517.9281845292545,
+    89.376398103696,
+    0.5822342842362257
+  ],
+  "bounds": [
+    [
+      424.5823498750511,
+      427.5823498750511
+    ],
+    [
+      524.3224938069072,
+      527.3224938069072
+    ],
+    [
+      95.17884460353395,
+      99.17884460353395
+    ],
+    [
+      1432.8652470566951,
+      1435.8652470566951
+    ],
+    [
+      516.4157352591819,
+      519.4157352591819
+    ],
+    [
+      87.38475373038614,
+      91.38475373038614
+    ],
+    [
+      0,
+      1.5
+    ]
+  ],
+  "observations": [
+    {
+      "icon": "tortoise",
+      "pose": [
+        426.0350944718593,
+        525.8025838282225,
+        97.27049531545208
+      ],
+      "vector_sha256": "936c8c5d8f473107700b0cc63aaec558feaaf250e2cd65cf5e9f0e0958c9a7c0",
+      "train_rgb_rmse": 10.986886325440409,
+      "held_rgb_rmse": 10.328783488165051
+    },
+    {
+      "icon": "hare",
+      "pose": [
+        1434.385374383479,
+        517.9281845292545,
+        89.376398103696
+      ],
+      "vector_sha256": "16029a1639c49cf04bf89077c73c82edc17d71c48de001257341c26cf932e9f6",
+      "train_rgb_rmse": 8.987188642669626,
+      "held_rgb_rmse": 8.657888991927665
+    }
+  ],
+  "evaluations": 360,
+  "solver_success": false,
+  "solver_message": "Maximum number of function evaluations has been exceeded.",
+  "limits": "Shared RGB tint and ordinary isotropic source PSF calibrated ONLY against unlensed A training blocks. Held-out blocks not used for pose/color/PSF. Unknown camera encoding/PSF/background model remain; no claim of exact Apple font configuration. B halo excluded entirely. Vectors unchanged, only uniformscale/translation; not an optical pass."
+}

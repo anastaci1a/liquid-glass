@@ -1,0 +1,164 @@
+{
+  "seed": "archived",
+  "stage": 1,
+  "experiment": "Selected-axis phase",
+  "parameters": {
+    "sigma": 0.5,
+    "amplitude": 0.5267679257572784,
+    "band": 1.0,
+    "power": 4.616458746391088,
+    "tangent": 0.0,
+    "tangent_band": 0.2681646270760464,
+    "core_x": 0.0,
+    "core_y": 0.0,
+    "post_sigma": 0.0,
+    "coupling": 0.0,
+    "gamma": 1.0,
+    "rim_width": 0.2999999645594427,
+    "thin_width": 0.028271897949045582,
+    "spline": true,
+    "shape_dx": 0.0,
+    "shape_dy": 0.0,
+    "half_x_delta": 0.0,
+    "half_y_delta": 0.0,
+    "radius_delta": 0.0,
+    "c0": 2.112165641845632,
+    "c1": 0.3103449705971834,
+    "c2": 0.03515867667526251,
+    "c3": 0.39544726735551355,
+    "c4": -1.5566074813904258,
+    "c5": 0.6794348506363402,
+    "c6": 0.00811207533252288,
+    "shadow": {
+      "opacity": 0.030792257176537066,
+      "sigma": 0.14035990212261495,
+      "offset": [
+        0.0081036453594727,
+        0.09999999835491878
+      ]
+    },
+    "cap_normal_gain": 0.0,
+    "cap_join_width": 0.0,
+    "anchor_x": 0.1,
+    "anchor_y": 0.1,
+    "anchor_band": 0.9
+  },
+  "material": [
+    0.24370145187511524,
+    0.8180659001884276,
+    0.8676949959949489,
+    0.8,
+    0.23028621385885972,
+    0.18528046921529906,
+    0.07595496750456854,
+    -0.02148258861285304,
+    -0.01492607303112679,
+    -0.03692461412099174,
+    0.06370899634124194,
+    -0.021477759326740897,
+    -0.08530160887357778,
+    -0.03675369625734832,
+    0.0013985723740056926,
+    -0.011003547110251945,
+    0.032409793499219484,
+    -0.015325149595455886,
+    0.08413083065510056,
+    0.008274210103316451,
+    0.2531361690575506,
+    0.8680854032209177,
+    0.9190147296106087
+  ],
+  "training_loss": 0.010988719030795695,
+  "scores": [
+    {
+      "glass": {
+        "pixels": 186310,
+        "rmse": 23.618499755859375
+      },
+      "rim": {
+        "pixels": 46479,
+        "rmse": 23.200319290161133
+      },
+      "held": {
+        "pixels": 45815,
+        "rmse": 23.605152130126953
+      },
+      "interior": {
+        "pixels": 139831,
+        "rmse": 23.755870819091797
+      },
+      "ssim": 0.9022418260574341,
+      "loss": 551.9599160518974
+    },
+    {
+      "glass": {
+        "pixels": 177426,
+        "rmse": 17.85027503967285
+      },
+      "rim": {
+        "pixels": 43962,
+        "rmse": 15.346208572387695
+      },
+      "held": {
+        "pixels": 44654,
+        "rmse": 19.04451560974121
+      },
+      "interior": {
+        "pixels": 133464,
+        "rmse": 18.601436614990234
+      },
+      "ssim": 0.9269969463348389,
+      "loss": 293.694458558545
+    },
+    {
+      "glass": {
+        "pixels": 171306,
+        "rmse": 28.18330192565918
+      },
+      "rim": {
+        "pixels": 41340,
+        "rmse": 16.43846893310547
+      },
+      "held": {
+        "pixels": 42039,
+        "rmse": 28.84556770324707
+      },
+      "interior": {
+        "pixels": 129966,
+        "rmse": 30.999967575073242
+      },
+      "ssim": 0.8787038326263428,
+      "loss": 637.0759334624071
+    }
+  ],
+  "source_support": [
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0169502442166282,
+      "gaussian_3sigma_observed_fraction": 0.014760345660458377,
+      "source_gaussian_radius_native_px": 2
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.002124829506385761,
+      "gaussian_3sigma_observed_fraction": 0.0005297983384622321,
+      "source_gaussian_radius_native_px": 2
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.008931385940947778,
+      "gaussian_3sigma_observed_fraction": 0.007139271245607276,
+      "source_gaussian_radius_native_px": 2
+    }
+  ],
+  "supported": [
+    true,
+    true,
+    true
+  ],
+  "evaluations": 156,
+  "seconds": 3.190162420272827
+}

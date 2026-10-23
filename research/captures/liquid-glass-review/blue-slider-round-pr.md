@@ -1,0 +1,7 @@
+- Generate the slider contact shadow and tinted halo from its measured footprint instead of retaining photographed exterior context. Three separately pushed passes preserve every original native optical score; near-exterior RMSE19.299789 →11.701439 and full-visible exterior9.391866 →6.010572, including spatial held blocks.
+- Publish current1080px-per-side geometry renders and a six-second1080px video/GIF. GIF9,887,212bytes. The gray-track nine-patch check also improves; it is not a complete second-background optical benchmark.
+- Reuse fixed geometry/material fields while resampling the backdrop at each position. Existing mapping/lighting/shading are shared; native material matches the direct evaluator bit-for-bit at zero and17px displacement. Source/output blur is explicitly unsupported by this cache.
+- Verification: source hashes, strict native replay/exterior guards, source-domain bounds, complete90-frame media decode, Python compile/CLI checks, local Pages links/cards and desktop/mobile comparison tests. The tested published docs subtree matches this branch exactly; live asset hashes verified.
+- Limits: exterior-only progress, inferred input/hidden endpoint and unverified dark/tint generalization. The contact band remains too pronounced; original optics are unchanged. Offline timing is not an Android benchmark. The metadata-reporting failure was recovered without new scene renders or encodes. Docs/research only.
+
+Refs #222.

@@ -1,0 +1,123 @@
+{
+  "z": [
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "gamma": 1.0456395525912732,
+  "shared_offsets": [
+    0.006,
+    0.003,
+    0.006
+  ],
+  "native_E": 6.790203130095051,
+  "baseline_E": 6.870490597949865,
+  "relative_reduction": 0.011685842038525074,
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 5.796156406402588,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 8.677568435668945,
+          "pixels": 61248
+        },
+        "shadow": 11.466962522841486
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 13.142080481292576,
+    "plus": 3.304110822040719
+  },
+  "guard_order": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "guard_before": [
+    5.843130588531494,
+    8.813648223876953,
+    11.46944201723165,
+    13.242044387461515,
+    3.667139623528374
+  ],
+  "guard_after": [
+    5.796156406402588,
+    8.677568435668945,
+    11.466962522841486,
+    13.142080481292576,
+    3.304110822040719
+  ],
+  "all_nonregression": true,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 6.790203130095051,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": 0.011685842038525074,
+        "milestone_passed": true,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": true
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": true,
+  "advisory_crops": {
+    "upper": {
+      "conditional_RMSE": 9.134716033935547,
+      "complete_RMSE": 8.892461926205073
+    },
+    "d": {
+      "conditional_RMSE": 2.8947231769561768,
+      "complete_RMSE": 2.89472294409925
+    },
+    "underside": {
+      "conditional_RMSE": 5.483194828033447,
+      "complete_RMSE": 5.47054117062951
+    }
+  },
+  "advisory_baseline_crops": {
+    "upper": {
+      "conditional_RMSE": 9.200722694396973,
+      "complete_RMSE": 8.964385936470073
+    },
+    "d": {
+      "conditional_RMSE": 3.110433340072632,
+      "complete_RMSE": 3.1104335155646172
+    },
+    "underside": {
+      "conditional_RMSE": 5.073945045471191,
+      "complete_RMSE": 5.0623110674470535
+    }
+  },
+  "source_sha256": {
+    "source.png": "6c68d31ac994001701ae3763d67f494bca91d03fda950789dddf01cbb60ea21b",
+    "target.png": "5bb59714854d0bd019d689b3e8c444dd82b057d6abdc9275ca88a8295692bbf8"
+  },
+  "mask_sha256": "da7d9dec1b557f91321e9ed5aaef5a4416371cbd5657b83e2ff6fccb86b0aa53",
+  "coverage_exact": true,
+  "new_native_candidate_renders": 1,
+  "new_full_baseline_renders": 0,
+  "model_sha256": "4dc32bbd3131b7249f88a85402a909b525923e713f77da6211941641bb7c316e",
+  "new_accepted_passes": 0,
+  "next": "STOP fitting; freshHQ/source/nativepackage and primaryindependentreview required"
+}

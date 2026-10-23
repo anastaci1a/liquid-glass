@@ -1,0 +1,88 @@
+{
+  "baseline": [
+    {
+      "glass": {
+        "pixels": 113250,
+        "rmse": 1.6107325553894043
+      },
+      "rim": {
+        "pixels": 35386,
+        "rmse": 2.6459853649139404
+      },
+      "held": {
+        "pixels": 27873,
+        "rmse": 1.3603713512420654
+      },
+      "interior": {
+        "pixels": 77864,
+        "rmse": 0.7692588567733765
+      },
+      "loss": 3.9164931208955234,
+      "E": 1.979013168449246,
+      "foreground_mse": {
+        "home.svg": 126.83411316247657,
+        "home-label.svg": 187.04389128251933,
+        "new.svg": 81.76136949041393,
+        "new-label.svg": 96.88008476514369,
+        "radio.svg": 16.298723623913247,
+        "radio-label.svg": 207.70146914874204,
+        "library.svg": 306.6913927788846,
+        "library-label.svg": 145.70484492578544
+      },
+      "exterior": {
+        "pixels": 46436,
+        "rmse": 8.735226423581446
+      }
+    },
+    {
+      "glass": {
+        "pixels": 113250,
+        "rmse": 6.044371128082275
+      },
+      "rim": {
+        "pixels": 35386,
+        "rmse": 9.949139595031738
+      },
+      "held": {
+        "pixels": 27873,
+        "rmse": 6.041400909423828
+      },
+      "interior": {
+        "pixels": 77864,
+        "rmse": 2.8553483486175537
+      },
+      "loss": 55.269709238224706,
+      "E": 7.434360042278334,
+      "foreground_mse": {
+        "home.svg": 141.01503059500828,
+        "home-label.svg": 195.5448506399989,
+        "new.svg": 82.63407370832283,
+        "new-label.svg": 111.52923118206672,
+        "radio.svg": 25.79649959807284,
+        "radio-label.svg": 217.38618017407134,
+        "library.svg": 306.9900407223031,
+        "library-label.svg": 149.4179748056922
+      },
+      "exterior": {
+        "pixels": 46436,
+        "rmse": 9.774154815950626
+      }
+    }
+  ],
+  "zero_controls": [
+    {
+      "max_pixel_difference": 0.0,
+      "E_difference": 0.0
+    },
+    {
+      "max_pixel_difference": 0.0,
+      "E_difference": 0.0
+    }
+  ],
+  "trials": 6,
+  "candidate": null,
+  "meaningful_absolute_noise_floor": 1e-05,
+  "accepted": false,
+  "count": 0,
+  "limits": "Native proposal only. Independent primary replay/HQ/visual/source review required; source confidence remains conditional, no Apple physical model identification. No scoring mask/source/shape/material/blur/glyph/epoch changes."
+}

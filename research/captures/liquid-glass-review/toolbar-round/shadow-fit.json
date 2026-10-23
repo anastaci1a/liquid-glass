@@ -1,0 +1,105 @@
+{
+  "experiment": 6,
+  "shadow": {
+    "kind": "gaussian_coverage",
+    "opacity": 0.2196806498739861,
+    "sigma": 0.2999999477597864,
+    "offset": [
+      -0.0029308863193275945,
+      0.007772858574827156
+    ],
+    "color": "neutral black attenuation",
+    "compositing": "behind independent glass coverage"
+  },
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "pixels": 188771,
+          "rmse": 6.044535160064697,
+          "mae": 4.1359686851501465,
+          "opponent_chroma_rmse": 0.6495842933654785
+        },
+        "rim": {
+          "pixels": 61248,
+          "rmse": 8.83245849609375,
+          "mae": 5.963390827178955,
+          "opponent_chroma_rmse": 0.79960697889328
+        },
+        "shadow": 11.469442019667737
+      }
+    }
+  },
+  "E": 6.998512744608417,
+  "shadow_repeat_rmse_difference": 8.23209607148101e-08,
+  "glass_parameters_preserved_during_shadow_fit": true,
+  "mask_coverage_min": 0.625,
+  "actual_composite_glass_scores_advisory": {
+    "train": {
+      "pixels": 141761,
+      "rmse": 5.986443042755127,
+      "mae": 4.046153545379639,
+      "opponent_chroma_rmse": 0.6566984057426453
+    },
+    "held_blocks": {
+      "pixels": 47010,
+      "rmse": 5.930607318878174,
+      "mae": 4.392458438873291,
+      "opponent_chroma_rmse": 0.6273971796035767
+    },
+    "all_glass": {
+      "pixels": 188771,
+      "rmse": 5.9725871086120605,
+      "mae": 4.132394313812256,
+      "opponent_chroma_rmse": 0.6495250463485718
+    },
+    "rim": {
+      "pixels": 61248,
+      "rmse": 8.680296897888184,
+      "mae": 5.95237398147583,
+      "opponent_chroma_rmse": 0.7994586229324341
+    },
+    "outer_rim": {
+      "pixels": 6172,
+      "rmse": 18.38080596923828,
+      "mae": 9.761631965637207,
+      "opponent_chroma_rmse": 1.042282223701477
+    },
+    "interior": {
+      "pixels": 127523,
+      "rmse": 4.07626485824585,
+      "mae": 3.2582767009735107,
+      "opponent_chroma_rmse": 0.5635061860084534
+    },
+    "ssim": 0.9811971187591553,
+    "gradient_mae": 3.431835412979126,
+    "selection_loss": 0.0015153409925415136
+  },
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 7.103742101595409,
+        "candidate_error": 6.998512744608417,
+        "required_error_max": 7.0682233910874315,
+        "relative_reduction": 0.014813228785904076,
+        "milestone_passed": true,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": true
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "qualifying_passes_counted": 0,
+  "limits": "Gaussian width reached .3L bound; source blank estimate and fixed35px exterior constrain this model conditionally. No unique light rig or far-shadow identification. Three initial starts converged to same boundary optimum; incomplete reporting jobs are not extra experiments/passes."
+}

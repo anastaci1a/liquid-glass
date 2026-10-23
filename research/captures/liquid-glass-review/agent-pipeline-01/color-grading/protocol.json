@@ -1,0 +1,38 @@
+{
+  "stage": "color-grading",
+  "declared_at": "2026-10-22T08:05:56.716Z",
+  "start": "2026-10-22T08:05:56.716Z",
+  "deadline": "2026-10-22T08:25:56.716Z",
+  "original_latest_deadline": "2026-10-22T09:42:35.000Z",
+  "defect": "Expanded raw frosted background contrast/chroma and white body levels are far from Apple. Use common achromatic attenuation/offset, not per-image RGB.",
+  "family": "Existing encoded-RGB affine C=g*S+b, ALL3channels tied and same g,b across A/B. Empirical color grading, not identified physical radiance/contrast adaptation.",
+  "bounds": {
+    "g": [
+      0.25,
+      1
+    ],
+    "b": [
+      0,
+      0.6
+    ],
+    "sum_g_b": [
+      0.75,
+      1
+    ]
+  },
+  "method": "ONE exact2parameter constrained LS on frozen original glass excluding held, weighted original glass/rim E and equal observations. Constrained convex polygon has5edges; finite analytic edge projections only if unconstrained point lies outside. No iterative optimizer/per-crop coefficient.",
+  "fixed_backtracks": [
+    1,
+    0.5,
+    0.25
+  ],
+  "maximum_actual_native_pair_evaluations": 3,
+  "stopfirstqualifier": true,
+  "new_geometry_rays": 0,
+  "new_source_queries": 0,
+  "frozen": "H1 p3 .15/.4 n1.5 D2; sigma6.75 normalized finite output Gaussian LAST body operation; source0blur, pose/case/AA2/original masks/allSVG/artwork/styles, outline0/shadow0.",
+  "actual_order": "Grade pure lens color BEFORE unchanged shared coverage_blur; restore actualcoverage+unchanged clear-premultiplied; fixed foreground. Existing constant material API, no shared edit.",
+  "baseline": "Reuse selected sigma6.75 cached native complete/material/zero proof, no new poor baseline or repeated old native rays.",
+  "guards": "Original eachreference E/glass/rim/held/interior/SSIM/exterior+ALL10fore/artwork; raw covered material pre/post/native clipping; exact outsideFG/style/source invariants; original crops advisory. Historical full pass03 still separate immutable benchmark.",
+  "stop": "Actual20minute cap, no source/map/blur/foreground/light change, max3nativebacktracks, first meaningful strict qualifier then package. If none, bounded negative/no new color basis."
+}

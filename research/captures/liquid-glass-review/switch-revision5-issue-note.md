@@ -1,0 +1,5 @@
+- Pushed switch review revision 5: `64b970e18a73e0cb62592f06f3a0ec08444eafd9` on `research/switch-cap-depth-222`. No app/main/release changes.
+- Shared source-brightness/material calibration: weighted RMS 14.351118→14.152440 and 15.677444→15.448443; both frozen improvement/exterior gates pass. Geometry, kernels and generated shadow unchanged. One verified pass, not one per optimizer step.
+- Fresh native replay, 50.9M emitted-ray checks, fixed crop/exterior review and uniform-gray response audit complete. Some advisory crops regress ≤2%; colored fringes/dark contour/excess softness remain unresolved. Estimated sources and two-context calibration limit transfer claims.
+- [Updated comparisons and evidence](https://anastaci1a.github.io/localica/liquid-glass/reconstruction.html#active-switch) live at Pages `482c683`; HTML/three PNG hashes verified. 394 local links and desktop/mobile/deferred-media checks pass. Historical motion is labeled explicitly.
+- Continuing a controlled spectral-map/material experiment; helper continues toolbar geometry/source investigations. — Codex

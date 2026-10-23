@@ -1,0 +1,74 @@
+{
+  "index": 108,
+  "v": [
+    0.004780581018501352,
+    0.0012856598447827687,
+    -0.0022472824566811553,
+    0.0006565535600254078
+  ],
+  "E": 6.8655788815918894,
+  "MSE": [
+    34.069916464359494,
+    77.62410618102967,
+    131.5480791451156,
+    175.34058297683347,
+    13.447792615367122
+  ],
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 5.836944103240967,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 8.810454368591309,
+          "pixels": 61248
+        },
+        "shadow": 11.46944109994535
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 13.241623124709202,
+    "plus": 3.6671232070067026
+  },
+  "all_nonregression": true,
+  "nonregression": {
+    "glass": true,
+    "rim": true,
+    "exterior": true,
+    "archivebox": true,
+    "plus": true
+  },
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 6.8655788815918894,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": 0.0007149003827239264,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "phase": "local-model-12",
+  "native_actual_render": true,
+  "material_cache": "/tmp/agent-toolbar-joint-core/evaluations/0108.npz",
+  "seconds": 5.373044729232788
+}

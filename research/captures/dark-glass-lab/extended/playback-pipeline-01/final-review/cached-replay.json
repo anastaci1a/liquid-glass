@@ -1,0 +1,84 @@
+{
+  "accepted_complete_pixel_exact": true,
+  "material_pixel_exact": true,
+  "scores": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 12.585246086120605,
+      "mae": 7.980888843536377,
+      "opponent_chroma_rmse": 1.5761111974716187
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 12.521955490112305,
+      "mae": 8.325145721435547,
+      "opponent_chroma_rmse": 1.6069767475128174
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 12.569343566894531,
+      "mae": 8.067547798156738,
+      "opponent_chroma_rmse": 1.5839375257492065
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 13.872037887573242,
+      "mae": 8.214303970336914,
+      "opponent_chroma_rmse": 1.9819753170013428
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 25.81536293029785,
+      "mae": 16.89735221862793,
+      "opponent_chroma_rmse": 4.150359153747559
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 11.133749961853027,
+      "mae": 7.922568321228027,
+      "opponent_chroma_rmse": 1.051985263824463
+    },
+    "ssim": 0.9697988629341125,
+    "gradient_mae": 4.502345561981201,
+    "selection_loss": 0.005157371750851086
+  },
+  "correct_supplemental": {
+    "foreground": {
+      "pixels": 52998,
+      "MSE": 98.1666030883789,
+      "unfiltered_MSE": 98.65575408935547
+    },
+    "exterior": {
+      "pixels": 256839,
+      "MSE": 24.06739616394043,
+      "unfiltered_MSE": 24.090118408203125
+    }
+  },
+  "guards": {
+    "train": true,
+    "held_blocks": true,
+    "all_glass": true,
+    "rim": true,
+    "outer_rim": true,
+    "interior": true,
+    "ssim": true,
+    "foreground": true,
+    "exterior": true
+  },
+  "source_target_sha256": {
+    "media-source.png": "ae20f4366287078794c6e84d70aff6e786400456264d88ffd832fd478d7b23f6",
+    "media-target.png": "f47fba56384d84de3c106812e8b153fe7a826cfbd0dc082a75f62bc4e2df6bb9"
+  },
+  "new_geometric_rays": 0,
+  "new_texture_queries": 0,
+  "new_candidates": 0,
+  "legacy_icon_material_dependency": true,
+  "filter_is_not_a_geometry_change": true,
+  "complete_sha256": "fe60abc6f5991ff8810d2e16ba41540340eca68f6193ca0b64a477fbfc227fb9",
+  "code_sha256": {
+    "geometric_optics.py": "a48224f454b77d060601016329dee5c8bb48f87c418d2ba54d5a693c05841966",
+    "geometric_render.py": "db3e90b7f1762ae6e5dea5a2cd9a9fe174bc176cebf87a1ae4fe5ab2146448f4",
+    "settled.py": "1544860fa4ca253d66d7e5349ca0e0ab0d278bc37949f1e47c192c8b54ad3123",
+    "reproduce.py": "5729f778d8b37e9b3d4798f4db4cdcb7dd410ffe3e161c241542d4002746f0f1"
+  }
+}

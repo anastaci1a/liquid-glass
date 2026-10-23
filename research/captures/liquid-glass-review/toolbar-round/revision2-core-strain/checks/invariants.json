@@ -1,0 +1,78 @@
+{
+  "accepted_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "fixed_width": 0.3,
+  "checks": {
+    "declared_geometry_bound": {
+      "lambda_max": 0.006341257469600858,
+      "maximum_added_displacement_fraction": 0.12,
+      "unit_displacement_bound": 18.921799307958473,
+      "conservative_unit_bound": 18.92369148788927,
+      "max_depth_gradient_bound": 1.0,
+      "fixed_width": 0.3,
+      "major_half": 2.3058823529411763,
+      "minor_half": 1,
+      "S_prime_max": 1.875,
+      "origin": "analytic triangle bound from fixed geometry, independent of target pixels"
+    },
+    "actual_depth_gradient_and_added_curl": {
+      "analytic_vs_finite_potential_gradient_error_L": 2.9929518655681584e-10,
+      "added_field_curl_over_lambda_max_abs": 4.127494890565533e-07,
+      "unit_normal_substitution_field_error_per_lambda_L": 0.052431153003521525,
+      "scope": "Only added field integrable; inherited total map not claimed integrable"
+    },
+    "mirror_rotation_scale": {
+      "mirror_error_L": 0.0,
+      "rotation_90_error_L": 0.0,
+      "scale_errors_L": [
+        0.0,
+        1.717376241217039e-16,
+        1.0408340855860843e-16
+      ],
+      "axis": "Deterministic control-major axis rotates with the footprint"
+    },
+    "support_and_deep_horizontal_strain": {
+      "S_Sprime_Ssecond_endpoint_values_exact": true,
+      "outer_join_error_per_lambda_L": 3.555317720085213e-08,
+      "inner_join_error_per_lambda_L": 3.55531688558593e-08,
+      "deep_core_field_exact": true,
+      "regularity": "Potential C2, added gradient C1; no C2 added-field claim"
+    },
+    "analytic_bound_checked_on_geometry_grid": {
+      "grid_points": 2613,
+      "max_actual_depth_gradient": 1.0,
+      "max_unit_added_vector_L": 13.47661363590624,
+      "analytic_unit_bound_L": 18.921799307958473
+    },
+    "zero_native_render": {
+      "material_exact": true,
+      "coverage_exact": true,
+      "baseline": "accepted rev2 only; no unverified curvature flag"
+    },
+    "uniform_input": {
+      "endpoint_max_normalized_RGB_errors": [
+        0.0,
+        0.0
+      ],
+      "coverage_exact": true,
+      "fixed_incumbent_lighting": true
+    },
+    "native_endpoint_ray_domain": {
+      "rays_per_endpoint": 8691200,
+      "endpoint_total_rays": 17382400,
+      "bounds_xyxy": [
+        474.625,
+        284.625,
+        1444.375,
+        844.375
+      ],
+      "conservative_filter_margin": 47.0,
+      "maximum_actual_added_displacement_L": 0.08577236336864148,
+      "endpoints_and_between_defined": true,
+      "hidden_content_still_estimated": true
+    }
+  },
+  "optical_fit_trials": 0,
+  "counted_passes": 0,
+  "seconds": 9.932440996170044,
+  "scope": "One potential ADDITION, actual crowned-coordinate gradient, original native4x4 sampling/epoch unchanged"
+}

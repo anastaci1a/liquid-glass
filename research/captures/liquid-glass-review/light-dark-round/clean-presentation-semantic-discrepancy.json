@@ -1,0 +1,57 @@
+{
+  "status": "PRESENTATION_SEMANTIC_PREREQUISITE_FAILED",
+  "theme": "regular-dark",
+  "source_rgb_255": [
+    0,
+    0,
+    0
+  ],
+  "spatial_stats": {
+    "far_upper_half": {
+      "pixels": 11224,
+      "target_nonzero_pixels": 11128,
+      "target_mean_rgb_255": [
+        8.740645366030826,
+        8.740645366030826,
+        8.740645366030826
+      ],
+      "target_min_rgb_255": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_max_rgb_255": [
+        11.0,
+        11.0,
+        11.0
+      ],
+      "zero_source_rmse": 9.083809639304503
+    },
+    "far_lower_half": {
+      "pixels": 11256,
+      "target_nonzero_pixels": 0,
+      "target_mean_rgb_255": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_min_rgb_255": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_max_rgb_255": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_source_rmse": 0.0
+    }
+  },
+  "reason": "Savedzero background deletes visible uppergray referencefield. This cannot be repaired by RGB gains withzero incident samples. No assertion that the missingfield uniquely identifies background vs illumination; primarymust reviewsource/presentationproposal.",
+  "gain_proposal_evaluations": 0,
+  "source_color_fit": false,
+  "source_or_shadow_adopted": false,
+  "original_native_metrics_masks_unchanged": true,
+  "expected_gain_invariance": "Darksample0 gives dI/dgain[:3]=0. Expectedalgebraic limitation, NOT newcross-themevalidation."
+}

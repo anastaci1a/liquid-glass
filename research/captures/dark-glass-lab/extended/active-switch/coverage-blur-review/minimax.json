@@ -1,0 +1,192 @@
+{
+  "parameters": {
+    "sigma": 4.339320119358678,
+    "amplitude": 0.7839488678764915,
+    "band": 0.41709079115813363,
+    "power": 2.793583791362869,
+    "tangent": 0.0,
+    "tangent_band": 0.9999992768775775,
+    "core_x": -0.3878350176400587,
+    "core_y": -0.27725760977841146,
+    "post_sigma": 2.163537921629955,
+    "coupling": 0.0,
+    "gamma": 1.5497479697761347,
+    "rim_width": 0.04878846511595129,
+    "thin_width": 0.011095946046562786,
+    "spline": true,
+    "shape_dx": 0.001167965417146694,
+    "shape_dy": 0.004755085677013721,
+    "half_x_delta": -0.0025334994195777482,
+    "half_y_delta": 0.011224253113150662,
+    "radius_delta": 0.012043263143639911,
+    "c0": 0.5825744554180238,
+    "c1": 0.9357855379848372,
+    "c2": -0.7313250023304061,
+    "c3": 0.6119443772170838,
+    "c4": 0.44738001208281564,
+    "c5": 0.08689122301998892,
+    "c6": -0.02671418074585203,
+    "shadow": {
+      "opacity": 0.06759092205628288,
+      "sigma": 0.08711570318601433,
+      "offset": [
+        0.0028197038845270807,
+        0.0999999991388537
+      ]
+    },
+    "blur_transition": 0.0,
+    "tangent_exponent": 3.000273143553201,
+    "cap_normal_gain": -0.6743904455132721,
+    "cap_tangent_fade": 0.9997199664179274,
+    "material_chroma_sensitivity": 10.0,
+    "material_chroma_floor": 0.0,
+    "grazing_reflection": {
+      "strength": 1.0,
+      "width": 0.03895748531996116,
+      "angular_power": 1.5519447192573868,
+      "source_sigma": 0.007,
+      "direction": [
+        0,
+        1
+      ]
+    },
+    "directional_transmission": {
+      "strength": 0.3849814426989986,
+      "length": 0.08,
+      "angle": 1.3571487177940904,
+      "fade_center": -0.395271178284122,
+      "fade_width": 0.3577136899555915
+    },
+    "crown_softness": 0.08
+  },
+  "material": [
+    0.5942542175895362,
+    0.8048309874697409,
+    0.655575621643578,
+    0.34438460651478475,
+    0.3707425012103966,
+    0.3449034985295557,
+    -0.805318637423044,
+    -0.01944998698022885,
+    -2.2519918007583155,
+    -0.10575939455212063,
+    0.008767896020179702,
+    0.600342585448514,
+    0.028425501619822872,
+    0.03468448965694348,
+    0.0018818043272287473,
+    -0.006594901163830606,
+    0.03967133087124179,
+    -0.03434983387059254,
+    -0.09087760858813772,
+    0.0018520581762591487,
+    0.7368452717460505,
+    0.6931944376940438,
+    0.7337763270547388
+  ],
+  "scores": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.845663070678711
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 20.612165451049805
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 13.195708274841309
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.729549884796143
+      },
+      "ssim": 0.961821973323822,
+      "loss": 225.68222288326433
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 14.400593757629395
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 20.316164016723633
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 14.689427375793457
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 11.080460548400879
+      },
+      "ssim": 0.9315916299819946,
+      "loss": 268.9879265069171
+    }
+  ],
+  "ratios": [
+    1.0066138410576209,
+    1.0058726101099222
+  ],
+  "numeric_pass": false,
+  "accepted": false,
+  "history": [
+    {
+      "iteration": 1,
+      "losses": [
+        227.50917422429617,
+        267.829926259235
+      ],
+      "maximum_relative_squared_error": 1.0214740985073745,
+      "solver_success": false
+    },
+    {
+      "iteration": 2,
+      "losses": [
+        226.0864648067316,
+        268.8924295237022
+      ],
+      "maximum_relative_squared_error": 1.015086396452283,
+      "solver_success": false
+    },
+    {
+      "iteration": 3,
+      "losses": [
+        225.73984831971455,
+        269.40256812970244
+      ],
+      "maximum_relative_squared_error": 1.0135301525565776,
+      "solver_success": false
+    },
+    {
+      "iteration": 4,
+      "losses": [
+        225.7326887985032,
+        269.2006188380178
+      ],
+      "maximum_relative_squared_error": 1.0134980076309936,
+      "solver_success": false
+    },
+    {
+      "iteration": 5,
+      "losses": [
+        225.68222288326433,
+        268.9879265069171
+      ],
+      "maximum_relative_squared_error": 1.0132714250087773,
+      "solver_success": false
+    },
+    {
+      "iteration": 6,
+      "losses": [
+        225.68222288326433,
+        268.9879265069171
+      ],
+      "maximum_relative_squared_error": 1.0132714250087773,
+      "solver_success": false
+    }
+  ],
+  "method": "Shared23-term material with minimax normalized error and separate whole-glass constraints; covered-color output convolution, preserving sharp alpha, no per-reference coefficients or altered inputs"
+}

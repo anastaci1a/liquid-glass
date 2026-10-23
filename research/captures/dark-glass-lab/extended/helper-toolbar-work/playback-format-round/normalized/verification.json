@@ -1,0 +1,255 @@
+{
+  "scope": "Playback formatting/export ONLY; completed3passmodel unchanged; no new acceptedpass",
+  "recipe_sha256": "dbaa02cfacde54069297092b6f26251d549600c80b92a00e923e6678599b9e31",
+  "input_hashes": {
+    "media-source.png": "ae20f4366287078794c6e84d70aff6e786400456264d88ffd832fd478d7b23f6",
+    "media-target.png": "f47fba56384d84de3c106812e8b153fe7a826cfbd0dc082a75f62bc4e2df6bb9"
+  },
+  "native_scoring_unchanged": true,
+  "new_fits": 0,
+  "new_optical_still_renders": 0,
+  "new_motion_frames": 90,
+  "still": {
+    "image": "playback-round-current.png",
+    "width": 2162,
+    "height": 1104,
+    "side_width": 1080,
+    "caption_height": 64,
+    "gutter": 2,
+    "body_height": 1040,
+    "lossless_source_hq_sha256": "2946285206d18b182fecddd161fe98839fe405a7413cbfa19522ef3c7c44ad5f",
+    "lossless_comparison_sha256": "20abb72294820c9a2a8db1fd2cb7846c06618fc85d92e91b6550bae9b26fd523",
+    "old_reference_bounds": [
+      0,
+      164,
+      2720,
+      2784
+    ],
+    "old_recreation_bounds": [
+      2722,
+      164,
+      5442,
+      2784
+    ],
+    "native_scene_crop": [
+      620,
+      220,
+      1300,
+      875
+    ],
+    "original_body_fully_inside_crop": true,
+    "native_lens_bounds": [
+      715,
+      297,
+      1205,
+      787
+    ],
+    "native_material_sha256": "f61a6774c73aaee6caa4b1c4fa3514c4747f0a77268c84c89254b63d02c66e3d",
+    "native_zero_complete_sha256": "1efcf5ebdd81d6ba40a3e6cbf9b6153bddf9acbf0fd8b83c6c2ea6f441dc6f7d",
+    "native_material_unchanged": true,
+    "native_original_verified_metrics": {
+      "glass": 8.040046691894531,
+      "rim": 11.093541145324707,
+      "foreground": 3.2110546834767844,
+      "E": 9.06474721701574
+    },
+    "new_optical_still_renders": 0,
+    "still_resampling_only": true,
+    "source_and_icon_pipeline": "Existing public playback_replay.composite, registered clean photograph and independently calculated icon color; reference-derived triangular coverage retained, no new glyph or copied colored target"
+  },
+  "motion": {
+    "files": [
+      {
+        "file": "playback-settled.mp4",
+        "bytes": 391152,
+        "sha256": "54b8a00d03d25884fb080c29c26eedcf551e13323f91fe00b08982d4848f5d31",
+        "decoded_frames": 90,
+        "width": 1080,
+        "height": 608,
+        "duration_seconds": 6,
+        "probe": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "width": 1080,
+              "height": 608,
+              "coded_width": 1088,
+              "coded_height": 608,
+              "closed_captions": 0,
+              "film_grain": 0,
+              "has_b_frames": 2,
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "color_range": "tv",
+              "color_space": "smpte170m",
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "refs": 4,
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "15/1",
+              "avg_frame_rate": "15/1",
+              "time_base": "1/15360",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 92160,
+              "duration": "6.000000",
+              "bit_rate": "518957",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "90",
+              "nb_read_frames": "90",
+              "extradata_size": 49,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "vendor_id": "[0][0][0][0]",
+                "encoder": "Lavc59.37.100 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "/evidence/extended/helper-toolbar-work/playback-format-round/normalized/playback-settled.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "6.000000",
+            "size": "391152",
+            "bit_rate": "521536",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf59.27.100"
+            }
+          }
+        }
+      },
+      {
+        "file": "playback-settled.gif",
+        "bytes": 3072914,
+        "sha256": "5f7227987da2a33323171daebcf0cee46455fd4052f60a5be18188dacbbc92ed",
+        "decoded_frames": 90,
+        "width": 1080,
+        "height": 608,
+        "duration_seconds": 6,
+        "probe": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "gif",
+              "codec_long_name": "CompuServe GIF (Graphics Interchange Format)",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "codec_tag": "0x0000",
+              "width": 1080,
+              "height": 608,
+              "coded_width": 1080,
+              "coded_height": 608,
+              "closed_captions": 0,
+              "film_grain": 0,
+              "has_b_frames": 0,
+              "pix_fmt": "bgra",
+              "level": -99,
+              "refs": 1,
+              "r_frame_rate": "15/1",
+              "avg_frame_rate": "15/1",
+              "time_base": "1/100",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 600,
+              "duration": "6.000000",
+              "nb_frames": "90",
+              "nb_read_frames": "90",
+              "disposition": {
+                "default": 0,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0
+              }
+            }
+          ],
+          "format": {
+            "filename": "/evidence/extended/helper-toolbar-work/playback-format-round/normalized/playback-settled.gif",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "format_name": "gif",
+            "format_long_name": "CompuServe Graphics Interchange Format (GIF)",
+            "start_time": "0.000000",
+            "duration": "6.000000",
+            "size": "3072914",
+            "bit_rate": "4097218",
+            "probe_score": 100
+          }
+        }
+      }
+    ],
+    "frames": 90,
+    "fps": 15,
+    "palette_colors": 128,
+    "dither": "bayer_scale4",
+    "sampling": "UNCHANGED existingmotion2x2; original4x4native scoring and savedmaterial unchanged; motionzero NOTasserted bitexact to4x4native",
+    "trajectory": "Original round(960+340sin(2pi*t)),round(542+120sin(4pi*t)); t=i/90 matchesoriginalframe2i/180",
+    "source_bounds_min": [
+      399.2214660644531,
+      201.22145080566406
+    ],
+    "source_bounds_max": [
+      1520.778564453125,
+      882.778564453125
+    ],
+    "whole_and_ALL_scored_domain": "ALL1080x1080subpixel sourcecoordinates/moving540x540patch for ALL90poses, including unscored exterior; scoredrays subset. Finite sourceGaussian radius2+bilinear1 included.",
+    "source_margin_after_kernel_bilinear_native_px": 193.221435546875,
+    "native_source_proof_inherited": {
+      "method": "Fresh analytic full-crop radial enclosure: 0<=a<=A and |r-a|<=max(r,A), with monotone tail checked for current parameters.",
+      "minimum_frame_margin_px": 61.08351572991296,
+      "source_kernel_3sigma_px": 2,
+      "passed": true
+    },
+    "source_limits": "Finite image support is NOT independently observed reconstructed photograph/registration truth or Applegeneralization. No new scientificpass.",
+    "source_hashes_unchanged": true,
+    "old_target_context_used": false,
+    "new_scene_renders_in_recovery": 0
+  }
+}

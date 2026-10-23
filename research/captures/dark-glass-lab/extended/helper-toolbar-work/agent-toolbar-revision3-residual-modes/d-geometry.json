@@ -1,0 +1,144 @@
+{
+  "d_crop": [
+    960,
+    450,
+    1120,
+    550
+  ],
+  "horizontal_vertical_source_stem_width_factor_1_over_Jxx": {
+    "min": 1.001159043903893,
+    "median": 1.0012000714661975,
+    "max": 1.0012276900057253,
+    "p01_p99": [
+      1.0011778030538958,
+      1.0012009367877304
+    ],
+    "peak_to_peak": 6.864610183221487e-05
+  },
+  "horizontal_inverse_map_fixed_source_y_factor_Jyy_over_det": {
+    "min": 1.0011590439056812,
+    "median": 1.0012000714661977,
+    "max": 1.0012276928646302,
+    "p01_p99": [
+      1.0011778031732244,
+      1.0012009367907446
+    ],
+    "peak_to_peak": 6.864895894898027e-05
+  },
+  "Jxx": {
+    "min": 0.9987738153688915,
+    "median": 0.9988013669790893,
+    "max": 0.998842297923641,
+    "p01_p99": [
+      0.9988005037314653,
+      0.998823582534188
+    ],
+    "peak_to_peak": 6.848255474944942e-05
+  },
+  "Jxy": {
+    "min": -1.0663486788124214e-05,
+    "median": -7.793399541539432e-13,
+    "max": 4.1041423569295986e-05,
+    "p01_p99": [
+      -5.0480207831798e-06,
+      1.1090958392882705e-05
+    ],
+    "peak_to_peak": 5.17049103574202e-05
+  },
+  "Jyx": {
+    "min": -1.617400320234819e-05,
+    "median": -3.761915093787846e-12,
+    "max": 4.3645295857446126e-05,
+    "p01_p99": [
+      -8.081923280776473e-06,
+      1.0209204033280153e-05
+    ],
+    "peak_to_peak": 5.981929905979432e-05
+  },
+  "Jyy": {
+    "min": 0.6280957493500338,
+    "median": 1.0047208859920185,
+    "max": 1.0671095164248592,
+    "p01_p99": [
+      0.6479209895454409,
+      1.0670360632329192
+    ],
+    "peak_to_peak": 0.4390137670748254
+  },
+  "determinant": {
+    "min": 0.6273255862040511,
+    "median": 1.0035216055781646,
+    "max": 1.0658628819377547,
+    "p01_p99": [
+      0.6471296592616667,
+      1.065788816168281
+    ],
+    "peak_to_peak": 0.4385372957337036
+  },
+  "coordinate_depth": {
+    "min": 0.45881750627493134,
+    "median": 0.7499934033705113,
+    "max": 1.0,
+    "p01_p99": [
+      0.4646410303923721,
+      0.9941509378716847
+    ],
+    "peak_to_peak": 0.5411824937250687
+  },
+  "undefined_core_branch_count": 3,
+  "dJxx_dx_per_native_px": {
+    "min": -3.1363685746299552e-06,
+    "median": 4.015054955175401e-11,
+    "max": 4.657999537194257e-06,
+    "p01_p99": [
+      -1.0037721211553218e-07,
+      2.532885655908149e-06
+    ],
+    "peak_to_peak": 7.794368111824213e-06
+  },
+  "dJxx_dy_per_native_px": {
+    "min": -1.2245846283676087e-06,
+    "median": -1.1324274851176597e-13,
+    "max": 4.713546600143559e-06,
+    "p01_p99": [
+      -5.827952633996602e-07,
+      1.2806262566478212e-06
+    ],
+    "peak_to_peak": 5.938131228511168e-06
+  },
+  "Hessian_mixed_partial_disagreement": 2.640833475333288e-06,
+  "analytic_Jacobian_spatial_difference_convergence": [
+    {
+      "h_native_px": 0.125,
+      "max_Hessian_change_per_native_px": 4.15722856895367e-06,
+      "p99_Hessian_change": 1.1528711075961365e-10
+    },
+    {
+      "h_native_px": 0.0625,
+      "max_Hessian_change_per_native_px": 3.362609159124756e-05,
+      "p99_Hessian_change": 2.9226490837257154e-11
+    }
+  ],
+  "known_d_right_stem_band_output": [
+    1100,
+    445,
+    1116,
+    526
+  ],
+  "stem_band_intersect_fixed_d_crop_width_factor": {
+    "min": 1.0011740818953423,
+    "median": 1.0011949682829426,
+    "max": 1.0012175645676498,
+    "p01_p99": [
+      1.001175546273837,
+      1.0012093761003813
+    ],
+    "peak_to_peak": 4.348267230747105e-05
+  },
+  "ordinary_source_sigma_native_px": 11.0,
+  "post_sigma_native_px": 1.25,
+  "old_core13_support_width": 0.3,
+  "old_core13_saturated_entire_d_crop": true,
+  "tangential_band_inactive_entire_d_crop": true,
+  "limits": "1/Jxx maps the local NORMAL WIDTH of an intrinsically vertical source stem across a horizontal output scan; Jyy/det is inverse-map x response at fixed sourceY, a different metric. Full font contour/PSF and compression set apparent grayscale widths. Hessians are numerical spatial differences of analytic J, not rigorous global derivative bounds. Core undefined-normal branch retained/labeled, never removed from image scores."
+}

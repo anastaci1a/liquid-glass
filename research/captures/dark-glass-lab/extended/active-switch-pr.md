@@ -1,0 +1,4 @@
+- Reconstruct two active switch frames from Apple's original Details video, with separate directly observed and estimated-background masks. Hidden track symmetry/uniformity remain explicit assumptions.
+- 24 initial experiments reduce native weighted loss728.91→257.94 and glass RMSE26.03→12.68. The signed image map permits a reduced center image; rim color/reflection still differs visibly. This is an empirical fit, not recovered Apple geometry.
+- Paired work begins from that exact retained first-background result. Shared optics/material must preserve both samples' loss/glass and defined source footprints. No native app or live-lab changes.
+- Local normalized-field/cache/source/gate verification passes. Paired checks and HQ motion captures pending. Docs-only Actions skipped as requested.

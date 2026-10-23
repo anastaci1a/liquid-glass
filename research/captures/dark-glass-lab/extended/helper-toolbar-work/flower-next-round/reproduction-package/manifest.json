@@ -1,0 +1,111 @@
+{
+  "status": "PRIVATE_PROVENANCE_AND_REPRODUCTION_NO_NEW_RENDER",
+  "created_at": "2026-10-21T23:53:49.514Z",
+  "input_count": 1,
+  "paired": false,
+  "accepted_count": 1,
+  "pending_candidate": "neutral-additive-round2",
+  "family": "C=clip(S+b,0,1), RGB tied b, gains1,14 lighting0",
+  "code_head": "b9ac3d134acb42c0bf5b2fd741f8d70810b836b3",
+  "case_fingerprint": "295db3be4166b450a6f7bc441aeb069a729a5e78adf6add94d09e4bd7a50b195",
+  "files": {
+    "neutral-playback-baseline/baseline-recipe.json": {
+      "bytes": 2066,
+      "sha256": "87c8bdb17ece1673da33c7a0a6584aa488810c5300ef0d62b1e6c01414ed80eb"
+    },
+    "neutral-playback-baseline/baseline-native.json": {
+      "bytes": 3212,
+      "sha256": "94b075ea3f3dca5df35a6e8701488f2a3d1992285291481ca481a5cc92572553"
+    },
+    "neutral-playback-baseline/source-proof-FIRST.json": {
+      "bytes": 1591,
+      "sha256": "86334cee14280dd2c224efe036574dab8d3d2d18a129352c6cc9c330527eeabe"
+    },
+    "neutral-playback-baseline/code-snapshot.json": {
+      "bytes": 2960,
+      "sha256": "a9092a92d5adeb679261245842cc4938811aa2714a80c995b26d878323f21d0c"
+    },
+    "neutral-playback-baseline/inputs/a/case.json": {
+      "bytes": 5302,
+      "sha256": "30f58b6b9cdeb9c150e721e2b82f2d7e2a30963823c076a5ab027d50cd3f4a47"
+    },
+    "vector-control/forward.end.fill-pinned.svg": {
+      "bytes": 480,
+      "sha256": "96d8b6cbe5290cbe6111a1e7ebb32a92be58d7fe3b928818afe8afcb50589cf2"
+    },
+    "sky-only-correction/saved-input-integrity.json": {
+      "bytes": 1535,
+      "sha256": "a7b76a6c60bb1661cb547e779c7bb6f70a0c28e022aa9aa6eea7a8ef8dc2e1f3"
+    },
+    "neutral-additive-round1/candidate-native.json": {
+      "bytes": 4242,
+      "sha256": "4def9ee7772787c3cc764e614be7859b0ff70fdd4fa0507930adabe10a14ff4b"
+    },
+    "neutral-additive-round1/candidate-native.npz": {
+      "bytes": 585911,
+      "sha256": "905353937740cf656c7a8cbf707c530bd7764ea8b57e8b2d01f024b045d6bd89"
+    },
+    "neutral-additive-round2/candidate-native.json": {
+      "bytes": 4228,
+      "sha256": "222c04a1c6716ccb1c623e748627e5431dc0d7bc086455042eb201d920a1e27b"
+    },
+    "neutral-additive-round2/candidate-native.npz": {
+      "bytes": 586917,
+      "sha256": "f061df424bc9da50ebd525b86f9d5584cc11d729b67982d19fa4527eb29d7dd9"
+    },
+    "neutral-additive-round2/candidate-comparison.png": {
+      "bytes": 107454,
+      "sha256": "89d6f0cad833518ee35b3beaf21d82ca474c90f71227de2d9500afdd9429408c"
+    },
+    "neutral-additive-round2/trial-01.json": {
+      "bytes": 2971,
+      "sha256": "e955ca5b8de21d6d6db458ea08020fcc5a55f2fe5abf4e19b18a1e0ba2cf1531"
+    },
+    "neutral-additive-round2.py": {
+      "bytes": 7196,
+      "sha256": "d75672d180926fe84a514a31f5ba261bde22918d9b8a336fb03e193471af4599"
+    },
+    "replay-candidate.py": {
+      "bytes": 2143,
+      "sha256": "ffbfa6f241a5c9c1cc9b8aeeecfc0c5c8a75848d31224dbd854c8aa40da8b4f2"
+    },
+    "neutral-playback-baseline/inputs/a/forward.end.fill-pinned.svg": {
+      "bytes": 480,
+      "sha256": "96d8b6cbe5290cbe6111a1e7ebb32a92be58d7fe3b928818afe8afcb50589cf2"
+    },
+    "neutral-playback-baseline/inputs/a/known.png": {
+      "bytes": 3326,
+      "sha256": "8c27bbee3456ba350ecae7a86c039c06fc269cbbb065836e30edde090940ae45"
+    },
+    "neutral-playback-baseline/inputs/a/observed.png": {
+      "bytes": 2090,
+      "sha256": "06da5431a575e89e972435a0219b390d3dbb32e73ad342de409a935744365f76"
+    },
+    "neutral-playback-baseline/inputs/a/source.png": {
+      "bytes": 30305,
+      "sha256": "a262f8bb89a61f1a355a900af5a951f5db6188bfd107489382d100ea4fd5704d"
+    },
+    "neutral-playback-baseline/inputs/a/target-visible.png": {
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+    },
+    "neutral-playback-baseline/inputs/a/target.png": {
+      "bytes": 649484,
+      "sha256": "ac26c008958f2f1d9cc45d387801e7ad3d59773ced131244586a205a3c43ca07"
+    },
+    "neutral-additive-round2/source-proof-transfer.json": {
+      "bytes": 1892,
+      "sha256": "25c8d0ccbfae94cf3ddefcc11e61e646cd81ac50f94cce619b1e6c86b6cb7b5e"
+    }
+  },
+  "limitations": [
+    "Affine sky source independently estimated/held-tested, hidden observed fraction0. Model-domain confidence1 is not photographic recovery.",
+    "Frozen circle pose and refraction/blur prior are not identified from uniform sky. Neither ordinary blur nor dispersion is validated.",
+    "Only encoded-RGB neutral additive grading changed; not radiometric exposure, tau, white veil or independent RGB offsets.",
+    "Missing directional rim highlight, dark boundary and native glyph-weight differences remain visually evident.",
+    "Preview uses native arrays resized to634 pixels per side with64 pixel caption; no higher sample count or optical rerender.",
+    "Original source correction and vector correction count0; primary independently decides each subsequent pass."
+  ],
+  "replay_command": "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps localica-dark-lab-check python3 /evidence/extended/helper-toolbar-work/flower-next-round/replay-candidate.py --baseline /evidence/extended/helper-toolbar-work/flower-next-round/neutral-playback-baseline --candidate /evidence/extended/helper-toolbar-work/flower-next-round/neutral-additive-round2 --output /evidence/extended/flower-next-primary-pass02 --code <separately-frozen-committed-public-code>",
+  "replay_note": "Helper syntax parsed only, not executed. Current native candidate already saved. Primary may use own independent implementation instead; no repeated baseline needed."
+}

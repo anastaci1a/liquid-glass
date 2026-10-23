@@ -1,0 +1,161 @@
+{
+  "id": "safari-isolated-search-single-a",
+  "category": "Safari isolated magnifier SINGLE A",
+  "radial": true,
+  "center": [
+    509.277,
+    705.097
+  ],
+  "half": [
+    72.894,
+    72.894
+  ],
+  "radius": 72.894,
+  "crop": [
+    405,
+    595,
+    620,
+    815
+  ],
+  "foreground": [
+    [
+      470,
+      667,
+      548,
+      746
+    ]
+  ],
+  "foreground_layers": [
+    {
+      "mode": "mask",
+      "box": [
+        470,
+        667,
+        548,
+        746
+      ],
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "threshold": 0.33,
+      "vector_asset": "search-original-candidate.svg",
+      "vector_box": [
+        475.5,
+        672.5,
+        541.5,
+        738.5
+      ],
+      "vector_sha256": "f01dbfd3dbe5f00b45eb943307ae11900e5d8baae605eda4820262d1f8efd6b9",
+      "opacity": 1
+    }
+  ],
+  "reference": {
+    "video": "219",
+    "seconds": 300,
+    "original_file": "apple-matches/219-hd.mp4",
+    "video_sha256": "3d58f9e843f0b8c22e99d76de6b5201ef5b17de5bb4bf5732862ba7dbf9be60e"
+  },
+  "source_observation_mask": "observed.png",
+  "target_observation_mask": "target-visible.png",
+  "allow_estimated_background": true,
+  "background_estimate": {
+    "kind": "Separate frozen affine RGB plane from uncovered upper/right controls ONLY",
+    "basis": [
+      "1",
+      "(x-509)/100",
+      "(y-705)/100"
+    ],
+    "coefficient_rgb": [
+      [
+        0.7067092856131959,
+        0.7222036713425598,
+        0.7448411993493029
+      ],
+      [
+        -0.012499620231088245,
+        -0.012726915019651577,
+        -0.010238765456424721
+      ],
+      [
+        0.010065843882728374,
+        0.009951321211909527,
+        0.006047169806960244
+      ]
+    ],
+    "source_defined_domain": [
+      400,
+      490,
+      741,
+      841
+    ],
+    "direct_observed_fraction": 0,
+    "controls": [
+      {
+        "name": "held_upper_right",
+        "pixels": 8496,
+        "rmse": 1.1243799134248091,
+        "signed_rgb": [
+          0.07698504973370479,
+          0.30593477477157305,
+          0.5595214783319137
+        ],
+        "p95_absolute": 2.2557092278748225
+      },
+      {
+        "name": "independent_left_uncovered",
+        "pixels": 1001,
+        "rmse": 4.648335173648989,
+        "signed_rgb": [
+          3.9563470282634907,
+          4.069834697065421,
+          3.3007622162019294
+        ],
+        "p95_absolute": 8.189043872638058
+      },
+      {
+        "name": "independent_lower_uncovered",
+        "pixels": 836,
+        "rmse": 9.47730586225572,
+        "signed_rgb": [
+          7.849401931874083,
+          10.986198648035431,
+          9.01365236596783
+        ],
+        "p95_absolute": 12.657236589131772
+      }
+    ],
+    "uncertainty": "Held residuals constrain uncovered field, not hidden truth. Left/bottom extrapolation and parent lighting/shadow remain confounded. No photographic recovery or refraction/blur identification."
+  },
+  "foreground_provenance": {
+    "kind": "Outlined SF magnifyingglass path, pinned third-party data re-export; originalApple authenticity/thisSafari weight not independentlyproven",
+    "source_url": "https://raw.githubusercontent.com/bradleyhodges/sfsymbols/2a0100e93e11a22ea0ff5e0530efd10e2cf0d243/dist/module/sfMagnifyingglass.js",
+    "blob_sha1": "4dd50231bc3adadeb15419d0fe663c78c76bcfce",
+    "safe_extraction": "Literalpath only, no JSexecution; inkboundstrim squarecenter preservingaspect; no targetalpha orpose/weightfit",
+    "svg_sha256": "f01dbfd3dbe5f00b45eb943307ae11900e5d8baae605eda4820262d1f8efd6b9",
+    "placement": [
+      475.5,
+      672.5,
+      541.5,
+      738.5
+    ],
+    "opacity": 1,
+    "source_update_proposed_not_accepted": true
+  },
+  "exterior_reference_shape": {
+    "shape_dx": 0,
+    "shape_dy": 0,
+    "half_x_delta": 0,
+    "half_y_delta": 0,
+    "radius_delta": 0,
+    "cap_join_width": 0
+  },
+  "source_sha256": {
+    "source.png": "8ebb71ad5fd182b37fc1f72746933070ec08de2eaa93aad5c4842bb3908ca14c",
+    "target.png": "d0b1b8bd6195dae6d36caeba60535b6dff97d41e5c11d7857d0260ad7a169b79",
+    "known.png": "eeea2727dd8f5af3c1e3d9bd28edce1eb4e767e90d630ccde7e06562db428b62",
+    "observed.png": "06da5431a575e89e972435a0219b390d3dbb32e73ad342de409a935744365f76",
+    "target-visible.png": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+  }
+}

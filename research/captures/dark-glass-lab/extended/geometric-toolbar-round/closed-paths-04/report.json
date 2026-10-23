@@ -1,0 +1,136 @@
+{
+  "status": "PASS_MATHEMATICAL_TRANSFER_WITH_INCOMPLETE_BRANCHES",
+  "rays": 10964,
+  "images": 0,
+  "fits": 0,
+  "source_work": 0,
+  "checks": {
+    "circle_fixture_shared_tracer_equality": {
+      "pass": true,
+      "details": {
+        "maximum_errors": {
+          "X": 6.661338147750939e-16,
+          "Y": 6.661338147750939e-16,
+          "inside": 0.0,
+          "complete": 0.0,
+          "boundary_unresolved": 0.0,
+          "blocked": 0.0,
+          "entry": 1.3877787807814457e-17,
+          "exit": 1.1102230246251565e-16,
+          "entry_normal": 2.220446049250313e-16,
+          "exit_normal": 2.220446049250313e-16,
+          "internal_direction": 1.6653345369377348e-16,
+          "exit_direction": 4.440892098500626e-16,
+          "discriminant": 9.992007221626409e-16,
+          "intersection_bracket": 0.0,
+          "exit_level_residual": 8.881784197001252e-16
+        },
+        "all_status_and_NaN_patterns_exact": true,
+        "scope": "True radial kappa0; root owns anisotropic circle kappa1/3 fixture. No new toolbar set."
+      }
+    },
+    "incomplete_nan_0.0": {
+      "pass": true,
+      "details": "No background replacements on TIR, exact tangent, non-downward or other incomplete paths"
+    },
+    "clear_miss_identity_0.0": {
+      "pass": true,
+      "details": "Clear misses are straight; not counted as transmitted solid paths"
+    },
+    "actual_F_roots_normals_0.0": {
+      "pass": true,
+      "details": {
+        "entry_level_max": 4.440892098500626e-16,
+        "exit_level_max": 5.938605163180455e-11,
+        "exit_bracket_max": 9.159950575821085e-12,
+        "normal_max_error": 0.0,
+        "shared_tolerance": 1e-11
+      }
+    },
+    "incomplete_nan_0.3333333333333333": {
+      "pass": true,
+      "details": "No background replacements on TIR, exact tangent, non-downward or other incomplete paths"
+    },
+    "clear_miss_identity_0.3333333333333333": {
+      "pass": true,
+      "details": "Clear misses are straight; not counted as transmitted solid paths"
+    },
+    "actual_F_roots_normals_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "entry_level_max": 4.440892098500626e-16,
+        "exit_level_max": 6.341882574645297e-11,
+        "exit_bracket_max": 9.159950575821085e-12,
+        "normal_max_error": 0.0,
+        "shared_tolerance": 1e-11
+      }
+    }
+  },
+  "toolbar": {
+    "0.0": {
+      "grid": [
+        71,
+        71
+      ],
+      "grid_rays": 5041,
+      "strict_inside": 4381,
+      "clear_miss": 656,
+      "exact_projected_tangent": 4,
+      "transmitted_background": 4333,
+      "TIR_or_critical": 48,
+      "non_downward_finite_exit": 0,
+      "other_incomplete": 0,
+      "fold_evidence_valid_stencils": 4105,
+      "negative_Jacobian_stencils": 1050,
+      "Jacobian_determinant_range": [
+        -13.327361208967297,
+        16.180912709364776
+      ],
+      "fold_limit": "71x71 centered differences on complete strict-interior stencils; numerical orientation-reversal evidence, not a rigorous global caustic certificate.",
+      "transmitted_source_XY_bounds": [
+        [
+          -1.7447455140783532,
+          -1.5755312503699177
+        ],
+        [
+          1.7447455140783532,
+          1.5755312503698953
+        ]
+      ],
+      "source_support": "NOT evaluated; geometry coordinates only, no RGB/input inspected"
+    },
+    "0.3333333333333333": {
+      "grid": [
+        71,
+        71
+      ],
+      "grid_rays": 5041,
+      "strict_inside": 4381,
+      "clear_miss": 656,
+      "exact_projected_tangent": 4,
+      "transmitted_background": 4345,
+      "TIR_or_critical": 36,
+      "non_downward_finite_exit": 0,
+      "other_incomplete": 0,
+      "fold_evidence_valid_stencils": 4117,
+      "negative_Jacobian_stencils": 1010,
+      "Jacobian_determinant_range": [
+        -13.23227106684892,
+        4.973629113403412
+      ],
+      "fold_limit": "71x71 centered differences on complete strict-interior stencils; numerical orientation-reversal evidence, not a rigorous global caustic certificate.",
+      "transmitted_source_XY_bounds": [
+        [
+          -1.764296872623469,
+          -0.8193398181244301
+        ],
+        [
+          1.764296872623469,
+          0.8193398181244325
+        ]
+      ],
+      "source_support": "NOT evaluated; geometry coordinates only, no RGB/input inspected"
+    }
+  },
+  "finished_unix": 1792642112.3738642
+}

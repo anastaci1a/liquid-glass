@@ -1,0 +1,122 @@
+{
+  "trial": 1,
+  "b": 0.05,
+  "g": 1.0,
+  "backtrack": 1,
+  "prediction_ONLY": {
+    "glass": {
+      "pixels": 7805,
+      "rmse": 11.921049118041992
+    },
+    "rim": {
+      "pixels": 5194,
+      "rmse": 12.855827331542969
+    },
+    "held": {
+      "pixels": 3065,
+      "rmse": 11.563003540039062
+    },
+    "interior": {
+      "pixels": 2611,
+      "rmse": 9.79990005493164
+    },
+    "ssim": 0.9904075264930725,
+    "loss": 149.05967736587297,
+    "E": 12.208999851170159,
+    "advisory_f64_E": 12.209000074322393,
+    "glyph": {
+      "pixels": 7735,
+      "rmse": 16.73370933532715
+    },
+    "exterior": {
+      "pixels": 12761,
+      "rmse": 16.828954696655273
+    },
+    "full_visible_exterior": {
+      "pixels": 22835,
+      "rmse": 12.607654571533203
+    }
+  },
+  "actual_native": {
+    "glass": {
+      "pixels": 7805,
+      "rmse": 11.921043395996094
+    },
+    "rim": {
+      "pixels": 5194,
+      "rmse": 12.855820655822754
+    },
+    "held": {
+      "pixels": 3065,
+      "rmse": 11.562995910644531
+    },
+    "interior": {
+      "pixels": 2611,
+      "rmse": 9.799893379211426
+    },
+    "ssim": 0.9904099702835083,
+    "loss": 149.05953037485915,
+    "E": 12.208993831387547,
+    "advisory_f64_E": 12.208993496698152,
+    "glyph": {
+      "pixels": 7735,
+      "rmse": 16.733707427978516
+    },
+    "exterior": {
+      "pixels": 12761,
+      "rmse": 16.828954696655273
+    },
+    "full_visible_exterior": {
+      "pixels": 22835,
+      "rmse": 12.607654571533203
+    }
+  },
+  "checks": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "glyph": true,
+    "exterior": true,
+    "full_visible_exterior": true,
+    "E": true,
+    "SSIM": true,
+    "advisory_f64_E": true
+  },
+  "meaningful_progress": true,
+  "qualifies": true,
+  "clipping_counts": {
+    "whole": {
+      "subrays": 64655,
+      "lower_clipped_subrays": 0,
+      "upper_clipped_subrays": 0,
+      "lower_clipped_channels": 0,
+      "upper_clipped_channels": 0,
+      "at_endpoints_subrays": 0,
+      "min_unclipped": 0.5245098054409028,
+      "max_unclipped": 0.6107207417488099
+    },
+    "scored": {
+      "subrays": 31220,
+      "lower_clipped_subrays": 0,
+      "upper_clipped_subrays": 0,
+      "lower_clipped_channels": 0,
+      "upper_clipped_channels": 0,
+      "at_endpoints_subrays": 0,
+      "min_unclipped": 0.5245098054409028,
+      "max_unclipped": 0.6107207417488099
+    },
+    "postfootprint": {
+      "subrays": 69908,
+      "lower_clipped_subrays": 0,
+      "upper_clipped_subrays": 0,
+      "lower_clipped_channels": 0,
+      "upper_clipped_channels": 0,
+      "at_endpoints_subrays": 0,
+      "min_unclipped": 0.5245098054409028,
+      "max_unclipped": 0.6107207417488099
+    }
+  },
+  "prediction_max_absolute_material_difference": 1.7881393432617188e-07,
+  "source_and_sampling": "Frozen exactselectedsettledrender samples2, observationalwrappers returnoriginalmap/shade unchanged; no baselinererender ornewraysweeps"
+}

@@ -1,0 +1,629 @@
+{
+  "baseline": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.155917167663574
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 19.23659896850586
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 12.677449226379395
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.759103775024414
+      },
+      "ssim": 0.9646036624908447,
+      "loss": 198.1321634587758,
+      "E": 14.075942720072991,
+      "shadow": {
+        "rmse": 6.534458637237549,
+        "pixels": 152521
+      }
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.641358375549316
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 18.651412963867188
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 13.763863563537598
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 10.928814888000488
+      },
+      "ssim": 0.9325292110443115,
+      "loss": 234.62322249573253,
+      "E": 15.317415659821096,
+      "shadow": {
+        "rmse": 4.46285343170166,
+        "pixels": 132594
+      }
+    }
+  ],
+  "trials": [
+    {
+      "delta": -0.00025,
+      "parameters": {
+        "sigma": 4.339320119358678,
+        "amplitude": 0.7839488678764915,
+        "band": 0.41709079115813363,
+        "power": 2.793583791362869,
+        "tangent": 0,
+        "tangent_band": 0.9999992768775775,
+        "core_x": -0.4846878202583121,
+        "core_y": -0.6130345356676894,
+        "post_sigma": 2.163537921629955,
+        "coupling": 0,
+        "gamma": 2.5,
+        "rim_width": 0.04853846511595129,
+        "thin_width": 0.011095946046562786,
+        "spline": true,
+        "shape_dx": 0.001167965417146694,
+        "shape_dy": 0.004755085677013721,
+        "half_x_delta": -0.0025334994195777482,
+        "half_y_delta": 0.011224253113150662,
+        "radius_delta": 0.012043263143639911,
+        "c0": 0.3889359819892449,
+        "c1": 0.9652234553429602,
+        "c2": -0.4770119991811381,
+        "c3": 1.0123293617573517,
+        "c4": 0.7246624409792892,
+        "c5": 0.29235502576229955,
+        "c6": 0.19475083790259756,
+        "shadow": {
+          "opacity": 0.058660798600097784,
+          "sigma": 0.12480880219622643,
+          "offset": [
+            0.0014367206241543645,
+            0.15973501069093624
+          ]
+        },
+        "blur_transition": 0,
+        "tangent_exponent": 3.000273143553201,
+        "cap_normal_gain": -0.11946436603381186,
+        "cap_tangent_fade": 0.9997199664179274,
+        "material_chroma_sensitivity": 10,
+        "material_chroma_floor": 0,
+        "grazing_reflection": {
+          "strength": 1,
+          "width": 0.03895748531996116,
+          "angular_power": 1.5519447192573868,
+          "source_sigma": 0.007,
+          "direction": [
+            0,
+            1
+          ]
+        },
+        "directional_transmission": {
+          "strength": 0.3849814426989986,
+          "length": 0.08,
+          "angle": 1.3571487177940904,
+          "fade_center": -0.395271178284122,
+          "fade_width": 0.3577136899555915
+        },
+        "crown_softness": 0.08,
+        "cap_edge_profile": [
+          0.5413398569670634,
+          4,
+          -0.5647892338053567
+        ],
+        "ambient_rim_response": [
+          2.793309293559158,
+          1.311646931057974,
+          6.458550793933152e-18
+        ]
+      },
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.155527114868164
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.238113403320312
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.686885833740234
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.755268573760986
+          },
+          "ssim": 0.9646145701408386,
+          "loss": 198.14355184309497,
+          "E": 14.076347247886966,
+          "shadow": {
+            "rmse": 6.534552574157715,
+            "pixels": 152521
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.602032661437988
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 18.547531127929688
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.725903511047363
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.93243408203125
+          },
+          "ssim": 0.9327079057693481,
+          "loss": 232.71397804843429,
+          "E": 15.254965684931392,
+          "shadow": {
+            "rmse": 4.463310241699219,
+            "pixels": 132594
+          }
+        }
+      ],
+      "advisory_double": [
+        {
+          "glass": -0.008701746087765925,
+          "rim": 0.05833886820577972,
+          "weighted_loss_delta": 0.01141043820029777,
+          "nonincreasing": false
+        },
+        {
+          "glass": -1.071401906523428,
+          "rim": -3.8643208676242633,
+          "weighted_loss_delta": -1.9092775948536784,
+          "nonincreasing": true
+        }
+      ],
+      "guarded": false,
+      "meaningful": true
+    },
+    {
+      "delta": 0.00025,
+      "parameters": {
+        "sigma": 4.339320119358678,
+        "amplitude": 0.7839488678764915,
+        "band": 0.41709079115813363,
+        "power": 2.793583791362869,
+        "tangent": 0,
+        "tangent_band": 0.9999992768775775,
+        "core_x": -0.4846878202583121,
+        "core_y": -0.6130345356676894,
+        "post_sigma": 2.163537921629955,
+        "coupling": 0,
+        "gamma": 2.5,
+        "rim_width": 0.049038465115951294,
+        "thin_width": 0.011095946046562786,
+        "spline": true,
+        "shape_dx": 0.001167965417146694,
+        "shape_dy": 0.004755085677013721,
+        "half_x_delta": -0.0025334994195777482,
+        "half_y_delta": 0.011224253113150662,
+        "radius_delta": 0.012043263143639911,
+        "c0": 0.3889359819892449,
+        "c1": 0.9652234553429602,
+        "c2": -0.4770119991811381,
+        "c3": 1.0123293617573517,
+        "c4": 0.7246624409792892,
+        "c5": 0.29235502576229955,
+        "c6": 0.19475083790259756,
+        "shadow": {
+          "opacity": 0.058660798600097784,
+          "sigma": 0.12480880219622643,
+          "offset": [
+            0.0014367206241543645,
+            0.15973501069093624
+          ]
+        },
+        "blur_transition": 0,
+        "tangent_exponent": 3.000273143553201,
+        "cap_normal_gain": -0.11946436603381186,
+        "cap_tangent_fade": 0.9997199664179274,
+        "material_chroma_sensitivity": 10,
+        "material_chroma_floor": 0,
+        "grazing_reflection": {
+          "strength": 1,
+          "width": 0.03895748531996116,
+          "angular_power": 1.5519447192573868,
+          "source_sigma": 0.007,
+          "direction": [
+            0,
+            1
+          ]
+        },
+        "directional_transmission": {
+          "strength": 0.3849814426989986,
+          "length": 0.08,
+          "angle": 1.3571487177940904,
+          "fade_center": -0.395271178284122,
+          "fade_width": 0.3577136899555915
+        },
+        "crown_softness": 0.08,
+        "cap_edge_profile": [
+          0.5413398569670634,
+          4,
+          -0.5647892338053567
+        ],
+        "ambient_rim_response": [
+          2.793309293559158,
+          1.311646931057974,
+          6.458550793933152e-18
+        ]
+      },
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.157684326171875
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.237688064575195
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.669466972351074
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.763138294219971
+          },
+          "ssim": 0.9645875692367554,
+          "loss": 198.17233628672074,
+          "E": 14.077369650851708,
+          "shadow": {
+            "rmse": 6.53436803817749,
+            "pixels": 152521
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.681145668029785
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 18.75611686706543
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.802264213562012
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.92521858215332
+          },
+          "ssim": 0.9323509335517883,
+          "loss": 236.5591987322,
+          "E": 15.38048109560296,
+          "shadow": {
+            "rmse": 4.462403774261475,
+            "pixels": 132594
+          }
+        }
+      ],
+      "advisory_double": [
+        {
+          "glass": 0.03945330729836638,
+          "rim": 0.04195147511373686,
+          "weighted_loss_delta": 0.040202757642977524,
+          "nonincreasing": false
+        },
+        {
+          "glass": 1.08706768630755,
+          "rim": 3.916724761061797,
+          "weighted_loss_delta": 1.935964808733824,
+          "nonincreasing": false
+        }
+      ],
+      "guarded": false,
+      "meaningful": false
+    },
+    {
+      "delta": -0.000125,
+      "parameters": {
+        "sigma": 4.339320119358678,
+        "amplitude": 0.7839488678764915,
+        "band": 0.41709079115813363,
+        "power": 2.793583791362869,
+        "tangent": 0,
+        "tangent_band": 0.9999992768775775,
+        "core_x": -0.4846878202583121,
+        "core_y": -0.6130345356676894,
+        "post_sigma": 2.163537921629955,
+        "coupling": 0,
+        "gamma": 2.5,
+        "rim_width": 0.04866346511595129,
+        "thin_width": 0.011095946046562786,
+        "spline": true,
+        "shape_dx": 0.001167965417146694,
+        "shape_dy": 0.004755085677013721,
+        "half_x_delta": -0.0025334994195777482,
+        "half_y_delta": 0.011224253113150662,
+        "radius_delta": 0.012043263143639911,
+        "c0": 0.3889359819892449,
+        "c1": 0.9652234553429602,
+        "c2": -0.4770119991811381,
+        "c3": 1.0123293617573517,
+        "c4": 0.7246624409792892,
+        "c5": 0.29235502576229955,
+        "c6": 0.19475083790259756,
+        "shadow": {
+          "opacity": 0.058660798600097784,
+          "sigma": 0.12480880219622643,
+          "offset": [
+            0.0014367206241543645,
+            0.15973501069093624
+          ]
+        },
+        "blur_transition": 0,
+        "tangent_exponent": 3.000273143553201,
+        "cap_normal_gain": -0.11946436603381186,
+        "cap_tangent_fade": 0.9997199664179274,
+        "material_chroma_sensitivity": 10,
+        "material_chroma_floor": 0,
+        "grazing_reflection": {
+          "strength": 1,
+          "width": 0.03895748531996116,
+          "angular_power": 1.5519447192573868,
+          "source_sigma": 0.007,
+          "direction": [
+            0,
+            1
+          ]
+        },
+        "directional_transmission": {
+          "strength": 0.3849814426989986,
+          "length": 0.08,
+          "angle": 1.3571487177940904,
+          "fade_center": -0.395271178284122,
+          "fade_width": 0.3577136899555915
+        },
+        "crown_softness": 0.08,
+        "cap_edge_profile": [
+          0.5413398569670634,
+          4,
+          -0.5647892338053567
+        ],
+        "ambient_rim_response": [
+          2.793309293559158,
+          1.311646931057974,
+          6.458550793933152e-18
+        ]
+      },
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.155549049377441
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.237030029296875
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.681984901428223
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.7571611404418945
+          },
+          "ssim": 0.964609682559967,
+          "loss": 198.13138951956705,
+          "E": 14.075915228487526,
+          "shadow": {
+            "rmse": 6.534505367279053,
+            "pixels": 152521
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.621621131896973
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 18.599327087402344
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.74481201171875
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.930621147155762
+          },
+          "ssim": 0.9326187968254089,
+          "loss": 233.66448401391307,
+          "E": 15.28608792379244,
+          "shadow": {
+            "rmse": 4.463080883026123,
+            "pixels": 132594
+          }
+        }
+      ],
+      "advisory_double": [
+        {
+          "glass": -0.008199571606386954,
+          "rim": 0.016615712765457483,
+          "weighted_loss_delta": -0.000754986294833622,
+          "nonincreasing": true
+        },
+        {
+          "glass": -0.5381049827950988,
+          "rim": -1.940239947119778,
+          "weighted_loss_delta": -0.9587454720925026,
+          "nonincreasing": true
+        }
+      ],
+      "guarded": false,
+      "meaningful": true
+    },
+    {
+      "delta": 0.000125,
+      "parameters": {
+        "sigma": 4.339320119358678,
+        "amplitude": 0.7839488678764915,
+        "band": 0.41709079115813363,
+        "power": 2.793583791362869,
+        "tangent": 0,
+        "tangent_band": 0.9999992768775775,
+        "core_x": -0.4846878202583121,
+        "core_y": -0.6130345356676894,
+        "post_sigma": 2.163537921629955,
+        "coupling": 0,
+        "gamma": 2.5,
+        "rim_width": 0.04891346511595129,
+        "thin_width": 0.011095946046562786,
+        "spline": true,
+        "shape_dx": 0.001167965417146694,
+        "shape_dy": 0.004755085677013721,
+        "half_x_delta": -0.0025334994195777482,
+        "half_y_delta": 0.011224253113150662,
+        "radius_delta": 0.012043263143639911,
+        "c0": 0.3889359819892449,
+        "c1": 0.9652234553429602,
+        "c2": -0.4770119991811381,
+        "c3": 1.0123293617573517,
+        "c4": 0.7246624409792892,
+        "c5": 0.29235502576229955,
+        "c6": 0.19475083790259756,
+        "shadow": {
+          "opacity": 0.058660798600097784,
+          "sigma": 0.12480880219622643,
+          "offset": [
+            0.0014367206241543645,
+            0.15973501069093624
+          ]
+        },
+        "blur_transition": 0,
+        "tangent_exponent": 3.000273143553201,
+        "cap_normal_gain": -0.11946436603381186,
+        "cap_tangent_fade": 0.9997199664179274,
+        "material_chroma_sensitivity": 10,
+        "material_chroma_floor": 0,
+        "grazing_reflection": {
+          "strength": 1,
+          "width": 0.03895748531996116,
+          "angular_power": 1.5519447192573868,
+          "source_sigma": 0.007,
+          "direction": [
+            0,
+            1
+          ]
+        },
+        "directional_transmission": {
+          "strength": 0.3849814426989986,
+          "length": 0.08,
+          "angle": 1.3571487177940904,
+          "fade_center": -0.395271178284122,
+          "fade_width": 0.3577136899555915
+        },
+        "crown_softness": 0.08,
+        "cap_edge_profile": [
+          0.5413398569670634,
+          4,
+          -0.5647892338053567
+        ],
+        "ambient_rim_response": [
+          2.793309293559158,
+          1.311646931057974,
+          6.458550793933152e-18
+        ]
+      },
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.156628608703613
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.236818313598633
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.6732759475708
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.761096000671387
+          },
+          "ssim": 0.9645957350730896,
+          "loss": 198.14580698790186,
+          "E": 14.0764273517076,
+          "shadow": {
+            "rmse": 6.5344133377075195,
+            "pixels": 152521
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.661202430725098
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 18.70368194580078
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.783027648925781
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.927013397216797
+          },
+          "ssim": 0.9324402213096619,
+          "loss": 235.58823179617673,
+          "E": 15.348883731274295,
+          "shadow": {
+            "rmse": 4.46262788772583,
+            "pixels": 132594
+          }
+        }
+      ],
+      "advisory_double": [
+        {
+          "glass": 0.015887759763395768,
+          "rim": 0.008458345954482058,
+          "weighted_loss_delta": 0.013658935620721655,
+          "nonincreasing": false
+        },
+        {
+          "glass": 0.5417807314254128,
+          "rim": 1.9525184258448702,
+          "weighted_loss_delta": 0.96500203975125,
+          "nonincreasing": false
+        }
+      ],
+      "guarded": false,
+      "meaningful": false
+    }
+  ],
+  "candidate": null,
+  "accepted": false,
+  "accepted_count": 0,
+  "source_epoch_unchanged": true,
+  "native_resolution_noise_floor": [
+    5.244309035607192e-06,
+    5.165104540039702e-06
+  ],
+  "limits": "OriginalbothnativeE/glass/exteriorshadow strict; originalZEROforeground layers, no vector changes. Additional advisory residual nonregression not newscoreepoch. Onefamily,max4actualpairs, no shader/operator/source/dispersion/blur changes."
+}

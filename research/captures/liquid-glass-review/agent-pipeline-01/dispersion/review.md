@@ -1,0 +1,11 @@
+# Dispersion: no independently supported spectral direction
+
+Actual15-minute cap09:25:36–09:40:36UTC. Saved-array identification only:0new rays/sourcequeries/images/fits. Same physical geometry/nominal n1.5, ordinarysigma6.75, commoncodedgain/bias, originalforeground/source/masks/pose/AA remain fixed. No channelshift search, independentRGB coefficient, Cauchy fit, artificialrainbow or source adoption.
+
+B neutral text interior (46620 advisorypixels) is EXACTLY R=G=B in the frozen target: spatialopponentchroma0, all channelgradient correlations1. Model lumaRMSE13.409levels versus opponentRMSE.06284. The original lower crop's19708fullycovered scoredpixels are also exactlyneutral; source-neutral subset19225 unchanged conclusion. Uppercrop is not entirely neutral:91%exactneutral, spatialopponentRMS≈.69level. This weakedge signal is retained, not declaredzero or uniquelyspectral.
+
+A's coloredbackground already has strong sourcechroma; interior source opponentRMS52.40levels, reference25.31, model31.40. Residualchroma22.85levels cannot be assigned to wavelength refraction without first explaining geometry/tonereturn/environment. In the lower A crop, the predicted source is nearlyneutral while Apple has a broad coloredreturn band: that is a concrete correspondence/illumination/model mismatch, not proof of dispersion. Do not hide it with chromatic offsets.
+
+These do NOT prove Apple's IOR is wavelengthindependent. Low-gradient white source, strongfrost, source/videoPSF, frozen8bit precision, RGBcamera response, capture artifacts and unobservedreflection limit identification. No supported reusable nonzero spectral law follows. Keep nominalconstantIOR as an explicit approximation. Ordinarywidth filtering uses the SAMEkernel onRGB and remains distinct from wavelength-dependent ray directions; see [PBRT4e specular transmission](https://pbr-book.org/4ed/Reflection_Models/Specular_Reflection_and_Transmission) for that distinction.
+
+Original masks/scores are not changed by the source-neutral or eroded analysiscohorts. Data: identification.json, edge-controls.json, originalfixedcrop coordinates in priorprotocols. No new fullnative image or spectral fit is authorized by a colored residual alone. Stage outcome is an identification limit/no addeddispersion, not a new successfulpass or physicalabsenceproof.

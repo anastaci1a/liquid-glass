@@ -1,0 +1,120 @@
+{
+  "stage": "SINGLE_A_BASELINE_READY_FOR_REVIEW_BEFORE_FIT",
+  "scores": {
+    "glass": {
+      "pixels": 9922,
+      "rmse": 7.27180814743042
+    },
+    "rim": {
+      "pixels": 5555,
+      "rmse": 8.591703414916992
+    },
+    "held": {
+      "pixels": 3789,
+      "rmse": 6.072876453399658
+    },
+    "interior": {
+      "pixels": 4367,
+      "rmse": 5.122986793518066
+    },
+    "ssim": 0.9863481521606445,
+    "loss": 59.1606458840937,
+    "E": 7.691595795678143,
+    "glyph": {
+      "pixels": 6162,
+      "rmse": 27.922576904296875
+    },
+    "exterior": {
+      "pixels": 13736,
+      "rmse": 7.5061187744140625
+    },
+    "full_visible_exterior": {
+      "pixels": 30609,
+      "rmse": 6.9344072341918945
+    }
+  },
+  "source_controls": [
+    {
+      "name": "held_upper_right",
+      "pixels": 8496,
+      "rmse": 1.1243799134248091,
+      "signed_rgb": [
+        0.07698504973370479,
+        0.30593477477157305,
+        0.5595214783319137
+      ],
+      "p95_absolute": 2.2557092278748225
+    },
+    {
+      "name": "independent_left_uncovered",
+      "pixels": 1001,
+      "rmse": 4.648335173648989,
+      "signed_rgb": [
+        3.9563470282634907,
+        4.069834697065421,
+        3.3007622162019294
+      ],
+      "p95_absolute": 8.189043872638058
+    },
+    {
+      "name": "independent_lower_uncovered",
+      "pixels": 836,
+      "rmse": 9.47730586225572,
+      "signed_rgb": [
+        7.849401931874083,
+        10.986198648035431,
+        9.01365236596783
+      ],
+      "p95_absolute": 12.657236589131772
+    }
+  ],
+  "source_proof": {
+    "counts": {
+      "whole": 66763,
+      "scored": 39688,
+      "scored_outside_outline": 0,
+      "whole_bad": 0,
+      "scored_bad": 0
+    },
+    "minimum_confidence": {
+      "whole_defined": 1.0,
+      "scored_defined": 1.0,
+      "whole_observed": 0.0,
+      "scored_observed": 0.0
+    },
+    "ray_bounds": [
+      462.9908142089844,
+      658.8123779296875,
+      555.563232421875,
+      751.3814086914062
+    ],
+    "gaussian_3sigma_native_radius": 17,
+    "passed": true,
+    "limits": "Fixed native2x2 whole+ALLscored, finite3sigma confidence. Estimated-source model definedness, observed0 everywhere. Not photographic source recovery/continuous/infiniteGaussian/optical validation."
+  },
+  "center_source_proof": {
+    "source_defined_fraction": 1.0,
+    "gaussian_3sigma_defined_fraction": 1.0,
+    "source_observed_fraction": 0.0,
+    "gaussian_3sigma_observed_fraction": 0.0,
+    "source_gaussian_radius_native_px": 17
+  },
+  "pose": {
+    "center": [
+      509.277,
+      705.097
+    ],
+    "radius": 72.894,
+    "ridge_quantiles": [
+      72.5,
+      72.875,
+      73.25
+    ],
+    "landmark_uncertainty": "Image bright/dark gradient edges, not alpha groundtruth; no later pose fit authorized"
+  },
+  "source_adopted": false,
+  "fit_count": 0,
+  "accepted_count": 0,
+  "B": "PENDING;290nearidenticalgraybackground and changedradius, no pairedvalidation",
+  "proposal": "First short identifiable shared-tone/material-only neighborhood after primary review; freeze map/geometry/source blur/output blur/gamma/SVG. No refraction/dispersion identification from smooth input. Original E/glass/rim/held/interior/SSIM/glyph/exterior guards frozen against this baseline."
+}

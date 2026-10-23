@@ -1,0 +1,177 @@
+{
+  "rows": [
+    {
+      "observation": "a",
+      "proposals": [
+        {
+          "variant": "current",
+          "proposal_E": 13.267314563050915,
+          "glass_rmse": 10.479746065951435,
+          "rim_rmse": 18.1791163509273
+        },
+        {
+          "variant": "no-source-Gaussian",
+          "proposal_E": 13.51320212987491,
+          "glass_rmse": 10.712921006965663,
+          "rim_rmse": 18.463473693738806
+        },
+        {
+          "variant": "no-output-Gaussian",
+          "proposal_E": 15.629763402356694,
+          "glass_rmse": 12.14059580400702,
+          "rim_rmse": 21.688219342941128
+        },
+        {
+          "variant": "no-ordinary-Gaussian",
+          "proposal_E": 16.72887735706939,
+          "glass_rmse": 13.305165371036415,
+          "rim_rmse": 22.798840594968148
+        },
+        {
+          "variant": "no-directional-mixture",
+          "proposal_E": 14.107764673776392,
+          "glass_rmse": 11.076351355568677,
+          "rim_rmse": 19.42070480563184
+        },
+        {
+          "variant": "spectral-only-transmission",
+          "proposal_E": 17.95408603587123,
+          "glass_rmse": 14.250351175941107,
+          "rim_rmse": 24.508396475297612
+        }
+      ]
+    },
+    {
+      "observation": "b",
+      "proposals": [
+        {
+          "variant": "current",
+          "proposal_E": 16.163219558749578,
+          "glass_rmse": 14.018946838627857,
+          "rim_rmse": 20.304191453929988
+        },
+        {
+          "variant": "no-source-Gaussian",
+          "proposal_E": 16.435273830031303,
+          "glass_rmse": 14.32646476950156,
+          "rim_rmse": 20.530052030610573
+        },
+        {
+          "variant": "no-output-Gaussian",
+          "proposal_E": 17.984935517581906,
+          "glass_rmse": 15.244839752399656,
+          "rim_rmse": 23.149824205101986
+        },
+        {
+          "variant": "no-ordinary-Gaussian",
+          "proposal_E": 18.44747693667451,
+          "glass_rmse": 15.740838073535933,
+          "rim_rmse": 23.584431096879925
+        },
+        {
+          "variant": "no-directional-mixture",
+          "proposal_E": 16.254380196136225,
+          "glass_rmse": 14.11172694373631,
+          "rim_rmse": 20.396591988724015
+        },
+        {
+          "variant": "spectral-only-transmission",
+          "proposal_E": 18.60451337442469,
+          "glass_rmse": 15.888883878590153,
+          "rim_rmse": 23.763296366737634
+        }
+      ]
+    }
+  ],
+  "seed": {
+    "sigma": 4.339320119358678,
+    "amplitude": 0.7839488678764915,
+    "band": 0.41709079115813363,
+    "power": 2.793583791362869,
+    "tangent": 0,
+    "tangent_band": 0.9999992768775775,
+    "core_x": -0.48636618103316787,
+    "core_y": -0.6136971567801134,
+    "post_sigma": 2.163537921629955,
+    "coupling": 0,
+    "gamma": 1.5497479697761347,
+    "rim_width": 0.04878846511595129,
+    "thin_width": 0.011095946046562786,
+    "spline": true,
+    "shape_dx": 0.001167965417146694,
+    "shape_dy": 0.004755085677013721,
+    "half_x_delta": -0.0025334994195777482,
+    "half_y_delta": 0.011224253113150662,
+    "radius_delta": 0.012043263143639911,
+    "c0": 0.5825744554180238,
+    "c1": 1.3388234553429594,
+    "c2": -0.8083295666489414,
+    "c3": 1.0304313912343226,
+    "c4": 0.7184704183774985,
+    "c5": 0.2901299541876391,
+    "c6": 0.20008253902374495,
+    "shadow": {
+      "opacity": 0.058660798600097784,
+      "sigma": 0.12480880219622643,
+      "offset": [
+        0.0014367206241543645,
+        0.15973501069093624
+      ]
+    },
+    "blur_transition": 0,
+    "tangent_exponent": 3.000273143553201,
+    "cap_normal_gain": -0.11946436603381186,
+    "cap_tangent_fade": 0.9997199664179274,
+    "material_chroma_sensitivity": 10,
+    "material_chroma_floor": 0,
+    "grazing_reflection": {
+      "strength": 1,
+      "width": 0.03895748531996116,
+      "angular_power": 1.5519447192573868,
+      "source_sigma": 0.007,
+      "direction": [
+        0,
+        1
+      ]
+    },
+    "directional_transmission": {
+      "strength": 0.3849814426989986,
+      "length": 0.08,
+      "angle": 1.3571487177940904,
+      "fade_center": -0.395271178284122,
+      "fade_width": 0.3577136899555915
+    },
+    "crown_softness": 0.08,
+    "cap_edge_profile": [
+      0.2322370122582555,
+      3.758106496066732,
+      -0.205634698814882
+    ],
+    "ambient_rim_response": [
+      2.793309293559158,
+      1.311646931057974,
+      6.458550793933152e-18
+    ],
+    "euclidean_surface": {
+      "t0": 0.8,
+      "bx": 0.039405532871118955,
+      "by": 0.03376877635571598,
+      "profile": [
+        0.37554696383165453,
+        0.47546999999999995,
+        -0.10202767742082718,
+        0.11147362282542292,
+        0.12617315540951288,
+        0.030341703382188952,
+        0.0141616455300438
+      ],
+      "width": 0.75,
+      "n": 1.5,
+      "gap": 10.8,
+      "longitudinal": 0.13642772745586756
+    },
+    "cauchy_delta": 0.0058413051710365345
+  },
+  "method": "Frozen-coefficient operator-isolation proposal, not a new fit or score pass.\nOrdinary source blur, ordinary output blur and directional RGB mixing are\nseparate operators. Actual index dispersion remains the same in all variants.\n",
+  "limits": "5000fixedpoints with16Gaussian quadrature taps, or one central tap without output blur. Not native filtering/supersampling or a final acceptance comparison. Material/source/shape unchanged, no new calibration/pass."
+}

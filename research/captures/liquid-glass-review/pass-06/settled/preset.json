@@ -1,0 +1,64 @@
+{
+  "scope": "Owner-selected visual-study calibration; no native-app/default or recovered-Apple-shader claim.",
+  "reference_short_dimension_px": 490.0,
+  "geometry": {
+    "width": 4.5,
+    "gain": 1,
+    "inner_endpoint_power": 4,
+    "amplitude_over_radius": 0.6338092221139378,
+    "band_over_radius": 0.09445809156460266,
+    "outer_power": 2.10022237760162
+  },
+  "filters": {
+    "source_sigma_over_short_dimension": 0.0010204081632653062,
+    "glass_post_sigma_over_short_dimension": 0.003061224489795918,
+    "icon_final_sigma_over_short_dimension": 0.006122448979591836,
+    "reference_equivalents_px": {
+      "source": 0.5,
+      "glass": 1.5,
+      "icon": 3.0
+    }
+  },
+  "icon": {
+    "base": "Original pass04 independent-channel response",
+    "base_parameters": [
+      0.9999999999999285,
+      0.9999999999999999,
+      0.4829334270156419,
+      11.731766541351298,
+      8.166089277320348,
+      5.294455609674747
+    ],
+    "dark_saturation": 0.2,
+    "taper": 0.5,
+    "highlight_start": 0.9,
+    "dark_span": 0.15,
+    "order": [
+      "pass04 response",
+      "dark-weighted saturation",
+      "monotone highlight taper",
+      "Gaussian blur of calculated icon color",
+      "sharp icon coverage/compositing"
+    ]
+  },
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "video_fps": 30,
+    "duration_seconds": 6,
+    "gif_max_bytes": 10000000
+  },
+  "limits": [
+    "Radial inverse-map approximation, not an identified physical Apple solid.",
+    "Still exterior context estimated/retained; moving preview omits exterior shadow.",
+    "Independent-channel icon response does not guarantee color order on every background.",
+    "Offline rendering and GIF frame rate are not Android performance evidence."
+  ],
+  "verification": {
+    "final_icon_blur_max_error": {
+      "1": 0.0,
+      "0.5": 0.0
+    },
+    "spatial_ratios": "Both blur amounts scale with the same shorter-dimension units as geometry."
+  }
+}

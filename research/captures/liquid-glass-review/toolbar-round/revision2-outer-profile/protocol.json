@@ -1,0 +1,56 @@
+{
+  "baseline": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "native_grid": [
+    4,
+    4
+  ],
+  "coefficient_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "delta_bounds": [
+    -0.15,
+    0.15
+  ],
+  "starts": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0.04,
+      -0.04,
+      0.04,
+      -0.04
+    ]
+  ],
+  "trust_initial": 0.02,
+  "trust_cap": 0.04,
+  "finite_difference_initial": 0.002,
+  "max_trust_iterations_per_start": 8,
+  "nonregression_constraints_during_proposal": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "fixed": [
+    "source RGB",
+    "native masks/epoch",
+    "silhouette",
+    "material",
+    "inner4–6",
+    "tangent",
+    "source/output blur",
+    "shadow",
+    "solid foreground"
+  ],
+  "counted_passes": 0,
+  "stock_renderer_sha256": "256ee8e084139ec1c81d07cd1e423d8962a665bfc44d4ab9d48744fae1b746f3"
+}

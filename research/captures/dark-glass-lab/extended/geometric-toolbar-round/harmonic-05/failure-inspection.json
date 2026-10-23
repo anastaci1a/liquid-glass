@@ -1,0 +1,35 @@
+{
+  "scope": "Failed-input inspection only; no tracer, source, image or corrective rerun",
+  "failed_points": [
+    {
+      "x": 0.6000000000000001,
+      "y": -0.8,
+      "hypot": 1.0,
+      "squared_sum": 1.0000000000000002,
+      "h2": -8.881784197001253e-17
+    },
+    {
+      "x": -0.8,
+      "y": 0.6000000000000001,
+      "hypot": 1.0,
+      "squared_sum": 1.0000000000000002,
+      "h2": -8.881784197001253e-17
+    },
+    {
+      "x": 0.8,
+      "y": 0.6000000000000001,
+      "hypot": 1.0,
+      "squared_sum": 1.0000000000000002,
+      "h2": -8.881784197001253e-17
+    },
+    {
+      "x": 0.6000000000000001,
+      "y": 0.8,
+      "hypot": 1.0,
+      "squared_sum": 1.0000000000000002,
+      "h2": -8.881784197001253e-17
+    }
+  ],
+  "cause": "Helper radial fixture uses hypot-based inside but separately rounded squared sum for h2; shared circle uses r*r and nonnegative restriction",
+  "correction_applied": false
+}

@@ -1,0 +1,37 @@
+{
+  "max_float64_difference": 1.1102230246251565e-16,
+  "native_float32_pixels_bit_exact": true,
+  "cause": "Proposal wrote (h*beta)*accent; canonical public operator writes h*(beta*accent). Initial exact-f64 assertion correctly failed. Original proposal retained, canonical candidate recomputed without optical body render or changed coefficients. All guards freshly recomputed, no tolerance/epsilon.",
+  "metrics": {
+    "near_exterior": {
+      "before": 11.843641917359621,
+      "after": 11.701439009040485,
+      "nonregression": true
+    },
+    "full_visible_exterior": {
+      "before": 6.215359087364846,
+      "after": 6.010572354569787,
+      "nonregression": true
+    },
+    "near_exterior_train": {
+      "before": 11.328078339206051,
+      "after": 11.18457501624193,
+      "nonregression": true
+    },
+    "near_exterior_held": {
+      "before": 13.727033683790902,
+      "after": 13.587105841486865,
+      "nonregression": true
+    },
+    "full_visible_exterior_train": {
+      "before": 5.927370006575032,
+      "after": 5.727267293501586,
+      "nonregression": true
+    },
+    "full_visible_exterior_held": {
+      "before": 7.018266936462267,
+      "after": 6.799339131732488,
+      "nonregression": true
+    }
+  }
+}

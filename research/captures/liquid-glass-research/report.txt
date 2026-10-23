@@ -1,0 +1,94 @@
+APPLE LIQUID GLASS — FOCUSED OPTICS RESEARCH
+15 October 2026 · continuation of LIQUID-GLASS-RESEARCH-HANDOFF.md.txt
+Tracking: https://github.com/anastaci1a/localica/issues/222
+
+Outcome
+• A shallow, smoothly rounded cushion with stronger peripheral optics is a useful design interpretation. It is NOT a reconstructed physical surface. A quiet optical interior does not imply a visibly flattened face or a sharp bevel.
+• A newly acquired Apple morph demo supplies an exposed reference background at some locations before glass covers them. This permits a conditional local comparison without reconstructing the source from a different photograph.
+• In one selected, label-free patch, modest inverse displacement plus blur explains the image better than either alone. The old Localica crown model overpredicts displacement there; the experimental boundary model is closer but also stronger than the fitted local translation.
+• Do not translate this single patch into a universal depth, blur radius, pressure equation, or claim of Apple parity. Multiple parameter combinations fit similarly, and material lighting matters.
+
+Scope and recovery
+• Research only. Production files, main, pending test changes, releases, and the other instance's #209 selector implementation were untouched.
+• Read agents/README.md, the existing Liquid Glass guide, #222, #223, #209, and PR #240. #222 already contained newer analysis than the transferred handoff; that work was not repeated.
+• Older local verification logs show API36 completed 255 tests successfully. This does not establish verification of the other instance's newer branches or authorize a release.
+• Local checkout is 1c18648. The experimental model is read from PR #240 at 95d4aee4748e2005bfc7539a5ae9c203bb6ec8ec, without checking it out or merging it.
+
+Primary evidence
+• Apple's custom-view documentation:
+  https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views
+• Its native example assets, downloaded 2026-10-15:
+  https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/liquid-glass-morph-views.mp4
+  https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/liquid-glass-view-examples.mp4
+• Apple describes a designed material rather than a literal physical replica, and discusses touch, lensing, scattering, and adaptation separately:
+  https://developer.apple.com/videos/play/wwdc2025/219/
+• Earlier measurements and native adapter results remain authoritative in:
+  https://github.com/anastaci1a/localica/issues/222
+  https://github.com/anastaci1a/localica/pull/240
+
+Acquisition and timebase
+• Morph asset: 614×384, 323 decoded frames, container duration 5.901667 seconds.
+  SHA256 4feea1c34a97ae1a4853c8f38831b9c7579c739db2c1060b1f4b84d3082d3992
+• Examples asset: 1350×254, 200 decoded frames, duration 3.6 seconds.
+  SHA256 c0818bee3abc322bda0b18eb281cf26b13c844432c91385558bf6b9b56daa6e0
+• Both have variable presentation intervals: predominantly 16.667 ms, with 33.333 ms and 50 ms intervals. Use frame presentation timestamps, not index/60 or ffprobe's average frame-rate field.
+• Neither asset supplies an independent physical touchdown signal. No touch latency, pressure, or light-propagation speed was measured.
+• Native frames were extracted without resampling. The montage is only an inspection aid; it was not used for measurements.
+
+Registration and patch selection
+• Morph frame 0 exposes the background to the right of the original center circle. Later split states cover it with the right circle. Foreground icons remain excluded.
+• Registration masks exclude the union of glass footprints, the Toggle button, and a surrounding margin. Background translation fitted across six frames is below 0.003 decoded pixels; RGB mean absolute exterior residual is 1.10–1.13/255. Subpixel fitted translations below raster precision are not proof of equivalent measurement accuracy.
+• This is same-scene background registration, not calibration of an Android source/window transform. #223 still requires its own native zero-power tests.
+• Chosen patch: center (423,60), 21×21 pixels. Approximate right-circle center (429,114), radius 83. The patch is above the eraser glyph; visual inspection checked its footprint.
+• Training frame: zero-based 65, PTS 1.133333 s.
+• Repeated-frame checks: 80 / 1.400000 s; 95 / 1.666667 s; 225 / 4.066667 s; 240 / 4.350000 s; 255 / 4.616667 s.
+• These repeats reuse the same background and nearly the same presentation. They test repeatability, not independent-scene generalization or known held/released states.
+
+Conditional local fit
+• Model: Gaussian-preblur the exposed source; sample a translated patch; fit nonnegative per-channel gain (0–2) and offset. Calculations use decoded 8-bit RGB values, not radiometrically calibrated linear light.
+• Grid: sigma 0–6 px, dx/dy −5…5 px, all in 0.25 px steps. Spatial/blur parameters train on frame 65 only. Gain/offset refit on each comparison frame.
+• Best local fit: sigma 3 px; inverse lookup offset (0,+2.5) px. This says the output patch samples below its display coordinate; it is NOT a claim that the displayed feature moves downward.
+• Fits within +0.15 RGB RMSE of the minimum span sigma 1.5–4.5, dx −1…+1.25, dy +1…+3.75 px. This is a sensitivity region, not a statistical confidence interval.
+• Mean RGB RMSE over the five non-training frames (0–255 units):
+  - Identity geometry, no blur, fitted tone: 3.260
+  - Independently optimized blur only: 2.883
+  - Independently optimized translation only: 2.794
+  - Joint blur + translation: 2.517
+• Allowing a smooth additive illumination plane changes the best sigma from 3 to 2 px and dx from 0 to −0.5 px; dy remains +2.5 px. The repeated-frame RMSE becomes 1.872, versus 2.221 for independently optimized blur with no shift under the same illumination allowance.
+• Thus tone/lighting is a meaningful confound. The fit supports a useful local optical comparison; it does not determine a unique curvature or blur function.
+• Blue is nearly uninformative in this pale patch. An unconstrained early fit used negative blue gain; that fit was rejected. Final fits prohibit inversion. Do not interpret a gain at zero as proof that Apple removes that channel.
+
+Fixed Localica model comparison
+• Compare the same approximate 83px-radius circle and full per-pixel patch mapping. Fit blur on frame 65 separately for each fixed optical model; refit per-channel tone per frame. These are Python evaluations of source formulas, NOT Android screenshots or end-to-end renderer tests.
+• Existing crown at depth 1.35 (local LensGeometry.kt): patch-center inverse offset (+1.05,+9.44) px; fitted sigma 4.75; repeated-frame RMSE 3.223.
+• PR #240 boundary default: patch-center inverse offset (+0.61,+5.52) px; fitted sigma 3.5; repeated-frame RMSE 2.755.
+• Change the assumed center x/y and radius independently by ±2 px: crown vertical prediction 8.09–11.06 px; boundary 4.64–6.14 px. This sensitivity does not account for every possible silhouette or material-state error.
+• The boundary candidate improves this comparison, but its local lookup is still stronger than the translated-patch fit. It was calibrated from a different clear-slider scene; scaling it directly to every regular/frosted circle is an unverified hypothesis.
+• Comparing raw fit errors is descriptive, not a statistical model-selection result: the flexible local translation has more freedom, spatial lighting is simplified, neighboring pixels/frames are correlated, and the true rendering order is unknown.
+
+Rejected inferences / checks
+• Dense high-correlation matches alone are not reliable evidence. Many exploratory patches hit the maximum blur search range, followed a single ridge, approached a glyph, or varied substantially across repeats. Retain their raw output for audit, but do not fit a global radial field from them.
+• Do not call a screenshot's silhouette a recovered z-depth. Outline geometry, refraction, blur, and photometry are not interchangeable measurements.
+• Do not infer a flat face from a registered central background. Likewise, stronger uniform central zoom is not evidence of a better rounded lens.
+• Do not infer pressure or latency from material brightness onset without independent input information.
+• The analysis recovers identity and a synthetic known sigma=2, dx=−1, dy=+2.5 model under positive RGB gain/offset to numerical precision (<0.00001 RGB RMSE). This checks the fit's coordinate sign and arithmetic, not its physical interpretation.
+
+Ranked next implementation experiments — keep isolated
+1. Keep source registration and optical power independently testable. Run zero-power asymmetric grids through actual transformed/pressed/morphing bounds on both rendering paths before tuning the optical model. PR #240's adapter checks do not replace all #223 ancestor/deformation cases.
+2. Compare independent core and shoulder optical controls over matched circle/capsule/panel scenes. Preserve a smooth derivative through the shoulder; avoid a visible flat-center/bevel boundary. Sweep shoulder strength on a separate calibration scene, then freeze it for this newly acquired regular-circle patch and the earlier clear-slider held-outs. Do not raise global depth as the default remedy.
+3. Calibrate clear and regular material scattering/photometry separately. Keep the geometric inverse map observable before adding blur and illumination. Evaluate the dim/bright background cases too; apparent success on a pale patch is insufficient.
+4. Capture rest/contact/held/release with an independent input cue and registered textured backing. Only then fit pressure-dependent curvature and touch-origin lighting. Keep the user's flatten-while-held / rebound-on-release preference distinct from measured Apple behavior.
+5. Profile the surviving candidate on native Android geometry at odd/fractional sizes and through interrupted morphs. No production replacement or performance claim follows from this research script alone.
+
+Reproduction and files
+• Canonical local working directory:
+  /mnt/user/appdata/codex/localica-tools/apple-optics-research
+  Mounted in localica-dev as /tools/apple-optics-research.
+• Python 3.11; numpy 2.4.6; opencv-python-headless 5.0.0. An isolated --target dependency directory was used; application dependencies were not changed.
+• acquire.sh downloads both assets, verifies checksums, extracts PNGs, and records presentation timestamps using ffmpeg/ffprobe. Complete Apple assets and extracted frames stay local/private.
+• analyze.py: exploratory correspondence search and background registration.
+• fit_patch.py: constrained local fit, independently optimized baselines, and sensitivity region.
+• illumination_check.py: smooth-lighting sensitivity and synthetic positive/null controls.
+• model_check.py: fixed crown/boundary source arithmetic comparison.
+• Run scripts with PYTHONPATH pointing at the isolated deps directory. Outputs are measurements.json, patch-fit.json, illumination-check.json, model-check.json, plus private inspection images.
+• Scripts and small numerical outputs are mirrored next to this report in localica-feedback/liquid-glass-research. Run them from the working directory containing acquired assets, or place the assets alongside the scripts. No reference video/frame was added to Git or uploaded.

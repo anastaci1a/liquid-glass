@@ -1,0 +1,53 @@
+{
+  "status": "ACCEPT_BLUR_AND_HALFSTEP_COLOR_WITHIN_EXPERIMENTAL_GEOMETRIC_PIPELINE",
+  "historical_public_reconstruction_replaced": false,
+  "optical_geometry_fidelity_accepted": false,
+  "blur": {
+    "sigma_over_L": 0.07627118644067797,
+    "sigma_native_px": 6.75,
+    "primary_native_replay": "EXACT",
+    "all_original_paired_guards": true
+  },
+  "color": {
+    "gain": 0.701980827595718,
+    "bias": 0.22423217000784113,
+    "highlight_lift": 0,
+    "primary_native_replay": "EXACT",
+    "all_original_paired_guards": true,
+    "full_step_rejection_preserved": true
+  },
+  "verification": "/evidence/extended/playback-pipeline-01/peer-expanded/verification.json",
+  "blur_guard_verification": "/evidence/extended/playback-pipeline-01/peer-expanded/blur-guards.json",
+  "source_and_foreground_hashes": "/evidence/extended/playback-pipeline-01/peer-expanded/{input-hashes,foreground-hashes}.json",
+  "primary_visual": "A/B comparisons inspected. Softness and neutral veil visibly improve the raw physical baseline; large mismatch to Apple/older historical model, missing bright rim, shape/correspondence and foreground differences remain.",
+  "continue": "None. Do not restart any queued old stage or begin new science/media without fresh task direction.",
+  "shadow_review": {
+    "accepted": false,
+    "reason": "Every fixed opacity fails B glass/rim/held/E. Retain all16 partial-coverage pixels; no waiver or mask change."
+  },
+  "foreground_review": {
+    "accepted": false,
+    "reason": "The one shared black-opacity candidate fails A artist foreground; B improvements do not excuse A regression.",
+    "candidate_opacity": 0.34476567281781456,
+    "new_rays": 0,
+    "full_reference_guards_preserved": true
+  },
+  "reviewed_at": "2026-10-22T09:22:42.049Z",
+  "final_primary_review": "PRIMARY-REVIEW.md",
+  "final_primary_review_complete": true,
+  "public_commit": "e9fcd3a77125310ffe4f7417c1be979aabf3015b",
+  "public_validation": {
+    "files": 666,
+    "links_assets_anchors": 632,
+    "tests": 20
+  },
+  "ended_at": "2026-10-22T09:43:37.444Z",
+  "final_helper_packet_checked": true,
+  "final_selected_hashes_match_published_summary": true,
+  "final_status": "COMPLETE_AND_STOPPED; component increments only, no historical replacement",
+  "helper_report_timing": {
+    "data_and_report_saved_before_cap": true,
+    "readiness_marker_late_seconds": 68.56,
+    "no_post_cap_science_claimed": true
+  }
+}

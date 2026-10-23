@@ -1,0 +1,89 @@
+{
+  "baseline_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "sampling": "native4x4 rays in fixed destination masks AND actual silhouette",
+  "source_ray_extrema_xyxy": [
+    640.9201049804688,
+    444.6466979980469,
+    1279.0799560546875,
+    639.3533325195312
+  ],
+  "sigma_native_pixels": [
+    7.6499999999999995,
+    11.0,
+    14.450000000000001
+  ],
+  "conservative_3sigma_plus_bilinear_radii": {
+    "7.6499999999999995": 24,
+    "11.0": 34,
+    "14.450000000000001": 45
+  },
+  "regions": {
+    "glass": {
+      "rays": 3020132,
+      "center_outside_estimated": 1560350,
+      "kernel_outside_estimated": {
+        "7.6499999999999995": 1283053,
+        "11.0": 1170985,
+        "14.450000000000001": 1045616
+      },
+      "center_outside_estimated_fraction": 0.5166496033948185,
+      "kernel_outside_estimated_fraction": {
+        "7.6499999999999995": 0.4248334178770994,
+        "11.0": 0.38772643050038874,
+        "14.450000000000001": 0.3462153309855331
+      }
+    },
+    "rim": {
+      "rays": 979764,
+      "center_outside_estimated": 507408,
+      "kernel_outside_estimated": {
+        "7.6499999999999995": 385810,
+        "11.0": 337730,
+        "14.450000000000001": 281509
+      },
+      "center_outside_estimated_fraction": 0.5178879811873063,
+      "kernel_outside_estimated_fraction": {
+        "7.6499999999999995": 0.39377850176164875,
+        "11.0": 0.3447054596821275,
+        "14.450000000000001": 0.2873232737679686
+      }
+    },
+    "d": {
+      "rays": 189440,
+      "center_outside_estimated": 181664,
+      "kernel_outside_estimated": {
+        "7.6499999999999995": 140192,
+        "11.0": 123344,
+        "14.450000000000001": 105200
+      },
+      "center_outside_estimated_fraction": 0.9589527027027027,
+      "kernel_outside_estimated_fraction": {
+        "7.6499999999999995": 0.7400337837837838,
+        "11.0": 0.651097972972973,
+        "14.450000000000001": 0.5553209459459459
+      }
+    },
+    "underside": {
+      "rays": 591914,
+      "center_outside_estimated": 48438,
+      "kernel_outside_estimated": {
+        "7.6499999999999995": 30451,
+        "11.0": 23310,
+        "14.450000000000001": 15356
+      },
+      "center_outside_estimated_fraction": 0.08183283382383251,
+      "kernel_outside_estimated_fraction": {
+        "7.6499999999999995": 0.051444973425193524,
+        "11.0": 0.03938072084796102,
+        "14.450000000000001": 0.025942957929699247
+      }
+    }
+  },
+  "limits": [
+    "No source RGB/masks/registration/score changes; no gain or new experiment",
+    "Outside replaced rectangle does not prove all RGB or registration accurate; inside is estimated paper",
+    "3sigma proxy truncates Gaussian tails; not an exhaustive optical kernel proof",
+    "Foreground boxes excluded by frozen destination masks; filters never applied to solid glyphs",
+    "HQ source-domain proof still required for a qualifying candidate"
+  ]
+}

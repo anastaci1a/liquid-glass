@@ -1,0 +1,30 @@
+{
+  "status": "STOP_UNSUITABLE_UNCHANGED_CROWN_OUTLINE",
+  "source_work": "Hash verification only; no RGB sample/source adjustment",
+  "L": 113.5,
+  "frozen_normalized_half": [
+    4.494139241247181,
+    1.0029830429944897
+  ],
+  "effective_radius": 1.0029830429944897,
+  "pose_native": [
+    832.1309666117131,
+    647.329412962039
+  ],
+  "flat_capsule_body_interval_x": [
+    -3.4911561982526913,
+    3.4911561982526913
+  ],
+  "witness_at_frozen_cap_join": {
+    "local_x": 3.4911561982526913,
+    "capsule_top_abs_y": 1.0029830429944897,
+    "unchanged_crown_top_abs_y": 1.000525741599271,
+    "native_vertical_difference_px": 0.27890370835732403,
+    "crown_T_at_capsule_boundary": 1.004893983456252
+  },
+  "reason": "Accepted case has crown_softness0/cap_join_width0 and ordinary capsule branch. Any positive-softness original crown has q(x)>0 for x!=0; its top is not constant on the capsule flat interval. Setting softness0 invalidates accepted crown API. Replacing rho/adding a capsule adapter is not an unchanged-crown evaluation. This does not rule out a separately authorized harmonic capsule formulation.",
+  "rays": 0,
+  "images": 0,
+  "source_support_proof": "NOT_STARTED: earlier exact-outline gate failed",
+  "canonical_case_digest": "dfb5161367769a4afe2d8317e9fb9fc1a81318b6be4d3683a21f78a4d100a677"
+}

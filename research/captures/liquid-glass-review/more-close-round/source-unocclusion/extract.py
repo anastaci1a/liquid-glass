@@ -1,0 +1,15 @@
+import os,json,hashlib,subprocess,datetime,re,shutil
+from pathlib import Path
+from PIL import Image,ImageDraw
+os.umask(0o002)
+R=Path('/evidence/extended/helper-toolbar-work/more-close-round');D=R/'source-unocclusion';D.mkdir();st=json.loads(Path('/evidence/../evidence/extended/helper-toolbar-work/more-close-round/started.json').read_text()) if False else json.loads((R/'source-unocclusion-started.json').read_text());(D/'started.json').write_text(json.dumps(st,indent=2));video=Path('/evidence/apple-matches/219-hd.mp4');deadline=datetime.datetime.fromisoformat(st['deadline_at'].replace('Z','+00:00'));assert datetime.datetime.now(datetime.timezone.utc)<deadline
+probe=['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=codec_name,width,height,pix_fmt,r_frame_rate,time_base,start_time,duration','-of','json',str(video)];(D/'video-probe.json').write_text(subprocess.check_output(probe,text=True));sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();frames=[]
+for sec in [319.5,319.75,320.25,320.5]:
+ assert datetime.datetime.now(datetime.timezone.utc)<deadline;out=D/f'original219-{sec:.2f}.png';cmd=['ffmpeg','-hide_banner','-loglevel','info','-ss',str(sec),'-copyts','-i',str(video),'-map','0:v:0','-frames:v','1','-vf','showinfo','-vsync','0',str(out)];assert not out.exists();p=subprocess.run(cmd,capture_output=True,text=True,timeout=60);(D/f'extract-{sec:.2f}.log').write_text(p.stderr);assert p.returncode==0,p.stderr;show=[line for line in p.stderr.splitlines() if 'showinfo' in line and 'pts_time:' in line];data=dict(requested_seconds=sec,path=str(out),sha256=sha(out),command=cmd,showinfo_pts_evidence=show,pixel_format_after_decode='RGB8PNG from original H264YUV420p, same retained HD delivery; no precision/source epoch change',registration_applied=False);frames.append(data)
+# Contact/state inspection FIRST; no source registrations or polynomial fits.
+for label,crop,thumb in [('scene',None,(480,270)),('header',(680,70,1160,350),None)]:
+ w,h=thumb if thumb else (crop[2]-crop[0],crop[3]-crop[1]);sheet=Image.new('RGB',(2*w,2*(h+32)),'#222');draw=ImageDraw.Draw(sheet)
+ for i,info in enumerate(frames):
+  im=Image.open(info['path']).convert('RGB');im=im.crop(crop) if crop else im.resize((w,h),Image.Resampling.LANCZOS);x=i%2*w;y=i//2*(h+32);sheet.paste(im,(x,y+32));draw.text((x+5,y+10),f"219 original t={info['requested_seconds']:.2f}s; no registration",fill='white')
+ sheet.save(D/f'{label}-contact.png')
+manifest=dict(stage='CONTACT_AND_CONTROL_STATE_FIRST_SOURCE_ONLY',original_video=str(video),original_video_sha256=sha(video),existing_reference_png='/evidence/apple-matches/219-320.png',existing_reference_png_sha256=sha(Path('/evidence/apple-matches/219-320.png')),frames=frames,new_frames_decoded=4,registration_calls=0,source_or_optical_fits=0,source_adoptions=0,body_renders=0,count=1,completed_at=datetime.datetime.now(datetime.timezone.utc).isoformat());(D/'extraction.json').write_text(json.dumps(manifest,indent=2)+'\n');print(json.dumps(manifest),flush=True)

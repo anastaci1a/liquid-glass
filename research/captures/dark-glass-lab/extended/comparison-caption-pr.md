@@ -1,0 +1,3 @@
+- New1080px comparison figures have64px captions, but the viewer assumed128px and hid part of the rendered body. Record exact figure bounds, validate them against PNG dimensions, and retain the historical fallback.
+- Enable wipe mode for current playback and toolbar detail images whose names were outside the old whitelist. Preserve all source images and optical pixels.
+- Validation: unit checks cover declared bounds, legacy compatibility, deferred loading, new filenames and stale metadata. Desktop/phone browser checks pass for all declared figures, full Compact body ratio, drag/keyboard/fullscreen/reset, exact crop fixture and no-JS links. Docs/site only; no app checks or release.

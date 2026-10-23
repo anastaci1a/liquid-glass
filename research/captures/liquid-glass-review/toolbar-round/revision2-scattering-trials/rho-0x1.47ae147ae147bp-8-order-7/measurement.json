@@ -1,0 +1,84 @@
+{
+  "rho": 0.005,
+  "order": 7,
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 5.844397068023682,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 8.814983367919922,
+          "pixels": 61248
+        },
+        "shadow": 11.469453325713053
+      }
+    }
+  },
+  "E": 6.871758399064836,
+  "foreground": {
+    "archivebox": 13.242034595935047,
+    "plus": 3.667168005524072
+  },
+  "guard_order": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "guard_before": [
+    5.843130588531494,
+    8.813648223876953,
+    11.46944201723165,
+    13.242044387461515,
+    3.667139623528374
+  ],
+  "guard_after": [
+    5.844397068023682,
+    8.814983367919922,
+    11.469453325713053,
+    13.242034595935047,
+    3.667168005524072
+  ],
+  "all_nonregression": false,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 6.871758399064836,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": -0.00018452846953165292,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": false,
+          "shadow": false
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "coverage_exact": true,
+  "elapsed_seconds_this_invocation": 14.134754419326782,
+  "counted_passes": 0,
+  "source_proposal23_used": false,
+  "code_hashes": {
+    "toolbar_scattering_renderer.py": "c196969a85e137140d2f89b685808700c80f713b9f15ca1c6ccb334118ff6dcd",
+    "toolbar_scattering_covariance.py": "f0239f96bc041f8eb92fa5e1dbceb8926ba28d37387de30bb7c61416fef96080",
+    "toolbar_candidate.py": "256ee8e084139ec1c81d07cd1e423d8962a665bfc44d4ab9d48744fae1b746f3",
+    "crowned_footprint.py": "2488c958d0749b707d341945ee354726eddc3d66c4c3388b619edb7d9d4532b8",
+    "toolbar_curvature_profile.py": "8ca63c3698bc84a8b62603b6afd947ffb8b80710eb93a30763d95abfdd6afbc3",
+    "render.py": "58ae2b0be9ef1a1726944ee319f10c2e03c02835d0df5f8c80b111bfad797837"
+  }
+}

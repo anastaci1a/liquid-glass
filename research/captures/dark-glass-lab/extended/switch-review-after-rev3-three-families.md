@@ -1,0 +1,9 @@
+# Switch revision 3: three-family review
+
+- Uniform RGB scaling of the revised displacement: eight native screens; none improves both references enough. This revisited an older negative result because the baseline cap map changed materially. No new pass.
+- Nonlinear local-normal Snell dispersion: analytical inverse and zero-dispersion controls pass; no screened optical candidate qualifies. One trial correctly rejects total internal reflection. Six shared material trust steps settle near 0.0656% paired improvement, below 0.5%; final gain is about 1.6e-6 in worst normalized squared error. No global-convergence claim or adoption. Local normals are not proven integrable to a surface, and RGB indices are not a measured spectrum.
+- Existing outer-normal coefficient0 plus tangential amplitude, with shared material: six native trust steps settle near 0.0505% paired improvement, below 0.5%. Extended private geometry cache exactly matches the original on the baseline and one joint perturbation for both references. Final c0 is higher, not lower; tangential amplitude is about .022. No new renderer term, source/shape change or pass.
+
+The common visible problem remains the dark/incorrect rim and misplaced colored fringes. Neither stronger chromatic scaling nor this local optical adjustment fixes it. Next: decompose the current rim into transmitted color, material shading and the existing grazing-reflection contribution. Use fixed native angular/depth profiles; do not add target-colored rings. A reflection/material experiment is justified only by a consistent residual mechanism, and must remain separate from dispersion.
+
+Source track symmetry, hidden colors and equality of unseen deformation between reference frames remain assumptions. All accepted counts stay switch3/toolbar2. Original private recipes, trial histories and fixed scoring epoch are retained.

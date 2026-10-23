@@ -1,0 +1,49 @@
+{
+  "classification": "USEFUL_GEOMETRIC_REALIZABILITY_DIAGNOSTIC_NOT_APPLE_FIDELITY",
+  "rows": [
+    {
+      "nodes": 257,
+      "max_map_error_L": 5.492262116590929e-05,
+      "change_from_previous_L": null,
+      "actual_height_max": 0.032682078513764035,
+      "actual_slope_bound": 0.8171154404147505,
+      "curvature_min": 0.0,
+      "minimum_map_jacobian": -13.098372130485776,
+      "fold_present": true,
+      "minimum_Snell_discriminant": 0.0991816135702297,
+      "ray_paths_complete": true
+    },
+    {
+      "nodes": 513,
+      "max_map_error_L": 1.3760564892661975e-05,
+      "change_from_previous_L": 4.1162056273247316e-05,
+      "actual_height_max": 0.032681690457165076,
+      "actual_slope_bound": 0.817133646474191,
+      "curvature_min": 0.0,
+      "minimum_map_jacobian": -13.100717782145502,
+      "fold_present": true,
+      "minimum_Snell_discriminant": 0.09915754308939428,
+      "ray_paths_complete": true
+    },
+    {
+      "nodes": 1025,
+      "max_map_error_L": 3.4388888967562536e-06,
+      "change_from_previous_L": 1.0321675995905721e-05,
+      "actual_height_max": 0.03268159409209903,
+      "actual_slope_bound": 0.8171382112762391,
+      "curvature_min": 0.0,
+      "minimum_map_jacobian": -13.101291778656943,
+      "fold_present": true,
+      "minimum_Snell_discriminant": 0.09915150795259142,
+      "ray_paths_complete": true
+    }
+  ],
+  "rhs_calls": 706,
+  "geometry_rays": 49155,
+  "wall_seconds": 0.09429311752319336,
+  "fits": 0,
+  "image_renders": 0,
+  "conclusion": "A globally concave back height can realize the historical folded radial map with subcritical transmitted paths. Copying it into geometry preserves the unwanted fold. This neither establishes Apple geometry nor rules out other flat-front shapes/cameras.",
+  "surface_definition": "Nonnegative continuous piecewise-linear curvature integrated twice; one C2 concave height and its exact polynomial derivative define every normal and path.",
+  "limits": "ODE/convergence are numerical; indices/background depth fixed hypotheses. Orthographic primary transmission only. No full radiance/dispersion/device-performance claim."
+}

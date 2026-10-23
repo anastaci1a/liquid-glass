@@ -1,0 +1,66 @@
+{
+  "stage": "GEOMETRY_CHECKPOINT_BEFORE_IMAGES",
+  "started_unix": 1792638898.6595252,
+  "deadline_unix": 1792640098.6595252,
+  "proposal_count": 3,
+  "small_geometry_evaluations": 16,
+  "allowed": 24,
+  "historical_map": {
+    "folds": true,
+    "fold_start": 0.91326904296875,
+    "fold_end": 1.0,
+    "minimum_radial_jacobian": -13.101468692544586,
+    "comment": "Diagnostic empirical map only. It is NEVER called in the new ray tracer."
+  },
+  "surfaces": [
+    {
+      "name": "narrow-bevel",
+      "surface": {
+        "core": 0.6,
+        "depth": 0.02,
+        "power": 3,
+        "edge": 0.0
+      },
+      "radial_min_jacobian": 0.21923669259740564,
+      "edge_displacement": 0.15128557571605838,
+      "maximum_height": 0.02,
+      "slope_bound": 0.15
+    },
+    {
+      "name": "broad-bevel",
+      "surface": {
+        "core": 0.3,
+        "depth": 0.04,
+        "power": 3,
+        "edge": 0.0
+      },
+      "radial_min_jacobian": 0.47861616017144115,
+      "edge_displacement": 0.17335691026524136,
+      "maximum_height": 0.04,
+      "slope_bound": 0.17142857142857143
+    },
+    {
+      "name": "nonfold-depth-limit",
+      "surface": {
+        "core": 0.6,
+        "depth": 0.023975116859555373,
+        "power": 3,
+        "edge": 0.0
+      },
+      "radial_min_jacobian": 0.050693817447609035,
+      "edge_displacement": 0.18204338392000075,
+      "maximum_height": 0.023975116859555373,
+      "slope_bound": 0.17981337644666529,
+      "selection": "12-step geometry-only bisection; no target pixels or image score"
+    }
+  ],
+  "optical_source_blur": 0,
+  "optical_post_blur": 0,
+  "AA": 4,
+  "source_hashes": {
+    "media-source.png": "ae20f4366287078794c6e84d70aff6e786400456264d88ffd832fd478d7b23f6",
+    "media-target.png": "f47fba56384d84de3c106812e8b153fe7a826cfbd0dc082a75f62bc4e2df6bb9"
+  },
+  "frozen_nuisance": "Constant historical RGB gain/bias only; no old spatial lights. Historical calculated foreground color/alpha frozen separately, including its old icon-only filtering; not an unfiltered icon experiment.",
+  "historical_official_filtered_E": 9.06474721701574
+}

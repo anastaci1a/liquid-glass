@@ -1,0 +1,88 @@
+{
+  "stage": "PROPOSED_ONLY_NOT_ADOPTED_NO_BODY_RENDER",
+  "source_input_proposal": "a-proposed/case.json",
+  "authoritative_python_sorted_case_fingerprint": "23413dc5066115f3698260d63d5e62cf9f07c0706906d5465af9d641fca3e9cc",
+  "source_sha256": {
+    "source.png": "c2e025897d49d6adbf23e3d9d658d3351914281a681cccc674028d7266af701b",
+    "target.png": "73f9dbf1a2f16eee90c93ec556cdd3d90d4a0dfea4f2b5d1672b63812373c7ca",
+    "known.png": "cbae57edfad3ea4020a288910b4f918d3c88976ee85b0c24fc9b891caed29acc",
+    "observed.png": "06da5431a575e89e972435a0219b390d3dbb32e73ad342de409a935744365f76",
+    "target-visible.png": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+  },
+  "preset": {
+    "model": "radial-tail",
+    "shape": {
+      "half": [
+        1,
+        1
+      ],
+      "radius": 1
+    },
+    "parameters": {
+      "amplitude": 0.6344430313360516,
+      "band": 0.09445809156460266,
+      "power": 2.10022237760162,
+      "width": 4.5,
+      "inner_power": 4
+    },
+    "source_sigma": 0.0020408163265306124,
+    "rim_width": 0.04897845813577233,
+    "thin_rim": 0.005714285714285714,
+    "blur_transition": null,
+    "material": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "reference_length": 245,
+    "post_sigma": 0.006530612244897959
+  },
+  "protocol": {
+    "renderer": "CURRENT committed settled.render radial-tail original full-pixel averaging; no Study.render substitution",
+    "samples_per_axis": 2,
+    "source_grid": "original full1920x1080 uint8PNG decodedfloat32 / no source resampling",
+    "source_sigma_pixels": 0.14639838479412015,
+    "post_sigma_pixels": 0.46847483134118445,
+    "geometry": "case input proposal; bright-ridge pose uncertainty requires primary review before freeze",
+    "pixel_phase": "integer native centers, 2x2 subpixel centers i±.25",
+    "foreground": "pinned solid bag black1, no screenshot matte",
+    "shadow": "ZERO generated and zero copied context",
+    "compositor": "current public vector_revision.composite clean source-only"
+  },
+  "protected_metrics": [
+    "original weighted E",
+    "glass",
+    "rim",
+    "held",
+    "interior",
+    "SSIM nondecrease",
+    "full declared glyph box",
+    "near fixed exterior",
+    "full visible exterior"
+  ],
+  "prerequisite": "Primary input/pose/vector review, freeze native masks/source epoch, actual WHOLE+ALLscored+post finite source kernel/bilinear support BEFORE ONE baseline material render; no fit permitted yet",
+  "scientific_limits": "Unidentified inherited map/blur prior on smooth estimated panel. No physical optics or paired background validation. If approved only identifiable common neutral material/shadow/foreground may be considered separately under explicit next instruction.",
+  "body_render_count": 0,
+  "material_fits": 0,
+  "accepted_count": 0
+}

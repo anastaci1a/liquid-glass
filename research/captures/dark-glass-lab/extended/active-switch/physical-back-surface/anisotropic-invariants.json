@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "observations": [
+    {
+      "half": [
+        1.55,
+        1.0
+      ],
+      "gradient_error": 4.3425155631646445e-11,
+      "unit_vector_error": 5.551115123125783e-16,
+      "angle_error": 1.3877787807814457e-16,
+      "snell_error": 5.724587470723463e-17,
+      "mirror_error": 0.0,
+      "rotation_error": 2.7755575615628914e-16,
+      "scale_errors": [
+        1.1226435567921847e-15,
+        0.0,
+        7.021666937153402e-16
+      ],
+      "minimum_sampled_back_clearance": 0.0009568255159257966,
+      "map_jacobian_range": [
+        -1.0143251309211816,
+        1.2991999999255381
+      ],
+      "bounds": {
+        "max_slope": 0.45775340286178057,
+        "critical_slope": 0.8944271909999159,
+        "minimum_thickness_over_r": 0.42,
+        "maximum_thickness_over_r": 0.6261,
+        "reentry_bound": 0.11444313361594911
+      }
+    },
+    {
+      "half": [
+        1.0,
+        1.55
+      ],
+      "gradient_error": 4.2478309546343474e-11,
+      "unit_vector_error": 6.661338147750939e-16,
+      "angle_error": 1.249000902703301e-16,
+      "snell_error": 6.208759259556274e-17,
+      "mirror_error": 0.0,
+      "rotation_error": 4.440892098500626e-16,
+      "scale_errors": [
+        1.1116099371267112e-15,
+        0.0,
+        9.036560719766055e-16
+      ],
+      "minimum_sampled_back_clearance": 0.000964554447961119,
+      "map_jacobian_range": [
+        -0.958576012895602,
+        1.2991999999280979
+      ],
+      "bounds": {
+        "max_slope": 0.44267436570041846,
+        "critical_slope": 0.8944271909999159,
+        "minimum_thickness_over_r": 0.42,
+        "maximum_thickness_over_r": 0.612075,
+        "reentry_bound": 0.10634295581635497
+      }
+    }
+  ],
+  "rejected": [
+    "negative thickness",
+    "background inside solid",
+    "supercritical slope",
+    "invalid IOR"
+  ],
+  "scope": "Flat-front orthographic geometry only; current image material remains empirical. Sampled tests supplement sufficient analytic bounds."
+}

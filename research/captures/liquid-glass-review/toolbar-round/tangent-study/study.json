@@ -1,0 +1,627 @@
+{
+  "experiment": 7,
+  "one_hypothesis": "compact C2 phase tail",
+  "before": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "pixels": 188771,
+          "rmse": 6.044535160064697,
+          "mae": 4.1359686851501465,
+          "opponent_chroma_rmse": 0.6495842933654785
+        },
+        "rim": {
+          "pixels": 61248,
+          "rmse": 8.83245849609375,
+          "mae": 5.963390827178955,
+          "opponent_chroma_rmse": 0.79960697889328
+        },
+        "shadow": 11.469442019667737
+      }
+    }
+  },
+  "trials": [
+    {
+      "band": 0.65,
+      "strength": -0.01,
+      "E": 7.955552694204685,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.972256183624268,
+              "mae": 4.550957679748535,
+              "opponent_chroma_rmse": 0.6442893743515015
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.876262664794922,
+              "mae": 6.7673468589782715,
+              "opponent_chroma_rmse": 0.7888396382331848
+            },
+            "shadow": 11.469453818739199
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.955552694204685,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.1367490471934285,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 0.65,
+      "strength": -0.005,
+      "E": 7.149359588540089,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.131879806518555,
+              "mae": 4.120626449584961,
+              "opponent_chroma_rmse": 0.6413670182228088
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.090907096862793,
+              "mae": 6.197460651397705,
+              "opponent_chroma_rmse": 0.7887869477272034
+            },
+            "shadow": 11.469448282613968
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.149359588540089,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.021554128632241598,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 0.65,
+      "strength": 0.005,
+      "E": 7.603142945660028,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.813220024108887,
+              "mae": 4.654212951660156,
+              "opponent_chroma_rmse": 0.668639063835144
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.185823440551758,
+              "mae": 6.310909271240234,
+              "opponent_chroma_rmse": 0.8212680816650391
+            },
+            "shadow": 11.469437223520275
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.603142945660028,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.08639409873439341,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 0.65,
+      "strength": 0.01,
+      "E": 8.626535234384193,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 8.040603637695312,
+              "mae": 5.285885334014893,
+              "opponent_chroma_rmse": 0.6941578388214111
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.859208106994629,
+              "mae": 6.776749134063721,
+              "opponent_chroma_rmse": 0.8472689986228943
+            },
+            "shadow": 11.469432539628016
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 8.626535234384193,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.23262406588171003,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 0.8,
+      "strength": -0.01,
+      "E": 7.586958693083728,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.652163505554199,
+              "mae": 4.451634407043457,
+              "opponent_chroma_rmse": 0.6437439918518066
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.413827896118164,
+              "mae": 6.453810691833496,
+              "opponent_chroma_rmse": 0.7891643643379211
+            },
+            "shadow": 11.469448642498511
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.586958693083728,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.08408157132079874,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 0.8,
+      "strength": -0.005,
+      "E": 7.053661601920065,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.061074733734131,
+              "mae": 4.122071266174316,
+              "opponent_chroma_rmse": 0.6428494453430176
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 8.951443672180176,
+              "mae": 6.067211151123047,
+              "opponent_chroma_rmse": 0.791056215763092
+            },
+            "shadow": 11.469445519659985
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.053661601920065,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.00788008242953242,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 0.8,
+      "strength": 0.005,
+      "E": 7.406950655880153,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.588282108306885,
+              "mae": 4.503515243530273,
+              "opponent_chroma_rmse": 0.6625895500183105
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.03310489654541,
+              "mae": 6.190546989440918,
+              "opponent_chroma_rmse": 0.8137087821960449
+            },
+            "shadow": 11.469439806302846
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.406950655880153,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.05836067264239708,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 0.8,
+      "strength": 0.01,
+      "E": 8.06781720879489,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 7.399404525756836,
+              "mae": 4.936903476715088,
+              "opponent_chroma_rmse": 0.6788210272789001
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.445253372192383,
+              "mae": 6.4998297691345215,
+              "opponent_chroma_rmse": 0.8309347033500671
+            },
+            "shadow": 11.46943675384439
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 8.06781720879489,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.15279024318563317,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 1.0,
+      "strength": -0.01,
+      "E": 7.36465599207398,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.5050201416015625,
+              "mae": 4.4651665687561035,
+              "opponent_chroma_rmse": 0.648668110370636
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.058597564697266,
+              "mae": 6.169351577758789,
+              "opponent_chroma_rmse": 0.790389895439148
+            },
+            "shadow": 11.469445675572949
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.36465599207398,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.05231729380612138,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 1.0,
+      "strength": -0.005,
+      "E": 7.051264928015614,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.109173774719238,
+              "mae": 4.193058013916016,
+              "opponent_chroma_rmse": 0.646997332572937
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 8.868471145629883,
+              "mae": 5.987697601318359,
+              "opponent_chroma_rmse": 0.7935866117477417
+            },
+            "shadow": 11.469444072747594
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.051264928015614,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.007537627683515513,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 1.0,
+      "strength": 0.005,
+      "E": 7.186118764770355,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.292737007141113,
+              "mae": 4.300420761108398,
+              "opponent_chroma_rmse": 0.6558640003204346
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 8.92959976196289,
+              "mae": 6.094171047210693,
+              "opponent_chroma_rmse": 0.8079057931900024
+            },
+            "shadow": 11.469441176193499
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.186118764770355,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.02680655547944344,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    },
+    {
+      "band": 1.0,
+      "strength": 0.01,
+      "E": 7.528504377291762,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "pixels": 188771,
+              "rmse": 6.725351810455322,
+              "mae": 4.5442118644714355,
+              "opponent_chroma_rmse": 0.6645693182945251
+            },
+            "rim": {
+              "pixels": 61248,
+              "rmse": 9.1318359375,
+              "mae": 6.271495342254639,
+              "opponent_chroma_rmse": 0.8178261518478394
+            },
+            "shadow": 11.469439734695527
+          }
+        }
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.998512744608417,
+            "candidate_error": 7.528504377291762,
+            "required_error_max": 6.963520180885375,
+            "relative_reduction": -0.07572918018783992,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "native_pass": false
+    }
+  ],
+  "qualifying_passes_counted": 0
+}

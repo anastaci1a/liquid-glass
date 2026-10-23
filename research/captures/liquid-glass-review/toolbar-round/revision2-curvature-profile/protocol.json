@@ -1,0 +1,52 @@
+{
+  "accepted_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "width": 0.2,
+  "width_origin": "existing outer coefficient3 support, normalized radius1",
+  "bump": "64*u^3*(1-u)^3; C2 zero extension",
+  "equation": "delta_a/L=lambda*bump*(L*kappa(closest_footpoint)-2*pi*L/perimeter); F=F0-delta_a*n",
+  "lambda_bounds": [
+    -0.21960679960734011,
+    0.21960679960734011
+  ],
+  "bound_origin": "declared max .12L addition and target-independent continuous footprint curvature extrema with numerical margin",
+  "bound": {
+    "lambda_max": 0.21960679960734011,
+    "feature_abs_max": 0.5463765302006207,
+    "feature_abs_bound": 0.5464311679536408,
+    "maximum_displacement_fraction": 0.12,
+    "curvature_min": 0,
+    "curvature_max": 1.0389658436539397,
+    "perimeter": 11.499734999364819,
+    "normalized_mean_curvature": 0.5463765302006207,
+    "boundary_samples": 8192,
+    "extremum_refined": true
+  },
+  "all_invariants_completed": true,
+  "design": "9 fixed geometry-based scalar nodes across declared bracket then max8 constrained native quadratic trust steps",
+  "native_grid": [
+    4,
+    4
+  ],
+  "guard_names": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "fixed": [
+    "source RGB",
+    "source/mask/registration epoch",
+    "shape/coverage",
+    "material",
+    "baseline inverse map",
+    "ordinary filters",
+    "shadow",
+    "independent solid vectors"
+  ],
+  "module_sha256": "8ca63c3698bc84a8b62603b6afd947ffb8b80710eb93a30763d95abfdd6afbc3",
+  "baseline_module_sha256": "256ee8e084139ec1c81d07cd1e423d8962a665bfc44d4ab9d48744fae1b746f3",
+  "counted_passes": 0,
+  "status": "invariants passed; optical fit not begun"
+}

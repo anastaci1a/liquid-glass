@@ -1,0 +1,99 @@
+{
+  "baseline": [
+    {
+      "glass": {
+        "pixels": 83012,
+        "rmse": 4.370216369628906
+      },
+      "rim": {
+        "pixels": 31757,
+        "rmse": 6.199373722076416
+      },
+      "held": {
+        "pixels": 21209,
+        "rmse": 4.496880531311035
+      },
+      "interior": {
+        "pixels": 51255,
+        "rmse": 2.6683359146118164
+      },
+      "loss": 24.898824145952197,
+      "E": 4.989872157275395,
+      "foreground_mse": {
+        "jupiter.jpg": 1802.8433133848011,
+        "title.svg": 413.3821669500321,
+        "artist.svg": 13.200667555793189,
+        "play.svg": 64.97493572824169,
+        "forward.svg": 150.10429279063828
+      },
+      "exterior": {
+        "pixels": 31956,
+        "rmse": 4.954218705118386
+      }
+    },
+    {
+      "glass": {
+        "pixels": 83012,
+        "rmse": 4.3235859870910645
+      },
+      "rim": {
+        "pixels": 31757,
+        "rmse": 5.851772785186768
+      },
+      "held": {
+        "pixels": 21209,
+        "rmse": 4.281948566436768
+      },
+      "interior": {
+        "pixels": 51255,
+        "rmse": 3.0097992420196533
+      },
+      "loss": 23.3583504702749,
+      "E": 4.833047741361025,
+      "foreground_mse": {
+        "jupiter.jpg": 1901.9035917241126,
+        "title.svg": 362.18246980570257,
+        "artist.svg": 19.895269376866054,
+        "play.svg": 64.94619279401377,
+        "forward.svg": 153.31376652466133
+      },
+      "exterior": {
+        "pixels": 31956,
+        "rmse": 4.243026628824928
+      }
+    }
+  ],
+  "trials": [],
+  "candidate": null,
+  "accepted": false,
+  "accepted_count": 1,
+  "proposal": {
+    "delta_rim": 0.0,
+    "delta_thin": 0.0,
+    "model_relative_loss_change": 0.0,
+    "solver_success": true,
+    "message": "Optimization terminated successfully",
+    "constraints": [
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    "limitations": "Rim response from nearby PRE-pass1 material is only proposal surrogate. No new derivative, source or material change; solver does not accept native result."
+  },
+  "native_resolution_noise_floor": [
+    1.8802442536817077e-06,
+    1.887219371593846e-06
+  ],
+  "limitations": "No new derivatives. Nearby old-material rim response is proposal surrogate only. Strict original bothE/glass/exterior/all10FG, fixed acceptedpass1 material. No epsilon, count or source/epoch changes."
+}

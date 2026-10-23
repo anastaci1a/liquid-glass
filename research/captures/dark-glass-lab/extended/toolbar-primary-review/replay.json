@@ -1,0 +1,107 @@
+{
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "candidate": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "pixels": 188771,
+          "rmse": 6.079080104827881,
+          "mae": 4.154942512512207,
+          "opponent_chroma_rmse": 0.6564504504203796
+        },
+        "rim": {
+          "pixels": 61248,
+          "rmse": 8.896825790405273,
+          "mae": 6.016664505004883,
+          "opponent_chroma_rmse": 0.8171017169952393
+        },
+        "shadow": 19.214948373521942
+      }
+    }
+  },
+  "fixed_grid": 4,
+  "diagnostic_grid": 8,
+  "diagnostic_scores": {
+    "train": {
+      "pixels": 141761,
+      "rmse": 6.116196632385254,
+      "mae": 4.07513427734375,
+      "opponent_chroma_rmse": 0.6636562943458557
+    },
+    "held_blocks": {
+      "pixels": 47010,
+      "rmse": 5.961181640625,
+      "mae": 4.394643783569336,
+      "opponent_chroma_rmse": 0.6341727375984192
+    },
+    "all_glass": {
+      "pixels": 188771,
+      "rmse": 6.077962398529053,
+      "mae": 4.154702186584473,
+      "opponent_chroma_rmse": 0.6564378142356873
+    },
+    "rim": {
+      "pixels": 61248,
+      "rmse": 8.894327163696289,
+      "mae": 6.015690326690674,
+      "opponent_chroma_rmse": 0.8170640468597412
+    },
+    "outer_rim": {
+      "pixels": 6172,
+      "rmse": 19.326416015625,
+      "mae": 10.319997787475586,
+      "opponent_chroma_rmse": 1.120072603225708
+    },
+    "interior": {
+      "pixels": 127523,
+      "rmse": 4.0852227210998535,
+      "mae": 3.2608883380889893,
+      "opponent_chroma_rmse": 0.5632354021072388
+    },
+    "ssim": 0.9806766510009766,
+    "gradient_mae": 3.408564567565918,
+    "selection_loss": 0.0015934885217888562
+  },
+  "source_support": {
+    "all_emitted_subpixel_rays_inside_defined_image": true,
+    "margin_native_px": 34.00000000000001,
+    "bounds": [
+      [
+        474.625,
+        284.625
+      ],
+      [
+        1444.375,
+        844.375
+      ]
+    ],
+    "hidden_background_estimated": true
+  },
+  "archived_baseline_max_difference": 0.0,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 7.103742101595409,
+        "candidate_error": 7.0437705235254535,
+        "required_error_max": 7.0682233910874315,
+        "relative_reduction": 0.008442251592507333,
+        "milestone_passed": true,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": true
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": true,
+      "source_support": true
+    }
+  },
+  "limits": "Optical candidate replayed independently without optimization. Exterior shadow still pending generated model; foreground omitted, not pasted. No final acceptance yet."
+}

@@ -1,0 +1,50 @@
+{
+  "method": "Necessary local flat-front single-back-surface check of accepted green map.\nNo image fit, score mutation, or claim about alternative surface/camera families.\n",
+  "parameters_sha256": "37afc1cbb5a5b51975308d2cce8e6be7f45ef757d2e657decc655421232fe9ff",
+  "grid": [
+    181,
+    121
+  ],
+  "steps": [
+    0.0002,
+    0.0001,
+    0.00005
+  ],
+  "criterion": "For reliable nonzero curl c, rho=K/c must exceed M; equivalently (K-Mc)*c>0. Necessary for every n>1 on the strictly transmitted branch. Unresolved small/step-sensitive quantities are not failures.",
+  "observations": [
+    {
+      "observation": "A",
+      "sampled_inside": 18640,
+      "reliable_nonzero_curl": 17488,
+      "necessary_branch_violation": 7179,
+      "necessary_branch_admitted": 10309,
+      "unresolved": 1152,
+      "violation_fraction_of_all_inside": 0.3851394849785408,
+      "negative_map_determinant_fraction": 0.2726931330472103,
+      "max_curl_derivative_step_difference": 0.014169304154449947,
+      "max_Q_derivative_step_difference": 0.005425340696534775
+    },
+    {
+      "observation": "B",
+      "sampled_inside": 18682,
+      "reliable_nonzero_curl": 17472,
+      "necessary_branch_violation": 7221,
+      "necessary_branch_admitted": 10251,
+      "unresolved": 1210,
+      "violation_fraction_of_all_inside": 0.38652178567605183,
+      "negative_map_determinant_fraction": 0.27133069264532705,
+      "max_curl_derivative_step_difference": 0.014118602283531345,
+      "max_Q_derivative_step_difference": 0.00583828495904104
+    }
+  ],
+  "limits": "Only sampled accepted unshifted green inverse map and declared orthographic flat-front/single-back surface. Fold is not total internal reflection. Violation rules out exact local reproduction in this family at reliable sampled points, not approximate image agreement, other cameras/front shapes, complete solids or Apple physics. Fixed image masks/scores untouched.",
+  "file_sha256": {
+    "check-switch-map-compatibility.py": "38c1db2ae5a97b4da403ba3f1e502e043fa5d71280ef678c4b8ebffb944798fd",
+    "active-switch/paired/a/case.json": "2f535a9a3c827b1eabb6d9daad4ec27d0a8e57885e598cb2849e15b07ac38fed",
+    "active-switch/paired/b/case.json": "cdfdbc84b4128303f698c52d34dbe1c2fbdbf2fec35c8eb85ddeb90ac2028f7f",
+    "active-switch/rev4-ambient-review/candidate.json": "2d1d7ecd2c53d37c18e58305d9a6a41493d5dc3d4417a98b91e01836f7244f72",
+    "/mnt/user/live/projects/localica/localica-docs-publish/docs/liquid-glass/experiments/reconstruction/surface_compatibility.py": "ee96069222112f25eb8062f35fc071dfab081b3241706685b06a8483ea667352",
+    "/mnt/user/live/projects/localica/localica-docs-publish/docs/liquid-glass/experiments/reconstruction/extended_fit.py": "e76e9b0f258686903ea41ecde20221bd76048303fd13065c4e61bc016f4afcfb"
+  },
+  "derivative_caution": "Finite step stability is a numerical diagnostic, not an interval-certified derivative error bound."
+}

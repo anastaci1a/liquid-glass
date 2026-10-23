@@ -1,0 +1,9 @@
+Read-only source-support diagnostic; no scoring/source change
+
+At accepted revision2,51.665% of native4x4 incident sample centers in the fixed glass mask lie outside the transformed documented donor lens-removal rectangle. A conservative3sigma+bilinear kernel proxy at source sigma11px gives38.773% wholly outside; source-domain RGB remains defined everywhere, but paper inside the rectangle is estimated. This is not a mask promotion or a new score.
+
+For the fixed underside advisory crop[650,650,1270,726], only8.183% of ray centers and3.938% of11px source-filter kernels lie wholly outside that estimated rectangle. At the authorized source bracket endpoints7.65/14.45px the kernel fractions are5.144%/2.594%. The d crop has95.895% center support and65.110% kernel support at11px. These differences limit identification of underside reflection/blur from this one partly estimated source.
+
+The diagnostic follows the exact donor rectangle[490,350,1420,790] and registration matrix recorded in the original input-audit.json. It does not copy target material/shadow, repair source RGB, invent missing scene content, fit a new background, change native masks, or count a gain. 'Outside estimated rectangle' is a provenance proxy, not proof that all remaining RGB, motion or registration is accurate. Gaussian tails beyond3sigma, clear-to-blurred transition, post-filter mixing and full optical kernel support are not resolved by this proxy. No PSF or dispersion identified.
+
+Diagnostic source-support-diagnostic.py initially encountered an empty top strip before any glass rays; a nonempty guard fixed that read-only reduction. This was not an optical trial or model change. Corrected output source-support-diagnostic.json is retained. Blur study remains ONE family and continues its two-start native convergence/bound review.

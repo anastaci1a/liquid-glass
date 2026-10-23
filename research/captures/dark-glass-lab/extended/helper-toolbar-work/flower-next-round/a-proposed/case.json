@@ -1,0 +1,173 @@
+{
+  "id": "flower-next-sky-input-proposal",
+  "category": "Single NEXT circle over lowfrequency sky; source/pose/vector proposal ONLY",
+  "radial": true,
+  "center": [
+    1317.485,
+    552.268
+  ],
+  "half": [
+    113.698,
+    113.698
+  ],
+  "radius": 113.698,
+  "crop": [
+    1160,
+    395,
+    1477,
+    710
+  ],
+  "foreground": [
+    [
+      1270,
+      510,
+      1370,
+      596
+    ]
+  ],
+  "foreground_layers": [
+    {
+      "mode": "mask",
+      "box": [
+        1270,
+        510,
+        1370,
+        596
+      ],
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "threshold": 0.8,
+      "vector_asset": "forward.end.fill-original.svg",
+      "vector_box": [
+        1277.7882527147087,
+        515.5,
+        1361.2117472852913,
+        589.5
+      ],
+      "vector_sha256": "4d3524ec61e4ddbcb5e15ac754ac3766d8456f6af7b5ec767371f9aa2cf0c50d",
+      "opacity": 1.0
+    }
+  ],
+  "allow_estimated_background": true,
+  "source_observation_mask": "observed.png",
+  "target_observation_mask": "target-visible.png",
+  "background_estimate": {
+    "kind": "Separate uncovered-sky affine RGBfield, NOTobservedhiddenphoto",
+    "basis": [
+      "1",
+      "(x-1318)/200",
+      "(y-552)/250"
+    ],
+    "coefficient_rgb": [
+      [
+        0.34632853925328067,
+        0.5655389353426334,
+        0.7507945054352542
+      ],
+      [
+        -0.004246106036212803,
+        -0.011667953665899462,
+        -0.01124288011789321
+      ],
+      [
+        0.0854314344465788,
+        0.0825344883416615,
+        0.06680914397224544
+      ]
+    ],
+    "source_defined_domain": [
+      1140,
+      250,
+      1491,
+      851
+    ],
+    "controls": [
+      {
+        "name": "held_upper_lower",
+        "pixels": 9949,
+        "rgb_rmse": 3.2462590264335867,
+        "signed_rgb": [
+          -0.31957881967667306,
+          -0.05949515203018701,
+          0.1797426668171127
+        ],
+        "p95_absolute": 2.70913496662819
+      },
+      {
+        "name": "independent_left_upper",
+        "pixels": 2737,
+        "rgb_rmse": 1.3139610854006993,
+        "signed_rgb": [
+          -1.6406939303651316,
+          -0.8828835249241653,
+          0.4259215856732969
+        ],
+        "p95_absolute": 2.2992464731725413
+      },
+      {
+        "name": "independent_right_lower",
+        "pixels": 1701,
+        "rgb_rmse": 2.506732939053646,
+        "signed_rgb": [
+          2.058786657038773,
+          -1.613566237170792,
+          -3.1542119038888994
+        ],
+        "p95_absolute": 3.9267541446295584
+      }
+    ],
+    "exclusion": "ALLthreeglass plus80percentownradius beyondbody: prev205.2,pause288,next205.2; no targetlens/glyph/shadowneighborhood pixels intrain/test.",
+    "uncertainty": "Mathematicalmodeledsky rectangle, no photographictruth. Estimatedslowfield may confoundsceneillumination/residualtails. Heldcontrols constrainexposedsky not hiddenrefraction; observed0."
+  },
+  "foreground_provenance": {
+    "kind": "ONEgenuineoriginalfont solidoutline",
+    "font": "SFSymbolsFallback.otf",
+    "font_sha256": "bba5e09ec296a17e7dfc4644caa2e3b2b1524c5630a7dfd708140cc51628c7ca",
+    "glyph": "forward.end.tag.fill.color.large",
+    "default_weight": 400,
+    "ink_bounds": [
+      165,
+      215,
+      1307,
+      1228
+    ],
+    "exposed_white_bbox": [
+      1276,
+      516,
+      1364,
+      590
+    ],
+    "uniform_placement": [
+      1277.7882527147087,
+      515.5,
+      1361.2117472852913,
+      589.5
+    ],
+    "exact_target_weight": false,
+    "stage": "Unvalidatedstyle/proportions; proposalunscoreduntilprimaryfreeze; no targetmatte/artifacttrace"
+  },
+  "reference": {
+    "video": "219",
+    "seconds": 170,
+    "target_native": [
+      1920,
+      1080
+    ],
+    "source_frame": "/evidence/extended/helper-toolbar-work/flower-previous-round/frames/170.png",
+    "source_adoption": false
+  },
+  "renderer_protocol": {
+    "stage": "NONE selected/NOmaterial baseline render; proposed integerpixelcenters/native masks, tobefrozenbyprimary",
+    "conditional": "No23coefficientMusicmaterial inherited. Neutral tau*S+(1-tau)*white may be reviewedlater, alltauRGBtied0..1; NOfitnow. No dispersion/ordinaryblur identification fromlowfrequencyinput. Frozenconditionaloptics/kernel/protocol pendingprimary; no whole-ray supportclaimedyet."
+  },
+  "source_sha256": {
+    "source.png": "9167f50b860bda950a73e36d912ae4a50f7c631282ad5d9ea8b0434bfec7ef71",
+    "target.png": "ac26c008958f2f1d9cc45d387801e7ad3d59773ced131244586a205a3c43ca07",
+    "known.png": "f66509ee22c57418e193d830d05dff2b0dbb5ca8ba253b87a286f71a6ae6a78a",
+    "observed.png": "06da5431a575e89e972435a0219b390d3dbb32e73ad342de409a935744365f76",
+    "target-visible.png": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+  }
+}

@@ -1,0 +1,4 @@
+- Add both-background comparisons, scores, diagnostic links and motion links for expanded/compact mini-player, Search, navigation and provisional Home to the existing comparison page. Add current4× switch snapshots from frozen paired pass6.
+- Flag Home's single-to-paired regression and the unfinished switch/rim differences beside the images. Keep the larger documentation overhaul and native/lab changes deferred.
+- Export nested tracked study recipes/diagnostics to Pages; prune only prior manifest entries, preserving unrelated files.
+- Verified243 local links/assets/anchors, all24 figures decoding and fitting desktop/phone layouts, and manifest-only pruning. Reviewed new sections at1280/390px. Docs-only; native Actions skipped as authorized.

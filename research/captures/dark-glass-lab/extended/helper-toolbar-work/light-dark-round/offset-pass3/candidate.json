@@ -1,0 +1,48 @@
+{
+  "family": "empirical shared generated exterior shadow+possible glow; NOT physical identification",
+  "parameters": {
+    "opacityK": 0.028644737086080185,
+    "sigmaK_L": 0.7,
+    "opacityH": 0.0391166614246353,
+    "sigmaH_L": 0.11786013768786802
+  },
+  "offsets_L": {
+    "K": [
+      0,
+      0.072
+    ],
+    "H": [
+      0,
+      -0.48
+    ]
+  },
+  "formula": "B1=B*(1-alphaK); Bout=B1+alphaH*(1-B1); complete=M*coverage+Bout*(1-coverage)",
+  "alpha": "opacity*exp(-.5*(max(sd_of_translated_original_shape/L,0)/sigma_L)^2)",
+  "geometry": "original fixed rounded rectangle; L106.5; shared both themes",
+  "source_adopted": false,
+  "optical_renders": 0,
+  "source_fit": false,
+  "theme_specific_coefficients": false,
+  "source_proof": "unchanged material/map/kernel/source; original whole and ALL-scored native source proof transfers, estimated/unobserved input limitations retained",
+  "input_hashes": [
+    {
+      "theme": "regular-light",
+      "zero_bit_exact": true,
+      "shadow_never_increases": true,
+      "glow_never_decreases": true,
+      "source_sha256": "de11242e22d7d4bb6365a3c1c1dd7f717d69a9e7354c3098a3f9d870fb12216f",
+      "material_sha256": "f37efcfb9eaaacbd99d759dd7e8a22176884b462b57f7b7e7c51d1bc73403ba8",
+      "exterior_mask_sha256": "46e6c6968f940f19905482f1604837770cc309b4a4d5570ed7ef0bc8b07df39b"
+    },
+    {
+      "theme": "regular-dark",
+      "zero_bit_exact": true,
+      "shadow_never_increases": true,
+      "glow_never_decreases": true,
+      "source_sha256": "97f9f289b2ecac128a12a1eab86dc6036c03b31de2ed75a0e3e77129dbbd1812",
+      "material_sha256": "e337b6740a0eb0f1296dabf7875d4f3ce489e1c16033dfe2c19d829601b943a7",
+      "exterior_mask_sha256": "46e6c6968f940f19905482f1604837770cc309b4a4d5570ed7ef0bc8b07df39b"
+    }
+  ],
+  "offset_multiplier": 1.2
+}

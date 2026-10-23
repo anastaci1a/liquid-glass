@@ -1,0 +1,48 @@
+{
+  "status": "GRADIENT_CIRCLE_CHECKPOINT_PASS",
+  "geometry_rays": 0,
+  "images": 0,
+  "fits": 0,
+  "source_work": 0,
+  "checks": {
+    "gradient_0.0": {
+      "pass": true,
+      "details": {
+        "steps": [
+          1e-06,
+          5e-07
+        ],
+        "absolute_errors": [
+          5.613798315096119e-10,
+          1.1340306471652184e-09
+        ]
+      }
+    },
+    "gradient_0.3333333333333333": {
+      "pass": true,
+      "details": {
+        "steps": [
+          1e-06,
+          5e-07
+        ],
+        "absolute_errors": [
+          7.048408523502303e-10,
+          9.91656534665708e-10
+        ]
+      }
+    },
+    "true_circle_ellipsoid": {
+      "pass": true,
+      "details": {
+        "level_error": 0.0,
+        "gradient_error": 0.0,
+        "fixture": "True radial T=x\u00b2+y\u00b2, kappa0; not softened equal-half crown. Root circle adapter equality awaits its independently owned implementation."
+      }
+    },
+    "circle_front_API": {
+      "pass": true,
+      "details": "Front z finite at tangent but strict_insideFalse, outsideNaN; exact projected tangent separate"
+    }
+  },
+  "level_points": 4461
+}

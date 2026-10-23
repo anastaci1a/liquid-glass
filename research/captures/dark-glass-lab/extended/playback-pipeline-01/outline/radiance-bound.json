@@ -1,0 +1,61 @@
+{
+  "status": "ASSUMPTION_BOUNDED_DIAGNOSTIC_NOT_AN_IMAGE",
+  "actual_global_slope": 0.5529737355053215,
+  "back_Rs_at_max_slope": 0.0975585277215775,
+  "back_Rp_at_max_slope": 0.006746874049149176,
+  "conservative_back_R_bound": 0.06877926386078875,
+  "primary_power_upper_bound": 0.96,
+  "nonprimary_power_upper_bound": 0.10602809330635721,
+  "encoding_assumption": "sRGB inverse transfer ONLY for diagnostic; originalvideo/PSF/tone are not independentlyidentified",
+  "regions": {
+    "whole_original_rim": {
+      "pixels": 5100,
+      "required_B_p50_p95_max": [
+        -1.2387254849399263,
+        0.2629485555096062,
+        2.515556150694271
+      ],
+      "count_required_above_unit": 97,
+      "fraction_required_above_unit": 0.019019607843137255
+    },
+    "bottom_left_feedback": {
+      "pixels": 1004,
+      "required_B_p50_p95_max": [
+        -1.3602162964133073,
+        0.9580568822212752,
+        1.4502429296126873
+      ],
+      "count_required_above_unit": 47,
+      "fraction_required_above_unit": 0.046812749003984064
+    },
+    "top_left_feedback": {
+      "pixels": 1052,
+      "required_B_p50_p95_max": [
+        -1.2091431328653313,
+        -1.126551485551764,
+        -0.88825798531957
+      ],
+      "count_required_above_unit": 0,
+      "fraction_required_above_unit": 0.0
+    },
+    "upper_right_feedback": {
+      "pixels": 1005,
+      "required_B_p50_p95_max": [
+        -1.0055011947408725,
+        -0.19623514215192184,
+        1.4616748626669391
+      ],
+      "count_required_above_unit": 2,
+      "fraction_required_above_unit": 0.001990049751243781
+    }
+  },
+  "unresolved_paths_not_filled": true,
+  "new_rays": 0,
+  "ray_to_texture_queries": 0,
+  "fits": 0,
+  "wall_seconds": 0.372692346572876,
+  "sources": [
+    "https://pbr-book.org/4ed/Reflection_Models/Specular_Reflection_and_Transmission",
+    "https://www.w3.org/TR/css-color-4/#color-conversion-code"
+  ]
+}

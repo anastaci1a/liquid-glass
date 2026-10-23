@@ -1,0 +1,396 @@
+{
+  "accepted_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "fixed_width": 0.3,
+  "bound": {
+    "lambda_max": 0.006341257469600858,
+    "maximum_added_displacement_fraction": 0.12,
+    "unit_displacement_bound": 18.921799307958473,
+    "conservative_unit_bound": 18.92369148788927,
+    "max_depth_gradient_bound": 1.0,
+    "fixed_width": 0.3,
+    "major_half": 2.3058823529411763,
+    "minor_half": 1,
+    "S_prime_max": 1.875,
+    "origin": "analytic triangle bound from fixed geometry, independent of target pixels"
+  },
+  "models": [
+    {
+      "finite_h": 0.0001981642959250268,
+      "guard_names": [
+        "glass",
+        "rim",
+        "exterior",
+        "archivebox",
+        "plus"
+      ],
+      "guard_quadratic_A": [
+        120093.58611392745,
+        298811.483604188,
+        0.02069185377339304,
+        7691.4928311587655,
+        28880.86273899228
+      ],
+      "guard_quadratic_B": [
+        -134.2582093002712,
+        -214.35952214411753,
+        -0.06442658824079638,
+        -59.871311266430894,
+        50.57831819965277
+      ],
+      "proposal_curvature_safety": 1.5,
+      "local_model_feasible_interval": [
+        0.0,
+        0.0
+      ],
+      "unconstrained_quadratic_amplitude": 0.000455614400606078,
+      "constrained_proposal": 0.0,
+      "crops": {
+        "upper": {
+          "baseline": 9.200722694396973,
+          "negative_probe": 9.210067749023438,
+          "positive_probe": 9.19193172454834
+        },
+        "d": {
+          "baseline": 3.110433340072632,
+          "negative_probe": 3.1080353260040283,
+          "positive_probe": 3.1124649047851562
+        },
+        "underside": {
+          "baseline": 5.073945045471191,
+          "negative_probe": 5.073740482330322,
+          "positive_probe": 5.0741987228393555
+        }
+      },
+      "positive_native": {
+        "index": 5,
+        "amplitude": 0.0001981642959250268,
+        "E": 6.868778657475951,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.841306686401367,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.812021255493164,
+                "pixels": 61248
+              },
+              "shadow": 11.469441737323065
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.241577489359303,
+          "plus": 3.668512866747895
+        },
+        "guard_values": [
+          5.841306686401367,
+          8.812021255493164,
+          11.469441737323065,
+          13.241577489359303,
+          3.668512866747895
+        ],
+        "all_nonregression": false,
+        "nonregression": {
+          "glass": true,
+          "rim": true,
+          "exterior": true,
+          "archivebox": true,
+          "plus": false
+        },
+        "gate": {
+          "accepted": false,
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "error_ratio": 0.995,
+          "observations": {
+            "A": {
+              "previous_error": 6.870490597949865,
+              "candidate_error": 6.868778657475951,
+              "required_error_max": 6.836138144960116,
+              "relative_reduction": 0.00024917295926796257,
+              "milestone_passed": false,
+              "nonregression": {
+                "glass": true,
+                "shadow": true
+              },
+              "passed": false
+            }
+          },
+          "evidence": {
+            "visual_review": false,
+            "independent_replay": false,
+            "source_support": false
+          }
+        },
+        "numerical_qualifier": false,
+        "phase": "local-native-guard-cone",
+        "native_actual_render": true,
+        "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0005.npz",
+        "seconds": 6.560398101806641
+      },
+      "negative_native": {
+        "index": 6,
+        "amplitude": -0.0001981642959250268,
+        "E": 6.873344368360336,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.845859527587891,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.816842079162598,
+                "pixels": 61248
+              },
+              "shadow": 11.469442849622391
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.242473451690735,
+          "plus": 3.665775889841148
+        },
+        "guard_values": [
+          5.845859527587891,
+          8.816842079162598,
+          11.469442849622391,
+          13.242473451690735,
+          3.665775889841148
+        ],
+        "all_nonregression": false,
+        "nonregression": {
+          "glass": false,
+          "rim": false,
+          "exterior": false,
+          "archivebox": false,
+          "plus": true
+        },
+        "gate": {
+          "accepted": false,
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "error_ratio": 0.995,
+          "observations": {
+            "A": {
+              "previous_error": 6.870490597949865,
+              "candidate_error": 6.873344368360336,
+              "required_error_max": 6.836138144960116,
+              "relative_reduction": -0.00041536632206784496,
+              "milestone_passed": false,
+              "nonregression": {
+                "glass": false,
+                "shadow": false
+              },
+              "passed": false
+            }
+          },
+          "evidence": {
+            "visual_review": false,
+            "independent_replay": false,
+            "source_support": false
+          }
+        },
+        "numerical_qualifier": false,
+        "phase": "local-native-guard-cone",
+        "native_actual_render": true,
+        "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0006.npz",
+        "seconds": 5.975435733795166
+      }
+    },
+    {
+      "finite_h": 9.90821479625134e-05,
+      "guard_names": [
+        "glass",
+        "rim",
+        "exterior",
+        "archivebox",
+        "plus"
+      ],
+      "guard_quadratic_A": [
+        120202.63320137437,
+        298763.3245669201,
+        0.02390372159499488,
+        8657.740990040182,
+        28708.589654728316
+      ],
+      "guard_quadratic_B": [
+        -130.41138939115794,
+        -214.46120063714693,
+        -0.040636059118987475,
+        -76.04441454461751,
+        -3.1308021548922342
+      ],
+      "proposal_curvature_safety": 1.5,
+      "local_model_feasible_interval": [
+        0.0,
+        7.270302936149495e-05
+      ],
+      "unconstrained_quadratic_amplitude": 0.0004477918510888215,
+      "constrained_proposal": 7.270302936149495e-05,
+      "crops": {
+        "upper": {
+          "baseline": 9.200722694396973,
+          "negative_probe": 9.205314636230469,
+          "positive_probe": 9.196243286132812
+        },
+        "d": {
+          "baseline": 3.110433340072632,
+          "negative_probe": 3.1081442832946777,
+          "positive_probe": 3.1115803718566895
+        },
+        "underside": {
+          "baseline": 5.073945045471191,
+          "negative_probe": 5.073848247528076,
+          "positive_probe": 5.074092864990234
+        }
+      },
+      "positive_native": {
+        "index": 7,
+        "amplitude": 9.90821479625134e-05,
+        "E": 6.869495723761212,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.84211540222168,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.812633514404297,
+                "pixels": 61248
+              },
+              "shadow": 11.469441837843384
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.241779376845649,
+          "plus": 3.6679676472917886
+        },
+        "guard_values": [
+          5.84211540222168,
+          8.812633514404297,
+          11.469441837843384,
+          13.241779376845649,
+          3.6679676472917886
+        ],
+        "all_nonregression": false,
+        "nonregression": {
+          "glass": true,
+          "rim": true,
+          "exterior": true,
+          "archivebox": true,
+          "plus": false
+        },
+        "gate": {
+          "accepted": false,
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "error_ratio": 0.995,
+          "observations": {
+            "A": {
+              "previous_error": 6.870490597949865,
+              "candidate_error": 6.869495723761212,
+              "required_error_max": 6.836138144960116,
+              "relative_reduction": 0.00014480395169291782,
+              "milestone_passed": false,
+              "nonregression": {
+                "glass": true,
+                "shadow": true
+              },
+              "passed": false
+            }
+          },
+          "evidence": {
+            "visual_review": false,
+            "independent_replay": false,
+            "source_support": false
+          }
+        },
+        "numerical_qualifier": false,
+        "phase": "local-native-guard-cone",
+        "native_actual_render": true,
+        "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0007.npz",
+        "seconds": 6.266711473464966
+      },
+      "negative_native": {
+        "index": 8,
+        "amplitude": -9.90821479625134e-05,
+        "E": 6.8717395061049045,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.844326496124268,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.815043449401855,
+                "pixels": 61248
+              },
+              "shadow": 11.469442189329218
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.242349140854317,
+          "plus": 3.668025004296863
+        },
+        "guard_values": [
+          5.844326496124268,
+          8.815043449401855,
+          11.469442189329218,
+          13.242349140854317,
+          3.668025004296863
+        ],
+        "all_nonregression": false,
+        "nonregression": {
+          "glass": false,
+          "rim": false,
+          "exterior": false,
+          "archivebox": false,
+          "plus": false
+        },
+        "gate": {
+          "accepted": false,
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "error_ratio": 0.995,
+          "observations": {
+            "A": {
+              "previous_error": 6.870490597949865,
+              "candidate_error": 6.8717395061049045,
+              "required_error_max": 6.836138144960116,
+              "relative_reduction": -0.00018177859895662785,
+              "milestone_passed": false,
+              "nonregression": {
+                "glass": false,
+                "shadow": false
+              },
+              "passed": false
+            }
+          },
+          "evidence": {
+            "visual_review": false,
+            "independent_replay": false,
+            "source_support": false
+          }
+        },
+        "numerical_qualifier": false,
+        "phase": "local-native-guard-cone",
+        "native_actual_render": true,
+        "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0008.npz",
+        "seconds": 5.249098300933838
+      }
+    }
+  ],
+  "inherited_prefit_points": 5,
+  "new_finite_probe_points": 4,
+  "unique_native_points": 9,
+  "counted_passes": 0,
+  "limits": "Local native quadratic constrained proposal analysis, not a global infeasibility proof or an optical improvement. No full-frame/foreground guard relaxed; same one-scalar family."
+}

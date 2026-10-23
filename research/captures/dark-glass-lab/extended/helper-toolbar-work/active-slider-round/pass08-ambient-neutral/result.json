@@ -1,0 +1,131 @@
+{
+  "baseline": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.155485153198242
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 19.237165451049805
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 12.67819595336914
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.756721496582031
+      },
+      "ssim": 0.9646053910255432,
+      "loss": 198.13195467957775,
+      "E": 14.075935303899977,
+      "shadow": {
+        "rmse": 6.534388542175293,
+        "pixels": 152521
+      }
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.64134407043457
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 18.65118980407715
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 13.763753890991211
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 10.92894458770752
+      },
+      "ssim": 0.9325286746025085,
+      "loss": 234.6204519658997,
+      "E": 15.317325222306266,
+      "shadow": {
+        "rmse": 4.462663173675537,
+        "pixels": 132594
+      }
+    }
+  ],
+  "phases": [
+    {
+      "phase": "isolated-ambient",
+      "proposal": {
+        "delta_ambient0": 0.0,
+        "delta_co6": 0.0,
+        "model_relative_loss_change": 0.0,
+        "solver_success": true,
+        "message": "Optimization terminated successfully",
+        "model_constraints": [
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "limits": "One currentstateanalytic shared model; actualnative strictguards decide, no per-background coefficients."
+      },
+      "trials": [],
+      "guard_blocked": true
+    },
+    {
+      "phase": "joint-ambient-co6",
+      "proposal": {
+        "delta_ambient0": 0.0,
+        "delta_co6": 0.0,
+        "model_relative_loss_change": 0.0,
+        "solver_success": true,
+        "message": "Optimization terminated successfully",
+        "model_constraints": [
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "limits": "One currentstateanalytic shared model; actualnative strictguards decide, no per-background coefficients."
+      },
+      "trials": [],
+      "guard_blocked": true
+    }
+  ],
+  "candidate": null,
+  "candidate_phase": null,
+  "accepted": false,
+  "accepted_count": 2,
+  "analytic_controls": [
+    {
+      "reference": "a",
+      "source_mean_rgb": [
+        0.6221603403734258,
+        0.8102220946777745,
+        0.651294319996074
+      ],
+      "source_luma": 0.7587655803806511,
+      "kappa": 0.2587655803806511,
+      "baseline_max_pixel_difference": 0.0,
+      "affine_column6_identity": true,
+      "limits": "Existing source-defined mean weighting/material_context.affine unchanged; modeledhiddenRGB, not observedtruth. Derivative through clipping/AA/postGaussian/reflection; exact only locally away from clipping transitions."
+    },
+    {
+      "reference": "b",
+      "source_mean_rgb": [
+        0.8050856932718723,
+        0.8183073580265889,
+        0.8024389506243196
+      ],
+      "source_luma": 0.8143507330852923,
+      "kappa": 0.31435073308529227,
+      "baseline_max_pixel_difference": 0.0,
+      "affine_column6_identity": true,
+      "limits": "Existing source-defined mean weighting/material_context.affine unchanged; modeledhiddenRGB, not observedtruth. Derivative through clipping/AA/postGaussian/reflection; exact only locally away from clipping transitions."
+    }
+  ],
+  "limits": "OriginalallpairedE/glass/fixedexterior+advisoryresidual strict, zerooriginalglyphlayers. Commonlaw/affine unchanged, no source/shape/mask/epoch/operator/publicedit. Stopfirstqualifier, no nextfit beforeprimary."
+}

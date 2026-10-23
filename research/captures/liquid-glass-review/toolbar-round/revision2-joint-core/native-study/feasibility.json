@@ -1,0 +1,772 @@
+{
+  "accepted_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "input_hashes": {
+    "source.png": "6c68d31ac994001701ae3763d67f494bca91d03fda950789dddf01cbb60ea21b",
+    "target.png": "5bb59714854d0bd019d689b3e8c444dd82b057d6abdc9275ca88a8295692bbf8"
+  },
+  "baseline_MSE_identical_across_saved_families": true,
+  "baseline_MSE": [
+    34.142175074632405,
+    77.68039501424937,
+    131.5481001866388,
+    175.35173955950103,
+    13.447913018451825
+  ],
+  "guard_order": [
+    "glass",
+    "rim",
+    "exterior",
+    "archivebox",
+    "plus"
+  ],
+  "equation": "F=F0(c4\u20136+delta)-grad(Psi_lambda), Psi=.5*lambda*(major_axis dot x)^2*S(d/.30L), actual grad(d)",
+  "global_bounds": [
+    [
+      -0.15,
+      0.15
+    ],
+    [
+      -0.15,
+      0.15
+    ],
+    [
+      -0.15,
+      0.15
+    ],
+    [
+      -0.006341257469600858,
+      0.006341257469600858
+    ]
+  ],
+  "local_cone_scales": [
+    0.005,
+    0.005,
+    0.005,
+    9.90821479625134e-05
+  ],
+  "saved_profile_probes": [
+    {
+      "dimension": 0,
+      "h": 0.00075,
+      "plus": {
+        "v": [
+          0.00075,
+          0.0,
+          0.0,
+          0.19928550849212562,
+          0.40361651491050377,
+          4.0
+        ],
+        "E": 6.870487145040826,
+        "L": 47.20359361017125,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.843040943145752,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.813777923583984,
+                "pixels": 61248
+              },
+              "shadow": 11.469442016586784
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.242044387461515,
+          "plus": 3.667139623528374
+        },
+        "guard_values": [
+          5.843040943145752,
+          11.469442016586784,
+          13.242044387461515,
+          3.667139623528374
+        ],
+        "all_nonregression": true,
+        "milestone": false
+      },
+      "minus": {
+        "v": [
+          -0.00075,
+          0.0,
+          0.0,
+          0.19928550849212562,
+          0.40361651491050377,
+          4.0
+        ],
+        "E": 6.8705873226774665,
+        "L": 47.20497015853632,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.84330415725708,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.813631057739258,
+                "pixels": 61248
+              },
+              "shadow": 11.469442018197407
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.242044387461515,
+          "plus": 3.667139623528374
+        },
+        "guard_values": [
+          5.84330415725708,
+          11.469442018197407,
+          13.242044387461515,
+          3.667139623528374
+        ],
+        "all_nonregression": false,
+        "milestone": false
+      }
+    },
+    {
+      "dimension": 1,
+      "h": 0.00075,
+      "plus": {
+        "v": [
+          0.0,
+          0.00075,
+          0.0,
+          0.19928550849212562,
+          0.40361651491050377,
+          4.0
+        ],
+        "E": 6.870526262286287,
+        "L": 47.204131120765574,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.842905044555664,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.81408977508545,
+                "pixels": 61248
+              },
+              "shadow": 11.46944201723165
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.242005093255354,
+          "plus": 3.6671948782124844
+        },
+        "guard_values": [
+          5.842905044555664,
+          11.46944201723165,
+          13.242005093255354,
+          3.6671948782124844
+        ],
+        "all_nonregression": false,
+        "milestone": false
+      },
+      "minus": {
+        "v": [
+          0.0,
+          -0.00075,
+          0.0,
+          0.19928550849212562,
+          0.40361651491050377,
+          4.0
+        ],
+        "E": 6.870559197593025,
+        "L": 47.204583687630105,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.843499183654785,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.81325626373291,
+                "pixels": 61248
+              },
+              "shadow": 11.46944201723165
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.24206234714461,
+          "plus": 3.6670848651349517
+        },
+        "guard_values": [
+          5.843499183654785,
+          11.46944201723165,
+          13.24206234714461,
+          3.6670848651349517
+        ],
+        "all_nonregression": false,
+        "milestone": false
+      }
+    },
+    {
+      "dimension": 2,
+      "h": 0.00075,
+      "plus": {
+        "v": [
+          0.0,
+          0.0,
+          0.00075,
+          0.19928550849212562,
+          0.40361651491050377,
+          4.0
+        ],
+        "E": 6.870612770341838,
+        "L": 47.20531983998434,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.843316078186035,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.813678741455078,
+                "pixels": 61248
+              },
+              "shadow": 11.46944201723165
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.24173351406836,
+          "plus": 3.6686456732337054
+        },
+        "guard_values": [
+          5.843316078186035,
+          11.46944201723165,
+          13.24173351406836,
+          3.6686456732337054
+        ],
+        "all_nonregression": false,
+        "milestone": false
+      },
+      "minus": {
+        "v": [
+          0.0,
+          0.0,
+          -0.00075,
+          0.19928550849212562,
+          0.40361651491050377,
+          4.0
+        ],
+        "E": 6.870483381073397,
+        "L": 47.20354188960574,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.843142509460449,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.813611030578613,
+                "pixels": 61248
+              },
+              "shadow": 11.46944201723165
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.242387396791129,
+          "plus": 3.665761855350243
+        },
+        "guard_values": [
+          5.843142509460449,
+          11.46944201723165,
+          13.242387396791129,
+          3.665761855350243
+        ],
+        "all_nonregression": false,
+        "milestone": false
+      }
+    }
+  ],
+  "core_models": [
+    {
+      "divisor": 32,
+      "finite_h": 0.0001981642959250268,
+      "gradient_MSE": [
+        [
+          -2.0506739601842128,
+          -4.628899786742598,
+          1.3522691491137568,
+          -134.25680808041932
+        ],
+        [
+          1.7259095402550884,
+          9.795062025659718,
+          0.7957061601094514,
+          -214.4322750781298
+        ],
+        [
+          -2.4630594452901278e-05,
+          0.0,
+          0.0,
+          -0.06437816101275555
+        ],
+        [
+          0.0,
+          -1.010877242852833,
+          -11.545006060885044,
+          -59.87131010699434
+        ],
+        [
+          0.0,
+          0.5379111240344514,
+          14.100730397021977,
+          50.64933332337934
+        ]
+      ],
+      "core_plus": {
+        "index": 5,
+        "amplitude": 0.0001981642959250268,
+        "E": 6.868778657475951,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.841306686401367,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.812021255493164,
+                "pixels": 61248
+              },
+              "shadow": 11.469441737323065
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.241577489359303,
+          "plus": 3.668512866747895
+        },
+        "guard_values": [
+          5.841306686401367,
+          8.812021255493164,
+          11.469441737323065,
+          13.241577489359303,
+          3.668512866747895
+        ],
+        "all_nonregression": false,
+        "nonregression": {
+          "glass": true,
+          "rim": true,
+          "exterior": true,
+          "archivebox": true,
+          "plus": false
+        },
+        "gate": {
+          "accepted": false,
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "error_ratio": 0.995,
+          "observations": {
+            "A": {
+              "previous_error": 6.870490597949865,
+              "candidate_error": 6.868778657475951,
+              "required_error_max": 6.836138144960116,
+              "relative_reduction": 0.00024917295926796257,
+              "milestone_passed": false,
+              "nonregression": {
+                "glass": true,
+                "shadow": true
+              },
+              "passed": false
+            }
+          },
+          "evidence": {
+            "visual_review": false,
+            "independent_replay": false,
+            "source_support": false
+          }
+        },
+        "numerical_qualifier": false,
+        "phase": "local-native-guard-cone",
+        "native_actual_render": true,
+        "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0005.npz",
+        "seconds": 6.560398101806641
+      },
+      "core_minus": {
+        "index": 6,
+        "amplitude": -0.0001981642959250268,
+        "E": 6.873344368360336,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.845859527587891,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.816842079162598,
+                "pixels": 61248
+              },
+              "shadow": 11.469442849622391
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.242473451690735,
+          "plus": 3.665775889841148
+        },
+        "guard_values": [
+          5.845859527587891,
+          8.816842079162598,
+          11.469442849622391,
+          13.242473451690735,
+          3.665775889841148
+        ],
+        "all_nonregression": false,
+        "nonregression": {
+          "glass": false,
+          "rim": false,
+          "exterior": false,
+          "archivebox": false,
+          "plus": true
+        },
+        "gate": {
+          "accepted": false,
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "error_ratio": 0.995,
+          "observations": {
+            "A": {
+              "previous_error": 6.870490597949865,
+              "candidate_error": 6.873344368360336,
+              "required_error_max": 6.836138144960116,
+              "relative_reduction": -0.00041536632206784496,
+              "milestone_passed": false,
+              "nonregression": {
+                "glass": false,
+                "shadow": false
+              },
+              "passed": false
+            }
+          },
+          "evidence": {
+            "visual_review": false,
+            "independent_replay": false,
+            "source_support": false
+          }
+        },
+        "numerical_qualifier": false,
+        "phase": "local-native-guard-cone",
+        "native_actual_render": true,
+        "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0006.npz",
+        "seconds": 5.975435733795166
+      }
+    },
+    {
+      "divisor": 64,
+      "finite_h": 9.90821479625134e-05,
+      "gradient_MSE": [
+        [
+          -2.0506739601842128,
+          -4.628899786742598,
+          1.3522691491137568,
+          -130.39594395024912
+        ],
+        [
+          1.7259095402550884,
+          9.795062025659718,
+          0.7957061601094514,
+          -214.3754274322266
+        ],
+        [
+          -2.4630594452901278e-05,
+          0.0,
+          0.0,
+          -0.040686909698847216
+        ],
+        [
+          0.0,
+          -1.010877242852833,
+          -11.545006060885044,
+          -76.14743695322169
+        ],
+        [
+          0.0,
+          0.5379111240344514,
+          14.100730397021977,
+          -2.1233419762985526
+        ]
+      ],
+      "core_plus": {
+        "index": 7,
+        "amplitude": 9.90821479625134e-05,
+        "E": 6.869495723761212,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.84211540222168,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.812633514404297,
+                "pixels": 61248
+              },
+              "shadow": 11.469441837843384
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.241779376845649,
+          "plus": 3.6679676472917886
+        },
+        "guard_values": [
+          5.84211540222168,
+          8.812633514404297,
+          11.469441837843384,
+          13.241779376845649,
+          3.6679676472917886
+        ],
+        "all_nonregression": false,
+        "nonregression": {
+          "glass": true,
+          "rim": true,
+          "exterior": true,
+          "archivebox": true,
+          "plus": false
+        },
+        "gate": {
+          "accepted": false,
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "error_ratio": 0.995,
+          "observations": {
+            "A": {
+              "previous_error": 6.870490597949865,
+              "candidate_error": 6.869495723761212,
+              "required_error_max": 6.836138144960116,
+              "relative_reduction": 0.00014480395169291782,
+              "milestone_passed": false,
+              "nonregression": {
+                "glass": true,
+                "shadow": true
+              },
+              "passed": false
+            }
+          },
+          "evidence": {
+            "visual_review": false,
+            "independent_replay": false,
+            "source_support": false
+          }
+        },
+        "numerical_qualifier": false,
+        "phase": "local-native-guard-cone",
+        "native_actual_render": true,
+        "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0007.npz",
+        "seconds": 6.266711473464966
+      },
+      "core_minus": {
+        "index": 8,
+        "amplitude": -9.90821479625134e-05,
+        "E": 6.8717395061049045,
+        "scores": {
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "observations": {
+            "A": {
+              "glass": {
+                "rmse": 5.844326496124268,
+                "pixels": 188771
+              },
+              "rim": {
+                "rmse": 8.815043449401855,
+                "pixels": 61248
+              },
+              "shadow": 11.469442189329218
+            }
+          }
+        },
+        "foreground": {
+          "archivebox": 13.242349140854317,
+          "plus": 3.668025004296863
+        },
+        "guard_values": [
+          5.844326496124268,
+          8.815043449401855,
+          11.469442189329218,
+          13.242349140854317,
+          3.668025004296863
+        ],
+        "all_nonregression": false,
+        "nonregression": {
+          "glass": false,
+          "rim": false,
+          "exterior": false,
+          "archivebox": false,
+          "plus": false
+        },
+        "gate": {
+          "accepted": false,
+          "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+          "error_ratio": 0.995,
+          "observations": {
+            "A": {
+              "previous_error": 6.870490597949865,
+              "candidate_error": 6.8717395061049045,
+              "required_error_max": 6.836138144960116,
+              "relative_reduction": -0.00018177859895662785,
+              "milestone_passed": false,
+              "nonregression": {
+                "glass": false,
+                "shadow": false
+              },
+              "passed": false
+            }
+          },
+          "evidence": {
+            "visual_review": false,
+            "independent_replay": false,
+            "source_support": false
+          }
+        },
+        "numerical_qualifier": false,
+        "phase": "local-native-guard-cone",
+        "native_actual_render": true,
+        "material_cache": "/tmp/agent-toolbar-revision2-core-fit/evaluations/0008.npz",
+        "seconds": 5.249098300933838
+      }
+    }
+  ],
+  "individual_models": [
+    {
+      "success": true,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "core_fixed": false,
+      "direction": [
+        0.005,
+        0.0013393520062167752,
+        -0.0006311039103452847,
+        9.90821479625134e-05
+      ],
+      "predicted_MSE_changes": [
+        [
+          -0.030608971287915017,
+          -5.204170427930421e-18,
+          -6.501879447284863e-06,
+          1.734723475976807e-18,
+          -0.003160129010593592
+        ]
+      ],
+      "predicted_objective_MSE_change": -0.021426279901540512,
+      "normalized_guard_max": 0.0
+    },
+    {
+      "success": true,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "core_fixed": false,
+      "direction": [
+        0.005,
+        0.0013502015737890411,
+        -0.0007717397125982686,
+        9.90821479625134e-05
+      ],
+      "predicted_MSE_changes": [
+        [
+          -0.03046682759457542,
+          -3.469446951953614e-18,
+          -4.1544993791831075e-06,
+          0.0,
+          -0.01036619046166409
+        ]
+      ],
+      "predicted_objective_MSE_change": -0.021326779316202794,
+      "normalized_guard_max": 0.0
+    }
+  ],
+  "robust_both_core_steps": {
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "core_fixed": false,
+    "direction": [
+      0.005,
+      0.001338772843147038,
+      -0.0006310531990018682,
+      9.90821479625134e-05
+    ],
+    "predicted_MSE_changes": [
+      [
+        -0.030606221824719813,
+        -5.632586862706207e-06,
+        -6.501879447284863e-06,
+        0.0,
+        -0.0031597254818698465
+      ],
+      [
+        -0.030223679113711127,
+        -3.469446951953614e-18,
+        -4.1544993791831075e-06,
+        -0.0016126736084345356,
+        -0.008388555504290207
+      ]
+    ],
+    "predicted_objective_MSE_change": -0.021291310216480234,
+    "normalized_guard_max": 0.0
+  },
+  "inner_only_comparison": {
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "core_fixed": true,
+    "direction": [
+      -0.0,
+      -0.0,
+      -0.0,
+      0.0
+    ],
+    "predicted_MSE_changes": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "predicted_objective_MSE_change": 0.0,
+    "normalized_guard_max": 0.0
+  },
+  "joint_improvement_supported_for_bounded_native_proposal": true,
+  "new_renders": 0,
+  "counted_passes": 0,
+  "limitations": "Finite-difference local metric cone is proposal evidence, not exact nonlinear feasibility/global convergence or a qualifying optical improvement. Both core finite-step models constrained, profile probes are original baseline not transported from nonzero centers; same masks/input/shadow/vectors. No isolated study repeated.",
+  "strict_interior_proposal": {
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "direction": [
+      -0.005,
+      0.0029481069614344362,
+      -0.0006201646415786734,
+      9.90821479625134e-05
+    ],
+    "normalized_guard_margin": 0.030360273325557484,
+    "predicted_objective_MSE_change": -0.01258696910335994
+  }
+}

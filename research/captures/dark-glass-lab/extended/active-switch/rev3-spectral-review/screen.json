@@ -1,0 +1,618 @@
+{
+  "protocol": "Recheck a bounded chromatic map after material/normal-cap baseline changed.\n\nF_c(p)=p+k_c(F_green(p)-p); k_R=1-s,k_G=1,k_B=1+s.\nAn empirical weak-dispersion map, NOT a recovered physical surface. Positive s\nhas the usual stronger blue deviation; negative s is a diagnostic comparator.\nExisting directional transmission, ordinary blur, lighting, sources and masks\nremain fixed. No target-colored corrections. This entire family is one study.\n",
+  "baseline": {
+    "parameters": {
+      "sigma": 4.339320119358678,
+      "amplitude": 0.7839488678764915,
+      "band": 0.41709079115813363,
+      "power": 2.793583791362869,
+      "tangent": 0,
+      "tangent_band": 0.9999992768775775,
+      "core_x": -0.48636618103316787,
+      "core_y": -0.6136971567801134,
+      "post_sigma": 2.163537921629955,
+      "coupling": 0,
+      "gamma": 1.5497479697761347,
+      "rim_width": 0.04878846511595129,
+      "thin_width": 0.011095946046562786,
+      "spline": true,
+      "shape_dx": 0.001167965417146694,
+      "shape_dy": 0.004755085677013721,
+      "half_x_delta": -0.0025334994195777482,
+      "half_y_delta": 0.011224253113150662,
+      "radius_delta": 0.012043263143639911,
+      "c0": 0.5825744554180238,
+      "c1": 1.3388234553429594,
+      "c2": -0.8083295666489414,
+      "c3": 1.0304313912343226,
+      "c4": 0.7184704183774985,
+      "c5": 0.2901299541876391,
+      "c6": 0.20008253902374495,
+      "shadow": {
+        "opacity": 0.0644744543534254,
+        "sigma": 0.105,
+        "offset": [
+          0.002735677612552694,
+          0.11499500237810438
+        ]
+      },
+      "blur_transition": 0,
+      "tangent_exponent": 3.000273143553201,
+      "cap_normal_gain": -0.11946436603381186,
+      "cap_tangent_fade": 0.9997199664179274,
+      "material_chroma_sensitivity": 10,
+      "material_chroma_floor": 0,
+      "grazing_reflection": {
+        "strength": 1,
+        "width": 0.03895748531996116,
+        "angular_power": 1.5519447192573868,
+        "source_sigma": 0.007,
+        "direction": [
+          0,
+          1
+        ]
+      },
+      "directional_transmission": {
+        "strength": 0.3849814426989986,
+        "length": 0.08,
+        "angle": 1.3571487177940904,
+        "fade_center": -0.395271178284122,
+        "fade_width": 0.3577136899555915
+      },
+      "crown_softness": 0.08
+    },
+    "material": [
+      0.5599596881338905,
+      0.7998531609442425,
+      0.6352577145349837,
+      0.35271553057881444,
+      0.34598186351481325,
+      0.3448575578393852,
+      -0.7449222138670937,
+      -0.014928382342389968,
+      -1.995391657801683,
+      -0.08203963643431976,
+      -0.009511064299458217,
+      0.6713499713305283,
+      0.08522166868314952,
+      0.03605006533559551,
+      -0.027106608026761236,
+      -0.006665966049888116,
+      0.04479436578522937,
+      -0.056581134061443605,
+      -0.12181774252248757,
+      0.00606904826295323,
+      0.7410422243688338,
+      0.7281416440653709,
+      0.7464289324085407
+    ],
+    "parameter_length_reference": 216.5,
+    "units": "Geometry normalized by each pose L; sigma and post_sigma are lengths in the declared 216.5 reference-pixel basis; divide by 216.5 for dimensionless kernels."
+  },
+  "baseline_scores": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.492169380187988
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 19.840557098388672
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 12.96753978729248
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.861898422241211
+      },
+      "ssim": 0.9632399082183838,
+      "loss": 210.5432817363776,
+      "shadow": {
+        "rmse": 6.705331325531006,
+        "pixels": 152521
+      }
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.861527442932129
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 19.731285095214844
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 13.816197395324707
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 10.531586647033691
+      },
+      "ssim": 0.933897078037262,
+      "loss": 251.2964435884066,
+      "shadow": {
+        "rmse": 4.592496395111084,
+        "pixels": 132594
+      }
+    }
+  ],
+  "trials": [
+    {
+      "spread": 0.0,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.492169380187988
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.840557098388672
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.96753978729248
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.861898422241211
+          },
+          "loss": 210.5432817363776,
+          "shadow": {
+            "rmse": 6.705331325531006
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.861527442932129
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.731285095214844
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.816197395324707
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.531586647033691
+          },
+          "loss": 251.2964435884066,
+          "shadow": {
+            "rmse": 4.592496395111084
+          }
+        }
+      ],
+      "ratios": [
+        1.0,
+        1.0
+      ],
+      "guards": [
+        true,
+        true
+      ],
+      "numeric_pass": false,
+      "seconds": 9.162922859191895
+    },
+    {
+      "spread": 0.015,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.49938678741455
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.807308197021484
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.980751991271973
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.941585063934326
+          },
+          "loss": 210.26396494413336,
+          "shadow": {
+            "rmse": 6.705329418182373
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.863483428955078
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.734113693237305
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.814010620117188
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.533038139343262
+          },
+          "loss": 251.36789392672324,
+          "shadow": {
+            "rmse": 4.5924973487854
+          }
+        }
+      ],
+      "ratios": [
+        0.9993364559291659,
+        1.0001421533452783
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false,
+      "seconds": 1.698221206665039
+    },
+    {
+      "spread": 0.03,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.589905738830566
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.794450759887695
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.060013771057129
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 5.2523016929626465
+          },
+          "loss": 211.57422479016995,
+          "shadow": {
+            "rmse": 6.705328941345215
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.866279602050781
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.7376766204834
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.813307762145996
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.535484313964844
+          },
+          "loss": 251.46436051400775,
+          "shadow": {
+            "rmse": 4.592503547668457
+          }
+        }
+      ],
+      "ratios": [
+        1.0024453026965194,
+        1.0003340454841738
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false,
+      "seconds": 1.6174046993255615
+    },
+    {
+      "spread": 0.06,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.999492645263672
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.831117630004883
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.402776718139648
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 6.375849723815918
+          },
+          "loss": 218.77344455714302,
+          "shadow": {
+            "rmse": 6.705329418182373
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.874269485473633
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.746335983276367
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.816875457763672
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.543649673461914
+          },
+          "loss": 251.72208305821187,
+          "shadow": {
+            "rmse": 4.592526435852051
+          }
+        }
+      ],
+      "ratios": [
+        1.0193577012972932,
+        1.0008465288682618
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false,
+      "seconds": 1.6538317203521729
+    },
+    {
+      "spread": 0.12,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 13.48900318145752
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 20.17645263671875
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 14.652042388916016
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 9.414216041564941
+          },
+          "loss": 249.49401708108624,
+          "shadow": {
+            "rmse": 6.70534086227417
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.900472640991211
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.76877212524414
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.839775085449219
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.5750150680542
+          },
+          "loss": 252.49750315201052,
+          "shadow": {
+            "rmse": 4.592607021331787
+          }
+        }
+      ],
+      "ratios": [
+        1.0885775507395734,
+        1.0023868779514034
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false,
+      "seconds": 1.5917418003082275
+    },
+    {
+      "spread": -0.015,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.569524765014648
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.894332885742188
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.02153205871582
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 5.027501106262207
+          },
+          "loss": 212.433076592418,
+          "shadow": {
+            "rmse": 6.7053351402282715
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.860058784484863
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.728307723999023
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.81948471069336
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.531155586242676
+          },
+          "loss": 251.23269835240308,
+          "shadow": {
+            "rmse": 4.592499256134033
+          }
+        }
+      ],
+      "ratios": [
+        1.00447787542684,
+        0.9998731592097013
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false,
+      "seconds": 1.5845205783843994
+    },
+    {
+      "spread": -0.03,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.728941917419434
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.968669891357422
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.140533447265625
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 5.413055896759033
+          },
+          "loss": 215.9219881205404,
+          "shadow": {
+            "rmse": 6.7053399085998535
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.859432220458984
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.72596549987793
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.823966979980469
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.531797409057617
+          },
+          "loss": 251.19281750215993,
+          "shadow": {
+            "rmse": 4.592506408691406
+          }
+        }
+      ],
+      "ratios": [
+        1.01269284413054,
+        0.9997937957856938
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false,
+      "seconds": 1.6453471183776855
+    },
+    {
+      "spread": -0.06,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 12.268485069274902
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 20.180662155151367
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.555953979492188
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 6.639866828918457
+          },
+          "loss": 227.5387456326224,
+          "shadow": {
+            "rmse": 6.705358505249023
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.860578536987305
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.722126007080078
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.83621883392334
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.536888122558594
+          },
+          "loss": 251.1696224377385,
+          "shadow": {
+            "rmse": 4.592531204223633
+          }
+        }
+      ],
+      "ratios": [
+        1.0395777740346288,
+        0.9997476344003833
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false,
+      "seconds": 1.600222110748291
+    }
+  ],
+  "accepted": false,
+  "limits": "Screen only. New chromatic ray domains require separate complete source proof and independent replay before any acceptance."
+}

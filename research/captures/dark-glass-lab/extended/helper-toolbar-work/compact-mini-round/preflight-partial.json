@@ -1,0 +1,150 @@
+[
+  {
+    "reference": "a",
+    "scores": {
+      "glass": {
+        "pixels": 83012,
+        "rmse": 4.370218276977539
+      },
+      "rim": {
+        "pixels": 31757,
+        "rmse": 6.199377059936523
+      },
+      "held": {
+        "pixels": 21209,
+        "rmse": 4.497220993041992
+      },
+      "interior": {
+        "pixels": 51255,
+        "rmse": 2.6683366298675537
+      },
+      "loss": 24.898848231280134,
+      "E": 4.989874570696155,
+      "foreground_mse": {
+        "jupiter.jpg": 1802.8433133848011,
+        "title.svg": 413.3826211444102,
+        "artist.svg": 13.200667555793189,
+        "play.svg": 64.97493572824169,
+        "forward.svg": 150.11205951450393
+      },
+      "exterior": {
+        "pixels": 31956,
+        "rmse": 4.954218705118386
+      }
+    },
+    "native_loss_matches": true,
+    "center_support": {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 1.0,
+      "gaussian_3sigma_observed_fraction": 1.0,
+      "source_gaussian_radius_native_px": 21
+    },
+    "emitted_support": {
+      "scale": 1,
+      "counts": {
+        "whole": 587896,
+        "scored": 332018,
+        "whole_defined_bad": 0,
+        "whole_observed_bad": 0,
+        "scored_defined_bad": 0,
+        "scored_observed_bad": 0
+      },
+      "minimum_confidence": {
+        "whole_defined": 1.0,
+        "whole_observed": 1.0,
+        "scored_defined": 1.0,
+        "scored_observed": 1.0
+      },
+      "gaussian_radius_native_px": 21,
+      "whole_defined_fraction": 1.0,
+      "whole_observed_fraction": 1.0,
+      "passed": true,
+      "unsupported_rows_columns": [
+        "output_x",
+        "output_y",
+        "source_x",
+        "source_y",
+        "defined_confidence",
+        "observed_confidence",
+        "scored_native_pixel"
+      ],
+      "representative_unsupported": [],
+      "limits": "Discrete ORIGINAL native2x2 in-shape emitted rays with original3sigmaGaussian support; no changed masks, source repair, center-only inference or continuous-surface proof."
+    }
+  },
+  {
+    "reference": "b",
+    "scores": {
+      "glass": {
+        "pixels": 83012,
+        "rmse": 4.324578762054443
+      },
+      "rim": {
+        "pixels": 31757,
+        "rmse": 5.85301399230957
+      },
+      "held": {
+        "pixels": 21209,
+        "rmse": 4.283026218414307
+      },
+      "interior": {
+        "pixels": 51255,
+        "rmse": 3.0106136798858643
+      },
+      "loss": 23.36871886670012,
+      "E": 4.8341202784684745,
+      "foreground_mse": {
+        "jupiter.jpg": 1901.9035917241126,
+        "title.svg": 362.18831377336755,
+        "artist.svg": 19.8990429751575,
+        "play.svg": 64.94762350630481,
+        "forward.svg": 153.32260817522183
+      },
+      "exterior": {
+        "pixels": 31956,
+        "rmse": 4.243026628824928
+      }
+    },
+    "native_loss_matches": true,
+    "center_support": {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 1.0,
+      "gaussian_3sigma_observed_fraction": 1.0,
+      "source_gaussian_radius_native_px": 21
+    },
+    "emitted_support": {
+      "scale": 1,
+      "counts": {
+        "whole": 587896,
+        "scored": 332018,
+        "whole_defined_bad": 0,
+        "whole_observed_bad": 0,
+        "scored_defined_bad": 0,
+        "scored_observed_bad": 0
+      },
+      "minimum_confidence": {
+        "whole_defined": 1.0,
+        "whole_observed": 1.0,
+        "scored_defined": 1.0,
+        "scored_observed": 1.0
+      },
+      "gaussian_radius_native_px": 21,
+      "whole_defined_fraction": 1.0,
+      "whole_observed_fraction": 1.0,
+      "passed": true,
+      "unsupported_rows_columns": [
+        "output_x",
+        "output_y",
+        "source_x",
+        "source_y",
+        "defined_confidence",
+        "observed_confidence",
+        "scored_native_pixel"
+      ],
+      "representative_unsupported": [],
+      "limits": "Discrete ORIGINAL native2x2 in-shape emitted rays with original3sigmaGaussian support; no changed masks, source repair, center-only inference or continuous-surface proof."
+    }
+  }
+]

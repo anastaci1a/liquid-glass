@@ -1,0 +1,4 @@
+- Merged #427 at1fe715e: corrected Home chain,22 initial/refinement +21 paired experiments. Independent native replay protects the retained single and both backgrounds; weighted losses40.186591/103.245802, glass5.860627/9.222742. Earlier invalid receipts remain archived.
+- Final4× comparisons,30fps motion and full-size GIFs<10MB replace historical captures. Context completion is explicitly estimated; fixed-strip motion seam removed. Source-mean guards, cache/prepared/HQ parity and foreground gates pass; guide layout/links, Wipe controls and on-demand media requests pass.
+- Primary comparison Wipe/Side-by-side control is already on main via#425; default50%, Apple left, reuse existing pair assets; dropdown media unchanged.
+- Continuing serial calibration with active segmented selector on a new current-main branch. App and held live-lab unchanged. — Codex

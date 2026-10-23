@@ -1,0 +1,166 @@
+{
+  "status": "FIRST_NATIVE_QUALIFIER_STOPPED_FOR_PRIMARY",
+  "baseline": {
+    "glass": {
+      "pixels": 31119,
+      "rmse": 19.009538650512695
+    },
+    "rim": {
+      "pixels": 13909,
+      "rmse": 21.190916061401367
+    },
+    "held": {
+      "pixels": 8377,
+      "rmse": 18.941999435424805
+    },
+    "interior": {
+      "pixels": 17210,
+      "rmse": 17.043771743774414
+    },
+    "ssim": 0.9877263307571411,
+    "loss": 387.67026885014275,
+    "E": 19.68934404316565,
+    "advisory_f64_E": 19.689344171045853,
+    "glyph": {
+      "pixels": 8600,
+      "rmse": 20.860740661621094
+    },
+    "exterior": {
+      "pixels": 33399,
+      "rmse": 3.708796977996826
+    },
+    "full_visible_exterior": {
+      "pixels": 59242,
+      "rmse": 2.9370052814483643
+    }
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "b": 0.05,
+      "g": 1.0,
+      "backtrack": 1,
+      "prediction_ONLY": {
+        "glass": {
+          "pixels": 31119,
+          "rmse": 13.164525985717773
+        },
+        "rim": {
+          "pixels": 13909,
+          "rmse": 15.606231689453125
+        },
+        "held": {
+          "pixels": 8377,
+          "rmse": 13.159754753112793
+        },
+        "interior": {
+          "pixels": 17210,
+          "rmse": 10.794879913330078
+        },
+        "ssim": 0.9915193915367126,
+        "loss": 194.37966136351423,
+        "E": 13.942010664302126,
+        "advisory_f64_E": 13.942010504947547,
+        "glyph": {
+          "pixels": 8600,
+          "rmse": 18.02705192565918
+        },
+        "exterior": {
+          "pixels": 33399,
+          "rmse": 3.6485259532928467
+        },
+        "full_visible_exterior": {
+          "pixels": 59242,
+          "rmse": 2.894132614135742
+        }
+      },
+      "actual_native": {
+        "glass": {
+          "pixels": 31119,
+          "rmse": 13.164521217346191
+        },
+        "rim": {
+          "pixels": 13909,
+          "rmse": 15.606225967407227
+        },
+        "held": {
+          "pixels": 8377,
+          "rmse": 13.159751892089844
+        },
+        "interior": {
+          "pixels": 17210,
+          "rmse": 10.79487419128418
+        },
+        "ssim": 0.9915198087692261,
+        "loss": 194.37951990110332,
+        "E": 13.942005591058386,
+        "advisory_f64_E": 13.942005612492363,
+        "glyph": {
+          "pixels": 8600,
+          "rmse": 18.027048110961914
+        },
+        "exterior": {
+          "pixels": 33399,
+          "rmse": 3.6485259532928467
+        },
+        "full_visible_exterior": {
+          "pixels": 59242,
+          "rmse": 2.894132614135742
+        }
+      },
+      "checks": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "glyph": true,
+        "exterior": true,
+        "full_visible_exterior": true,
+        "E": true,
+        "SSIM": true,
+        "advisory_f64_E": true
+      },
+      "meaningful_progress": true,
+      "qualifies": true,
+      "clipping_counts": {
+        "whole": {
+          "subrays": 162445,
+          "lower_clipped_subrays": 0,
+          "upper_clipped_subrays": 0,
+          "lower_clipped_channels": 0,
+          "upper_clipped_channels": 0,
+          "at_endpoints_subrays": 0,
+          "min_unclipped": 0.35980393290519713,
+          "max_unclipped": 0.8303921699523926
+        },
+        "scored": {
+          "subrays": 124476,
+          "lower_clipped_subrays": 0,
+          "upper_clipped_subrays": 0,
+          "lower_clipped_channels": 0,
+          "upper_clipped_channels": 0,
+          "at_endpoints_subrays": 0,
+          "min_unclipped": 0.35980393290519713,
+          "max_unclipped": 0.8303921699523926
+        },
+        "postfootprint": {
+          "subrays": 174484,
+          "lower_clipped_subrays": 0,
+          "upper_clipped_subrays": 0,
+          "lower_clipped_channels": 0,
+          "upper_clipped_channels": 0,
+          "at_endpoints_subrays": 0,
+          "min_unclipped": 0.35980393290519713,
+          "max_unclipped": 0.8303921699523926
+        }
+      },
+      "prediction_max_absolute_material_difference": 2.384185791015625e-07,
+      "source_and_sampling": "Frozen exactselectedsettledrender samples2, observationalwrappers returnoriginalmap/shade unchanged; no baselinererender ornewraysweeps"
+    }
+  ],
+  "actual_native_trial_count": 1,
+  "family": "neutral-affine g1/bRGBtied NOTtau",
+  "firstqualifier_stop": true,
+  "accepted_count": 1,
+  "no_furtherfit_before_primary": true
+}

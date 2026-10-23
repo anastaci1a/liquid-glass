@@ -1,0 +1,128 @@
+{
+  "stage": "PROPOSED_SOURCE_AND_MASK_EPOCH_NOT_ACTIVE",
+  "preset": {
+    "model": "radial-tail",
+    "shape": {
+      "half": [
+        1,
+        1
+      ],
+      "radius": 1
+    },
+    "parameters": {
+      "amplitude": 0.6344430313360516,
+      "band": 0.09445809156460266,
+      "power": 2.10022237760162,
+      "width": 4.5,
+      "inner_power": 4
+    },
+    "source_sigma": 0.0020408163265306124,
+    "rim_width": 0.04897845813577233,
+    "thin_rim": 0.005714285714285714,
+    "blur_transition": null,
+    "material": [
+      1,
+      1,
+      1,
+      0.07500000000000001,
+      0.07500000000000001,
+      0.07500000000000001,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "reference_length": 245,
+    "post_sigma": 0.006530612244897959
+  },
+  "foreground_styles": {
+    "xmark-pinned.svg": {
+      "color": [
+        0.1422113443266031,
+        0.1422113443266031,
+        0.1422113443266031
+      ],
+      "opacity": 1
+    }
+  },
+  "case_sha256": {
+    "a": "7be7c5ed6b2a017bf4a2a33bd97fe9e17aa99dbcd8284adcd7c2a3a4cc40c650"
+  },
+  "scores": {
+    "glass": {
+      "pixels": 1345,
+      "rmse": 2.9372386932373047
+    },
+    "rim": {
+      "pixels": 544,
+      "rmse": 3.9105236530303955
+    },
+    "held": {
+      "pixels": 143,
+      "rmse": 1.9574376344680786
+    },
+    "interior": {
+      "pixels": 801,
+      "rmse": 2.0250802040100098
+    },
+    "ssim": 0.9921990036964417,
+    "loss": 10.62681837100833,
+    "E_auxiliary": 3.259880116048492
+  },
+  "foreground_guard": {
+    "convention": "Public Study inclusive [737,178,757,198]",
+    "pixels": 441,
+    "rmse": 15.41157341003418
+  },
+  "original_accepted_model_record": "dark-glass-lab/extended/helper-toolbar-work/more-close-round/foreground-gray-round1/candidate-native.json",
+  "body_material_arrays": "dark-glass-lab/extended/helper-toolbar-work/more-close-round/foreground-gray-round1/candidate-native.npz",
+  "source_support": {
+    "proof_sha256": "9847996a28ffbe4068cf75c324506c514c93c4975b153b9ddf6f854beec291d3",
+    "native_samples_per_axis": 2,
+    "old_all_scored_subrays": 5624,
+    "new_all_scored_subrays": 5380,
+    "removed_subrays": 244,
+    "new_scored_subset_of_proved_old": true,
+    "scored_bad": 0,
+    "scored_outside_outline": 0,
+    "whole_count_unchanged": 7731,
+    "post_count_unchanged": 8752,
+    "post_pixel_mask_exact": true,
+    "whole_confidence_defined": 1,
+    "observed_hidden_fraction": 0,
+    "no_new_ray_sweep": true,
+    "limitations": "Exact prior finite discrete sourcekernel/postkernel+bilinear only; not observed photographic source or infinite support proof."
+  },
+  "accepted_pass_count_preserved": 1,
+  "passes_added": 0,
+  "source_or_epoch_adopted": false,
+  "limitations": "Baseline values are for a proposed new input/scoring epoch only; never compare to old epoch as optical progress. Renderer/native body unchanged. Use original accepted record for full material-coefficient schema.",
+  "neutral_rim": {
+    "amplitude": 0.125,
+    "width": 0.028
+  },
+  "material_contract": "Best current shared prior, g1/b.07500000000000001/14lights0 plus neutral normal-white rim a.125/w.028. Prior transfer count0, not deliberately poor b0 or new calibration.",
+  "samples": 2,
+  "prior_commit": "4d27add70e78da7152eb86cccae67b37d7445b4b",
+  "selected_recipe_hashes": {
+    "selected-public-next-pass03.json": "584b82d6030f11939e4f65879c34dc50e2a65d2ac45c5bbd2fb1c47c25691351",
+    "selected-public-neutral-rim-pass03.json": "b736daea2337466af1100acad4e0ec6af675f389a6df5bc9bb9d686149c76ab6"
+  },
+  "helper_sha256": "4ae3711c075ad815a716dde1e691d5f568ffa16c8513aa56153761e80baf8fa3",
+  "source_kind": "Estimated local header affineRGB/hiddenobserved0/upper3.785 uncertainty",
+  "generated_shadow": "ZERO/no targetcontext",
+  "B_paired": false
+}

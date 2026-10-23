@@ -1,0 +1,68 @@
+{
+  "parameters": [
+    "loggamma/log1.25",
+    "shared_rim_gain_delta/.03",
+    "shared_bias_delta/.015",
+    "shared_core_gain_delta/.03"
+  ],
+  "local_trust_box": [
+    -0.2,
+    0.2
+  ],
+  "MSE_Jacobian": [
+    [
+      -10.627359210714424,
+      -1.4259744952691804,
+      2.1817736349211776,
+      1.84593625675715
+    ],
+    [
+      3.377953869540932,
+      -5.0507898965080065,
+      -7.271532849132757,
+      -9.958462617255273
+    ],
+    [
+      0.09923672347889126,
+      -0.2400989733142343,
+      -0.15034189009805538,
+      -4.83434606608858e-05
+    ],
+    [
+      5.89234303220799,
+      0.0,
+      -7.85175978707396,
+      -14.484816659065244
+    ],
+    [
+      7.7547299058779435,
+      0.0,
+      -8.572684827828029,
+      -15.346738000099647
+    ]
+  ],
+  "objective_gradient": [
+    -6.425765286637817,
+    -2.5134191156408283,
+    -0.6542183102950025,
+    -1.6953834054465768
+  ],
+  "LP_success": true,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "normalized_step": [
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "predicted_objective_change": -2.2577572236040453,
+  "predicted_guard_changes": [
+    -1.6051247628610552,
+    -3.780566298671021,
+    -0.05825049667881187,
+    -3.288846682786243,
+    -3.2329385844099465
+  ],
+  "native_fit_or_gain": false,
+  "limits": "Local analytical cone under ONE shared curve+three existing common material offsets. No global infeasibility/optimality claim; actual nonlinear controls/native scores required. Wider23coefficient fits not searched."
+}

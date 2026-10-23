@@ -1,0 +1,74 @@
+{
+  "index": 155,
+  "v": [
+    0.10263988606345262,
+    -0.030753635686307353,
+    0.03213360959994287,
+    -0.004570901943956379
+  ],
+  "E": 6.855726742802593,
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 5.832447052001953,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 8.791810989379883,
+          "pixels": 61248
+        },
+        "shadow": 11.466329998265591
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 13.242044387461515,
+    "plus": 3.667139623528374
+  },
+  "guard_values": [
+    5.832447052001953,
+    8.791810989379883,
+    11.466329998265591,
+    13.242044387461515,
+    3.667139623528374
+  ],
+  "all_nonregression": true,
+  "nonregression": {
+    "glass": true,
+    "rim": true,
+    "exterior": true,
+    "archivebox": true,
+    "plus": true
+  },
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 6.855726742802593,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": 0.0021488793175377108,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "phase": "seed-2-trust-8",
+  "native_actual_render": true,
+  "material_cache": "/tmp/agent-toolbar-revision2-outer-fit/evaluations/0155.npz",
+  "seconds": 4.2914018630981445
+}

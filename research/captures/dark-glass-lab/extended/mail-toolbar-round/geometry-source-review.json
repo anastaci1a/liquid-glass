@@ -1,0 +1,131 @@
+{
+  "source_models": [
+    {
+      "region": "upper",
+      "affine": 1.5595902090993052,
+      "quadratic": 1.0136179116770916
+    },
+    {
+      "region": "right",
+      "affine": 2.1283872162038215,
+      "quadratic": 1.0772120262567397
+    },
+    {
+      "region": "lower",
+      "affine": 4.7552448233328555,
+      "quadratic": 1.2867719922501897
+    },
+    {
+      "region": "independent_upper",
+      "affine": 1.9045102161887664,
+      "quadratic": 0.8915562714900012
+    },
+    {
+      "region": "independent_lower",
+      "affine": 2.235396228985105,
+      "quadratic": 2.092354829386983
+    }
+  ],
+  "quadratic_conditionally_preferred": false,
+  "quadratic_coefficients_rgb": [
+    [
+      0.5494764115062388,
+      0.5545496083603673,
+      0.5804230747760033
+    ],
+    [
+      0.017618793839484552,
+      0.017936397893199636,
+      0.01702284442247505
+    ],
+    [
+      0.0455152220602626,
+      0.043242345425040025,
+      0.04185032736382797
+    ],
+    [
+      -0.0010659557517040097,
+      -0.001957306444020721,
+      -0.0016605465815010608
+    ],
+    [
+      0.0032399556447550797,
+      0.0040179123165132264,
+      0.0033470200736419294
+    ],
+    [
+      -0.004712664779755293,
+      -0.0037100973349340266,
+      -0.004745876187065868
+    ]
+  ],
+  "geometry": {
+    "capsule": {
+      "parameters": [
+        652.9215339840067,
+        700.1704354942412,
+        302.02453467818486,
+        81.96051751706183
+      ],
+      "held_normal_rmse": 0.46945725457357057
+    },
+    "crown": {
+      "parameters": [
+        652.9226208023614,
+        700.1750930751396,
+        302.0927161724947,
+        82.04749695263396,
+        0.13515989911537613
+      ],
+      "held_normal_rmse": 0.42881783002940776
+    },
+    "total_landmarks": 580,
+    "strong_train": 435,
+    "strong_held": 145,
+    "selection": "Strength>=.5 predeclared; full peaks retained; every4th held",
+    "limits": "Absolute image gradient, not known physical coverage. Crown residual first-order normal projection, not exact Euclidean distance; comparable only near boundary. No optical fit/count."
+  },
+  "glyphs": [
+    {
+      "name": "trash",
+      "glyph": "trash.tag.color.large",
+      "weight": 400,
+      "bounds": [
+        165.0,
+        -38.0,
+        1526.0301701530748,
+        1512.0
+      ],
+      "svg_sha256": "b5a2650b197009d01d768cc8334e7d28831e196ed389b1f81b0fc92f817f46d0",
+      "status": "Original font candidate, no fitted weight/pose; exact reference identity pending visual check"
+    },
+    {
+      "name": "folder",
+      "glyph": "folder.tag.color.large",
+      "weight": 400,
+      "bounds": [
+        165.0,
+        137.0,
+        1624.0,
+        1332.0
+      ],
+      "svg_sha256": "0a2421378ed63af3860d14fe9015ca59947e3feaa76debe6a8832a950be91fef",
+      "status": "Original font candidate, no fitted weight/pose; exact reference identity pending visual check"
+    },
+    {
+      "name": "reply",
+      "glyph": "arrowshape.turn.up.backward.crop.color.large",
+      "weight": 400,
+      "bounds": [
+        194.0,
+        -445.0,
+        2680.0,
+        1890.0
+      ],
+      "svg_sha256": "15ecd758677e3a9e78d55717c623f621242a8915a46af009f30e5d054d27e92f",
+      "status": "Original font candidate, no fitted weight/pose; exact reference identity pending visual check"
+    }
+  ],
+  "optical_fits": 0,
+  "passes": 0
+}

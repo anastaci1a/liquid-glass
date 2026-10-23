@@ -1,0 +1,308 @@
+{
+  "scope": "Private empirical post-material per-channel power response, not physical dispersion or an Apple formula; no source/target/mask/accepted-state changes. Not counted or adopted.",
+  "model": "C_out=C_existing^gamma_rgb after existing integration/output blur; positive exponent shared on both backgrounds.",
+  "targets": [
+    {
+      "glass": {
+        "pixels": 15221,
+        "rmse": 5.888642311096191
+      },
+      "rim": {
+        "pixels": 8296,
+        "rmse": 7.319240093231201
+      },
+      "held": {
+        "pixels": 2797,
+        "rmse": 7.1194586753845215
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.469886064529419
+      },
+      "ssim": 0.9780262112617493,
+      "loss": 40.34465845033153
+    },
+    {
+      "glass": {
+        "pixels": 15289,
+        "rmse": 9.730605125427246
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 12.651615142822266
+      },
+      "held": {
+        "pixels": 2804,
+        "rmse": 13.018393516540527
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.964904308319092
+      },
+      "ssim": 0.9711480736732483,
+      "loss": 114.2982829915206
+    }
+  ],
+  "results": [
+    {
+      "parameters": {
+        "sigma": 6.644470218349408,
+        "amplitude": 1.2289680366372868,
+        "band": 0.43987339501423806,
+        "power": 2.351669476828825,
+        "tangent": 0,
+        "tangent_band": 0.4,
+        "core_x": 0.007376192694966,
+        "core_y": 0,
+        "post_sigma": 0.17924994244587938,
+        "coupling": 0,
+        "gamma": 1,
+        "rim_width": 0.035159899572437585,
+        "thin_width": 0.010668084005011331,
+        "spline": true,
+        "shape_dx": -0.004005277907672262,
+        "shape_dy": -0.004950768082564813,
+        "half_x_delta": 0.0017122124201763907,
+        "half_y_delta": 0,
+        "radius_delta": 0,
+        "c0": -2.4665775113707293,
+        "c1": 0.813544615462612,
+        "c2": 0.673371319553467,
+        "c3": 0.7518448903000997,
+        "c4": 0.683035683159479,
+        "c5": 0.035192412856533004,
+        "c6": -0.03767689337640524,
+        "shadow": {
+          "opacity": 0.06397813905839193,
+          "sigma": 0.2381474908903573,
+          "offset": [
+            0.049999833528026554,
+            -0.0999999719363685
+          ]
+        }
+      },
+      "material": [
+        0.6536744846391023,
+        0.6589737367831486,
+        0.6890859051379509,
+        0.35527469142015766,
+        0.3568193547878825,
+        0.32363409362152845,
+        -1.135872605816732,
+        0.5278717797351042,
+        0.0424790085313467,
+        0.37123488581606634,
+        0.07562857586241016,
+        0.2462789285787062,
+        0.027111674254414395,
+        -0.01812725414206722,
+        0.021822316090119268,
+        0.002825707801395109,
+        -0.000935413055398632,
+        -0.024024675552187888,
+        -0.038494029142753426,
+        0.021029301512937144,
+        0.6492201543272769,
+        0.6558619248263602,
+        0.6955709204920976
+      ],
+      "output_gamma": [
+        0.8903592316524666,
+        0.9127802266555198,
+        0.88065203960906
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 15221,
+            "rmse": 6.114908584694344
+          },
+          "rim": {
+            "pixels": 8296,
+            "rmse": 7.605005958889651
+          },
+          "held": {
+            "pixels": 2797,
+            "rmse": 7.389962397307615
+          },
+          "interior": {
+            "pixels": 6925,
+            "rmse": 3.591744351183351
+          },
+          "loss": 43.52530958984214
+        },
+        {
+          "glass": {
+            "pixels": 15289,
+            "rmse": 10.517185683673768
+          },
+          "rim": {
+            "pixels": 8364,
+            "rmse": 13.849163706012408
+          },
+          "held": {
+            "pixels": 2804,
+            "rmse": 13.561342254787057
+          },
+          "interior": {
+            "pixels": 6925,
+            "rmse": 3.5429273609985126
+          },
+          "loss": 134.96763690019012
+        }
+      ],
+      "violation": 0.11681133169210968,
+      "permitted": false,
+      "seed": "single",
+      "evaluations": 4292,
+      "seconds": 276.48487281799316,
+      "solver_message": "Iteration limit reached",
+      "source_support": [
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 1.0,
+          "gaussian_3sigma_observed_fraction": 1.0,
+          "source_gaussian_radius_native_px": 21
+        },
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 1.0,
+          "gaussian_3sigma_observed_fraction": 1.0,
+          "source_gaussian_radius_native_px": 21
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "sigma": 6.534034848104269,
+        "amplitude": 1.2289680366372868,
+        "band": 0.43987339501423806,
+        "power": 2.351669476828825,
+        "tangent": 0.0,
+        "tangent_band": 0.4,
+        "core_x": 0.00236775084334414,
+        "core_y": 0.0,
+        "post_sigma": 0.2827313507050951,
+        "coupling": 0.0,
+        "gamma": 1.0,
+        "rim_width": 0.03493971724844789,
+        "thin_width": 0.012081362939893663,
+        "spline": true,
+        "shape_dx": -0.0003271426565122741,
+        "shape_dy": -0.0024186515791946423,
+        "half_x_delta": 6.20824505668529e-05,
+        "half_y_delta": 0.0,
+        "radius_delta": 0.0,
+        "c0": -2.223810100677247,
+        "c1": 1.322250609124548,
+        "c2": 0.591500213924327,
+        "c3": 0.853347034212344,
+        "c4": 0.6594470248780486,
+        "c5": 0.042198246323704655,
+        "c6": -0.04119888863241014,
+        "shadow": {
+          "opacity": 0.06397813905839193,
+          "sigma": 0.2381474908903573,
+          "offset": [
+            0.049999833528026554,
+            -0.0999999719363685
+          ]
+        }
+      },
+      "material": [
+        0.6003080783010416,
+        0.6106338461402069,
+        0.6162325078800701,
+        0.4130701856386369,
+        0.4066580439869616,
+        0.3957811923715321,
+        -0.4167210060100836,
+        -0.2867102536354489,
+        -0.7141550209878545,
+        0.34265571110412757,
+        0.10651666972440002,
+        0.2905939222907407,
+        0.036689417880416846,
+        -0.00024572270287470687,
+        -0.0026121589022056165,
+        -0.0015655333449049054,
+        -0.002308239350456408,
+        -0.05496774348986916,
+        -0.04501867113714054,
+        0.03334434836592918,
+        0.5860432517710493,
+        0.5979759181789259,
+        0.6245909755970835
+      ],
+      "output_gamma": [
+        0.9878717015590758,
+        0.9827951670428076,
+        0.9720549415446851
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 15221,
+            "rmse": 6.922704533651742
+          },
+          "rim": {
+            "pixels": 8296,
+            "rmse": 8.505778528488511
+          },
+          "held": {
+            "pixels": 2797,
+            "rmse": 8.216093090057097
+          },
+          "interior": {
+            "pixels": 6925,
+            "rmse": 4.320173560328429
+          },
+          "loss": 55.251167154878516
+        },
+        {
+          "glass": {
+            "pixels": 15289,
+            "rmse": 9.78123636545139
+          },
+          "rim": {
+            "pixels": 8364,
+            "rmse": 12.738097719336245
+          },
+          "held": {
+            "pixels": 2804,
+            "rmse": 12.990981196444695
+          },
+          "interior": {
+            "pixels": 6925,
+            "rmse": 3.9050602534856345
+          },
+          "loss": 115.64854943798787
+        }
+      ],
+      "violation": 0.06698974186833423,
+      "permitted": false,
+      "seed": "paired",
+      "evaluations": 4302,
+      "seconds": 294.7901315689087,
+      "solver_message": "Iteration limit reached",
+      "source_support": [
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 1.0,
+          "gaussian_3sigma_observed_fraction": 1.0,
+          "source_gaussian_radius_native_px": 20
+        },
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 1.0,
+          "gaussian_3sigma_observed_fraction": 1.0,
+          "source_gaussian_radius_native_px": 20
+        }
+      ]
+    }
+  ]
+}

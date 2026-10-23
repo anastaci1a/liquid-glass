@@ -1,0 +1,44 @@
+{
+  "history": {
+    "published_branches": 108,
+    "exact_source_tree_and_metadata_comparisons": 726,
+    "imported_main": "8de5a47919f226dd2db312a3a9121c4e7e840498",
+    "full_history_secret_scan": "PASS: gitleaks 8.30.1, 668 scanned commits with changes; 726 distinct mapped retained revisions",
+    "largest_blob_bytes": 38167798
+  },
+  "local_capture": {
+    "files": 12347,
+    "bytes": 120196636,
+    "secret_scan": "PASS: 118743998 bytes scanned",
+    "privacy_marker_scan": "PASS: 12347 files; zero flagged",
+    "status": "PROVISIONAL_NO_WRITER_FREEZE",
+    "tracked_files": 11762,
+    "tracked_bytes": 118431732,
+    "preimport_scanned_files": 12347,
+    "privacy_and_rights_holds": "7 private feedback files plus 578 untracked vectors/third-party pages withheld after automated scan"
+  },
+  "docs": {
+    "build": "PASS: 666 files",
+    "links": "PASS: 632 local links/assets/anchors"
+  },
+  "backup": {
+    "git_bundle": "PASS: git bundle verify",
+    "filesystem_archive": "PASS: zstd integrity; 17853788160 uncompressed bytes",
+    "container_archive": "PROVISIONAL: 891 MiB read-only scoped research capture; no writer freeze",
+    "empty_container_attempt": "Excluded: first command lacked stdin forwarding and produced empty tar; retained for audit"
+  },
+  "pending": [
+    "Fresh checkout checks",
+    "Final source consistency/exclusive ownership",
+    "Public licensing/storage review of untracked binary evidence and third-party packages",
+    "Generated-site uniqueness and symlink reconciliation",
+    "Localica cutover and future session-directory updates"
+  ],
+  "python": {
+    "status": "PASS",
+    "tests": 24,
+    "environment": "Isolated migration container; pinned requirements installed to independent project-workspace dependency volume",
+    "initial_attempt": "Failed ENOSPC in ephemeral Docker root; preserved log. Retried package installation on host-backed migration volume; no research/source change."
+  },
+  "whitespace": "Captured historical source retains original whitespace; new project-authored files checked separately"
+}

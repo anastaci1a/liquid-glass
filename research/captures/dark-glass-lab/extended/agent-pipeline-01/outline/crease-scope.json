@@ -1,0 +1,58 @@
+{
+  "status": "STOP_FIRST_INVARIANT_FAILURE_NO_REFLECTED_PATHS",
+  "original_O1_deadline_unix": 1792658175.721,
+  "points": [
+    {
+      "x_over_L": -7.225022904390323,
+      "y_over_L": 0,
+      "rho_float64": 0.9999999999999998,
+      "h": 0,
+      "hx": 0.1107262925787925,
+      "hy": 0,
+      "inside": true,
+      "boundary_mask": false,
+      "prior_complete": true,
+      "native_world_pixel": [
+        321.79412349832967,
+        413.1445363169052
+      ]
+    },
+    {
+      "x_over_L": 7.225022904390323,
+      "y_over_L": 0,
+      "rho_float64": 0.9999999999999998,
+      "h": 0,
+      "hx": -0.1107262925787925,
+      "hy": 0,
+      "inside": true,
+      "boundary_mask": false,
+      "prior_complete": true,
+      "native_world_pixel": [
+        1600.6231775754168,
+        413.1445363169052
+      ]
+    }
+  ],
+  "defect": "Exact long-axis poles are zero-thickness front/back crease; mixed rho versus longitudinal quadratic arithmetic yields rho<1,boundary_maskFalse,h0 and prior completeTrue. Those2 checkpoint paths were NOT physically regular. No silent normal or input repair.",
+  "geometry_points_queried": 890850,
+  "rays_new": 0,
+  "boundary_events": 0,
+  "RGB_samples": 0,
+  "images": 0,
+  "fits": 0,
+  "native_current_geometry_scope": {
+    "whole_subrays": 890848,
+    "h_nonpositive": 0,
+    "minimum_positive_h_L": 1.1969070170732663e-7,
+    "same_geometry_both_references": true,
+    "images_rerendered": 0,
+    "score_or_mask_change": false
+  },
+  "remaining_limit": "Native lattice has no h0 hits in this frozen case, but original checkpoint PASS interpretation requires erratum; no reflected branch image or complete-radiance claim until classification reviewed.",
+  "suggested_review_only": "Treat actual inside h0 as unresolved crease in adapter/core contract; ensure parameterized endpoints and height-domain arithmetic agree. No code fix activated.",
+  "finished_unix": 1792657921.7004666,
+  "level_height_points": 890850,
+  "additional_footprint_boundary_entry_points": 4,
+  "total_conservative_geometry_entry_points": 890854,
+  "counting_note": "Includes repeated public footprint and boundary-mask checks on two points; internal component calls are not separate level/height input points."
+}

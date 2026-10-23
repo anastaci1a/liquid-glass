@@ -1,0 +1,167 @@
+{
+  "seed": "retained",
+  "stage": 2,
+  "experiment": "Clear-source phase refinement",
+  "parameters": {
+    "sigma": 0.7154197011974018,
+    "amplitude": 0.5564530838345332,
+    "band": 0.424108805473433,
+    "power": 1.52340859276697,
+    "tangent": 0.0,
+    "tangent_band": 0.030271482527418642,
+    "core_x": 0.0,
+    "core_y": 0.0,
+    "post_sigma": 0.0,
+    "coupling": 0.0,
+    "gamma": 0.6898538198955676,
+    "rim_width": 0.16634824581646449,
+    "thin_width": 0.023761556589599372,
+    "spline": true,
+    "shape_dx": 0.006119924195818901,
+    "shape_dy": -0.002664039153631349,
+    "half_x_delta": 0.0025428659068449638,
+    "half_y_delta": -0.04975203214214212,
+    "radius_delta": 0.04968943799848582,
+    "c0": 0.6143341141337322,
+    "c1": 0.22624875786476323,
+    "c2": 0.5173471568490106,
+    "c3": 0.5400620795865559,
+    "c4": 0.4166499611156156,
+    "c5": 0.680981546810749,
+    "c6": -0.012626734027245366,
+    "shadow": {
+      "opacity": 0.013703965855226525,
+      "sigma": 0.19438326590476138,
+      "offset": [
+        0.0012041224444056782,
+        0.0999999335625205
+      ]
+    },
+    "blur_transition": 0.9998343890913571,
+    "tangent_exponent": 4.008891334418213,
+    "cap_normal_gain": 0.0,
+    "cap_tangent_fade": 0.0229637677992494,
+    "cap_join_width": 0.0,
+    "anchor_x": 0.14027401888353472,
+    "anchor_y": 0.12336504872127735,
+    "anchor_band": 0.6109710396827526
+  },
+  "material": [
+    0.31457700553684415,
+    1.153992991341433,
+    1.2639337394839296,
+    0.5594665616185935,
+    -0.22532827626029053,
+    -0.32524195251686666,
+    -0.004940616479141772,
+    0.02600502419851251,
+    -0.0038960865372529453,
+    0.18337375233678255,
+    0.04945248494865311,
+    -0.002047636555418938,
+    -0.07937173222095657,
+    -0.05613893258392675,
+    0.05262226723803612,
+    -0.018032899808404706,
+    -0.038715553017412994,
+    -0.03307907418122298,
+    0.058923122944958495,
+    -0.001970025338458968,
+    0.48130129370887875,
+    1.31286044881502,
+    1.4217087344771389
+  ],
+  "training_loss": 0.007463063573327691,
+  "scores": [
+    {
+      "glass": {
+        "pixels": 186310,
+        "rmse": 20.801279067993164
+      },
+      "rim": {
+        "pixels": 46479,
+        "rmse": 22.76873779296875
+      },
+      "held": {
+        "pixels": 45815,
+        "rmse": 22.027324676513672
+      },
+      "interior": {
+        "pixels": 139831,
+        "rmse": 20.10471534729004
+      },
+      "ssim": 0.9263356924057007,
+      "loss": 458.4098738106604
+    },
+    {
+      "glass": {
+        "pixels": 177426,
+        "rmse": 13.383596420288086
+      },
+      "rim": {
+        "pixels": 43962,
+        "rmse": 13.955894470214844
+      },
+      "held": {
+        "pixels": 44654,
+        "rmse": 13.269346237182617
+      },
+      "interior": {
+        "pixels": 133464,
+        "rmse": 13.189650535583496
+      },
+      "ssim": 0.9537043571472168,
+      "loss": 183.81455433793562
+    },
+    {
+      "glass": {
+        "pixels": 171306,
+        "rmse": 30.7447566986084
+      },
+      "rim": {
+        "pixels": 41340,
+        "rmse": 17.46417808532715
+      },
+      "held": {
+        "pixels": 42039,
+        "rmse": 29.568618774414062
+      },
+      "interior": {
+        "pixels": 129966,
+        "rmse": 33.895286560058594
+      },
+      "ssim": 0.8804164528846741,
+      "loss": 753.1672999784445
+    }
+  ],
+  "source_support": [
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.04716869733240298,
+      "gaussian_3sigma_observed_fraction": 0.04533841447050615,
+      "source_gaussian_radius_native_px": 3
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0,
+      "gaussian_3sigma_observed_fraction": 0.0,
+      "source_gaussian_radius_native_px": 3
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.052899489801875005,
+      "gaussian_3sigma_observed_fraction": 0.05091473737055328,
+      "source_gaussian_radius_native_px": 3
+    }
+  ],
+  "supported": [
+    true,
+    true,
+    true
+  ],
+  "evaluations": 107,
+  "seconds": 3.501911163330078
+}

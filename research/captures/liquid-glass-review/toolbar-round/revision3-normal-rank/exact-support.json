@@ -1,0 +1,93 @@
+{
+  "gaussian_actual_impulse_nonzero_radius_native_px": 5,
+  "sigma": 1.25,
+  "support": [
+    {
+      "coefficient": 0,
+      "raw_active_output_pixels": 6436,
+      "guard_potentially_affected_pixels": {
+        "exterior": 300,
+        "archivebox": 0,
+        "plus": 0
+      },
+      "exact_disjoint_support_guards": [
+        "archivebox",
+        "plus"
+      ]
+    },
+    {
+      "coefficient": 1,
+      "raw_active_output_pixels": 15216,
+      "guard_potentially_affected_pixels": {
+        "exterior": 300,
+        "archivebox": 0,
+        "plus": 0
+      },
+      "exact_disjoint_support_guards": [
+        "archivebox",
+        "plus"
+      ]
+    },
+    {
+      "coefficient": 2,
+      "raw_active_output_pixels": 30788,
+      "guard_potentially_affected_pixels": {
+        "exterior": 300,
+        "archivebox": 0,
+        "plus": 0
+      },
+      "exact_disjoint_support_guards": [
+        "archivebox",
+        "plus"
+      ]
+    },
+    {
+      "coefficient": 3,
+      "raw_active_output_pixels": 64696,
+      "guard_potentially_affected_pixels": {
+        "exterior": 300,
+        "archivebox": 0,
+        "plus": 0
+      },
+      "exact_disjoint_support_guards": [
+        "archivebox",
+        "plus"
+      ]
+    },
+    {
+      "coefficient": 4,
+      "raw_active_output_pixels": 127362,
+      "guard_potentially_affected_pixels": {
+        "exterior": 300,
+        "archivebox": 205,
+        "plus": 0
+      },
+      "exact_disjoint_support_guards": [
+        "plus"
+      ]
+    },
+    {
+      "coefficient": 5,
+      "raw_active_output_pixels": 186592,
+      "guard_potentially_affected_pixels": {
+        "exterior": 148,
+        "archivebox": 17738,
+        "plus": 11561
+      },
+      "exact_disjoint_support_guards": []
+    },
+    {
+      "coefficient": 6,
+      "raw_active_output_pixels": 213437,
+      "guard_potentially_affected_pixels": {
+        "exterior": 0,
+        "archivebox": 29382,
+        "plus": 21756
+      },
+      "exact_disjoint_support_guards": [
+        "exterior"
+      ]
+    }
+  ],
+  "limits": "Fixed discrete native grid/spline basis; conservative square postfilter support includes all actual Gaussian taps. Zero overlap proves unchanged complete color under coefficient changes with frozen geometry/material/coverage/glyph/shadow, independently of unknown source. Nonzero overlap does NOT establish a nonzero photometric derivative. No source or target sampled."
+}

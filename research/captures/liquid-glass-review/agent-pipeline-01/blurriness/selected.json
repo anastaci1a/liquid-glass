@@ -1,0 +1,248 @@
+{
+  "status": "EXPERIMENTAL_MATERIAL_CANDIDATE_PENDING_PRIMARY_REVIEW",
+  "selected_sigma_native_px": 6.75,
+  "selected_sigma_over_L": 0.07627118644067797,
+  "finite_radius_native_px": 21,
+  "source_sigma_native_px": 0,
+  "geometry": "H1 actual harmonic roundedrect p3 depth.15 crown.4 n1.5 D2; frozen accepted pose/footprint",
+  "material": {
+    "common_gain": 1,
+    "common_bias": 0,
+    "lighting": "none",
+    "outline": "none",
+    "shadow": "none"
+  },
+  "operator": "root44225821 coverage_blur; lens-only colors, sharp actual coverage, original clear premultiplied field, fixed foreground afterward",
+  "guards": {
+    "a": {
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 63.56722640991211
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 85.73545837402344
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 64.77703857421875
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 51.570350646972656
+        },
+        "ssim": 0.809238076210022,
+        "loss": 5033.72523819549,
+        "E": 70.94875078671569,
+        "exterior": {
+          "pixels": 46409,
+          "rmse": 19.254291534423828
+        },
+        "foreground_MSE": [
+          2310.01318359375,
+          3679.439208984375,
+          4671.3359375,
+          1888.4228515625,
+          1829.1416015625
+        ]
+      },
+      "guards": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "exterior": true,
+        "E": true,
+        "ssim": true,
+        "foreground0": true,
+        "foreground1": true,
+        "foreground2": true,
+        "foreground3": true,
+        "foreground4": true
+      },
+      "all_guards": true,
+      "clipping": {
+        "lens_float64_min": 0.01617554584772961,
+        "lens_float64_max": 0.9923357679042814,
+        "lens_float64_below0": 0,
+        "lens_float64_above1": 0,
+        "native_float32_below0": 0,
+        "native_float32_above1": 0
+      },
+      "advisory_crops": {
+        "left_shoulder": {
+          "pixels": 5976,
+          "RMSE": 71.30636596679688,
+          "signed_RGB": [
+            -26.840852737426758,
+            -43.622802734375,
+            -57.79115295410156
+          ]
+        },
+        "right_shoulder": {
+          "pixels": 7368,
+          "RMSE": 86.02790069580078,
+          "signed_RGB": [
+            -24.687721252441406,
+            -21.7312068939209,
+            -4.46785831451416
+          ]
+        },
+        "middle": {
+          "pixels": 32560,
+          "RMSE": 49.12045669555664,
+          "signed_RGB": [
+            18.35858154296875,
+            7.2360453605651855,
+            -39.52940368652344
+          ]
+        },
+        "B_text": {
+          "pixels": 67408,
+          "RMSE": 53.59561538696289,
+          "signed_RGB": [
+            17.801517486572266,
+            5.1432085037231445,
+            -50.684261322021484
+          ]
+        },
+        "upper": {
+          "pixels": 20860,
+          "RMSE": 62.88748550415039,
+          "signed_RGB": [
+            -22.401081085205078,
+            -36.9686279296875,
+            -77.77943420410156
+          ]
+        },
+        "lower": {
+          "pixels": 19708,
+          "RMSE": 81.25830078125,
+          "signed_RGB": [
+            48.39904022216797,
+            61.07316970825195,
+            94.20474243164062
+          ]
+        }
+      }
+    },
+    "b": {
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 28.433307647705078
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 39.02613830566406
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 28.502079010009766
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 22.58826446533203
+        },
+        "ssim": 0.886772096157074,
+        "loss": 1022.8289299681767,
+        "E": 31.981696796264213,
+        "exterior": {
+          "pixels": 46409,
+          "rmse": 21.74403190612793
+        },
+        "foreground_MSE": [
+          2801.000732421875,
+          971.5890502929688,
+          280.66802978515625,
+          412.50128173828125,
+          478.4530944824219
+        ]
+      },
+      "guards": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "exterior": true,
+        "E": true,
+        "ssim": true,
+        "foreground0": true,
+        "foreground1": true,
+        "foreground2": true,
+        "foreground3": true,
+        "foreground4": true
+      },
+      "all_guards": true,
+      "clipping": {
+        "lens_float64_min": 0.36065997646731307,
+        "lens_float64_max": 0.9933563425115222,
+        "lens_float64_below0": 0,
+        "lens_float64_above1": 0,
+        "native_float32_below0": 0,
+        "native_float32_above1": 0
+      },
+      "advisory_crops": {
+        "left_shoulder": {
+          "pixels": 5976,
+          "RMSE": 36.12825393676758,
+          "signed_RGB": [
+            1.4509893655776978,
+            1.413001298904419,
+            1.4094432592391968
+          ]
+        },
+        "right_shoulder": {
+          "pixels": 7368,
+          "RMSE": 26.66704750061035,
+          "signed_RGB": [
+            10.683979988098145,
+            10.68567180633545,
+            10.707562446594238
+          ]
+        },
+        "middle": {
+          "pixels": 32560,
+          "RMSE": 25.98143196105957,
+          "signed_RGB": [
+            13.516546249389648,
+            13.469200134277344,
+            13.540887832641602
+          ]
+        },
+        "B_text": {
+          "pixels": 67408,
+          "RMSE": 28.29473876953125,
+          "signed_RGB": [
+            10.186917304992676,
+            10.15194034576416,
+            10.223795890808105
+          ]
+        },
+        "upper": {
+          "pixels": 20860,
+          "RMSE": 34.955108642578125,
+          "signed_RGB": [
+            26.692642211914062,
+            26.833965301513672,
+            26.881019592285156
+          ]
+        },
+        "lower": {
+          "pixels": 19708,
+          "RMSE": 36.4343376159668,
+          "signed_RGB": [
+            33.53334045410156,
+            33.430335998535156,
+            33.55070114135742
+          ]
+        }
+      }
+    }
+  },
+  "historical_adoption": false,
+  "reason": "Text detail ratio closer to Apple than lower-score sigma9; no per-image/crop/channel term",
+  "source_proof": "output-support-FIRST.json",
+  "native_rays_new": 0
+}

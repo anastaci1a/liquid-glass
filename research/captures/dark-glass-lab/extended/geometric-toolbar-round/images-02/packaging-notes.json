@@ -1,0 +1,17 @@
+{
+  "optical_trials": 2,
+  "optical_restarts": 0,
+  "tracing_repeats_for_packaging": 0,
+  "failures": [
+    {
+      "stage": "cached presentation only",
+      "error": "matplotlib unavailable before calculations",
+      "resolution": "No install. Standalone SVG scientific plot from saved arrays."
+    },
+    {
+      "stage": "cached geometry summary only",
+      "error": "Empty off-footprint row reduction",
+      "resolution": "Skip empty rows; no field/ray/native image repeated."
+    }
+  ]
+}

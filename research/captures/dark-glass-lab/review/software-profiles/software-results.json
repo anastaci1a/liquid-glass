@@ -1,0 +1,37 @@
+{
+  "results": [
+    "Zero optical power preserves the sampled backdrop in both models/all shapes",
+    "Both software models displace background pixels and agree with GPU coordinate probes",
+    "Both models visibly displace the actual vertical-line texture with all tint/lighting disabled",
+    "Software tone compression is monotonic and respects both endpoints",
+    "Blur changes the sampled background",
+    "Software renderer sleeps after settling",
+    "Retry clears forced software mode and starts WebGL",
+    "Unavailable WebGL context still refracts on phone layout; unsuccessful retry preserves rendering"
+  ],
+  "agreement": [
+    {
+      "model": "0",
+      "profile": "0",
+      "maxChannelDifference": 1
+    },
+    {
+      "model": "0",
+      "profile": "1",
+      "maxChannelDifference": 1
+    },
+    {
+      "model": "1",
+      "profile": "1",
+      "maxChannelDifference": 1
+    }
+  ],
+  "softwareFrameMeanMs": 10.170000000794728,
+  "resolution": {
+    "width": 480,
+    "height": 200,
+    "renders": 114
+  },
+  "browser": "156.0.8078.4",
+  "limitation": "Headless Chromium on server CPU; not device performance"
+}

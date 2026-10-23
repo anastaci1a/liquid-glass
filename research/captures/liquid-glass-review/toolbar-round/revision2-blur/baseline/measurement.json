@@ -1,0 +1,69 @@
+{
+  "v": [
+    0.06470588235294118,
+    0.007352941176470588
+  ],
+  "native_E": 6.870490597949865,
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 5.843130588531494,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 8.813648223876953,
+          "pixels": 61248
+        },
+        "shadow": 11.46944201723165
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 13.242044387461515,
+    "plus": 3.667139623528374
+  },
+  "guard_values": [
+    5.843130588531494,
+    8.813648223876953,
+    11.46944201723165,
+    13.242044387461515,
+    3.667139623528374
+  ],
+  "nonregression": {
+    "glass": true,
+    "rim": true,
+    "exterior": true,
+    "archivebox": true,
+    "plus": true
+  },
+  "all_nonregression": true,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 6.870490597949865,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": 0.0,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "phase": "baseline",
+  "seconds": 0.048664093017578125
+}

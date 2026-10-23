@@ -1,0 +1,165 @@
+{
+  "experiment": 3,
+  "parameters": {
+    "sigma": 0.0,
+    "amplitude": 0.5267679257572784,
+    "band": 1.0,
+    "power": 4.616458746391088,
+    "tangent": 0.06884379454178928,
+    "tangent_band": 0.5725089050638112,
+    "core_x": 0.021436581086020326,
+    "core_y": 0.0465145514832763,
+    "post_sigma": 0.0,
+    "coupling": 0.0016248130447595144,
+    "gamma": 1.0,
+    "rim_width": 0.16676430536738227,
+    "thin_width": 0.049904907727718766,
+    "spline": true,
+    "shape_dx": 0.0,
+    "shape_dy": 0.0,
+    "half_x_delta": 0.0,
+    "half_y_delta": 0.0,
+    "radius_delta": 0.0,
+    "c0": -1.2400352856401555,
+    "c1": 0.6341098182704564,
+    "c2": 0.518943708840736,
+    "c3": 0.4591098340704609,
+    "c4": 0.35505635632255644,
+    "c5": 0.17433241775719907,
+    "c6": 0.0799759449691967,
+    "shadow": {
+      "opacity": 0.030792257176537066,
+      "sigma": 0.14035990212261495,
+      "offset": [
+        0.0081036453594727,
+        0.09999999835491878
+      ]
+    },
+    "blur_transition": 0.0,
+    "tangent_exponent": 4.911374076091611,
+    "cap_normal_gain": -0.02318594725591587,
+    "cap_tangent_fade": 0.9999987467000022,
+    "cap_join_width": 0.0,
+    "crown_softness": 0.185
+  },
+  "material": [
+    0.40874790988439436,
+    1.0984819116931572,
+    1.161706978320491,
+    0.8,
+    0.19705857858945586,
+    0.14124608576759912,
+    0.044377578204078116,
+    0.002987568843895637,
+    -0.0002646613914977411,
+    -0.25286125001578824,
+    -0.010844897656305991,
+    2.8560198769348994e-06,
+    0.01718592397309683,
+    -0.0034577772312504185,
+    0.11646002478187038,
+    0.005604833082259385,
+    -0.11001876430511469,
+    -0.015474035663414359,
+    0.02114815875140903,
+    0.002022652974253261,
+    0.18167075691480378,
+    0.8573771571959374,
+    0.9218234513352666
+  ],
+  "scores": [
+    {
+      "glass": {
+        "pixels": 186310,
+        "rmse": 20.965280532836914
+      },
+      "rim": {
+        "pixels": 46479,
+        "rmse": 9.727593421936035
+      },
+      "held": {
+        "pixels": 45815,
+        "rmse": 24.226917266845703
+      },
+      "interior": {
+        "pixels": 139831,
+        "rmse": 23.541269302368164
+      },
+      "ssim": 0.9238492250442505,
+      "loss": 336.0679136091333
+    },
+    {
+      "glass": {
+        "pixels": 177426,
+        "rmse": 21.971158981323242
+      },
+      "rim": {
+        "pixels": 43962,
+        "rmse": 3.2258598804473877
+      },
+      "held": {
+        "pixels": 44654,
+        "rmse": 23.104494094848633
+      },
+      "interior": {
+        "pixels": 133464,
+        "rmse": 25.264841079711914
+      },
+      "ssim": 0.9187262654304504,
+      "loss": 341.0341304782907
+    }
+  ],
+  "support": [
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0012720734260104128,
+      "gaussian_3sigma_observed_fraction": 0.0012720734260104128,
+      "source_gaussian_radius_native_px": 0
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0012399535581030965,
+      "gaussian_3sigma_observed_fraction": 0.0012399535581030965,
+      "source_gaussian_radius_native_px": 0
+    }
+  ],
+  "numeric_gate": {
+    "accepted": false,
+    "epoch": "e0e3eb6530eac6186e427c2774126b2b0643c872bd4d91ea099cc9e74762fd71",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 17.56435196266832,
+        "candidate_error": 18.332155181787364,
+        "required_error_max": 17.476530202854978,
+        "relative_reduction": -0.043713723156479256,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": false
+        },
+        "passed": false
+      },
+      "B": {
+        "previous_error": 16.311998723186953,
+        "candidate_error": 18.467109424008154,
+        "required_error_max": 16.230438729571016,
+        "relative_reduction": -0.1321181258896118,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": false
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": true
+    }
+  },
+  "evaluations": 183,
+  "seconds": 2.151411294937134,
+  "accepted": false
+}

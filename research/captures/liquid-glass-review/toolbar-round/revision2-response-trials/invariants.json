@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "model_sha256": "4dc32bbd3131b7249f88a85402a909b525923e713f77da6211941641bb7c316e",
+  "tests": {
+    "power_0.8": {
+      "endpoints_exact": true,
+      "dense_strictly_increasing": true,
+      "minimum_increment": 1.220704987658916e-05
+    },
+    "power_1.0": {
+      "endpoints_exact": true,
+      "dense_strictly_increasing": true,
+      "minimum_increment": 1.52587890625e-05
+    },
+    "power_1.25": {
+      "endpoints_exact": true,
+      "dense_strictly_increasing": true,
+      "minimum_increment": 9.5367431640625e-07
+    },
+    "full_material_monotonicity": {
+      "minimum_bounded_gain": 0.258966381484697,
+      "proof": "At allpositions gain is convex mix of bounded positive rim/core gains. Positive power, positive gain, additive source-independent lighting, clip, positive conditional AA/postfilter weights preserve nondecreasing response on ALL[0,1], not just sampled intensities."
+    },
+    "gamma1_zero_offsets_smallcrop_exact": true,
+    "uniform_0.0_scale1": {
+      "expected_response": 0.0,
+      "max_error": 0.0
+    },
+    "uniform_0.43_scale1": {
+      "expected_response": 0.34820545417087306,
+      "max_error": 2.9802322387695312e-08
+    },
+    "uniform_1.0_scale1": {
+      "expected_response": 1.0,
+      "max_error": 0.0
+    },
+    "uniform_0.43_scale2": {
+      "expected_response": 0.34820545417087306,
+      "max_error": 1.4901161193847656e-07
+    }
+  }
+}

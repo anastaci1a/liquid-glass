@@ -1,0 +1,64 @@
+{
+  "raw_frames": [
+    {
+      "frame": 0,
+      "sha256": "a907c1cf23d887552865d6f35f720e7e6c7c620e9d6e01e1bc761b8fff795f4a",
+      "exact_to_accepted_normalization": true
+    },
+    {
+      "frame": 1,
+      "sha256": "c4a688c3055e579d6913be04e382310f61028e181ad89fda3ed98ead1debcd02",
+      "exact_to_accepted_normalization": true
+    }
+  ],
+  "encoder_args": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "warning",
+    "-y",
+    "-f",
+    "rawvideo",
+    "-pixel_format",
+    "rgb24",
+    "-video_size",
+    "1080x608",
+    "-framerate",
+    "15",
+    "-i",
+    "pipe:0",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "fast",
+    "-crf",
+    "17",
+    "-threads",
+    "2",
+    "-filter_threads",
+    "1",
+    "-pix_fmt",
+    "yuv420p",
+    "-vf",
+    "scale=in_range=pc:out_range=tv:out_color_matrix=bt601",
+    "-colorspace",
+    "smpte170m",
+    "-color_range",
+    "tv",
+    "-movflags",
+    "+faststart",
+    "/evidence/extended/helper-toolbar-work/playback-format-round/portable-motion-patch/first-frame-check/playback-final.mp4"
+  ],
+  "new_generated_motion_frames": 2,
+  "native4x4_tests": 0,
+  "full90frame_rerender": false,
+  "new_encodes": 0,
+  "timing_control": {
+    "real_existing_gif_frames": 90,
+    "duration_ms": 6000,
+    "byte_exact_after_timing_pass": true
+  },
+  "source_and_record": "main hashed original source/target inputs and used unchanged final pass03 recipe",
+  "scope": "Private portable export patch only; no scientific pass"
+}

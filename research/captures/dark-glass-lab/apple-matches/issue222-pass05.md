@@ -1,0 +1,5 @@
+- Pushed `610a589` on PR414: radial-tail equations with matched entry derivatives/smoother inner endpoint, plus the accuracy/generalization limits of shared monotone icon-color responses. Native app/main/Pages unchanged.
+- Private playback-only pass05 contains 21 transition controls, 18 fine blur alternatives, calculated icon-color comparisons and two 6-second motion clips. Outer refraction is fixed; these are inverse-map controls, not identified Apple surface curvature. Map-score improvement is tiny; acceptance awaits owner review.
+- Motion exposed hue reversal in independent channel fits. The shared scalar monotone response preserves neutral grays and channel ordering, at some still-image fitting cost. Keep both results as evidence; no recovered-Apple-shader claim.
+- Numerical controls pass: baseline recovery, outer-map invariance, splice derivatives, scale/rotation/Jacobian checks, supported fold counts and monotone/neutral color tests. Both 180-frame H.264 clips fully decode without errors. Offline playback is not Android performance evidence. Later element reviews will include motion clips too.
+— Codex

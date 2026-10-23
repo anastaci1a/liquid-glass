@@ -1,0 +1,14 @@
+Field definition and responsibility
+
+Let normalized x,y use L=min(reference half-extents). The retained footprint provides T(x,y), exact derivatives T_x,T_y and d=Lhat(1-sqrt(T)), Lhat=min(normalized half)=1. Its exact inward gradient is d_i=-Lhat*T_i/(2sqrt(T)), with zero assigned at the center by symmetry. The perturbation is supported only0<d<band<=1.
+
+Psi=.5*k*x^2*H(d/band), H(u)=64u^3(1-u)^3 on0<u<1;0 outside.
+H_d=192u^2(1-u)^2(1-2u)/band.
+deltaF_x=-k*x*H-.5*k*x^2*H_d*d_x.
+deltaF_y=-.5*k*x^2*H_d*d_y.
+
+The second term is the required normal component of the same potential. Omitting it would turn this particular perturbation into an arbitrary horizontal stretch. Its exact Jacobian is symmetric wherever differentiated, up to endpoint/center limits. H and its first two derivatives vanish at support endpoints, so phase isC2 and its added inverse map isC1 (not claimedC2). The inherited empirical tensor field is NOT generally integrable; adding a potential correction cannot make that whole baseline integrable. No claim of Snell transport, convex physical height, Apple's solid or lighting follows.
+
+This is a global analytic hypothesis for easing the transition from strong rim magnification into the quiet center. The source's words/caption positions never enter the field; x is the element-local coordinate, not a detected letter anchor. Parameters k and band are shared normalized coefficients, not painted crop residuals. Material, shape coverage, ordinary blur and generated shadow remain exactly fixed. Target RGB enters only error measurement. Corrected crop positions are advisory and fixed separately; native frozen glass/rim/exterior scores own the numeric gate.
+
+This one bounded study evaluates12 proposals against the pending first candidate. It must not be counted before primary accepts/commits the prerequisite. Native repeat with k0 must exactly recover pending material, and the analytic perturbation curl is checked independently by finite differences. Any mathematical/visual limitation must be retained even if a candidate passes E numerically.

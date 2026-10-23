@@ -1,0 +1,12 @@
+    # Standalone scientific figure, no fitted contour overlay.
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    fig,axes=plt.subplots(2,2,figsize=(12,7),layout='constrained')
+    base=(target_min>=.70)&(source_min>=.70)&(target_range<=.08)&(source_range<=.08)&~raw['foreground_overlap']
+    for ax,name in zip(axes.ravel(),['top','bottom','left','right']):
+        use=base&region[name];ax.axvline(0,c='k',lw=.8,label='Accepted boundary t0')
+        if use.any():
+            ax.plot(t,np.median(I[use],axis=0),label='Native target median');ax.fill_between(t,*np.quantile(I[use],[.1,.9],axis=0),alpha=.2);ax.plot(t,np.median(S[use],axis=0),ls='--',label='Frozen source median')
+        ax.set(title=f'{name}: {int(use.sum())} exterior-clean profiles',xlabel='Outward offset from accepted boundary (native px)',ylabel='Encoded RGB mean');ax.grid(alpha=.2);ax.legend(fontsize=8)
+    fig.suptitle('Toolbar contour observables: highlight ridge / edge are not measured alpha');fig.savefig(root/'profile-diagnostics.png',dpi=150);plt.close(fig);print('COMPLETE31_MEASUREMENT',flush=True)

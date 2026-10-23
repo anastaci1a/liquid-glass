@@ -1,0 +1,62 @@
+{
+  "state_sha256": "7d1e6021d44aefe1f1d911d29bba0ddbdb290d5379419716123461f2bb22e449",
+  "render_files": {
+    "motion.mp4": "4f36bf25510114c0d493ac7552cb837ae5c6a12569096f04110177797f997d56",
+    "comparison.png": "872c3f00dd5fefd8fe77e27f24d2869099608e277015a31b05a187093d3196b4"
+  },
+  "native_size": [
+    1360,
+    250
+  ],
+  "output_size": [
+    1080,
+    200
+  ],
+  "output_scale": 1,
+  "render_size": [
+    1360,
+    250
+  ],
+  "requested_export_width": 1080,
+  "frames": 90,
+  "fps": 15,
+  "travel_over_L": 0.5084745762711864,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 4.365644454956055
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 7.23183536529541
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 4.463747024536133
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 2.2773499488830566
+    },
+    "ssim": 0.9882466197013855,
+    "loss": 29.0310288801832
+  },
+  "motion_support": {
+    "requested_native_px": 45.0,
+    "actual_native_px": 45.0,
+    "axis": "y",
+    "minimum_scored_lookup_3sigma_defined_fraction": 1.0,
+    "minimum_whole_shape_lookup_defined_fraction": 1.0,
+    "minimum_scored_lookup_3sigma_observed_fraction": 1.0,
+    "minimum_whole_shape_lookup_observed_fraction": 1.0,
+    "completion": "Nearest observed RGB extends unobserved input for still/video presentation only. Original input files, native benchmark and fitted coefficients are unchanged.",
+    "limits": "Native-grid support tests at33 shifts, not continuous/subpixel or output-scattering confidence. Completed pixels remain estimates.",
+    "exterior_context": "Exterior and refracted glass use one translating coordinate system, with completed incident RGB and any separately declared exterior layer. Missing context remains an estimate; no fixed reference strip is spliced into the moving background."
+  },
+  "presentation_completion_native_delta": {
+    "max_abs_rgb": 0.0,
+    "rmse": 0.0
+  },
+  "motion": "Stationary element; recovered backdrop translates vertically. Optical/material coefficients remain frozen.",
+  "limits": "Offline preview, not Apple motion timing, a device benchmark or proof of adaptive cross-scene material. Source footage retains its original information quality; SVG icons/font and catalogue artwork use their declared clean/high-resolution inputs. Undeclared legacy foreground coverage remains reference-derived."
+}

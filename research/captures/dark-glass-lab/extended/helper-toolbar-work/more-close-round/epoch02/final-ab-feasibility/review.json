@@ -1,0 +1,268 @@
+{
+  "stage": "FEASIBILITY_FIRST_STOP_BEFORE_OPTIMIZER",
+  "assignment": "e86cfb75-31e4-4897-9adb-d78f1c8f5fb1",
+  "completed_at": "2026-10-22T02:38:42.413470+00:00",
+  "parameters": {
+    "u": "(a-.125)/.025 in[0,1]",
+    "k": "(.07500000000000001-b)/.0005 in[0,1]",
+    "width": 0.028,
+    "gray": 0.24982225414468506
+  },
+  "MSE_quadratics": {
+    "glass": {
+      "pixels": 1345,
+      "gradient_MSE_normalized_uk": [
+        -0.45265312503567784,
+        0.0876050439476959
+      ],
+      "Hessian_MSE_normalized_uk": [
+        [
+          0.02462725763975011,
+          -0.005219113586777295
+        ],
+        [
+          -0.005219113586777295,
+          0.03251249999999985
+        ]
+      ],
+      "baseline_MSE": 8.627371773782304,
+      "model": "Fixed-source unclipped-affine material/foreground mean-square; nativefloat32operationorder still scores."
+    },
+    "rim": {
+      "pixels": 544,
+      "gradient_MSE_normalized_uk": [
+        -1.119151568332696,
+        0.2965377171523855
+      ],
+      "Hessian_MSE_normalized_uk": [
+        [
+          0.060889083686514515,
+          -0.01290387458495489
+        ],
+        [
+          -0.01290387458495489,
+          0.0325124999999999
+        ]
+      ],
+      "baseline_MSE": 15.292195098851735,
+      "model": "Fixed-source unclipped-affine material/foreground mean-square; nativefloat32operationorder still scores."
+    },
+    "held": {
+      "pixels": 143,
+      "gradient_MSE_normalized_uk": [
+        -0.045847070373384195,
+        -0.18171705123219387
+      ],
+      "Hessian_MSE_normalized_uk": [
+        [
+          0.0015431304590723797,
+          -0.0010899838422819444
+        ],
+        [
+          -0.0010899838422819444,
+          0.03251250000000012
+        ]
+      ],
+      "baseline_MSE": 3.831562233164187,
+      "model": "Fixed-source unclipped-affine material/foreground mean-square; nativefloat32operationorder still scores."
+    },
+    "interior": {
+      "pixels": 801,
+      "gradient_MSE_normalized_uk": [
+        -3.5518776025399967e-22,
+        -0.05429180277309127
+      ],
+      "Hessian_MSE_normalized_uk": [
+        [
+          9.155145046911096e-41,
+          -1.629240826343877e-22
+        ],
+        [
+          -1.629240826343877e-22,
+          0.032512499999999875
+        ]
+      ],
+      "baseline_MSE": 4.100949940027288,
+      "model": "Fixed-source unclipped-affine material/foreground mean-square; nativefloat32operationorder still scores."
+    },
+    "glyph": {
+      "pixels": 400,
+      "gradient_MSE_normalized_uk": [
+        0.0,
+        -0.35967396048732025
+      ],
+      "Hessian_MSE_normalized_uk": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.019173126124504503
+        ]
+      ],
+      "baseline_MSE": 69.00010957564216,
+      "model": "Fixed-source unclipped-affine material/foreground mean-square; nativefloat32operationorder still scores."
+    },
+    "exterior": {
+      "pixels": 1162,
+      "gradient_MSE_normalized_uk": [
+        -0.123502017015244,
+        0.005737737080854926
+      ],
+      "Hessian_MSE_normalized_uk": [
+        [
+          0.1843459738774741,
+          -0.005241524346586061
+        ],
+        [
+          -0.005241524346586061,
+          0.0002150945299053357
+        ]
+      ],
+      "baseline_MSE": 7.50098105224538,
+      "model": "Fixed-source unclipped-affine material/foreground mean-square; nativefloat32operationorder still scores."
+    },
+    "full_visible_exterior": {
+      "pixels": 1431,
+      "gradient_MSE_normalized_uk": [
+        -0.1002860543478082,
+        0.004659154778444041
+      ],
+      "Hessian_MSE_normalized_uk": [
+        [
+          0.14969253783761347,
+          -0.00425622032895388
+        ],
+        [
+          -0.00425622032895388,
+          0.00017466096698113214
+        ]
+      ],
+      "baseline_MSE": 7.051343921879223,
+      "model": "Fixed-source unclipped-affine material/foreground mean-square; nativefloat32operationorder still scores."
+    },
+    "E_squared": {
+      "gradient_MSE_normalized_uk": [
+        -0.6526026580247832,
+        0.1502848459091028
+      ]
+    }
+  },
+  "MSE_linear_guard_cone": {
+    "ratio_k_over_u_lower": 0.0,
+    "ratio_k_over_u_upper": 3.774061455250172,
+    "details": [
+      {
+        "guard": "glass",
+        "gradient": [
+          -0.45265312503567784,
+          0.0876050439476959
+        ],
+        "ratio_bound_type": "upper"
+      },
+      {
+        "guard": "rim",
+        "gradient": [
+          -1.119151568332696,
+          0.2965377171523855
+        ],
+        "ratio_bound_type": "upper"
+      },
+      {
+        "guard": "held",
+        "gradient": [
+          -0.045847070373384195,
+          -0.18171705123219387
+        ],
+        "ratio_bound_type": "lower"
+      },
+      {
+        "guard": "interior",
+        "gradient": [
+          -3.5518776025399967e-22,
+          -0.05429180277309127
+        ],
+        "ratio_bound_type": "lower"
+      },
+      {
+        "guard": "glyph",
+        "gradient": [
+          0.0,
+          -0.35967396048732025
+        ],
+        "ratio_bound_type": "lower"
+      },
+      {
+        "guard": "exterior",
+        "gradient": [
+          -0.123502017015244,
+          0.005737737080854926
+        ],
+        "ratio_bound_type": "upper"
+      },
+      {
+        "guard": "full_visible_exterior",
+        "gradient": [
+          -0.1002860543478082,
+          0.004659154778444041
+        ],
+        "ratio_bound_type": "upper"
+      },
+      {
+        "guard": "E_squared",
+        "gradient": [
+          -0.6526026580247832,
+          0.1502848459091028
+        ],
+        "ratio_bound_type": "upper"
+      }
+    ]
+  },
+  "saved_SSIM_secants_amplitude": [
+    {
+      "u": 0.2500000000000002,
+      "k": 0,
+      "delta_SSIM": -7.748603820800781e-07,
+      "secant_u": -3.09944152832031e-06
+    },
+    {
+      "u": 0.5000000000000004,
+      "k": 0,
+      "delta_SSIM": -1.430511474609375e-06,
+      "secant_u": -2.8610229492187475e-06
+    },
+    {
+      "u": 0.9999999999999998,
+      "k": 0,
+      "delta_SSIM": -3.4570693969726562e-06,
+      "secant_u": -3.457069396972657e-06
+    }
+  ],
+  "saved_SSIM_conditional_bias_secants": [
+    {
+      "u": 0.2500000000000002,
+      "k": 1.0000000000000009,
+      "delta_SSIM": -2.658367156982422e-05,
+      "conditional_secant_k_after_linear_amp": -2.5808811187744117e-05
+    },
+    {
+      "u": 0.12499999999999956,
+      "k": 0.5000000000000004,
+      "delta_SSIM": -3.457069396972656e-05,
+      "conditional_secant_k_after_linear_amp": -6.836652755737299e-05
+    }
+  ],
+  "concrete_blocking_guard": "SSIM",
+  "no_common_direction_in_saved_response_first_order_model": true,
+  "decision": "Stop beforeoptimizer: all saved bounded amplitude secants and inferred negative-bias sensitivities reduce SSIM. In nonnegative(u,k) quadrant this empirical local SSIM model has no nonzero feasible tangent; original SSIM guard unchanged.",
+  "SSIM_limitations": "Finite secants from frozen float32guard, not exact derivatives or rigorous globalmonotonicity. Conditionalbias estimates disagree in magnitude, indicating nonlinear/numerical/trust uncertainty; cannot exclude finitecurvature/interactions elsewhere in bounds. No claim globalmaterial infeasibility or actualnative failure. Do not chase dead/uncertain directions or replace SSIM.",
+  "new_full_guard_evaluations": 0,
+  "budget_max": 30,
+  "optimizer_calls": 0,
+  "new_body_renders": 0,
+  "new_source_or_field_queries": 0,
+  "foreground_coverage_reused_not_refitted": true,
+  "count": 1,
+  "old_failed_points_unchanged": true
+}

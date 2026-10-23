@@ -1,0 +1,197 @@
+{
+  "grid": "EXACT retained17fine04/18best-projection,5149points",
+  "source_pixels_used": 0,
+  "target_image_pixels_used": 0,
+  "existing_normalized_parameter_scales": [
+    0.03,
+    0.03,
+    0.15
+  ],
+  "map_J": {
+    "shape": [
+      10298,
+      3
+    ],
+    "rank_tol_relative1e_10": 3,
+    "singular_values": [
+      27.365170793481692,
+      6.050552515641008,
+      1.4245487421611693
+    ],
+    "condition": 19.20971180808194,
+    "column_norms": [
+      7.054398573658119,
+      3.064578971208156,
+      26.98768078055141
+    ],
+    "column_cosines": [
+      [
+        0.9999999999999997,
+        0.1096375260386518,
+        0.5301354321359918
+      ],
+      [
+        0.1096375260386518,
+        0.9999999999999998,
+        0.7976347946793999
+      ],
+      [
+        0.5301354321359918,
+        0.7976347946793999,
+        1.0
+      ]
+    ]
+  },
+  "height_gradient_basis": {
+    "shape": [
+      10298,
+      3
+    ],
+    "rank_tol_relative1e_10": 3,
+    "singular_values": [
+      18.03227441929675,
+      4.955660241572237,
+      1.2049719577189155
+    ],
+    "condition": 14.964891343557017,
+    "column_norms": [
+      5.292388012986154,
+      2.3290958245636797,
+      17.825245814339045
+    ],
+    "column_cosines": [
+      [
+        1.0000000000000162,
+        0.0,
+        0.3680859058527225
+      ],
+      [
+        0.0,
+        1.0000000000000047,
+        0.790157111953432
+      ],
+      [
+        0.3680859058527225,
+        0.790157111953432,
+        1.0000000000000042
+      ]
+    ]
+  },
+  "target_inverse_gradient_valid_points": 5149,
+  "target_inverse_gradient_invalid_points": 0,
+  "gradient_target_mismatch_RMS": 0.05764113097299445,
+  "unconstrained_local_step": [
+    0.7779827864452831,
+    2.991643892649109,
+    -0.45385578160603046
+  ],
+  "unconstrained_linearized_map_vector_RMSE_L": 0.08531821351850682,
+  "residual_fraction_energy_outside_current_J": 0.6016280007058736,
+  "original_box_constrained_linearized_step": [
+    -1.877766983375407e-08,
+    2.990719470986238e-09,
+    -1.1003834764132484e-16
+  ],
+  "original_box_constrained_linearized_map_vector_RMSE_L": 0.10999621285775064,
+  "quartic_lower_bound_active": true,
+  "advisory_geometry_cohorts": {
+    "all": {
+      "points": 5149,
+      "undefined_normal_points": 1,
+      "map_vector_RMSE_L": 0.10999621285775067,
+      "normal_component_RMS_L": 0.09966990670582984,
+      "tangent_component_RMS_L": 0.04655563130071696,
+      "outside_current_map_J_columnspace_fraction_energy": 0.6016280007058736
+    },
+    "outer_d_lt_.2": {
+      "points": 1362,
+      "undefined_normal_points": 0,
+      "map_vector_RMSE_L": 0.16704856324500053,
+      "normal_component_RMS_L": 0.1449315293658011,
+      "tangent_component_RMS_L": 0.08306668572844877,
+      "outside_current_map_J_columnspace_fraction_energy": 0.7513038083584055
+    },
+    "core_d_ge_.3": {
+      "points": 3251,
+      "undefined_normal_points": 1,
+      "map_vector_RMSE_L": 0.07666377151856854,
+      "normal_component_RMS_L": 0.07333371711785466,
+      "tangent_component_RMS_L": 0.022389913075965173,
+      "outside_current_map_J_columnspace_fraction_energy": 0.28286782370313973
+    },
+    "caps": {
+      "points": 1962,
+      "undefined_normal_points": 0,
+      "map_vector_RMSE_L": 0.1437700649636109,
+      "normal_component_RMS_L": 0.13068620989092308,
+      "tangent_component_RMS_L": 0.05992450353558625,
+      "outside_current_map_J_columnspace_fraction_energy": 0.603295340366283
+    },
+    "body": {
+      "points": 3187,
+      "undefined_normal_points": 1,
+      "map_vector_RMSE_L": 0.08260050218159448,
+      "normal_component_RMS_L": 0.07439212460292363,
+      "tangent_component_RMS_L": 0.03592765321079691,
+      "outside_current_map_J_columnspace_fraction_energy": 0.5985183430288921
+    }
+  },
+  "new_extra_term_derivative_probes": [
+    {
+      "name": "T_cubed",
+      "coefficient_scale": 0.02,
+      "normalized_max_added_slope": 0.12,
+      "unit_slope_bound": 6.0,
+      "unit_height_bound": 1.0,
+      "normalized_height_bound": 0.02,
+      "map_derivative_norm": 4.4736279880475625,
+      "map_derivative_outside_existing_J_fraction": 0.12460235337856367,
+      "orthogonal_residual_cosine": 0.7796444441796403,
+      "constrained_linearized_step_existing_and_extra": [
+        0.27481135915815896,
+        1.0058139114713267,
+        -1.1055498555871476e-16,
+        -0.9999999999999999
+      ],
+      "constrained_linearized_success": true,
+      "predicted_map_vector_RMSE_L": 0.08797112438023418,
+      "predicted_fraction_energy_reduction": 0.3603758981826458,
+      "probe_step_normalized": 0.0001,
+      "probe_validity": true,
+      "new_optical_renders": 0
+    },
+    {
+      "name": "major_squared_times_T",
+      "coefficient_scale": 0.007870941971094489,
+      "normalized_max_added_slope": 0.12,
+      "unit_slope_bound": 15.245951557093424,
+      "unit_height_bound": 5.3170934256055356,
+      "normalized_height_bound": 0.04185053380782918,
+      "map_derivative_norm": 3.6849829887605994,
+      "map_derivative_outside_existing_J_fraction": 0.34158219538663176,
+      "orthogonal_residual_cosine": -0.36072691188432143,
+      "constrained_linearized_step_existing_and_extra": [
+        0.4202605959436855,
+        0.3115539060351389,
+        -1.1102227164922847e-16,
+        -0.9999999999999905
+      ],
+      "constrained_linearized_success": true,
+      "predicted_map_vector_RMSE_L": 0.10634204234572395,
+      "predicted_fraction_energy_reduction": 0.06533812476865752,
+      "probe_step_normalized": 0.0001,
+      "probe_validity": true,
+      "new_optical_renders": 0
+    }
+  ],
+  "recommended_one_extra_height_term": "T_cubed",
+  "recommendation_reason": "Largest constrained linearized map residual reduction at equal declared.12slope budget; one scalar height/complete gradient, not per-pixel gap. This analysis is not a native optical qualifier.",
+  "limits": [
+    "All local derivative/rank evidence, not a global nonlinear fit or best image-score bound",
+    "Known17integrability mismatch in target empirical map cannot be removed by merely increasing this basis rank",
+    "Source-only14\u201315uncertainty affects interpretation of image-calibrated map, not these geometry-only computations",
+    "Extra probes are new FIELD derivatives only, no target-image render/fit; current3column Jacobian/residuals reused exactly"
+  ],
+  "new_optical_renders": 0,
+  "new_counted_passes": 0
+}

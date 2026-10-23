@@ -1,0 +1,83 @@
+{
+  "index": 37,
+  "z": [
+    0.027705220672255698,
+    0.65,
+    -0.8935953982740551,
+    -0.875
+  ],
+  "parameters": [
+    0.0008311566201676709,
+    0.0195,
+    -0.13403930974110825,
+    -0.0175
+  ],
+  "E": 11.192673250561446,
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 9.91064453125,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 13.726048469543457,
+          "pixels": 61248
+        },
+        "shadow": 11.470282795593233
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 13.463595073142296,
+    "plus": 4.024434277996745
+  },
+  "MSE": [
+    98.22087502479553,
+    188.40440658825628,
+    131.5673874108821,
+    181.2683922935415,
+    16.196071257915182
+  ],
+  "guard_MSE_ratios": [
+    2.876819499932022,
+    2.425379100527181,
+    1.0001466172769955,
+    1.0337416255402063,
+    1.2043557417193747
+  ],
+  "max_guard_excess_ratio": 1.8768194999320218,
+  "merit": 21.422141425695237,
+  "all_nonregression": false,
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 11.192673250561446,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": -0.6290937438879995,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": false,
+          "shadow": false
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "phase": "seed1-trial4",
+  "native_actual_render": true,
+  "inherited_from": null,
+  "material_cache": "/evidence/extended/helper-toolbar-work/agent-toolbar-back-sextic/native-calibration/evaluations/0037.npz",
+  "seconds": 3.790403127670288
+}

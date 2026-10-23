@@ -1,0 +1,16 @@
+"""Bounded invariant failure/scope audit, no new ray, RGB or image."""
+from pathlib import Path
+import sys,time,json,numpy as np
+P=Path('/evidence/extended/agent-pipeline-01');O=P/'outline';sys.path.insert(0,str(P/'code'))
+from expanded_surface import ExpandedHarmonicBack
+proto=json.loads((O/'protocol.json').read_text());start=__import__('datetime').datetime.fromisoformat(proto['start'].replace('Z','+00:00')).timestamp();deadline=start+900
+assert time.time()<deadline,'Original O1 15minute preparation+execution+packaging cap'
+G=json.loads((P/'refraction/h1/geometry-checkpoint.json').read_text())['scene'];s=ExpandedHarmonicBack(tuple(G['surface_half']),G['surface_radius']);q=np.load(P/'refraction/h1/checkpoint-paths.npz');m=q['inside']&q['complete'];bad=m&(q['back'][...,2]<=0)&(q['back'][...,2]==0);points=[]
+for j,i in np.argwhere(bad):
+ x=float(q['x'][j,i]);y=float(q['y'][j,i]);rho=float(s.footprint(x,y)[0]);h,hx,hy,inside=s.height_gradient(x,y);points.append({'x_over_L':x,'y_over_L':y,'rho_float64':rho,'h':float(h),'hx':float(hx),'hy':float(hy),'inside':bool(inside),'boundary_mask':bool(s.boundary_mask(x,y)),'prior_complete':bool(q['complete'][j,i]),'native_world_pixel':[x*G['original_reference_L']+G['center'][0],y*G['original_reference_L']+G['center'][1]]})
+np.savez(O/'preserved-zero-height-poles.npz',xy=np.array([[p['x_over_L'],p['y_over_L']] for p in points]),back=q['back'][bad],outward_normal=q['outward_normal'][bad],X=q['X'][bad],Y=q['Y'][bad])
+# Same native coordinates, PURE geometry query. No tracing or RGB/source lookup.
+case=json.loads((P/'inputs/a/case.json').read_text());x0,y0,x1,y1=case['crop'];native=np.load(P/'refraction/h1/a-native-paths.npz');yy,xx=np.mgrid[y0:y1:.5,x0:x1:.5];inside=native['inside'];N=int(inside.sum());assert N+len(points)<3000000
+h,hx,hy,inc=s.height_gradient((xx[inside]-.25-G['center'][0])/G['original_reference_L'],(yy[inside]-.25-G['center'][1])/G['original_reference_L']);zero=int((h<=0).sum());assert time.time()<deadline
+result={'status':'STOP_FIRST_INVARIANT_FAILURE_NO_REFLECTED_PATHS','original_O1_deadline_unix':deadline,'points':points,'defect':'Exact long-axis poles are zero-thickness front/back crease; mixed rho versus longitudinal quadratic arithmetic yields rho<1,boundary_maskFalse,h0 and prior completeTrue. Those2 checkpoint paths were NOT physically regular. No silent normal or input repair.','geometry_points_queried':N+len(points),'rays_new':0,'boundary_events':0,'RGB_samples':0,'images':0,'fits':0,'native_current_geometry_scope':{'whole_subrays':N,'h_nonpositive':zero,'minimum_positive_h_L':float(h[h>0].min()),'same_geometry_both_references':True,'images_rerendered':0,'score_or_mask_change':False},'remaining_limit':'Native lattice has no h0 hits in this frozen case, but original checkpoint PASS interpretation requires erratum; no reflected branch image or complete-radiance claim until classification reviewed.','suggested_review_only':'Treat actual inside h0 as unresolved crease in adapter/core contract; ensure parameterized endpoints and height-domain arithmetic agree. No code fix activated.','finished_unix':time.time()}
+(O/'crease-scope.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))

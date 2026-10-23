@@ -1,0 +1,246 @@
+{
+  "status": "NO_SUPPORTED_JOINT_DIRECTION_NO_NEW_NATIVE_TRIAL",
+  "variables": [
+    "tiedneutralbiasco3:6",
+    "neutraldirectionallightco8"
+  ],
+  "global_bounds": [
+    0.002,
+    0.002
+  ],
+  "finite_trust_box": [
+    0.00025,
+    0.00025
+  ],
+  "baseline": {
+    "glass": {
+      "pixels": 9922,
+      "rmse": 7.27180814743042
+    },
+    "rim": {
+      "pixels": 5555,
+      "rmse": 8.591703414916992
+    },
+    "held": {
+      "pixels": 3789,
+      "rmse": 6.072876453399658
+    },
+    "interior": {
+      "pixels": 4367,
+      "rmse": 5.122986793518066
+    },
+    "ssim": 0.9863481521606445,
+    "loss": 59.1606458840937,
+    "E": 7.691595795678143,
+    "advisory_f64_E": 7.691596092715209,
+    "glyph": {
+      "pixels": 6162,
+      "rmse": 27.144643783569336
+    },
+    "exterior": {
+      "pixels": 13736,
+      "rmse": 7.5061187744140625
+    },
+    "full_visible_exterior": {
+      "pixels": 30609,
+      "rmse": 6.9344072341918945
+    }
+  },
+  "cases": [
+    {
+      "saved_trial": 3,
+      "secant_bias": -0.0005,
+      "secant_co8": -0.0005,
+      "field_gradient": {
+        "glass": [
+          215.94285121823208,
+          -5.25944172127887
+        ],
+        "rim": [
+          -94.20549324476524,
+          -9.394091945729784
+        ],
+        "held": [
+          -132.34620519143664,
+          -25.984648613931167
+        ],
+        "interior": [
+          610.4640450565536,
+          0.0
+        ],
+        "glyph": [
+          3857.0700292935767,
+          0.0
+        ],
+        "exterior": [
+          -1.4725878013410962,
+          1.6737409401917651
+        ],
+        "full_visible_exterior": [
+          -0.6608339390120977,
+          0.7511027983427777
+        ],
+        "negative_ssim": [
+          -0.010967254638671875,
+          0.0029802322387695312
+        ],
+        "E2": [
+          122.89834787933287,
+          -6.499836788614144
+        ]
+      },
+      "original_f32_metric_finite_secants": {
+        "glass": [
+          184.9986163142603,
+          -5.35383886017371
+        ],
+        "rim": [
+          -123.91453608870506,
+          -9.537605563309626
+        ],
+        "held": [
+          -163.45839766290737,
+          -26.04109023377532
+        ],
+        "interior": [
+          577.9471628025021,
+          -0.0
+        ],
+        "glyph": [
+          3830.6693962440477,
+          -0.0
+        ],
+        "exterior": [
+          -1.4746337187716563,
+          1.6893743431865005
+        ],
+        "full_visible_exterior": [
+          -0.6745441228304117,
+          0.7538994555034151
+        ]
+      }
+    },
+    {
+      "saved_trial": 4,
+      "secant_bias": -0.00025,
+      "secant_co8": -0.00025,
+      "field_gradient": {
+        "glass": [
+          215.74493734624124,
+          -5.293120430697681
+        ],
+        "rim": [
+          -94.5501886719979,
+          -9.454246789087739
+        ],
+        "held": [
+          -132.5213647213303,
+          -26.004013440587954
+        ],
+        "interior": [
+          610.4528432384598,
+          0.0
+        ],
+        "glyph": [
+          3857.0655546849607,
+          0.0
+        ],
+        "exterior": [
+          -1.4737465696725496,
+          1.673672583549966
+        ],
+        "full_visible_exterior": [
+          -0.6613539442981522,
+          0.7510721228280026
+        ],
+        "negative_ssim": [
+          -0.00286102294921875,
+          0.0007152557373046875
+        ],
+        "E2": [
+          122.65639954076948,
+          -6.541458338214698
+        ]
+      },
+      "original_f32_metric_finite_secants": {
+        "glass": [
+          200.26128696645173,
+          -5.353804982405563
+        ],
+        "rim": [
+          -109.41224104681169,
+          -9.57030382414814
+        ],
+        "held": [
+          -148.06906001467723,
+          -26.016772971161117
+        ],
+        "interior": [
+          594.2107280452547,
+          -0.0
+        ],
+        "glyph": [
+          3843.7125584023306,
+          -0.0
+        ],
+        "exterior": [
+          -1.4316808119474445,
+          1.7180109716719016
+        ],
+        "full_visible_exterior": [
+          -0.6613171763092396,
+          0.7406738877762109
+        ]
+      }
+    }
+  ],
+  "linear_program": {
+    "success": true,
+    "step": [
+      -0.0,
+      -0.0
+    ],
+    "E2_directional_change": 0.0,
+    "zero_step": true
+  },
+  "local_zero_cone_certificate": {
+    "constraints": [
+      "glass",
+      "rim",
+      "exterior"
+    ],
+    "normalized_rows": [
+      [
+        0.9996991733394007,
+        -0.02452677770353509
+      ],
+      [
+        -0.9950379946609498,
+        -0.0994956741829292
+      ],
+      [
+        -0.6608590228562924,
+        0.7505100611646897
+      ]
+    ],
+    "positive_weights": [
+      0.48640882021146836,
+      0.43943857225576655,
+      0.07415260753276513
+    ],
+    "weighted_row_sum": [
+      -9.049813687470356e-18,
+      -7.406311085229772e-18
+    ],
+    "rank": 2,
+    "all_weights_positive": true,
+    "meaning": "In THISsavedfinite-secant first-order model, strictlypositive combination of3rank2guardnormals iszero; all3nonregimplieszero direction. Notglobalnativeimpossibilityproof andnotexactdifferentialatclippingkinks."
+  },
+  "native_joint_trials_used": 0,
+  "maximum_native_joint_trials_authorized": 2,
+  "optical_renders": 0,
+  "accepted_count": 0,
+  "source_map_blur_shape_glyph_shadow_masks_unchanged": true,
+  "limitations": "Actualsavednative finite differences include clipping/AA/postblur in observedchanges; secants are not an exact two-sidedJacobian andSSIMf32finite derivatives may be noisy. Clear glass/rim/exterior conflict alone forceszero in model, independentSSIM. No weakwaiver or promiseofglobalinfeasibility. Do not broadenfamily/sweep.",
+  "recommendation": "Stop this local magnifier material settlement with all8actualfailures preserved,count0. Recommend rotation/source-ledfreshcontrol ratherthanmoreunverifiedsurrogates; no new intake oroperator without leadassignment. Exactbasisinstrumentation beyondsaved2D only ifprimary separatelyfindscone inconclusive, not automaticallyactivated."
+}

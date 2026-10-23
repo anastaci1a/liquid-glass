@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-10-22T04:02:15.833Z",
+  "deadline_at": "2026-10-22T04:17:15.833Z",
+  "deadline_unix": 1792642635.833,
+  "budget": {
+    "seconds": 900,
+    "geometry_rays": 30000,
+    "images": 0,
+    "fits": 0,
+    "source_work": 0
+  },
+  "allowed": {
+    "eta": 0.15,
+    "kappa": [
+      0,
+      0.3333333333333333
+    ],
+    "half": [
+      2.3058823529411763,
+      1
+    ],
+    "softness": 0.1
+  },
+  "defect": "A lacks centerline longitudinal depth curvature and flat-front choice under-refracts; test actual two-sided closed geometry only",
+  "hypothesis": "F=T+(1+kappa*(x/a)^2)*((z+eta)/eta)^2-1 convex regular closed solid supplies real longitudinal crown independent of XY outline",
+  "frozen": "Original crown functions. No source/target/mask access, no shared tracer edits, no camera/material/image evaluation.",
+  "interface": "level_gradient(points)->(F,gradF), front_height(x,y)->zfront or NaN outside, half_extents=(a,1,eta), center=(0,0,-eta); pending lead file confirmation",
+  "checkpoint": "After gradient/circle tests, then convexity/regularity and saved actual mesh/sections",
+  "stop": "First certificate failure or original deadline. No B image or further family."
+}

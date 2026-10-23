@@ -1,0 +1,55 @@
+{
+  "scope": "Same frame and white mask as pass 02; no added blur or positional color gradient",
+  "formulas": {
+    "shared": "C=1-a_RGB*(1-B)^gamma",
+    "saturated": "C0=shared; Y=dot(C0,[.2126,.7152,.0722]); C=clip(Y+(1+s*(1-dot(B,weights))^k)*(C0-Y),0,1)",
+    "channels": "C=1-a_RGB*(1-B)^gamma_RGB"
+  },
+  "limits": "Encoded-RGB response approximations, not radiometric or recovered Apple shaders. More parameters can improve same-scene fit without generalization.",
+  "dark_quartile_background_luma_threshold": 0.29778509803921566,
+  "trials": [
+    {
+      "training_rmse": 3.4679551202010663,
+      "withheld_rmse": 3.3760932642582775,
+      "dark_quartile_rmse": 3.1289764775702658,
+      "name": "Shared channel exponent",
+      "parameters": [
+        0.07881382569789322,
+        0.609680359833531,
+        0.6547228793918975,
+        6.610659648761631
+      ],
+      "parameter_count": 4
+    },
+    {
+      "training_rmse": 3.4510702012063827,
+      "withheld_rmse": 3.3766773021399445,
+      "dark_quartile_rmse": 3.161112466945254,
+      "name": "Dark-weighted saturation",
+      "parameters": [
+        0.8875344503007825,
+        0.5858130063674633,
+        0.44021136045641474,
+        6.655825637829689,
+        1.2457526806212458,
+        0.25000000000000006
+      ],
+      "parameter_count": 6
+    },
+    {
+      "training_rmse": 2.974888958168192,
+      "withheld_rmse": 2.8703799697606205,
+      "dark_quartile_rmse": 2.8369211945987085,
+      "name": "Separate channel exponents",
+      "parameters": [
+        0.9999999999969608,
+        0.9999999999999999,
+        0.4819255375730758,
+        11.689666096287098,
+        8.103307436866936,
+        5.2225437132610555
+      ],
+      "parameter_count": 6
+    }
+  ]
+}

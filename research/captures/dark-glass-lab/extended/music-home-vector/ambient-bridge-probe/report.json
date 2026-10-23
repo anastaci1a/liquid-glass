@@ -1,0 +1,316 @@
+{
+  "scope": "Private common source-luma response in three neutral rim-light basis coefficients, not unrelated per-scene materials or an identified Apple law. No accepted-state writes/counts.",
+  "model": "effective thin/e/f coefficients=shared base+(mean unrefracted source encoded luma\u2212.5)*three shared response values; all source/scoring masks fixed.",
+  "targets": [
+    {
+      "glass": {
+        "pixels": 15221,
+        "rmse": 5.888642311096191
+      },
+      "rim": {
+        "pixels": 8296,
+        "rmse": 7.319240093231201
+      },
+      "held": {
+        "pixels": 2797,
+        "rmse": 7.1194586753845215
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.469886064529419
+      },
+      "ssim": 0.9780262112617493,
+      "loss": 40.34465845033153
+    },
+    {
+      "glass": {
+        "pixels": 15289,
+        "rmse": 9.730605125427246
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 12.651615142822266
+      },
+      "held": {
+        "pixels": 2804,
+        "rmse": 13.018393516540527
+      },
+      "interior": {
+        "pixels": 6925,
+        "rmse": 3.964904308319092
+      },
+      "ssim": 0.9711480736732483,
+      "loss": 114.2982829915206
+    }
+  ],
+  "results": [
+    {
+      "seed": "single",
+      "parameters": {
+        "sigma": 6.644470218349408,
+        "amplitude": 1.2289680366372868,
+        "band": 0.43987339501423806,
+        "power": 2.351669476828825,
+        "tangent": 0,
+        "tangent_band": 0.4,
+        "core_x": 0.007376192694966,
+        "core_y": 0,
+        "post_sigma": 0.17924994244587938,
+        "coupling": 0,
+        "gamma": 1,
+        "rim_width": 0.035159899572437585,
+        "thin_width": 0.010668084005011331,
+        "spline": true,
+        "shape_dx": -0.004005277907672262,
+        "shape_dy": -0.004950768082564813,
+        "half_x_delta": 0.0017122124201763907,
+        "half_y_delta": 0,
+        "radius_delta": 0,
+        "c0": -2.4665775113707293,
+        "c1": 0.813544615462612,
+        "c2": 0.673371319553467,
+        "c3": 0.7518448903000997,
+        "c4": 0.683035683159479,
+        "c5": 0.035192412856533004,
+        "c6": -0.03767689337640524,
+        "shadow": {
+          "opacity": 0.06397813905839193,
+          "sigma": 0.2381474908903573,
+          "offset": [
+            0.049999833528026554,
+            -0.0999999719363685
+          ]
+        }
+      },
+      "material": [
+        0.6066523594969843,
+        0.6191907986270702,
+        0.6267386822434668,
+        0.4032490116204065,
+        0.39696474133899723,
+        0.3851040983275011,
+        -1.3982332546618703,
+        0.46449082440172096,
+        0.02863777781080434,
+        0.34654935168757495,
+        0.07554875278968332,
+        0.23080192828622484,
+        0.015237979185269852,
+        -0.018695054881442415,
+        0.0218205309710266,
+        0.0029494841377041142,
+        -0.0017790828242564088,
+        -0.023746068549397314,
+        -0.036676805925444825,
+        0.0177708098822348,
+        0.6076222543656293,
+        0.6190384054285994,
+        0.6382242020468997
+      ],
+      "ambient_rim_response": [
+        -3.9999999999902984,
+        0.011279136316088257,
+        -0.14551977097695878
+      ],
+      "source_luma": [
+        0.4032632462684492,
+        0.44675083025221135
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 15221,
+            "rmse": 6.065803050994873
+          },
+          "rim": {
+            "pixels": 8296,
+            "rmse": 7.557192325592041
+          },
+          "held": {
+            "pixels": 2797,
+            "rmse": 7.408060073852539
+          },
+          "interior": {
+            "pixels": 6925,
+            "rmse": 3.5290796756744385
+          },
+          "ssim": 0.978199303150177,
+          "loss": 42.88912341121727
+        },
+        {
+          "glass": {
+            "pixels": 15289,
+            "rmse": 10.172497749328613
+          },
+          "rim": {
+            "pixels": 8364,
+            "rmse": 13.38167953491211
+          },
+          "held": {
+            "pixels": 2804,
+            "rmse": 13.054776191711426
+          },
+          "interior": {
+            "pixels": 6925,
+            "rmse": 3.49037766456604
+          },
+          "ssim": 0.9752475619316101,
+          "loss": 126.15660147459266
+        }
+      ],
+      "permitted": false,
+      "source_support": [
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 1.0,
+          "gaussian_3sigma_observed_fraction": 1.0,
+          "source_gaussian_radius_native_px": 21
+        },
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 1.0,
+          "gaussian_3sigma_observed_fraction": 1.0,
+          "source_gaussian_radius_native_px": 21
+        }
+      ],
+      "iterations": 7,
+      "seconds": 4.66929292678833
+    },
+    {
+      "seed": "paired",
+      "parameters": {
+        "sigma": 6.534034848104269,
+        "amplitude": 1.2289680366372868,
+        "band": 0.43987339501423806,
+        "power": 2.351669476828825,
+        "tangent": 0.0,
+        "tangent_band": 0.4,
+        "core_x": 0.00236775084334414,
+        "core_y": 0.0,
+        "post_sigma": 0.2827313507050951,
+        "coupling": 0.0,
+        "gamma": 1.0,
+        "rim_width": 0.03493971724844789,
+        "thin_width": 0.012081362939893663,
+        "spline": true,
+        "shape_dx": -0.0003271426565122741,
+        "shape_dy": -0.0024186515791946423,
+        "half_x_delta": 6.20824505668529e-05,
+        "half_y_delta": 0.0,
+        "radius_delta": 0.0,
+        "c0": -2.223810100677247,
+        "c1": 1.322250609124548,
+        "c2": 0.591500213924327,
+        "c3": 0.853347034212344,
+        "c4": 0.6594470248780486,
+        "c5": 0.042198246323704655,
+        "c6": -0.04119888863241014,
+        "shadow": {
+          "opacity": 0.06397813905839193,
+          "sigma": 0.2381474908903573,
+          "offset": [
+            0.049999833528026554,
+            -0.0999999719363685
+          ]
+        }
+      },
+      "material": [
+        0.5944295428756695,
+        0.6062845061413547,
+        0.6090731372205398,
+        0.41920601673562224,
+        0.41456763936726193,
+        0.40802652351185875,
+        -0.7552009983436646,
+        -0.2636880835601921,
+        -0.7247355100500549,
+        0.40285300279545044,
+        0.10504486589098047,
+        0.29663078552507927,
+        0.01925925393632588,
+        -8.217964291147604e-05,
+        -0.003163087999512686,
+        -0.0011554489438566932,
+        -0.002446264443690502,
+        -0.05698357654546335,
+        -0.046184106140204496,
+        0.03162749038036811,
+        0.5833669094928164,
+        0.5946630155061838,
+        0.6151089220700532
+      ],
+      "ambient_rim_response": [
+        -3.999999999999991,
+        0.7163488609223091,
+        -0.18757068022855325
+      ],
+      "source_luma": [
+        0.4037544255544785,
+        0.4459749636708738
+      ],
+      "scores": [
+        {
+          "glass": {
+            "pixels": 15221,
+            "rmse": 6.874032974243164
+          },
+          "rim": {
+            "pixels": 8296,
+            "rmse": 8.451936721801758
+          },
+          "held": {
+            "pixels": 2797,
+            "rmse": 8.256606101989746
+          },
+          "interior": {
+            "pixels": 6925,
+            "rmse": 4.275715351104736
+          },
+          "ssim": 0.9745061993598938,
+          "loss": 54.50720083648993
+        },
+        {
+          "glass": {
+            "pixels": 15289,
+            "rmse": 9.757786750793457
+          },
+          "rim": {
+            "pixels": 8364,
+            "rmse": 12.719602584838867
+          },
+          "held": {
+            "pixels": 2804,
+            "rmse": 13.021492958068848
+          },
+          "interior": {
+            "pixels": 6925,
+            "rmse": 3.847938299179077
+          },
+          "ssim": 0.9710225462913513,
+          "loss": 115.18656856664411
+        }
+      ],
+      "permitted": false,
+      "source_support": [
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 1.0,
+          "gaussian_3sigma_observed_fraction": 1.0,
+          "source_gaussian_radius_native_px": 20
+        },
+        {
+          "source_defined_fraction": 1.0,
+          "gaussian_3sigma_defined_fraction": 1.0,
+          "source_observed_fraction": 1.0,
+          "gaussian_3sigma_observed_fraction": 1.0,
+          "source_gaussian_radius_native_px": 20
+        }
+      ],
+      "iterations": 7,
+      "seconds": 4.739947319030762
+    }
+  ]
+}

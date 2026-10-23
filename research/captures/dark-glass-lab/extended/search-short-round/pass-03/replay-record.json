@@ -1,0 +1,274 @@
+{
+  "parameters": {
+    "sigma": 6.781374517481471,
+    "amplitude": 0.85983428227525,
+    "band": 0.32491804379498146,
+    "power": 1.2245719689960657,
+    "tangent": 0,
+    "tangent_band": 0.4,
+    "core_x": 0.024642068609757335,
+    "core_y": 0,
+    "post_sigma": 1.4760295664535144,
+    "coupling": 0,
+    "gamma": 1.0148178420675746,
+    "rim_width": 0.008,
+    "thin_width": 0.02836092180505888,
+    "spline": true,
+    "shape_dx": -0.00894003499211507,
+    "shape_dy": -0.001400833306792197,
+    "half_x_delta": -0.002787508241754526,
+    "half_y_delta": 0,
+    "radius_delta": 0,
+    "c0": 0.7335530781325508,
+    "c1": 0.8622003773076847,
+    "c2": 0.766649508262868,
+    "c3": 0.7484852499584456,
+    "c4": 0.5718136762964168,
+    "c5": 0.010534706470669397,
+    "c6": -0.03510943207572298,
+    "shadow": {
+      "opacity": 0.07122886993343976,
+      "sigma": 0.24802838204149674,
+      "offset": [
+        -0.049999984470484225,
+        -0.07017835536762522
+      ]
+    },
+    "blur_transition": 0.04486792312560994
+  },
+  "material": [
+    0.715202896671916,
+    0.6010654738670214,
+    0.5927673358889489,
+    0.3010081896036789,
+    0.4014312730129331,
+    0.4029322720121134,
+    0.19728486374443716,
+    0.6554481290370034,
+    -0.36489085314659053,
+    0.6085988943855665,
+    -0.7616371391824038,
+    0.818813654053579,
+    0.08010101508198142,
+    -0.6244510420404974,
+    0.25925661248859017,
+    -0.0024740005121424687,
+    -0.0015018329230092717,
+    -0.01271671558983403,
+    -0.016406478214477375,
+    0.02104153665572431,
+    0.7224398486275825,
+    0.598536790507528,
+    0.5892055819532118
+  ],
+  "cases": [
+    {
+      "id": "music-search-vector-a",
+      "category": "Detached circular navigation/search control",
+      "radial": true,
+      "center": [
+        1512,
+        673
+      ],
+      "half": [
+        89,
+        89
+      ],
+      "radius": 89,
+      "crop": [
+        1395,
+        560,
+        1635,
+        795
+      ],
+      "foreground": [
+        [
+          1467,
+          626,
+          1563,
+          722
+        ]
+      ],
+      "foreground_layers": [
+        {
+          "mode": "mask",
+          "box": [
+            1467,
+            626,
+            1563,
+            722
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "threshold": 0.72,
+          "vector_asset": "search.svg",
+          "vector_box": [
+            1470.9009527995063,
+            630.7918309178898,
+            1554.4080442125164,
+            714.2989223308999
+          ],
+          "vector_sha256": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49",
+          "opacity": 0.4187133312225342
+        }
+      ],
+      "reference": {
+        "video": "music",
+        "seconds": 2.5,
+        "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4"
+      },
+      "foreground_method": "Solid analytic circular-ring/45-degree capsule SVG, square placement. Black opacity is a separate renderer coefficient; no image-derived matte or baked gray texture.",
+      "background": "Masked temporal translation mosaic, frozen observed-pixel confidence.",
+      "input_names": {
+        "source.png": "source-2.5.png",
+        "target.png": "target-2.5.png",
+        "known.png": "known-2.5.png"
+      },
+      "source_sha256": {
+        "source.png": "84da0d24f30dc1f4080b568756d79044a9ac6568ecbff9595d02a38cd3239fb1",
+        "target.png": "efffc64b8a6ee5b84f0bfc295369aad38db8531e4686674861074592fbee54de",
+        "known.png": "03433579b8ddf8771df2bacf7aa1566e84b71bc81df71da1cd64069c00ff2413"
+      },
+      "foreground_provenance": {
+        "kind": "clean symmetric vector trace",
+        "source": "Official Apple WWDC25 Music video",
+        "original_vector": false,
+        "collection": "Private localica-feedback/liquid-glass-icons/clean/search.svg"
+      },
+      "continuation": {
+        "baseline": "music-search",
+        "additional_single_pass_minimum": 10,
+        "paired_pass_minimum": 20
+      },
+      "exterior_reference_shape": {
+        "shape_dx": -0.01094003499211507,
+        "shape_dy": -0.001400833306792197,
+        "half_x_delta": -0.002787508241754526,
+        "half_y_delta": 0,
+        "radius_delta": 0,
+        "cap_join_width": 0
+      },
+      "foreground_styles": {
+        "search.svg": {
+          "color": [
+            0.23791402964793887,
+            0.2092211291437152,
+            0.2142868270726464
+          ],
+          "opacity": 0.5959399154311875
+        }
+      }
+    },
+    {
+      "id": "music-search-vector-b",
+      "category": "Detached circular navigation/search control",
+      "radial": true,
+      "center": [
+        1512,
+        673
+      ],
+      "half": [
+        89,
+        89
+      ],
+      "radius": 89,
+      "crop": [
+        1395,
+        560,
+        1635,
+        795
+      ],
+      "foreground": [
+        [
+          1467,
+          626,
+          1563,
+          722
+        ]
+      ],
+      "foreground_layers": [
+        {
+          "mode": "mask",
+          "box": [
+            1467,
+            626,
+            1563,
+            722
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "threshold": 0.72,
+          "vector_asset": "search.svg",
+          "vector_box": [
+            1470.9009527995063,
+            630.7918309178898,
+            1554.4080442125164,
+            714.2989223308999
+          ],
+          "vector_sha256": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49",
+          "opacity": 0.4187133312225342
+        }
+      ],
+      "reference": {
+        "video": "music",
+        "seconds": 2,
+        "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4"
+      },
+      "foreground_method": "Solid analytic circular-ring/45-degree capsule SVG, square placement. Black opacity is a separate renderer coefficient; no image-derived matte or baked gray texture.",
+      "background": "Masked temporal translation mosaic, frozen observed-pixel confidence.",
+      "input_names": {
+        "source.png": "source-2.0.png",
+        "target.png": "target-2.0.png",
+        "known.png": "known-2.0.png"
+      },
+      "source_sha256": {
+        "source.png": "9789b4af085d505a23bdfac7615b0688125b0ea81587d1d58e23b68c6608268f",
+        "target.png": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d",
+        "known.png": "9d009193ae95ac9818a906fde1995dba531387f15926a5dd32e64ba34d3ff575"
+      },
+      "foreground_provenance": {
+        "kind": "clean symmetric vector trace",
+        "source": "Official Apple WWDC25 Music video",
+        "original_vector": false,
+        "collection": "Private localica-feedback/liquid-glass-icons/clean/search.svg"
+      },
+      "continuation": {
+        "baseline": "music-search",
+        "additional_single_pass_minimum": 10,
+        "paired_pass_minimum": 20
+      },
+      "exterior_reference_shape": {
+        "shape_dx": -0.01094003499211507,
+        "shape_dy": -0.001400833306792197,
+        "half_x_delta": -0.002787508241754526,
+        "half_y_delta": 0,
+        "radius_delta": 0,
+        "cap_join_width": 0
+      },
+      "foreground_styles": {
+        "search.svg": {
+          "color": [
+            0.23791402964793887,
+            0.2092211291437152,
+            0.2142868270726464
+          ],
+          "opacity": 0.5959399154311875
+        }
+      }
+    }
+  ],
+  "vector_sha256": {
+    "a": {
+      "search.svg": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49"
+    },
+    "b": {
+      "search.svg": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49"
+    }
+  }
+}

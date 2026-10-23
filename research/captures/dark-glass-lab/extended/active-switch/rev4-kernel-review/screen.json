@@ -1,0 +1,681 @@
+{
+  "method": "Separate ordinary source/output blur sensitivity on accepted revision4.\n\nThe cap profile now differs materially from revision3; test whether inherited\nkernel widths still over-soften its edges. Directional dispersion is fixed.\nOne family; screen proposals are not verified passes. Native scoring unchanged.\n",
+  "baseline": {
+    "parameters": {
+      "sigma": 4.339320119358678,
+      "amplitude": 0.7839488678764915,
+      "band": 0.41709079115813363,
+      "power": 2.793583791362869,
+      "tangent": 0,
+      "tangent_band": 0.9999992768775775,
+      "core_x": -0.48636618103316787,
+      "core_y": -0.6136971567801134,
+      "post_sigma": 2.163537921629955,
+      "coupling": 0,
+      "gamma": 1.5497479697761347,
+      "rim_width": 0.04878846511595129,
+      "thin_width": 0.011095946046562786,
+      "spline": true,
+      "shape_dx": 0.001167965417146694,
+      "shape_dy": 0.004755085677013721,
+      "half_x_delta": -0.0025334994195777482,
+      "half_y_delta": 0.011224253113150662,
+      "radius_delta": 0.012043263143639911,
+      "c0": 0.5825744554180238,
+      "c1": 1.3388234553429594,
+      "c2": -0.8083295666489414,
+      "c3": 1.0304313912343226,
+      "c4": 0.7184704183774985,
+      "c5": 0.2901299541876391,
+      "c6": 0.20008253902374495,
+      "shadow": {
+        "opacity": 0.058660798600097784,
+        "sigma": 0.12480880219622643,
+        "offset": [
+          0.0014367206241543645,
+          0.15973501069093624
+        ]
+      },
+      "blur_transition": 0,
+      "tangent_exponent": 3.000273143553201,
+      "cap_normal_gain": -0.11946436603381186,
+      "cap_tangent_fade": 0.9997199664179274,
+      "material_chroma_sensitivity": 10,
+      "material_chroma_floor": 0,
+      "grazing_reflection": {
+        "strength": 1,
+        "width": 0.03895748531996116,
+        "angular_power": 1.5519447192573868,
+        "source_sigma": 0.007,
+        "direction": [
+          0,
+          1
+        ]
+      },
+      "directional_transmission": {
+        "strength": 0.3849814426989986,
+        "length": 0.08,
+        "angle": 1.3571487177940904,
+        "fade_center": -0.395271178284122,
+        "fade_width": 0.3577136899555915
+      },
+      "crown_softness": 0.08,
+      "cap_edge_profile": [
+        0.2322370122582555,
+        3.758106496066732,
+        -0.205634698814882
+      ]
+    },
+    "material": [
+      0.5977757531847661,
+      0.7856530214290646,
+      0.658438714199943,
+      0.34690345318663196,
+      0.36345820613889696,
+      0.3450421630053718,
+      -0.6090813029470791,
+      0.035241511791143015,
+      -2.0180842296690495,
+      -0.016701227480650803,
+      0.02194720330739687,
+      0.7517183256945408,
+      0.05574863860482126,
+      0.025284428069021436,
+      -0.03153461575252877,
+      -0.005429762591587147,
+      0.045473509258854135,
+      -0.04771810240338056,
+      -0.11038036218808261,
+      0.010231351565952415,
+      0.7437701087119156,
+      0.701862944164489,
+      0.7419465098951566
+    ],
+    "parameter_length_reference": 216.5,
+    "units": "Geometry normalized by pose L. sigma/post_sigma use the216.5 reference-pixel basis."
+  },
+  "baseline_scores": [
+    {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 11.360526084899902
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 19.63088607788086
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 12.97272777557373
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 4.776324272155762
+      },
+      "ssim": 0.962319552898407,
+      "loss": 205.95459350880475,
+      "shadow": {
+        "rmse": 6.534463405609131,
+        "pixels": 152521
+      }
+    },
+    {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 13.708014488220215
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 19.51456642150879
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 13.631943702697754
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 10.41356086730957
+      },
+      "ssim": 0.9338045716285706,
+      "loss": 245.78225363232224,
+      "shadow": {
+        "rmse": 4.475468635559082,
+        "pixels": 132594
+      }
+    }
+  ],
+  "trials": [
+    {
+      "parameter": "sigma",
+      "factor": 1.0,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.360526084899902
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.63088607788086
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.97272777557373
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.776324272155762
+          },
+          "loss": 205.95459350880475,
+          "shadow": {
+            "rmse": 6.534463405609131
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.708014488220215
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.51456642150879
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.631943702697754
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.41356086730957
+          },
+          "loss": 245.78225363232224,
+          "shadow": {
+            "rmse": 4.475468635559082
+          }
+        }
+      ],
+      "ratios": [
+        1.0,
+        1.0
+      ],
+      "guards": [
+        true,
+        true
+      ],
+      "numeric_pass": false
+    },
+    {
+      "parameter": "sigma",
+      "factor": 0.6,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.355944633483887
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.681467056274414
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.958863258361816
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.673513412475586
+          },
+          "loss": 206.47827860929056,
+          "shadow": {
+            "rmse": 6.53448486328125
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.914210319519043
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.608551025390625
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.872784614562988
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.722378730773926
+          },
+          "loss": 250.87225616567144,
+          "shadow": {
+            "rmse": 4.475489616394043
+          }
+        }
+      ],
+      "ratios": [
+        1.001270553421107,
+        1.0103016371795308
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false
+    },
+    {
+      "parameter": "sigma",
+      "factor": 0.8,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.335800170898438
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.64663314819336
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 12.950088500976562
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.665085315704346
+          },
+          "loss": 205.74731407808576,
+          "shadow": {
+            "rmse": 6.534472942352295
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.813704490661621
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.563810348510742
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.75613021850586
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.571497917175293
+          },
+          "loss": 248.3957048344763,
+          "shadow": {
+            "rmse": 4.4754791259765625
+          }
+        }
+      ],
+      "ratios": [
+        0.9994966569896667,
+        1.0053025401968374
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false
+    },
+    {
+      "parameter": "sigma",
+      "factor": 1.2,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.442484855651855
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.628721237182617
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.039093971252441
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 5.048971652984619
+          },
+          "loss": 207.23733099238262,
+          "shadow": {
+            "rmse": 6.534446716308594
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.602693557739258
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.464771270751953
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.506852149963379
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.255756378173828
+          },
+          "loss": 243.18648660483996,
+          "shadow": {
+            "rmse": 4.475457668304443
+          }
+        }
+      ],
+      "ratios": [
+        1.003109293057879,
+        0.9947053600185294
+      ],
+      "guards": [
+        false,
+        true
+      ],
+      "numeric_pass": false
+    },
+    {
+      "parameter": "sigma",
+      "factor": 1.4,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.536059379577637
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.64350700378418
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.112967491149902
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 5.319108486175537
+          },
+          "loss": 208.91667642871425,
+          "shadow": {
+            "rmse": 6.534433841705322
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.50168228149414
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.41742706298828
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.385819435119629
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.103127479553223
+          },
+          "loss": 240.71773922522988,
+          "shadow": {
+            "rmse": 4.475445747375488
+          }
+        }
+      ],
+      "ratios": [
+        1.0071654349837487,
+        0.9896435236858527
+      ],
+      "guards": [
+        false,
+        true
+      ],
+      "numeric_pass": false
+    },
+    {
+      "parameter": "post_sigma",
+      "factor": 0.6,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.60699462890625
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 20.159456253051758
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.219083786010742
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.701294898986816
+          },
+          "loss": 216.22672994643324,
+          "shadow": {
+            "rmse": 6.705500602722168
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 14.198400497436523
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 20.5877685546875
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 14.001283645629883
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.489776611328125
+          },
+          "loss": 268.2730678983378,
+          "shadow": {
+            "rmse": 4.838099956512451
+          }
+        }
+      ],
+      "ratios": [
+        1.024634439002863,
+        1.044752157948695
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false
+    },
+    {
+      "parameter": "post_sigma",
+      "factor": 0.8,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.389744758605957
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.71417999267578
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.000273704528809
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.732337951660156
+          },
+          "loss": 207.40306780141972,
+          "shadow": {
+            "rmse": 6.602182388305664
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.917619705200195
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.963388442993164
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.785468101501465
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.455574035644531
+          },
+          "loss": 255.15116021875363,
+          "shadow": {
+            "rmse": 4.631855487823486
+          }
+        }
+      ],
+      "ratios": [
+        1.003510328204515,
+        1.018881115161271
+      ],
+      "guards": [
+        false,
+        false
+      ],
+      "numeric_pass": false
+    },
+    {
+      "parameter": "post_sigma",
+      "factor": 1.2,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.517775535583496
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 19.90708351135254
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.13998794555664
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.8348069190979
+          },
+          "loss": 211.74899948004924,
+          "shadow": {
+            "rmse": 6.495948314666748
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.576848983764648
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.26161766052246
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.544731140136719
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.364827156066895
+          },
+          "loss": 240.33455429961103,
+          "shadow": {
+            "rmse": 4.367677688598633
+          }
+        }
+      ],
+      "ratios": [
+        1.013969617741968,
+        0.9888555312537748
+      ],
+      "guards": [
+        false,
+        true
+      ],
+      "numeric_pass": false
+    },
+    {
+      "parameter": "post_sigma",
+      "factor": 1.4,
+      "scores": [
+        {
+          "glass": {
+            "pixels": 240456,
+            "rmse": 11.836682319641113
+          },
+          "rim": {
+            "pixels": 70466,
+            "rmse": 20.493228912353516
+          },
+          "held": {
+            "pixels": 61420,
+            "rmse": 13.48089599609375
+          },
+          "interior": {
+            "pixels": 169990,
+            "rmse": 4.9086012840271
+          },
+          "loss": 224.06666321150976,
+          "shadow": {
+            "rmse": 6.475912570953369
+          }
+        },
+        {
+          "glass": {
+            "pixels": 208969,
+            "rmse": 13.521425247192383
+          },
+          "rim": {
+            "pixels": 60968,
+            "rmse": 19.198448181152344
+          },
+          "held": {
+            "pixels": 53183,
+            "rmse": 13.520220756530762
+          },
+          "interior": {
+            "pixels": 148001,
+            "rmse": 10.310667991638184
+          },
+          "loss": 238.55438227010563,
+          "shadow": {
+            "rmse": 4.295542240142822
+          }
+        }
+      ],
+      "ratios": [
+        1.043044607212308,
+        0.9851864691542367
+      ],
+      "guards": [
+        false,
+        true
+      ],
+      "numeric_pass": false
+    }
+  ],
+  "accepted": false
+}

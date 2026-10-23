@@ -1,0 +1,102 @@
+{
+  "color_rgb": [
+    0.01568627450980392,
+    0.42745098039215684,
+    0.996078431372549
+  ],
+  "color_calibration": "Independent uncovered Arest blue-track interior544:556,600:800; no glyph/halo/lensed pixels used",
+  "icons": [
+    {
+      "icon": "tortoise",
+      "glyph": "tortoise.original-outline",
+      "source_svg_sha256": "936c8c5d8f473107700b0cc63aaec558feaaf250e2cd65cf5e9f0e0958c9a7c0",
+      "A_identity_check": {
+        "placement": [
+          426.0823498750511,
+          525.8224938069072,
+          523.261194478585,
+          574.6062737978813
+        ],
+        "training_rgb_rmse": 15.764828165995265,
+        "held_rgb_rmse": 15.066507622242137,
+        "support": "entire exposed icon ROI, spatialheldblocks",
+        "train_pixels": 5760,
+        "held_pixels": 3040,
+        "evaluations": 240,
+        "solver_success": false,
+        "solver_message": "Maximum number of function evaluations has been exceeded.",
+        "limits": "Only translation/uniformscale of ORIGINAL clean SVG; fixed color from independently exposed blue track, no outline/alpha edits or fitted source-PSF. B scoresdoNOTvalidate surroundinghalo/backdrop."
+      },
+      "B_pose_only": {
+        "placement": [
+          388.66155191292546,
+          526.0538576700658,
+          485.35730092447284,
+          574.5951236738625
+        ],
+        "training_rgb_rmse": 27.7283907910115,
+        "held_rgb_rmse": 28.46810386965171,
+        "support": "predeclared high-blue core only (unknown surrounding halo excluded)",
+        "train_pixels": 1071,
+        "held_pixels": 571,
+        "evaluations": 240,
+        "solver_success": false,
+        "solver_message": "Maximum number of function evaluations has been exceeded.",
+        "limits": "Only translation/uniformscale of ORIGINAL clean SVG; fixed color from independently exposed blue track, no outline/alpha edits or fitted source-PSF. B scoresdoNOTvalidate surroundinghalo/backdrop."
+      },
+      "all_A_variants": [
+        {
+          "glyph": "tortoise.original-outline",
+          "held_rgb_rmse": 15.066507622242137
+        }
+      ]
+    },
+    {
+      "icon": "hare",
+      "glyph": "hare.original-outline",
+      "source_svg_sha256": "16029a1639c49cf04bf89077c73c82edc17d71c48de001257341c26cf932e9f6",
+      "A_identity_check": {
+        "placement": [
+          1434.3652470566951,
+          517.9157352591819,
+          1523.7500007870813,
+          582.8090664674422
+        ],
+        "training_rgb_rmse": 14.428934129949203,
+        "held_rgb_rmse": 13.607360879619176,
+        "support": "entire exposed icon ROI, spatialheldblocks",
+        "train_pixels": 6400,
+        "held_pixels": 3200,
+        "evaluations": 240,
+        "solver_success": false,
+        "solver_message": "Maximum number of function evaluations has been exceeded.",
+        "limits": "Only translation/uniformscale of ORIGINAL clean SVG; fixed color from independently exposed blue track, no outline/alpha edits or fitted source-PSF. B scoresdoNOTvalidate surroundinghalo/backdrop."
+      },
+      "B_pose_only": {
+        "placement": [
+          1421.0162264581097,
+          517.9780735805014,
+          1510.302073490866,
+          582.7995985262825
+        ],
+        "training_rgb_rmse": 27.532878677219774,
+        "held_rgb_rmse": 26.695345436500507,
+        "support": "predeclared high-blue core only (unknown surrounding halo excluded)",
+        "train_pixels": 1098,
+        "held_pixels": 523,
+        "evaluations": 240,
+        "solver_success": false,
+        "solver_message": "Maximum number of function evaluations has been exceeded.",
+        "limits": "Only translation/uniformscale of ORIGINAL clean SVG; fixed color from independently exposed blue track, no outline/alpha edits or fitted source-PSF. B scoresdoNOTvalidate surroundinghalo/backdrop."
+      },
+      "all_A_variants": [
+        {
+          "glyph": "hare.original-outline",
+          "held_rgb_rmse": 13.607360879619176
+        }
+      ]
+    }
+  ],
+  "status": "SOURCE PROPOSAL ONLY; no Bbackground/benchmark adoption, no opticalpass",
+  "limits": "Original SF outlines reused; placementfits neveralter vectorgeometry/aspectratio. A matches select available font variant, not conclusive Apple configuration proof; inspect training/held errors. Bhalo absent from incident reconstruction by design, not copied into source."
+}

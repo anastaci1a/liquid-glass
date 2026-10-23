@@ -1,0 +1,165 @@
+{
+  "accepted_commit": "bb1ee80131d39e7661c3d55174767c4d15182e05",
+  "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+  "one_family": true,
+  "fixed_width": 0.2,
+  "bound": {
+    "lambda_max": 0.21960679960734011,
+    "feature_abs_max": 0.5463765302006207,
+    "feature_abs_bound": 0.5464311679536408,
+    "maximum_displacement_fraction": 0.12,
+    "curvature_min": 0.0,
+    "curvature_max": 1.0389658436539397,
+    "perimeter": 11.499734999364819,
+    "normalized_mean_curvature": 0.5463765302006207,
+    "boundary_samples": 8192,
+    "extremum_refined": true
+  },
+  "best_guard_feasible": {
+    "index": 35,
+    "amplitude": -0.03378753594752763,
+    "E": 6.850284210615279,
+    "scores": {
+      "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+      "observations": {
+        "A": {
+          "glass": {
+            "rmse": 5.8285064697265625,
+            "pixels": 188771
+          },
+          "rim": {
+            "rmse": 8.783763885498047,
+            "pixels": 61248
+          },
+          "shadow": 11.469441612543633
+        }
+      }
+    },
+    "foreground": {
+      "archivebox": 13.242044387461515,
+      "plus": 3.667139623528374
+    },
+    "guard_values": [
+      5.8285064697265625,
+      8.783763885498047,
+      11.469441612543633,
+      13.242044387461515,
+      3.667139623528374
+    ],
+    "all_nonregression": true,
+    "nonregression": {
+      "glass": true,
+      "rim": true,
+      "exterior": true,
+      "archivebox": true,
+      "plus": true
+    },
+    "gate": {
+      "accepted": false,
+      "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+      "error_ratio": 0.995,
+      "observations": {
+        "A": {
+          "previous_error": 6.870490597949865,
+          "candidate_error": 6.850284210615279,
+          "required_error_max": 6.836138144960116,
+          "relative_reduction": 0.002941039951443236,
+          "milestone_passed": false,
+          "nonregression": {
+            "glass": true,
+            "shadow": true
+          },
+          "passed": false
+        }
+      },
+      "evidence": {
+        "visual_review": false,
+        "independent_replay": false,
+        "source_support": false
+      }
+    },
+    "numerical_qualifier": false,
+    "phase": "native-quadratic-guard-7",
+    "native_actual_render": true,
+    "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0035.npz",
+    "seconds": 4.931823968887329
+  },
+  "best_raw": {
+    "index": 35,
+    "amplitude": -0.03378753594752763,
+    "E": 6.850284210615279,
+    "scores": {
+      "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+      "observations": {
+        "A": {
+          "glass": {
+            "rmse": 5.8285064697265625,
+            "pixels": 188771
+          },
+          "rim": {
+            "rmse": 8.783763885498047,
+            "pixels": 61248
+          },
+          "shadow": 11.469441612543633
+        }
+      }
+    },
+    "foreground": {
+      "archivebox": 13.242044387461515,
+      "plus": 3.667139623528374
+    },
+    "guard_values": [
+      5.8285064697265625,
+      8.783763885498047,
+      11.469441612543633,
+      13.242044387461515,
+      3.667139623528374
+    ],
+    "all_nonregression": true,
+    "nonregression": {
+      "glass": true,
+      "rim": true,
+      "exterior": true,
+      "archivebox": true,
+      "plus": true
+    },
+    "gate": {
+      "accepted": false,
+      "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+      "error_ratio": 0.995,
+      "observations": {
+        "A": {
+          "previous_error": 6.870490597949865,
+          "candidate_error": 6.850284210615279,
+          "required_error_max": 6.836138144960116,
+          "relative_reduction": 0.002941039951443236,
+          "milestone_passed": false,
+          "nonregression": {
+            "glass": true,
+            "shadow": true
+          },
+          "passed": false
+        }
+      },
+      "evidence": {
+        "visual_review": false,
+        "independent_replay": false,
+        "source_support": false
+      }
+    },
+    "numerical_qualifier": false,
+    "phase": "native-quadratic-guard-7",
+    "native_actual_render": true,
+    "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0035.npz",
+    "seconds": 4.931823968887329
+  },
+  "any_numerical_qualifier": false,
+  "unique_native_points": 42,
+  "actual_new_renders": 41,
+  "trust_iterations": 8,
+  "stop_reason": "trust_iteration_budget_8",
+  "best_near_amplitude_bound": false,
+  "counted_passes": 0,
+  "seconds": 158.43040418624878,
+  "limits": "Empirical image-map addition, not recovered Apple solid. All design/probes/steps ONE family. Native guards exact; no first-threshold stop. Budget/finite sampling is not global convergence. Independent primary replay/visual/HQ source proof required before counting."
+}

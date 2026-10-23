@@ -1,0 +1,65 @@
+{
+  "input_approval": "f03593c7-65a7-4dfc-9b45-728f0d33596d",
+  "approval": "6a9a563d-4f4b-4795-8230-adaacdbab0f2",
+  "qualifies_numerically": true,
+  "foreground_f64": {
+    "before": 35.785369093427704,
+    "after": 31.30223544613139
+  },
+  "advisory_cohorts": {
+    "canonical_deep": {
+      "pixels": 62,
+      "old_RGB_RMSE": 56.11937586646014,
+      "new_RGB_RMSE": 20.19578508222478,
+      "old_signed_RGB": [
+        -54.13377846802412,
+        -54.54658689188598,
+        -59.21202352063002
+      ],
+      "new_signed_RGB": [
+        -17.9292346501062,
+        -18.342043150576853,
+        -23.00748005990059
+      ],
+      "advisory_only": true
+    },
+    "canonical_partial_edge": {
+      "pixels": 70,
+      "old_RGB_RMSE": 36.5926369062883,
+      "new_RGB_RMSE": 47.93515543036032,
+      "old_signed_RGB": [
+        24.68949308219765,
+        25.844071978304004,
+        24.828919550270907
+      ],
+      "new_signed_RGB": [
+        41.549538453774794,
+        42.70411670527288,
+        41.6889649150627
+      ],
+      "advisory_only": true
+    }
+  },
+  "checks": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "glyph": true,
+    "exterior": true,
+    "full_visible_exterior": true,
+    "E": true,
+    "SSIM": true,
+    "foreground_progress": true,
+    "body_bit_exact": true,
+    "outside_glyph_bit_exact": true,
+    "opacity_fixed_1": true,
+    "input_case_unchanged": true
+  },
+  "body_source_proof_transfer": "Material/source/rays/map/kernels/rim/pose/alpha/SVG/masks/shadow unchanged. WHOLE7731/ALLscored5624/post8752 originalmodelconfidence1/hiddenobserved0 and priorrawclip0 transfer; newcolorin[0,.4] withfixedalpha isconvex, no body/ray rerender.",
+  "actual_body_renders_added": 0,
+  "actual_native_composites": 1,
+  "uniform_gray_LS_solves": 1,
+  "analytic_unbounded_gray": 0.1422113443266031,
+  "limits": "Foreground-only empirical color, not optics/materialradiance/Appleopacity identification. SVG remains thinner than target; partialedge regression retained. BodyE/SSIM exactties. Sourceupper3.785/pose.463/sourcehidden0 unchanged."
+}

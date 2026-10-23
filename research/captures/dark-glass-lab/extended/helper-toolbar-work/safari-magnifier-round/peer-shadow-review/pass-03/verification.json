@@ -1,0 +1,247 @@
+{
+  "status": "INDEPENDENT_REPLAY_SOURCE_VISUAL_REVIEW_PASSES_FOR_LEAD_ACCEPTANCE",
+  "reviewer": "localica-agent",
+  "committed_compositor": "currentcommittedb6a72786 vector_revision.py SHA25637dfaade301cbfc45474d7d3b901f20053a22c479590e3931e3cc867e8986a7b exactprivatecode; sourceandopticalproofs inheritedverified",
+  "observations": {
+    "plus": {
+      "before": {
+        "near": 5.030436992645264,
+        "full": 4.987030506134033,
+        "glyph": 29.32256507873535
+      },
+      "after": {
+        "near": 4.674324989318848,
+        "full": 4.829305648803711,
+        "glyph": 29.32256507873535
+      },
+      "baseline_complete_exact": true,
+      "baseline_replay_reused_from_prior_independent_acceptance": true,
+      "candidate_complete_exact": true,
+      "material_exact": true,
+      "alpha_exact": true,
+      "only_opacity_minus_005": true,
+      "source_case_vector_recipe_unchanged": true,
+      "all_glass_complete_pixels_exact": true,
+      "all_glyph_complete_pixels_exact": true,
+      "native_optical_scores_exact": {
+        "glass": {
+          "pixels": 11725,
+          "rmse": 23.7161865234375
+        },
+        "rim": {
+          "pixels": 5767,
+          "rmse": 24.227746963500977
+        },
+        "held": {
+          "pixels": 4483,
+          "rmse": 22.358642578125
+        },
+        "interior": {
+          "pixels": 5958,
+          "rmse": 23.210290908813477
+        },
+        "ssim": 0.9832056164741516,
+        "loss": 569.8153691283642,
+        "E": 23.870805791350325
+      },
+      "advisory": [
+        {
+          "name": "upper_near",
+          "pixels": 7120,
+          "before": 6.113184452056885,
+          "after": 5.610548973083496,
+          "worsens": false
+        },
+        {
+          "name": "lower_near",
+          "pixels": 7114,
+          "before": 3.6372225284576416,
+          "after": 3.4946024417877197,
+          "worsens": false
+        },
+        {
+          "name": "left_near",
+          "pixels": 7114,
+          "before": 5.559851169586182,
+          "after": 5.122735500335693,
+          "worsens": false
+        },
+        {
+          "name": "right_near",
+          "pixels": 7120,
+          "before": 4.43884801864624,
+          "after": 4.178505897521973,
+          "worsens": false
+        },
+        {
+          "name": "far",
+          "pixels": 17964,
+          "before": 4.952365875244141,
+          "after": 4.948661804199219,
+          "worsens": false
+        }
+      ],
+      "source_proof": "Opacity-only generated exterior: original fixed map/kernel/geometry/AA/source/vector/mask finite support proofs transfer; source observed0, not hiddenRGB truth. No new opticalrender/rays needed.",
+      "local_advisory": {
+        "exterior_pixels_MSE_worse": 13747,
+        "exterior_pixels_MSE_better": 18586,
+        "max_pointwise_MSE_worsening": 32.0931396484375,
+        "parent_boundary_rect": [
+          1495,
+          795,
+          1520,
+          815
+        ],
+        "parent_boundary_RMSE_before": 23.33677864074707,
+        "parent_boundary_RMSE_after": 23.33695411682129,
+        "advisory_only": true
+      }
+    },
+    "search_advisory": {
+      "before": {
+        "near": 6.446720600128174,
+        "full": 6.434603214263916,
+        "glyph": 27.144643783569336
+      },
+      "after": {
+        "near": 5.967076778411865,
+        "full": 6.225407123565674,
+        "glyph": 27.144643783569336
+      },
+      "baseline_complete_exact": true,
+      "baseline_replay_reused_from_prior_independent_acceptance": true,
+      "candidate_complete_exact": true,
+      "material_exact": true,
+      "alpha_exact": true,
+      "only_opacity_minus_005": true,
+      "source_case_vector_recipe_unchanged": true,
+      "all_glass_complete_pixels_exact": true,
+      "all_glyph_complete_pixels_exact": true,
+      "native_optical_scores_exact": {
+        "glass": {
+          "pixels": 9922,
+          "rmse": 7.27180814743042
+        },
+        "rim": {
+          "pixels": 5555,
+          "rmse": 8.591703414916992
+        },
+        "held": {
+          "pixels": 3789,
+          "rmse": 6.072876453399658
+        },
+        "interior": {
+          "pixels": 4367,
+          "rmse": 5.122986793518066
+        },
+        "ssim": 0.9863481521606445,
+        "loss": 59.1606458840937,
+        "E": 7.691595795678143
+      },
+      "advisory": [
+        {
+          "name": "upper_near",
+          "pixels": 6889,
+          "before": 7.863741397857666,
+          "after": 7.139901161193848,
+          "worsens": false
+        },
+        {
+          "name": "lower_near",
+          "pixels": 6847,
+          "before": 4.599738597869873,
+          "after": 4.487708568572998,
+          "worsens": false
+        },
+        {
+          "name": "left_near",
+          "pixels": 6882,
+          "before": 6.867214679718018,
+          "after": 6.34296989440918,
+          "worsens": false
+        },
+        {
+          "name": "right_near",
+          "pixels": 6854,
+          "before": 5.994906902313232,
+          "after": 5.564157009124756,
+          "worsens": false
+        },
+        {
+          "name": "far",
+          "pixels": 16873,
+          "before": 6.424722194671631,
+          "after": 6.428047180175781,
+          "worsens": true
+        }
+      ],
+      "source_proof": "Opacity-only generated exterior: original fixed map/kernel/geometry/AA/source/vector/mask finite support proofs transfer; source observed0, not hiddenRGB truth. No new opticalrender/rays needed.",
+      "local_advisory": {
+        "exterior_pixels_MSE_worse": 13398,
+        "exterior_pixels_MSE_better": 17357,
+        "max_pointwise_MSE_worsening": 23.38922119140625,
+        "parent_boundary_rect": [
+          405,
+          795,
+          430,
+          815
+        ],
+        "parent_boundary_RMSE_before": 20.80569076538086,
+        "parent_boundary_RMSE_after": 20.807147979736328,
+        "advisory_only": true
+      }
+    }
+  },
+  "scope": "LeadPLUS source-limited SINGLE generated-exterior reconstruction only; Aextraadvisory, not activepair oragentApass. OpticalE ties, severePLUSbody/cyan mismatch remains.",
+  "new_material_renders": 0,
+  "optical_fits": 0,
+  "agent_accepted_passes": 0,
+  "visual_review": {
+    "plus_triptych": true,
+    "search_triptych": true,
+    "full_body_retained": true,
+    "new_artifacts_seen": false,
+    "limitations": "Minor generatedshadowlightening ONLY. OriginalPLUSbrightness/cyan/body/glyph/rasterrim/parentboundarysource mismatch remains. Localpointwise/boundary regressions advisoryretained; no pairedopticsclaim."
+  },
+  "three_pass_procedural_review": {
+    "records": {
+      "plus": {
+        "opacity_sequence": [
+          0.07122886993343976,
+          0.06622886993343975,
+          0.061228869933439754,
+          0.05622886993343976
+        ],
+        "three_deltas_only": [
+          -0.005,
+          -0.005,
+          -0.005
+        ],
+        "source_case_vector_material_map_kernel_masks_unchanged": true,
+        "original_native_material_alpha_exact_all3": true
+      },
+      "search_advisory": {
+        "opacity_sequence": [
+          0.07122886993343976,
+          0.06622886993343975,
+          0.061228869933439754,
+          0.05622886993343976
+        ],
+        "three_deltas_only": [
+          -0.005,
+          -0.005,
+          -0.005
+        ],
+        "source_case_vector_material_map_kernel_masks_unchanged": true,
+        "original_native_material_alpha_exact_all3": true
+      }
+    },
+    "pass1_commit": "ed02df59",
+    "pass2_commit": "b6a72786",
+    "pass3": "PeerreviewPASS,primaryacceptance/commitpending",
+    "source_background": "Affinefieldestimatedobserved0, conditionalSINGLEinput; no perimage-materialfit/parentboundaryrecovery",
+    "credit": "OnlyleadPLUSgenerated-exterior; opticalE ties, Aextraadvisorynotagentpass, no pairedoptics",
+    "advisory_regressions": "Pointwiseandparentborderworsening all3 retained. Pass3 A far(sd>.35) RMSE6.4247221947->6.4280471802worsens; near/fulloriginalguardsimprove, no newwaiver.",
+    "media_scope": "UpcomingHQ/motion NOT reviewedhere; no newopticalrenders; futurecachedtranslatedillustration mustbedisclosednotdynamicopticsvalidation."
+  }
+}

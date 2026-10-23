@@ -1,0 +1,164 @@
+{
+  "element": "Music navigation",
+  "baseline": "paired/pass-24.json",
+  "rotation_count": 0,
+  "private_worktree": "/mnt/user/live/projects/localica/localica-agent-navigation",
+  "proposal": {
+    "kind": "One joint existing outer-normal step",
+    "delta": {
+      "c0": -0.000425,
+      "c2": -0.000075
+    },
+    "maximum_L1_coefficient_step": 0.0005,
+    "parameters": {
+      "sigma": 0.06047661140625681,
+      "amplitude": 0.9485436659122595,
+      "band": 0.5384386598035512,
+      "power": 4.999993778470106,
+      "tangent": 0.049540608261214134,
+      "tangent_band": 0.15141185593083903,
+      "core_x": 0.0015,
+      "core_y": 0,
+      "post_sigma": 0.0013656387665198237,
+      "coupling": 0,
+      "gamma": 1.5498119095417262,
+      "rim_width": 0.01666772149005208,
+      "thin_width": 0.03222754078699499,
+      "spline": true,
+      "shape_dx": 0.0055591771957104125,
+      "shape_dy": -0.0015029694974541769,
+      "half_x_delta": -0.012468688268236945,
+      "half_y_delta": 0.0029830429944897054,
+      "radius_delta": 0.012043262965009455,
+      "c0": 1.054132441223155,
+      "c1": 1.8755274875703234,
+      "c2": 1.5218323619352807,
+      "c3": 0.5872764606184443,
+      "c4": 0.24013625700885335,
+      "c5": 0.00015522768827389423,
+      "c6": 0.0033404538128187318,
+      "shadow": {
+        "opacity": 0.10764214837818373,
+        "sigma": 0.18084277464749535,
+        "offset": [
+          0.04999998700595407,
+          -0.09511814633686944
+        ]
+      },
+      "blur_transition": 0.005785154938375108,
+      "cap_normal_gain": -0.023805316594622924,
+      "cap_tangent_fade": 0
+    },
+    "material": [
+      0.3360514337099299,
+      0.3353423539755708,
+      0.33566259631653417,
+      0.5618569480511978,
+      0.5625553031073327,
+      0.5621179010815275,
+      0.13821370256222282,
+      0.07272690821098221,
+      0.13966320333076915,
+      -0.06929577597320812,
+      -0.06730257116242326,
+      -0.1329421436591341,
+      -0.018384543254068804,
+      0.009885188899454318,
+      -0.015440509226293489,
+      -0.0006004695348646385,
+      -0.00015673751651745346,
+      0.0014480922817100932,
+      0.003007628589052811,
+      0.0030714770763298573,
+      0.34421390434816673,
+      0.3435391935820806,
+      0.3438668305129804
+    ],
+    "unchanged": "both references, source/known masks, geometry, gamma/material, shadow, blur, SVGs/styles, AA and scoring masks"
+  },
+  "baseline_scores": [
+    {
+      "glass": {
+        "pixels": 113250,
+        "rmse": 1.6107325553894043
+      },
+      "rim": {
+        "pixels": 35386,
+        "rmse": 2.6459853649139404
+      },
+      "held": {
+        "pixels": 27873,
+        "rmse": 1.3603713512420654
+      },
+      "interior": {
+        "pixels": 77864,
+        "rmse": 0.7692588567733765
+      },
+      "loss": 3.9164931208955234,
+      "E": 1.979013168449246,
+      "foreground_mse": {
+        "home.svg": 126.83411316247657,
+        "home-label.svg": 187.04389128251933,
+        "new.svg": 81.76136949041393,
+        "new-label.svg": 96.88008476514369,
+        "radio.svg": 16.298723623913247,
+        "radio-label.svg": 207.70146914874204,
+        "library.svg": 306.6913927788846,
+        "library-label.svg": 145.70484492578544
+      },
+      "exterior": {
+        "pixels": 46436,
+        "rmse": 8.735226423581446
+      }
+    },
+    {
+      "glass": {
+        "pixels": 113250,
+        "rmse": 6.044371128082275
+      },
+      "rim": {
+        "pixels": 35386,
+        "rmse": 9.949139595031738
+      },
+      "held": {
+        "pixels": 27873,
+        "rmse": 6.041400909423828
+      },
+      "interior": {
+        "pixels": 77864,
+        "rmse": 2.8553483486175537
+      },
+      "loss": 55.269709238224706,
+      "E": 7.434360042278334,
+      "foreground_mse": {
+        "home.svg": 141.01503059500828,
+        "home-label.svg": 195.5448506399989,
+        "new.svg": 82.63407370832283,
+        "new-label.svg": 111.52923118206672,
+        "radio.svg": 25.79649959807284,
+        "radio-label.svg": 217.38618017407134,
+        "library.svg": 306.9900407223031,
+        "library-label.svg": 149.4179748056922
+      },
+      "exterior": {
+        "pixels": 46436,
+        "rmse": 9.774154815950626
+      }
+    }
+  ],
+  "evidence": "six retained native axis neighbors: all rejected due A/B tradeoff; no duplicated probes",
+  "limits": "Central score responses only guide this small joint proposal; asymmetric OpenCV/source response means predicted feasibility is unverified. No count or native gain claimed.",
+  "tasks": [
+    {
+      "task": 1,
+      "action": "ONE original Study.render proposal on both refs; compare original E/glass/exterior/all16foreground guards strictly to matched frozen baseline. If rejected, at most ONE predetermined half step; then stop. No new derivatives/optimizer/source fit."
+    },
+    {
+      "task": 2,
+      "action": "For a useful guarded candidate, validate source footprint and retain clean native/HQ visual evidence and exact recipe for primary independent replay/visual/source acceptance. If no candidate survives, report negative result and request one next bounded family; no artificial pass."
+    }
+  ],
+  "counting_rule": "Three primary-verified/pushed nonregressive meaningful passes, then merge and rotate independently; no minimum percent, exact ties never count.",
+  "ownership": "latest direct Ana: primary segmented selector, agent Navigation; on-disk file still names Music Search for primary, no helper work on either primary element",
+  "toolbar": "41 complete once/unadopted,42partials retained,43notstarted"
+}

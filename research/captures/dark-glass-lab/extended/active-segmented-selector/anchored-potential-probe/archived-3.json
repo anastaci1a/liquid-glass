@@ -1,0 +1,164 @@
+{
+  "seed": "archived",
+  "stage": 3,
+  "experiment": "Joint phase refinement",
+  "parameters": {
+    "sigma": 0.9446472436927442,
+    "amplitude": 0.5267679257572784,
+    "band": 1.0,
+    "power": 4.616458746391088,
+    "tangent": 0.0,
+    "tangent_band": 0.2681646270760464,
+    "core_x": 0.0,
+    "core_y": 0.0,
+    "post_sigma": 0.0,
+    "coupling": 0.0,
+    "gamma": 0.6869624876219642,
+    "rim_width": 0.1557680404851933,
+    "thin_width": 0.03474943676338922,
+    "spline": true,
+    "shape_dx": 0.0,
+    "shape_dy": 0.0,
+    "half_x_delta": 0.0,
+    "half_y_delta": 0.0,
+    "radius_delta": 0.0,
+    "c0": 0.2879981036276559,
+    "c1": 0.5531415166282877,
+    "c2": 0.6068517453727577,
+    "c3": 0.6223638917884879,
+    "c4": -1.7688102743576735,
+    "c5": 0.6585992608837044,
+    "c6": 0.058106718987457874,
+    "shadow": {
+      "opacity": 0.030792257176537066,
+      "sigma": 0.14035990212261495,
+      "offset": [
+        0.0081036453594727,
+        0.09999999835491878
+      ]
+    },
+    "cap_normal_gain": 0.0,
+    "cap_join_width": 0.0,
+    "anchor_x": 0.13811785743526453,
+    "anchor_y": 0.12283191768462509,
+    "anchor_band": 0.9049553479004373
+  },
+  "material": [
+    0.21147856501257528,
+    1.046456820396048,
+    1.1414505477527668,
+    0.5151465036619298,
+    -0.29198496450326006,
+    -0.37970947202006317,
+    0.041285937675128774,
+    -0.07626943297859029,
+    -0.0146611485631696,
+    0.3306952208713727,
+    0.1019801788152987,
+    -0.017741214834680136,
+    -0.10876922846063185,
+    -0.042700929072838685,
+    -0.05636306904543494,
+    -0.02040699218418716,
+    0.08758852612880892,
+    -0.01474194417347674,
+    0.08661314276196744,
+    0.004341308638061239,
+    0.5279614984238529,
+    1.3797465446354948,
+    1.474386597539013
+  ],
+  "training_loss": 0.008274580207376555,
+  "scores": [
+    {
+      "glass": {
+        "pixels": 186310,
+        "rmse": 20.7702693939209
+      },
+      "rim": {
+        "pixels": 46479,
+        "rmse": 22.090036392211914
+      },
+      "held": {
+        "pixels": 45815,
+        "rmse": 20.757593154907227
+      },
+      "interior": {
+        "pixels": 139831,
+        "rmse": 20.31260871887207
+      },
+      "ssim": 0.9156489968299866,
+      "loss": 448.37377583000705
+    },
+    {
+      "glass": {
+        "pixels": 177426,
+        "rmse": 14.20564079284668
+      },
+      "rim": {
+        "pixels": 43962,
+        "rmse": 12.550559997558594
+      },
+      "held": {
+        "pixels": 44654,
+        "rmse": 14.77901554107666
+      },
+      "interior": {
+        "pixels": 133464,
+        "rmse": 14.71009635925293
+      },
+      "ssim": 0.9401041865348816,
+      "loss": 188.51512811046814
+    },
+    {
+      "glass": {
+        "pixels": 171306,
+        "rmse": 30.45708465576172
+      },
+      "rim": {
+        "pixels": 41340,
+        "rmse": 16.40106773376465
+      },
+      "held": {
+        "pixels": 42039,
+        "rmse": 29.964324951171875
+      },
+      "interior": {
+        "pixels": 129966,
+        "rmse": 33.7214469909668
+      },
+      "ssim": 0.8741407990455627,
+      "loss": 730.0423108520258
+    }
+  ],
+  "source_support": [
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.04697010359078954,
+      "gaussian_3sigma_observed_fraction": 0.04258493908002791,
+      "source_gaussian_radius_native_px": 3
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.024489082772536155,
+      "gaussian_3sigma_observed_fraction": 0.01987870999740737,
+      "source_gaussian_radius_native_px": 3
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.03424281694745076,
+      "gaussian_3sigma_observed_fraction": 0.030728637642581113,
+      "source_gaussian_radius_native_px": 3
+    }
+  ],
+  "supported": [
+    true,
+    true,
+    true
+  ],
+  "evaluations": 480,
+  "seconds": 4.308691740036011
+}

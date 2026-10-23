@@ -1,0 +1,101 @@
+{
+  "authority": "Ana: timed isolated stages, stop after dispersion and final review; no motion or stages 8–10. Latest correction: play button has no dispersion; skip that block, shorten total by 15 minutes.",
+  "element": "First circular clear play button",
+  "start": "2026-10-22T06:51:50.016Z",
+  "deadline": "2026-10-22T11:41:50.016Z",
+  "stages": [
+    {
+      "name": "inspection",
+      "minutes": 10,
+      "start": "2026-10-22T06:51:50.016Z",
+      "deadline": "2026-10-22T07:01:50.016Z",
+      "status": "complete"
+    },
+    {
+      "name": "refraction",
+      "minutes": 120,
+      "start": "2026-10-22T07:01:50.016Z",
+      "deadline": "2026-10-22T09:01:50.016Z",
+      "status": "complete_no_new_acceptance",
+      "observed_start": "2026-10-22T07:02:23.420Z",
+      "actual_end": "2026-10-22T07:32:08.963Z",
+      "stop_reason": "Completed three-hypothesis model review and held R4 at explicit budget failure; retain G05. Allocations are hard caps, not waiting quotas."
+    },
+    {
+      "name": "blurriness",
+      "minutes": 20,
+      "start": "2026-10-22T09:01:50.016Z",
+      "deadline": "2026-10-22T09:21:50.016Z",
+      "status": "complete_accepted_increment",
+      "actual_start": "2026-10-22T07:32:08.963Z",
+      "active_deadline": "2026-10-22T07:52:08.963Z",
+      "actual_end": "2026-10-22T07:45:53.509Z",
+      "result": "Output color blur1.7/245L, no geometry/source/alpha change;12 bounded candidates; all original guards pass; auxiliary outer-rimMAE regression disclosed."
+    },
+    {
+      "name": "color-grading",
+      "minutes": 20,
+      "start": "2026-10-22T09:21:50.016Z",
+      "deadline": "2026-10-22T09:41:50.016Z",
+      "status": "complete_no_qualifier",
+      "actual_start": "2026-10-22T07:45:53.509Z",
+      "active_deadline": "2026-10-22T08:05:53.509Z",
+      "actual_end": "2026-10-22T07:56:02.691Z",
+      "result": "Eight bounded trials rejected: lower-dune brightness improves but perimeter/exterior protection fails. Incumbent unchanged."
+    },
+    {
+      "name": "outline",
+      "minutes": 60,
+      "start": "2026-10-22T09:41:50.016Z",
+      "deadline": "2026-10-22T10:41:50.016Z",
+      "status": "complete_incomplete_transport_no_image",
+      "actual_start": "2026-10-22T07:56:02.691Z",
+      "active_deadline": "2026-10-22T08:56:02.691Z",
+      "actual_end": "2026-10-22T08:33:36.641Z",
+      "result": "32-encounter audit has4.19%internalpower remaining; conditional image gateoff. Sharedray/energy primitivesverified, no acceptedoutline."
+    },
+    {
+      "name": "shadows-glow",
+      "minutes": 15,
+      "start": "2026-10-22T10:41:50.016Z",
+      "deadline": "2026-10-22T10:56:50.016Z",
+      "status": "complete_no_identified_visible_gain",
+      "actual_start": "2026-10-22T08:33:36.641Z",
+      "active_deadline": "2026-10-22T08:48:36.641Z",
+      "actual_end": "2026-10-22T08:42:57.285Z",
+      "result": "Best shadow numerical gain .081% with maximum1.49/255 change, not visually identified; retain zero generated shadow, no blueglow."
+    },
+    {
+      "name": "icon-shape-material",
+      "minutes": 30,
+      "start": "2026-10-22T10:56:50.016Z",
+      "deadline": "2026-10-22T11:26:50.016Z",
+      "status": "complete_no_qualifier",
+      "actual_start": "2026-10-22T08:42:57.285Z",
+      "active_deadline": "2026-10-22T09:12:57.285Z",
+      "actual_end": "2026-10-22T08:59:32.301Z",
+      "result": "48 original-vector and72 symmetric-trace raster evaluations; both rejected on corrected full foreground. Eight material composites exhausted; retain labeled legacy icon dependency. Supplemental foreground grid-order bug corrected from saved arrays; original scores and exterior unchanged."
+    },
+    {
+      "name": "dispersion",
+      "minutes": 0,
+      "start": "2026-10-22T11:26:50.016Z",
+      "deadline": "2026-10-22T11:26:50.016Z",
+      "status": "skipped",
+      "reason": "Ana explicitly confirms no dispersion for this play button; do not fit it."
+    },
+    {
+      "name": "final-review",
+      "minutes": 15,
+      "start": "2026-10-22T11:26:50.016Z",
+      "deadline": "2026-10-22T11:41:50.016Z",
+      "status": "complete",
+      "actual_start": "2026-10-22T08:59:32.301Z",
+      "active_deadline": "2026-10-22T09:14:32.302Z",
+      "actual_end": "2026-10-22T09:06:45.351Z",
+      "result": "Selected cached material/composite replay pixel exact, corrected guards pass;20 tests,663 guide files/627 links. No further scientific work. Await helper final evidence only."
+    }
+  ],
+  "policy": "Wall-clock caps include evidence and review. No silent extensions. Best accepted incumbent preserved; useful negatives count as completed work, not successful improvements. No minimum number of successful subpasses.",
+  "early_completion_policy": "Advance when declared stop/review conditions close a stage early; preserve original scheduled latest deadlines and do not transfer unused time to extend another stage. Actual per-stage cap starts on entry."
+}

@@ -1,0 +1,9 @@
+# Joint existing-parameter switch settlement
+
+- Accepted as review revision6 after independent native/4× replay, fresh50,899,855emitted transmission-ray checks, inherited-context uniform-gray response audit and visual comparison. One verified improvement; sixteen optimizer updates are not sixteen passes.
+- E14.152440219→14.075942720 and15.448443349→15.317415660:0.5405%/0.8482%. Original whole-glass/exterior guards hold; rim also improves. No source, footprint, kernel, directional dispersion, shadow or per-reference coefficient changes.
+- Initial8updates ended still improving but A narrowly missed threshold. Predeclared same-family8update continuation retained original bounds/guards. Final termination is update budget; gamma2.5 hits its declared bound. Do not claim convergence or expand bounds without new evidence.
+- Fresh comparisons and6region crop sheet reviewed. B all4crops and A lower-left/center improve. A upper-left/right-rim worsen0.85%/0.32%, retained as advisory diagnostics. No new visible seam/shape discontinuity. Dark rim, softness and inaccurate fringes remain unresolved; this incremental acceptance is not rendering parity or an identified solid.
+- Exposed-color stress ranges A14.075–14.093/B15.165–15.699. Componentwise source perturbations preserve observed pixels; these are not confidence intervals or alternate scoring inputs.
+- Initial HQ verification interrupted by explicit Ana pause; partial A outputs retained in independent/. Resumed full replay into independent-resumed/; interrupted attempt did not create another pass. All completed evidence is preserved.
+- Public recipe/pass06 verification, response audit, source stress and crops reproduce this candidate. Earlier finite-gap compatibility finding applies to revision5; do not silently label it a proof about changed revision6.

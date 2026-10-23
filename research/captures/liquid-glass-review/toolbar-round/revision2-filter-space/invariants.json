@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "model_sha256": "9175d20229b53ab78335272695c4e6ff5ca8ae6e0805f6af67bc038f35b21d2e",
+  "tests": {
+    "srgb": {
+      "max_roundtrip_dense_and_knees": 2.9591877996615334e-08,
+      "encoded_knee_inputs": [
+        0.040449999999,
+        0.04045,
+        0.040450000001
+      ],
+      "decoded_at_knee": [
+        0.0031308049534829723,
+        0.0031308049535603713,
+        0.0031308072831464045
+      ],
+      "linear_knee_inputs": [
+        0.003130799999,
+        0.0031308,
+        0.003130800001
+      ],
+      "encoded_at_knee": [
+        0.04044993598708,
+        0.040449936,
+        0.04044990749539321
+      ],
+      "roundtrip_is_not_silently_forced_exact": true
+    },
+    "bt709": {
+      "max_roundtrip_dense_and_knees": 0.00024793289388293227,
+      "encoded_knee_inputs": [
+        0.080999999999,
+        0.081,
+        0.08100000000100001
+      ],
+      "decoded_at_knee": [
+        0.017999999999777777,
+        0.01794502336674779,
+        0.017945023366969338
+      ],
+      "linear_knee_inputs": [
+        0.017999999999,
+        0.018,
+        0.018000000000999997
+      ],
+      "encoded_at_knee": [
+        0.0809999999955,
+        0.08124794403514046,
+        0.08124794403964666
+      ],
+      "roundtrip_is_not_silently_forced_exact": true
+    },
+    "encoded_small_crop_exact": true,
+    "uniform_srgb_scale1": 0.0,
+    "uniform_srgb_scale2": 8.940696716308594e-08,
+    "uniform_bt709_scale1": 8.940696716308594e-08,
+    "uniform_bt709_scale2": 1.4901161193847656e-07,
+    "scale_units": {
+      "source_native_sigma": 11.000000000000002,
+      "source_sigma_at_doubled_L": 22.000000000000004,
+      "output_sigma_at_scale1": 1.25,
+      "output_sigma_at_scale2": 2.5,
+      "source_rays_use_native_units_at_every_output_scale": true
+    }
+  }
+}

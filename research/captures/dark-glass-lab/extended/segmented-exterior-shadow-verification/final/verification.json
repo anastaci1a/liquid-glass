@@ -1,0 +1,121 @@
+{
+  "state_sha256": "b188e157cb63c3040fb82d778c9fa76211b8d1a430a559af3cda4041ccc84719",
+  "render_files": {
+    "motion.mp4": "602e2492ba0a4464d401de2f5317739ad428ceb9c45533dbd45fc4ad7edd4811",
+    "comparison.png": "8afc1d8a7c0d69f31b8254d1466379fade772442d31b0522100505f2e70f23e6"
+  },
+  "native_size": [
+    235,
+    240
+  ],
+  "output_size": [
+    236,
+    240
+  ],
+  "output_scale": 1,
+  "frames": 4,
+  "fps": 30,
+  "travel_over_L": 0.3792134831460674,
+  "scores": {
+    "glass": {
+      "pixels": 15221,
+      "rmse": 5.860626697540283
+    },
+    "rim": {
+      "pixels": 8296,
+      "rmse": 7.335695743560791
+    },
+    "held": {
+      "pixels": 2797,
+      "rmse": 6.790391445159912
+    },
+    "interior": {
+      "pixels": 6925,
+      "rmse": 3.32079815864563
+    },
+    "ssim": 0.9784106016159058,
+    "loss": 40.18659131417412
+  },
+  "motion_support": {
+    "requested_native_px": 45,
+    "actual_native_px": 33.75,
+    "axis": "x",
+    "minimum_scored_lookup_3sigma_defined_fraction": 0.9999343012942645,
+    "minimum_whole_shape_lookup_defined_fraction": 0.9924823929730158,
+    "minimum_scored_lookup_3sigma_observed_fraction": 0.9999343012942645,
+    "minimum_whole_shape_lookup_observed_fraction": 0.9924823929730158,
+    "completion": "Nearest observed RGB extends unobserved input for still/video presentation only. Original input files, native benchmark and fitted coefficients are unchanged.",
+    "limits": "Native-grid support tests at33 shifts, not continuous/subpixel or output-scattering confidence. Completed pixels remain estimates.",
+    "context_mean_source_defined_min": 1.0,
+    "context_mean_source_observed_min": 1.0,
+    "context_mean_minimum_defined_confidence": 1.0,
+    "context_mean_minimum_observed_confidence": 1.0,
+    "reflection_environment_kind": "declared_constant_rgb",
+    "exterior_context": "Exterior and refracted glass use one translating coordinate system, with completed incident RGB and any separately declared exterior layer. Missing context remains an estimate; no fixed reference strip is spliced into the moving background."
+  },
+  "presentation_completion_native_delta": {
+    "max_abs_rgb": 6.918076038360596,
+    "rmse": 0.038374368101358414
+  },
+  "motion": "Stationary element; recovered backdrop translates horizontally. Optical/material coefficients remain frozen.",
+  "limits": "Offline preview, not Apple motion timing, a device benchmark or proof of adaptive cross-scene material. Source footage retains its original information quality; SVG icons/font and catalogue artwork use their declared clean/high-resolution inputs. Undeclared legacy foreground coverage remains reference-derived.",
+  "foreground_response": [
+    {
+      "pixels": 4968,
+      "rmse": 2.9916161669213395,
+      "parameters": [
+        [
+          0.981852780258496,
+          0.5368761771654439,
+          1.026092263616352
+        ],
+        [
+          0.18322434212306798,
+          0.9999999999999986,
+          0.978065523818989
+        ],
+        [
+          0.4117126664496811,
+          0.9902138500957417,
+          1.0499884013005976
+        ]
+      ],
+      "formula": "t*(1-s*(1-B)^g), per channel in encoded RGB"
+    }
+  ],
+  "files": {
+    "motion.mp4": {
+      "bytes": 9711,
+      "sha256": "602e2492ba0a4464d401de2f5317739ad428ceb9c45533dbd45fc4ad7edd4811"
+    },
+    "motion.gif": {
+      "bytes": 27051,
+      "sha256": "d0435ec3649fb1938fb6c568858b609f52bf68676e251d1d3bff7d74ef38fa4c"
+    },
+    "comparison.png": {
+      "bytes": 90176,
+      "sha256": "8afc1d8a7c0d69f31b8254d1466379fade772442d31b0522100505f2e70f23e6"
+    }
+  },
+  "gif": {
+    "fps": 15,
+    "output_size": [
+      236,
+      240
+    ],
+    "master_relative_scale": 1.0,
+    "palette_colors": 256,
+    "palette_sampling": "All frame pixels",
+    "dither": "sierra2_4a",
+    "maximum_megabytes": 10.0,
+    "spatial_downsampling": false
+  },
+  "video_color": {
+    "metadata": {
+      "codec_name": "h264",
+      "color_range": "tv",
+      "color_space": "smpte170m"
+    },
+    "limits": "Encoded RGB export metadata; no measured display/transfer-function calibration."
+  }
+}

@@ -1,0 +1,8 @@
+const{chromium}=require('/workspace/docs/liquid-glass/node_modules/playwright');const assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({executablePath:'/browsers/chromium-1248/chrome-linux64/chrome',args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1100,height:760}}),errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('crash',()=>errors.push('crash'));
+await page.goto('file:///workspace/docs/liquid-glass/site/liquid-glass/lab.html');await page.evaluate(()=>glassLab.settle());await page.screenshot({path:'/workspace/docs/liquid-glass/assets/lab-desktop.png'});
+const report=[];
+for(const width of [390,500,1100,1920]){const p=await browser.newPage({viewport:{width,height:900},deviceScaleFactor:3});await p.goto(page.url());await p.evaluate(()=>glassLab.settle());const info=await p.evaluate(()=>glassLab.info());assert(info.renderSize[0]*info.renderSize[1]<=960*400);assert.equal(await p.evaluate(()=>glassLab.error()),0);report.push({width,renderSize:info.renderSize});await p.close();}
+await page.goto(page.url()+'?fallback=1');await page.evaluate(()=>glassLab.settle());assert((await page.locator('#status').textContent()).includes('motion only'));await page.screenshot({path:'/evidence/fallback-final.png'});
+await page.goto('file:///workspace/docs/liquid-glass/site/liquid-glass/index.html');await page.screenshot({path:'/evidence/guide.png',fullPage:true});assert.deepEqual(errors,[]);require('fs').writeFileSync('/evidence/render-budget.json',JSON.stringify(report,null,2));await browser.close();})().catch(e=>{console.error(e);process.exit(1)});

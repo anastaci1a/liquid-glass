@@ -1,0 +1,36 @@
+{
+  "status": "DECLARED_BEFORE_TRIALS",
+  "elements": [
+    "NEXT219/170",
+    "Safari bag219/290"
+  ],
+  "stage": "shared cross-control rim-response, NOT paired same-element optical validation",
+  "baselines": [
+    "flower-next-round/neutral-additive-round3",
+    "safari-right-circle-round/neutral-additive-round3"
+  ],
+  "source_and_geometry": "Frozen original native source/pose/SVG/map/kernels/masks. No source changes or fitted camera/IOR.",
+  "equation": "C=clip(S+b + a*exp(-(d/w)^2)*(n dot ell)^2,0,1)",
+  "coordinates": "d=max(-signedDistance,0),n=normalized footprint outward normal,ell=(1,1)/sqrt(2). Both geometry-relative lobes are symmetric under n->-n.",
+  "physical_scope": "Empirical neutral two-sided grazing-light basis, not Fresnel/identified environment/Apple pipeline. Color neutral; no target residual masks/paint.",
+  "defaults": {
+    "width": 0.02,
+    "amplitude": 0
+  },
+  "first_proposals": [
+    0.025,
+    0.0125,
+    0.00625
+  ],
+  "bounded_trial_rule": "Try descending common amplitude, stop first native qualifier on BOTH controls; max3 proposals. Every original glass/rim/held/interior/SSIM/glyph/near/full guard preserved. Crops advisory. No count until native source replay and visual review.",
+  "source_support": "Sample coordinates and finite blur/post kernels exactly unchanged; existing whole/scored/post proofs transfer. New shade must be audited for clipping, uniform effect intentionally nonzero at rim.",
+  "invariants": [
+    "a0 pixel-exact incumbent",
+    "neutral/RGB permutation",
+    "reflection n->-n",
+    "scale invariance",
+    "field finite and nonnegative",
+    "source/map/kernel unchanged"
+  ],
+  "accepted_passes": 0
+}

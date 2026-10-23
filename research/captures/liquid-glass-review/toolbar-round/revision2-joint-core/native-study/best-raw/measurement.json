@@ -1,0 +1,74 @@
+{
+  "index": 116,
+  "v": [
+    0.004854861019578997,
+    0.0013116476936372652,
+    -0.0023254830872409113,
+    0.0006728229295669381
+  ],
+  "E": 6.865555810856582,
+  "MSE": [
+    34.06934867926998,
+    77.62437505499202,
+    131.5480784116256,
+    175.34034682158776,
+    13.448152439951855
+  ],
+  "scores": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "rmse": 5.83689546585083,
+          "pixels": 188771
+        },
+        "rim": {
+          "rmse": 8.810469627380371,
+          "pixels": 61248
+        },
+        "shadow": 11.46944106796951
+      }
+    }
+  },
+  "foreground": {
+    "archivebox": 13.241614207549915,
+    "plus": 3.6671722675587324
+  },
+  "all_nonregression": false,
+  "nonregression": {
+    "glass": true,
+    "rim": true,
+    "exterior": true,
+    "archivebox": true,
+    "plus": false
+  },
+  "gate": {
+    "accepted": false,
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "error_ratio": 0.995,
+    "observations": {
+      "A": {
+        "previous_error": 6.870490597949865,
+        "candidate_error": 6.865555810856582,
+        "required_error_max": 6.836138144960116,
+        "relative_reduction": 0.0007182583285617605,
+        "milestone_passed": false,
+        "nonregression": {
+          "glass": true,
+          "shadow": true
+        },
+        "passed": false
+      }
+    },
+    "evidence": {
+      "visual_review": false,
+      "independent_replay": false,
+      "source_support": false
+    }
+  },
+  "numerical_qualifier": false,
+  "phase": "trust-proposal-12",
+  "native_actual_render": true,
+  "material_cache": "/tmp/agent-toolbar-joint-core/evaluations/0116.npz",
+  "seconds": 5.661738872528076
+}

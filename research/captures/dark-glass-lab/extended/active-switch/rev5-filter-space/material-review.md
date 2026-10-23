@@ -1,0 +1,6 @@
+# Shared-material filtering result
+
+- BT.709 source+output filtering with one shared 23-coefficient material did not qualify. Six bounded steps: final E ratios 1.03544842 / 0.99359071 versus accepted switch5. Original glass/exterior guards remain violated on A. No image, count or public model changed.
+- Interim restoration allowed only non-increasing existing constraint violations, not new acceptance thresholds. All actual candidates and forms remain recorded; none was accepted merely because the optimizer succeeded.
+- Follow-up is restricted to the already declared SOURCE-only operator. Its original fixed-material result was much closer on both observations (1.00503189 / 0.99466995), whereas OUTPUT-only substantially worsened A. This tests whether filtering the input in decoded space is useful without changing the post-render blur. Same shared material, fixed geometry and original guards; no continuously chosen transfer or per-observation convention.
+- Completed exact scripts are retained here before the runner adds that distinct mode. This is one further operator hypothesis, not six blind optimization sweeps. Source conventions remain approximations, not a recovered Apple pipeline.

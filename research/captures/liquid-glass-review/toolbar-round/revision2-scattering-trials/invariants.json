@@ -1,0 +1,52 @@
+{
+  "stage": "complete",
+  "code_hashes": {
+    "toolbar_scattering_renderer.py": "c196969a85e137140d2f89b685808700c80f713b9f15ca1c6ccb334118ff6dcd",
+    "toolbar_scattering_covariance.py": "f0239f96bc041f8eb92fa5e1dbceb8926ba28d37387de30bb7c61416fef96080",
+    "toolbar_candidate.py": "256ee8e084139ec1c81d07cd1e423d8962a665bfc44d4ab9d48744fae1b746f3",
+    "crowned_footprint.py": "2488c958d0749b707d341945ee354726eddc3d66c4c3388b619edb7d9d4532b8",
+    "toolbar_curvature_profile.py": "8ca63c3698bc84a8b62603b6afd947ffb8b80710eb93a30763d95abfdd6afbc3",
+    "render.py": "58ae2b0be9ef1a1726944ee319f10c2e03c02835d0df5f8c80b111bfad797837"
+  },
+  "tests": {
+    "node_moments_3": {
+      "weight_sum": 0.9999999999999998,
+      "mean_max": 2.4608852214522823e-17,
+      "covariance_error": 7.365325346326664e-19
+    },
+    "node_moments_5": {
+      "weight_sum": 1.0,
+      "mean_max": 3.227583341742367e-17,
+      "covariance_error": 7.97871495165513e-18
+    },
+    "node_moments_7": {
+      "weight_sum": 0.9999999999999999,
+      "mean_max": 2.4100420551111344e-17,
+      "covariance_error": 1.967357097742382e-18
+    },
+    "node_moments_9": {
+      "weight_sum": 1.0,
+      "mean_max": 2.3067184612843005e-17,
+      "covariance_error": 6.661338147750939e-16
+    },
+    "rho0_small_crop_exact": {
+      "material_exact": true,
+      "coverage_exact": true,
+      "small_crop_renderer_calls": 2,
+      "full_native_renders": 0
+    },
+    "native_uniform_scale1": {
+      "max_error": 2.9802322387695312e-08,
+      "coverage_pixels": 8160,
+      "samples": 4,
+      "rho": 0.02
+    },
+    "native_uniform_scale2": {
+      "max_error": 1.4901161193847656e-07,
+      "coverage_pixels": 32400,
+      "samples": 4,
+      "rho": 0.02
+    }
+  },
+  "new_full_baseline_renders": 0
+}

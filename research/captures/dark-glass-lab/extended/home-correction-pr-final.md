@@ -1,0 +1,6 @@
+- Replace the invalid Home paired chain with 21 independently replayed experiments that protect both references and the retained single-background result. Preserve the failed chain unchanged for audit.
+- Share one optical/material model and clean Home vector. Add a narrowly calibrated source-brightness rim response and explicit uniform incident rim field; distinguish these empirical assumptions from Apple internals.
+- Guard every context-mean sample, including during horizontal/vertical motion. Keep original inputs/masks/native scores frozen; disclose nearest-source completion and its measured presentation delta.
+- Publish fresh 4× comparisons, 30 fps videos and full-size GIFs below10MB. Keep the completed source in one moving coordinate system to remove a fixed-strip seam.
+- Validation: exact21-pass native replay; original-single boundary; per-reference glass/loss/foreground gates; source coverage; native/cache/HQ/prepared parity; unchanged existing Switch path; desktop/mobile comparison controls, lazy-media requests and guide links/layout.
+- Remaining limits: dark upper rim differs, missing photographic context is estimated, and the brightness law is tested on two frames from one video. No app or live-lab changes; no Android reruns.

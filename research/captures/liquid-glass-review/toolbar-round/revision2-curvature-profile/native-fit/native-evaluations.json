@@ -1,0 +1,2928 @@
+{
+  "before": {
+    "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+    "observations": {
+      "A": {
+        "glass": {
+          "pixels": 188771,
+          "rmse": 5.843130588531494,
+          "mae": 3.8693673610687256,
+          "opponent_chroma_rmse": 0.6442244648933411
+        },
+        "rim": {
+          "pixels": 61248,
+          "rmse": 8.813648223876953,
+          "mae": 5.903055191040039,
+          "opponent_chroma_rmse": 0.7896908521652222
+        },
+        "shadow": 11.46944201723165
+      }
+    }
+  },
+  "fixed_width": 0.2,
+  "amplitude_bounds": [
+    -0.21960679960734011,
+    0.21960679960734011
+  ],
+  "evaluations": [
+    {
+      "index": 0,
+      "amplitude": 0.0,
+      "E": 6.870490597949865,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.843130588531494,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.813648223876953,
+              "pixels": 61248
+            },
+            "shadow": 11.46944201723165
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.843130588531494,
+        8.813648223876953,
+        11.46944201723165,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.870490597949865,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "baseline",
+      "native_actual_render": false,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0000.npz",
+      "seconds": 0.2847297191619873
+    },
+    {
+      "index": 1,
+      "amplitude": -0.05490169990183503,
+      "E": 6.858158255913589,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.834201812744141,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.795414924621582,
+              "pixels": 61248
+            },
+            "shadow": 11.469441359696365
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.834201812744141,
+        8.795414924621582,
+        11.469441359696365,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.858158255913589,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.001794972551153129,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0001.npz",
+      "seconds": 7.017363786697388
+    },
+    {
+      "index": 2,
+      "amplitude": 0.05490169990183503,
+      "E": 6.993370917422997,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.932186603546143,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.995119094848633,
+              "pixels": 61248
+            },
+            "shadow": 11.469442834062349
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.932186603546143,
+        8.995119094848633,
+        11.469442834062349,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": false,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.993370917422997,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.01788523217101834,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0002.npz",
+      "seconds": 6.908189058303833
+    },
+    {
+      "index": 3,
+      "amplitude": -0.10980339980367006,
+      "E": 6.948281274493545,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.89946985244751,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.928604125976562,
+              "pixels": 61248
+            },
+            "shadow": 11.469440797242255
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.89946985244751,
+        8.928604125976562,
+        11.469440797242255,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.948281274493545,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.011322434029222395,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0003.npz",
+      "seconds": 7.051630258560181
+    },
+    {
+      "index": 4,
+      "amplitude": 0.10980339980367006,
+      "E": 7.2333048171797625,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.106715679168701,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 9.348139762878418,
+              "pixels": 61248
+            },
+            "shadow": 11.46944379068219
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.106715679168701,
+        9.348139762878418,
+        11.46944379068219,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": false,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 7.2333048171797625,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.05280761454475469,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0004.npz",
+      "seconds": 7.285364866256714
+    },
+    {
+      "index": 5,
+      "amplitude": -0.1647050997055051,
+      "E": 7.129683228839259,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.031219482421875,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 9.195915222167969,
+              "pixels": 61248
+            },
+            "shadow": 11.469440228984457
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.031219482421875,
+        9.195915222167969,
+        11.469440228984457,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 7.129683228839259,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.03772549095209232,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0005.npz",
+      "seconds": 6.985423803329468
+    },
+    {
+      "index": 6,
+      "amplitude": 0.1647050997055051,
+      "E": 7.588833833975108,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.366763591766357,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 9.86837100982666,
+              "pixels": 61248
+            },
+            "shadow": 11.469444792069808
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.366763591766357,
+        9.86837100982666,
+        11.469444792069808,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": false,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 7.588833833975108,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.10455486777604994,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0006.npz",
+      "seconds": 7.015971660614014
+    },
+    {
+      "index": 7,
+      "amplitude": -0.21960679960734011,
+      "E": 7.385213272472433,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.217599868774414,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 9.570857048034668,
+              "pixels": 61248
+            },
+            "shadow": 11.469439909415549
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.217599868774414,
+        9.570857048034668,
+        11.469439909415549,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 7.385213272472433,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.07491789227921508,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0007.npz",
+      "seconds": 7.186355352401733
+    },
+    {
+      "index": 8,
+      "amplitude": 0.21960679960734011,
+      "E": 8.033734150716505,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 6.69432258605957,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 10.51524543762207,
+              "pixels": 61248
+            },
+            "shadow": 11.46944534607278
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        6.69432258605957,
+        10.51524543762207,
+        11.46944534607278,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": false,
+      "nonregression": {
+        "glass": false,
+        "rim": false,
+        "exterior": false,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 8.033734150716505,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": -0.16931011493032955,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": false,
+              "shadow": false
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "declared-geometry-bracket",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0008.npz",
+      "seconds": 6.462022304534912
+    },
+    {
+      "index": 9,
+      "amplitude": -0.051901699901835026,
+      "E": 6.856105772241496,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.832716941833496,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.792378425598145,
+              "pixels": 61248
+            },
+            "shadow": 11.469441447158315
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.832716941833496,
+        8.792378425598145,
+        11.469441447158315,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.856105772241496,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0020937115775490067,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-1",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0009.npz",
+      "seconds": 6.778425931930542
+    },
+    {
+      "index": 10,
+      "amplitude": -0.05790169990183503,
+      "E": 6.860515126653308,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.835906982421875,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.798901557922363,
+              "pixels": 61248
+            },
+            "shadow": 11.46944134257661
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.835906982421875,
+        8.798901557922363,
+        11.46944134257661,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.860515126653308,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0014519299829234278,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-1",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0010.npz",
+      "seconds": 7.376421689987183
+    },
+    {
+      "index": 11,
+      "amplitude": -0.029227047437335094,
+      "E": 6.85064491374191,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828767776489258,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.784296989440918,
+              "pixels": 61248
+            },
+            "shadow": 11.469441603969114
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828767776489258,
+        8.784296989440918,
+        11.469441603969114,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.85064491374191,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002888539606455076,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-1",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0011.npz",
+      "seconds": 5.631846904754639
+    },
+    {
+      "index": 12,
+      "amplitude": -0.026227047437335095,
+      "E": 6.851264054148979,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.829216003417969,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.785212516784668,
+              "pixels": 61248
+            },
+            "shadow": 11.4694416648979
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.829216003417969,
+        8.785212516784668,
+        11.4694416648979,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.851264054148979,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0027984237117830713,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-2",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0012.npz",
+      "seconds": 5.098935842514038
+    },
+    {
+      "index": 13,
+      "amplitude": -0.032227047437335093,
+      "E": 6.850322244097754,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.8285346031188965,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783819198608398,
+              "pixels": 61248
+            },
+            "shadow": 11.469441604373731
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.8285346031188965,
+        8.783819198608398,
+        11.469441604373731,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850322244097754,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029355041775516177,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-2",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0013.npz",
+      "seconds": 5.22678279876709
+    },
+    {
+      "index": 14,
+      "amplitude": -0.03465578320356372,
+      "E": 6.850322977806587,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.8285346031188965,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783821105957031,
+              "pixels": 61248
+            },
+            "shadow": 11.46944160483544
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.8285346031188965,
+        8.783821105957031,
+        11.46944160483544,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850322977806587,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029353973862209504,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-2",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0014.npz",
+      "seconds": 5.252904415130615
+    },
+    {
+      "index": 15,
+      "amplitude": -0.031655783203563714,
+      "E": 6.850365283267738,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.82856559753418,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783883094787598,
+              "pixels": 61248
+            },
+            "shadow": 11.469441601614305
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.82856559753418,
+        8.783883094787598,
+        11.469441601614305,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850365283267738,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029292398257748653,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-3",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0015.npz",
+      "seconds": 4.918854475021362
+    },
+    {
+      "index": 16,
+      "amplitude": -0.03765578320356372,
+      "E": 6.850541629132542,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.82869291305542,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.784144401550293,
+              "pixels": 61248
+            },
+            "shadow": 11.469441521122105
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.82869291305542,
+        8.784144401550293,
+        11.469441521122105,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850541629132542,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029035726827536523,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-3",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0016.npz",
+      "seconds": 4.963382959365845
+    },
+    {
+      "index": 17,
+      "amplitude": -0.033634143275099046,
+      "E": 6.8502975116770894,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828516483306885,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783782958984375,
+              "pixels": 61248
+            },
+            "shadow": 11.46944161150299
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828516483306885,
+        8.783782958984375,
+        11.46944161150299,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.8502975116770894,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002939103981715818,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-3",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0017.npz",
+      "seconds": 5.611242294311523
+    },
+    {
+      "index": 18,
+      "amplitude": -0.030634143275099047,
+      "E": 6.850446438797685,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828624248504639,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.784003257751465,
+              "pixels": 61248
+            },
+            "shadow": 11.469441585552744
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828624248504639,
+        8.784003257751465,
+        11.469441585552744,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850446438797685,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029174276372870844,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-4",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0018.npz",
+      "seconds": 5.132342576980591
+    },
+    {
+      "index": 19,
+      "amplitude": -0.03663414327509905,
+      "E": 6.850442616534372,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828620910644531,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783998489379883,
+              "pixels": 61248
+            },
+            "shadow": 11.469441578949276
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828620910644531,
+        8.783998489379883,
+        11.469441578949276,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850442616534372,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002917983967764215,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-4",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0019.npz",
+      "seconds": 5.090942859649658
+    },
+    {
+      "index": 20,
+      "amplitude": -0.033652527205698245,
+      "E": 6.850295275118689,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828514575958252,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783780097961426,
+              "pixels": 61248
+            },
+            "shadow": 11.469441611281752
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828514575958252,
+        8.783780097961426,
+        11.469441611281752,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850295275118689,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029394295128214454,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-4",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0020.npz",
+      "seconds": 5.190083265304565
+    },
+    {
+      "index": 21,
+      "amplitude": -0.030652527205698245,
+      "E": 6.8504408651147095,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828620433807373,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783994674682617,
+              "pixels": 61248
+            },
+            "shadow": 11.469441585343796
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828620433807373,
+        8.783994674682617,
+        11.469441585343796,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.8504408651147095,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029182388869199993,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-5",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0021.npz",
+      "seconds": 5.242873668670654
+    },
+    {
+      "index": 22,
+      "amplitude": -0.03665252720569825,
+      "E": 6.8504400131205605,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828619003295898,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783994674682617,
+              "pixels": 61248
+            },
+            "shadow": 11.469441579994914
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828619003295898,
+        8.783994674682617,
+        11.469441579994914,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.8504400131205605,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002918362894679949,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-5",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0022.npz",
+      "seconds": 5.252935409545898
+    },
+    {
+      "index": 23,
+      "amplitude": -0.03365179429615757,
+      "E": 6.850295275118689,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828514575958252,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783780097961426,
+              "pixels": 61248
+            },
+            "shadow": 11.469441611281752
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828514575958252,
+        8.783780097961426,
+        11.469441611281752,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850295275118689,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029394295128214454,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-5",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0023.npz",
+      "seconds": 4.945147275924683
+    },
+    {
+      "index": 24,
+      "amplitude": -0.03365216075092791,
+      "E": 6.850295275118689,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828514575958252,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783780097961426,
+              "pixels": 61248
+            },
+            "shadow": 11.469441611281752
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828514575958252,
+        8.783780097961426,
+        11.469441611281752,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850295275118689,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029394295128214454,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-5",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0024.npz",
+      "seconds": 4.940291166305542
+    },
+    {
+      "index": 25,
+      "amplitude": -0.03365234397831308,
+      "E": 6.850295275118689,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828514575958252,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783780097961426,
+              "pixels": 61248
+            },
+            "shadow": 11.469441611281752
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828514575958252,
+        8.783780097961426,
+        11.469441611281752,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850295275118689,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029394295128214454,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-5",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0025.npz",
+      "seconds": 4.973357915878296
+    },
+    {
+      "index": 26,
+      "amplitude": -0.03365243559200566,
+      "E": 6.850295275118689,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828514575958252,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783780097961426,
+              "pixels": 61248
+            },
+            "shadow": 11.469441611281752
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828514575958252,
+        8.783780097961426,
+        11.469441611281752,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850295275118689,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029394295128214454,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-5",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0026.npz",
+      "seconds": 4.968408823013306
+    },
+    {
+      "index": 27,
+      "amplitude": -0.03140252720569824,
+      "E": 6.850408606442537,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828597068786621,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783946990966797,
+              "pixels": 61248
+            },
+            "shadow": 11.469441607919354
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828597068786621,
+        8.783946990966797,
+        11.469441607919354,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850408606442537,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002922934137093547,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-6",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0027.npz",
+      "seconds": 4.9445624351501465
+    },
+    {
+      "index": 28,
+      "amplitude": -0.03590252720569825,
+      "E": 6.850391116258518,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828583717346191,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.78392219543457,
+              "pixels": 61248
+            },
+            "shadow": 11.469441552867202
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828583717346191,
+        8.78392219543457,
+        11.469441552867202,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850391116258518,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002925479833615463,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-6",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0028.npz",
+      "seconds": 4.955586194992065
+    },
+    {
+      "index": 29,
+      "amplitude": -0.03379828696671582,
+      "E": 6.850285796320551,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828507900238037,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.78376579284668,
+              "pixels": 61248
+            },
+            "shadow": 11.469441611939404
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828507900238037,
+        8.78376579284668,
+        11.469441611939404,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850285796320551,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029408091520193302,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-6",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0029.npz",
+      "seconds": 4.968668699264526
+    },
+    {
+      "index": 30,
+      "amplitude": -0.03154828696671582,
+      "E": 6.85038452486853,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828579425811768,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.78391170501709,
+              "pixels": 61248
+            },
+            "shadow": 11.46944160461684
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828579425811768,
+        8.78391170501709,
+        11.46944160461684,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.85038452486853,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029264392105178283,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-7",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0030.npz",
+      "seconds": 5.1067588329315186
+    },
+    {
+      "index": 31,
+      "amplitude": -0.036048286966715824,
+      "E": 6.850396323085357,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828587532043457,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783929824829102,
+              "pixels": 61248
+            },
+            "shadow": 11.469441557867102
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828587532043457,
+        8.783929824829102,
+        11.469441557867102,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850396323085357,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002924721979898237,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-7",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0031.npz",
+      "seconds": 5.101533889770508
+    },
+    {
+      "index": 32,
+      "amplitude": -0.0337122788132103,
+      "E": 6.850289050586216,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828510284423828,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783770561218262,
+              "pixels": 61248
+            },
+            "shadow": 11.469441613538004
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828510284423828,
+        8.783770561218262,
+        11.469441613538004,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850289050586216,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029403354936075043,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-7",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0032.npz",
+      "seconds": 4.96971321105957
+    },
+    {
+      "index": 33,
+      "amplitude": -0.033755282889963066,
+      "E": 6.850287098026813,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.8285088539123535,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783767700195312,
+              "pixels": 61248
+            },
+            "shadow": 11.469441612417931
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.8285088539123535,
+        8.783767700195312,
+        11.469441612417931,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850287098026813,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029406196886552216,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-7",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0033.npz",
+      "seconds": 4.9231719970703125
+    },
+    {
+      "index": 34,
+      "amplitude": -0.033776784928339444,
+      "E": 6.850285796320551,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828507900238037,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.78376579284668,
+              "pixels": 61248
+            },
+            "shadow": 11.469441612427856
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828507900238037,
+        8.78376579284668,
+        11.469441612427856,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850285796320551,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029408091520193302,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-7",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0034.npz",
+      "seconds": 4.9244544506073
+    },
+    {
+      "index": 35,
+      "amplitude": -0.03378753594752763,
+      "E": 6.850284210615279,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.8285064697265625,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783763885498047,
+              "pixels": 61248
+            },
+            "shadow": 11.469441612543633
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.8285064697265625,
+        8.783763885498047,
+        11.469441612543633,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850284210615279,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002941039951443236,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-7",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0035.npz",
+      "seconds": 4.931823968887329
+    },
+    {
+      "index": 36,
+      "amplitude": -0.03153753594752763,
+      "E": 6.85038452486853,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828579425811768,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.78391170501709,
+              "pixels": 61248
+            },
+            "shadow": 11.469441605173687
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828579425811768,
+        8.78391170501709,
+        11.469441605173687,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.85038452486853,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029264392105178283,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-8",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0036.npz",
+      "seconds": 4.935117721557617
+    },
+    {
+      "index": 37,
+      "amplitude": -0.036037535947527635,
+      "E": 6.850396039087052,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828587055206299,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783929824829102,
+              "pixels": 61248
+            },
+            "shadow": 11.469441557075427
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828587055206299,
+        8.783929824829102,
+        11.469441557075427,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850396039087052,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.00292476331585545,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-8",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0037.npz",
+      "seconds": 4.9352171421051025
+    },
+    {
+      "index": 38,
+      "amplitude": -0.0336974256329313,
+      "E": 6.85029100314563,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828511714935303,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783773422241211,
+              "pixels": 61248
+            },
+            "shadow": 11.469441612464607
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828511714935303,
+        8.783773422241211,
+        11.469441612464607,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.85029100314563,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002940051298558344,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-8",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0038.npz",
+      "seconds": 5.076983451843262
+    },
+    {
+      "index": 39,
+      "amplitude": -0.033742480790229464,
+      "E": 6.85028746488095,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.8285088539123535,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783768653869629,
+              "pixels": 61248
+            },
+            "shadow": 11.469441613478407
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.8285088539123535,
+        8.783768653869629,
+        11.469441613478407,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.85028746488095,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002940566293030522,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-8",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0039.npz",
+      "seconds": 4.9714672565460205
+    },
+    {
+      "index": 40,
+      "amplitude": -0.03376500836887855,
+      "E": 6.850286447173682,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828508377075195,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.783766746520996,
+              "pixels": 61248
+            },
+            "shadow": 11.469441612156144
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828508377075195,
+        8.783766746520996,
+        11.469441612156144,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850286447173682,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.002940714420337276,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-8",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0040.npz",
+      "seconds": 4.9795026779174805
+    },
+    {
+      "index": 41,
+      "amplitude": -0.03377627215820309,
+      "E": 6.850285796320551,
+      "scores": {
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "observations": {
+          "A": {
+            "glass": {
+              "rmse": 5.828507900238037,
+              "pixels": 188771
+            },
+            "rim": {
+              "rmse": 8.78376579284668,
+              "pixels": 61248
+            },
+            "shadow": 11.469441612427856
+          }
+        }
+      },
+      "foreground": {
+        "archivebox": 13.242044387461515,
+        "plus": 3.667139623528374
+      },
+      "guard_values": [
+        5.828507900238037,
+        8.78376579284668,
+        11.469441612427856,
+        13.242044387461515,
+        3.667139623528374
+      ],
+      "all_nonregression": true,
+      "nonregression": {
+        "glass": true,
+        "rim": true,
+        "exterior": true,
+        "archivebox": true,
+        "plus": true
+      },
+      "gate": {
+        "accepted": false,
+        "epoch": "d1d864eb6eb193d8b4b8ba4563dd89b667727059ad48d770602bb690e53f575d",
+        "error_ratio": 0.995,
+        "observations": {
+          "A": {
+            "previous_error": 6.870490597949865,
+            "candidate_error": 6.850285796320551,
+            "required_error_max": 6.836138144960116,
+            "relative_reduction": 0.0029408091520193302,
+            "milestone_passed": false,
+            "nonregression": {
+              "glass": true,
+              "shadow": true
+            },
+            "passed": false
+          }
+        },
+        "evidence": {
+          "visual_review": false,
+          "independent_replay": false,
+          "source_support": false
+        }
+      },
+      "numerical_qualifier": false,
+      "phase": "native-quadratic-guard-8",
+      "native_actual_render": true,
+      "material_cache": "/tmp/agent-toolbar-revision2-curvature-fit/evaluations/0041.npz",
+      "seconds": 4.968807220458984
+    }
+  ],
+  "counted_passes": 0
+}

@@ -1,0 +1,168 @@
+{
+  "content_scale": 1.0,
+  "phase": false,
+  "stage": 2,
+  "experiment": "Clear content and rim settlement",
+  "parameters": {
+    "sigma": 2.0,
+    "amplitude": 0.5564530838345332,
+    "band": 0.424108805473433,
+    "power": 1.52340859276697,
+    "tangent": 0.0003299030561374577,
+    "tangent_band": 0.030271482527418642,
+    "core_x": 0.02010613082979057,
+    "core_y": 0.0040767850642332475,
+    "post_sigma": 0.0,
+    "coupling": 0.4398369957763268,
+    "gamma": 1.0,
+    "rim_width": 0.16602706749551246,
+    "thin_width": 0.03377632593507505,
+    "spline": true,
+    "shape_dx": 0.006119924195818901,
+    "shape_dy": -0.002664039153631349,
+    "half_x_delta": 0.0025428659068449638,
+    "half_y_delta": -0.04975203214214212,
+    "radius_delta": 0.04968943799848582,
+    "c0": 0.579969534873268,
+    "c1": 0.5892353684531414,
+    "c2": 0.5527556884332202,
+    "c3": 0.4174857005301549,
+    "c4": 0.38394677328962645,
+    "c5": 0.16162694719273246,
+    "c6": 0.09895882159912998,
+    "shadow": {
+      "opacity": 0.013703965855226525,
+      "sigma": 0.19438326590476138,
+      "offset": [
+        0.0012041224444056782,
+        0.0999999335625205
+      ]
+    },
+    "blur_transition": 0.9998343890913571,
+    "tangent_exponent": 4.008891334418213,
+    "cap_normal_gain": -0.012064398169164579,
+    "cap_tangent_fade": 0.0229637677992494,
+    "cap_join_width": 0.35,
+    "anchor_x": 0.1,
+    "anchor_y": 0.1,
+    "anchor_band": 0.9
+  },
+  "material": [
+    1.5,
+    1.5,
+    1.5,
+    -0.24430616938978741,
+    -0.24831234338423303,
+    -0.24819154365223806,
+    0.030941274764867615,
+    0.0030489590051487464,
+    -0.007347491528168126,
+    -0.17495968607718548,
+    -0.011578412101897154,
+    -0.006225500104425328,
+    0.018958929244068237,
+    -0.025445379749267447,
+    0.012311975264871301,
+    0.014921253300093496,
+    0.009902241182285575,
+    -0.002623777726286881,
+    0.04156104566616389,
+    0.0037275902804213934,
+    1.365432763742523,
+    1.3515871492833367,
+    1.3521553378043936
+  ],
+  "scores": [
+    {
+      "glass": {
+        "pixels": 186310,
+        "rmse": 23.357702255249023
+      },
+      "rim": {
+        "pixels": 46479,
+        "rmse": 12.40394401550293
+      },
+      "held": {
+        "pixels": 45815,
+        "rmse": 27.254657745361328
+      },
+      "interior": {
+        "pixels": 139831,
+        "rmse": 25.99594497680664
+      },
+      "ssim": 0.9074544310569763,
+      "loss": 428.064926393325
+    },
+    {
+      "glass": {
+        "pixels": 177426,
+        "rmse": 23.955467224121094
+      },
+      "rim": {
+        "pixels": 43962,
+        "rmse": 4.634614944458008
+      },
+      "held": {
+        "pixels": 44654,
+        "rmse": 25.001615524291992
+      },
+      "interior": {
+        "pixels": 133464,
+        "rmse": 27.492101669311523
+      },
+      "ssim": 0.9150084257125854,
+      "loss": 408.148983653176
+    },
+    {
+      "glass": {
+        "pixels": 171306,
+        "rmse": 32.41147232055664
+      },
+      "rim": {
+        "pixels": 41340,
+        "rmse": 26.20102310180664
+      },
+      "held": {
+        "pixels": 42039,
+        "rmse": 35.573890686035156
+      },
+      "interior": {
+        "pixels": 129966,
+        "rmse": 34.15097427368164
+      },
+      "ssim": 0.8864793181419373,
+      "loss": 941.300560064768
+    }
+  ],
+  "source_support": [
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0,
+      "gaussian_3sigma_observed_fraction": 0.0,
+      "source_gaussian_radius_native_px": 6
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0,
+      "gaussian_3sigma_observed_fraction": 0.0,
+      "source_gaussian_radius_native_px": 6
+    },
+    {
+      "source_defined_fraction": 1.0,
+      "gaussian_3sigma_defined_fraction": 1.0,
+      "source_observed_fraction": 0.0,
+      "gaussian_3sigma_observed_fraction": 0.0,
+      "source_gaussian_radius_native_px": 6
+    }
+  ],
+  "supported": [
+    true,
+    true,
+    true
+  ],
+  "training_loss": 0.007767532062421478,
+  "evaluations": 203,
+  "seconds": 4.672348976135254
+}

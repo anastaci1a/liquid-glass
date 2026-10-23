@@ -1,0 +1,72 @@
+{
+  "kind": "SEPARATE estimated uncovered-footer RGB affine field; NOT observed truth or optical gain",
+  "basis": [
+    "1",
+    "(x-960)/700",
+    "(y-680)/100"
+  ],
+  "coefficient_rgb": [
+    [
+      0.7840031793992691,
+      0.7874157177931423,
+      0.7881389011660815
+    ],
+    [
+      0.018213956287263855,
+      0.006792447423730715,
+      0.009312325083457976
+    ],
+    [
+      -0.0052249925930988985,
+      -0.005024469257888556,
+      -0.004384108097024633
+    ]
+  ],
+  "training_pixels": 23215,
+  "controls": [
+    {
+      "name": "spatial_heldout",
+      "pixels": 6951,
+      "rmse": 2.347698199383782,
+      "signed_rgb": [
+        0.05555955107666576,
+        0.011493026066183172,
+        0.03611101380663747
+      ],
+      "p95_abs": 4.929718398370834
+    },
+    {
+      "name": "independent_left_footer",
+      "pixels": 915,
+      "rmse": 2.2227211877729816,
+      "signed_rgb": [
+        0.7024044515088345,
+        1.1596599002336212,
+        1.1480801859978005
+      ],
+      "p95_abs": 4.3362979739141005
+    },
+    {
+      "name": "independent_right_footer",
+      "pixels": 915,
+      "rmse": 10.62506098842007,
+      "signed_rgb": [
+        1.2399094576079293,
+        0.7682699943468208,
+        0.3789420440068358
+      ],
+      "p95_abs": 6.041318726508781
+    }
+  ],
+  "allowed_domain": "ONLY x630..1260/y650..730 footer paper; photo, seam and hidden object/word details remain UNKNOWN",
+  "under_disk_modeled_paper_fraction": {
+    "person": 0.39404923727533603,
+    "bulb": 0.4259175351155415
+  },
+  "source_adopted": false,
+  "optical_gain": false,
+  "uncertainty": "Held residuals are empirical validation, not a guarantee/CI for hidden pixels. Native video texture/moire, illumination and faint shadow tail may remain. No paper field applied over photo or glass target.",
+  "primary_review_file": "paper-footer-proposal-GUARDED.npz",
+  "outside_modeled_domain": "NaN, deliberately not a complete source input; no photo/seam/hiddendetail values",
+  "guarded_sha256": "71f4144032b8ddcc4c189671dfd74e351a30d06480cd9f4e4aa5f043907bf9e3"
+}
