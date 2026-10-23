@@ -1,0 +1,18 @@
+{
+  "status": "DECLARED_LIMITS_INTERNALLY_INCONSISTENT_GLOBAL_HEIGHT_CAP_EXCEEDED",
+  "discovered_at": "2026-10-23T20:48:43.870Z",
+  "declared_height_level_cap": 200000,
+  "declared_native_grid_rays": 1360000,
+  "native_height_adapter_calls": 2720000,
+  "geometry_checkpoint_height_calls_reconstructed": 3975,
+  "profile_QA_charge_upper_bound": 2000,
+  "total_height_call_charge_upper_bound": 2725975,
+  "why": "The protocol did not explicitly restrict its200000 height-level cap to the sparse geometry phase. The permitted native grid necessarily exceeds that cap, and no preflight consistency check caught the conflict.",
+  "interpretation": "Under the conservative global reading the evaluation cap is exceeded; do not certify this observation as fully in-budget. Do not retroactively change the protocol or relabel this as an accepted pass.",
+  "remaining_science_stopped": true,
+  "extra_parameter_settings": 0,
+  "native_images": 2,
+  "original_protocol_preserved": true,
+  "time_limit_exceeded": false,
+  "remedy": "Future protocols must scope height budgets per phase and reserve all actual adapter calls before a native launch, with a counter or preflight upper-bound check. No repeat of this completed trial."
+}
