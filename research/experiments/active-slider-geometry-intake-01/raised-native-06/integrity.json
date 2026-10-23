@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-10-23T20:52:33.879Z",
+  "prior_artifacts": [
+    {
+      "manifest": "research/experiments/active-slider-geometry-intake-01/baseline-artifacts.json",
+      "files": 21,
+      "unchanged": true
+    },
+    {
+      "manifest": "research/experiments/active-slider-geometry-intake-01/distance-03/manifest.json",
+      "files": 34,
+      "unchanged": true
+    },
+    {
+      "manifest": "research/experiments/active-slider-geometry-intake-01/raised-back-05/manifest.json",
+      "files": 13,
+      "unchanged": true
+    }
+  ],
+  "shared_dependencies": [
+    {
+      "file": "reconstruction/geometric_optics.py",
+      "sha256": "a48224f454b77d060601016329dee5c8bb48f87c418d2ba54d5a693c05841966"
+    },
+    {
+      "file": "reconstruction/geometric_render.py",
+      "sha256": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469"
+    },
+    {
+      "file": "reconstruction/harmonic_crowned_back.py",
+      "sha256": "95784ee9d92271ae88b5407bc3c7c5c09666a6c0b1396cfc4ccf4e7b1ad176a3"
+    },
+    {
+      "file": "reconstruction/crowned_bevel.py",
+      "sha256": "4065301f1025545bee500a48c5d23177e1d5fcd7345b2a83d4806e11649f33de"
+    },
+    {
+      "file": "reconstruction/crowned_footprint.py",
+      "sha256": "2488c958d0749b707d341945ee354726eddc3d66c4c3388b619edb7d9d4532b8"
+    },
+    {
+      "file": "reconstruction/extended_fit.py",
+      "sha256": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f"
+    }
+  ],
+  "private_data_scan": {
+    "text_files": 25,
+    "credential_patterns_found": 0,
+    "scope": "Own numerical evidence, scripts and derivative comparison images only. No session dumps, dependencies, downloaded fonts or new source assets."
+  },
+  "limits": "Source availability is modeled with observed confidence zero. Prior source/mask bytes remain unchanged."
+}
