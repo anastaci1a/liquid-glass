@@ -15,6 +15,8 @@ Empirical maps may diagnose or initialize a solid. They do not authorize indepen
 
 See the [geometric contract](../../guide/geometric-optics.md) for certificates and implementation scope.
 
+[Pass budgets, checkpoints and rotation](passes.md) define the operational research cycle.
+
 ## Isolated pipeline
 
 | Stage | Question |

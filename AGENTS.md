@@ -4,6 +4,6 @@ Read [working rules](agents/README.md), [documentation standards](DOCUMENTATION.
 
 This repository studies mathematical models of Apple's Liquid Glass. Keep application-specific requirements and unrelated project administration outside its scope.
 
-Research experiments are paused. Documentation, publishing and verification work may proceed within the current task. Work solo; do not contact or control other sessions or use session-management tools.
+Complete the current preparation tasks before starting the authorized research sequence. Follow the [structured pass budgets](research/method/passes.md); record actual clocks and checkpoints. Respect task-specific collaboration limits. Use session-management tools only for explicitly authorized coordination.
 
 Use `umask 0002`. After creating or changing workspace files, run `./fix-permissions.sh` on the affected paths.

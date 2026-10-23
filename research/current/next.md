@@ -1,6 +1,6 @@
 # Pending next experiment
 
-Status: proposed; do not execute until a new experiment is explicitly authorized.
+Status: authorized for the next focused pass after documentation and workspace preparation. Record the stage clock before execution.
 
 | Contract | Proposal |
 | --- | --- |
@@ -14,3 +14,5 @@ Status: proposed; do not execute until a new experiment is explicitly authorized
 | Decision | Judge the named visible defect first; retain local regressions and source/PSF uncertainty. |
 
 Declare actual budgets and checkpoint before execution. record preparation is not authorization to run this experiment.
+
+The [focused pass schedule](../method/passes.md#focused-clear-play-study-two-hours) allocates two hours to source blur, outline shading and verification. Subsequent elements use the four-hour full cycle.

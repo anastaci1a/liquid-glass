@@ -12,7 +12,7 @@ Develop reusable, explainable mathematical models of Apple's Liquid Glass. Separ
 | Control-family researcher | Element adapters, reference cases and bounded evidence. |
 | Independent reviewer | Reproduction, guard checks, uncertainty and transfer claims. |
 
-Agree interfaces and file ownership before overlapping edits. Use linked Git worktrees for additional checkouts. Current work is solo; other sessions and session-management tools remain outside task authority.
+Agree interfaces and file ownership before overlapping edits. Use linked Git worktrees for additional checkouts. Respect task-specific collaboration limits. Use approved management tools only for explicitly authorized coordination.
 
 ## Experiments
 

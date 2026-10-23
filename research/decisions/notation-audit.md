@@ -16,9 +16,9 @@ Status: documentation correction; no new rendering experiment or acceptance deci
 
 ## Verification
 
-All 328 original maintained display expressions were reviewed. Additional display equations replace algebra previously embedded in prose. The current set contains 347 display equations. Strict parsing and notation checks run with documentation validation.
+All 328 original maintained display expressions were reviewed. Additional display equations replace algebra previously embedded in prose. The current set contains 348 display equations. Strict parsing and notation checks run with documentation validation.
 
-[Surface/slab and 24 geometry controls](notation-checks/independent-controls.log) pass. [Browser checks](notation-checks/browser.log) verify 694 desktop/mobile equation views, actual fraction layout, subscripts and gradients. No source image, reference mask, physical parameter, numerical score or renderer implementation changes in this audit.
+[Surface/slab and 24 geometry controls](notation-checks/independent-controls.log) pass. [Browser checks](notation-checks/browser.log) verify 696 desktop/mobile equation views, actual fraction layout, subscripts and gradients. No source image, reference mask, physical parameter, numerical score or renderer implementation changes in this audit.
 
 Historical reports preserve their recorded notation. They are evidence, not the maintained mathematical specification.
 

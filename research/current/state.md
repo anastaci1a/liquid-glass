@@ -1,6 +1,6 @@
 # Current state
 
-Status: research experiments paused; documentation and verification continue.
+Status: preparation in progress; the next focused clear-play pass is authorized after preparation, followed by four-hour element studies.
 
 ## Clear circular play control
 
