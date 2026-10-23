@@ -2,6 +2,8 @@
 
 This adapter reuses the expanded-control construction with the navigation control’s frozen footprint. The shared tracer supplies refraction and path classification; the adapter supplies only actual height and derivatives.
 
+Lengths use the frozen case reference of 113.5 native pixels. Accepted half-extent adjustments remain explicit; the length reference is not recomputed after those adjustments.
+
 ## Solid
 
 Let the half-extents be positive, with corner radius no greater than either half-extent. The normalized distance to the inner rectangle is:

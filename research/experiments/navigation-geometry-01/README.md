@@ -107,7 +107,7 @@ The next discriminating experiment needs a retained pre-foreground integrated im
 
 ## Reproduction
 
-Use Git LFS, Node, zstd and the reconstruction Python dependencies. Restore declared inputs with:
+Use Git LFS, Node, zstd and the reconstruction Python dependencies. The SVG compositor also requires the Cairo shared library. Restore declared inputs with:
 
 ```sh
 git lfs pull
