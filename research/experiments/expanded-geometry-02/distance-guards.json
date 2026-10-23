@@ -1,0 +1,41 @@
+{
+  "status": "DISTANCE_REDUCTION_REJECTED_BOTH_REFERENCES",
+  "records": [
+    {
+      "reference": "a",
+      "guards": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": true,
+        "E": false,
+        "exterior_RMSE": true,
+        "ssim": true,
+        "jupiter.jpg": true,
+        "title.svg": false,
+        "artist.svg": true,
+        "play.svg": true,
+        "forward.svg": true
+      },
+      "status": "REJECTED"
+    },
+    {
+      "reference": "b",
+      "guards": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": true,
+        "E": false,
+        "exterior_RMSE": true,
+        "ssim": true,
+        "jupiter.jpg": true,
+        "title.svg": true,
+        "artist.svg": true,
+        "play.svg": false,
+        "forward.svg": false
+      },
+      "status": "REJECTED"
+    }
+  ]
+}

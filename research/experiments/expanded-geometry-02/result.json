@@ -1,0 +1,166 @@
+{
+  "status": "FIXED_MATCHED_NUISANCE_COMPARISON",
+  "records": [
+    {
+      "hypothesis": "h1",
+      "reference": "a",
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 38.077415466308594
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 59.11540603637695
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 39.29434585571289
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 24.424238204956055
+        },
+        "ssim": 0.8710734248161316,
+        "loss": 2063.3120672694276,
+        "E": 45.423694997979055,
+        "exterior_RMSE": 19.254291534423828,
+        "foreground_artwork_MSE": {
+          "jupiter.jpg": 2269.170654296875,
+          "title.svg": 903.3077392578125,
+          "artist.svg": 1107.062255859375,
+          "play.svg": 427.9103698730469,
+          "forward.svg": 498.3172912597656
+        }
+      },
+      "unavailable_unscored_pixels": 2750,
+      "clipped_lens_channels": 0
+    },
+    {
+      "hypothesis": "h2",
+      "reference": "a",
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 39.42111587524414
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 63.5079345703125
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 41.08393859863281
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 22.789228439331055
+        },
+        "ssim": 0.8904168605804443,
+        "loss": 2297.794389810726,
+        "E": 47.935314641824625,
+        "exterior_RMSE": 19.254291534423828,
+        "foreground_artwork_MSE": {
+          "jupiter.jpg": 2264.920166015625,
+          "title.svg": 927.8704223632812,
+          "artist.svg": 696.8067016601562,
+          "play.svg": 394.8946533203125,
+          "forward.svg": 410.24285888671875
+        }
+      },
+      "unavailable_unscored_pixels": 2750,
+      "clipped_lens_channels": 0
+    },
+    {
+      "hypothesis": "h1",
+      "reference": "b",
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 15.106258392333984
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 23.959861755371094
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 15.744105339050293
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 9.157090187072754
+        },
+        "ssim": 0.9228106737136841,
+        "loss": 331.9618224321209,
+        "E": 18.21981949504772,
+        "exterior_RMSE": 21.74403190612793,
+        "foreground_artwork_MSE": {
+          "jupiter.jpg": 2799.579345703125,
+          "title.svg": 620.7975463867188,
+          "artist.svg": 236.71302795410156,
+          "play.svg": 129.15786743164062,
+          "forward.svg": 189.0420379638672
+        }
+      },
+      "unavailable_unscored_pixels": 2750,
+      "clipped_lens_channels": 0
+    },
+    {
+      "hypothesis": "h2",
+      "reference": "b",
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 15.14587116241455
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 25.778715133666992
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 16.303646087646484
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 6.913425445556641
+        },
+        "ssim": 0.926424503326416,
+        "loss": 359.94083547074797,
+        "E": 18.972106774703434,
+        "exterior_RMSE": 21.74403190612793,
+        "foreground_artwork_MSE": {
+          "jupiter.jpg": 2797.795166015625,
+          "title.svg": 605.1155395507812,
+          "artist.svg": 208.6508331298828,
+          "play.svg": 129.1790771484375,
+          "forward.svg": 189.08290100097656
+        }
+      },
+      "unavailable_unscored_pixels": 2750,
+      "clipped_lens_channels": 0
+    }
+  ],
+  "RGB_queries": 5398768,
+  "new_geometry_rays": 0,
+  "fits": 0,
+  "full_composites": 4,
+  "zero_controls": [
+    {
+      "reference": "a",
+      "native_pixels": 96,
+      "RGB_queries": 384,
+      "raw_float32_exact": true,
+      "foreground_AST_exact": true
+    },
+    {
+      "reference": "b",
+      "native_pixels": 96,
+      "RGB_queries": 384,
+      "raw_float32_exact": true,
+      "foreground_AST_exact": true
+    }
+  ],
+  "finished_at": "2026-10-23T17:48:10.417241+00:00"
+}

@@ -26,7 +26,7 @@ pair('geometric-playback-primary.png',Image.open(WORK/'play-target.png').crop((6
 pair('geometric-toolbar-primary.png',Image.open(WORK/'toolbar-target-sha.png').crop((475,285,1445,845)),np.asarray(Image.open(WORK/'toolbar.png').convert('RGB'))/255,'Primary geometric baseline')
 for k in ['a','b']:
  target=Image.open(WORK/f'music-{k}-target.png')
- pair(f'geometric-expanded-primary-{k}.png',target.crop((280,290,1640,540)),np.load(WORK/f'expanded-{k}.npy'),'Primary geometric model')
+ pair(f'geometric-expanded-primary-{k}.png',target.crop((280,290,1640,540)),np.load(ROOT/f'research/experiments/expanded-geometry-02/h1-{k}.npz')['complete'],'Incident blur 6.75 px; incomplete model')
  raw=np.load(ROOT/f'research/experiments/navigation-geometry-01/{k}-raw.npz')
  pair(f'geometric-navigation-primary-{k}.png',target.crop((285,495,1365,830)),raw['complete'],'Primary geometric baseline')
 metadata=json.loads((ROOT/'guide/comparison-panels.json').read_text())
