@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/research/agent-navigation-spline-223/research/experiments/agent-navigation-spline-03/contract.py", line 15, in <module>
+    s=Study(WORK/key);old=np.load(CACHE/f'{key}-source-blur.npz');raw=np.load(CACHE/f'{key}-raw.npz');m=np.load(CACHE/f'{key}-masks.npz');assert not s.transmission_layers
+      ^^^^^^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/reconstruction/extended_fit.py", line 151, in __init__
+    vector=coverage(self.folder,layer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/reconstruction/vector_foreground.py", line 43, in coverage
+    return _coverage(raw,tuple(layer['box']),tuple(layer['vector_box']),scale).copy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/reconstruction/vector_foreground.py", line 19, in _coverage
+    import cairosvg
+  File "/research/migration-preparation/python-deps/cairosvg/__init__.py", line 26, in <module>
+    from . import surface  # noqa isort:skip
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/research/migration-preparation/python-deps/cairosvg/surface.py", line 9, in <module>
+    import cairocffi as cairo
+  File "/research/migration-preparation/python-deps/cairocffi/__init__.py", line 18, in <module>
+    from .ffi import ffi
+  File "/research/migration-preparation/python-deps/cairocffi/ffi.py", line 17, in <module>
+    ffi = FFI()
+          ^^^^^
+  File "/research/migration-preparation/python-deps/cffi/api.py", line 41, in __init__
+    import _cffi_backend as backend
+ModuleNotFoundError: No module named '_cffi_backend'

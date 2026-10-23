@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/research/agent-navigation-spline-223/research/experiments/agent-navigation-spline-03/geometry.py", line 45, in <module>
+    if __name__=='__main__':checkpoint()
+                            ^^^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/research/experiments/agent-navigation-spline-03/geometry.py", line 33, in checkpoint
+    gate(True);assert not (P/'geometry-checkpoint.json').exists();assert json.loads((P/'contract-result.json').read_text())['status']=='PASS';s,f,center=setup('a');c=np.array(fit['best']['heights']);x=np.linspace(-f.half[0]*.96,f.half[0]*.96,64);y=.73*f.radius*np.sin(np.arange(64)*.7);h,hx,hy,inside=f.height_gradient(x,y);ok=inside&(h>0);x=x[ok];y=y[ok];h,hx,hy,_=f.height_gradient(x,y);e=1e-6;dx=(f.height_gradient(x+e,y)[0]-f.height_gradient(x-e,y)[0])/(2*e);dy=(f.height_gradient(x,y+e)[0]-f.height_gradient(x,y-e)[0])/(2*e);error=max(abs(dx-hx).max(),abs(dy-hy).max());assert error<1e-8 and np.min(h)>0 and h.max()<=f.maximum_height;assert np.hypot(hx,hy).max()<=f.slope_bound and (1.5**2-1)*f.slope_bound**2<1 and f.maximum_height<2.1
+                                                                                                                                                         ^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/research/experiments/agent-navigation-spline-03/geometry.py", line 28, in setup
+    s=Study(WORK/k);L=s.L;half=tuple(s.half+[params['half_x_delta'],params['half_y_delta']]);R=min(s.radius+params['radius_delta'],*half);center=np.array(s.case['center'])+L*np.array([params['shape_dx'],params['shape_dy']]);surface=Counted(half,R,fit['breaks'],fit['best']['heights'],cap_join_width=0.);return s,surface,center
+                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/research/agent-navigation-spline-223/research/experiments/agent-navigation-spline-03/geometry.py", line 22, in __init__
+    self.coordinate.footprint=footprint
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in __setattr__
+dataclasses.FrozenInstanceError: cannot assign to field 'footprint'
