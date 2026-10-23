@@ -6,7 +6,9 @@ The review started on 23 October 2026 at 23:21:54.235 UTC. Its deadline is 23:36
 
 ## Frozen state and evidence identity
 
-The references are Music Navigation at 0 and 6.033333333 seconds. Their crop is [285,495,1365,830]. H1 uses the accepted pose and rounded footprint, depth .15, crown .4, index 1.5 and background distance 2L. The minor half extent L is 113.5 native pixels. All source, mask and foreground identities remain frozen.
+The references are Music Navigation at 0 and 6.033333333 seconds. Their crop is [285,495,1365,830]. H1 uses the accepted pose and rounded footprint, depth .15, crown .4, index 1.5 and background distance 2L. L = 113.5 native pixels is the original case normalization, not the corrected physical minor half-extent.
+
+The accepted corrected minor half-extent is 1.0029830429944897L, approximately 113.83857538 native pixels. All source, mask and foreground identities remain frozen.
 
 The source is a temporal mosaic with conditional known support. Neither case supplies an observed-confidence mask. Availability is not recovered photographic truth. No observed-zero metadata from the different slider study is silently assigned here. Unknown illumination, scene correspondence and original glyph variants remain identification limits.
 
