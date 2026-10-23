@@ -115,3 +115,11 @@ node research/experiments/navigation-geometry-01/restore-inputs.cjs
 ```
 
 The scripts retain completed-study and clock limits. Reproduction of a new experiment requires a new output directory and protocol; do not erase sealed failures or reset their budgets. Verification recovery specifically charges the already completed A controls and does not rerun them.
+
+## Current incident-filter convention
+
+The gallery now selects the saved incident-width 6.75 result under the project operation-order rule. The historical nominal width 6.864095394610148 uses the same effective quarter-pixel seed.
+
+This is model selection, not a strict numerical pass. Body guards improve, but original foreground guards fail. The raw control and original rejections remain unchanged.
+
+[Selection receipt](incident-selection.json), [source support](blur-source-proof.json) and [all guards](blur-result.json) identify the reused evidence. No rays, RGB queries, rendering or fitting accompanied this presentation change.

@@ -113,7 +113,10 @@ def neutral_color_response(material,gain=1.,bias=0.,highlight_lift=0.,return_pre
     Constant gain/bias includes a neutral white veil (gain=t,bias=1-t).
     Optional neutral highlight lift uses one fixed luminance smoothstep(.25,.65).
     This is an empirical color response, not a radiometric transmission claim.
-    Apply before coverage_blur; never substitute it for refraction or an outline.
+    Current pipeline: incident_source_filter first, then geometric sampling,
+    then this response before AA/foreground. coverage_blur is a historical
+    output-space comparator, not the default material-softness stage.
+    Never substitute the response for refraction or an outline.
     """
     if not np.isfinite([gain,bias,highlight_lift]).all() or gain<0:raise ValueError('Finite common tone parameters and nonnegative gain required')
     value=np.asarray(material)*gain+bias

@@ -26,17 +26,17 @@ The bounded outline extension leaves residual reflected power and 20 unsupported
 | Stage | Disposition |
 | --- | --- |
 | Refraction | Three families rejected or traded A/B fidelity; no accepted optical replacement. |
-| Ordinary blur | Common output sigma 6.75 native pixels accepted within the physical diagnostic. |
+| Ordinary blur | Incident sigma 6.75 is primary; historical output filtering remains preserved. |
 | Color | Common RGB gain 0.701980827595718 and bias 0.22423217000784113 accepted as an empirical component. |
 | Outline | Limited by path/source-scene issues; no reflected image accepted. |
 | Shadow / foreground | Rejected under original paired guards. |
 | Dispersion | Not identified; no spectral model added. |
 
-Primary physical-model E is 49.12716 / 19.81851. Historical pass03 scores 5.38805 / 3.11686; its closer image fit remains archived, rather than determining the primary modeling approach.
+Primary source-filtered physical-model E is 45.42369 / 18.21982. Artwork guards and A SSIM regress versus the prior output-filtered state. Historical pass03 scores 5.38805 / 3.11686; its closer image fit remains archived, rather than determining the primary modeling approach.
 
 ## Navigation and toolbar
 
-Navigation’s primary version is the raw harmonic rounded-rectangle baseline. Its incident-PSF and shadow variants remain rejected or held; the nonlinear foreground chain blocked color fitting.
+Navigation’s primary version now includes its saved incident softness under the operation-order convention. Foreground guards still fail, so no numerical pass is claimed; the nonlinear foreground chain blocked color fitting.
 
 The toolbar’s primary image is its harmonic crowned-back baseline. Tone, d-stroke curvature and underside structure remain incomplete. Later closed-surface checks have no newer supported full image.
 

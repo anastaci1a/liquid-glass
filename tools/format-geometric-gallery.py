@@ -27,8 +27,8 @@ pair('geometric-toolbar-primary.png',Image.open(WORK/'toolbar-target-sha.png').c
 for k in ['a','b']:
  target=Image.open(WORK/f'music-{k}-target.png')
  pair(f'geometric-expanded-primary-{k}.png',target.crop((280,290,1640,540)),np.load(ROOT/f'research/experiments/expanded-geometry-02/h1-{k}.npz')['complete'],'Incident blur 6.75 px; incomplete model')
- raw=np.load(ROOT/f'research/experiments/navigation-geometry-01/{k}-raw.npz')
- pair(f'geometric-navigation-primary-{k}.png',target.crop((285,495,1365,830)),raw['complete'],'Primary geometric baseline')
+ raw=np.load(ROOT/f'research/experiments/navigation-geometry-01/{k}-source-blur.npz')
+ pair(f'geometric-navigation-primary-{k}.png',target.crop((285,495,1365,830)),raw['complete'],'Incident blur 6.75 px; incomplete model')
 metadata=json.loads((ROOT/'guide/comparison-panels.json').read_text())
 for r in records:metadata[r['asset']]={key:r[key] for key in ['width','height','top','bottom','gutter']}
 (ROOT/'guide/comparison-panels.json').write_text(json.dumps(metadata,indent=2)+'\n')
