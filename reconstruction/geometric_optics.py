@@ -1,4 +1,4 @@
-"""Restricted exact geometric optics for a flat-front, concave-height solid.
+"""Geometric optics for certified explicit height and closed-surface solids.
 
 Coordinates normalized by minor half-size; +z towards the orthographic camera.
 No empirical image map or independent normal field enters this module.
@@ -145,12 +145,16 @@ class RadialCurvatureBack:
 
 
 def trace_flat_front_orthographic(surface,x,y,index,background_distance):
-    """Exact primary transmission for a certified concave height surface.
+    """Exact primary transmission for a certified global height surface.
 
-    Required certificate: height concave over a convex footprint; slope_bound
-    and maximum_height global. These ensure no TIR and no later back/side hit.
+    The footprint must be convex; height is nonnegative and globally Lipschitz
+    with the declared slope_bound. The subcritical global bound below excludes
+    TIR and later back/side reentry even when height itself is not concave.
+    See research/experiments/primary-height-certificate-01 for the proof.
     Surface height_gradient MUST derive from the same height used for geometry.
-    Only CircularBevel is certified here; other surfaces need separate proof.
+    This certificate does not cover curved-front or multiply reflected paths.
+    path_length is the post-exit AIR distance to the background, not glass
+    thickness. Glass distance for this normal-incidence front is the height.
     """
     if index<1 or not np.isfinite([index,background_distance]).all() or background_distance<=surface.maximum_height:raise ValueError('Invalid index or background clearance')
     if not np.isfinite([surface.maximum_height,surface.slope_bound]).all() or surface.maximum_height<0 or surface.slope_bound<0:raise ValueError('Finite nonnegative global surface bounds required')
