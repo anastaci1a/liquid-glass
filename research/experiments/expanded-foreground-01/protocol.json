@@ -1,0 +1,27 @@
+{
+  "status": "DECLARED_BEFORE_ANALYSIS",
+  "started_at": "2026-10-23T20:23:31.515Z",
+  "deadline": "2026-10-23T20:43:31.515Z",
+  "visible_defect": "Dark transport symbols have residual raster/material mismatch on the selected geometric playback body.",
+  "hypothesis": "Test one common bounded opacity for existing play and forward solid vectors, keeping their actual path, placement and inline ink colors fixed. Artist/title/artwork are protected, not forced into the same ink role.",
+  "training": "Opaque SVG cores alpha>0.95, alternating fixed8px spatial blocks; other blocks are advisory held cores. Equal weight per reference and symbol; no body/held-glass fit.",
+  "parameters": {
+    "common_transport_opacity": [
+      0,
+      1
+    ],
+    "original": 1
+  },
+  "frozen": [
+    "geometry, cached body and incident source blur",
+    "all original masks/source/foreground paths and colors",
+    "artist/title/artwork styles"
+  ],
+  "budgets": {
+    "rays": 0,
+    "source_queries": 0,
+    "fits": 1,
+    "native_composites": 4
+  },
+  "stop": "Zero change if optimum saturates at original1; otherwise full and one fixed half toward original, stop first strict paired qualifier or deadline. No font/weight search, matte fitting, colour sweep or material coupling."
+}
