@@ -1,0 +1,74 @@
+{
+  "status": "complete-useful-negative",
+  "started_at": "2026-10-23T18:10:02.731Z",
+  "deadline": "2026-10-23T18:40:02.731Z",
+  "parent_refraction_deadline": "2026-10-23T19:03:30.082Z",
+  "original_overall_deadline": "2026-10-23T21:43:30.082Z",
+  "substantive_hypothesis_number": 3,
+  "final_refraction_family_before_review": true,
+  "defect": "Longitudinal/cap correspondence remains wrong with flat-front height redistribution; blur amount is no longer the missing stage.",
+  "hypothesis": "Use an actual parabolic cylindrical front of depth .4L over the original certified H1 back. Trace front, back and possible sides through the existing ordered convex-solid tracer. No manual normal/map corrections.",
+  "allowed_parameters": {
+    "front_depth": 0.4,
+    "front_axis": 0
+  },
+  "frozen": {
+    "back_depth": 0.15,
+    "back_crown": 0.4,
+    "power": 3,
+    "n": 1.5,
+    "background_plane_z": -2,
+    "footprint": "Original frozen expanded rounded rectangle",
+    "incident_sigma_native_pixels": 6.75,
+    "output_material_sigma": 0,
+    "gain": 0.701980827595718,
+    "bias": 0.22423217000784113,
+    "AA": 2,
+    "inputs": "Original source/known/target, masks, vectors, artwork and foreground styles"
+  },
+  "geometry_convention": "Original flat-front reference plane remains z0; new physical front extends toward +z viewer. Source plane stays z=-2L. Orthographic camera unchanged.",
+  "budgets": {
+    "checkpoint_launches": 1024,
+    "checkpoint_level_points": 120000,
+    "full_native_primary_rays": 1360000,
+    "total_new_level_points": 80000000,
+    "source_audit_subrays": 2720000,
+    "source_RGB_queries": 2720000,
+    "native_images": 2,
+    "additional_parameter_settings": 0,
+    "fits": 0
+  },
+  "solver": {
+    "normalized_bracket_tolerance": 1e-11,
+    "maximum_iterations": 64
+  },
+  "checkpoint": "Prove convex occupancy and bounds; compare zero-front analytic and circular controls; finite-difference actual F/gradient; verify complete branches and entry/exit normals. Stop at first invariant failure before RGB.",
+  "source_gate": "WHOLE plus every original guard ray, actual incident kernel and all bilinear texels. Unsupported required or incomplete paths stop the setting.",
+  "stop": "Deadline, declared budget, invalid invariant/branch/source; no fallback, extra front depth or fitted environment.",
+  "ownership": "Lead owns new shared surface adapter and uses existing shared tracer unedited. No helper available or overlapping writes.",
+  "control_tolerances": {
+    "gradient_absolute": 1e-7,
+    "zero_front_source_over_L": 1e-9,
+    "unit_index_source_over_L": 1e-12
+  },
+  "code_hashes": {
+    "reconstruction/geometric_optics.py": "a48224f454b77d060601016329dee5c8bb48f87c418d2ba54d5a693c05841966",
+    "reconstruction/parabolic_front_solid.py": "6783eb9142f939a21283cf45f3cc61b553efe8964f93bef75a84d60836f3292c",
+    "reconstruction/rounded_rectangle_back.py": "b4d80bc8f3719cda6dc136238fede2c2cc5231f0321528968049c5839f57ec0b"
+  },
+  "RGB_phase": {
+    "declared_at": "2026-10-23T18:15:43.990Z",
+    "maximum_source_RGB_queries": 2720000,
+    "full_composites": 2,
+    "baseline": "Unchanged H1 incident-softness state",
+    "frozen_stage_controls": "Reuse current input hashes, finite-support proof, original foreground function and alpha equality."
+  },
+  "software_QA": {
+    "declared_at": "2026-10-23T18:23:57.477Z",
+    "additional_launches": 84,
+    "maximum_level_points": 10000,
+    "accounting": "Cumulative checkpoint launches920+84=1004, within original1024. QA level points and sections remain within original120000 fixture and80000000 total caps."
+  },
+  "finished_at": "2026-10-23T18:26:26.376Z",
+  "outcome": "Certified curved front improves both overall errors but fails original interior/foreground and B SSIM guards. No adoption or fourth refraction family."
+}
