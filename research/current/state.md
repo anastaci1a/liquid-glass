@@ -1,6 +1,6 @@
 # Current state
 
-Current direction: compact outline and the bounded clear-play review are closed. Next, focus on expanded playback refraction. Follow the [refinement sequence](../method/refinement-sequence.md).
+Current direction: compact remains parked; the bounded clear-play and expanded playback stage reviews are complete. Continue refining expanded playback geometry from the retained negative evidence. Follow the [refinement sequence](../method/refinement-sequence.md).
 
 Ordinary blur belongs before refraction across elements. Historical widths seed incident filtering; output-filtered records remain labeled comparisons.
 
@@ -25,14 +25,16 @@ The bounded outline extension leaves residual reflected power and 20 unsupported
 
 | Stage | Disposition |
 | --- | --- |
-| Refraction | Three families rejected or traded A/B fidelity; no accepted optical replacement. |
-| Ordinary blur | Incident sigma 6.75 is primary; historical output filtering remains preserved. |
-| Color | Common RGB gain 0.701980827595718 and bias 0.22423217000784113 accepted as an empirical component. |
+| Refraction | Distance, depth, curved-front and map-informed physical-height proposals fail original paired guards; no new geometric replacement. |
+| Ordinary blur | Incident sigma 6.75 is primary. New widths 4.5 / 9 fail original guards; historical output filtering stays preserved. |
+| Color | Retain the prior common gain/bias; four new white-preserving steps fail B symbol guards. |
 | Outline | Limited by path/source-scene issues; no reflected image accepted. |
-| Shadow / foreground | Rejected under original paired guards. |
+| Shadow / foreground | Three fixed shadow strengths and one shared transport-opacity direction fail original paired guards. |
 | Dispersion | Not identified; no spectral model added. |
 
 Primary source-filtered physical-model E is 45.42369 / 18.21982. Artwork guards and A SSIM regress versus the prior output-filtered state. Historical pass03 scores 5.38805 / 3.11686; its closer image fit remains archived, rather than determining the primary modeling approach.
+
+The [complete stage review](../experiments/expanded-pipeline-review-01/README.md) records negative results, incomplete outline support and retained evidence. No final animation or new fidelity acceptance is claimed.
 
 ## Navigation and toolbar
 

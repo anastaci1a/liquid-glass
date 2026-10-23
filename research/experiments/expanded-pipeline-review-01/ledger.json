@@ -1,0 +1,114 @@
+{
+  "overall_start": "2026-10-23T17:43:30.082Z",
+  "overall_deadline": "2026-10-23T21:43:30.082Z",
+  "refraction_close": {
+    "status": "REFRACTION_CLOSED_NO_STRICT_QUALIFIER",
+    "started_at": "2026-10-23T17:43:30.082Z",
+    "original_deadline": "2026-10-23T19:03:30.082Z",
+    "closed_at": "2026-10-23T19:02:23.913Z",
+    "overrun_seconds": 0,
+    "next": "Ordinary blur stage; do not skip it or extend refraction by borrowing its time.",
+    "selected_incumbent": "../expanded-geometry-02/selection.json",
+    "experimental_candidate": "result.json"
+  },
+  "stages": [
+    {
+      "experiment": "expanded-incident-blur-01",
+      "started_at": "2026-10-23T19:10:40.523Z",
+      "deadline": "2026-10-23T19:30:40.523Z",
+      "scientific_finished_at": "2026-10-23T19:10:54.665759+00:00",
+      "scientific_execution_in_budget": true,
+      "outcome": "NO_STRICT_QUALIFIER_RETAIN6.75",
+      "budgets": {
+        "new_rays": 0,
+        "source_support_subrays": 2720000,
+        "source_RGB_queries": 3563392,
+        "zero_cached_composites": 2,
+        "new_native_images": 4,
+        "fits": 0,
+        "extra_widths": 0
+      }
+    },
+    {
+      "experiment": "expanded-neutral-response-01",
+      "started_at": "2026-10-23T19:22:19.074Z",
+      "deadline": "2026-10-23T19:42:19.074Z",
+      "scientific_finished_at": "2026-10-23T19:22:33.563145+00:00",
+      "scientific_execution_in_budget": true,
+      "outcome": "NO_STRICT_QUALIFIER",
+      "budgets": {
+        "fits": 1,
+        "native_pairs": 4,
+        "new_rays": 0,
+        "new_source_RGB_queries": 0,
+        "uniform_fixture_samples": 3,
+        "zero_cached_composites": 0
+      }
+    },
+    {
+      "experiment": "expanded-outline-01",
+      "started_at": "2026-10-23T20:01:10.407Z",
+      "deadline": "2026-10-23T20:48:30.082Z",
+      "scientific_finished_at": "2026-10-23T20:01:16.533810+00:00",
+      "scientific_execution_in_budget": true,
+      "outcome": "STOP_RESIDUAL_POWER_AFTER_ENCOUNTER_CAP",
+      "budgets": {
+        "launches": 256,
+        "maximum_interface_encounters_per_launch": 64,
+        "total_interface_encounters": 16384,
+        "level_points": 2000000,
+        "RGB_queries": 0,
+        "native_images": 0,
+        "fits": 0
+      }
+    },
+    {
+      "experiment": "expanded-shadow-01",
+      "started_at": "2026-10-23T20:22:09.091Z",
+      "deadline": "2026-10-23T20:37:09.091Z",
+      "scientific_finished_at": "2026-10-23T20:22:15.238206+00:00",
+      "scientific_execution_in_budget": true,
+      "outcome": "NO_STRICT_QUALIFIER",
+      "budgets": {
+        "new_rays": 0,
+        "source_RGB_queries": 0,
+        "fits": 0,
+        "native_composites": 6
+      }
+    },
+    {
+      "experiment": "expanded-foreground-01",
+      "started_at": "2026-10-23T20:23:31.515Z",
+      "deadline": "2026-10-23T20:43:31.515Z",
+      "scientific_finished_at": "2026-10-23T20:23:37.392763+00:00",
+      "scientific_execution_in_budget": true,
+      "outcome": "NO_STRICT_QUALIFIER",
+      "budgets": {
+        "rays": 0,
+        "source_queries": 0,
+        "fits": 1,
+        "native_composites": 4
+      }
+    },
+    {
+      "experiment": "expanded-dispersion-review-01",
+      "started_at": "2026-10-23T20:24:37.339Z",
+      "deadline": "2026-10-23T20:29:37.339Z",
+      "scientific_finished_at": "2026-10-23T20:24:48.700056+00:00",
+      "scientific_execution_in_budget": true,
+      "outcome": "SPECTRAL_TRANSPORT_NOT_IDENTIFIED",
+      "budgets": {
+        "rays": 0,
+        "RGB_queries": 0,
+        "new_images": 0,
+        "filters": 0,
+        "fits": 0
+      }
+    }
+  ],
+  "outline_reporting_delay": "Scientific checkpoint execution passed; review report was later than the first checkpoint deadline. See expanded-outline-01/stage-close.json.",
+  "acceptance_count_change": 0,
+  "selected_model_changed_by_refinement": false,
+  "private_conversation_exported": false,
+  "helper_research": "Existing isolated colored-slider researcher resumed after lead review delay; separate clocks and branch. Its raw baseline and D0.5 trial are useful negatives, not transfer validation."
+}
