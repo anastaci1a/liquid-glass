@@ -36,6 +36,8 @@ Primary source-filtered physical-model E is 45.42369 / 18.21982. Artwork guards 
 
 The [complete stage review](../experiments/expanded-pipeline-review-01/README.md) records negative results, incomplete outline support and retained evidence. No final animation or new fidelity acceptance is claimed.
 
+A later [positive spline-height observation](../experiments/expanded-spline-observation-01/README.md) improves all paired body metrics, to E25.28850 / 11.04459. Original foreground guards still fail; it remains a prominent tested candidate rather than a selected or accepted replacement.
+
 ## Navigation and toolbar
 
 Navigation’s primary version now includes its saved incident softness under the operation-order convention. Foreground guards still fail, so no numerical pass is claimed; the nonlinear foreground chain blocked color fitting.

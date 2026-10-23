@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_FIRST_OBSERVATION_OF_FROZEN_BEST",
+  "started_at": "2026-10-23T21:09:27.144Z",
+  "deadline": "2026-10-23T21:29:27.144Z",
+  "authority": "Geometry-only task is complete. This separately bounded phase observes its retained best once; it does not extend/restart the96-evaluation fit.",
+  "visible_question": "Does the better diagnostic normal-component projection improve actual paired text/card return correspondence without unacceptable original-guard regressions?",
+  "geometry_source": "../expanded-spline-height-01/inference.json best heights, breaks and checkpoint; no new parameter",
+  "parameters": {
+    "index": 1.5,
+    "background_distance": 2.1
+  },
+  "frozen": [
+    "original H1 footprint/pose, source/masks/foreground",
+    "incident sigma6.75, AA2, selected common gain/bias, zero output blur/shadow"
+  ],
+  "budgets": {
+    "native_grid_rays": 1360000,
+    "source_audit_subrays": 2720000,
+    "total_native_height_adapter_calls": 2730000,
+    "source_RGB_queries": 2720000,
+    "native_images": 2,
+    "additional_fits": 0,
+    "extra_geometry_settings": 0
+  },
+  "budget_reservation": "Reserve2*1360000=2720000 adapter calls BEFORE native launch; runtime counter includes every nested boundary height evaluation. Abort before evaluating if reservation cannot fit. No unscoped sparse-height cap.",
+  "checkpoint": "Reuse completed390-fixture geometry controls and unchanged sampler/compositor controls. Whole plus all original guards, full kernel and four bilinear texels before RGB; unsupported required sample stops setting.",
+  "stop": "One paired observation, source/path failure, any counter/deadline; no backtrack, blur/color rescue, target/context fill or baseline/mask change."
+}

@@ -23,7 +23,7 @@ The derivative basis has control values
 
 $$
 d_i=\frac{3(c_{i+1}-c_i)}{t_{i+4}-t_{i+1}},\qquad
-h'(\rho)=\sum_i d_i B_{i,2}(\rho),\qquad
+h'(\rho)=\sum_i d_i \widetilde{B}_{i,2}(\rho),\qquad
 \left|h'(\rho)\right|\leq\max_i|d_i|.
 $$
 
@@ -51,7 +51,7 @@ One start uses 129 saved diagnostic normal positions, fixed index 1.5 and backgr
 | Diagnostic normal MSE | 0.0146079 |
 | Earlier concave projection MSE | 0.0211650 |
 
-The best evaluated feasible surface reduces this particular map residual by about 31%. It still misses diagnostic structure. The solver stopped at its declared evaluation cap and did not report convergence.
+The best evaluated feasible surface reduces this particular map residual by about 31%. The basis and parameter count also differ from the old curvature model; this does not isolate concavity alone as the cause. It still misses diagnostic structure. The solver stopped at its declared evaluation cap and did not report convergence.
 
 [Every proposed vector](inference.json), feasibility decision and actually evaluated best is retained. Infeasible proposals are not traced. There is no second start, hidden probe or reconstructed probe history.
 

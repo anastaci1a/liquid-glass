@@ -397,9 +397,22 @@ References: [Apple Music clip](https://www.apple.com/newsroom/videos/2025/autopl
 
 ![Expanded miniplayer B and primary geometric model](assets/geometric-expanded-primary-b.png)
 
-Paired E is 49.127 / 19.819. This primary selection is not a claim of parity with the reference or a passing full-model comparison. Checkerboard marks unavailable unscored exterior; no backdrop is filled from the target.
+Paired E is 45.424 / 18.220 with incident blur 6.75 native pixels. This primary selection is not a claim of parity with the reference or a passing full-model comparison. Checkerboard marks unavailable unscored exterior; no backdrop is filled from the target.
 
-[Selected geometry/material and limits](../reconstruction/studies/geometric-expanded-pipeline/summary.json) · [Paired geometric study](geometric-optics.md#frosted-miniplayer-paired-component-checks).
+[Selected source-filtered state](../research/experiments/expanded-geometry-02/selection.json) · [Paired geometric study](../research/experiments/expanded-geometry-02/README.md).
+
+<details>
+<summary>Latest tested geometry: body improves; foreground guards still fail</summary>
+
+A positive spline back reduces paired E to 25.289 / 11.045 with all body metrics improving. Original artwork/title/transport guards still fail, so this is an experimental candidate, not an accepted replacement. Source, masks, blur and colour stay fixed.
+
+![Apple and tested spline-height model A; foreground regressions retained](assets/geometric-expanded-spline-candidate-a.png)
+
+![Apple and tested spline-height model B; foreground regressions retained](assets/geometric-expanded-spline-candidate-b.png)
+
+[Results, source proof and same-geometry rays](../research/experiments/expanded-spline-observation-01/README.md).
+
+</details>
 
 <details data-historical>
 <summary>Archived empirical reconstruction and motion</summary>
