@@ -1,0 +1,38 @@
+{
+  "status": "complete-no-new-qualifier",
+  "started_at": "2026-10-23T19:10:40.523Z",
+  "deadline": "2026-10-23T19:30:40.523Z",
+  "overall_deadline": "2026-10-23T21:43:30.082Z",
+  "stage": "Blurriness; refraction closed at its original deadline.",
+  "question": "Refine historical incident softness on the selected H1 geometry without hiding feature-position or outline errors.",
+  "fixed_widths_native_pixels": [
+    4.5,
+    9
+  ],
+  "baseline_width_native_pixels": 6.75,
+  "geometry": "Selected H1, not the rejected inferred-profile branch; no guard reset.",
+  "frozen": {
+    "gain": 0.701980827595718,
+    "bias": 0.22423217000784113,
+    "AA": 2,
+    "source_and_foreground": "All original paired inputs, masks, styles and artwork",
+    "optics": "Same surface, index1.5 and D2; no new tracing",
+    "output_material_sigma": 0
+  },
+  "budgets": {
+    "new_rays": 0,
+    "source_support_subrays": 2720000,
+    "source_RGB_queries": 3563392,
+    "zero_cached_composites": 2,
+    "new_native_images": 4,
+    "fits": 0,
+    "extra_widths": 0
+  },
+  "source_gate": "Audit the full radius27 incident kernel plus every bilinear texel for whole+ALL original guards before sampling. Smaller radius14 may reuse radius21 proof if radius27 proposal fails; never repair unknown source.",
+  "controls": "Pixel-exact cached sample/response/AA/foreground replay at the existing width. No repeated original rays or source queries for zero controls.",
+  "acceptance": "All original paired body, SSIM, exterior, foreground/artwork guards plus visible detail agreement. A smaller score cannot justify erasing incorrect geometric structure.",
+  "detail_control": "Reuse fixed B text crop875,326..1258,505 and the historical safe-cohort band ratio. Analysis filters are measurements, not additional rendering blur.",
+  "stop": "Each unsupported proposal, failed cache control, budget or deadline. Do not add a third width or spatially varying edge correction.",
+  "finished_at": "2026-10-23T19:19:28.838Z",
+  "outcome": "Keep historical incident width6.75. Width4.5 is too sharp; width9 too soft despite body-score improvement and fails both artwork guards. No source/geometry change."
+}
