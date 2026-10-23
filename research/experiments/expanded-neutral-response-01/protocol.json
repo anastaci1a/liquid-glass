@@ -1,0 +1,36 @@
+{
+  "status": "complete-no-qualifier",
+  "started_at": "2026-10-23T19:22:19.074Z",
+  "deadline": "2026-10-23T19:42:19.074Z",
+  "overall_deadline": "2026-10-23T21:43:30.082Z",
+  "stage": "Colour response; incident softness6.75 retained after its completed stage.",
+  "defect": "The frosted body remains too dark/contrasty while the common incident-white response should not drift.",
+  "hypothesis": "One shared white-preserving neutral contrast direction: decrease gain and increase bias by the same delta, across all RGB and both references.",
+  "parameters": {
+    "delta_bounds": [
+      0,
+      0.25
+    ],
+    "original_gain": 0.701980827595718,
+    "original_bias": 0.22423217000784113
+  },
+  "proposal": "Closed-form weighted TRAIN-only least squares; no held/foreground fitting. Full,half,quarter,eighth predetermined factors; stop first strict paired qualifier.",
+  "frozen": [
+    "H1 actual geometry, camera/index/background, all source coordinates and AA2",
+    "Incident sigma6.75/output material sigma0",
+    "Original paired inputs, masks, foreground styles/artwork, exterior and all ten guards"
+  ],
+  "budgets": {
+    "fits": 1,
+    "native_pairs": 4,
+    "new_rays": 0,
+    "new_source_RGB_queries": 0,
+    "uniform_fixture_samples": 3,
+    "zero_cached_composites": 0
+  },
+  "controls": "Reuse pixel-exact cache controls from the preceding blur stage. Unit incident white must retain its float32 response. Actual per-sample clip/AA/nonlinear foreground decides every candidate.",
+  "stop": "Zero direction, first strict paired qualifier, original-guard failure through four predetermined factors, invariant, budget or deadline. No new material coefficients/epoch/source changes.",
+  "limits": "Encoded empirical response, not measured radiance or identified Apple transmission. No colour change is credited as a geometric fix.",
+  "finished_at": "2026-10-23T19:33:35.847Z",
+  "outcome": "Four predetermined native pairs reject B transport-symbol guards; full step also rejects B rim. No extra step, coefficient or baseline/style change."
+}
