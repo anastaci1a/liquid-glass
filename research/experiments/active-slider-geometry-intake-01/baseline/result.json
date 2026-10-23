@@ -1,0 +1,104 @@
+{
+  "status": "UNFITTED_BASELINE_READY_FOR_PRIMARY_REVIEW",
+  "observations": [
+    {
+      "case": "a",
+      "scores": {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 65.8504409790039
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 73.65817260742188
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 66.10971069335938
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 62.32781219482422
+        },
+        "ssim": 0.864096462726593,
+        "loss": 4663.05432154992,
+        "E": 68.28656032888111,
+        "exterior": {
+          "pixels": 152521,
+          "rmse": 12.615555763244629
+        }
+      },
+      "historical_guards": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": false,
+        "E": false,
+        "ssim": false,
+        "exterior": false
+      },
+      "parity_max_difference": [
+        0.0,
+        0.0
+      ],
+      "raw_clip_counts": {
+        "below_zero": 0,
+        "above_one": 0
+      },
+      "images": 1
+    },
+    {
+      "case": "b",
+      "scores": {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 36.18732833862305
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 36.279640197753906
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 36.53278350830078
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 36.14923095703125
+        },
+        "ssim": 0.9351598024368286,
+        "loss": 1311.5296004646616,
+        "E": 36.2150466030994,
+        "exterior": {
+          "pixels": 132594,
+          "rmse": 7.679680824279785
+        }
+      },
+      "historical_guards": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": false,
+        "E": false,
+        "ssim": true,
+        "exterior": false
+      },
+      "parity_max_difference": [
+        0.0,
+        0.0
+      ],
+      "raw_clip_counts": {
+        "below_zero": 0,
+        "above_one": 0
+      },
+      "images": 1
+    }
+  ],
+  "native_rays": 3736800,
+  "fixture_comparator_rays": 7602,
+  "full_native_images": 2,
+  "fits": 0,
+  "accepted_passes": 0,
+  "finished_utc": "2026-10-23T20:01:57.622765+00:00",
+  "limitations": "Modeled source, observed confidence zero; no lighting, shadow or spectral operator. Mathematical paths are not identified Apple optics. No historical mask/recipe/count change."
+}

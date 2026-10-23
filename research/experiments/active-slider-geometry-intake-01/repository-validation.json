@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-10-23T20:08:28.565Z",
+  "checks": {
+    "docs": 51,
+    "display_equations": 372,
+    "local_links_assets_anchors": 86407,
+    "published_documents": 51,
+    "html_pages": 8420,
+    "input_pngs_exact": 8,
+    "case_snapshots_exact": 2,
+    "shared_dependencies_unchanged": true,
+    "private_data_scan": "No credential patterns, private session dumps, dependencies or new input assets staged.",
+    "diff_check": "Code and documentation pass; two preserved raw failure logs retain their original blank final line and are reported by git diff --check."
+  },
+  "limitations": [
+    "Initial missing local site and ES-module dependency resolution blocked documentation checks. A private dependency symlink and local build resolved them; no public deployment occurred.",
+    "The first site build preceded the baseline report; publication check required a rebuild. Final checks passed.",
+    "Scientific validation is limited to the saved geometry tests, complete source proof and four renderer parity patches; this is not visual acceptance."
+  ],
+  "scope": "Private research versioning only. No main, Pages, shared renderer or acceptance changes."
+}

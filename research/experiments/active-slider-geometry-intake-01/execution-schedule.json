@@ -1,0 +1,71 @@
+{
+  "start_utc": "2026-10-23T19:56:01.537Z",
+  "prior_intake_seconds": 320.849,
+  "blocked_review_interval": {
+    "start": "2026-10-23T18:58:56.172Z",
+    "end": "2026-10-23T19:56:01.537Z",
+    "seconds": 3425.365,
+    "charged_to_execution": false
+  },
+  "remaining_total_minutes": 234.65251666666666,
+  "stages": [
+    {
+      "name": "refraction",
+      "minutes": 74.65251666666667,
+      "start_utc": "2026-10-23T19:56:01.537Z",
+      "deadline_utc": "2026-10-23T21:10:40.688Z"
+    },
+    {
+      "name": "incident_blur",
+      "minutes": 20,
+      "start_utc": "2026-10-23T21:10:40.688Z",
+      "deadline_utc": "2026-10-23T21:30:40.688Z"
+    },
+    {
+      "name": "color",
+      "minutes": 20,
+      "start_utc": "2026-10-23T21:30:40.688Z",
+      "deadline_utc": "2026-10-23T21:50:40.688Z"
+    },
+    {
+      "name": "outline",
+      "minutes": 60,
+      "start_utc": "2026-10-23T21:50:40.688Z",
+      "deadline_utc": "2026-10-23T22:50:40.688Z"
+    },
+    {
+      "name": "shadow_glow",
+      "minutes": 15,
+      "start_utc": "2026-10-23T22:50:40.688Z",
+      "deadline_utc": "2026-10-23T23:05:40.688Z"
+    },
+    {
+      "name": "foreground",
+      "minutes": 20,
+      "start_utc": "2026-10-23T23:05:40.688Z",
+      "deadline_utc": "2026-10-23T23:25:40.688Z"
+    },
+    {
+      "name": "dispersion",
+      "minutes": 10,
+      "start_utc": "2026-10-23T23:25:40.688Z",
+      "deadline_utc": "2026-10-23T23:35:40.688Z"
+    },
+    {
+      "name": "final_review",
+      "minutes": 15,
+      "start_utc": "2026-10-23T23:35:40.688Z",
+      "deadline_utc": "2026-10-23T23:50:40.688Z"
+    }
+  ],
+  "subpass": {
+    "start_utc": "2026-10-23T19:56:01.537Z",
+    "geometry_checkpoint_deadline": "2026-10-23T20:01:01.537Z",
+    "deadline_utc": "2026-10-23T20:16:01.537Z",
+    "fixture_and_comparator_rays_cap": 10000,
+    "native_rays_cap": 3736800,
+    "native_images_cap": 2,
+    "fits": 0
+  },
+  "policy": "Stage durations are hard caps. Early start also imposes actual-start+duration. No calibration after this baseline until primary review."
+}
