@@ -1,5 +1,5 @@
-# Active experiment
+# Next control
 
-The [clear-play study](../experiments/clear-play-02/README.md) tests source blur before refraction, then investigates outline transport. Its protocol records actual deadlines and evaluation limits.
+The [clear-play study](../experiments/clear-play-02/README.md) is a useful negative: source blur sharpens compressed edge texture, but original guards regress. Missing scene radiance prevents a justified outline image. Keep the existing accepted image.
 
-After its verified conclusion, select a suitable different control for the [four-hour cycle](../method/passes.md). Preserve unresolved source and ownership limitations rather than reopening blocked work.
+Select a different control for the [four-hour cycle](../method/passes.md), beginning with frozen references and visible feedback. Text-backed navigation is a candidate for geometric transfer; no new experiment is declared yet. Preserve unresolved source and ownership limitations rather than reopening blocked work.

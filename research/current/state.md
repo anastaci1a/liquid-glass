@@ -1,19 +1,21 @@
 # Current state
 
-Status: the focused clear-play study is active. See its [protocol](../experiments/clear-play-02/README.md). Historical accepted states remain the comparison baselines.
+Status: the [focused clear-play study](../experiments/clear-play-02/README.md) is verified with no accepted replacement. The next control study is being selected.
 
 ## Clear circular play control
 
 | Stage | Disposition |
 | --- | --- |
 | Refraction | G05 physical hypothesis retained; later proposals yielded no accepted geometric improvement. |
-| Ordinary blur | Output sigma 1.7 native pixels accepted as limited softness progress. |
+| Ordinary blur | Output sigma 1.7 remains accepted. Matched source blur sharpens edges but regresses original guards. |
 | Color, outline, shadow, icon | No new accepted replacement. |
 | Dispersion | Skip for this control under the reviewer’s instruction. |
 
 The corrected supplemental foreground guard improves 98.655754 → 98.166603. The stale 5.534182 result used reversed coordinates and is superseded.
 
-Outer-rim MAE regresses 16.527521 → 16.897352 despite improving RMSE. Edge geometry, light structure and icon response remain unresolved.
+The accepted output filter worsens outer-rim MAE 16.527521 → 16.897352. Source filtering reduces it to 16.467651, but glass/rim RMSE, SSIM and exterior guards regress. Edge geometry, light structure and icon response remain unresolved.
+
+The bounded outline extension leaves residual reflected power and 20 unsupported secondary background events. No reflected RGB image or fitted environment is accepted.
 
 ## Expanded miniplayer
 

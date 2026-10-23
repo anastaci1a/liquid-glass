@@ -1,6 +1,6 @@
 # Clear play: source blur and outline transport
 
-Status: blur comparison complete; useful mechanism result, no accepted replacement. Outline investigation is active.
+Status: verified useful negative. Source blur demonstrates the expected edge-sharpening mechanism, but no candidate replaces the accepted image.
 
 ## Question
 
@@ -67,3 +67,25 @@ $$
 $$
 
 Strong source-coordinate travel compresses the apparent filter width along that direction. This local approximation fails at singular folds and does not create a missing specular highlight. The test uses the full retained geometric map, not this approximation as an image warp.
+
+## Final disposition
+
+[Outline review](outline-review.md): unresolved reflected power and unsupported scene destinations prevent an outline image. No environment, bright halo or source completion was fitted.
+
+[Independent verification](verification.json) reproduces the source-blur composite pixel-for-pixel using separable SciPy convolution and a different bilinear sampler. Coverage and corrected original score masks remain exact.
+
+The shared incident-source filter and its support tests are reusable. The next control must preserve its own geometry, source evidence and material family; this result does not establish cross-control fidelity.
+
+## Reproduction
+
+Use Git LFS for numerical artifacts and the Python dependencies declared in the reconstruction directory. Restore the 42 declared inputs with Node and zstd:
+
+```sh
+git lfs pull
+node research/experiments/clear-play-02/restore-inputs.cjs
+PYTHONPATH=reconstruction python research/experiments/clear-play-02/verify.py
+```
+
+The independent replay overwrites only its verification report. Experiment drivers retain completed-study and deadline guards; do not erase results to restart them. A new experiment needs its own protocol and output directory.
+
+Validation: 27 geometric tests pass, including source-filter support, zero identity and directional compression. The documentation build and link checks cover this report and its figures. Numerical replay does not establish photographic truth or acceptance.
