@@ -23,7 +23,8 @@ The [Apple morph asset](https://developer.apple.com/tutorials/videos/com.apple.S
 
 Run [reference_patch.py](experiments/reference_patch.py) against a privately downloaded asset. It verifies SHA256 `4feea1c34a97ae1a4853c8f38831b9c7579c739db2c1060b1f4b84d3082d3992`, decodes native frames, reads actual presentation timestamps, and checks identity/known-shift synthetic controls. Requirements: Python 3, NumPy, OpenCV and ffprobe. No Apple pixels are stored in this repository.
 
-- Training parameters are frozen from the earlier experiment at 1.133333 s; repeated observations are 1.400000, 1.666667, 4.066667, 4.350000 and 4.616667 s. Variable frame intervals prohibit assuming frame index / 60.
+
+Training parameters are frozen from the earlier experiment at 1.133333 s; repeated observations are 1.400000, 1.666667, 4.066667, 4.350000 and 4.616667 s. Variable frame intervals prohibit assuming frame index / 60.
 - The new reproduction also freezes photometry from the training frame, instead of only refitting positive RGB gain/offset on every observation.
 - Results below use OpenCV 5.0.0 / NumPy 2.4.6; values are RGB RMSE on a 0–255 scale.
 
@@ -51,7 +52,19 @@ Both use one analytic rounded-rectangle silhouette (circle/capsule are special c
 | Boundary-focused (default) | Small interior lookup plus a smooth compact shoulder displacement, inward along the boundary normal | Separates quiet-core registration from edge bending; inspired by observations, **not fitted to all Apple scenes** |
 | Physical cap comparison | Smooth shoulder height plus a weak curved crown; normal from height gradient; Snell entry, planar exit and backdrop gap | Makes thickness/normal/ray relationships inspectable; assumes a plano-convex body and orthographic viewing, neither established for iOS |
 
-For the boundary model, with inward distance `d`, shoulder width `b`, `u=clamp(d/b,0,1)`, use `16u²(1−u)²` inside the band and zero beyond it. Value and first derivative vanish at both ends, avoiding a sharp optical boundary. A small smooth interior term retains gentle magnification.
+For the boundary model, with inward distance `d`, shoulder width `b`, [the expression below](#optics-equation-1), use the following shoulder inside the band and zero beyond it.
+
+$$
+P(u)=16u^2(1-u)^2
+$$
+
+Value and first derivative vanish at both ends, avoiding a sharp optical boundary. A small smooth interior term retains gentle magnification.
+
+<a id="optics-equation-1"></a>
+
+$$
+u=\operatorname{clamp}(d/b,0,1)
+$$
 
 Height scales its strength; it is a phenomenological parameter, not a measured physical thickness.
 
@@ -75,14 +88,25 @@ Pressing reduces height and narrows the shoulder while expanding the footprint. 
 
 ## Run and verify
 
-- Open the [live lab](https://anastaci1a.github.io/localica/liquid-glass/lab.html). `?fallback=1` selects software refraction. The status line identifies the renderer and explains why software mode is active.
+- Open the [live lab](https://anastaci1a.github.io/localica/liquid-glass/lab.html). [the condition below](#optics-equation-101) selects software refraction. The status line identifies the renderer and explains why software mode is active.
+
+<a id="optics-equation-101"></a>
+
+$$
+?\mathrm{fallback}=1
+$$
+
 - **Retry WebGL** removes the forced-software URL option and tries GPU rendering again; a failed attempt leaves software refraction running.
 - No account, uploaded image or runtime network dependency is needed after the site loads.
-- From `docs/liquid-glass`: `npm ci`, `npm run build`, then serve `site/` with any static server. The generated site contains only allowlisted public guide files and original assets; `build.json` records source SHA and file checksums.
-- `npx playwright install chromium`, then `npm test`. An existing browser can be supplied through `CHROMIUM_PATH`; `LAB_EVIDENCE` selects the output directory and `LAB_URL` can point tests at the deployment. Keep raw test output untracked.
-- Browser checks exercise both models/three outlines, zero-power texture identity, actual shoulder displacement, center/exterior registration, tone ordering/endpoints, diagonal continuity, contact/release/wall recovery, interrupted morphs, idle sleep, Reduced Motion, context loss/restoration, mobile sizing, full reset, repeated morph/model changes and context recovery.
+
+From `docs/liquid-glass`: `npm ci`, `npm run build`, then serve `site/` with any static server. The generated site contains only allowlisted public guide files and original assets; `build.json` records source SHA and file checksums.
+
+`npx playwright install chromium`, then `npm test`. An existing browser can be supplied through `CHROMIUM_PATH`; `LAB_EVIDENCE` selects the output directory and `LAB_URL` can point tests at the deployment. Keep raw test output untracked.
+
+Browser checks exercise both models/three outlines, zero-power texture identity, actual shoulder displacement, center/exterior registration, tone ordering/endpoints, diagonal continuity, contact/release/wall recovery, interrupted morphs, idle sleep, Reduced Motion, context loss/restoration, mobile sizing, full reset, repeated morph/model changes and context recovery.
 - Software checks add sampled GPU agreement for both models, zero-power identity, blur/contrast behavior, an unavailable WebGL context and retry. These are targeted probes, not proof of every pixel/state.
-- Performance design: one static texture upload per backdrop change, one analytic shader pass, bounded nine-tap scattering, early exit outside the lens, render density capped at 1.5× and a maximum 960×400 framebuffer, and sleeping clocks after settlement or while offscreen.
+
+Performance design: one static texture upload per backdrop change, one analytic shader pass, bounded nine-tap scattering, early exit outside the lens, render density capped at 1.5× and a maximum 960×400 framebuffer, and sleeping clocks after settlement or while offscreen.
 - Software mode uses a 480-pixel-wide framebuffer, caches the unmodified backdrop and evaluates optical math only within the lens/shadow bounds. Its source pixels are read once per backdrop change.
 - Test-only GPU readback is never used during interaction. Shader submission timing is not GPU duration; SwiftShader captures are not physical-device performance evidence.
 - Defaults: gradient with vertical lines, light foreground ink, boundary-field model and capsule shape.

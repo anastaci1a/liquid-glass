@@ -1,6 +1,6 @@
-# Migration
+# Repository provenance
 
-Research history and substantive local evidence now live in this repository. Localica cutover is prepared in an isolated clone; final merge verification is recorded in `cutover.json`.
+Research history and substantive local evidence now live in this repository. Localica cutover merged through PR 457. The original application checkout and its dirty app work remain untouched.
 
 ## Provenance
 
@@ -13,7 +13,7 @@ Research history and substantive local evidence now live in this repository. Loc
 | Old → extracted commits | `commit-map.tsv`, `ref-map.tsv`, `selected-source-refs.json` |
 | Final source file destinations | `cutover-files.json` |
 | Local file dispositions | `local-material-manifest.json` |
-| Evidence objects and aliases | `../research/evidence/index.json` |
+| Evidence objects and aliases | `../evidence/index.json` |
 | Validation | `checks.json` |
 
 The first extraction mapped `docs/liquid-glass/` to `docs/`. Subsequent tracked moves separate `guide/`, `lab/` and `reconstruction/`. Original history and IDs remain traceable; no source history was rewritten.
@@ -30,15 +30,15 @@ Downloaded font/software packages, whole original videos, installed dependencies
 
 | Location | Purpose |
 | --- | --- |
-| `../migration-backups/20261023T005817Z/` | Original refs bundle, dirty patches and filesystem/container snapshots. |
-| `../migration-backups/closure-20261023/` | Final read-only inventory and scope checks. |
-| `../validation-checkout/` | Actual detached validation worktree. |
-| `../cutover/localica/` | Isolated source-cutover clone; active app checkout untouched. |
+| `../../../migration-backups/20261023T005817Z/` | Original refs bundle, dirty patches and filesystem/container snapshots. |
+| `../../../migration-backups/closure-20261023/` | Final read-only inventory and scope checks. |
+| `../../../validation-checkout/` | Actual detached validation worktree. |
+| `../../../cutover/localica/` | Isolated source-cutover clone; active app checkout untouched. |
 
 Captures preserve immutable versions. They do not claim that another session was frozen. The final inventory found unchanged source refs and retained the same substantive dirty research files.
 
 ## Boundaries
 
-No app behavior, release, source history rewrite or site deployment is part of this migration. Existing published reconstruction URLs remain served by Localica's historical Pages output.
+No application behavior, release or source history rewrite changed. Research Pages now deploys from this repository; the former Localica site keeps compatibility redirects.
 
 Sessionsation and helper interaction remain prohibited. Neither session was relocated or controlled. A future session-directory update is an administrative action for Ana, not an unfinished research-file migration.

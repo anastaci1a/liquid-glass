@@ -10,7 +10,7 @@ const expected=[...markdown.matchAll(/!\[[^\]]*\]\(([^)]+)\)|<img\b[^>]*src="([^
  try{
   const page=await browser.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   for(const width of [1280,390]){
-   await page.setViewportSize({width,height:950});await page.goto(pathToFileURL(path.join(root,'site/liquid-glass/reconstruction.html')).href);
+   await page.setViewportSize({width,height:950});await page.goto(pathToFileURL(path.join(root,'site/reconstruction.html')).href);
    assert.deepEqual((await page.locator('details.study').evaluateAll(list=>list.map(d=>d.id))).sort(),[...studyIds].sort(),'Every registered study has one compact card');
    assert(await page.locator('main img:not(.study-thumbnail)').evaluateAll(list=>list.every(i=>i.closest('details.study'))),'All study images belong to a compact entry');
    assert.equal(await page.locator('details.study#safari-circular-controls').count(),1,'Safari is a compact study, not an unbounded page section');
@@ -31,7 +31,7 @@ const expected=[...markdown.matchAll(/!\[[^\]]*\]\(([^)]+)\)|<img\b[^>]*src="([^
    }
    const playback=page.locator('#clear-playback-control');await playback.evaluate(d=>d.open=true);
    await playback.locator('.comparison').first().screenshot({path:path.join(out,`expanded-${width}.png`)});
-   await page.goto(pathToFileURL(path.join(root,'site/liquid-glass/recreation-models.html')).href);
+   await page.goto(pathToFileURL(path.join(root,'site/recreation-models.html')).href);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Model page overflows');
   }
   assert.deepEqual(errors,[]);console.log(`PASS compact desktop/mobile entries; ${expected.length} source images retained; deferred nested figures and bounded widths`);

@@ -7,7 +7,20 @@ New refraction studies use explicit optical surfaces. Their intersections, norma
 ## Scope and conventions
 
 - Lengths use the fixed reference minor half-extent `L`; actual surface extents remain explicit multiples of it. x points right, y down, +z toward the camera.
-- The first comparator uses an orthographic camera, front plane `z=0` and background plane `z=-D`.
+- The first comparator uses an orthographic camera, front plane [the condition below](#geometric-optics-equation-101) and background plane [the condition below](#geometric-optics-equation-102).
+
+<a id="geometric-optics-equation-101"></a>
+
+$$
+z=0
+$$
+
+<a id="geometric-optics-equation-102"></a>
+
+$$
+z=-D
+$$
+
 - Geometry determines refraction. Parameters describe shape, thickness, camera, index or scene placement. No independent normal adjustment, fitted screen displacement or post-trace residual warp is allowed.
 - Pixel integration and interpolation are numerical sampling. Optical scattering/blur, spectral dispersion, reflection, lighting, color, foregrounds and shadows are separate material/compositing stages. They cannot conceal a failed geometric comparison.
 - The first tracer follows the primary transmitted branch. It does not implement finite-camera entry, arbitrary side intersections, reflected radiance or a complete dielectric energy solution.
@@ -16,18 +29,77 @@ New refraction studies use explicit optical surfaces. Their intersections, norma
 
 ## Shared height surface
 
-The initial closed solid has a flat front, a convex footprint and back `z=-h(x,y)`. Its height is concave and nonnegative. Over a circle, `rho=sqrt(x²+y²)`. Define:
+The initial closed solid has a flat front, a convex footprint and back [the condition below](#geometric-optics-equation-103). Its height is concave and nonnegative. Over a circle, [the expression below](#geometric-optics-equation-1). Define:
 
-```text
-u = max((rho-core)/(1-core), 0)
-h = edge + depth (1-u^p),  rho <= 1
-```
+<a id="geometric-optics-equation-103"></a>
 
-`0<=core<1`, `depth>0`, `edge>=0`, `p>=3`. The plateau and bevel meet with continuous first and second derivatives. Height decreases toward the edge and its radial second derivative is nonpositive. A finite cut edge is part of this hypothesis; it does not establish Apple's surface shape.
+$$
+z=-h(x,y)
+$$
 
-The side closes the solid over the footprint boundary, between `z=-edge` and0. A ray exactly on a crease has no unique interface normal. The tracer reports that path unresolved, with NaN source coordinates, instead of choosing an image sample. Clear misses use their ordinary unobstructed ray.
 
-For a continuous pill, the same height profile can use the convex coordinate `rho=sqrt(T)` from the [continuous footprint](recreation-models.md#continuous-pill-footprint-candidate). This coordinate is neither a homogeneous norm nor Euclidean distance. Its actual derivatives enter `grad h=h'(rho) grad rho`. A decreasing concave profile composed with this convex coordinate gives a concave height.
+<a id="geometric-optics-equation-1"></a>
+
+$$
+\rho =\sqrt{x^{2}+y^{2}}
+$$
+
+$$
+\begin{gathered}
+u = \operatorname{max}((\rho -\mathrm{core})/(1-\mathrm{core}), 0) \\
+h = \mathrm{edge} + \mathrm{depth} (1-u^p),  \rho  \le  1
+\end{gathered}
+$$
+
+[the expression below](#geometric-optics-equation-2), [the condition below](#geometric-optics-equation-104), [the condition below](#geometric-optics-equation-105), [the condition below](#geometric-optics-equation-106). The plateau and bevel meet with continuous first and second derivatives. Height decreases toward the edge and its radial second derivative is nonpositive. A finite cut edge is part of this hypothesis; it does not establish Apple's surface shape.
+
+<a id="geometric-optics-equation-104"></a>
+
+$$
+\mathrm{depth}>0
+$$
+
+<a id="geometric-optics-equation-105"></a>
+
+$$
+\mathrm{edge}\ge 0
+$$
+
+<a id="geometric-optics-equation-106"></a>
+
+$$
+p\ge 3
+$$
+
+
+<a id="geometric-optics-equation-2"></a>
+
+$$
+0\le \mathrm{core}<1
+$$
+
+The side closes the solid over the footprint boundary, between [the condition below](#geometric-optics-equation-107) and0. A ray exactly on a crease has no unique interface normal. The tracer reports that path unresolved, with NaN source coordinates, instead of choosing an image sample. Clear misses use their ordinary unobstructed ray.
+
+<a id="geometric-optics-equation-107"></a>
+
+$$
+z=-\mathrm{edge}
+$$
+
+
+For a continuous pill, the same height profile can use the convex coordinate [the expression below](#geometric-optics-equation-3) from the [continuous footprint](recreation-models.md#continuous-pill-footprint-candidate). This coordinate is neither a homogeneous norm nor Euclidean distance. Its actual derivatives enter [the expression below](#geometric-optics-equation-4). A decreasing concave profile composed with this convex coordinate gives a concave height.
+
+<a id="geometric-optics-equation-3"></a>
+
+$$
+\rho =\sqrt{T}
+$$
+
+<a id="geometric-optics-equation-4"></a>
+
+$$
+\mathrm{grad} h=h'(\rho ) \mathrm{grad} \rho
+$$
 
 Footprint shape and depth curvature remain meaningful geometric parameters; optical calculations are shared.
 
@@ -35,23 +107,80 @@ Footprint shape and depth curvature remain meaningful geometric parameters; opti
 
 Given unit incident direction `i` and unit normal `N` pointing toward the incident medium:
 
-```text
-eta = n_from / n_to
-c = -dot(i,N)
-k = 1-eta²(1-c²)
-t = eta i + (eta c-sqrt(k)) N
-```
+$$
+\begin{gathered}
+\eta  = \mathrm{n\_from} / \mathrm{n\_to} \\
+c = -\operatorname{dot}(i,N) \\
+k = 1-\eta ^{2}(1-c^{2}) \\
+t = \eta  i + (\eta  c-\sqrt{k}) N
+\end{gathered}
+$$
 
-For `k<0` there is total internal reflection; `k=0` is the critical grazing boundary. Neither supplies a transmitted pixel in this diagnostic. Snell refraction and Fresnel energy transport are distinct parts of a dielectric model. [PBRT's derivation and implementation](https://pbr-book.org/4ed/Reflection_Models/Specular_Reflection_and_Transmission) documents both, with a different incident-vector/index-ratio convention.
+For [the condition below](#geometric-optics-equation-108) there is total internal reflection; [the condition below](#geometric-optics-equation-109) is the critical grazing boundary. Neither supplies a transmitted pixel in this diagnostic. Snell refraction and Fresnel energy transport are distinct parts of a dielectric model. [PBRT's derivation and implementation](https://pbr-book.org/4ed/Reflection_Models/Specular_Reflection_and_Transmission) documents both, with a different incident-vector/index-ratio convention.
 
-Orthographic entry through the flat front is normal incidence. The internal ray reaches `(x,y,-h)` directly. Back outward normal is `normalize(-h_x,-h_y,-1)`, derived from the actual height. The ray then intersects the background plane:
+<a id="geometric-optics-equation-108"></a>
 
-```text
-travel = (D-h) / (-t_z)
-background_hit = (x,y,-h) + travel t
-```
+$$
+k<0
+$$
 
-For exterior index1 and interior index `n>1`, a global slope bound `M<1/sqrt(n²-1)` guarantees subcritical transmission. Require `D>max(h)` and a downward exit. Concavity certifies no back reentry: along the exiting ray, `g(s)=z(s)+h(x(s),y(s))` is concave and starts with a negative derivative. It stays below the back; upon leaving the footprint it is below the side.
+<a id="geometric-optics-equation-109"></a>
+
+$$
+k=0
+$$
+
+
+Orthographic entry through the flat front is normal incidence. The internal ray reaches [the condition below](#geometric-optics-equation-110) directly. Back outward normal is [the condition below](#geometric-optics-equation-111), derived from the actual height. The ray then intersects the background plane:
+
+<a id="geometric-optics-equation-110"></a>
+
+$$
+(x,y,-h)
+$$
+
+<a id="geometric-optics-equation-111"></a>
+
+$$
+\operatorname{normalize}(-h_x,-h_y,-1)
+$$
+
+
+$$
+\begin{gathered}
+\mathrm{travel} = (D-h) / (-t_z) \\
+\mathrm{background\_hit} = (x,y,-h) + \mathrm{travel} t
+\end{gathered}
+$$
+
+For exterior index1 and interior index [the condition below](#geometric-optics-equation-112), a global slope bound [the condition below](#geometric-optics-equation-113) guarantees subcritical transmission. Require [the condition below](#geometric-optics-equation-114) and a downward exit. Concavity certifies no back reentry: along the exiting ray, [the expression below](#geometric-optics-equation-5) is concave and starts with a negative derivative.
+
+It stays below the back; upon leaving the footprint it is below the side.
+
+<a id="geometric-optics-equation-112"></a>
+
+$$
+n>1
+$$
+
+<a id="geometric-optics-equation-113"></a>
+
+$$
+M<1/\sqrt{n^{2}-1}
+$$
+
+<a id="geometric-optics-equation-114"></a>
+
+$$
+D>\operatorname{max}(h)
+$$
+
+
+<a id="geometric-optics-equation-5"></a>
+
+$$
+g(s)=z(s)+h(x(s),y(s))
+$$
 
 This proof applies to the restricted orthographic geometry, not arbitrary cameras or solids.
 
@@ -116,13 +245,22 @@ This section and these rays use the same height function and parameters as the r
 
 The historical folded radial map can itself come from a convex back and flat front. For inward displacement `a(r)`, back height `h(r)`, index `n` and background distance `D`, the transmitted branch satisfies:
 
-```text
-q = a / (D-h)
-s = q / (n sqrt(1+q²)-1)
+$$
+\begin{gathered}
+q = a / (D-h) \\
+s = q / (n \sqrt{1+q^{2}}-1) \\
 h' = -s, h(1)=0
-```
+\end{gathered}
+$$
 
-At `n=1.5,D=2`, two ODE tolerances and two surface resolutions were checked. Nonnegative piecewise-linear curvature, integrated twice, defines a single C2 concave height; normals are its exact polynomial derivatives. With513 nodes, traced displacement differs from the diagnostic map by at most0.000902 native pixels.
+At [the condition below](#geometric-optics-equation-115), two ODE tolerances and two surface resolutions were checked. Nonnegative piecewise-linear curvature, integrated twice, defines a single C2 concave height; normals are its exact polynomial derivatives. With513 nodes, traced displacement differs from the diagnostic map by at most0.000902 native pixels.
+
+<a id="geometric-optics-equation-115"></a>
+
+$$
+n=1.5,D=2
+$$
+
 
 Its minimum Snell discriminant is0.4731, yet its minimum radial map derivative is−13.1014: **the reversal is transmitted refraction, without total internal reflection. **
 
@@ -136,18 +274,51 @@ python geometric_inverse.py studies/playback/review-round/pass-03.json NEW_OUTPU
 
 ## Closed curved-front discriminator
 
-The second shared shape hypothesis is a closed oval. With circle `T=x²+y²`, minor-depth parameter `eta`, longitudinal half-size `a` and `u=(z+eta)/eta`:
+The second shared shape hypothesis is a closed oval. With circle [the expression below](#geometric-optics-equation-6), minor-depth parameter `eta`, longitudinal half-size `a` and [the expression below](#geometric-optics-equation-7):
 
-```text
-F = T + (1+kappa (x/a)²) u² - 1
-solid: F<=0; 0<=kappa<=1/3
-```
+<a id="geometric-optics-equation-6"></a>
 
-The same equation accepts the continuous pill's convex `T`. In the containing `|x/a|<=1` slab, the added term's x/u Hessian determinant is `4 kappa u² (1-3 kappa (x/a)²)/a²>=0`; the solid is convex. Entry uses its actual front root. A declared bounded bisection finds the ordered second intersection, and the gradient of this same `F` supplies both normals.
+$$
+T=x^{2}+y^{2}
+$$
+
+<a id="geometric-optics-equation-7"></a>
+
+$$
+u=(z+\eta )/\eta
+$$
+
+$$
+\begin{gathered}
+F = T + (1+\kappa  (x/a)^{2}) u^{2} - 1 \\
+\text{solid}\quad F\le 0; 0\le \kappa \le 1/3
+\end{gathered}
+$$
+
+The same equation accepts the continuous pill's convex `T`. In the containing [the expression below](#geometric-optics-equation-8) slab, the added term's x/u Hessian determinant is [the expression below](#geometric-optics-equation-9); the solid is convex. Entry uses its actual front root. A declared bounded bisection finds the ordered second intersection, and the gradient of this same `F` supplies both normals.
+
+<a id="geometric-optics-equation-8"></a>
+
+$$
+|x/a|\le 1
+$$
+
+<a id="geometric-optics-equation-9"></a>
+
+$$
+4 \kappa  u^{2} (1-3 \kappa  (x/a)^{2})/a^{2}\ge 0
+$$
 
 Existing Snell calculations are reused. Exact projected tangencies, critical/TIR and non-downward exits remain unresolved, never substitute background pixels.
 
-**Useful negative; no image or fidelity success. ** At `eta=.15,n=1.5,D=2`, both fixed circle shapes fold and have unavailable primary transmission near the rim:
+**Useful negative; no image or fidelity success. ** At [the condition below](#geometric-optics-equation-116), both fixed circle shapes fold and have unavailable primary transmission near the rim:
+
+<a id="geometric-optics-equation-116"></a>
+
+$$
+\eta =.15,n=1.5,D=2
+$$
+
 
 | κ | Interior sampled paths | TIR paths | Exact ellipsoid intersection error |
 | --- | ---: | ---: | ---: |
@@ -166,9 +337,35 @@ python geometric_closed_check.py NEW_OUTPUT
 
 ## A back surface with two curvatures
 
-The shared harmonic construction combines two real concave heights, `H(a,b)=ab/(a+b)`. Its partial derivatives are nonnegative and sum to at most1; its Hessian is negative semidefinite. Therefore concave input heights produce a concave back, with gradient bounded by the larger input bound. This is geometry, evaluated before refraction, rather than a correction to sampled pixels.
+The shared harmonic construction combines two real concave heights, [the condition below](#geometric-optics-equation-117). Its partial derivatives are nonnegative and sum to at most1; its Hessian is negative semidefinite. Therefore concave input heights produce a concave back, with gradient bounded by the larger input bound. This is geometry, evaluated before refraction, rather than a correction to sampled pixels.
 
-The fixed circular test uses `a=.15(1-r³)`, `b=.4(1-r²)`. The elongated toolbar uses the same construction and depths, but `b=.4(1-(x/a_major)²)` supplies a longitudinal crown. This change reflects rotational versus elongated symmetry. Index1.5, background distance2L, flat-front tracing, source interpolation and raw unit transmission stay unchanged. The circle's global slope bound.8 and pill's.45 are subcritical.
+<a id="geometric-optics-equation-117"></a>
+
+$$
+H(a,b)=\mathrm{ab}/(a+b)
+$$
+
+
+The fixed circular test uses [the condition below](#geometric-optics-equation-118), [the condition below](#geometric-optics-equation-119). The elongated toolbar uses the same construction and depths, but [the condition below](#geometric-optics-equation-120) supplies a longitudinal crown. This change reflects rotational versus elongated symmetry. Index1.5, background distance2L, flat-front tracing, source interpolation and raw unit transmission stay unchanged. The circle's global slope bound.8 and pill's.45 are subcritical.
+
+<a id="geometric-optics-equation-118"></a>
+
+$$
+a=.15(1-r^{3})
+$$
+
+<a id="geometric-optics-equation-119"></a>
+
+$$
+b=.4(1-r^{2})
+$$
+
+<a id="geometric-optics-equation-120"></a>
+
+$$
+b=.4(1-(x/\mathrm{a\_major})^{2})
+$$
+
 
 **Visual transfer fails at these parameters. ** The circle places the dune crossings incorrectly; its nonfolding paths are not themselves a benefit. The pill supplies nonzero central longitudinal curvature, but too little visible text stretching and cap behavior that remains to be matched locally.
 
@@ -230,7 +427,13 @@ The common [image-formation function](../reconstruction/geometric_render.py) han
 
 Optional source-known and required-pixel masks reject unsupported lens/guard rays before RGB lookup; only explicitly unscored clear exterior may return NaN with a false support mask. No coordinates are clamped or source holes filled. Registered-source provenance still needs its scene-specific audit.
 
-Optional `return_layers=True` exposes the SAME integrated lens color, physical coverage and premultiplied clear contribution, so later material stages do not trace a second map. The shared `coverage_blur` material operation filters premultiplied lens color and divides by filtered coverage, preserving sharp shape alpha and the clear backdrop.
+Optional [the expression below](#geometric-optics-equation-10) exposes the SAME integrated lens color, physical coverage and premultiplied clear contribution, so later material stages do not trace a second map. The shared `coverage_blur` material operation filters premultiplied lens color and divides by filtered coverage, preserving sharp shape alpha and the clear backdrop.
+
+<a id="geometric-optics-equation-10"></a>
+
+$$
+\mathrm{return\_layers}=\mathrm{True}
+$$
 
 Its explicit finite radius is `ceil(3 sigma)`; sigma scales with L and must be audited separately from AA and source interpolation. It is an ordinary Gaussian material approximation, not a geometric warp, dispersion or a full rough-surface transport claim. A shared achromatic `neutral_color_response` supplies common gain/bias and an optional source-luminance highlight lift before that filter.
 
@@ -332,7 +535,9 @@ python geometric_inverse.py studies/playback/review-round/pass-03.json \
   NEW_OUTPUT --distance 1 --seconds 120
 ```
 
-The cached upper-horizon check also cautions against blindly fitting distance. Across61 fixed columns, strongest-gradient median displacement is.24–.51px depending on analysis scale, but all-column RMS is3.78–11.55px, with competing/boundary peaks retained. This is an uncertain edge detector, not a reliable optical correspondence or a reason to discard outliers. No distance image sweep was launched from it. [All columns, ambiguity flags and measurement limits](../reconstruction/studies/geometric-playback/g05-landmarks.json)
+The cached upper-horizon check also cautions against blindly fitting distance. Across61 fixed columns, strongest-gradient median displacement is.24–.51px depending on analysis scale, but all-column RMS is3.78–11.55px, with competing/boundary peaks retained. This is an uncertain edge detector, not a reliable optical correspondence or a reason to discard outliers. No distance image sweep was launched from it.
+
+[All columns, ambiguity flags and measurement limits](../reconstruction/studies/geometric-playback/g05-landmarks.json)
 
 [Exact parameters, local measurements and limits](../reconstruction/studies/geometric-playback/g01.json) · [Geometry invariants](../reconstruction/studies/geometric-playback/g01-invariants.json) · [Partial public-wrapper identity control](../reconstruction/studies/geometric-playback/g01-portable-control.json)
 

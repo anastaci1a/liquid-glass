@@ -48,18 +48,22 @@ rest → tracking → settling → rest
 
 Separate choosing an endpoint from moving there. A simple candidate projection for one axis is:
 
-```text
-projected = position + velocity / friction
-endpoint  = nearest allowed destination(projected)
-```
+$$
+\begin{gathered}
+\mathrm{projected} = \mathrm{position} + \mathrm{velocity} / \mathrm{friction} \\
+\mathrm{endpoint}  = \operatorname{nearest} \mathrm{allowed} \mathrm{destination}(\mathrm{projected})
+\end{gathered}
+$$
 
 This is the asymptotic result of exponential velocity decay, with velocity in units/second and positive friction in 1/second. Bound implausible input spikes. Tune the projection independently from the final spring, and retain occurrence identity when choosing playback neighbors. At a hard boundary, projecting farther must not select an invalid item.
 
 For a settling degree of freedom, use a damped spring:
 
-```text
-acceleration = (-stiffness * (position - target) - damping * velocity) / mass
-```
+$$
+\begin{gathered}
+\mathrm{acceleration} = (-\mathrm{stiffness} * (\mathrm{position} - \mathrm{target}) - \mathrm{damping} * \mathrm{velocity}) / \mathrm{mass}
+\end{gathered}
+$$
 
 Advance with a stable integrator and bounded substeps, or an analytic solution. A long paused frame must not explode the simulation. For constrained selectors, position reaches the destination without visible travel beyond it; the deformation channel conveys impact. Unconstrained motion can have a different policy.
 
@@ -69,12 +73,14 @@ Never copy one spring preset into every component simply because it looks playfu
 
 Use a separate damped strain state driven by changes in travel velocity and held edge pressure. The inexpensive cap approximation includes a separate logarithmic thickness state:
 
-```text
-pressure(excess) = -limit * (1 - exp(-abs(excess) / distanceScale))
-scaleAlong      = exp(strain - depthStrain / 2)
-scaleAcross     = exp(-strain - depthStrain / 2)
-scaleDepth      = exp(depthStrain)
-```
+$$
+\begin{gathered}
+\mathrm{pressure}(\mathrm{excess}) = -\mathrm{limit} * (1 - \operatorname{exp}(-\operatorname{abs}(\mathrm{excess}) / \mathrm{distanceScale})) \\
+\mathrm{scaleAlong}      = \operatorname{exp}(\mathrm{strain} - \mathrm{depthStrain} / 2) \\
+\mathrm{scaleAcross}     = \operatorname{exp}(-\mathrm{strain} - \mathrm{depthStrain} / 2) \\
+\mathrm{scaleDepth}      = \operatorname{exp}(\mathrm{depthStrain})
+\end{gathered}
+$$
 
 The three scales multiply to one: **approximate volume is preserved** while the footprint and thickness change together. Held contact approaches a shallower, wider cap monotonically, with critical damping; externally driven travel impulses remain responsive under that damping rather than being projected to zero: central refraction weakens and the remaining curvature concentrates at the rim.
 
@@ -96,7 +102,14 @@ Maintain one authoritative outline per displayed surface. Draw-space deformation
 
 Hit regions may be larger for accessibility, but must remain attached to the visible control.
 
-Nested curves should share a deliberate inset relationship. Begin with `innerRadius = max(0, outerRadius - inset)` where the geometry permits it; then inspect optical balance. Capsules, square artwork and full-player corners need distinct policies. In particular, inset mini-player artwork away from the curved rim, and retain one outline throughout player expansion.
+Nested curves should share a deliberate inset relationship. Begin with [the condition below](#specification-equation-101) where the geometry permits it; then inspect optical balance. Capsules, square artwork and full-player corners need distinct policies. In particular, inset mini-player artwork away from the curved rim, and retain one outline throughout player expansion.
+
+<a id="specification-equation-101"></a>
+
+$$
+\mathrm{innerRadius} = \operatorname{max}(0, \mathrm{outerRadius} - \mathrm{inset})
+$$
+
 
 Suggested optical pipeline:
 
@@ -112,18 +125,40 @@ outline + elevation → one shadow field behind the surface group
 - Preserve quiet-core registration, continuous shoulder bending and depth-dependent deformation; compare the [physical and boundary-focused hypotheses](optics.md) before changing defaults.
 - Keep rectangular crowns smooth, without directional wedges, medial-axis ridges, flat masks or inset highlights. Inspect changing curvature as well as normal continuity.
 - Circles retain a radial profile; illumination follows the crown.
-- Define the silhouette with an inset rim: broader white highlights toward top-left/bottom-right, tapering into faint dark shading on the opposite corners. Follow deformation and joins without outlining a flat face.
+
+Define the silhouette with an inset rim: broader white highlights toward top-left/bottom-right, tapering into faint dark shading on the opposite corners. Follow deformation and joins without outlining a flat face.
 - This interprets Apple’s [geometry-responsive highlights](https://developer.apple.com/videos/play/wwdc2025/219/?time=630); it does not reproduce its shader.
 
 Neighboring glass shares a coherent source without recursively sampling its own output. Sample required padding but clip recording and filtered output to their bounds. Merged selections preserve unselected holes; diagonal gallery bridges remain disabled. Selections appear immediately until #107 is reviewed.
 
 Contrast is a page-level decision, inherited by its controls and menus. Keep foreground pixels sharp and unfiltered; test them over moving black/white text, checkerboards and bright artwork.
 
-- For white icons, map normalized background channels through `f(x) = x − t·x^p`; for dark icons use `1 − f(1 − x)`. Trim `t ∈ [0, 0.5]` bounds the problematic end; weighting `p ∈ [1, 2]` preserves the safe end more strongly.
+
+For white icons, map normalized background channels through [the expression below](#specification-equation-1); for dark icons use `1 − f(1 − x)`. Trim [the condition below](#specification-equation-102) bounds the problematic end; weighting [the condition below](#specification-equation-103) preserves the safe end more strongly.
+
+<a id="specification-equation-102"></a>
+
+$$
+t \in  [0, 0.5]
+$$
+
+<a id="specification-equation-103"></a>
+
+$$
+p \in  [1, 2]
+$$
+
 - These bounds guarantee monotonic ordering, including at maximum settings.
 - Map glass after white tint and keep optical illumination within the mapped brightness endpoints; never add a uniform white/black overlay or filter the icons.
 - Page polarity stays stable while content scrolls beneath individual buttons. Media selection lenses remain clear.
-- This is Localica’s user-directed adaptation model, not Apple’s private algorithm. Customization does not replace accessible semantics or guarantee legibility for every possible setting; [Apple’s material guidance](sources.md#hig--materials-and-color) still informs the defaults and review.
+
+This is Localica’s user-directed adaptation model, not Apple’s private algorithm. Customization does not replace accessible semantics or guarantee legibility for every possible setting; [Apple’s material guidance](sources.md#hig--materials-and-color) still informs the defaults and review.
+
+<a id="specification-equation-1"></a>
+
+$$
+f(x) = x - t\cdot x^p
+$$
 
 ## Rendering and measurement
 

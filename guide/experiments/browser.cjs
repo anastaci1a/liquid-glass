@@ -3,7 +3,7 @@ const{chromium}=require('playwright'),assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),{pathToFileURL}=require('node:url');
 const root=path.resolve(__dirname,'..'),out=process.env.LAB_EVIDENCE||path.join(root,'test-output');
 fs.mkdirSync(out,{recursive:true});
-const url=process.env.LAB_URL||pathToFileURL(path.join(root,'site/liquid-glass/lab.html')).href;
+const url=process.env.LAB_URL||pathToFileURL(path.join(root,'site/lab.html')).href;
 (async()=>{
   const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,
     args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});

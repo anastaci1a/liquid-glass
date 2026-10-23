@@ -36,4 +36,4 @@ Use indexed evidence for raw arrays/media and immutable reports. Keep credential
 
 ## Application boundary
 
-Research organization does not authorize Localica behavior changes, releases or site deployments. Work from an isolated clone for source cutover; preserve dirty app work and historical refs.
+Research organization does not authorize Localica behavior changes or releases. Ana separately authorized moving the research Pages deployment to this repository. Work from an isolated clone for source cutover; preserve dirty app work and historical refs.

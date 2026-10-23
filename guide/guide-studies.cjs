@@ -32,7 +32,7 @@ async function prepareStudies(html,root,write){
    const file=path.resolve(root,first[1]);if(!file.startsWith(root+path.sep))throw Error('Thumbnail outside guide');
    const name=`assets/thumb-${h[2]}.webp`;
    const buffer=await sharp(fs.readFileSync(file)).resize({width:240,height:120,fit:'inside',withoutEnlargement:true}).webp({quality:75}).toBuffer();
-   write('liquid-glass/'+name,buffer);
+   write(name,buffer);
    thumbnail=`<img class="study-thumbnail" src="${name}" width="120" height="60" alt="" loading="lazy">`;
   }
   replacements.push({start:h.index,end,html:`<details class="study" id="${h[2]}"><summary>${thumbnail}<span class="study-name"><span class="study-category">${meta[0]}</span><strong>${h[3]}</strong><span class="study-description">${meta[1]}</span></span><span class="study-expand" aria-hidden="true">+</span></summary><div class="study-body">${body}</div></details>\n`});

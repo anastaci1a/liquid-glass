@@ -2,7 +2,7 @@
 const{chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),{pathToFileURL}=require('node:url');
 (async()=>{
   const root=path.resolve(__dirname,'..'),out=process.env.LAB_EVIDENCE||path.join(root,'test-output');fs.mkdirSync(out,{recursive:true});
-  const url=process.env.LAB_URL||pathToFileURL(path.join(root,'site/liquid-glass/lab.html')).href;
+  const url=process.env.LAB_URL||pathToFileURL(path.join(root,'site/lab.html')).href;
   const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   const errors=[],results=[],page=await browser.newPage({viewport:{width:1100,height:820}});
   page.on('pageerror',e=>errors.push(e.message));page.on('crash',()=>errors.push('crash'));

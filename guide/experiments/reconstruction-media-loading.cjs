@@ -2,12 +2,12 @@
 const fs=require('node:fs'),http=require('node:http'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium}=require('playwright'),{prepareMedia}=require('../guide-media.cjs');
 const root=path.resolve(__dirname,'../site'),requests=[],finished=[];
-const fixture=prepareMedia('<details open><summary>Outer</summary><img src="assets/study-active-switch-progress-a.png"><details><summary>Inner</summary><img src="assets/study-active-switch-progress-b.png"></details></details>',path.resolve(__dirname,'..')).replaceAll('="assets/','="/liquid-glass/assets/');
+const fixture=prepareMedia('<details open><summary>Outer</summary><img src="assets/study-active-switch-progress-a.png"><details><summary>Inner</summary><img src="assets/study-active-switch-progress-b.png"></details></details>',path.resolve(__dirname,'..')).replaceAll('="assets/','="/assets/');
 // Exercise nested sections using real local image assets.
 (async()=>{
  const server=http.createServer((req,res)=>{
   const name=decodeURIComponent(new URL(req.url,'http://localhost').pathname),file=path.resolve(root,'.'+name);
-  if(name==='/nested.html'){res.setHeader('Content-Type','text/html');res.end('<script src="/liquid-glass/guide-media.js" defer></script>'+fixture);return;}
+  if(name==='/nested.html'){res.setHeader('Content-Type','text/html');res.end('<script src="/guide-media.js" defer></script>'+fixture);return;}
   if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end();return;}
   const size=fs.statSync(file).size;res.setHeader('Content-Type',({'.html':'text/html','.css':'text/css','.js':'application/javascript','.png':'image/png','.gif':'image/gif','.mp4':'video/mp4'})[path.extname(file)]||'application/octet-stream');
   let start=0,end=size-1;
@@ -20,7 +20,7 @@ const fixture=prepareMedia('<details open><summary>Outer</summary><img src="asse
   const page=await browser.newPage({viewport:{width:1280,height:950}}),errors=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push(new URL(r.url()).pathname));page.on('requestfinished',r=>finished.push(new URL(r.url()).pathname));
   const base='http://127.0.0.1:'+server.address().port;
-  await page.goto(base+'/liquid-glass/reconstruction.html',{waitUntil:'networkidle'});
+  await page.goto(base+'/reconstruction.html',{waitUntil:'networkidle'});
   const closed=await page.locator('details [data-media-src]').evaluateAll(list=>list.map(i=>new URL(i.dataset.mediaSrc,location.href).pathname));
   assert(!requests.some(p=>closed.includes(p)),'Closed figure requested media');
   assert(!requests.some(p=>/\.(gif|mp4)$/.test(p)),'Initial animation request');

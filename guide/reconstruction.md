@@ -21,7 +21,8 @@ Apple, [Meet Liquid Glass, 3:10](https://developer.apple.com/videos/play/wwdc202
 - [Complete equations and operation order](recreation-models.md#playback-radial-map-and-smooth-inner-transition). This is an empirical refraction map, not an identified Apple solid.
 - The reference-derived triangle silhouette is reused; its **color is independently calculated**. It has no stroked outline. The response is photograph-specific, not a universal contrast algorithm.
 - Short round, **3/3 verified passes**: shared material exposure ×1.005; post-refraction blur 1.6 native-reference pixels; highlight taper .48; radial edge-displacement amplitude ×1.001.
-- Weighted RMS error decreases **9.10758 → 9.07967 → 9.06493 → 9.06475**. Current glass/icon errors are **8.04005/3.21105**; neither regresses in any pass. The third gain is small (0.002%). [Final recipe](../reconstruction/studies/playback/review-round/pass-03.json) · [Independent replay/domain/visual checks](../reconstruction/studies/playback/review-round/pass-03-verification.json).
+
+Weighted RMS error decreases **9.10758 → 9.07967 → 9.06493 → 9.06475**. Current glass/icon errors are **8.04005/3.21105**; neither regresses in any pass. The third gain is small (0.002%). [Final recipe](../reconstruction/studies/playback/review-round/pass-03.json) · [Independent replay/domain/visual checks](../reconstruction/studies/playback/review-round/pass-03-verification.json).
 - The current compact comparison is1080px per side with a64px caption, over the full680×655 native control crop.
 - The reconstruction uses the same accepted lossless4× body/icon render; the Apple panel is resized once from the frozen native reference.
 - The entire lens body remains in view; registered clean photograph is used outside it and no photographed shadow is copied. Exterior shadow modeling remains incomplete.
@@ -43,7 +44,9 @@ Each half retains 1920 × 1080 pixels.
 
 <img src="assets/playback-settled.gif" alt="Settled playback model translated over the recovered photograph" width="1080" height="608" loading="lazy" decoding="async">
 
-[Video](assets/playback-settled.mp4). GIF: 3,072,914 bytes,1080×608; both exports contain 90frames at 15fps, exactly 6 seconds. They retain the [final short-round recipe](../reconstruction/studies/playback/review-round/pass-03.json), original motion path and registered clean-source exterior, with no copied target context/shadow. Motion retains its original2×2 integration; native4×4 scoring/material are unchanged. The compact still reuses lossless final frames; no optical model was refitted or counted again. [Media hashes, source support and format verification](../reconstruction/studies/playback/review-round/motion.json).
+[Video](assets/playback-settled.mp4). GIF: 3,072,914 bytes,1080×608; both exports contain 90frames at 15fps, exactly 6 seconds. They retain the [final short-round recipe](../reconstruction/studies/playback/review-round/pass-03.json), original motion path and registered clean-source exterior, with no copied target context/shadow. Motion retains its original2×2 integration; native4×4 scoring/material are unchanged. The compact still reuses lossless final frames; no optical model was refitted or counted again.
+
+[Media hashes, source support and format verification](../reconstruction/studies/playback/review-round/motion.json).
 
 These are offline renders, not device-performance measurements or a matched Apple motion clip.
 
@@ -79,7 +82,8 @@ Width/fps defaults remain1920/30. The export keeps the original path and2×2 mot
 - Six seconds,90 frames;1080×1073 content with one bottom padding row in the MP4. GIF6.69MB.
 - The estimated sky moves vertically beneath the fixed lens; each pose samples, grades and filters the source again. This is illustrative motion, not an Apple recording.
 - The still evaluates the field and solid vector at1268×1260, then downsamples to1080px per side.
-- All visible-alpha/output-kernel queries, finite source-kernel support and bilinear neighborhoods remain in the original defined source domain, including the stalk exclusion. An independent radial bound agrees. Defined source RGB remains estimated.
+
+All visible-alpha/output-kernel queries, finite source-kernel support and bilinear neighborhoods remain in the original defined source domain, including the stalk exclusion. An independent radial bound agrees. Defined source RGB remains estimated.
 - [Primary media review](../reconstruction/studies/neutral-circle-rim/next-primary-export.json) · [Source-support record](../reconstruction/studies/neutral-circle-rim/next-source-support.json). Native scores are unchanged by this export.
 
 </details>
@@ -186,7 +190,8 @@ This limits transfer of the material, rather than proving a different optical ge
 - This reuses the selected playback map and normalized kernels as a prior, with a pinned solid bag outline.
 - A quadratic estimate from uncovered controls supplies hidden panel RGB; no hidden pixels were independently observed.
 - Held and independent upper controls support that source family, while the lower-control error2.273levels and pose residualp95≈2px remain uncertainties. [Case](../reconstruction/studies/safari-bag/case.json) · [Source controls](../reconstruction/studies/safari-bag/source-controls.json).
-- Missing rim highlights and glyph-weight differences remain visible. The smooth estimated background cannot identify refraction or blur. This is a single-background material study, using the [shared neutral response](recreation-models.md#neutral-additive-playback-response), without a paired-optics claim.
+
+Missing rim highlights and glyph-weight differences remain visible. The smooth estimated background cannot identify refraction or blur. This is a single-background material study, using the [shared neutral response](recreation-models.md#neutral-additive-playback-response), without a paired-optics claim.
 
 <details>
 <summary>1080px motion and export details</summary>
@@ -213,9 +218,11 @@ The field is evaluated at1560×1600 before downsampling to1080×1108. One native
 - **Initial3/3 material passes:** the shared neutral white-mixture response uses τ=.95→.90→.85. E **29.117→24.325→19.764→15.638**, with every original glass, rim, held, interior, SSIM, individual-icon and near/full exterior check improving.
 - [Recipe](../reconstruction/studies/safari-tab-pill/round/pass-03.json) · [Scores](../reconstruction/studies/safari-tab-pill/round/pass-03-scores.json) · [Independent replay](../reconstruction/studies/safari-tab-pill/round/pass-03-verification.json).
 - A quadratic RGB field fitted only to uncovered controls improved held error .805→.697 and independent lower error4.298→1.999 levels. Hidden RGB remains modeled, not observed.
-- The crowned footprint uses the existing .1-softness prior and an independently measured pose; this smooth source cannot identify refraction or blur. Missing angular highlights remain visible. [Case](../reconstruction/studies/safari-tab-pill/case.json) · [Source controls](../reconstruction/studies/safari-tab-pill/source-controls.json).
+
+The crowned footprint uses the existing .1-softness prior and an independently measured pose; this smooth source cannot identify refraction or blur. Missing angular highlights remain visible. [Case](../reconstruction/studies/safari-tab-pill/case.json) · [Source controls](../reconstruction/studies/safari-tab-pill/source-controls.json).
 - Numeral1 uses the original SF Pro Text Regular outline at uniform aspect.
-- The plus uses a pinned solid SF-export outline; its input-only replacement improved ink overlap .783→.995 before the material epoch was frozen. Exact UI weight is unproven. [Input record](../reconstruction/studies/safari-tab-pill/baseline.json) · [Neutral response model](recreation-models.md#neutral-material-response).
+
+The plus uses a pinned solid SF-export outline; its input-only replacement improved ink overlap .783→.995 before the material epoch was frozen. Exact UI weight is unproven. [Input record](../reconstruction/studies/safari-tab-pill/baseline.json) · [Neutral response model](recreation-models.md#neutral-material-response).
 
 <details>
 <summary>1080px motion and export details</summary>
@@ -241,7 +248,8 @@ Apple, [Meet Liquid Glass,1:40](https://developer.apple.com/videos/play/wwdc2025
 ![Mail toolbar and neutral material reconstruction](assets/mail-toolbar-current.png)
 
 - **Current preview: rim round3/3**, E11.683→11.099→10.121→9.459; every original guard holds, no clipping or source/map change. [Recipe and verification](../reconstruction/studies/mail-toolbar/rim-round/pass-03.json).
-- **Initial3/3 material passes:** transmission τ1→.95→.90→.85, with one value shared across RGB. E **26.249→20.982→16.002→11.683**, glass/rim **25.298/28.345→10.252/14.483**. Every icon, glass/interior/held region, near/full exterior and SSIM check passes. [Recipe](../reconstruction/studies/mail-toolbar/round/pass-03.json) · [Scores](../reconstruction/studies/mail-toolbar/round/pass-03-scores.json) · [Independent replay](../reconstruction/studies/mail-toolbar/round/pass-03-verification.json).
+
+**Initial3/3 material passes:** transmission τ1→.95→.90→.85, with one value shared across RGB. E **26.249→20.982→16.002→11.683**, glass/rim **25.298/28.345→10.252/14.483**. Every icon, glass/interior/held region, near/full exterior and SSIM check passes. [Recipe](../reconstruction/studies/mail-toolbar/round/pass-03.json) · [Scores](../reconstruction/studies/mail-toolbar/round/pass-03-scores.json) · [Independent replay](../reconstruction/studies/mail-toolbar/round/pass-03-verification.json).
 - The affine incident field is estimated only from uncovered controls. Held error2.132 levels; independent upper/lower1.905/2.235. A quadratic failed the predefined independent-lower improvement test and is not used.
 - Hidden RGB is modeled, not recovered.
 - The continuous crown uses the existing shared footprint with softness.1 as a prior. Image contour evidence cannot distinguish its softness reliably; it is not an identified Apple solid.
@@ -261,7 +269,8 @@ Apple, [Meet Liquid Glass,1:40](https://developer.apple.com/videos/play/wwdc2025
 
 - Four seconds, 60 frames, 1080×360; GIF 0.87MB. This is an illustrative translation over the estimated affine panel, without the parent panel boundary.
 - Each pose reevaluates the fixed field and solid glyphs; no reference shadow is retained.
-- The still evaluates 1360×450 at two subpixels per output axis and downsamples to1080px per side. The Apple crop is resized directly from its native source. Native pass scores remain unchanged.
+
+The still evaluates 1360×450 at two subpixels per output axis and downsamples to1080px per side. The Apple crop is resized directly from its native source. Native pass scores remain unchanged.
 - Every emitted rectangular-crop query, including partial edge pixels, stays in the frozen defined source domain. Hidden RGB remains modeled, not observed. [Motion record](../reconstruction/studies/mail-toolbar/rim-round/final-media.json) · [HQ record](../reconstruction/studies/mail-toolbar/rim-round/final-hq.json).
 
 [Primary export verification](../reconstruction/studies/mail-toolbar/rim-round/final-primary-verification.json) · [Native export control](../reconstruction/studies/mail-toolbar/rim-round/final-native-control.json).
@@ -564,7 +573,8 @@ Original native transmission, RGB-split, reflection and material-context source 
 - These are stress tests, not statistical confidence intervals. Frozen scoring inputs stay unchanged; source changes never count as optical gains.
 - A shared source-color rule reduces the material’s green cast on neutral backgrounds without desaturating refracted RGB detail.
 - Directional channel separation reproduces part of the inner fringe; upper-rim color and edge shape remain incomplete; there is no claim of a recovered Apple solid.
-- [Current native recipe](../reconstruction/studies/active-switch/review-round/pass-09.json) · [Independent verification](../reconstruction/studies/active-switch/review-round/pass-09-verification.json) · [Finite source proof](../reconstruction/studies/active-switch/review-round/pass-09-source-proof.json) · [Historical recipe](../reconstruction/studies/active-switch/paired/accepted.json) · [Snapshot measurements](../reconstruction/switch-gallery-progress.json) · [Study PR #425](https://github.com/anastaci1a/localica/pull/425). [Native paired replay](../reconstruction/studies/active-switch/paired/verification.json) reproduces the 24 historical paired checkpoints under their original nonregression gate.
+
+[Current native recipe](../reconstruction/studies/active-switch/review-round/pass-09.json) · [Independent verification](../reconstruction/studies/active-switch/review-round/pass-09-verification.json) · [Finite source proof](../reconstruction/studies/active-switch/review-round/pass-09-source-proof.json) · [Historical recipe](../reconstruction/studies/active-switch/paired/accepted.json) · [Snapshot measurements](../reconstruction/switch-gallery-progress.json) · [Study PR #425](https://github.com/anastaci1a/localica/pull/425). [Native paired replay](../reconstruction/studies/active-switch/paired/verification.json) reproduces the 24 historical paired checkpoints under their original nonregression gate.
 - Final motion uses revision9: 1080px wide, 90frames at 15fps, full-size256-color GIFs below10MB (A6.01MB/B3.09MB). [Motion verification](../reconstruction/studies/active-switch/review-round/motion.json).
 - The moving input remains the declared modeled track; this is illustrative motion, not captured Apple animation or Android performance.
 
@@ -607,7 +617,8 @@ Historical evidence: [review05 → 06 crop scores](../reconstruction/studies/act
 
 [![Historical snapshot24 switch rim details](assets/switch-rim-detail.png)](assets/switch-rim-detail.png)
 
-- Earlier source-derived reflection reduced the unsupported lower dark contour independently of exterior shadow; its historical lower-contour MSE1124/1688 is not a new final09 measurement. Thin inner colored bands remain calibration targets.
+
+Earlier source-derived reflection reduced the unsupported lower dark contour independently of exterior shadow; its historical lower-contour MSE1124/1688 is not a new final09 measurement. Thin inner colored bands remain calibration targets.
 - [Historical rim measurements](../reconstruction/switch-rim-analysis.json) and [competing color models](../reconstruction/switch-color-hypotheses.json) retain their own frozen baselines. The present tiny changes do not establish a physical dispersion model or Apple parity.
 - Geometry-dependent highlights, ambient color, chromatic transmission, video processing, and source-estimation error remain possible contributors. Defined source support does not establish observed hidden RGB.
 
@@ -657,7 +668,11 @@ Earlier calibration checkpoints are listed below; current guarded revisions are 
 | Home | 40.187 / 103.246 | 5.861 / 9.223 | 22 / 21 | Historical paired bridge; incident domain incomplete |
 | Active switch, review 6 | 198.132 / 234.623 | 11.156 / 13.641 | 24 / 24 historical | Shared two-reference revision |
 
-- Weighted loss is `0.7 × glass RMSE² + 0.3 × rim RMSE²`; each sample's loss and whole-glass RMSE must hold or improve. Rejected experiments retain the incumbent.
+Each sample's weighted loss and whole-glass RMSE must hold or improve. Rejected experiments retain the incumbent.
+
+$$
+\mathcal{L}=0.7\,\mathrm{RMSE}_{\mathrm{glass}}^2+0.3\,\mathrm{RMSE}_{\mathrm{rim}}^2
+$$
 - Independent replay also checks that the first paired baseline protects the retained single-background result.
 - These studies use two samples per output axis and fixed native-reference masks. They are not directly ranked against the earlier four-sample-per-axis studies below.
 - Foreground errors and source-footprint diagnostics remain separate from glass scores.

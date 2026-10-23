@@ -9,11 +9,17 @@ This contract applies to every maintained text document in this repository.
 - Keep paragraphs under 60 words and bullets under 30 words.
 - Use tables for comparisons, parameters, outcomes and ownership.
 - Use lists for steps or genuinely parallel items.
-- Put commands, equations and literal data in code blocks.
+- Put commands and literal data in code blocks. Use LaTeX display blocks for formulas.
 - Link evidence; do not paste logs into explanations.
 - Remove duplicate rules and obsolete instructions.
 
 A longer passage needs a concrete reason: a quotation, mathematical derivation, or verbatim frozen evidence. Mark the exception. Do not use this allowance for routine narration.
+
+## Mathematics
+
+Use LaTeX display blocks delimited by double dollar signs for formulas, inequalities, derivations, vectors and matrices. Do not substitute code fences, screenshots or inline code for mathematics.
+
+Keep executable code, API identifiers and literal preset values in code formatting. Immutable historical evidence stays verbatim; maintained explanations follow this contract. The guide renders display mathematics with locally bundled KaTeX.
 
 ## Where records live
 
@@ -27,7 +33,7 @@ A longer passage needs a concrete reason: a quotation, mathematical derivation, 
 | Reference material | `guide/` | Separate observation from interpretation. |
 | Lab behavior | `lab/` | Keep illustrative behavior separate from physical claims. |
 | Historical evidence | `research/evidence/` | Preserve bytes and provenance; summarize elsewhere. |
-| Migration provenance | `migration/` | Keep maps, exclusions and verification. |
+| Migration provenance | `research/provenance/` | Keep maps, exclusions and verification. |
 
 ## Experiment format
 

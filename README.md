@@ -2,6 +2,8 @@
 
 A reusable, explainable rendering system grounded in explicit geometry and visible reference evidence.
 
+[Online guide and reconstructions](https://anastaci1a.github.io/liquid-glass/) · [Publishing](guide/PUBLISHING.md)
+
 | Start here | Purpose |
 | --- | --- |
 | [Current research](research/current/state.md) | Accepted components and unresolved defects. |
@@ -20,7 +22,7 @@ A reusable, explainable rendering system grounded in explicit geometry and visib
 | `guide/` | Reference guide and static publishing tools. |
 | `lab/` | Browser Lab; not the physical research engine. |
 | `agents/` | Ownership and collaboration rules. |
-| `migration/` | Source history, file mappings and validation. |
+| `research/provenance/` | Source history, file mappings and validation. |
 
 ## Checks
 
@@ -34,4 +36,4 @@ python3 -m unittest discover -s reconstruction -p 'test_geometric*.py'
 
 See [evidence restoration](research/evidence/README.md) for Git LFS artifacts. Historical scripts remain evidence; current work must use the [geometry-first method](research/method/README.md).
 
-This project was extracted from [Localica](https://github.com/anastaci1a/localica) with research-specific history. Original IDs and file mappings remain in [migration records](migration/README.md).
+This project was extracted from [Localica](https://github.com/anastaci1a/localica) with research-specific history. Original IDs and file mappings remain in [migration records](research/provenance/README.md).

@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {execFileSync}=require('node:child_process'),{pathToFileURL}=require('node:url');
 const {chromium}=require('playwright');
-const root=path.resolve(__dirname,'..'),url=pathToFileURL(path.join(root,'site/liquid-glass/reconstruction.html')).href;
+const root=path.resolve(__dirname,'..'),url=pathToFileURL(path.join(root,'site/reconstruction.html')).href;
 const output=process.env.LAB_EVIDENCE;
 const panels=JSON.parse(fs.readFileSync(path.join(root,'comparison-panels.json'),'utf8'));
 (async()=>{

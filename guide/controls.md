@@ -44,7 +44,8 @@ Release continuously restores the white finish, then stops refraction work. [Dem
 - Contact immediately previews pressure; shared [gesture arbitration](https://github.com/anastaci1a/localica/blob/main/docs/interface.md#motion-and-access) chooses control adjustment versus available parent scrolling before committing.
 - Preserve the grabbed offset, and keep initial perpendicular motion from disabling later adjustment when no parent wins.
 - Track taps use the same value geometry; edge pressure starts at the new location. This supersedes unconditional thumb ownership ([#287](https://github.com/anastaci1a/localica/issues/287)).
-- One coordinate model owns fill, thumb travel, values, endpoint labels and boundary compression. Round discrete values to the nearest stop; continuous values reach both limits at the visible track endpoints.
+
+One coordinate model owns fill, thumb travel, values, endpoint labels and boundary compression. Round discrete values to the nearest stop; continuous values reach both limits at the visible track endpoints.
 - Horizontal ranges run from logical leading minimum to trailing maximum, including right-to-left layouts. Vertical ranges run from bottom minimum to top maximum.
 - Discrete controls expose ticks and matching accessible increments, with strong shared magnetic wells between valid stops. Percentage settings use 5% increments; other continuous ranges retain their precision.
 - Thumb motion may preview travel between stops while the saved value stays valid.
