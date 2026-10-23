@@ -1,0 +1,58 @@
+{
+  "status": "complete-useful-negative",
+  "started_at": "2026-10-23T17:55:50.895Z",
+  "deadline": "2026-10-23T18:20:50.895Z",
+  "parent_refraction_deadline": "2026-10-23T19:03:30.082Z",
+  "original_overall_deadline": "2026-10-23T21:43:30.082Z",
+  "substantive_hypothesis_number_in_current_stage": 2,
+  "previous_subpass": "../expanded-geometry-02/protocol.json",
+  "previous_used": {
+    "new_geometry_rays": 0,
+    "source_checks": 5440000,
+    "full_cached_composites": 4,
+    "RGB_queries": 5398768
+  },
+  "visible_defect": "Cap/body correspondence and longitudinal versus transverse bending remain wrong after matched incident softness; closer background worsens original paired glass/rim.",
+  "hypothesis": "Increase transverse depth from .15 to .24 and lower longitudinal crown depth from .4 to .2. This preserves maximum height .1090909091L and doubles central longitudinal second derivative magnitude through the actual harmonic surface, not an independent normal adjustment.",
+  "allowed_parameters": {
+    "depth": 0.24,
+    "crown_depth": 0.2
+  },
+  "frozen": {
+    "power": 3,
+    "index": 1.5,
+    "D": 2,
+    "footprint": "Original expanded rounded rectangle/pose/coverage",
+    "source_sigma_native_pixels": 6.75,
+    "output_material_sigma": 0,
+    "gain": 0.701980827595718,
+    "bias": 0.22423217000784113,
+    "AA": 2,
+    "source_foreground_masks": "All original paired inputs, registration, ten foreground/artwork guards and fixed exterior mask"
+  },
+  "budgets": {
+    "checkpoint_rays": 640,
+    "checkpoint_height_evaluations": 2048,
+    "full_shared_primary_rays": 1360000,
+    "source_audit_subrays": 2720000,
+    "full_native_observations": 2,
+    "fits": 0,
+    "additional_geometric_settings": 0
+  },
+  "checkpoints": [
+    "Actual gradient FD, global concavity/slope/clearance certificate, center height and analytic second derivative.",
+    "527 candidate sparse rays plus91 unit-index controls; same-surface Snell, symmetry, complete branches.",
+    "One shared physical native path grid, because paired geometry/camera is identical. Fresh full finite-kernel/bilinear WHOLE+ALL original guards proof for each source before RGB."
+  ],
+  "stop": "First invariant, incomplete required path, unsupported required source, budget or deadline. Do not fix or repeat failed checkpoint silently. No extra setting/backtrack.",
+  "outcome_policy": "All paired original guards and exact visible features decide fidelity; reversal is not globally forbidden. Rejected geometric result remains useful evidence.",
+  "RGB_phase": {
+    "declared_at": "2026-10-23T18:01:43.515Z",
+    "maximum_source_RGB_queries": 2720000,
+    "maximum_composites": 2,
+    "baseline": "Saved H1 incident sigma6.75 and unchanged neutral response from expanded-geometry-02",
+    "no_repeated_controls": "Reuse exact sparse source replay, foreground function identity and alpha proof for unchanged stages."
+  },
+  "finished_at": "2026-10-23T18:05:17.886Z",
+  "outcome": "Real curvature redistribution passes geometry/source checks but original paired guards reject it. Preserve H1 source-first incumbent."
+}

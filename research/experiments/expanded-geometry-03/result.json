@@ -1,0 +1,108 @@
+{
+  "status": "NO_STRICT_PAIRED_QUALIFIER",
+  "records": [
+    {
+      "reference": "a",
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 37.28185272216797
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 58.648868560791016
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 38.94310760498047
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 23.119234085083008
+        },
+        "ssim": 0.8649795055389404,
+        "loss": 2004.8625147164785,
+        "E": 44.77569111377823,
+        "exterior_RMSE": 19.254291534423828,
+        "foreground_artwork_MSE": {
+          "jupiter.jpg": 2265.9169921875,
+          "title.svg": 913.27587890625,
+          "artist.svg": 824.5349731445312,
+          "play.svg": 409.3279724121094,
+          "forward.svg": 468.1044616699219
+        }
+      },
+      "guards": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "E": true,
+        "exterior_RMSE": true,
+        "ssim": false,
+        "jupiter.jpg": true,
+        "title.svg": false,
+        "artist.svg": true,
+        "play.svg": true,
+        "forward.svg": true
+      },
+      "status": "REJECTED",
+      "coverage_exact": true,
+      "clipped_lens_channels": 0
+    },
+    {
+      "reference": "b",
+      "scores": {
+        "glass": {
+          "pixels": 155428,
+          "rmse": 15.168323516845703
+        },
+        "rim": {
+          "pixels": 45766,
+          "rmse": 25.200483322143555
+        },
+        "held": {
+          "pixels": 38118,
+          "rmse": 16.086200714111328
+        },
+        "interior": {
+          "pixels": 109662,
+          "rmse": 7.81423807144165
+        },
+        "ssim": 0.9186164140701294,
+        "loss": 351.5739347190767,
+        "E": 18.750304923362624,
+        "exterior_RMSE": 21.74403190612793,
+        "foreground_artwork_MSE": {
+          "jupiter.jpg": 2798.180419921875,
+          "title.svg": 609.926025390625,
+          "artist.svg": 215.7921142578125,
+          "play.svg": 129.1692657470703,
+          "forward.svg": 189.0650177001953
+        }
+      },
+      "guards": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": true,
+        "E": false,
+        "exterior_RMSE": true,
+        "ssim": false,
+        "jupiter.jpg": true,
+        "title.svg": true,
+        "artist.svg": true,
+        "play.svg": false,
+        "forward.svg": false
+      },
+      "status": "REJECTED",
+      "coverage_exact": true,
+      "clipped_lens_channels": 0
+    }
+  ],
+  "source_RGB_queries": 2699000,
+  "new_rays_in_RGB_phase": 0,
+  "full_native_observations": 2,
+  "fits": 0,
+  "finished_at": "2026-10-23T18:03:02.153045+00:00"
+}
