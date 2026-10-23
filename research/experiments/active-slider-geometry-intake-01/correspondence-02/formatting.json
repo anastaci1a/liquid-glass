@@ -1,0 +1,18 @@
+{
+  "reason": "Normalize CSV record separators from CRLF to LF for repository whitespace checks; no numerical content changes or diagnostic rerun.",
+  "original_executed_script_sha256": "ed3481c3a513611f11cbd7fc1ece04b8a1bec710d7e4de6e0dc399cf3ca3dfdd",
+  "csv": [
+    {
+      "file": "a-sections.csv",
+      "old_sha256": "a5476fd22d34e53c1ad22b2786e01a26119206a96cab0e7fece2c3ca3fe29ea9",
+      "new_sha256": "6f02b81016cb1dc873a176068d989401bd26966c25db2c1c7a7bb99fdf96ae23",
+      "only_record_separator_change": true
+    },
+    {
+      "file": "b-sections.csv",
+      "old_sha256": "274bbfc3cbd73a029be4b74727942c6faa3b4f897f72edb08872eadb38964e08",
+      "new_sha256": "97af1d6665daaf88609a9e385334eb2274477b76652c231bd3fd4599f1538a28",
+      "only_record_separator_change": true
+    }
+  ]
+}
