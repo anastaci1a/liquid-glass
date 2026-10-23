@@ -554,7 +554,7 @@ The source-blur variant improves body texture but fails foreground guards. Exact
 
 Outline radiance and dispersion remain unresolved. Historical raw-body chroma diagnostics do not establish current filtered-body ceilings or physically coupled spectral bounds.
 
-[Latest complete study and alternatives](../research/experiments/navigation-geometry-01/README.md) · [Selected baseline](../research/experiments/navigation-geometry-01/raw-result.json) · [Surface and certificate](../research/experiments/navigation-geometry-01/surface.md).
+[Original geometric study](../research/experiments/navigation-geometry-01/README.md) · [Selected baseline](../research/experiments/navigation-geometry-01/raw-result.json) · [Surface and certificate](../research/experiments/navigation-geometry-01/surface.md).
 
 <details>
 <summary>Latest tone candidate: visibly closer body; boundary guard still fails</summary>
@@ -572,6 +572,8 @@ Geometry, incident blur, sources, masks and foreground styles stay fixed. This e
 </details>
 
 The [fixed spline transfer](../research/experiments/agent-navigation-spline-03/README.md) and both [longitudinal height modulations](../research/experiments/agent-navigation-longitudinal-05/README.md) fail paired geometry comparisons. Their valid surfaces and source checks do not establish transferred fidelity.
+
+[Final eight-stage review and compatibility limits](../research/experiments/agent-navigation-final-review-07/README.md). H1 remains selected; incomplete outline, shadow/glow and dispersion assessments are not silently counted as successful or absent.
 
 <details data-historical>
 <summary>Archived empirical reconstruction and motion</summary>

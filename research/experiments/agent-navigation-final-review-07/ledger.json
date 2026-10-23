@@ -1,0 +1,83 @@
+{
+  "start": "2026-10-23T23:21:54.235Z",
+  "deadline": "2026-10-23T23:36:54.235Z",
+  "overall_ceiling": "2026-10-24T02:14:11.659Z",
+  "new_scientific_work": {
+    "rays": 0,
+    "height_evaluations": 0,
+    "RGB_queries": 0,
+    "filters": 0,
+    "composites": 0,
+    "fits": 0,
+    "images": 0,
+    "new_sources": 0,
+    "motion": 0
+  },
+  "prior_ledgers_preserved": [
+    {
+      "folder": "agent-navigation-spline-03",
+      "file": "../agent-navigation-spline-03/ledger.json",
+      "sha256": "54e4255a0d43dbc35e768d44e51952428594c098e557968266224be9c8bb9e0a",
+      "usage": {
+        "graph": 8688182,
+        "height": 2896376,
+        "boundary": 1447715,
+        "footprint": 4344091,
+        "fixture_rays": 515,
+        "native_rays": 1447200,
+        "RGB_queries": 2879796,
+        "candidate_composites": 2,
+        "cached_zero_controls": 2,
+        "source_audit_subrays": 2894400,
+        "bilinear_mask_lookups": 23155200
+      }
+    },
+    {
+      "folder": "agent-navigation-longitudinal-05",
+      "file": "../agent-navigation-longitudinal-05/ledger.json",
+      "sha256": "e09ce21c33adaa5e49ac00f1176de5dbccdb44f0d89e55baa9f46de54438cbf6",
+      "usage": {
+        "graph": 23159788,
+        "wrapper_height": 2895176,
+        "wrapper_boundary": 2894852,
+        "base_height": 5790028,
+        "base_boundary": 2894852,
+        "footprint": 8684880,
+        "fixture_rays": 452,
+        "native_rays": 2894400,
+        "RGB_queries": 3536304,
+        "candidate_composites": 4,
+        "source_audit_subrays": 5788800,
+        "mask_corner_lookups": 46310400,
+        "incident_filters": 2,
+        "known_mask_erosions": 4
+      }
+    },
+    {
+      "folder": "agent-navigation-neutral-06",
+      "file": "../agent-navigation-neutral-06/ledger.json",
+      "sha256": "589f07ed70033643eed6f360452a25e06403103ff2654b6efc6f0cecf1499582",
+      "usage": {
+        "identity_composites": 2,
+        "quadratic_evaluations": 6,
+        "solves": 1,
+        "paired_trials": 4,
+        "candidate_composites": 8,
+        "rays": 0,
+        "height_evaluations": 0,
+        "source_queries": 0,
+        "incident_filters": 0,
+        "output_filters": 0,
+        "baseline_material_renders": 0,
+        "native_parameter_constraint_evaluations": 4,
+        "total_quadratic_or_parameter_constraint_evaluations": 10,
+        "cached_train_residual_checks": 1
+      }
+    }
+  ],
+  "current_stage_cap_minutes": 15,
+  "accepted_new_full_model_passes": 0,
+  "selected_state": "H1 incident sigma6.75 radius21, unit gain/bias, original source/masks/AA2/vectors/nonlinear styles, shadow0",
+  "scientific_review_finished": "2026-10-23T23:29:25.630Z",
+  "no_automatic_next_stage": true
+}

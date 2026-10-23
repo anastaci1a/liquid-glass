@@ -44,6 +44,8 @@ Navigation’s primary version includes its saved incident softness. The nonline
 
 The transferred spline and both longitudinal modulation signs fail original paired guards. The [three-setting review](../experiments/agent-navigation-longitudinal-05/README.md) preserves their source proofs and actual surfaces without claiming fidelity transfer.
 
+The [final Navigation review](../experiments/agent-navigation-final-review-07/README.md) closes all eight stage assessments. Historical raw-body shadow and chroma results are not filtered-baseline verdicts. Outline radiance, current shadow/glow performance and dispersion remain incomplete or unidentified. No new full-model pass is accepted.
+
 The toolbar’s primary image is its harmonic crowned-back baseline. Tone, d-stroke curvature and underside structure remain incomplete. Later closed-surface checks have no newer supported full image.
 
 The [current-model registry](../../reconstruction/current-models.json) selects gallery versions. Primary selection and verified visual improvement are separate decisions.
