@@ -1,0 +1,73 @@
+{
+  "start_utc": "2026-10-23T20:55:14.384Z",
+  "deadline_utc": "2026-10-23T21:15:14.384Z",
+  "original_latest_stage_deadline": "2026-10-23T21:30:40.688Z",
+  "original_total_deadline": "2026-10-23T23:50:40.688Z",
+  "stage": "Ordinary incident blur",
+  "stable_state": "Original unfitted H1 D2. Historical pass09 preserved separately; D0.5 and raised back remain rejected.",
+  "visible_question": "Do narrower or wider incident kernels improve actual modeled boundary detail without original paired guard regressions? Missing broad white returns are not assumed blur defects.",
+  "family": [
+    0.75,
+    1.25
+  ],
+  "cases": [
+    {
+      "key": "a",
+      "L": 216.5,
+      "legacy_nominal_sigma_px": 4.339320119358678,
+      "legacy_effective_sigma_px": 4.25,
+      "legacy_rule": "round(sigma*4)/4 in Study.blur after physical-length scaling",
+      "seed_sigma_over_L": 0.019630484988452657,
+      "trials": [
+        {
+          "multiplier": 0.75,
+          "sigma_px": 3.1875,
+          "radius_px": 10,
+          "sigma_over_L": 0.014722863741339492
+        },
+        {
+          "multiplier": 1.25,
+          "sigma_px": 5.3125,
+          "radius_px": 16,
+          "sigma_over_L": 0.02453810623556582
+        }
+      ]
+    },
+    {
+      "key": "b",
+      "L": 200,
+      "legacy_nominal_sigma_px": 4.008609810031111,
+      "legacy_effective_sigma_px": 4,
+      "legacy_rule": "round(sigma*4)/4 in Study.blur after physical-length scaling",
+      "seed_sigma_over_L": 0.02,
+      "trials": [
+        {
+          "multiplier": 0.75,
+          "sigma_px": 3,
+          "radius_px": 9,
+          "sigma_over_L": 0.015
+        },
+        {
+          "multiplier": 1.25,
+          "sigma_px": 5,
+          "radius_px": 15,
+          "sigma_over_L": 0.025
+        }
+      ]
+    }
+  ],
+  "budgets": {
+    "new_rays": 0,
+    "new_graph_evaluations": 0,
+    "new_lens_RGB_queries": 4000000,
+    "new_clear_RGB_queries": 0,
+    "new_full_observations": 4,
+    "new_baseline_renders": 0,
+    "fits": 0
+  },
+  "expected_lens_RGB_queries_both_widths": 3643100,
+  "preflight": "Both cases at the largest actual radius, WHOLE and all original guard subrays, all four bilinear texels, before any RGB. Smaller finite support follows by inclusion.",
+  "frozen": "H1 geometry/coordinates, source bytes, original masks/AA2, unit gain1/bias0, no lighting/shadow/output blur/channel smear/foreground change. Reuse clear samples.",
+  "stop": "Stop at first convincing strict paired candidate, both fixed widths, source failure or deadline. No third width or optimizer.",
+  "source_limits": "Modeled source, observed confidence zero; ordinary blur is empirical, not identified shared Apple microphysics."
+}

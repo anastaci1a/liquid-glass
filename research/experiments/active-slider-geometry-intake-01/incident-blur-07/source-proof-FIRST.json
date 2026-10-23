@@ -1,0 +1,96 @@
+{
+  "status": "PASS_BOTH_LARGEST_KERNELS_BEFORE_RGB",
+  "utc": "2026-10-23T20:59:59.004672+00:00",
+  "cases": [
+    {
+      "case": "a",
+      "radius": 16,
+      "whole_subrays": 974432,
+      "required_subrays": 1571908,
+      "union_subrays": 1577817,
+      "undefined_required": 0,
+      "all_grid_supported": true,
+      "coordinate_rounding": "Both float64 stored positions and float32 OpenCV maps, all four bilinear neighbors",
+      "observed_confidence": 0,
+      "masks": {
+        "glass": {
+          "count": 240456,
+          "sha256": "0bd1e2d0d450608c43ff492ffe03458c7e0110d31da68e9a60a1121de1202ba8"
+        },
+        "rim": {
+          "count": 70466,
+          "sha256": "e0cd35c5ebeebad0ae4ee92aac09364e562527670ccafe246d973461278fc9cf"
+        },
+        "held": {
+          "count": 61420,
+          "sha256": "522619f9b8be2bdfffe7aab87077cbb4b8827e5d50731e1d0d8e0fd47d35a48b"
+        },
+        "interior": {
+          "count": 169990,
+          "sha256": "802fc6938143142ceff2580319a8937eba9e36de9c8333a82d59fa04471940c2"
+        },
+        "exterior": {
+          "count": 152521,
+          "sha256": "99cdfe33cc9926ec46d3d5cba06377a484c93846c19e2cdbf8680462e9f1b817"
+        },
+        "required": {
+          "count": 392977,
+          "sha256": "3648983a9a52522123afa786230ef4af44c45805923d1d07a64d4fdca9d2af29"
+        },
+        "ssim_safe": {
+          "count": 229746,
+          "sha256": "240c3dbe387590364371e09b90eba39c524d57186d0e6541a607d605003012f7"
+        }
+      },
+      "source_X_sha256": "43596e52c08ea9b9ca8b65156fadf6012d39f74ab3167480cb09d34da8e2ba4b",
+      "source_Y_sha256": "c9bf4f5ad4997f57e0f6a21cb1c8c93c8522d841a70e4e6b77856cbd3ad46d1e"
+    },
+    {
+      "case": "b",
+      "radius": 15,
+      "whole_subrays": 847118,
+      "required_subrays": 1366252,
+      "union_subrays": 1371790,
+      "undefined_required": 0,
+      "all_grid_supported": true,
+      "coordinate_rounding": "Both float64 stored positions and float32 OpenCV maps, all four bilinear neighbors",
+      "observed_confidence": 0,
+      "masks": {
+        "glass": {
+          "count": 208969,
+          "sha256": "516963d92e9be95bb1cd4bd854e3e6c35acedceaf0714c6923cad73f0a14b40e"
+        },
+        "rim": {
+          "count": 60968,
+          "sha256": "eb7f5c4876e28e6a3fa5b05ae1aabe2261f9324ad97e9629aa69bcafb38f4446"
+        },
+        "held": {
+          "count": 53183,
+          "sha256": "4a492a1fa7c5a4d0ca2e32f65ac8a18c415eb1f908634313fedc0e3c43e9342f"
+        },
+        "interior": {
+          "count": 148001,
+          "sha256": "f6c4c1998927d627a1310b80d8060fc938fec68de27a0870e63cd298ef3bf266"
+        },
+        "exterior": {
+          "count": 132594,
+          "sha256": "7d38110346c2515f6b70b7d54333e3f7f0173991a03d72e9afaf1bf18a9707d6"
+        },
+        "required": {
+          "count": 341563,
+          "sha256": "15d54f0cea06e411d0a7bd61bd01eb481ced6488faf63147846ac2d2493878eb"
+        },
+        "ssim_safe": {
+          "count": 198987,
+          "sha256": "c582c3e25b3bfd92f68623be419846a25568994598d89f2a146f98e002de389f"
+        }
+      },
+      "source_X_sha256": "3f4e8653190b9f446ffb4e8bd902fd16d2871b07c48bb8852ce3f485d84745a0",
+      "source_Y_sha256": "1753cce332779fdde904c24f3ff864b697ad59032ab94adf45675728aa362ebd"
+    }
+  ],
+  "new_rays": 0,
+  "new_graph_evaluations": 0,
+  "new_RGB_queries": 0,
+  "smaller_support": "Strict finite-radius inclusion; source bytes and bilinear coordinates fixed."
+}
