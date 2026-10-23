@@ -1,0 +1,333 @@
+{
+  "operators": [
+    {
+      "operator": "source",
+      "status": "NO_STRICT_PAIRED_QUALIFIER",
+      "references": [
+        {
+          "reference": "a",
+          "scores": {
+            "legacy_material": {
+              "glass": {
+                "pixels": 83012,
+                "rmse": 66.42137908935547
+              },
+              "rim": {
+                "pixels": 31757,
+                "rmse": 76.1163558959961
+              },
+              "held": {
+                "pixels": 21209,
+                "rmse": 66.05687713623047
+              },
+              "interior": {
+                "pixels": 51255,
+                "rmse": 59.628780364990234
+              },
+              "ssim": 0.7839033603668213,
+              "loss": 4826.369610558089,
+              "E": 69.47207792025577
+            },
+            "completed_image": {
+              "glass": {
+                "pixels": 83012,
+                "rmse": 66.41935729980469
+              },
+              "rim": {
+                "pixels": 31757,
+                "rmse": 76.11174774169922
+              },
+              "held": {
+                "pixels": 21209,
+                "rmse": 66.05132293701172
+              },
+              "interior": {
+                "pixels": 51255,
+                "rmse": 59.628780364990234
+              },
+              "ssim": 0.7839033603668213,
+              "loss": 4825.971160172199,
+              "E": 69.46921015940947
+            },
+            "foreground_artwork_MSE": {
+              "jupiter.jpg": 1879.5616242758326,
+              "title.svg": 3130.9073670165544,
+              "artist.svg": 4943.01562528027,
+              "play.svg": 1948.035003964784,
+              "forward.svg": 1636.6389062127505
+            },
+            "exterior": {
+              "pixels": 31956,
+              "rmse": 10.550281524658203
+            }
+          },
+          "guards": {
+            "legacy_material:glass": true,
+            "legacy_material:rim": true,
+            "legacy_material:held": true,
+            "legacy_material:interior": true,
+            "legacy_material:E": true,
+            "legacy_material:ssim": true,
+            "completed_image:glass": true,
+            "completed_image:rim": true,
+            "completed_image:held": true,
+            "completed_image:interior": true,
+            "completed_image:E": true,
+            "completed_image:ssim": true,
+            "exterior": true,
+            "jupiter.jpg": true,
+            "title.svg": true,
+            "artist.svg": true,
+            "play.svg": false,
+            "forward.svg": true
+          }
+        },
+        {
+          "reference": "b",
+          "scores": {
+            "legacy_material": {
+              "glass": {
+                "pixels": 83012,
+                "rmse": 61.23930740356445
+              },
+              "rim": {
+                "pixels": 31757,
+                "rmse": 61.439090728759766
+              },
+              "held": {
+                "pixels": 21209,
+                "rmse": 61.073204040527344
+              },
+              "interior": {
+                "pixels": 51255,
+                "rmse": 61.11519241333008
+              },
+              "ssim": 0.7857222557067871,
+              "loss": 3757.6055007608165,
+              "E": 61.29931076905201
+            },
+            "completed_image": {
+              "glass": {
+                "pixels": 83012,
+                "rmse": 61.23875427246094
+              },
+              "rim": {
+                "pixels": 31757,
+                "rmse": 61.437652587890625
+              },
+              "held": {
+                "pixels": 21209,
+                "rmse": 61.071598052978516
+              },
+              "interior": {
+                "pixels": 51255,
+                "rmse": 61.11519241333008
+              },
+              "ssim": 0.7857223153114319,
+              "loss": 3757.5050640431,
+              "E": 61.29849153154668
+            },
+            "foreground_artwork_MSE": {
+              "jupiter.jpg": 1992.7085410740733,
+              "title.svg": 3361.0543895030546,
+              "artist.svg": 3744.7363487869366,
+              "play.svg": 2222.0821301463566,
+              "forward.svg": 1517.630602574684
+            },
+            "exterior": {
+              "pixels": 31956,
+              "rmse": 15.072770118713379
+            }
+          },
+          "guards": {
+            "legacy_material:glass": true,
+            "legacy_material:rim": true,
+            "legacy_material:held": true,
+            "legacy_material:interior": true,
+            "legacy_material:E": true,
+            "legacy_material:ssim": true,
+            "completed_image:glass": true,
+            "completed_image:rim": true,
+            "completed_image:held": true,
+            "completed_image:interior": true,
+            "completed_image:E": true,
+            "completed_image:ssim": true,
+            "exterior": true,
+            "jupiter.jpg": true,
+            "title.svg": true,
+            "artist.svg": true,
+            "play.svg": true,
+            "forward.svg": true
+          }
+        }
+      ]
+    },
+    {
+      "operator": "output",
+      "status": "NO_STRICT_PAIRED_QUALIFIER",
+      "references": [
+        {
+          "reference": "a",
+          "scores": {
+            "legacy_material": {
+              "glass": {
+                "pixels": 83012,
+                "rmse": 66.68025970458984
+              },
+              "rim": {
+                "pixels": 31757,
+                "rmse": 76.59142303466797
+              },
+              "held": {
+                "pixels": 21209,
+                "rmse": 66.13745880126953
+              },
+              "interior": {
+                "pixels": 51255,
+                "rmse": 59.71975326538086
+              },
+              "ssim": 0.7814392447471619,
+              "loss": 4872.253748732724,
+              "E": 69.80153113458704
+            },
+            "completed_image": {
+              "glass": {
+                "pixels": 83012,
+                "rmse": 66.68028259277344
+              },
+              "rim": {
+                "pixels": 31757,
+                "rmse": 76.59147644042969
+              },
+              "held": {
+                "pixels": 21209,
+                "rmse": 66.13788604736328
+              },
+              "interior": {
+                "pixels": 51255,
+                "rmse": 59.71975326538086
+              },
+              "ssim": 0.7814392447471619,
+              "loss": 4872.258339653956,
+              "E": 69.80156402011316
+            },
+            "foreground_artwork_MSE": {
+              "jupiter.jpg": 1877.0654572587057,
+              "title.svg": 3194.80939294611,
+              "artist.svg": 5006.4605885508545,
+              "play.svg": 1948.383768578898,
+              "forward.svg": 1641.2616991070806
+            },
+            "exterior": {
+              "pixels": 31956,
+              "rmse": 10.550281524658203
+            }
+          },
+          "guards": {
+            "legacy_material:glass": true,
+            "legacy_material:rim": true,
+            "legacy_material:held": true,
+            "legacy_material:interior": true,
+            "legacy_material:E": true,
+            "legacy_material:ssim": true,
+            "completed_image:glass": true,
+            "completed_image:rim": true,
+            "completed_image:held": true,
+            "completed_image:interior": true,
+            "completed_image:E": true,
+            "completed_image:ssim": true,
+            "exterior": true,
+            "jupiter.jpg": true,
+            "title.svg": true,
+            "artist.svg": true,
+            "play.svg": false,
+            "forward.svg": true
+          }
+        },
+        {
+          "reference": "b",
+          "scores": {
+            "legacy_material": {
+              "glass": {
+                "pixels": 83012,
+                "rmse": 66.22798156738281
+              },
+              "rim": {
+                "pixels": 31757,
+                "rmse": 67.42928314208984
+              },
+              "held": {
+                "pixels": 21209,
+                "rmse": 65.40511322021484
+              },
+              "interior": {
+                "pixels": 51255,
+                "rmse": 65.47261047363281
+              },
+              "ssim": 0.8118866682052612,
+              "loss": 4434.314347259555,
+              "E": 66.59064759603675
+            },
+            "completed_image": {
+              "glass": {
+                "pixels": 83012,
+                "rmse": 66.22806549072266
+              },
+              "rim": {
+                "pixels": 31757,
+                "rmse": 67.42948150634766
+              },
+              "held": {
+                "pixels": 21209,
+                "rmse": 65.40362548828125
+              },
+              "interior": {
+                "pixels": 51255,
+                "rmse": 65.47261047363281
+              },
+              "ssim": 0.8118866682052612,
+              "loss": 4434.330153914879,
+              "E": 66.59076628118105
+            },
+            "foreground_artwork_MSE": {
+              "jupiter.jpg": 2003.5962806988355,
+              "title.svg": 3385.5676884100853,
+              "artist.svg": 3740.939637449253,
+              "play.svg": 2222.512364114591,
+              "forward.svg": 1530.637537250899
+            },
+            "exterior": {
+              "pixels": 31956,
+              "rmse": 15.072770118713379
+            }
+          },
+          "guards": {
+            "legacy_material:glass": true,
+            "legacy_material:rim": true,
+            "legacy_material:held": true,
+            "legacy_material:interior": true,
+            "legacy_material:E": true,
+            "legacy_material:ssim": true,
+            "completed_image:glass": true,
+            "completed_image:rim": true,
+            "completed_image:held": true,
+            "completed_image:interior": true,
+            "completed_image:E": true,
+            "completed_image:ssim": true,
+            "exterior": true,
+            "jupiter.jpg": true,
+            "title.svg": false,
+            "artist.svg": true,
+            "play.svg": false,
+            "forward.svg": true
+          }
+        }
+      ]
+    }
+  ],
+  "sigma_native_pixels": 6.75,
+  "source_RGB_queries_including_zero": 2351584,
+  "new_rays": 0,
+  "fits": 0,
+  "selection": "Pending local texture and guard review. Operator placement differs; neither is identified physical roughness."
+}

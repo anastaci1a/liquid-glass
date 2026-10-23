@@ -46,7 +46,7 @@ The [current-model registry](../../reconstruction/current-models.json) selects g
 
 The [active transfer study](../experiments/compact-geometry-01/README.md) has a supported raw geometric baseline. Its smoothed contour matches the frozen footprint; exact native sample and foreground replay pass for both references.
 
-Source blur 6.75 native pixels and a common neutral response improve both references under all original guards. Rim light remains unresolved. These completed component results await publication; remaining stages stay pending. No per-reference fit or geometric fidelity claim has been made.
+Source blur 6.75 native pixels and a common neutral response improve both references under all original guards. Rim light remains unresolved. The gallery selects these component results. The outline mechanism audit is closed; remaining stages stay pending. No per-reference fit or geometric fidelity claim has been made.
 
 ## Shared limits
 

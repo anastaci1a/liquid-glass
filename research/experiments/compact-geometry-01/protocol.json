@@ -1,5 +1,5 @@
 {
-  "status": "active-refraction-review",
+  "status": "parked-after-outline-current-direction",
   "started_at": "2026-10-23T16:35:49.533Z",
   "deadline": "2026-10-23T20:35:49.533Z",
   "stages": [
@@ -9,42 +9,101 @@
       "latest_deadline": "2026-10-23T17:55:49.533Z",
       "started_at": "2026-10-23T16:35:49.533Z",
       "deadline": "2026-10-23T17:55:49.533Z",
-      "first_checkpoint_deadline": "2026-10-23T16:55:49.533Z"
+      "first_checkpoint_deadline": "2026-10-23T16:55:49.533Z",
+      "finished_at": "2026-10-23T17:03:06.081Z",
+      "outcome": "Supported shared surface and exact original footprint; raw paired baseline saved. No geometry parameter fit or visible-fidelity acceptance. Frost/response remain unisolated."
     },
     {
       "name": "blurriness",
       "cap_minutes": 20,
-      "latest_deadline": "2026-10-23T18:15:49.533Z"
+      "latest_deadline": "2026-10-23T18:15:49.533Z",
+      "started_at": "2026-10-23T17:03:06.081Z",
+      "deadline": "2026-10-23T17:23:06.081Z",
+      "budget": {
+        "fixed_operators": [
+          "source-space Gaussian",
+          "coverage-normalized output Gaussian"
+        ],
+        "sigma_native_pixels": 6.75,
+        "cached_full_composites": 4,
+        "new_rays": 0,
+        "maximum_source_RGB_queries_including_zero_controls": 2351584
+      },
+      "parameters_frozen": [
+        "Same geometry, cache/source XY, AA2, original source/case/masks/foreground/artwork, unit response and shadow0"
+      ],
+      "checkpoint": "Validate finite source kernel/bilinear support and output padding before candidate RGB. Exact zero replay through original foreground chain.",
+      "stop": "Stop a proposal at unsupported source, failed zero control, budget or deadline. Independent declared operator may still be reported.",
+      "finished_at": "2026-10-23T17:09:16.327Z",
+      "outcome": "Source and output PSFs improve paired body metrics; source looks closer at compressed edges. Both fail foreground guards; neither adopted alone."
     },
     {
       "name": "color",
       "cap_minutes": 20,
-      "latest_deadline": "2026-10-23T18:35:49.533Z"
+      "latest_deadline": "2026-10-23T18:35:49.533Z",
+      "started_at": "2026-10-23T17:09:16.327Z",
+      "deadline": "2026-10-23T17:29:16.327Z",
+      "budget": {
+        "fixed_pair_trials": 4,
+        "new_rays": 0,
+        "maximum_source_RGB_queries": 1175792
+      },
+      "fixed_coefficients": {
+        "gain": 0.701980827595718,
+        "bias": 0.22423217000784113
+      },
+      "trial_order": [
+        "source PSF + full prior",
+        "source PSF + half prior",
+        "output PSF + full prior",
+        "output PSF + half prior"
+      ],
+      "comparison": "Whole fixed material proposal against the raw primary baseline. Also report colour-only change against its unit-response PSF control.",
+      "limits": "No fit. Same coefficients/operators across A/B and RGB. Source placement differs from the original expanded output PSF and is not called unchanged full-operator transfer.",
+      "stop": "First paired strict qualifier on legacy, completed-image, exterior and all ten foreground/artwork guards; no further trials after it.",
+      "finished_at": "2026-10-23T17:13:24.815Z",
+      "outcome": "First source-PSF + full expanded neutral prior passes every paired legacy/completed/exterior/foreground/artwork guard versus raw and source-PSF-only controls. Visual body progress; dark body/rim remain. No fit or backtrack."
     },
     {
       "name": "outline",
       "cap_minutes": 60,
-      "latest_deadline": "2026-10-23T19:35:49.533Z"
+      "latest_deadline": "2026-10-23T19:35:49.533Z",
+      "started_at": "2026-10-23T17:13:24.815Z",
+      "deadline": "2026-10-23T18:13:24.815Z",
+      "budget": {
+        "fresh_primary_rays": 0,
+        "RGB_images": 0,
+        "maximum_height_evaluations": 3000,
+        "maximum_Fresnel_evaluations": 3000
+      },
+      "question": "Can the same actual surface and bounded assumed illumination plausibly supply the missing thin bright rim? Separate transmission tone from reflected radiance.",
+      "frozen": "Selected source sigma6.75, common gain/bias, geometry, sources/AA/masks/foreground/artwork; no invented HDR or fitted target halo.",
+      "finished_at": "2026-10-23T17:36:56.104327+00:00",
+      "outcome": "Same-surface Fresnel audit complete; unobserved environment prevents a supported outline image. No outline fidelity acceptance."
     },
     {
       "name": "shadow",
       "cap_minutes": 15,
-      "latest_deadline": "2026-10-23T19:50:49.533Z"
+      "latest_deadline": "2026-10-23T19:50:49.533Z",
+      "status": "pending-not-skipped"
     },
     {
       "name": "foreground",
       "cap_minutes": 20,
-      "latest_deadline": "2026-10-23T20:10:49.533Z"
+      "latest_deadline": "2026-10-23T20:10:49.533Z",
+      "status": "pending-not-skipped"
     },
     {
       "name": "dispersion-identification",
       "cap_minutes": 10,
-      "latest_deadline": "2026-10-23T20:20:49.533Z"
+      "latest_deadline": "2026-10-23T20:20:49.533Z",
+      "status": "pending-not-skipped"
     },
     {
       "name": "review",
       "cap_minutes": 15,
-      "latest_deadline": "2026-10-23T20:35:49.533Z"
+      "latest_deadline": "2026-10-23T20:35:49.533Z",
+      "status": "pending-not-skipped"
     }
   ],
   "early_close": true,
@@ -126,5 +185,6 @@
   "stop": "First invalid invariant/path/required source; evaluation limit or deadline. Retain partial results and do not silently reset budgets.",
   "primary_policy": "Geometric version becomes primary once supported native image exists; visual acceptance and historical image-fit scores remain separate.",
   "geometry_checkpoint_ready_at": "2026-10-23T16:39:53.304579+00:00",
-  "raw_images_saved_at": "2026-10-23T16:45:05.532Z"
+  "raw_images_saved_at": "2026-10-23T16:45:05.532Z",
+  "park_reason": "Current direction: finish this subpass, focus clear play for 30 minutes, then expanded playback refraction. This is not a completed full cycle."
 }
