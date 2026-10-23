@@ -22,7 +22,10 @@ const panels=JSON.parse(fs.readFileSync(path.join(root,'comparison-panels.json')
    await compactImage.evaluate(async i=>{while(!i.hasAttribute('src'))await new Promise(requestAnimationFrame);await i.decode();});
    await compact.locator('.comparison-frame').first().waitFor({state:'visible'});
    const ratio=await compact.locator('.comparison-frame').first().evaluate(e=>getComputedStyle(e).aspectRatio.split('/').map(Number));
-   assert(Math.abs(ratio[0]/ratio[1]-1080/282)<1e-10,'Preserve the entire current Compact body below its64px caption');
+   const compactPrimary=require('../../reconstruction/current-models.json').models['compact-mini-player'];
+   const compactBounds=panels[compactPrimary?.images[0]||'assets/study-music-mini-compact-vector-paired-a.png'];
+   const compactRatio=(compactBounds.width-(compactBounds.gutter??2))/2/(compactBounds.height-compactBounds.top-compactBounds.bottom);
+   assert(Math.abs(ratio[0]/ratio[1]-compactRatio)<1e-10,'Preserve the entire selected Compact body below its declared caption');
    await compact.evaluate(d=>d.open=false);
    await page.locator('#clear-playback-control').evaluate(d=>d.open=true);
 

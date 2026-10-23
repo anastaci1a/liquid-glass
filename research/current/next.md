@@ -6,4 +6,6 @@ The [navigation transfer study](../experiments/navigation-geometry-01/README.md)
 
 Before another material proposal on that control, retain the exact pre-foreground integrated image and score completed boundary pixels. The shadow candidate remains held despite exterior improvement. Develop the geometric version under the [primary-model policy](../decisions/primary-geometric-models.md).
 
-Compact-miniplayer intake is next, using its paired sources and fixed artwork/foreground. Preserve the accepted smoothed footprint when constructing geometry. No experiment clock has started; the gallery update is being verified first.
+The [compact-miniplayer cycle](../experiments/compact-geometry-01/README.md) is active under its declared four-hour maximum. The frozen smoothed footprint and paired source preflights pass; raw native images and exact compositor caches are ready.
+
+Continue the isolated material transfer checks using the expanded control’s shared prior. Preserve both legacy and completed-image scores and all ten foreground/artwork guards.

@@ -1,6 +1,6 @@
 # Compact miniplayer: geometric and material transfer
 
-Status: intake. No new optical image or fitted parameter.
+Status: supported paired geometric baseline. Two raw native images are complete; no parameter was fitted.
 
 ## Question
 
@@ -30,3 +30,22 @@ The first raw diagnostic has unit throughput and zero added blur, lighting, grad
 Later stages test the expanded control’s common neutral response and ordinary output PSF without per-control fitting first. Source-space filtering is a separate hypothesis. Geometry, material transfer and visible fidelity are separate claims.
 
 The supported geometric version becomes primary under the [selection policy](../../decisions/primary-geometric-models.md). Historical image fits and failed variants remain evidence.
+
+## Raw result
+
+Both [source preflights](source-preflight.json) pass all 883,200 emitted subrays per reference, including the 30 scored subrays outside the physical outline. No source sample is repaired or omitted.
+
+The [surface checkpoint](geometry-check.json) passes 5,293 height evaluations and 486 fixture rays. Actual-gradient error is below 6.4×10⁻¹¹. The [surface definition](surface.md) explains the frozen join and convexity certificate.
+
+| Raw score | A | B |
+| --- | ---: | ---: |
+| Legacy material E | 76.71960 | 70.89441 |
+| Completed-image E | 76.71303 | 70.89349 |
+
+Both original score masks are preserved. Material-only and completed-image scores remain distinct; neither is ranked against a differently controlled historical fit.
+
+The raw body preserves sharp, strongly colored background content where the reference is frosted and lighter. Bright rim light is missing. These images establish a supported geometric state, not visible parity or measured Apple parameters.
+
+![Second reference and raw geometric baseline](b-raw-comparison.png)
+
+[Native results](raw-result.json) confirm bit-exact coverage, retained-subray replay and original foreground/artwork replay. Exact pre-foreground images and float64 sample/clear data are saved for later stages.

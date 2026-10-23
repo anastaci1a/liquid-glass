@@ -15,11 +15,14 @@ class RoundedRectangleHarmonicBack:
     crown_depth: float=.4
     power: float=3.
     isotropic_fixture: bool=False
+    cap_join_width: float=0.
 
     def __post_init__(self):
-        if len(self.half)!=2 or not np.isfinite([*self.half,self.radius,self.depth,self.crown_depth,self.power]).all():raise ValueError('Finite parameters required')
+        if len(self.half)!=2 or not np.isfinite([*self.half,self.radius,self.depth,self.crown_depth,self.power,self.cap_join_width]).all():raise ValueError('Finite parameters required')
         if min(self.half)<=0 or not 0<self.radius<=min(self.half) or min(self.depth,self.crown_depth)<=0 or self.power<3:raise ValueError('Invalid convex cap/rounded footprint')
         if self.isotropic_fixture and not self.half[0]==self.half[1]==self.radius:raise ValueError('Isotropic circle fixture requires equal axes and radius')
+        if self.cap_join_width<0:raise ValueError('Nonnegative cap join required')
+        if self.cap_join_width and not (self.radius==self.half[1] and self.half[0]>self.half[1] and self.cap_join_width<self.half[0]-self.radius):raise ValueError('Smoothed join requires a horizontal capsule and fits its straight half-length')
 
     @property
     def maximum_height(self):return self.depth*self.crown_depth/(self.depth+self.crown_depth)
@@ -32,6 +35,11 @@ class RoundedRectangleHarmonicBack:
     def footprint(self,x,y):
         x,y=np.broadcast_arrays(np.asarray(x,float),np.asarray(y,float))
         if not np.isfinite(x).all() or not np.isfinite(y).all():raise ValueError('Finite geometry points required')
+        if self.cap_join_width:
+            from curvature import capsule_offset
+            q,qd=capsule_offset(abs(x)-(self.half[0]-self.radius),self.cap_join_width)
+            # These are rho*r^2 times the actual rho derivatives.
+            return np.hypot(q,y)/self.radius,q*qd*np.sign(x),y
         qx=np.maximum(abs(x)-(self.half[0]-self.radius),0)
         qy=np.maximum(abs(y)-(self.half[1]-self.radius),0)
         rho=np.hypot(qx,qy)/self.radius

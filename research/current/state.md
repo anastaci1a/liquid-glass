@@ -1,6 +1,6 @@
 # Current state
 
-Status: geometric models are the primary versions for playback, toolbar, expanded miniplayer and navigation. Their visible defects remain open. Earlier empirical fits are historical references under the [primary-model policy](../decisions/primary-geometric-models.md).
+Status: geometric models are primary for playback, toolbar, expanded/compact miniplayer and navigation. Their visible defects remain open. Earlier empirical fits are historical references under the [primary-model policy](../decisions/primary-geometric-models.md).
 
 ## Clear circular play control
 
@@ -37,6 +37,12 @@ Navigation’s primary version is the raw harmonic rounded-rectangle baseline. I
 The toolbar’s primary image is its harmonic crowned-back baseline. Tone, d-stroke curvature and underside structure remain incomplete. Later closed-surface checks have no newer supported full image.
 
 The [current-model registry](../../reconstruction/current-models.json) selects gallery versions. Primary selection and verified visual improvement are separate decisions.
+
+## Compact miniplayer
+
+The [active transfer study](../experiments/compact-geometry-01/README.md) has a supported raw geometric baseline. Its smoothed contour matches the frozen footprint; exact native sample and foreground replay pass for both references.
+
+Frosting, light body response and rim light remain absent. Material checks will use the retained pre-foreground/subray data and original compositor. No per-reference fit or geometric fidelity claim has been made.
 
 ## Shared limits
 

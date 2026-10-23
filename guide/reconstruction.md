@@ -8,7 +8,7 @@ Open a study to load its comparisons. **Wipe** shows Apple on the left and the r
 
 [Geometric specification](geometric-optics.md) · [Primary parameters](../reconstruction/current-models.json) · [Scores](#scores) · [Reproduce](#reproduce) · [Material roles](#material-roles) · [Guide](README.md)
 
-Primary geometric versions: [Play button](#clear-playback-control) · [Toolbar](#archive-and-plus-toolbar) · [Expanded miniplayer](#expanded-mini-player) · [Navigation](#navigation-control).
+Primary geometric versions: [Play button](#clear-playback-control) · [Toolbar](#archive-and-plus-toolbar) · [Expanded miniplayer](#expanded-mini-player) · [Compact miniplayer](#compact-mini-player) · [Navigation](#navigation-control).
 
 [Playback](#clear-playback-control) · [Toolbar](#archive-and-plus-toolbar) · [Slider](#active-slider) · [Light/dark](#light-and-dark-surfaces) · [Apple Music](#apple-music-studies) · [Switch](#active-switch)
 
@@ -442,6 +442,19 @@ Frame A: 0 seconds. Frame B: 6.033 seconds. Cover art is a separate high-resolut
 
 ### Compact mini-player
 
+**Primary: smoothed-cap harmonic geometric baseline.** The accepted contour, paired sources, artwork and original vector styles are preserved. Refraction uses the same surface-derived tracer as the other geometric controls.
+
+![Compact miniplayer A and primary geometric baseline](assets/geometric-compact-primary-a.png)
+
+![Compact miniplayer B and primary geometric baseline](assets/geometric-compact-primary-b.png)
+
+The raw unit body is too sharp and saturated; frosting, light body response and rim light remain open. All required source samples pass, including the 30 original scored subrays outside the physical outline.
+
+[Active transfer study](../research/experiments/compact-geometry-01/README.md) · [Surface and certificate](../research/experiments/compact-geometry-01/surface.md) · [Raw scores and exact replay](../research/experiments/compact-geometry-01/raw-result.json). Original pre-foreground and subray data are retained for material checks.
+
+<details data-historical>
+<summary>Archived empirical reconstruction and motion</summary>
+
 Historical round: **3/3** verified passes. Shared lighting, outer-normal and material updates change native E A 4.989875→4.988888/B 4.834120→4.831008. All ten glyph/artwork guards hold; artwork and exterior errors are unchanged. Frozen sources fully support the original emitted and scored subrays.
 
 [Archived recipe](../reconstruction/studies/music-mini-compact-vector/review-round/pass-03.json) · [Independent verification](../reconstruction/studies/music-mini-compact-vector/review-round/pass-03-verification.json). Final motion uses this recipe: 6 seconds at 15fps, 1080px wide. Both full-size GIFs have 256 colors and remain below 10MB. [Motion verification](../reconstruction/studies/music-mini-compact-vector/review-round/motion.json). The sampled moving source checks pass; this is illustrative motion, not captured Apple animation or device-performance evidence.
@@ -472,6 +485,8 @@ Frames A/B: 2.5/2.0 seconds. This tests the compact state of the same playback c
 <img src="assets/study-music-mini-compact-vector-paired-b.gif" alt="Compact mini-player motion on background B" width="1080" height="282" loading="lazy" decoding="async">
 
 [Video](assets/study-music-mini-compact-vector-paired-b.mp4) · [GIF](assets/study-music-mini-compact-vector-paired-b.gif)
+
+</details>
 
 </details>
 

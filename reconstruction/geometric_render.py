@@ -6,7 +6,7 @@ optional frozen constant grading reproduces historical diagnostics only.
 import cv2,numpy as np
 from geometric_optics import trace_flat_front_orthographic
 
-def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission=False,exact_bilinear=False,samples_per_axis=4,source_known=None,required_pixels=None,return_support=False,return_layers=False,incident_source=None,incident_known=None):
+def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission=False,exact_bilinear=False,samples_per_axis=4,source_known=None,required_pixels=None,return_support=False,return_layers=False,incident_source=None,incident_known=None,return_samples=False):
     """Finite pixel integration with coupled lens/background coverage.
 
     Default4 preserves the historical geometric control. Explicit2 preserves an
@@ -18,8 +18,11 @@ def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission
     contract's known/model support, not necessarily observed photographic truth.
     Optional incident_source affects lens rays only. Its known mask must already
     certify the complete finite filtering footprint; clear rays use source.
+    return_samples adds exact sampled RGB, membership and source coordinates to
+    the layer record, allowing material stages to retain original AA ordering.
     """
     if isinstance(samples_per_axis,bool) or int(samples_per_axis)!=samples_per_axis or not 1<=samples_per_axis<=8:raise ValueError('Integer AA samples per axis1..8 required')
+    if return_samples and not return_layers:raise ValueError('Sample cache requires layer record')
     if incident_source is not None:
         if incident_source.shape!=source.shape or incident_known is None or incident_known.shape!=source.shape[:2]:raise ValueError('Incident source requires matching RGB and certified known mask')
     elif incident_known is not None:raise ValueError('Incident known mask without source')
@@ -80,6 +83,7 @@ def render_rows(source,case,p,surface,index,distance,start,stop,raw_transmission
         lens=np.divide(lens,alpha[...,None],out=np.zeros_like(lens),where=alpha[...,None]>0)
         clear=np.where((~q['inside'])[...,None],C,0).reshape(stop-start,s,x1-x0,s,3).mean((1,3))
         out+=({'lens_color':lens,'coverage':alpha,'clear_premultiplied':clear},)
+        if return_samples:out[-1].update(sample_rgb=C.copy(),sample_inside=q['inside'].copy(),source_X=X.copy(),source_Y=Y.copy())
     return out
 
 
