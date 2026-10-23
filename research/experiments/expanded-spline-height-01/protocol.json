@@ -1,0 +1,48 @@
+{
+  "status": "DECLARED_GEOMETRY_ONLY",
+  "started_at": "2026-10-23T21:00:01.096Z",
+  "deadline": "2026-10-23T21:15:01.096Z",
+  "visible_motivation": "The expanded bar still has wrong return positions. Concavity-constrained projection left a normal-map residual; a fixed raised-perimeter profile did not transfer visibly.",
+  "question": "Does relaxing only the height-curvature sign, while keeping a nonnegative physical back and global slope certificate, improve the same diagnostic normal-component projection?",
+  "parameters": {
+    "degree": 3,
+    "breaks": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.9,
+      0.97,
+      0.99,
+      1
+    ],
+    "height_control_bounds": [
+      0.000001,
+      0.25
+    ],
+    "last_height": 0,
+    "first_two_equal": true,
+    "maximum_global_slope": 0.88,
+    "index": 1.5,
+    "background_distance": 2.1
+  },
+  "frozen": [
+    "Original rounded footprint and pose",
+    "Saved diagnostic map profile, not new target RGB",
+    "Selected current reconstruction and all source/masks/foreground/blur/material"
+  ],
+  "budgets": {
+    "starts": 1,
+    "model_evaluations": 96,
+    "calibration_rays": 12384,
+    "fixture_comparator_rays": 512,
+    "total_height_adapter_calls": 60000,
+    "RGB_queries": 0,
+    "native_images": 0,
+    "fits": 1
+  },
+  "accounting": "Count EVERY actual height_gradient call, including nested boundary checks, at runtime before evaluation. Reserve ray/model budgets before each call. No unscoped sparse cap coexists with an allowed native phase; native images are forbidden here.",
+  "stop": "First invariant failure, completed96-evaluation/one-start projection,15minute deadline or evaluation cap. Save all proposed vectors, feasibility and actually traced best. No extra start, native image or material rescue.",
+  "scope": "Mathematical initialization only; empirical diagnostic is not optical truth. Nonconcave primary certificate does not allow reflected paths through the convex tracer."
+}
