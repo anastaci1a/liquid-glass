@@ -15,7 +15,9 @@ Empirical maps may diagnose or initialize a solid. They do not authorize indepen
 
 See the [geometric contract](../../guide/geometric-optics.md) for certificates and implementation scope.
 
-[Pass budgets, checkpoints and rotation](passes.md) define the operational research cycle.
+[Pass budgets, checkpoints and rotation](passes.md) define the operational research cycle. The [current refinement sequence](refinement-sequence.md) sets target order.
+
+Ordinary material blur filters the incident background before tracing its sampled appearance. Initialize from each element’s historical softness, then refine. Keep antialiasing separate.
 
 ## Isolated pipeline
 

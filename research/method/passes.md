@@ -21,7 +21,7 @@ Use the [experiment template](../../templates/experiment.md). Preserve selected 
 | Outline shading | 45 min | Test a justified surface-derived transport or illumination hypothesis. |
 | Verification and decision | 15 min | Independent reproduction, local/overall guards and visible-feedback review. |
 
-Skip dispersion for this reference. Freeze geometry during the blur comparison. Do not add spatially painted edge corrections or change a filter radius by image location.
+Leave the existing dispersion stage unchanged under the current review instruction; do not infer physical absence. Retain blur and freeze geometry during its comparison. Do not add spatially painted edge corrections or change a filter radius by image location.
 
 Outline calculations must use the same optical surface. Unknown reflected illumination or unresolved internal paths remain limitations; neither permits target-colored repair.
 
@@ -38,7 +38,17 @@ Outline calculations must use the same optical surface. Unknown reflected illumi
 | Dispersion identification | 10 min | Is a spectral effect distinguishable from source color and filtering? |
 | Final review | 15 min | What improved, failed, transferred or remains uncertain? |
 
-The four-hour total governs this schedule. Skip unsupported or irrelevant stages with a recorded reason. Do not extend another block by silently borrowing unused time.
+The four-hour total governs this schedule. Omit a stage only after verifying the effect is absent or recording explicit acceptance that it is already satisfactory. Unsupported stages remain blocked or incomplete. Do not silently borrow unused time.
+
+## Blur initialization and order
+
+Apply ordinary material blur to the incident background before geometric refraction. Seed its width from the corresponding historical reconstruction, then refine against reference detail. Record nominal/effective width, units, scale and finite support.
+
+Output filtering is a historical comparator, not the default material model. A separate downstream camera or display filter requires explicit evidence and justification. Antialiasing remains a separate numerical operation.
+
+Audit the entire incident kernel and bilinear footprint before sampling. Preserve straight exterior rays and original foreground handling. Raw unblurred frosted controls are diagnostics, not default reconstructions.
+
+Moving a historical output width into incident space is an initialization assumption, not an equivalent operator. Preserve the original result and compare local compression, texture and guards.
 
 ## Subpass limits
 
@@ -73,6 +83,6 @@ Save concise work in progress, configurations, code revisions and evidence ident
 
 Finish with one inspectable report: hypothesis, enlarged reference/baseline/candidate crops, results, regressions, uncertainty and implications for the shared system. Do not generate expensive final media during an unpromising search.
 
-Rotate to another suitable element after the full cycle. Keep the accepted baseline when experimental branches fail. Do not reopen a stalled microscopic walk without new discriminating evidence.
+Follow the [current refinement sequence](refinement-sequence.md) before rotating. Refine one element, then test transfer to a related element. Keep the accepted baseline when experimental branches fail. Do not reopen a stalled microscopic walk without new discriminating evidence.
 
 Interaction and final animation export are separate work. They are not prerequisites for completing this research pass.

@@ -1,5 +1,9 @@
 # Current state
 
+Current direction: finish the compact outline subpass, then spend 30 minutes on clear play before focusing on expanded playback refraction. Follow the [refinement sequence](../method/refinement-sequence.md).
+
+Ordinary blur belongs before refraction across elements. Historical widths seed incident filtering; output-filtered records remain labeled comparisons.
+
 Status: geometric models are primary for playback, toolbar, expanded/compact miniplayer and navigation. Their visible defects remain open. Earlier empirical fits are historical references under the [primary-model policy](../decisions/primary-geometric-models.md).
 
 ## Clear circular play control
@@ -9,7 +13,7 @@ Status: geometric models are primary for playback, toolbar, expanded/compact min
 | Refraction | G05 physical hypothesis retained; later proposals yielded no accepted geometric improvement. |
 | Ordinary blur | Output sigma 1.7 remains accepted. Matched source blur sharpens edges but regresses original guards. |
 | Color, outline, shadow, icon | Incomplete; no newer component accepted. |
-| Dispersion | Skip for this control under the reviewer’s instruction. |
+| Dispersion | Retain unchanged under explicit review acceptance; absence is not established. |
 
 The corrected supplemental foreground guard improves 98.655754 → 98.166603. The stale 5.534182 result used reversed coordinates and is superseded.
 
@@ -42,7 +46,7 @@ The [current-model registry](../../reconstruction/current-models.json) selects g
 
 The [active transfer study](../experiments/compact-geometry-01/README.md) has a supported raw geometric baseline. Its smoothed contour matches the frozen footprint; exact native sample and foreground replay pass for both references.
 
-Frosting, light body response and rim light remain absent. Material checks will use the retained pre-foreground/subray data and original compositor. No per-reference fit or geometric fidelity claim has been made.
+Source blur 6.75 native pixels and a common neutral response improve both references under all original guards. Rim light remains unresolved. These completed component results await publication; remaining stages stay pending. No per-reference fit or geometric fidelity claim has been made.
 
 ## Shared limits
 
