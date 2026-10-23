@@ -1,0 +1,165 @@
+{
+  "status": "NO_STRICT_QUALIFIER",
+  "selected_source_sigma_pixels": 1.7,
+  "output_sigma_pixels": 0,
+  "baseline_output_sigma_pixels": 1.7,
+  "scores": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 12.84976863861084,
+      "mae": 8.028093338012695,
+      "opponent_chroma_rmse": 1.645058035850525
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 12.876385688781738,
+      "mae": 8.43992805480957,
+      "opponent_chroma_rmse": 1.690736174583435
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 12.856473922729492,
+      "mae": 8.131763458251953,
+      "opponent_chroma_rmse": 1.6566749811172485
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 14.391800880432129,
+      "mae": 8.343522071838379,
+      "opponent_chroma_rmse": 2.098223924636841
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 26.286388397216797,
+      "mae": 16.4676513671875,
+      "opponent_chroma_rmse": 4.517364978790283
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 11.133749961853027,
+      "mae": 7.922568321228027,
+      "opponent_chroma_rmse": 1.051985263824463
+    },
+    "ssim": 0.9654386043548584,
+    "gradient_mae": 4.71853494644165,
+    "selection_loss": 0.005242216416239203,
+    "foreground_fullbox_MSE": 98.1666030883789,
+    "exterior_MSE": 24.088741302490234
+  },
+  "baseline_scores": {
+    "train": {
+      "pixels": 100630,
+      "rmse": 12.585246086120605,
+      "mae": 7.980888843536377,
+      "opponent_chroma_rmse": 1.5761111974716187
+    },
+    "held_blocks": {
+      "pixels": 33853,
+      "rmse": 12.521955490112305,
+      "mae": 8.325145721435547,
+      "opponent_chroma_rmse": 1.6069767475128174
+    },
+    "all_glass": {
+      "pixels": 134483,
+      "rmse": 12.569343566894531,
+      "mae": 8.067547798156738,
+      "opponent_chroma_rmse": 1.5839375257492065
+    },
+    "rim": {
+      "pixels": 66832,
+      "rmse": 13.872037887573242,
+      "mae": 8.214303970336914,
+      "opponent_chroma_rmse": 1.9819753170013428
+    },
+    "outer_rim": {
+      "pixels": 5100,
+      "rmse": 25.81536293029785,
+      "mae": 16.89735221862793,
+      "opponent_chroma_rmse": 4.150359153747559
+    },
+    "interior": {
+      "pixels": 67651,
+      "rmse": 11.133749961853027,
+      "mae": 7.922568321228027,
+      "opponent_chroma_rmse": 1.051985263824463
+    },
+    "ssim": 0.9697988629341125,
+    "gradient_mae": 4.502345561981201,
+    "selection_loss": 0.005157371750851086,
+    "foreground_fullbox_MSE": 98.1666030883789,
+    "exterior_MSE": 24.06739616394043
+  },
+  "guards": {
+    "train": false,
+    "held_blocks": false,
+    "all_glass": false,
+    "rim": false,
+    "outer_rim": false,
+    "interior": true,
+    "ssim": false,
+    "foreground": true,
+    "exterior": false
+  },
+  "local": {
+    "bottom-left": {
+      "RGB_RMSE": 13.207247734069824,
+      "MAE": 8.925881385803223,
+      "detail_band_RMS": 6.389362335205078,
+      "reference_detail_RMS": 7.32466459274292
+    },
+    "top-left": {
+      "RGB_RMSE": 8.219210624694824,
+      "MAE": 3.1269731521606445,
+      "detail_band_RMS": 7.073700428009033,
+      "reference_detail_RMS": 7.207409381866455
+    },
+    "upper-right": {
+      "RGB_RMSE": 7.13406229019165,
+      "MAE": 2.9603981971740723,
+      "detail_band_RMS": 5.659435272216797,
+      "reference_detail_RMS": 5.773361682891846
+    },
+    "center-texture": {
+      "RGB_RMSE": 20.39520835876465,
+      "MAE": 20.216798782348633,
+      "detail_band_RMS": 1.1223125457763672,
+      "reference_detail_RMS": 1.1467740535736084
+    }
+  },
+  "baseline_local": {
+    "bottom-left": {
+      "RGB_RMSE": 12.92993450164795,
+      "MAE": 8.867223739624023,
+      "detail_band_RMS": 6.047786712646484,
+      "reference_detail_RMS": 7.32466459274292
+    },
+    "top-left": {
+      "RGB_RMSE": 7.979681968688965,
+      "MAE": 3.0607457160949707,
+      "detail_band_RMS": 6.761153221130371,
+      "reference_detail_RMS": 7.207409381866455
+    },
+    "upper-right": {
+      "RGB_RMSE": 6.516927719116211,
+      "MAE": 2.904324769973755,
+      "detail_band_RMS": 5.382599830627441,
+      "reference_detail_RMS": 5.773361682891846
+    },
+    "center-texture": {
+      "RGB_RMSE": 20.395362854003906,
+      "MAE": 20.21661376953125,
+      "detail_band_RMS": 1.1224511861801147,
+      "reference_detail_RMS": 1.1467740535736084
+    }
+  },
+  "new_full_native_candidates": 1,
+  "new_refraction_rays": 0,
+  "crop_candidates": 5,
+  "clear_exterior_exact": true,
+  "foreground_color_alpha_frozen": true,
+  "clipping": "No optical or body clipping introduced.",
+  "precision": {
+    "full_glass_MSE_delta_f64": 7.30051341532797
+  },
+  "limits": "Registered-source empirical neutral PSF. Geometry/foreground fixed; source RGB, PSF and illumination uncertainty remain."
+}

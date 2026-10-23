@@ -73,7 +73,7 @@ const normalize=s=>path.posix.normalize(s).replace(/^historical-records\//,'');
       heading({tokens,depth}){const text=this.parser.parseInline(tokens);return `<h${depth} id="${slug(text)}">${text}</h${depth}>\n`;},
       link({href,title,tokens}){const target=link(href),label=this.parser.parseInline(tokens);return target?`<a href="${escape(target)}"${title?` title="${escape(title)}"`:''}>${label}</a>`:`<span title="Historical reference not included in this record">${label}</span>`;},
       html(token){if(!archival)return false;return '<pre class="record-markup">'+escape(token.text)+'</pre>';},
-      image(token){if(!archival)return false;const target=link(token.href);return target?`<a href="${escape(target)}">Figure evidence: ${escape(token.text)}</a>`:`<span>Figure reference: ${escape(token.text)}</span>`;}
+      image(token){const target=link(token.href);if(!archival)return `<img src="${escape(target)}" alt="${escape(token.text)}"${token.title?` title="${escape(token.title)}"`:""}>`;return target?`<a href="${escape(target)}">Figure evidence: ${escape(token.text)}</a>`:`<span>Figure reference: ${escape(token.text)}</span>`;}
     }});
     return md;
   }

@@ -99,3 +99,30 @@ def neutral_color_response(material,gain=1.,bias=0.,highlight_lift=0.,return_pre
     y=value@np.array([.2126,.7152,.0722]);u=np.clip((y-.25)/.4,0,1);w=u**3*(u*(6*u-15)+10)
     value=value+highlight_lift*w[...,None]
     return (np.clip(value,0,1),value) if return_preclip else np.clip(value,0,1)
+
+
+def incident_source_filter(source, source_known, sigma_pixels):
+    """Finite neutral PSF in incident-image coordinates, before refraction.
+
+    The returned mask certifies every finite Gaussian texel. Callers must also
+    certify all four bilinear texels before sampling. Use the original source
+    for clear exterior rays. This empirical PSF is not a microfacet model.
+    """
+    source = np.asarray(source)
+    known = np.asarray(source_known, bool)
+    if source.shape != known.shape + (3,):
+        raise ValueError('Source RGB and known mask shapes must agree')
+    if not np.isfinite(sigma_pixels) or sigma_pixels < 0:
+        raise ValueError('Finite nonnegative incident sigma required')
+    if not np.isfinite(source[known]).all():
+        raise ValueError('Known source contains undefined RGB')
+    radius = int(np.ceil(3 * sigma_pixels))
+    if radius == 0:
+        return np.where(known[..., None], source, np.nan), known.copy(), radius
+    kernel = np.ones((2 * radius + 1, 2 * radius + 1), np.uint8)
+    support = cv2.erode(known.astype(np.uint8), kernel,
+                        borderType=cv2.BORDER_CONSTANT, borderValue=0).astype(bool)
+    filtered = cv2.GaussianBlur(np.where(known[..., None], source, 0),
+                               kernel.shape, sigma_pixels,
+                               borderType=cv2.BORDER_CONSTANT)
+    return np.where(support[..., None], filtered, np.nan), support, radius
