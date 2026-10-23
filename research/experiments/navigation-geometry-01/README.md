@@ -1,6 +1,6 @@
 # Navigation: geometric transfer
 
-Status: refraction and softness diagnostics complete; color stopped at an invalid compositor assumption. No accepted replacement.
+Status: useful negative with incomplete color/outline identification. No accepted replacement; historical pass03 remains the incumbent.
 
 ## Visible question
 
@@ -46,7 +46,7 @@ The raw comparison preserves sharp lettering where the reference is frosted. The
 
 ![Second reference and raw physical transfer](b-comparison.png)
 
-[Surface controls](geometry-check.json), [source proof](source-preflight.json) and [native results](raw-result.json) retain exact counts. Source/target/vector hashes are unchanged. Captured case-file hashes include documentation normalization; original historical hashes remain in pass03, not falsely claimed as current byte identities.
+[Surface controls](geometry-check.json), [source proof](source-preflight.json) and [native results](raw-result.json) retain exact counts. Source/target/vector hashes are unchanged. Captured cases match the current public paired configuration semantically. Their byte hashes differ from historical pass03 receipts; original byte identity is not claimed.
 
 ## Softness proposal
 
@@ -77,3 +77,41 @@ The proposed cached common gain/bias fit assumed fixed-solid foreground composit
 ## Shared geometry
 
 [Surface definition and certificate](surface.md) describe the same height, gradient and bounds used by the shared tracer. The adapter preserves the accepted footprint; it does not use a residual image warp or independent normal adjustment.
+
+![Actual longitudinal and transverse surface sections](surface-sections.svg)
+
+## Remaining stages
+
+| Stage | Result |
+| --- | --- |
+| Outline | No observed front environment or complete secondary scene; no reflection image. |
+| Shadow | Existing shared prior improves exterior, but completed-image A glass/rim regress; hold candidate. |
+| Foreground | Eighteen paired vector hashes match; retain original styles, including nonlinear Home response. |
+| Dispersion | Neutral error dominates; no identified spectral direction or model added. |
+
+The shadow’s legacy material scores and all foreground scores tie. Exterior RMSE improves from 22.48595 / 22.88272 to 10.68138 / 10.08439. However, 95 original glass pixels per reference change through clear underlay; A completed-glass RMSE rises from 33.379344 to 33.379906.
+
+Pointwise exterior error worsens at 4,609 / 8,516 of 46,436 pixels despite the aggregate improvement. These regressions remain visible in the [verification](verification.json). The false all-glass-pixels-invariant assertion is [preserved](verification-invariance-failure.json); no native control was repeated after it failed.
+
+![Second reference and generated underlay shadow](b-shadow-comparison.png)
+
+The [spectral identification audit](identification.json) gives ideal color-only E reduction ceilings of 0.00119% / 0.05049%, holding arithmetic neutral residual fixed. This is not a bound on all spectral transport or proof of absent dispersion.
+
+## Verification and implications
+
+Four 32-pixel native material strips reproduce exactly: raw and source-blurred for both references. The independent full cached shadow calculation is pixel-exact. These are bounded controls, not a full independent optical replay or performance benchmark.
+
+The same Snell tracer, surface interface and source-support rules transfer to this control. Shape parameters preserve its footprint; material and foreground cannot be inferred from circular-play parameters. Visible fidelity does not transfer automatically.
+
+The next discriminating experiment needs a retained pre-foreground integrated image and the original nonlinear foreground chain. It must also score completed boundary pixels, separately from historical material-only metrics. No hidden environment or painted rim is justified by this pass.
+
+## Reproduction
+
+Use Git LFS, Node, zstd and the reconstruction Python dependencies. Restore declared inputs with:
+
+```sh
+git lfs pull
+node research/experiments/navigation-geometry-01/restore-inputs.cjs
+```
+
+The scripts retain completed-study and clock limits. Reproduction of a new experiment requires a new output directory and protocol; do not erase sealed failures or reset their budgets. Verification recovery specifically charges the already completed A controls and does not rerun them.

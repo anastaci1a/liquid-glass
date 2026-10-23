@@ -1,5 +1,5 @@
 {
-  "status": "active-outline-review",
+  "status": "complete-useful-negative-with-incomplete-branches",
   "started_at": "2026-10-23T15:14:03.297Z",
   "deadline": "2026-10-23T19:14:03.297Z",
   "stages": [
@@ -10,7 +10,8 @@
       "started_at": "2026-10-23T15:14:03.297Z",
       "deadline": "2026-10-23T16:34:03.297Z",
       "finished_at": "2026-10-23T15:19:30.432Z",
-      "outcome": "One raw paired transfer diagnostic; source proof and exact coverage pass. Missing frosting dominates, no further geometry fit justified in isolation."
+      "outcome": "One raw paired transfer diagnostic; source proof and exact coverage pass. Missing frosting dominates, no further geometry fit justified in isolation.",
+      "status": "complete"
     },
     {
       "name": "blurriness",
@@ -67,27 +68,75 @@
         "images": 0,
         "source_queries": 0
       },
-      "question": "Do existing source and surface records support a reflected-radiance outline proposal?"
+      "question": "Do existing source and surface records support a reflected-radiance outline proposal?",
+      "finished_at": "2026-10-23T15:31:57.510Z",
+      "outcome": "No observed front environment or complete secondary scene. Existing primary-only transmission cannot justify an outline RGB proposal. No new rays or images.",
+      "status": "complete"
     },
     {
       "name": "shadow",
       "cap_minutes": 15,
-      "latest_deadline": "2026-10-23T18:29:03.297Z"
+      "latest_deadline": "2026-10-23T18:29:03.297Z",
+      "started_at": "2026-10-23T15:31:57.510Z",
+      "deadline": "2026-10-23T15:46:57.510Z",
+      "budget": {
+        "rays": 0,
+        "source_queries": 0,
+        "cached_pair_trials": 3
+      },
+      "proposal": "Existing shared shadow law and shape/offset/width fixed; original opacity and half/quarter only. Stop at first strict qualifier or compositor precondition failure.",
+      "precondition": "Every nonlinear foreground-response box must have zero clear contribution; otherwise do not approximate its response.",
+      "finished_at": "2026-10-23T15:34:56.587Z",
+      "outcome": "First cached shared shadow prior improves both original exterior guards; body and foreground scores tie. No new rays/source queries. Pending final review.",
+      "status": "complete"
     },
     {
       "name": "foreground",
       "cap_minutes": 20,
-      "latest_deadline": "2026-10-23T18:49:03.297Z"
+      "latest_deadline": "2026-10-23T18:49:03.297Z",
+      "started_at": "2026-10-23T15:34:56.587Z",
+      "deadline": "2026-10-23T15:54:56.587Z",
+      "budget": {
+        "fits": 0,
+        "rays": 0,
+        "new_font_searches": 0
+      },
+      "question": "Verify retained vector identity and response semantics; do not fit away unresolved body errors.",
+      "finished_at": "2026-10-23T15:35:28.277Z",
+      "outcome": "All 18 paired vector layers match accepted hashes; retain original styles. No font/foreground fit.",
+      "status": "complete"
     },
     {
       "name": "dispersion-identification",
       "cap_minutes": 10,
-      "latest_deadline": "2026-10-23T18:59:03.297Z"
+      "latest_deadline": "2026-10-23T18:59:03.297Z",
+      "started_at": "2026-10-23T15:35:28.277Z",
+      "deadline": "2026-10-23T15:45:28.277Z",
+      "budget": {
+        "new_rays": 0,
+        "source_queries": 0,
+        "fits": 0
+      },
+      "question": "Is residual chroma separable from neutral error and colored source before any spectral model?",
+      "finished_at": "2026-10-23T15:37:00.626Z",
+      "outcome": "Residual error is overwhelmingly neutral; no identified spectral direction. Saved-array decomposition only, no fit.",
+      "status": "complete"
     },
     {
       "name": "review",
       "cap_minutes": 15,
-      "latest_deadline": "2026-10-23T19:14:03.297Z"
+      "latest_deadline": "2026-10-23T19:14:03.297Z",
+      "started_at": "2026-10-23T15:37:00.626Z",
+      "deadline": "2026-10-23T15:52:00.626Z",
+      "budget": {
+        "native_control_rays": 512,
+        "new_full_images": 0,
+        "fits": 0
+      },
+      "question": "Verify retained controls, shadow guard transfer, reporting and website. No new candidate.",
+      "finished_at": "2026-10-23T15:47:15.506Z",
+      "outcome": "512 bounded native control rays charged including the preserved failed invariance assertion. Exact material controls and full shadow replay pass; local regressions retained. 28 tests and website checks pass.",
+      "status": "complete"
     }
   ],
   "early_close": true,
@@ -116,5 +165,7 @@
   "limits": "Historical accepted image includes empirical map and material. Raw physical diagnostics are not same-nuisance fidelity improvements.",
   "administrative_notes": [
     "Initial protocol serialization failed before writing a clock or executing any study."
-  ]
+  ],
+  "finished_at": "2026-10-23T15:47:15.506Z",
+  "accepted_replacement": false
 }

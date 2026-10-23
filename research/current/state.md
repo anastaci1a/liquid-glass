@@ -1,6 +1,6 @@
 # Current state
 
-Status: the [focused clear-play study](../experiments/clear-play-02/README.md) is verified with no accepted replacement. The [navigation transfer study](../experiments/navigation-geometry-01/README.md) is active; no historical reconstruction has been replaced.
+Status: the [focused clear-play study](../experiments/clear-play-02/README.md) and [navigation transfer study](../experiments/navigation-geometry-01/README.md) are verified useful negatives with declared incomplete branches. No historical reconstruction has been replaced.
 
 ## Clear circular play control
 
@@ -32,6 +32,8 @@ Physical-model E is 49.12716 / 19.81851. Historical pass03 remains much better a
 
 ## Shared limits
 
-Surface-derived normals and tracing transfer. Geometry and softness differ by control family. Third-reference navigation validation is incomplete; device performance is not measured here.
+Navigation preserves the accepted footprint and passes paired required-source support. Incident blur improves body texture but regresses foreground guards. Color stopped before fitting because the retained foreground response is nonlinear. Shadow improves exterior aggregates but worsens A completed-glass/rim error; it is held.
+
+Surface-derived normals, tracing and finite support transfer. Navigation now has bounded paired native controls, but no transferred fidelity acceptance. Geometry and softness differ by control family; device performance is not measured here.
 
 Sources include modeled or temporally reconstructed content. A finite support proof does not establish hidden photographic truth, physical roughness or a uniquely identified Apple material.

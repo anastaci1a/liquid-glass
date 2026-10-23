@@ -1,0 +1,84 @@
+{
+  "status": "PASS_WITH_DECLARED_LIMITS",
+  "records": [
+    {
+      "reference": "a",
+      "native_material_controls_max_difference": [
+        0.0,
+        0.0
+      ],
+      "shadow_composite_exact": true,
+      "original_glass_pixels_exact": false,
+      "completed_image_advisory": {
+        "glass": {
+          "changed_pixels": 95,
+          "complete_RMSE_before": 33.37934370269014,
+          "complete_RMSE_after": 33.379906375876566,
+          "pointwise_worse": 38
+        },
+        "rim": {
+          "changed_pixels": 95,
+          "complete_RMSE_before": 40.411501921370125,
+          "complete_RMSE_after": 40.412989333871046,
+          "pointwise_worse": 38
+        },
+        "held": {
+          "changed_pixels": 5,
+          "complete_RMSE_before": 35.13205613948858,
+          "complete_RMSE_after": 35.131673229406616,
+          "pointwise_worse": 0
+        },
+        "interior": {
+          "changed_pixels": 0,
+          "complete_RMSE_before": 29.637100668996506,
+          "complete_RMSE_after": 29.637100668996506,
+          "pointwise_worse": 0
+        }
+      },
+      "exterior_pointwise_worse": 4609,
+      "exterior_pointwise_total": 46436,
+      "maximum_exterior_MSE_increase": 3691.960494089821
+    },
+    {
+      "reference": "b",
+      "native_material_controls_max_difference": [
+        0.0,
+        0.0
+      ],
+      "shadow_composite_exact": true,
+      "original_glass_pixels_exact": false,
+      "completed_image_advisory": {
+        "glass": {
+          "changed_pixels": 95,
+          "complete_RMSE_before": 29.524794308920253,
+          "complete_RMSE_after": 29.502503953516147,
+          "pointwise_worse": 41
+        },
+        "rim": {
+          "changed_pixels": 95,
+          "complete_RMSE_before": 25.079434734242888,
+          "complete_RMSE_after": 24.995342166622745,
+          "pointwise_worse": 41
+        },
+        "held": {
+          "changed_pixels": 5,
+          "complete_RMSE_before": 32.83518704601573,
+          "complete_RMSE_after": 32.83488377923538,
+          "pointwise_worse": 0
+        },
+        "interior": {
+          "changed_pixels": 0,
+          "complete_RMSE_before": 31.337306754829882,
+          "complete_RMSE_after": 31.337306754829882,
+          "pointwise_worse": 0
+        }
+      },
+      "exterior_pointwise_worse": 8516,
+      "exterior_pointwise_total": 46436,
+      "maximum_exterior_MSE_increase": 2158.4470342598497
+    }
+  ],
+  "native_control_rays": 512,
+  "new_full_images": 0,
+  "scope": "Small exact native material controls plus complete cached shadow replay. Not full independent optical retracing or physical environment validation."
+}

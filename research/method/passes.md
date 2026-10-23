@@ -60,6 +60,13 @@ Close a stage when its declared question is answered. Early completion is allowe
 
 A component improvement is not a full-model acceptance. An imperceptible aggregate reduction alone does not resolve visible feedback.
 
+## Cache and compositor checks
+
+- Retain coverage, premultiplied lens/clear contributions and the exact pre-foreground integrated image when later stages reuse samples.
+- Record array dtypes and sample phase. Compare like representations; preserve failed zero controls rather than relaxing tolerances silently.
+- Replay backing-dependent foreground responses through their original chain. A fixed-opacity approximation needs proof, not an assumption.
+- Material-only scores cannot certify underlay or partial-coverage changes. Report completed-image checks on the original masks separately; never rewrite historical scores.
+
 ## Recording and rotation
 
 Save concise work in progress, configurations, code revisions and evidence identities in Git. Commit each coherent subpass or checkpoint, push immediately and verify the remote tip.

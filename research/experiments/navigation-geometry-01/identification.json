@@ -1,0 +1,46 @@
+{
+  "status": "NO_IDENTIFIED_SPECTRAL_DIRECTION",
+  "references": [
+    {
+      "reference": "a",
+      "cohorts": {
+        "glass": {
+          "total_MSE": 1137.988194251073,
+          "neutral_MSE": 1137.957971006493,
+          "chroma_MSE": 0.03022324458003038,
+          "target_neutral_fraction": 1.0
+        },
+        "rim": {
+          "total_MSE": 1709.2837912741923,
+          "neutral_MSE": 1709.2500309376985,
+          "chroma_MSE": 0.03376033649402294,
+          "target_neutral_fraction": 1.0
+        }
+      },
+      "pure_chroma_ideal_E_reduction_percent": 0.0011946353895120332
+    },
+    {
+      "reference": "b",
+      "cohorts": {
+        "glass": {
+          "total_MSE": 879.6744422141938,
+          "neutral_MSE": 878.9574599743923,
+          "chroma_MSE": 0.7169822398015019,
+          "target_neutral_fraction": 0.9084415011037528
+        },
+        "rim": {
+          "total_MSE": 654.4564585547234,
+          "neutral_MSE": 653.3964456028298,
+          "chroma_MSE": 1.0600129518938461,
+          "target_neutral_fraction": 0.8171593285480133
+        }
+      },
+      "pure_chroma_ideal_E_reduction_percent": 0.05049189502178697
+    }
+  ],
+  "new_rays": 0,
+  "source_queries": 0,
+  "fits": 0,
+  "meaning": "Arithmetic RGB neutral/chroma decomposition, not perceptual luminance. Ideal ceiling holds only for color-only correction with the neutral residual fixed. Real spectral transport may also change neutral structure.",
+  "limits": "Colored backdrop, unresolved geometry, frosting and camera encoding confound spectral interpretation; no claim that dispersion is absent."
+}
