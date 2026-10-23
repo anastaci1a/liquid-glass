@@ -1,4 +1,4 @@
-const fs=require('fs'),path=require('path'),crypto=require('crypto');const root='/mnt/user/live/projects/localica/localica-feedback/dark-glass-lab/extended';const[id,sourceName='music-recovery',seconds='6.0']=process.argv.slice(2);if(!id)throw Error('Need study');const base=root+'/'+id,dest=base+'/paired';if(fs.existsSync(dest))throw Error('Do not replace frozen pair');fs.mkdirSync(dest);
+const fs=require('fs'),path=require('path'),crypto=require('crypto');const root='/evidence/dark-glass-lab/extended';const[id,sourceName='music-recovery',seconds='6.0']=process.argv.slice(2);if(!id)throw Error('Need study');const base=root+'/'+id,dest=base+'/paired';if(fs.existsSync(dest))throw Error('Do not replace frozen pair');fs.mkdirSync(dest);
 const config=JSON.parse(fs.readFileSync(base+'/case.json')),input=root+'/'+sourceName,recovery=JSON.parse(fs.readFileSync(input+'/recovery.json'));const requested=Number(seconds),decoded=recovery.timestamps.reduce((a,b)=>Math.abs(a-requested)<Math.abs(b-requested)?a:b);
 for(const name of ['a','b']){
  const c=structuredClone(config);c.id=id+'-'+name;const d=dest+'/'+name;fs.mkdirSync(d);

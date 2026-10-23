@@ -1,4 +1,4 @@
-const fs=require('fs'),p='/mnt/user/live/projects/localica/localica-docs-publish/docs/liquid-glass/experiments/browser.cjs';let s=fs.readFileSync(p,'utf8');
+const fs=require('fs'),p='/workspace/research-docs-publish/docs/liquid-glass/experiments/browser.cjs';let s=fs.readFileSync(p,'utf8');
 s=s.replace("shape:'pill',background:'grid',depth:1", "shape:'pill',background:'lines',ink:'light',depth:1");
 s=s.replace("const errors=[];page.on('pageerror',e=>errors.push(e.message));", "const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('crash',()=>errors.push('Renderer process crashed'));");
 s=s.replace("check('Phone layout fits; no-WebGL fallback retains working controls',{});",`const phoneInfo=await phone.evaluate(()=>glassLab.settle());assert.equal(phoneInfo.viewWidth,520);assert(phoneInfo.renderSize[0]*phoneInfo.renderSize[1]<=960*400);

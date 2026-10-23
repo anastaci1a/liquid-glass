@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path'),cp=require('child_process');
-const base='/mnt/user/live/projects/localica/localica-feedback/dark-glass-lab/extended',repo='/mnt/user/live/projects/localica/localica-docs-publish';
+const base='/evidence/dark-glass-lab/extended',repo='/workspace/research-docs-publish';
 const old=base+'/music-home-vector',privateRoot=base+'/music-home-vector-corrected/paired',inputs=base+'/home-corrected-inputs',pub=repo+'/docs/liquid-glass/experiments/reconstruction/studies/music-home-vector',archive=pub+'/paired-invalid-boundary';
 if(fs.existsSync(privateRoot)||fs.existsSync(archive))throw Error('Preserve existing correction');
 const candidate=JSON.parse(fs.readFileSync(old+'/inset-context-bridge.json')),best=candidate.best,prior=JSON.parse(fs.readFileSync(old+'/paired/accepted.json'));
@@ -19,4 +19,4 @@ const proof={status:'Verified baseline for a NEW corrected paired chain; old inv
 fs.renameSync(pub+'/paired',archive);fs.writeFileSync(archive+'/status.json',JSON.stringify({status:'Historical invalid single-to-paired boundary; not current acceptance',reason:'Initial paired A loss56.108072 exceeded retained single40.344658 with the same frozen reference protocol.',source_commit:'74fd684b97e2dcabdc40a837d5a635891d8a5950',media:'Original raw assets remain in that Git commit; current assets may be replaced by corrected captures.'},null,2)+'\n');
 fs.mkdirSync(pub+'/paired');for(const n of ['a','b'])fs.copyFileSync(privateRoot+'/'+n+'/case.json',pub+'/paired/'+n+'.json');
 fs.writeFileSync(pub+'/paired/accepted.json',JSON.stringify(normalized,null,2)+'\n');fs.writeFileSync(pub+'/paired/bridge.json',JSON.stringify(proof,null,2)+'\n');
-for(const p of [privateRoot,inputs,pub])cp.execFileSync('/mnt/user/live/projects/localica/fix-permissions.sh',[p]);console.log(JSON.stringify({privateRoot,inputs,normalizedLoss:normalized.scores.map(x=>x.loss)}));
+for(const p of [privateRoot,inputs,pub])cp.execFileSync('/workspace/fix-permissions.sh',[p]);console.log(JSON.stringify({privateRoot,inputs,normalizedLoss:normalized.scores.map(x=>x.loss)}));

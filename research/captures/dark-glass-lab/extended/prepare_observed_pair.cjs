@@ -1,6 +1,6 @@
 const fs=require('fs'),cp=require('child_process'),path=require('path');
 const id=process.argv[2];if(!/^[a-z0-9-]+$/.test(id||''))throw Error('Need study ID');
-const repo='/mnt/user/live/projects/localica/localica-docs-publish',root=repo+'/../localica-feedback/dark-glass-lab/extended',base=root+'/'+id,dest=base+'/paired',inputs=root+'/'+id+'-inputs';
+const repo='/workspace/research-docs-publish',root=repo+'/../evidence/dark-glass-lab/extended',base=root+'/'+id,dest=base+'/paired',inputs=root+'/'+id+'-inputs';
 if(fs.existsSync(dest)||fs.existsSync(inputs))throw Error('Preserve existing pair/input sets');
 const records=fs.readdirSync(base).filter(f=>/^pass-\d+$/.test(f)&&fs.existsSync(base+'/'+f+'/record.json'));
 if(records.length<20)throw Error('Need20 initial experiments first');

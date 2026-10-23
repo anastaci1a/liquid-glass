@@ -1,4 +1,4 @@
-const fs=require('fs');const root='/mnt/user/live/projects/localica/localica-docs-publish/docs/liquid-glass/';
+const fs=require('fs');const root='/workspace/research-docs-publish/docs/liquid-glass/';
 let h=fs.readFileSync(root+'lab.html','utf8').replace('Background refraction, surface geometry and motion.<br>An experimental renderer, not an exact model of Apple’s material.','Interactive demonstration of background refraction through a movable lens. Controls adjust its shape, optical properties and motion.');fs.writeFileSync(root+'lab.html',h);
 let s=fs.readFileSync(root+'lab.js','utf8');
 s=s.replace('let lastGeometry, wall = 0;','let lastGeometry, wall = 0, viewWidth = W;\n  const viewLeft = () => (W-viewWidth)/2;\n  const bounds = width => [viewLeft()+32+width/2, W-viewLeft()-32-width/2];');

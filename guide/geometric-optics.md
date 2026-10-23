@@ -215,9 +215,9 @@ Each experiment declares the visible defect, physical parameters, frozen nuisanc
 
 ## Circular play control: first geometric comparison
 
-Reference: [Apple's clear playback control,219 at3:10](https://developer.apple.com/videos/play/wwdc2025/219/?time=190), using the frozen registered photograph from3:00. Earlier notes questioned the abrupt shoulder and outer reversed strip. Ana later clarified that edge reversal belongs in this reference; the comparison must test its shape and extent rather than remove it. Exact local windows remain bottom-left[690,570,910,810], top-left[690,290,910,530], upper-right[1025,320,1245,560].
+Reference: [Apple's clear playback control,219 at3:10](https://developer.apple.com/videos/play/wwdc2025/219/?time=190), using the frozen registered photograph from3:00. Earlier notes questioned the abrupt shoulder and outer reversed strip. reviewer later clarified that edge reversal belongs in this reference; the comparison must test its shape and extent rather than remove it. Exact local windows remain bottom-left[690,570,910,810], top-left[690,290,910,530], upper-right[1025,320,1245,560].
 
-**Match reference-specific reversal. ** Ana explicitly superseded her earlier no-reversal note for this particular lens: edge reversal is wanted. Compare its onset, location, strength, extent and transition with the reference. The initial no-fold aim is historical, not an active acceptance constraint. A mapping fold, or its absence, is not by itself success or failure.
+**Match reference-specific reversal. ** reviewer explicitly superseded her earlier no-reversal note for this particular lens: edge reversal is wanted. Compare its onset, location, strength, extent and transition with the reference. The initial no-fold aim is historical, not an active acceptance constraint. A mapping fold, or its absence, is not by itself success or failure.
 
 **Useful negative result; no accepted fidelity improvement. ** Three explicit bevel surfaces were evaluated, with4×4 native pixel integration and no optical source/output blur. The reversed strip is absent, but visible dune crossings under-refract and their curves remain inaccurate. These tests do not rule out a different convex back, a curved front or a finite camera.
 
@@ -484,7 +484,7 @@ This establishes reusable software and paired material increments within those d
 
 The expanded Apple Music miniplayer is a deliberately different family: an elongated frosted surface with text, symbols and artwork. It uses the same surface-normal/Snell tracer and coverage/material components. Its harmonic height adapter changes the actual solid; it does not add an image warp.
 
-The frozen XY outline is an ordinary rounded rectangle: it does not yet reproduce Ana’s minute outward bow across the top/bottom. Longitudinal back-height curvature is a different quantity. Index1.5 and background distance2L are declared hypotheses, not identified Apple parameters. Its original2×2 sampling protocol stays fixed, separately from the circle's4×4.
+The frozen XY outline is an ordinary rounded rectangle: it does not yet reproduce the reviewer’s minute outward bow across the top/bottom. Longitudinal back-height curvature is a different quantity. Index1.5 and background distance2L are declared hypotheses, not identified Apple parameters. Its original2×2 sampling protocol stays fixed, separately from the circle's4×4.
 
 | Paired score E | Background A | Background B |
 | --- | ---: | ---: |
@@ -512,7 +512,7 @@ The physical geometry still misplaces/deforms background features, lacks the bri
 
 A shared artist-label opacity improves B but worsens A, so the original vector styles stay fixed. Exact source font paths do not establish the original UI weight or layout.
 
-Selected neutral text regions in B have coincident reference RGB channels; A already has strong source color differences. The saved-array audit does not identify a source-independent spectral term, so no dispersion fit is added. This is an identification limit, not proof of nondispersive glass. The circle's dispersion stage is separately skipped on Ana's explicit observation.
+Selected neutral text regions in B have coincident reference RGB channels; A already has strong source color differences. The saved-array audit does not identify a source-independent spectral term, so no dispersion fit is added. This is an identification limit, not proof of nondispersive glass. The circle's dispersion stage is separately skipped on the reviewer’s explicit observation.
 
 These paired checks establish shared implementation and material increments relative to the raw physical hypothesis. They do not establish a successful transferred optical model, complete reflected radiance, final visual parity or performance. [Parameters, source/guard scope and rejected outcomes](../reconstruction/studies/geometric-expanded-pipeline/summary.json)
 

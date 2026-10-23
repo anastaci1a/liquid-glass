@@ -13,4 +13,3 @@ Build a reusable, explainable Liquid Glass system. A control-specific imitation 
 
 The [interactive Lab](../lab/README.md) illustrates models. It is not the physical research engine or proof of Apple parity.
 
-[Repository provenance and retained history](provenance/README.md)

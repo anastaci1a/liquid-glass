@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path');
-const root='/mnt/user/live/projects/localica/localica-feedback/dark-glass-lab/extended/active-switch',out=root+'/paired';
+const root='/evidence/dark-glass-lab/extended/active-switch',out=root+'/paired';
 if(fs.existsSync(out))throw Error('Preserve frozen pair');fs.mkdirSync(out);
 for(const name of ['a','b']){
  const src=name==='a'?root:root+'/second-observation',dest=out+'/'+name;fs.mkdirSync(dest);

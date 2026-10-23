@@ -105,8 +105,8 @@
   "public_edits": false,
   "parameters": "accepted balanced widths candidate-native.json",
   "commands": [
-    "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps localica-dark-lab-check python3 /evidence/extended/helper-toolbar-work/navigation-round/navigation-final-1080/code/extended_media.py /evidence/extended/helper-toolbar-work/navigation-round/navigation-final-1080/a --scale 1 --width 1080 --frames 90 --fps 15 --travel 45 --gif-max-mb 10 --gif-full-size",
-    "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps localica-dark-lab-check python3 /evidence/extended/helper-toolbar-work/navigation-round/navigation-final-1080/code/extended_media.py /evidence/extended/helper-toolbar-work/navigation-round/navigation-final-1080/b --scale 1 --width 1080 --frames 90 --fps 15 --travel 45 --gif-max-mb 10 --gif-full-size"
+    "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps glass-research python3 /evidence/extended/helper-toolbar-work/navigation-round/navigation-final-1080/code/extended_media.py /evidence/extended/helper-toolbar-work/navigation-round/navigation-final-1080/a --scale 1 --width 1080 --frames 90 --fps 15 --travel 45 --gif-max-mb 10 --gif-full-size",
+    "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps glass-research python3 /evidence/extended/helper-toolbar-work/navigation-round/navigation-final-1080/code/extended_media.py /evidence/extended/helper-toolbar-work/navigation-round/navigation-final-1080/b --scale 1 --width 1080 --frames 90 --fps 15 --travel 45 --gif-max-mb 10 --gif-full-size"
   ],
   "motion": "motion_support.prepare caps observed/defined travel, report actual/limits; no invented incident imagery",
   "outputs": "Each case final/motion.mp4,motion.gif,verification.json,render.json; full decode+sha by approved public helper"

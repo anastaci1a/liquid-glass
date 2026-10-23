@@ -1,30 +1,32 @@
 # Liquid Glass research
 
-A reusable, explainable rendering system grounded in explicit geometry and visible reference evidence.
+Mathematical models of Apple's Liquid Glass: explicit surfaces, optical transport, material response and reference-based validation.
 
-[Online guide and reconstructions](https://anastaci1a.github.io/liquid-glass/) · [Publishing](guide/PUBLISHING.md)
+[Research website](https://anastaci1a.github.io/liquid-glass/) · [Reference comparisons](guide/reconstruction.md) · [Current findings](research/current/state.md)
 
-| Start here | Purpose |
+## Research questions
+
+- Which physical surfaces explain the observed distortion and edge reversal?
+- How do refraction, scattering, reflection and compositing contribute independently?
+- Which parameters transfer between control families and held-out references?
+- What can the available source imagery actually identify?
+
+A visually close image does not establish Apple's private implementation. Mathematical validity, perceptual fidelity, parameter identification and runtime performance are separate claims.
+
+## Explore
+
+| Area | Contents |
 | --- | --- |
-| [Current research](research/current/state.md) | Accepted components and unresolved defects. |
-| [Next hypothesis](research/current/next.md) | Source blur before refraction; awaiting research authorization. |
-| [Feedback](research/feedback/README.md) | Visible issues and their dispositions. |
-| [Documentation conduct](DOCUMENTATION.md) | Concise formats for all maintained records. |
-| [Field guide](guide/README.md) | Apple references and reconstruction comparisons. |
-| [Interactive Lab](lab/README.md) | Separate illustrative browser model. |
+| [Current research](research/current/state.md) | Accepted components, limitations and next questions. |
+| [Method](research/method/README.md) | Physical contracts, isolated stages and bounded experiments. |
+| [Observations](research/feedback/README.md) | Visible defects and their disposition. |
+| [Experiments](research/experiments/README.md) | Results, negative findings and historical reports. |
+| [Evidence](research/evidence/README.md) | Hash-verified arrays, reference excerpts and configurations. |
+| [Reconstruction engine](reconstruction/README.md) | Shared optics, geometry adapters and tests. |
+| [Illustrative Lab](lab/README.md) | Separate interactive demonstrations. |
+| [Documentation](DOCUMENTATION.md) | Recording and mathematical notation standards. |
 
-## Workspace
-
-| Directory | Role |
-| --- | --- |
-| `research/` | Current state, methods, experiments, feedback and evidence. |
-| `reconstruction/` | Shared optics, rendering, historical studies and tests. |
-| `guide/` | Reference guide and static publishing tools. |
-| `lab/` | Browser Lab; not the physical research engine. |
-| `agents/` | Ownership and collaboration rules. |
-| `research/provenance/` | Source history, file mappings and validation. |
-
-## Checks
+## Reproduce
 
 ~~~sh
 npm ci --ignore-scripts
@@ -34,6 +36,4 @@ python3 -m pip install -r reconstruction/requirements.txt
 python3 -m unittest discover -s reconstruction -p 'test_geometric*.py'
 ~~~
 
-See [evidence restoration](research/evidence/README.md) for Git LFS artifacts. Historical scripts remain evidence; current work must use the [geometry-first method](research/method/README.md).
-
-This project was extracted from [Localica](https://github.com/anastaci1a/localica) with research-specific history. Original IDs and file mappings remain in [migration records](research/provenance/README.md).
+See [evidence restoration](research/evidence/README.md) for large artifacts and [publishing](guide/PUBLISHING.md) for the website. Apple reference excerpts retain their attribution; source videos and font packages are not redistributed.

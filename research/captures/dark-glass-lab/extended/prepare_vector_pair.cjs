@@ -1,4 +1,4 @@
-const fs=require('fs'),path=require('path');const root='/mnt/user/live/projects/localica/localica-feedback/dark-glass-lab/extended';
+const fs=require('fs'),path=require('path');const root='/evidence/dark-glass-lab/extended';
 const id=process.argv[2]||'music-home-vector',base=path.join(root,id),old=path.join(root,id.replace('-vector',''));
 const dest=path.join(base,'paired');fs.mkdirSync(dest,{recursive:true});if(fs.existsSync(path.join(dest,'initial.json')))throw Error('Do not replace a frozen pair');
 const config=JSON.parse(fs.readFileSync(path.join(base,'case.json')));

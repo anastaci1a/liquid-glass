@@ -574,7 +574,7 @@ Original native transmission, RGB-split, reflection and material-context source 
 - A shared source-color rule reduces the material’s green cast on neutral backgrounds without desaturating refracted RGB detail.
 - Directional channel separation reproduces part of the inner fringe; upper-rim color and edge shape remain incomplete; there is no claim of a recovered Apple solid.
 
-[Current native recipe](../reconstruction/studies/active-switch/review-round/pass-09.json) · [Independent verification](../reconstruction/studies/active-switch/review-round/pass-09-verification.json) · [Finite source proof](../reconstruction/studies/active-switch/review-round/pass-09-source-proof.json) · [Historical recipe](../reconstruction/studies/active-switch/paired/accepted.json) · [Snapshot measurements](../reconstruction/switch-gallery-progress.json) · [Study PR #425](https://github.com/anastaci1a/localica/pull/425). [Native paired replay](../reconstruction/studies/active-switch/paired/verification.json) reproduces the 24 historical paired checkpoints under their original nonregression gate.
+[Current native recipe](../reconstruction/studies/active-switch/review-round/pass-09.json) · [Independent verification](../reconstruction/studies/active-switch/review-round/pass-09-verification.json) · [Finite source proof](../reconstruction/studies/active-switch/review-round/pass-09-source-proof.json) · [Historical recipe](../reconstruction/studies/active-switch/paired/accepted.json) · [Snapshot measurements](../reconstruction/switch-gallery-progress.json). [Native paired replay](../reconstruction/studies/active-switch/paired/verification.json) reproduces the 24 historical paired checkpoints under their original nonregression gate.
 - Final motion uses revision9: 1080px wide, 90frames at 15fps, full-size256-color GIFs below10MB (A6.01MB/B3.09MB). [Motion verification](../reconstruction/studies/active-switch/review-round/motion.json).
 - The moving input remains the declared modeled track; this is illustrative motion, not captured Apple animation or Android performance.
 
@@ -728,7 +728,7 @@ Rows re-score archived **8-bit outputs** using the same glass/rim masks. This di
 | Scroll-edge treatment | Additional effects beneath floating controls may belong to scrolling content rather than glass. |
 | Appearance/accessibility | Record settings when known. An unlabeled screenshot does not establish universal defaults. |
 
-Primary sources: [Materials HIG](https://developer.apple.com/design/human-interface-guidelines/materials), [variants/legibility](https://developer.apple.com/videos/play/wwdc2025/219/?time=828), [active controls](https://developer.apple.com/videos/play/wwdc2025/219/?time=250), [size adaptation](https://developer.apple.com/videos/play/wwdc2025/219/?time=360). [Localica material policy](specification.md#surface-roles) owns app implementation decisions.
+Primary sources: [Materials HIG](https://developer.apple.com/design/human-interface-guidelines/materials), [variants/legibility](https://developer.apple.com/videos/play/wwdc2025/219/?time=828), [active controls](https://developer.apple.com/videos/play/wwdc2025/219/?time=250), [size adaptation](https://developer.apple.com/videos/play/wwdc2025/219/?time=360). [Model roles](specification.md#surface-roles) keep geometry and material claims separate.
 
 ## Reproduce
 

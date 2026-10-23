@@ -1,23 +1,22 @@
 # Publishing
 
-The canonical site is [Liquid Glass research](https://anastaci1a.github.io/liquid-glass/). Its source is this repository.
+The [research website](https://anastaci1a.github.io/liquid-glass/) is generated from this repository.
+
+## Coverage
+
+| Material | Website treatment |
+| --- | --- |
+| Maintained Markdown | Rendered pages with local links. |
+| Historical research reports | Automatically generated evidence-library pages. |
+| Mathematical notation | Locally bundled KaTeX and accessible MathML. |
+| Arrays, recipes and media | Labeled downloads or reference comparisons. |
+| Illustrative Lab | Separate interactive page. |
+
+Documentation links stay on the website. Links to primary references, source code and the repository remain explicit external resources.
 
 ## Deployment
 
-Push to `main` runs `.github/workflows/pages.yml`: install locked dependencies, build, validate, upload the static artifact and deploy through GitHub Pages.
-
-| Output | Source |
-| --- | --- |
-| Field guide | `guide/*.md` |
-| Illustrative Lab | `lab/` |
-| Public reconstruction recipes | Tracked `reconstruction/` files |
-| Formula rendering | Locally bundled KaTeX and fonts |
-
-Only the explicit public publishing set enters `guide/site/`. Private recovery snapshots and indexed research artifacts are not exported into the website.
-
-## Compatibility
-
-The former Localica Pages HTML routes redirect to corresponding pages here, preserving fragments and query strings. Frozen compatibility assets remain available for old embeds; Localica no longer builds current research.
+Push to `main` runs `.github/workflows/pages.yml`: install locked dependencies, build, validate, upload and deploy through GitHub Pages.
 
 ## Local checks
 
@@ -28,4 +27,4 @@ npm test
 npm run test:guide
 ~~~
 
-Browser checks require Playwright Chromium and its operating-system libraries. Python geometry checks use the separately pinned `reconstruction/requirements.txt`.
+Browser checks require Playwright Chromium and its operating-system libraries. Python geometry checks use `reconstruction/requirements.txt`.

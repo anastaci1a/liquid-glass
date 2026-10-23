@@ -32,6 +32,6 @@ Use real wall-clock blocks and fixed trial budgets. Review after at most three s
 
 ## Evidence
 
-Ana's visible feedback is primary. Record exact crops, local and overall measurements, source confidence, failures and uncertainty. Preserve original reference/background guards.
+Visible reference agreement is primary. Record exact crops, local and overall measurements, source confidence, failures and uncertainty. Preserve original reference/background guards.
 
 Mathematical correctness, visual fidelity, shared-model transfer and performance are separate claims. Reuse valid unchanged evidence; avoid repeated final-media generation during unresolved research.

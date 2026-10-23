@@ -1,6 +1,6 @@
 # Current state
 
-Status: paused for research; repository migration and documentation work are authorized.
+Status: research experiments paused; documentation and verification continue.
 
 ## Clear circular play control
 
@@ -9,7 +9,7 @@ Status: paused for research; repository migration and documentation work are aut
 | Refraction | G05 physical hypothesis retained; later proposals yielded no accepted geometric improvement. |
 | Ordinary blur | Output sigma 1.7 native pixels accepted as limited softness progress. |
 | Color, outline, shadow, icon | No new accepted replacement. |
-| Dispersion | Skip for this control under Ana's instruction. |
+| Dispersion | Skip for this control under the reviewer’s instruction. |
 
 The corrected supplemental foreground guard improves 98.655754 → 98.166603. The stale 5.534182 result used reversed coordinates and is superseded.
 

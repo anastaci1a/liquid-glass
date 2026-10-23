@@ -1,7 +1,7 @@
 // Caption height is figure metadata, independent of optical rendering scale.
 const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path');
 const {prepareMedia}=require('../guide-media.cjs');
-const root=fs.mkdtempSync(path.join(os.tmpdir(),'localica-comparison-'));
+const root=fs.mkdtempSync(path.join(os.tmpdir(),'liquid-glass-comparison-'));
 try{
  fs.mkdirSync(path.join(root,'assets'));
  const file='assets/study-example-paired-a.png',header=Buffer.alloc(24);

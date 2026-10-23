@@ -5,7 +5,7 @@ import cv2,numpy as np
 from PIL import Image
 from raster_input import read_encoded_rgb
 ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--legacy',type=Path,nargs='*',default=[]);ap.add_argument('--high-bit',type=Path);args=ap.parse_args();records=[]
-with tempfile.TemporaryDirectory(prefix='localica-rgb-input-') as folder:
+with tempfile.TemporaryDirectory(prefix='liquid-glass-rgb-input-') as folder:
     folder=Path(folder)
     for bits in [8,16]:
         raw=(np.arange(17*13*3).reshape(17,13,3)*101+1).astype(np.uint8 if bits==8 else np.uint16)

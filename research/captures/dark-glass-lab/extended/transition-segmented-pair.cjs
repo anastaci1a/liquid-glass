@@ -1,6 +1,6 @@
 // Run only after the20 single passes and the first verified paired experiment.
 const fs=require('fs'),cp=require('child_process');
-const repo='/mnt/user/live/projects/localica/localica-docs-publish',root=repo+'/../localica-feedback/dark-glass-lab/extended',id='active-segmented-selector';
+const repo='/workspace/research-docs-publish',root=repo+'/../evidence/dark-glass-lab/extended',id='active-segmented-selector';
 const r=JSON.parse(fs.readFileSync(root+'/'+id+'/paired/pass-01.json'));
 const single=JSON.parse(fs.readFileSync(repo+'/docs/liquid-glass/experiments/reconstruction/studies/'+id+'/accepted.json'));
 if(r.previous.scores[0].loss>single.scores.loss+1e-8||r.previous.scores[0].glass.rmse>single.scores.glass.rmse+1e-8)throw Error('First paired baseline regresses the retained single');

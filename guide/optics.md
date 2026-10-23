@@ -13,7 +13,7 @@ The strongest defensible description is **a designed rounded optical surface wit
 | [Apple's material overview](https://developer.apple.com/videos/play/wwdc2025/219/?time=89) | Lensing, interaction-driven shape/light, and size-dependent material changes | Height field, refractive index, light rig, exact timing or shader equations |
 | [Materials HIG](https://developer.apple.com/design/human-interface-guidelines/materials) | Regular material scatters/adjusts luminosity; Clear prioritizes media; controls can become glass temporarily | One blur amount or tone curve across variants/settings |
 | [Custom-view API](https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views) | Capsule default, configurable outline, shared containers and stable morph identities | That a capsule outline implies a cylindrical three-dimensional lens |
-| [Measurements in #222](https://github.com/anastaci1a/localica/issues/222) | In selected scenes, registered interior landmarks and localized peripheral displacement; blur and illumination matter independently | Unique surface normals/thickness, tangential displacement from a single bar, or cross-scene visual parity |
+| [Reference measurements](reconstruction.md) | In selected scenes, registered interior landmarks and localized peripheral displacement; blur and illumination matter independently | Unique surface normals/thickness, tangential displacement from a single bar, or cross-scene visual parity |
 
 An apparently flat optical core need not look like a sanded face. Continuous curvature and soft directional reflection can suggest a rounded body while preserving central registration. Conversely, a large central zoom is not evidence of correct depth. Test image displacement separately from highlights and perceived shape.
 
@@ -72,7 +72,7 @@ For the cap comparison, height is a quintic shoulder ramp plus a gentle elliptic
 
 The index 1.33 is water-inspired and fixed for this experiment. The reflected environment is a synthetic light rig, not a reconstructed room. No caustics, dispersion, multiple scattering or full fluid simulation.
 
-Pressing reduces height and narrows the shoulder while expanding the footprint. Held shape approaches critically; released strain/depth can rebound with adjustable damping. These are Localica choices. A requested geometric response must be tested independently from Apple's interaction-light behavior.
+Pressing reduces height and narrows the shoulder while expanding the footprint. Held shape approaches critically; released strain/depth can rebound with adjustable damping. These are illustrative model choices. A requested geometric response must be tested independently from Apple's interaction-light behavior.
 
 ## Reading the lab honestly
 
@@ -80,7 +80,7 @@ Pressing reduces height and narrows the shoulder while expanding the footprint. 
 - Coordinate mode encodes X/Y in R/G so tests can decode the actual GPU lookup; exterior and center registration can be checked directly.
 - Compare circle, capsule and panel over vertical lines, grid, text and color. Watch the center, shoulder join, corners and diagonal axes through a morph, reversal and held press.
 - Blur must not conceal broken registration or seams.
-- The contrast mapping is Localica's monotonic endpoint compression from the [specification](specification.md#geometry-and-readability), not Apple's tone algorithm. Foreground ink stays crisp. Simulated reflection is separate from sampled transmission.
+- The contrast mapping is the research model’s monotonic endpoint compression from the [specification](specification.md#geometry-and-readability), not Apple's tone algorithm. Foreground ink stays crisp. Simulated reflection is separate from sampled transmission.
 - This small browser experiment does not validate Android adapters, modal hierarchy, merged selections, production accessibility or physical-phone frame rates.
 - The software renderer evaluates the same inverse maps at a lower resolution; sparse GPU/CPU agreement checks do not establish full pixel equivalence.
 - Before production changes: freeze model parameters on one suitable reference, evaluate independent scenes with exposed backgrounds, then compare native coordinate-coded renders on both Android adapters.
@@ -88,7 +88,7 @@ Pressing reduces height and narrows the shoulder while expanding the footprint. 
 
 ## Run and verify
 
-- Open the [live lab](https://anastaci1a.github.io/localica/liquid-glass/lab.html). [the condition below](#optics-equation-101) selects software refraction. The status line identifies the renderer and explains why software mode is active.
+- Open the [live lab](https://anastaci1a.github.io/liquid-glass/lab.html). [the condition below](#optics-equation-101) selects software refraction. The status line identifies the renderer and explains why software mode is active.
 
 <a id="optics-equation-101"></a>
 

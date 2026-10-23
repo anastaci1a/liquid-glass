@@ -58,9 +58,9 @@ Historical reports are preserved as indexed verbatim evidence. These summaries d
 | light-dark-round | 11 | `historical-records/*light-dark-round*` |
 | liquid-glass-icons | 1 | `historical-records/*liquid-glass-icons*` |
 | liquid-glass-research | 1 | `historical-records/*liquid-glass-research*` |
-| localica-agent-expanded-pipeline | 10 | `historical-records/*localica-agent-expanded-pipeline*` |
-| localica-agent-geometric-toolbar | 9 | `historical-records/*localica-agent-geometric-toolbar*` |
-| localica-agent-reconstruction | 9 | `historical-records/*localica-agent-reconstruction*` |
+| agent-expanded-pipeline | 10 | `historical-records/*agent-expanded-pipeline*` |
+| agent-geometric-toolbar | 9 | `historical-records/*agent-geometric-toolbar*` |
+| agent-reconstruction | 9 | `historical-records/*agent-reconstruction*` |
 | mail-final-site | 1 | `historical-records/*mail-final-site*` |
 | mail-toolbar-round | 2 | `historical-records/*mail-toolbar-round*` |
 | more-close-round | 12 | `historical-records/*more-close-round*` |

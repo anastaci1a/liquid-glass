@@ -33,7 +33,7 @@ Keep executable code, API identifiers and literal preset values in code formatti
 | Reference material | `guide/` | Separate observation from interpretation. |
 | Lab behavior | `lab/` | Keep illustrative behavior separate from physical claims. |
 | Historical evidence | `research/evidence/` | Preserve bytes and provenance; summarize elsewhere. |
-| Migration provenance | `research/provenance/` | Keep maps, exclusions and verification. |
+| record preparation provenance | `research/provenance/` | Keep maps, exclusions and verification. |
 
 ## Experiment format
 
@@ -53,6 +53,12 @@ Use the [observation](templates/observation.md) and [decision](templates/decisio
 - Keep raw numerical/media evidence in indexed Git LFS objects.
 - Exclude credentials, private session dumps, caches and downloaded software packages.
 - Preserve source hashes and exact historical evidence; never rewrite it to fit a conclusion.
+
+## Public research voice
+
+Write for researchers and readers, without personal attribution, private coordination narratives or unrelated application requirements. Describe evidence and decisions by their scientific role. Preserve legal attribution in license files.
+
+All maintained documentation and relevant historical reports must have rendered website pages. Documentation links must resolve locally on the site rather than to Markdown on a code host.
 
 ## Review
 

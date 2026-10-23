@@ -1,5 +1,5 @@
 const fs=require('fs'),cp=require('child_process');
-const repo='/mnt/user/live/projects/localica/localica-docs-publish',root=repo+'/../localica-feedback/dark-glass-lab/extended',replay=root+'/music-home-vector-corrected-replay-21';
+const repo='/workspace/research-docs-publish',root=repo+'/../evidence/dark-glass-lab/extended',replay=root+'/music-home-vector-corrected-replay-21';
 const read=p=>JSON.parse(fs.readFileSync(p)),write=(p,r)=>fs.writeFileSync(p,JSON.stringify(r,null,2)+'\n');
 for(const n of ['a','b']){const v=read(replay+'/'+n+'/final/verification.json');if(v.output_scale!==4||v.frames!==120||v.motion_support.actual_native_px<=0||!v.motion_support.exterior_context||v.gif.master_relative_scale!==1||v.files['motion.gif'].bytes>=10000000||!fs.existsSync(replay+'/'+n+'/final/gif-qa.json'))throw Error('Incomplete final media '+n);}
 cp.execFileSync('node',[root+'/paired_finalize.cjs','music-home-vector','music-home-vector-corrected-replay-21','--stage-only'],{cwd:repo,stdio:'inherit'});

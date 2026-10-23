@@ -1,4 +1,4 @@
-/* Localica optical experiment. See optics.md; no production/iOS parity implied. */
+/* Liquid Glass optical experiment. See optics.md; no production/iOS parity implied. */
 'use strict';
 (() => {
   const $ = id => document.getElementById(id), W = 960, H = 400;
@@ -277,7 +277,7 @@
     draw();const image=document.createElement('canvas');image.width=Math.round(viewWidth);image.height=400;const c=image.getContext('2d');
     c.drawImage(gpu&&!lost?canvas:fallback,0,0,image.width,400);
     if(!$('hideLabel').checked&&!$('source').checked){const g=geometry();c.textAlign='center';c.textBaseline='middle';c.fillStyle=$('ink').value==='light'?'white':'#182330';c.font='600 16px system-ui';c.fillText(expanded?'Expanded panel':'Drag lens',g.x-viewLeft(),g.y);}
-    image.toBlob(blob=>{if(!blob)return;const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='localica-glass-study.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);});
+    image.toBlob(blob=>{if(!blob)return;const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='liquid-glass-glass-study.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);});
   };
   media.addEventListener('change',e=>{$('reduce').checked=e.matches;wake();});
   function resize(){

@@ -1,6 +1,6 @@
 # Earlier feedback retained as research requirements
 
-Source: Ana's project feedback from 13–14 October 2026. App-specific bugs and unrelated personal context stay outside this research record.
+Source: the reviewer’s project feedback from 13–14 October 2026. App-specific bugs and unrelated personal context stay outside this research record.
 
 | ID | Visible concern | Research consequence |
 | --- | --- | --- |

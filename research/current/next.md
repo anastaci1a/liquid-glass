@@ -1,6 +1,6 @@
 # Pending next experiment
 
-Status: proposed; do not execute until Ana authorizes another pass.
+Status: proposed; do not execute until a new experiment is explicitly authorized.
 
 | Contract | Proposal |
 | --- | --- |
@@ -11,6 +11,6 @@ Status: proposed; do not execute until Ana authorizes another pass.
 | Forbid | Manual edge-radius changes, normal tweaks, displacement patches and target-colored repair. |
 | Required proof | Whole-body, original guard and full finite source-kernel support before RGB sampling. |
 | Inspect | Center texture, reversal band, bright rim and lower-left structure separately. |
-| Decision | Judge Ana's visible defect first; retain local regressions and source/PSF uncertainty. |
+| Decision | Judge the named visible defect first; retain local regressions and source/PSF uncertainty. |
 
-Declare actual budgets and checkpoint before execution. Migration is not authorization to run this experiment.
+Declare actual budgets and checkpoint before execution. record preparation is not authorization to run this experiment.

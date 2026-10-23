@@ -106,6 +106,6 @@
     "Preview uses native arrays resized to634 pixels per side with64 pixel caption; no higher sample count or optical rerender.",
     "Original source correction and vector correction count0; primary independently decides each subsequent pass."
   ],
-  "replay_command": "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps localica-dark-lab-check python3 /evidence/extended/helper-toolbar-work/flower-next-round/replay-candidate.py --baseline /evidence/extended/helper-toolbar-work/flower-next-round/neutral-playback-baseline --candidate /evidence/extended/helper-toolbar-work/flower-next-round/neutral-additive-round2 --output /evidence/extended/flower-next-primary-pass02 --code <separately-frozen-committed-public-code>",
+  "replay_command": "docker exec -e OPENBLAS_NUM_THREADS=1 -e PYTHONPATH=/tmp/optics-deps:/tmp/optics-fit-deps glass-research python3 /evidence/extended/helper-toolbar-work/flower-next-round/replay-candidate.py --baseline /evidence/extended/helper-toolbar-work/flower-next-round/neutral-playback-baseline --candidate /evidence/extended/helper-toolbar-work/flower-next-round/neutral-additive-round2 --output /evidence/extended/flower-next-primary-pass02 --code <separately-frozen-committed-public-code>",
   "replay_note": "Helper syntax parsed only, not executed. Current native candidate already saved. Primary may use own independent implementation instead; no repeated baseline needed."
 }

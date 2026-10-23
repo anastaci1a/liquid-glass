@@ -1,4 +1,4 @@
-const fs=require('fs'),r='/mnt/user/live/projects/localica/localica-docs-publish/docs/liquid-glass/';
+const fs=require('fs'),r='/workspace/research-docs-publish/docs/liquid-glass/';
 let s=fs.readFileSync(r+'lab.js','utf8');
 s=s.replace("const canvas = $('scene'), fallback = $('fallback'), foreground = $('foreground');","const canvas = $('scene'), fallback = $('fallback'), foreground = $('foreground');\n  const software = createSoftwareLens(fallback);\n  let rendererReason = ''; ");
 s=s.replace("if(new URLSearchParams(location.search).has('fallback'))return false;","if(new URLSearchParams(location.search).has('fallback')){rendererReason='Software rendering requested by the URL.';return false;}");

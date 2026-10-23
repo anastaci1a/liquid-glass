@@ -1,7 +1,7 @@
 from pathlib import Path
 import json,subprocess,hashlib
-repo=Path('/mnt/user/live/projects/localica/localica-docs-publish')
-root=repo.parent/'localica-feedback/dark-glass-lab/extended'
+repo=Path('/workspace/research-docs-publish')
+root=repo.parent/'evidence/dark-glass-lab/extended'
 replay=root/'music-home-vector-corrected-replay-21'
 for n in ['a','b']:
  v=json.loads((replay/n/'final/verification.json').read_text())

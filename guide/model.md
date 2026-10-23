@@ -2,7 +2,7 @@
 
 [Guide](README.md) · [Observed Apple evidence](optics.md) · [Lab](../lab/index.html) · [Executable reference](../lab/model.js)
 
-**Status:** mathematically specified Localica hypotheses, not recovered Apple formulas. These equations define a candidate for future rendering, not the current Android renderer. The small reference has no browser, GPU or framework dependency. The [portable fixtures](experiments/model-fixtures.json) provide boundary, core and corner coordinates/normals/derivatives for later backend comparisons.
+**Status:** illustrative mathematical hypotheses, not recovered Apple formulas. These equations are separate from the verified physical reconstruction engine. The small reference has no browser, GPU or framework dependency. The [portable fixtures](experiments/model-fixtures.json) provide boundary, core and corner coordinates/normals/derivatives for later backend comparisons.
 
 Use the same units and conventions when porting it; do not copy a shader's constants without its domains.
 
