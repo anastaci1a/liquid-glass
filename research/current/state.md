@@ -56,7 +56,9 @@ Source blur 6.75 native pixels and a common neutral response improve both refere
 
 ## Shared limits
 
-Navigation preserves its footprint and conditional paired source support. Its nonlinear foreground chain is retained exactly. Neutral tone remains held for the B boundary failure. The earlier shadow improves exterior aggregates but worsens A completed-glass/rim error; it remains rejected.
+Navigation preserves its footprint and conditional paired source support. Its nonlinear foreground chain is retained exactly. Neutral tone remains held for the B boundary failure. The earlier shadow negative uses raw H1; it is not a verdict on the selected incident-blurred body. Current shadow/glow evaluation remains incomplete.
+
+Navigation's historical chroma-only calculation also uses raw H1. Its numerical ceiling does not transfer to the filtered residual or bound coupled spectral refraction. Dispersion remains unidentified; front-environment radiance and complete reflected paths remain unavailable.
 
 Surface-derived normals, tracing and finite support transfer. Navigation now has bounded paired native controls, but no transferred fidelity acceptance. Geometry and softness differ by control family; device performance is not measured here.
 

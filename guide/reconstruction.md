@@ -550,7 +550,9 @@ References: the same Apple Music clip, frames at 0 and 6.033 seconds. The origin
 
 ![Navigation B and primary geometric baseline](assets/geometric-navigation-primary-b.png)
 
-The source-blur variant improves body texture but fails foreground guards. Exact cached replay now preserves the nonlinear foreground chain. The shadow improves exterior aggregates but worsens A completed glass/rim error. Checkerboard marks unavailable unscored exterior.
+The source-blur variant improves body texture but fails foreground guards. Exact cached replay now preserves the nonlinear foreground chain. A historical raw-H1 shadow trial improves exterior aggregates but worsens A completed glass/rim error. It is not a filtered-baseline verdict. Checkerboard marks unavailable unscored exterior.
+
+Outline radiance and dispersion remain unresolved. Historical raw-body chroma diagnostics do not establish current filtered-body ceilings or physically coupled spectral bounds.
 
 [Latest complete study and alternatives](../research/experiments/navigation-geometry-01/README.md) · [Selected baseline](../research/experiments/navigation-geometry-01/raw-result.json) · [Surface and certificate](../research/experiments/navigation-geometry-01/surface.md).
 

@@ -175,10 +175,19 @@
     }
   },
   "remaining_stage_review": {
-    "status": "AUTHORIZED_AFTER_COLOUR_SEAL",
+    "status": "PRIMARY_COMPATIBILITY_REVIEW_AGREES_SEAL_PENDING",
     "maximum_minutes": 15,
     "scope": "Existing evidence and compatibility checks for outline, shadow, foreground, dispersion and complete stage ledger. No new scientific evaluations.",
     "unsupported": "Mark incomplete rather than absent or satisfactory.",
-    "selection": "H1 unit tone with current incident blur; held tone candidate not used as baseline."
+    "selection": "H1 unit tone with current incident blur; held tone candidate not used as baseline.",
+    "actual_start": "2026-10-23T23:21:54.235Z",
+    "deadline": "2026-10-23T23:36:54.235Z",
+    "compatibility": {
+      "shadow": "Historical script loads raw-H1 material/complete arrays. Its numerical negative is preserved, not transferred to selected incident-blurred H1.",
+      "dispersion": "Historical identification script loads raw-H1 material. Arithmetic chroma-only ceiling is not a filtered-baseline or physically coupled spectral bound.",
+      "outline": "Missing front environment remains applicable; no reflected-path or residual-power ledger exists for this Navigation state.",
+      "foreground": "Exact current nonlinear compositor identity transfers; authenticity, pose and observed fidelity remain separate limits."
+    },
+    "next": "Seal and publish existing evidence only; no new scientific evaluation."
   }
 }
