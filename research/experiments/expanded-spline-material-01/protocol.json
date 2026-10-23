@@ -1,0 +1,31 @@
+{
+  "started_at": "2026-10-23T21:36:56.341Z",
+  "deadline": "2026-10-23T21:41:00.000Z",
+  "visible_question": "Can a small shared neutral response preserve the improved spline-body correspondence while satisfying every original H1 foreground guard?",
+  "geometry": "Frozen retained spline back and source paths; original H1 remains the numerical comparison, no guard reset.",
+  "parameters": {
+    "gain_delta": [
+      -0.01,
+      0.01
+    ],
+    "bias_delta": [
+      -0.01,
+      0.01
+    ],
+    "original_gain": 0.701980827595718,
+    "original_bias": 0.22423217000784113
+  },
+  "budgets": {
+    "rays": 0,
+    "height_calls": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "fits": 1,
+    "quadratic_model_evaluations": 128,
+    "analytic_compositor_controls": 4,
+    "native_candidate_pairs": 2
+  },
+  "proposal": "One convex common two-variable quadratic proposal, original TRAIN objective and all original squared-MSE guard forms. Held/foreground are constraints, not free coefficients. Model reserve0.01level-squared for changing foreground cohorts,zero reserve for exactly unchanged cohorts.",
+  "native": "Only a strictly model-feasible evaluated point may run, at full and one fixed half if needed. Actual original float32 guards,SSIM and float64 residual guards decide. No additional fit or line search.",
+  "stop": "First supported strict pair, no feasible proposal, two predetermined steps, failure or deadline. No new geometry,source/masks/foreground edit,precision waiver or further compensation."
+}
