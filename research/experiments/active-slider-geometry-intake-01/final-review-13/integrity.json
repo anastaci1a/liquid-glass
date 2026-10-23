@@ -1,0 +1,153 @@
+{
+  "utc": "2026-10-23T21:56:36.846Z",
+  "records": [
+    {
+      "manifest": "baseline-artifacts.json",
+      "files": 21,
+      "all_exact": true
+    },
+    {
+      "manifest": "correspondence-02/manifest.json",
+      "files": 9,
+      "all_exact": true
+    },
+    {
+      "manifest": "dispersion-12/manifest.json",
+      "files": 7,
+      "all_exact": true
+    },
+    {
+      "manifest": "distance-03/manifest.json",
+      "files": 34,
+      "all_exact": true
+    },
+    {
+      "manifest": "foreground-11/manifest.json",
+      "files": 3,
+      "all_exact": true
+    },
+    {
+      "manifest": "incident-blur-07/manifest.json",
+      "files": 36,
+      "all_exact": true
+    },
+    {
+      "manifest": "neutral-colour-08/manifest.json",
+      "files": 36,
+      "all_exact": true
+    },
+    {
+      "manifest": "outline-o1-09/manifest.json",
+      "files": 17,
+      "all_exact": true
+    },
+    {
+      "manifest": "path-analysis-04/manifest.json",
+      "files": 8,
+      "all_exact": true
+    },
+    {
+      "manifest": "raised-back-05/manifest.json",
+      "files": 13,
+      "all_exact": true
+    },
+    {
+      "manifest": "raised-native-06/manifest.json",
+      "files": 38,
+      "all_exact": true
+    },
+    {
+      "manifest": "shadow-10/manifest.json",
+      "files": 25,
+      "all_exact": true
+    }
+  ],
+  "dependencies": [
+    {
+      "file": "reconstruction/geometric_optics.py",
+      "sha256": "a48224f454b77d060601016329dee5c8bb48f87c418d2ba54d5a693c05841966",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/geometric_render.py",
+      "sha256": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/harmonic_crowned_back.py",
+      "sha256": "95784ee9d92271ae88b5407bc3c7c5c09666a6c0b1396cfc4ccf4e7b1ad176a3",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/crowned_bevel.py",
+      "sha256": "4065301f1025545bee500a48c5d23177e1d5fcd7345b2a83d4806e11649f33de",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/crowned_footprint.py",
+      "sha256": "2488c958d0749b707d341945ee354726eddc3d66c4c3388b619edb7d9d4532b8",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/extended_fit.py",
+      "sha256": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f",
+      "exact": true
+    }
+  ],
+  "inputs": [
+    {
+      "case": "a",
+      "file": "source.png",
+      "sha256": "bbd52a46c6c0e5008d4d9e746c9ea5c17acad781e1c2391607b8b7b5f6c64002",
+      "exact": true
+    },
+    {
+      "case": "a",
+      "file": "target.png",
+      "sha256": "76a17ebdea7a2cc8f6187faa461bfecc164e78e371cf8b234d47cd0b1cc1c780",
+      "exact": true
+    },
+    {
+      "case": "a",
+      "file": "known.png",
+      "sha256": "a2f32becc8c9f3b819da2f3a7c67eff1606bdce63ed1f5704a4883ad08dfd8e3",
+      "exact": true
+    },
+    {
+      "case": "a",
+      "file": "observed.png",
+      "sha256": "43ef8e3a5ca09a655bfcf1f86d56ff7c6c933bedf693ab63d8ba137b38264c50",
+      "exact": true
+    },
+    {
+      "case": "b",
+      "file": "source.png",
+      "sha256": "8d4176c394424213d60d7fdbc9d3236c03a726407731f93e87bd0cfccb1e892b",
+      "exact": true
+    },
+    {
+      "case": "b",
+      "file": "target.png",
+      "sha256": "3fa84e404edc62aeadd9934619252b337a7767bccf5ffc211f251f1454200599",
+      "exact": true
+    },
+    {
+      "case": "b",
+      "file": "known.png",
+      "sha256": "a2f32becc8c9f3b819da2f3a7c67eff1606bdce63ed1f5704a4883ad08dfd8e3",
+      "exact": true
+    },
+    {
+      "case": "b",
+      "file": "observed.png",
+      "sha256": "17ee433888006f32b7b9cd1a1fb9bf1c70a8b5f4f225a85b9802652fe32ed363",
+      "exact": true
+    }
+  ],
+  "primary_colour": {
+    "source": "/mnt/user/live/projects/liquid-glass/liquid-glass/research/experiments/slider-peer-colour-01/verification.json",
+    "sha256": "4cc0258f437e0c81f8ad6512f2b1416bddfcfceff5f2b0d45fe6fa3a49c8ecbd",
+    "status": "PASS_ISOLATED_ENCODED_TONE_COMPONENT"
+  },
+  "new_science": 0
+}

@@ -1,0 +1,22 @@
+{
+  "status": "DECLARED_BEFORE_ANALYSIS",
+  "start_utc": "2026-10-23T20:10:21Z",
+  "deadline_utc": "2026-10-23T20:20:21Z",
+  "refraction_outer_deadline_utc": "2026-10-23T21:10:40.688Z",
+  "visible_defect": "The modeled track fills the lens, while Apple shows broad white top/bottom returns and a distinct inner track boundary.",
+  "fixed_sections": {
+    "horizontal_y_offsets_over_original_L": [-0.6, 0, 0.6],
+    "vertical_x_offsets_over_corrected_half_x": [-0.6, 0, 0.6],
+    "origin": "Frozen corrected center, rounded once to the nearest original integer pixel; original native subrays retained.",
+    "extent": "Full frozen crop; inside and original glass mask reported separately."
+  },
+  "measurements": [
+    "Source XY bounds and displacement signs from stored coordinates; no new geometry evaluations.",
+    "Modeled track versus background region, with mixed finite-kernel footprints marked separately. Classify frozen source pixels by nearest RGB anchor (frozen source at original case center versus source pixel 0,0); this labels the existing modeled source only.",
+    "Target luma maxima and absolute first-difference landmarks on fixed upper/lower or left/right half-sections. Bright ridges are image landmarks, not alpha or known incident correspondence.",
+    "Cached complete RGB luma versus target on the same integer sections, with no source resampling or new raster.",
+    "Check whether exit positions and directions were retained before making any quantitative shorter-distance prediction."
+  ],
+  "limits": {"new_rays":0,"new_RGB_sampling_queries":0,"new_images":0,"fits":0,"parameter_trials":0},
+  "stop": "Stop at the first completed concise evidence report or the ten-minute deadline; preserve unsupported inference and cached-retention limits. No calibration or next-distance execution."
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "case": "a",
+    "scores": {
+      "D2": {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 65.8504409790039
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 73.65817260742188
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 66.10971069335938
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 62.32781219482422
+        },
+        "ssim": 0.864096462726593,
+        "loss": 4663.05432154992,
+        "E": 68.28656032888111,
+        "exterior": {
+          "pixels": 152521,
+          "rmse": 12.615555763244629
+        }
+      },
+      "D0.5": {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 53.91899871826172
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 49.84636306762695
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 55.955772399902344
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 55.519710540771484
+        },
+        "ssim": 0.8420751690864563,
+        "loss": 2780.4788692668417,
+        "E": 52.73024624697709,
+        "exterior": {
+          "pixels": 152521,
+          "rmse": 10.64617919921875
+        }
+      },
+      "Raised D2": {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 63.32901382446289
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 73.32254791259766
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 63.67422103881836
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 58.68959426879883
+        },
+        "ssim": 0.8612099885940552,
+        "loss": 4420.253604103862,
+        "E": 66.48498781006026,
+        "exterior": {
+          "pixels": 152521,
+          "rmse": 12.615555763244629
+        }
+      }
+    },
+    "raised_vs_D2": {
+      "glass": true,
+      "rim": true,
+      "held": true,
+      "interior": true,
+      "exterior": true,
+      "E": true,
+      "ssim": false
+    },
+    "raised_vs_D05": {
+      "glass": false,
+      "rim": false,
+      "held": false,
+      "interior": false,
+      "exterior": false,
+      "E": false,
+      "ssim": true
+    }
+  },
+  {
+    "case": "b",
+    "scores": {
+      "D2": {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 36.18732833862305
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 36.279640197753906
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 36.53278350830078
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 36.14923095703125
+        },
+        "ssim": 0.9351598024368286,
+        "loss": 1311.5296004646616,
+        "E": 36.2150466030994,
+        "exterior": {
+          "pixels": 132594,
+          "rmse": 7.679680824279785
+        }
+      },
+      "D0.5": {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 30.856910705566406
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 25.797298431396484
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 30.379112243652344
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 32.71439743041992
+        },
+        "ssim": 0.9225226044654846,
+        "loss": 866.1544387114684,
+        "E": 29.430501842671124,
+        "exterior": {
+          "pixels": 132594,
+          "rmse": 7.00848913192749
+        }
+      },
+      "Raised D2": {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 35.72675323486328
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 37.56234359741211
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 35.911434173583984
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 34.94256591796875
+        },
+        "ssim": 0.9342412948608398,
+        "loss": 1316.7595246523836,
+        "E": 36.28718127179877,
+        "exterior": {
+          "pixels": 132594,
+          "rmse": 7.679680824279785
+        }
+      }
+    },
+    "raised_vs_D2": {
+      "glass": true,
+      "rim": false,
+      "held": true,
+      "interior": true,
+      "exterior": true,
+      "E": false,
+      "ssim": false
+    },
+    "raised_vs_D05": {
+      "glass": false,
+      "rim": false,
+      "held": false,
+      "interior": false,
+      "exterior": false,
+      "E": false,
+      "ssim": true
+    }
+  }
+]

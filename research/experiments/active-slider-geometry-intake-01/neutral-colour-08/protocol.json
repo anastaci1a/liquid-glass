@@ -1,0 +1,62 @@
+{
+  "start_utc": "2026-10-23T21:08:13.097Z",
+  "deadline_utc": "2026-10-23T21:28:13.097Z",
+  "original_latest_deadline_utc": "2026-10-23T21:50:40.688Z",
+  "total_latest_deadline_utc": "2026-10-23T23:50:40.688Z",
+  "stable_state": "H1 D2 with original incident widths4.25/4.00; wide blur unadopted and historical pass09 separate.",
+  "visible_question": "Can a single shared encoded neutral affine tone improve the dark track without whitening away protected center color or pretending to recover absent returns?",
+  "family": "C_inside=clip(g*S+b,0,1); same g,b for allRGB and both refs; clear samples unchanged; response before nativeAA2.",
+  "bounds": {
+    "gain": [
+      0.25,
+      1.25
+    ],
+    "bias": [
+      -0.1,
+      0.75
+    ],
+    "white_response_max": 1
+  },
+  "fit": {
+    "method": "One deterministic two-variable convex quadratic active-set solve, baseline start(1,0). Evaluate feasible stationary point, three constrained polygon edges and vertices, no multistart or sweep.",
+    "training": "Original glass valid AND NOT original held, allRGB, per-reference mean squared error with equal reference weights.",
+    "quadratic_evaluation_cap": 128,
+    "starts": 1,
+    "no_held_objective": true
+  },
+  "factors": [
+    1,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "supplementary_visible_guard": "Each original fixed center rectangle RGB RMSE must not increase. Original masks and metrics remain unchanged; all four historical crops reported.",
+  "zero_control": "Two unit-response cached-sample composites must be bit-exact to H1. These are controls, not new optical/baseline renders or proposed images.",
+  "budgets": {
+    "new_rays": 0,
+    "new_graph_evaluations": 0,
+    "new_source_queries": 0,
+    "new_filters": 0,
+    "new_baseline_renders": 0,
+    "max_candidate_paired_evaluations": 4,
+    "max_candidate_composite_observations": 8,
+    "max_quadratic_evaluations": 128
+  },
+  "source_limits": "Modeled hidden input, observed confidence zero and transition-state ambiguity.",
+  "stop": "First strict numeric and visibly convincing candidate, four predetermined factors, invalid parameter feasibility or deadline. No new fit before primary review.",
+  "frozen": "H1 geometry/source/pose/AA2/incident seeds/masks, zero lighting/shadow/dispersion, original foreground.",
+  "center_rectangles": {
+    "a": [
+      289,
+      206,
+      536,
+      384
+    ],
+    "b": [
+      275,
+      200,
+      510,
+      370
+    ]
+  }
+}

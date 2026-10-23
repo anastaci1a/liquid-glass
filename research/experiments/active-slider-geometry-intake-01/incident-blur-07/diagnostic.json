@@ -1,0 +1,756 @@
+{
+  "advisory_only": true,
+  "limits": "Fixed native rectangles and sections. Adjacent differences combine boundaries, material and illumination; they do not identify a geometry or physical PSF. No new RGB remapping or rays.",
+  "observations": [
+    {
+      "case": "a",
+      "crops": {
+        "upper-left": {
+          "bounds_pixels": [
+            99,
+            35,
+            330,
+            183
+          ],
+          "width_per_image": 462,
+          "values": {
+            "Apple": {
+              "luma_adjacent_difference_rms": 4.039975290891772
+            },
+            "H1 seed": {
+              "luma_adjacent_difference_rms": 3.386762696556833,
+              "rgb_rmse": 45.606393818598626,
+              "luma_rmse": 30.412129410094288,
+              "chroma_rmse": 20.658739836087936,
+              "signed_RGB": [
+                -25.665460325312033,
+                -8.466555227436725,
+                -25.50808453927218
+              ],
+              "max_change_from_seed": 0.0
+            },
+            "0.75": {
+              "luma_adjacent_difference_rms": 3.3867632700906807,
+              "rgb_rmse": 45.607674308458634,
+              "luma_rmse": 30.412985339298828,
+              "chroma_rmse": 20.659286376182095,
+              "signed_RGB": [
+                -25.66632628292839,
+                -8.466898597498812,
+                -25.50884777813456
+              ],
+              "max_change_from_seed": 0.0680619478225708
+            },
+            "1.25": {
+              "luma_adjacent_difference_rms": 3.3867661387602683,
+              "rgb_rmse": 45.57374628098429,
+              "luma_rmse": 30.390456147453495,
+              "chroma_rmse": 20.64460232127361,
+              "signed_RGB": [
+                -25.642427856779257,
+                -8.457598458492186,
+                -25.487207115074828
+              ],
+              "max_change_from_seed": 0.7449043989181519
+            }
+          }
+        },
+        "lower-left": {
+          "bounds_pixels": [
+            99,
+            378,
+            346,
+            513
+          ],
+          "width_per_image": 494,
+          "values": {
+            "Apple": {
+              "luma_adjacent_difference_rms": 3.6133584145204503
+            },
+            "H1 seed": {
+              "luma_adjacent_difference_rms": 3.5488048256508806,
+              "rgb_rmse": 58.46301298878525,
+              "luma_rmse": 43.359414418591605,
+              "chroma_rmse": 22.402175872184834,
+              "signed_RGB": [
+                -46.39910942923899,
+                -21.796941187164027,
+                -39.814158631749265
+              ],
+              "max_change_from_seed": 0.0
+            },
+            "0.75": {
+              "luma_adjacent_difference_rms": 3.548805519043991,
+              "rgb_rmse": 58.4630119014595,
+              "luma_rmse": 43.3594228927118,
+              "chroma_rmse": 22.402168701064802,
+              "signed_RGB": [
+                -46.399119996649155,
+                -21.796951759816075,
+                -39.814137511059236
+              ],
+              "max_change_from_seed": 3.039836883544922e-05
+            },
+            "1.25": {
+              "luma_adjacent_difference_rms": 3.548805465268448,
+              "rgb_rmse": 58.46301506667997,
+              "luma_rmse": 43.35942215554765,
+              "chroma_rmse": 22.402170365505352,
+              "signed_RGB": [
+                -46.39910942923899,
+                -21.796951759816075,
+                -39.814158631749265
+              ],
+              "max_change_from_seed": 3.039836883544922e-05
+            }
+          }
+        },
+        "right-rim": {
+          "bounds_pixels": [
+            594,
+            165,
+            751,
+            413
+          ],
+          "width_per_image": 314,
+          "values": {
+            "Apple": {
+              "luma_adjacent_difference_rms": 4.71741607837441
+            },
+            "H1 seed": {
+              "luma_adjacent_difference_rms": 3.2175373701693224,
+              "rgb_rmse": 90.95482297249863,
+              "luma_rmse": 65.54579114621048,
+              "chroma_rmse": 35.10673755116337,
+              "signed_RGB": [
+                -91.9382845629064,
+                -42.47119823135076,
+                -88.05042013259444
+              ],
+              "max_change_from_seed": 0.0
+            },
+            "0.75": {
+              "luma_adjacent_difference_rms": 3.2251894351475547,
+              "rgb_rmse": 91.14101339891133,
+              "luma_rmse": 65.68819234484452,
+              "chroma_rmse": 35.159422015270685,
+              "signed_RGB": [
+                -92.24456428293654,
+                -42.590046778722346,
+                -88.32764047744162
+              ],
+              "max_change_from_seed": 8.107488632202148
+            },
+            "1.25": {
+              "luma_adjacent_difference_rms": 3.210381862298581,
+              "rgb_rmse": 90.69593367436437,
+              "luma_rmse": 65.35549219812013,
+              "chroma_rmse": 35.02149756744236,
+              "signed_RGB": [
+                -91.54798590387817,
+                -42.31977728096941,
+                -87.69712028302634
+              ],
+              "max_change_from_seed": 6.381256103515625
+            }
+          }
+        },
+        "center": {
+          "bounds_pixels": [
+            289,
+            206,
+            536,
+            384
+          ],
+          "width_per_image": 494,
+          "values": {
+            "Apple": {
+              "luma_adjacent_difference_rms": 0.2374912795622805
+            },
+            "H1 seed": {
+              "luma_adjacent_difference_rms": 0.0,
+              "rgb_rmse": 21.289441673222196,
+              "luma_rmse": 17.538457361591266,
+              "chroma_rmse": 5.469592269659526,
+              "signed_RGB": [
+                -24.766379676171887,
+                -14.743972579013638,
+                -22.816055080492404
+              ],
+              "max_change_from_seed": 0.0
+            },
+            "0.75": {
+              "luma_adjacent_difference_rms": 0.0,
+              "rgb_rmse": 21.28944021639618,
+              "luma_rmse": 17.538469213697198,
+              "chroma_rmse": 5.469579376242567,
+              "signed_RGB": [
+                -24.766394875356305,
+                -14.743987778198056,
+                -22.81602468212357
+              ],
+              "max_change_from_seed": 3.039836883544922e-05
+            },
+            "1.25": {
+              "luma_adjacent_difference_rms": 0.0,
+              "rgb_rmse": 21.28944518194824,
+              "luma_rmse": 17.538468181895276,
+              "chroma_rmse": 5.469583161959876,
+              "signed_RGB": [
+                -24.766379676171887,
+                -14.743987778198056,
+                -22.816055080492404
+              ],
+              "max_change_from_seed": 1.519918441772461e-05
+            }
+          }
+        }
+      },
+      "sections": [
+        {
+          "axis": "horizontal",
+          "offset": -0.6,
+          "fixed_integer_coordinate": 408,
+          "original_glass_pixels": 565,
+          "values": {
+            "Apple": {
+              "mean_luma": 225.38744778761063,
+              "max_luma": 237.0,
+              "adjacent_difference_rms": 2.4492685298279717
+            },
+            "H1 seed": {
+              "mean_luma": 172.575402874482,
+              "max_luma": 172.63778694981335,
+              "adjacent_difference_rms": 0.0009984204764394383
+            },
+            "0.75": {
+              "mean_luma": 172.57342988769466,
+              "max_luma": 172.57420039424298,
+              "adjacent_difference_rms": 1.6425772466633376e-05
+            },
+            "1.25": {
+              "mean_luma": 172.59151056099546,
+              "max_luma": 173.0340221031904,
+              "adjacent_difference_rms": 0.006400835649699624
+            }
+          }
+        },
+        {
+          "axis": "horizontal",
+          "offset": 0,
+          "fixed_integer_coordinate": 538,
+          "original_glass_pixels": 649,
+          "values": {
+            "Apple": {
+              "mean_luma": 200.5743466872111,
+              "max_luma": 252.0786,
+              "adjacent_difference_rms": 4.8701848629894275
+            },
+            "H1 seed": {
+              "mean_luma": 172.89568428630545,
+              "max_luma": 206.52189550423623,
+              "adjacent_difference_rms": 0.37567714315952977
+            },
+            "0.75": {
+              "mean_luma": 172.82831581378954,
+              "max_luma": 206.8760830228329,
+              "adjacent_difference_rms": 0.43463909795835276
+            },
+            "1.25": {
+              "mean_luma": 172.96380065457834,
+              "max_luma": 206.33956085032221,
+              "adjacent_difference_rms": 0.3358075685750592
+            }
+          }
+        },
+        {
+          "axis": "horizontal",
+          "offset": 0.6,
+          "fixed_integer_coordinate": 667,
+          "original_glass_pixels": 561,
+          "values": {
+            "Apple": {
+              "mean_luma": 239.60722852049906,
+              "max_luma": 252.57479999999998,
+              "adjacent_difference_rms": 3.2328252789604512
+            },
+            "H1 seed": {
+              "mean_luma": 172.57342746185714,
+              "max_luma": 172.57348523765802,
+              "adjacent_difference_rms": 1.8795376193240438e-06
+            },
+            "0.75": {
+              "mean_luma": 172.57341474688047,
+              "max_luma": 172.5734147468805,
+              "adjacent_difference_rms": 0.0
+            },
+            "1.25": {
+              "mean_luma": 172.57371988733252,
+              "max_luma": 172.58362014502285,
+              "adjacent_difference_rms": 0.00016652630724376137
+            }
+          }
+        },
+        {
+          "axis": "vertical",
+          "offset": -0.6,
+          "fixed_integer_coordinate": 845,
+          "original_glass_pixels": 396,
+          "values": {
+            "Apple": {
+              "mean_luma": 195.01104040404041,
+              "max_luma": 252.57479999999998,
+              "adjacent_difference_rms": 2.724637588795706
+            },
+            "H1 seed": {
+              "mean_luma": 172.57342665392156,
+              "max_luma": 172.5734266539216,
+              "adjacent_difference_rms": 0.0
+            },
+            "0.75": {
+              "mean_luma": 172.57341474688042,
+              "max_luma": 172.5734147468805,
+              "adjacent_difference_rms": 0.0
+            },
+            "1.25": {
+              "mean_luma": 172.5734157834649,
+              "max_luma": 172.5734157834649,
+              "adjacent_difference_rms": 0.0
+            }
+          }
+        },
+        {
+          "axis": "vertical",
+          "offset": 0,
+          "fixed_integer_coordinate": 1040,
+          "original_glass_pixels": 432,
+          "values": {
+            "Apple": {
+              "mean_luma": 207.2699648148148,
+              "max_luma": 254.7834,
+              "adjacent_difference_rms": 3.2930989368509147
+            },
+            "H1 seed": {
+              "mean_luma": 172.5734266539216,
+              "max_luma": 172.5734266539216,
+              "adjacent_difference_rms": 0.0
+            },
+            "0.75": {
+              "mean_luma": 172.5734147468805,
+              "max_luma": 172.5734147468805,
+              "adjacent_difference_rms": 0.0
+            },
+            "1.25": {
+              "mean_luma": 172.58110284774358,
+              "max_luma": 172.76968739640714,
+              "adjacent_difference_rms": 0.0036911405694355767
+            }
+          }
+        },
+        {
+          "axis": "vertical",
+          "offset": 0.6,
+          "fixed_integer_coordinate": 1236,
+          "original_glass_pixels": 394,
+          "values": {
+            "Apple": {
+              "mean_luma": 237.68296091370559,
+              "max_luma": 254.3582,
+              "adjacent_difference_rms": 4.4196030319820965
+            },
+            "H1 seed": {
+              "mean_luma": 172.57380636743443,
+              "max_luma": 172.5849713646769,
+              "adjacent_difference_rms": 0.00024494683958963616
+            },
+            "0.75": {
+              "mean_luma": 172.57341474688045,
+              "max_luma": 172.5734147468805,
+              "adjacent_difference_rms": 0.0
+            },
+            "1.25": {
+              "mean_luma": 172.58282259664887,
+              "max_luma": 172.77761404010653,
+              "adjacent_difference_rms": 0.003684701758324652
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case": "b",
+      "crops": {
+        "upper-left": {
+          "bounds_pixels": [
+            94,
+            34,
+            314,
+            177
+          ],
+          "width_per_image": 440,
+          "values": {
+            "Apple": {
+              "luma_adjacent_difference_rms": 2.278000915281805
+            },
+            "H1 seed": {
+              "luma_adjacent_difference_rms": 2.382189022902792,
+              "rgb_rmse": 25.074438202551775,
+              "luma_rmse": 23.885632308149304,
+              "chroma_rmse": 2.2155961174060392,
+              "signed_RGB": [
+                -14.892555771422325,
+                -12.528233134119434,
+                -14.265484509124017
+              ],
+              "max_change_from_seed": 0.0
+            },
+            "0.75": {
+              "luma_adjacent_difference_rms": 2.3885851312457462,
+              "rgb_rmse": 25.291935429409715,
+              "luma_rmse": 24.092922332793414,
+              "chroma_rmse": 2.2284234374988334,
+              "signed_RGB": [
+                -15.024538841557519,
+                -12.646066244273374,
+                -14.400255934862823
+              ],
+              "max_change_from_seed": 3.3467235565185547
+            },
+            "1.25": {
+              "luma_adjacent_difference_rms": 2.3785426436858406,
+              "rgb_rmse": 24.830966826671688,
+              "luma_rmse": 23.653680029694303,
+              "chroma_rmse": 2.2011497308425474,
+              "signed_RGB": [
+                -14.729627250224938,
+                -12.382706956321922,
+                -14.099098847434162
+              ],
+              "max_change_from_seed": 2.640979766845703
+            }
+          }
+        },
+        "lower-left": {
+          "bounds_pixels": [
+            94,
+            365,
+            330,
+            496
+          ],
+          "width_per_image": 472,
+          "values": {
+            "Apple": {
+              "luma_adjacent_difference_rms": 2.1817915680576045
+            },
+            "H1 seed": {
+              "luma_adjacent_difference_rms": 2.5639683324463034,
+              "rgb_rmse": 44.79715247737732,
+              "luma_rmse": 43.166529014311585,
+              "chroma_rmse": 3.114881447419111,
+              "signed_RGB": [
+                -33.03853709094813,
+                -30.42211884093024,
+                -34.02999367461289
+              ],
+              "max_change_from_seed": 0.0
+            },
+            "0.75": {
+              "luma_adjacent_difference_rms": 2.5707088154646858,
+              "rgb_rmse": 44.92267216255682,
+              "luma_rmse": 43.28594231863887,
+              "chroma_rmse": 3.122293529836913,
+              "signed_RGB": [
+                -33.12817278945102,
+                -30.5022589345115,
+                -34.12158989190269
+              ],
+              "max_change_from_seed": 3.3419055938720703
+            },
+            "1.25": {
+              "luma_adjacent_difference_rms": 2.5600608970833574,
+              "rgb_rmse": 44.652471008304744,
+              "luma_rmse": 43.02869110997879,
+              "chroma_rmse": 3.1066667874339533,
+              "signed_RGB": [
+                -32.92572624230272,
+                -30.321303381738943,
+                -33.91477503937072
+              ],
+              "max_change_from_seed": 2.6370737552642822
+            }
+          }
+        },
+        "right-rim": {
+          "bounds_pixels": [
+            565,
+            160,
+            714,
+            399
+          ],
+          "width_per_image": 298,
+          "values": {
+            "Apple": {
+              "luma_adjacent_difference_rms": 3.577920531146535
+            },
+            "H1 seed": {
+              "luma_adjacent_difference_rms": 3.2031890300447296e-07,
+              "rgb_rmse": 14.509311087911463,
+              "luma_rmse": 14.03946333115425,
+              "chroma_rmse": 2.808630548916678,
+              "signed_RGB": [
+                -7.596959035676966,
+                -6.874613817223321,
+                -7.57498384616847
+              ],
+              "max_change_from_seed": 0.0
+            },
+            "0.75": {
+              "luma_adjacent_difference_rms": 6.717875375198952e-07,
+              "rgb_rmse": 14.509302417406065,
+              "luma_rmse": 14.03945466643459,
+              "chroma_rmse": 2.8086305513156686,
+              "signed_RGB": [
+                -7.596946506198496,
+                -6.8746013270115105,
+                -7.574971348274053
+              ],
+              "max_change_from_seed": 3.039836883544922e-05
+            },
+            "1.25": {
+              "luma_adjacent_difference_rms": 0.0,
+              "rgb_rmse": 14.509302154821178,
+              "luma_rmse": 14.039460248945549,
+              "chroma_rmse": 2.808628213387981,
+              "signed_RGB": [
+                -7.596946506198496,
+                -6.874613817223321,
+                -7.574958858489053
+              ],
+              "max_change_from_seed": 3.039836883544922e-05
+            }
+          }
+        },
+        "center": {
+          "bounds_pixels": [
+            275,
+            200,
+            510,
+            370
+          ],
+          "width_per_image": 470,
+          "values": {
+            "Apple": {
+              "luma_adjacent_difference_rms": 0.4239291142238897
+            },
+            "H1 seed": {
+              "luma_adjacent_difference_rms": 0.0,
+              "rgb_rmse": 12.158387884722062,
+              "luma_rmse": 11.582923131562664,
+              "chroma_rmse": 1.1973810346233744,
+              "signed_RGB": [
+                -10.928572025758603,
+                -10.721598426224443,
+                -12.64127802891785
+              ],
+              "max_change_from_seed": 0.0
+            },
+            "0.75": {
+              "luma_adjacent_difference_rms": 0.0,
+              "rgb_rmse": 12.158373595491884,
+              "luma_rmse": 11.582908823001665,
+              "chroma_rmse": 1.1973810346233742,
+              "signed_RGB": [
+                -10.928556826574185,
+                -10.721583227040025,
+                -12.641262829733432
+              ],
+              "max_change_from_seed": 1.519918441772461e-05
+            },
+            "1.25": {
+              "luma_adjacent_difference_rms": 0.0,
+              "rgb_rmse": 12.158372795567619,
+              "luma_rmse": 11.582918023406126,
+              "chroma_rmse": 1.1973686165290964,
+              "signed_RGB": [
+                -10.928556826574185,
+                -10.721598426224443,
+                -12.641247630549014
+              ],
+              "max_change_from_seed": 3.039836883544922e-05
+            }
+          }
+        }
+      },
+      "sections": [
+        {
+          "axis": "horizontal",
+          "offset": -0.6,
+          "fixed_integer_coordinate": 417,
+          "original_glass_pixels": 531,
+          "values": {
+            "Apple": {
+              "mean_luma": 231.5924738229755,
+              "max_luma": 243.0,
+              "adjacent_difference_rms": 2.1284002239435655
+            },
+            "H1 seed": {
+              "mean_luma": 195.51051047618336,
+              "max_luma": 225.72193340349193,
+              "adjacent_difference_rms": 0.44741334084450085
+            },
+            "0.75": {
+              "mean_luma": 195.48046230247627,
+              "max_luma": 228.38015966731308,
+              "adjacent_difference_rms": 0.5135170095834236
+            },
+            "1.25": {
+              "mean_luma": 195.57015028096657,
+              "max_luma": 223.95073603212836,
+              "adjacent_difference_rms": 0.4050676565485844
+            }
+          }
+        },
+        {
+          "axis": "horizontal",
+          "offset": 0,
+          "fixed_integer_coordinate": 537,
+          "original_glass_pixels": 609,
+          "values": {
+            "Apple": {
+              "mean_luma": 216.00211428571424,
+              "max_luma": 252.35819999999998,
+              "adjacent_difference_rms": 3.043926124365062
+            },
+            "H1 seed": {
+              "mean_luma": 195.9784968899506,
+              "max_luma": 237.00001627206802,
+              "adjacent_difference_rms": 0.3820414616762283
+            },
+            "0.75": {
+              "mean_luma": 195.97701705531708,
+              "max_luma": 236.99998587369916,
+              "adjacent_difference_rms": 0.4395938984243504
+            },
+            "1.25": {
+              "mean_luma": 195.9802048398039,
+              "max_luma": 236.99998587369916,
+              "adjacent_difference_rms": 0.34230228527853457
+            }
+          }
+        },
+        {
+          "axis": "horizontal",
+          "offset": 0.6,
+          "fixed_integer_coordinate": 657,
+          "original_glass_pixels": 527,
+          "values": {
+            "Apple": {
+              "mean_luma": 242.5312614800759,
+              "max_luma": 254.63899999999998,
+              "adjacent_difference_rms": 1.704065628455561
+            },
+            "H1 seed": {
+              "mean_luma": 193.95697111564675,
+              "max_luma": 204.1173595753312,
+              "adjacent_difference_rms": 0.1579478388678482
+            },
+            "0.75": {
+              "mean_luma": 193.7738563576859,
+              "max_luma": 201.20803350430725,
+              "adjacent_difference_rms": 0.12434422498208779
+            },
+            "1.25": {
+              "mean_luma": 194.13136883962153,
+              "max_luma": 206.16809119963645,
+              "adjacent_difference_rms": 0.17791802669595516
+            }
+          }
+        },
+        {
+          "axis": "vertical",
+          "offset": -0.6,
+          "fixed_integer_coordinate": 681,
+          "original_glass_pixels": 367,
+          "values": {
+            "Apple": {
+              "mean_luma": 244.1164288828338,
+              "max_luma": 255.0,
+              "adjacent_difference_rms": 1.0696276334860373
+            },
+            "H1 seed": {
+              "mean_luma": 193.64160487219473,
+              "max_luma": 195.9014224820137,
+              "adjacent_difference_rms": 0.041756643298312614
+            },
+            "0.75": {
+              "mean_luma": 193.5358334248719,
+              "max_luma": 194.22485148167607,
+              "adjacent_difference_rms": 0.01404667601563458
+            },
+            "1.25": {
+              "mean_luma": 193.81173514704386,
+              "max_luma": 197.90981800013782,
+              "adjacent_difference_rms": 0.07100058615608817
+            }
+          }
+        },
+        {
+          "axis": "vertical",
+          "offset": 0,
+          "fixed_integer_coordinate": 864,
+          "original_glass_pixels": 399,
+          "values": {
+            "Apple": {
+              "mean_luma": 217.65271929824561,
+              "max_luma": 255.0,
+              "adjacent_difference_rms": 2.3395196348630085
+            },
+            "H1 seed": {
+              "mean_luma": 193.50379823935032,
+              "max_luma": 193.5037982393503,
+              "adjacent_difference_rms": 0.0
+            },
+            "0.75": {
+              "mean_luma": 193.50381343853473,
+              "max_luma": 193.5038134385347,
+              "adjacent_difference_rms": 0.0
+            },
+            "1.25": {
+              "mean_luma": 193.50380366545912,
+              "max_luma": 193.50380366545915,
+              "adjacent_difference_rms": 0.0
+            }
+          }
+        },
+        {
+          "axis": "vertical",
+          "offset": 0.6,
+          "fixed_integer_coordinate": 1048,
+          "original_glass_pixels": 367,
+          "values": {
+            "Apple": {
+              "mean_luma": 210.89470626702996,
+              "max_luma": 255.0,
+              "adjacent_difference_rms": 3.7147812760005934
+            },
+            "H1 seed": {
+              "mean_luma": 193.5037982393503,
+              "max_luma": 193.5037982393503,
+              "adjacent_difference_rms": 0.0
+            },
+            "0.75": {
+              "mean_luma": 193.5038134385347,
+              "max_luma": 193.5038134385347,
+              "adjacent_difference_rms": 0.0
+            },
+            "1.25": {
+              "mean_luma": 193.50380366545917,
+              "max_luma": 193.50380366545915,
+              "adjacent_difference_rms": 0.0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

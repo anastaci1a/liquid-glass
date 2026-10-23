@@ -1,0 +1,20 @@
+{
+ "start_utc":"2026-10-23T20:15:56Z",
+ "checkpoint_deadline_utc":"2026-10-23T20:20:56Z",
+ "deadline_utc":"2026-10-23T20:35:56Z",
+ "refraction_outer_deadline_utc":"2026-10-23T21:10:40.688Z",
+ "visible_question":"Does reducing only background distance from 2L to 0.5L recover the modeled inner track boundary in the reference's upper/lower returns, rather than merely lowering RGB error?",
+ "fixed_distance_over_L":0.5,
+ "dependency_commit":"6fd37ddee6e418beb0694760d565a6ca8aeebdc6",
+ "frozen":"Original pose/half/softness .08, height depth .15/crown .4, index1.5, orthographic camera, sources/masks, AA2, incident sigma4.25/4.00 radius13/12, g1b0; no lighting, shadow, output blur or spectral smear.",
+ "new_budgets":{"fixture_comparator_rays":1024,"native_rays":3736800,"full_native_images":2,"fits":0,"settings":1},
+ "planned_fixture_rays":324,
+ "planned_integrator_comparator_rays":256,
+ "previous_cumulative":{"fixture_comparator_rays":7602,"native_rays":3736800,"full_native_images":2,"fits":0,"failed_integration_clear_RGB_queries":1947000},
+ "checkpoint":"For each case a fixed9x9 grid: complete D0.5 paths, background clearance and same geometry/exit-normal/direction versus D2. These324rays include both distances. No RGB at checkpoint.",
+ "source_gate":"Both full grids certified before any RGB; whole plus every original guard subray, straight misses, complete finite incident support and four bilinear texels. Stop unsupported; no repair.",
+ "retention":"Entry/exit, surface normals, internal/exit directions, path lengths/status, sourceXY, membership/support, raw samples and all previous native arrays. Missing interfaces on clear misses are explicitly NaN.",
+ "sections":"Exactly correspondence-02 fixed sections and finite track/background labels; unchanged target landmarks are not assumed alpha or known correspondence.",
+ "presentation":"Saved native comparisons and fixed historical advisory crops only; each crop width=min(2*original_width,max(original_width,720)). No new optical raster or media.",
+ "stop":"One setting only; stop after two native images and concise evidence, or unsupported paths/source or deadline. No fit/backtrack/intermediate D."
+}

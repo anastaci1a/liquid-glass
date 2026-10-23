@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/research/agent-active-slider-intake-223/research/experiments/active-slider-geometry-intake-01/baseline.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/research/agent-active-slider-intake-223/research/experiments/active-slider-geometry-intake-01/baseline.py", line 45, in main
+    yy,xx=np.nonzero(inside);samples[yy,xx]=cv2.remap(incident,X[yy,xx].astype(np.float32)[None],Y[yy,xx].astype(np.float32)[None],cv2.INTER_LINEAR)[0];assert np.isfinite(samples).all()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(5.0.0) /io/opencv/modules/imgproc/src/imgwarp.cpp:1427: error: (-215:Assertion failed) dst.cols < SHRT_MAX && dst.rows < SHRT_MAX && src.cols < SHRT_MAX && src.rows < SHRT_MAX in function 'remap'
+

@@ -1,0 +1,12 @@
+{
+ "start_utc":"2026-10-23T20:24:49Z",
+ "deadline_utc":"2026-10-23T20:34:49Z",
+ "refraction_outer_deadline_utc":"2026-10-23T21:10:40.688Z",
+ "question":"Do frozen modeled track-boundary crossings along retained rays require weaker inward transport, opposite-edge traversal, or remain unassignable to target bright landmarks?",
+ "inputs":"distance-03 retained entry/exit/directions and original frozen case background_estimate capsule. No source reconstruction or RGB read is needed.",
+ "selected_rays":"The same six sections from correspondence-02/03. On each, choose the original varying-axis pixels nearest corrected center and plus/minus0.6 of its corresponding half-extent (vertical uses original L). Retain all four original AA2 subrays per selected pixel. This yields72 saved rays per case, not newly traced rays.",
+ "analytic_only":"Solve line intersections with capsule straight sides and cap circles by linear/quadratic formulas. Retain all roots, cap-domain validity, valid-plane condition, entering/leaving status and seams. No iterative root solver or distance grid.",
+ "finite_kernel":"Retain conservative mixed bands using capsule radius plus/minus sqrt(2)*(finite radius+1.5)/L. This covers full square Gaussian support, bilinear corners and original source pixel coverage. It is an enclosure, not an exact raster boundary or source proof at alternate D.",
+ "limits":{"new_rays":0,"RGB_queries":0,"images":0,"fits":0,"distance_grid":false,"alternate_map":false},
+ "stop":"Answer the concrete question and propose at most one geometry family, or stop at10minutes. No implementation/new surface or subsequent setting before review."
+}

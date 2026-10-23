@@ -1,0 +1,145 @@
+{
+  "status": "ONE_TRAIN_ONLY_PROPOSAL",
+  "Q": [
+    [
+      0.4637349214383195,
+      0.6694157904254101
+    ],
+    [
+      0.6694157904254101,
+      0.9999268707977185
+    ]
+  ],
+  "v": [
+    -0.5574899166465759,
+    -0.8203051891170428
+  ],
+  "constant": 0.6945012725591042,
+  "condition_number": 135.46524529421282,
+  "case_models": [
+    {
+      "case": "a",
+      "training_pixels": 179036,
+      "held_pixels": 61420,
+      "Q": [
+        [
+          0.35392617334584436,
+          0.5821721982245692
+        ],
+        [
+          0.5821721982245692,
+          0.9999235488951943
+        ]
+      ],
+      "v": [
+        -0.45805280614464705,
+        -0.7732399007123876
+      ],
+      "constant": 0.6286852944010081,
+      "reference_weight": 0.5,
+      "unclipped_model_unit_max_residual": 7.450580596923828e-08
+    },
+    {
+      "case": "b",
+      "training_pixels": 155786,
+      "held_pixels": 53183,
+      "Q": [
+        [
+          0.5735436695307947,
+          0.7566593826262509
+        ],
+        [
+          0.7566593826262509,
+          0.9999301927002426
+        ]
+      ],
+      "v": [
+        -0.6569270271485046,
+        -0.8673704775216979
+      ],
+      "constant": 0.7603172507172005,
+      "reference_weight": 0.5,
+      "unclipped_model_unit_max_residual": 7.450580596923828e-08
+    }
+  ],
+  "evaluations": [
+    {
+      "label": "baseline",
+      "gain": 1.0,
+      "bias": 0.0,
+      "white_response": 1.0,
+      "strictly_feasible": true,
+      "unclipped_train_mse": 0.04325636070427197
+    },
+    {
+      "label": "vertex0",
+      "gain": 0.25,
+      "bias": -0.1,
+      "white_response": 0.15,
+      "strictly_feasible": true,
+      "unclipped_train_mse": 0.5853292638358265
+    },
+    {
+      "label": "vertex1",
+      "gain": 1.1,
+      "bias": -0.1,
+      "white_response": 1.0,
+      "strictly_feasible": true,
+      "unclipped_train_mse": 0.055931543514799564
+    },
+    {
+      "label": "vertex2",
+      "gain": 0.25,
+      "bias": 0.75,
+      "white_response": 1.0,
+      "strictly_feasible": true,
+      "unclipped_train_mse": 0.027771749383392552
+    },
+    {
+      "label": "unconstrained_stationary",
+      "gain": 0.5341480927022242,
+      "bias": 0.4627718635737796,
+      "white_response": 0.9969199562760038,
+      "strictly_feasible": true,
+      "unclipped_train_mse": 0.0171049358146782
+    },
+    {
+      "label": "edge0",
+      "gain": 1.1,
+      "bias": -0.1,
+      "white_response": 1.0,
+      "strictly_feasible": true,
+      "unclipped_train_mse": 0.055931543514799564
+    },
+    {
+      "label": "edge1",
+      "gain": 0.5423030783224161,
+      "bias": 0.4576969216775839,
+      "white_response": 1.0,
+      "strictly_feasible": true,
+      "unclipped_train_mse": 0.017106120108045686
+    },
+    {
+      "label": "edge2",
+      "gain": 0.25,
+      "bias": 0.6529989948062711,
+      "white_response": 0.9029989948062711,
+      "strictly_feasible": true,
+      "unclipped_train_mse": 0.018363242461723828
+    }
+  ],
+  "quadratic_evaluations": 8,
+  "starts": 1,
+  "proposal": {
+    "label": "unconstrained_stationary",
+    "gain": 0.5341480927022242,
+    "bias": 0.4627718635737796,
+    "white_response": 0.9969199562760038,
+    "strictly_feasible": true,
+    "unclipped_train_mse": 0.0171049358146782
+  },
+  "held_used": false,
+  "center_used_in_fit": false,
+  "fit_limits": "Unclipped float64 quadratic model. Actual sample response/clipping/float32 composition and all guards decide. Held and centers are checks only.",
+  "finished_utc": "2026-10-23T21:10:49.894114+00:00"
+}

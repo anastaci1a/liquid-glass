@@ -1,0 +1,120 @@
+[
+  {
+    "case": "a",
+    "width": {
+      "multiplier": 1.25,
+      "sigma_px": 5.3125,
+      "radius_px": 16,
+      "sigma_over_L": 0.02453810623556582
+    },
+    "scores": {
+      "glass": {
+        "pixels": 240456,
+        "rmse": 65.77596282958984
+      },
+      "rim": {
+        "pixels": 70466,
+        "rmse": 73.43279266357422
+      },
+      "held": {
+        "pixels": 61420,
+        "rmse": 66.04900360107422
+      },
+      "interior": {
+        "pixels": 169990,
+        "rmse": 62.32679748535156
+      },
+      "ssim": 0.8642449378967285,
+      "loss": 4646.246611823153,
+      "E": 68.16338175166453,
+      "exterior": {
+        "pixels": 152521,
+        "rmse": 12.615555763244629
+      }
+    },
+    "versus_H1": {
+      "glass": true,
+      "rim": true,
+      "held": true,
+      "interior": true,
+      "E": true,
+      "ssim": true,
+      "exterior": true
+    },
+    "historical_guards": {
+      "glass": false,
+      "rim": false,
+      "held": false,
+      "interior": false,
+      "E": false,
+      "ssim": false,
+      "exterior": false
+    },
+    "clear_samples_exact": true,
+    "coverage_exact": true,
+    "source_xy_reused": true,
+    "clip_counts": {
+      "below_zero": 0,
+      "above_one": 0
+    }
+  },
+  {
+    "case": "b",
+    "width": {
+      "multiplier": 1.25,
+      "sigma_px": 5,
+      "radius_px": 15,
+      "sigma_over_L": 0.025
+    },
+    "scores": {
+      "glass": {
+        "pixels": 208969,
+        "rmse": 36.11130142211914
+      },
+      "rim": {
+        "pixels": 60968,
+        "rmse": 36.15792465209961
+      },
+      "held": {
+        "pixels": 53183,
+        "rmse": 36.441715240478516
+      },
+      "interior": {
+        "pixels": 148001,
+        "rmse": 36.092079162597656
+      },
+      "ssim": 0.9358456134796143,
+      "loss": 1305.0369178234744,
+      "E": 36.12529470915738,
+      "exterior": {
+        "pixels": 132594,
+        "rmse": 7.679679870605469
+      }
+    },
+    "versus_H1": {
+      "glass": true,
+      "rim": true,
+      "held": true,
+      "interior": true,
+      "E": true,
+      "ssim": true,
+      "exterior": true
+    },
+    "historical_guards": {
+      "glass": false,
+      "rim": false,
+      "held": false,
+      "interior": false,
+      "E": false,
+      "ssim": true,
+      "exterior": false
+    },
+    "clear_samples_exact": true,
+    "coverage_exact": true,
+    "source_xy_reused": true,
+    "clip_counts": {
+      "below_zero": 0,
+      "above_one": 0
+    }
+  }
+]
