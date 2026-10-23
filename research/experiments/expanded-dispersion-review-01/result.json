@@ -1,0 +1,79 @@
+{
+  "status": "SPECTRAL_TRANSPORT_NOT_IDENTIFIED",
+  "observations": [
+    {
+      "reference": "a",
+      "cohorts": {
+        "original_glass": {
+          "pixels": 155428,
+          "RGB_RMSE": 38.07741514626231,
+          "neutral_RMSE": 33.53856719572749,
+          "chroma_RMS": 18.029255522025263,
+          "chroma_fraction_of_squared_RGB_error": 0.22419228828439314,
+          "target_exact_achromatic_fraction": 0.07222636847929588,
+          "signed_RGB": [
+            -0.21654676378859417,
+            -3.4592541844904283,
+            -13.645632956356875
+          ]
+        },
+        "fixed_text": {
+          "pixels": 67408,
+          "RGB_RMSE": 27.66065385094645,
+          "neutral_RMSE": 19.014939336309794,
+          "chroma_RMS": 20.088400969174653,
+          "chroma_fraction_of_squared_RGB_error": 0.5274312441008412,
+          "target_exact_achromatic_fraction": 0.06841917873249466,
+          "signed_RGB": [
+            2.9009489138002085,
+            -2.046452474075423,
+            -21.770442159518815
+          ]
+        }
+      }
+    },
+    {
+      "reference": "b",
+      "cohorts": {
+        "original_glass": {
+          "pixels": 155428,
+          "RGB_RMSE": 15.106259405906487,
+          "neutral_RMSE": 15.103328053384887,
+          "chroma_RMS": 0.29758183811393424,
+          "chroma_fraction_of_squared_RGB_error": 0.0003880600789412524,
+          "target_exact_achromatic_fraction": 0.9696772782252876,
+          "signed_RGB": [
+            3.134527313618986,
+            3.111238238026924,
+            3.15951824881769
+          ]
+        },
+        "fixed_text": {
+          "pixels": 67408,
+          "RGB_RMSE": 15.898749465064505,
+          "neutral_RMSE": 15.896162133097215,
+          "chroma_RMS": 0.28681699945271916,
+          "chroma_fraction_of_squared_RGB_error": 0.0003254496769391114,
+          "target_exact_achromatic_fraction": 0.9856545217184904,
+          "signed_RGB": [
+            0.06200481127481576,
+            0.04566588058604386,
+            0.10045817039629328
+          ]
+        }
+      }
+    }
+  ],
+  "new_rays": 0,
+  "RGB_queries": 0,
+  "images": 0,
+  "filters": 0,
+  "fits": 0,
+  "finished_at": "2026-10-23T20:24:48.700056+00:00",
+  "limits": [
+    "Chromatic residual is not a measured wavelength response.",
+    "Strong A source colour, missing return geometry and illumination remain confounds.",
+    "Neutral B controls do not establish absence of physical dispersion.",
+    "No per-channel coefficients or spectral ray paths introduced."
+  ]
+}
