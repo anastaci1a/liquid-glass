@@ -28,7 +28,6 @@
     "empty_container_attempt": "Excluded: first command lacked stdin forwarding and produced empty tar; retained for audit"
   },
   "pending": [
-    "Fresh checkout checks",
     "Final source consistency/exclusive ownership",
     "Public licensing/storage review of untracked binary evidence and third-party packages",
     "Generated-site uniqueness and symlink reconciliation",
@@ -40,5 +39,15 @@
     "environment": "Isolated migration container; pinned requirements installed to independent project-workspace dependency volume",
     "initial_attempt": "Failed ENOSPC in ephemeral Docker root; preserved log. Retried package installation on host-backed migration volume; no research/source change."
   },
-  "whitespace": "Captured historical source retains original whitespace; new project-authored files checked separately"
+  "whitespace": "Captured historical source retains original whitespace; new project-authored files checked separately",
+  "fresh_checkout": {
+    "path": "/mnt/user/live/projects/liquid-glass/validation-checkout",
+    "type": "Actual linked detached Git worktree",
+    "commit": "e4bd96bf2b82368561a7f729840cfa76e8e148f8",
+    "docs_build": "PASS: npm ci from lockfile; 666 public files",
+    "links": "PASS: 632 links/assets/anchors",
+    "python": "PASS: 24 tests in independent container mounting only fresh checkout and separately installed pinned dependencies, with no old Localica filesystem mount",
+    "limitations": "No full historical reconstruction replay from withheld raw inputs; no browser or Android build required for this split"
+  },
+  "ci": "Independent docs/geometry checks only; original Android workflow excluded; no Pages/deployment workflow"
 }

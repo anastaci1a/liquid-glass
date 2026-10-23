@@ -27,3 +27,5 @@ Source versioned scripts and assets now live in docs/. Current local site genera
 ## Deferred cutover
 
 Other sessions/processes were observed in Localica; no exclusive writer ownership is established. Sessionsation and helper interaction are prohibited. Do not remove source research, change another session's directory or apply a Localica cleanup patch. Ana must later establish safe ownership/final capture, reconcile all pending evidence, and approve any URL forwarding/publication transition. The helper's existing working directory remains unchanged.
+
+The final inventory also found software-refraction notes/results and the actual linked generated recreation-pages-publish worktree. Both were saved in supplemental-provisional.tar.zst. See supplemental-inventory.json for tracked code/results and pending material. Root private feedback text remains outside Git. Independent docs/geometry CI is included; no Android or deployment workflow is migrated.
