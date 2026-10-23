@@ -1,0 +1,76 @@
+{
+  "status": "active-intake",
+  "started_at": "2026-10-23T15:14:03.297Z",
+  "deadline": "2026-10-23T19:14:03.297Z",
+  "stages": [
+    {
+      "name": "refraction",
+      "cap_minutes": 80,
+      "latest_deadline": "2026-10-23T16:34:03.297Z",
+      "started_at": "2026-10-23T15:14:03.297Z",
+      "deadline": "2026-10-23T16:34:03.297Z"
+    },
+    {
+      "name": "blurriness",
+      "cap_minutes": 20,
+      "latest_deadline": "2026-10-23T16:54:03.297Z"
+    },
+    {
+      "name": "color",
+      "cap_minutes": 20,
+      "latest_deadline": "2026-10-23T17:14:03.297Z"
+    },
+    {
+      "name": "outline",
+      "cap_minutes": 60,
+      "latest_deadline": "2026-10-23T18:14:03.297Z"
+    },
+    {
+      "name": "shadow",
+      "cap_minutes": 15,
+      "latest_deadline": "2026-10-23T18:29:03.297Z"
+    },
+    {
+      "name": "foreground",
+      "cap_minutes": 20,
+      "latest_deadline": "2026-10-23T18:49:03.297Z"
+    },
+    {
+      "name": "dispersion-identification",
+      "cap_minutes": 10,
+      "latest_deadline": "2026-10-23T18:59:03.297Z"
+    },
+    {
+      "name": "review",
+      "cap_minutes": 15,
+      "latest_deadline": "2026-10-23T19:14:03.297Z"
+    }
+  ],
+  "early_close": true,
+  "initial_hypothesis": {
+    "surface": "Rounded-rectangle harmonic cap, preserving accepted pose/footprint",
+    "depth": 0.15,
+    "longitudinal_depth": 0.4,
+    "power": 3,
+    "index": 1.5,
+    "distance_over_L": 2,
+    "aa": 2,
+    "source_sigma": 0,
+    "output_sigma": 0,
+    "body_gain": 1,
+    "body_bias": 0,
+    "shadow": 0
+  },
+  "budgets": {
+    "first_geometry_fixture_points": 12000,
+    "first_full_native_images": 2,
+    "first_native_source_preflight_rays": 2894400,
+    "first_render_rays": 2894400,
+    "max_refraction_hypotheses": 3
+  },
+  "stop": "Failed invariant, required unsupported source, invalid complete path, budget or deadline. No fallback pixel fill.",
+  "limits": "Historical accepted image includes empirical map and material. Raw physical diagnostics are not same-nuisance fidelity improvements.",
+  "administrative_notes": [
+    "Initial protocol serialization failed before writing a clock or executing any study."
+  ]
+}
