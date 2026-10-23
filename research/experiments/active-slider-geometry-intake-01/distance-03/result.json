@@ -1,0 +1,125 @@
+{
+  "status": "FIXED_D05_READY_FOR_PRIMARY_REVIEW",
+  "observations": [
+    {
+      "case": "a",
+      "scores": {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 53.91899871826172
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 49.84636306762695
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 55.955772399902344
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 55.519710540771484
+        },
+        "ssim": 0.8420751690864563,
+        "loss": 2780.4788692668417,
+        "E": 52.73024624697709,
+        "exterior": {
+          "pixels": 152521,
+          "rmse": 10.64617919921875
+        }
+      },
+      "historical_guards": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": false,
+        "E": false,
+        "ssim": false,
+        "exterior": false
+      },
+      "parity_max_difference": [
+        0.0,
+        0.0
+      ],
+      "raw_clip_counts": {
+        "below_zero": 0,
+        "above_one": 0
+      },
+      "images": 1,
+      "versus_D2": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "exterior": true
+      },
+      "unchanged_coverage": true,
+      "unchanged_clear_contribution": true
+    },
+    {
+      "case": "b",
+      "scores": {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 30.856910705566406
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 25.797298431396484
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 30.379112243652344
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 32.71439743041992
+        },
+        "ssim": 0.9225226044654846,
+        "loss": 866.1544387114684,
+        "E": 29.430501842671124,
+        "exterior": {
+          "pixels": 132594,
+          "rmse": 7.00848913192749
+        }
+      },
+      "historical_guards": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": false,
+        "E": false,
+        "ssim": false,
+        "exterior": false
+      },
+      "parity_max_difference": [
+        0.0,
+        0.0
+      ],
+      "raw_clip_counts": {
+        "below_zero": 0,
+        "above_one": 0
+      },
+      "images": 1,
+      "versus_D2": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "exterior": true
+      },
+      "unchanged_coverage": true,
+      "unchanged_clear_contribution": true
+    }
+  ],
+  "native_rays": 3736800,
+  "fixture_comparator_rays": 580,
+  "full_native_images": 2,
+  "fits": 0,
+  "accepted_passes": 0,
+  "cumulative_native_rays": 7473600,
+  "cumulative_fixture_comparator_rays": 8182,
+  "cumulative_native_images": 4,
+  "finished_utc": "2026-10-23T20:18:15.230393+00:00",
+  "limitations": "Modeled source, observed confidence zero; no lighting, shadow or spectral operator. Mathematical paths are not identified Apple optics. No historical mask/recipe/count change."
+}
