@@ -45,24 +45,26 @@ $$
 $$
 
 $$
-\begin{gathered}
-u = \operatorname{max}((\rho -\mathrm{core})/(1-\mathrm{core}), 0) \\
-h = \mathrm{edge} + \mathrm{depth} (1-u^p),  \rho  \le  1
-\end{gathered}
+\begin{aligned}
+u&=\max\!\left(\frac{\rho-c_0}{1-c_0},0\right),\\
+h&=e_0+h_0(1-u^p),\qquad \rho\le1.
+\end{aligned}
 $$
 
-[the expression below](#geometric-optics-equation-2), [the condition below](#geometric-optics-equation-104), [the condition below](#geometric-optics-equation-105), [the condition below](#geometric-optics-equation-106). The plateau and bevel meet with continuous first and second derivatives. Height decreases toward the edge and its radial second derivative is nonpositive. A finite cut edge is part of this hypothesis; it does not establish Apple's surface shape.
+[the expression below](#geometric-optics-equation-2), [the condition below](#geometric-optics-equation-104), [the condition below](#geometric-optics-equation-105), [the condition below](#geometric-optics-equation-106). The plateau and bevel meet with continuous first and second derivatives. Here the code fields `core`, `depth` and `edge` are denoted by `c_0`, `h_0` and `e_0`.
+
+Height decreases toward the edge and its radial second derivative is nonpositive. A finite cut edge is part of this hypothesis; it does not establish Apple's surface shape.
 
 <a id="geometric-optics-equation-104"></a>
 
 $$
-\mathrm{depth}>0
+h_0>0
 $$
 
 <a id="geometric-optics-equation-105"></a>
 
 $$
-\mathrm{edge}\ge 0
+e_0\ge0
 $$
 
 <a id="geometric-optics-equation-106"></a>
@@ -75,7 +77,7 @@ $$
 <a id="geometric-optics-equation-2"></a>
 
 $$
-0\le \mathrm{core}<1
+0\le c_0<1
 $$
 
 The side closes the solid over the footprint boundary, between [the condition below](#geometric-optics-equation-107) and0. A ray exactly on a crease has no unique interface normal. The tracer reports that path unresolved, with NaN source coordinates, instead of choosing an image sample. Clear misses use their ordinary unobstructed ray.
@@ -83,7 +85,7 @@ The side closes the solid over the footprint boundary, between [the condition be
 <a id="geometric-optics-equation-107"></a>
 
 $$
-z=-\mathrm{edge}
+z=-e_0
 $$
 
 
@@ -98,7 +100,7 @@ $$
 <a id="geometric-optics-equation-4"></a>
 
 $$
-\mathrm{grad} h=h'(\rho ) \mathrm{grad} \rho
+\nabla h=h'(\rho)\,\nabla\rho.
 $$
 
 Footprint shape and depth curvature remain meaningful geometric parameters; optical calculations are shared.
@@ -108,12 +110,11 @@ Footprint shape and depth curvature remain meaningful geometric parameters; opti
 Given unit incident direction `i` and unit normal `N` pointing toward the incident medium:
 
 $$
-\begin{gathered}
-\eta  = \mathrm{n\_from} / \mathrm{n\_to} \\
-c = -\operatorname{dot}(i,N) \\
-k = 1-\eta ^{2}(1-c^{2}) \\
-t = \eta  i + (\eta  c-\sqrt{k}) N
-\end{gathered}
+\begin{aligned}
+\eta&=\frac{n_{\mathrm{from}}}{n_{\mathrm{to}}},& c&=-\mathbf i\cdot\mathbf N,\\
+k&=1-\eta^2(1-c^2),&
+\mathbf t&=\eta\mathbf i+\left(\eta c-\sqrt{k}\right)\mathbf N.
+\end{aligned}
 $$
 
 For [the condition below](#geometric-optics-equation-108) there is total internal reflection; [the condition below](#geometric-optics-equation-109) is the critical grazing boundary. Neither supplies a transmitted pixel in this diagnostic. Snell refraction and Fresnel energy transport are distinct parts of a dielectric model. [PBRT's derivation and implementation](https://pbr-book.org/4ed/Reflection_Models/Specular_Reflection_and_Transmission) documents both, with a different incident-vector/index-ratio convention.
@@ -142,15 +143,15 @@ $$
 <a id="geometric-optics-equation-111"></a>
 
 $$
-\operatorname{normalize}(-h_x,-h_y,-1)
+\mathbf N=\frac{(-\partial_xh,-\partial_yh,-1)}{\sqrt{1+\|\nabla h\|_2^2}}.
 $$
 
 
 $$
-\begin{gathered}
-\mathrm{travel} = (D-h) / (-t_z) \\
-\mathrm{background\_hit} = (x,y,-h) + \mathrm{travel} t
-\end{gathered}
+\begin{aligned}
+\ell&=\frac{D-h}{-t_z},\\
+\mathbf x_{\mathrm{bg}}&=(x,y,-h)+\ell\mathbf t.
+\end{aligned}
 $$
 
 For exterior index1 and interior index [the condition below](#geometric-optics-equation-112), a global slope bound [the condition below](#geometric-optics-equation-113) guarantees subcritical transmission. Require [the condition below](#geometric-optics-equation-114) and a downward exit. Concavity certifies no back reentry: along the exiting ray, [the expression below](#geometric-optics-equation-5) is concave and starts with a negative derivative.
@@ -166,13 +167,13 @@ $$
 <a id="geometric-optics-equation-113"></a>
 
 $$
-M<1/\sqrt{n^{2}-1}
+M<\frac{1}{\sqrt{n^2-1}}.
 $$
 
 <a id="geometric-optics-equation-114"></a>
 
 $$
-D>\operatorname{max}(h)
+D>\max(h)
 $$
 
 
@@ -246,11 +247,10 @@ This section and these rays use the same height function and parameters as the r
 The historical folded radial map can itself come from a convex back and flat front. For inward displacement `a(r)`, back height `h(r)`, index `n` and background distance `D`, the transmitted branch satisfies:
 
 $$
-\begin{gathered}
-q = a / (D-h) \\
-s = q / (n \sqrt{1+q^{2}}-1) \\
-h' = -s, h(1)=0
-\end{gathered}
+\begin{aligned}
+q&=\frac{a}{D-h},&s&=\frac{q}{n\sqrt{1+q^2}-1},\\
+\frac{\mathrm dh}{\mathrm d\rho}&=-s,&h(1)&=0.
+\end{aligned}
 $$
 
 At [the condition below](#geometric-optics-equation-115), two ODE tolerances and two surface resolutions were checked. Nonnegative piecewise-linear curvature, integrated twice, defines a single C2 concave height; normals are its exact polynomial derivatives. With513 nodes, traced displacement differs from the diagnostic map by at most0.000902 native pixels.
@@ -285,14 +285,14 @@ $$
 <a id="geometric-optics-equation-7"></a>
 
 $$
-u=(z+\eta )/\eta
+u=\frac{z+\eta}{\eta}.
 $$
 
 $$
-\begin{gathered}
-F = T + (1+\kappa  (x/a)^{2}) u^{2} - 1 \\
-\text{solid}\quad F\le 0; 0\le \kappa \le 1/3
-\end{gathered}
+\begin{aligned}
+F(x,y,z)&=T(x,y)+\left(1+\kappa\left(\frac{x}{a}\right)^2\right)u^2-1,\\
+\text{solid: }F&\le0,\qquad 0\le\kappa\le\frac13.
+\end{aligned}
 $$
 
 The same equation accepts the continuous pill's convex `T`. In the containing [the expression below](#geometric-optics-equation-8) slab, the added term's x/u Hessian determinant is [the expression below](#geometric-optics-equation-9); the solid is convex. Entry uses its actual front root. A declared bounded bisection finds the ordered second intersection, and the gradient of this same `F` supplies both normals.
@@ -300,13 +300,13 @@ The same equation accepts the continuous pill's convex `T`. In the containing [t
 <a id="geometric-optics-equation-8"></a>
 
 $$
-|x/a|\le 1
+\left|\frac{x}{a}\right|\le1.
 $$
 
 <a id="geometric-optics-equation-9"></a>
 
 $$
-4 \kappa  u^{2} (1-3 \kappa  (x/a)^{2})/a^{2}\ge 0
+\frac{4\kappa u^2}{a^2}\left(1-3\kappa\frac{x^2}{a^2}\right)\ge0.
 $$
 
 Existing Snell calculations are reused. Exact projected tangencies, critical/TIR and non-downward exits remain unresolved, never substitute background pixels.
@@ -342,7 +342,7 @@ The shared harmonic construction combines two real concave heights, [the conditi
 <a id="geometric-optics-equation-117"></a>
 
 $$
-H(a,b)=\mathrm{ab}/(a+b)
+H(a,b)=\frac{ab}{a+b}.
 $$
 
 
@@ -363,7 +363,7 @@ $$
 <a id="geometric-optics-equation-120"></a>
 
 $$
-b=.4(1-(x/\mathrm{a\_major})^{2})
+b=0.4\left[1-\left(\frac{x}{a_{\mathrm{major}}}\right)^2\right].
 $$
 
 
@@ -431,9 +431,7 @@ Optional [the expression below](#geometric-optics-equation-10) exposes the SAME 
 
 <a id="geometric-optics-equation-10"></a>
 
-$$
-\mathrm{return\_layers}=\mathrm{True}
-$$
+`return_layers=True`
 
 Its explicit finite radius is `ceil(3 sigma)`; sigma scales with L and must be audited separately from AA and source interpolation. It is an ordinary Gaussian material approximation, not a geometric warp, dispersion or a full rough-surface transport claim. A shared achromatic `neutral_color_response` supplies common gain/bias and an optional source-luminance highlight lift before that filter.
 

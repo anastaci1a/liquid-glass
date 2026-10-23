@@ -8,6 +8,8 @@ Use the same units and conventions when porting it; do not copy a shader's const
 
 The frozen reference recreations have their own [dimensionless recipes](recreation-models.md). This page also describes experimental models preserved on `research/glass-lab-preserved-222`; mentions of their lab controls do not describe the deployed lab. Its executable reference is separate from the deployed renderer.
 
+[Notation and equation audit](mathematics.md) explains vector, derivative, matrix and parameter conventions. Symbols are local to each model section; they do not imply an identified Apple parameter.
+
 ## Coordinates and validity
 
 
@@ -16,7 +18,7 @@ Shape-local position [the condition below](#model-equation-101), positive X righ
 <a id="model-equation-101"></a>
 
 $$
-p=(x,y)
+\mathbf p=(x,y).
 $$
 
 - Rounded rectangle half-size [the condition below](#model-equation-102); [the condition below](#model-equation-103). Circle and capsule are special cases. Zero radius is outside this model's domain.
@@ -24,13 +26,13 @@ $$
 <a id="model-equation-102"></a>
 
 $$
-h=(\mathrm{hx},\mathrm{hy})>0
+\mathbf h=(h_x,h_y),\qquad h_x>0,\quad h_y>0.
 $$
 
 <a id="model-equation-103"></a>
 
 $$
-0<r\le \operatorname{min}(h)
+0<r\le\min(h_x,h_y).
 $$
 
 - Rays propagate **toward** the interface. This differs from conventions that store a vector pointing back toward the ray origin.
@@ -41,15 +43,15 @@ $$
 For component-wise absolute value and maximum:
 
 $$
-\begin{gathered}
-q = \operatorname{abs}(p) - h + r \\
-\mathrm{sd}(p) = \operatorname{length}(\operatorname{max}(q,0)) + \operatorname{min}(\operatorname{max}(\mathrm{qx},\mathrm{qy}),0) - r \\
-d = -\mathrm{sd}(p)\quad\text{positive inside} \\
-b = \operatorname{min}(r, \operatorname{min}(h) \times  \mathrm{band})\quad\text{0 < band at most 1} \\
-u = \operatorname{clamp}(d/b, 0, 1) \\
-n = \operatorname{gradient}(\mathrm{sd})\quad\text{unit outward normal where differentiable} \\
-S(u) = 6u^{5} - 15u^{4} + 10u^{3}
-\end{gathered}
+\begin{aligned}
+\mathbf q&=|\mathbf p|-\mathbf h+r\mathbf1,\\
+\operatorname{sd}(\mathbf p)&=\|\max(\mathbf q,\mathbf0)\|_2+\min\{\max(q_x,q_y),0\}-r,\\
+d&=-\operatorname{sd}(\mathbf p),\\
+b&=\min\{r,\min(h_x,h_y)\,b_{\mathrm{rel}}\},\qquad 0<b_{\mathrm{rel}}\le1,\\
+u&=\operatorname{clamp}\!\left(\frac d b,0,1\right),\\
+\mathbf n&=\nabla\operatorname{sd}(\mathbf p),\\
+S(u)&=6u^5-15u^4+10u^3.
+\end{aligned}
 $$
 
 Inside the active band, straight sides have constant `n`; circular corner contours have curvature [the expression below](#model-equation-1). **Straight segments have zero curvature even when one component of `max(q,0)` is positive. ** The medial axis has no unique normal; the edge contribution and its first derivative vanish before or at that axis.
@@ -57,7 +59,7 @@ Inside the active band, straight sides have constant `n`; circular corner contou
 <a id="model-equation-1"></a>
 
 $$
-\kappa_d=1/(r-d)
+\kappa_d=\frac{1}{r-d}.
 $$
 
 The signed-distance outline is C1 at straight/arc joins, not globally C2. One-sided derivatives are appropriate there.
@@ -67,14 +69,14 @@ The signed-distance outline is C1 at straight/arc joins, not globally C2. One-si
 This is a designed image warp, not an optical solid. It allows separate core magnification, edge strength, band width and outline displacement.
 
 $$
-\begin{gathered}
-R(u) = (1-u)^{3}(1+3u) \\
-H(u) = (256/27) u(1-u)^{3} \\
-P(u) = \rho  R(u) + (1-\rho ) H(u)\quad\text{0 at most rho at most 1} \\
-c = \mathrm{core} \times  \mathrm{power} \\
-a(d) = b \times  \mathrm{edge} \times  \mathrm{power} \times  P(u) \\
-F(p) = (1 - c S(u)) p - a(d) n
-\end{gathered}
+\begin{aligned}
+R(u)&=(1-u)^3(1+3u),\\
+H(u)&=\frac{256}{27}u(1-u)^3,\\
+P(u)&=\rho R(u)+(1-\rho)H(u),\qquad 0\le\rho\le1,\\
+c&=c_{\mathrm{core}}\,p_{\mathrm{strength}},\\
+a(d)&=b\,e_{\mathrm{edge}}\,p_{\mathrm{strength}}\,P(u),\\
+\mathbf F(\mathbf p)&=[1-cS(u)]\mathbf p-a(d)\mathbf n.
+\end{aligned}
 $$
 
 
@@ -94,7 +96,7 @@ $$
 0\le P\le 1
 $$
 
-- In the core, [the condition below](#model-equation-106); displayed magnification is `1/(1−c)`, provided [the condition below](#model-equation-107). The slider named optical power is dimensionless gain, **not geometric thickness**.
+- In the core, [the condition below](#model-equation-106); displayed magnification is [the core magnification](#core-magnification), provided [the condition below](#model-equation-107). The slider named optical power is dimensionless gain, **not geometric thickness**.
 
 <a id="model-equation-106"></a>
 
@@ -126,7 +128,7 @@ $$
 <a id="model-equation-3"></a>
 
 $$
-P'(0)=(1-\rho )256/27
+P'(0)=\frac{256}{27}(1-\rho).
 $$
 
 <a id="model-equation-4"></a>
@@ -137,6 +139,12 @@ $$
 
 ![Inverse displacement and normal derivative across the edge band](assets/edge-profile.svg)
 
+<a id="core-magnification"></a>
+
+$$
+\mathcal M_{\mathrm{core}}=\frac{1}{1-c}.
+$$
+
 ### Jacobian and folds
 
 Let [the condition below](#model-equation-108), [the expression below](#model-equation-5) within the band, and [the expression below](#model-equation-6). On a differentiable boundary segment:
@@ -144,30 +152,32 @@ Let [the condition below](#model-equation-108), [the expression below](#model-eq
 <a id="model-equation-108"></a>
 
 $$
-t=(-\mathrm{ny},\mathrm{nx})
+t=(-n_y,n_x)
 $$
 
 
 <a id="model-equation-5"></a>
 
 $$
-S_d'=30u^{2}(1-u)^{2}/b
+S_d'=\frac{30u^2(1-u)^2}{b}.
 $$
 
 <a id="model-equation-6"></a>
 
 $$
-a_d'=\mathrm{edge}\times \mathrm{power}\times P'(u)
+a_d'=e_{\mathrm{edge}}\,p_{\mathrm{strength}}\,P'(u).
 $$
 
 $$
-\begin{gathered}
-J = \partial F/\partial p = (1-c S)I + c S_d' p\otimes n + a_d' n\otimes n - a \kappa_d t\otimes t \\
-\mathrm{Jnn} = 1-c S + c S_d'(p\cdot n) + a_d' \\
-\mathrm{Jtt} = 1-c S - a \kappa_d \\
-\mathrm{Jtn} = c S_d'(p\cdot t); \mathrm{Jnt} = 0 \\
-\mathrm{det}(J) = \mathrm{Jnn} \times  \mathrm{Jtt}
-\end{gathered}
+\begin{aligned}
+\mathbf J=\frac{\partial\mathbf F}{\partial\mathbf p}
+&=(1-cS)\mathbf I+cS_d'\mathbf p\otimes\mathbf n
++a_d'\mathbf n\otimes\mathbf n-a\kappa_d\mathbf t\otimes\mathbf t,\\
+J_{nn}&=1-cS+cS_d'(\mathbf p\cdot\mathbf n)+a_d',\\
+J_{tt}&=1-cS-a\kappa_d,\\
+J_{tn}&=cS_d'(\mathbf p\cdot\mathbf t),\qquad J_{nt}=0,\\
+\det\mathbf J&=J_{nn}J_{tt}.
+\end{aligned}
 $$
 
 - A straight-edge normal derivative above 1 compresses source detail in the output; between 0 and 1 magnifies it. A large constant lookup offset is translation, not compression.
@@ -184,7 +194,7 @@ $$
 <a id="model-equation-110"></a>
 
 $$
-b/(r-\mathrm{bu})\le 1/(1-u)
+\frac{b}{r-bu}\le\frac{1}{1-u}.
 $$
 
 
@@ -197,10 +207,10 @@ The derivative and tangential bounds compare as follows.
 
 $$
 \begin{array}{lcc}
-\text{Profile} & D\ge -P' & T\ge P/(1-u) \\
-\text{Old shoulder} & 16\sqrt{3}/9 & 64/27 \\
-\text{Rim-only }R & 16/9 & 256/243 \\
-\text{Finite rim + compression} & 16\rho/9+64(1-\rho)/27 & 256\rho/243+1024(1-\rho)/729
+\text{Profile}&D\ge-P'&T\ge\frac{P}{1-u}\\[4pt]
+\text{Old shoulder}&\frac{16\sqrt3}{9}&\frac{64}{27}\\[4pt]
+\text{Rim-only }R&\frac{16}{9}&\frac{256}{243}\\[4pt]
+\text{Finite rim + compression}&\frac{16\rho}{9}+\frac{64(1-\rho)}{27}&\frac{256\rho}{243}+\frac{1024(1-\rho)}{729}
 \end{array}
 $$
 
@@ -213,17 +223,25 @@ A second model relates a surface normal, thickness and backdrop distance through
 ### Height and analytic normal
 
 $$
-\begin{gathered}
-v = 1-u; f^{2} = 1-v^{3}; f = \sqrt{f^{2}} \\
-C(p) = 1 - 0.036[(x/\mathrm{hx})^{2} + (y/\mathrm{hy})^{2}] \\
-h_{\mathrm{cap}}(p) = H f C(p) \\
-\mathrm{grad}(C) = (-0.072x/\mathrm{hx}^{2}, -0.072y/\mathrm{hy}^{2}) \\
-N = \operatorname{normalize}( H[1.5v^{2} C n/b - f^{2} \mathrm{grad}(C)], f )
-\end{gathered}
+\begin{aligned}
+v&=1-u,\qquad f^2=1-v^3,\qquad f=\sqrt{1-v^3},\\
+C(\mathbf p)&=1-0.036\left[\left(\frac{x}{h_x}\right)^2+\left(\frac{y}{h_y}\right)^2\right],\\
+h_{\mathrm{cap}}(\mathbf p)&=HfC(\mathbf p),\\
+\nabla C&=\left(-\frac{0.072x}{h_x^2},-\frac{0.072y}{h_y^2}\right),\\
+\mathbf N&=\operatorname{normalize}\!\begin{pmatrix}
+H\left(\frac{1.5v^2C}{b}\mathbf n-f^2\nabla C\right)\\ f
+\end{pmatrix}.
+\end{aligned}
 $$
 
 
-The last expression is `(-grad(hcap),1)` multiplied by `f`. It evaluates the **vertical limiting rim normal** without a finite-difference stencil or division by zero. For [the condition below](#model-equation-111), `Nz→0` as `d→0+`.
+The unnormalized vector is proportional to the height-derived normal below. Its scaled form evaluates the vertical limiting rim normal without dividing by zero.
+
+$$
+\mathbf N\propto(-\nabla h_{\mathrm{cap}},1),\qquad N_z\longrightarrow0\quad\text{as }d\longrightarrow0^+,\quad H>0.
+$$
+
+
 
 <a id="model-equation-111"></a>
 
@@ -253,7 +271,7 @@ $$
 <a id="model-equation-114"></a>
 
 $$
-H=L\times \mathrm{thickness}\times \mathrm{power}\times \mathrm{dynamicDepth}
+H=L\times \mathrm{thickness}\times \mathrm{power}\times d_{\mathrm{dynamic}}
 $$
 
 <a id="model-equation-115"></a>
@@ -271,29 +289,28 @@ For unit incident propagation vector `I`, unit normal `N` opposing it, and index
 <a id="model-equation-116"></a>
 
 $$
-\eta =\mathrm{nIncident}/\mathrm{nTransmitted}
+\eta=\frac{n_{\mathrm{incident}}}{n_{\mathrm{transmitted}}}.
 $$
 
 
 $$
-\begin{gathered}
-c = -\operatorname{dot}(I,N) \\
-k = 1 - \eta ^{2}(1-c^{2}) \\
-k < 0\quad\text{no transmitted ray (total internal reflection)} \\
-T = \eta I + (\eta c - \sqrt{k})N
-\end{gathered}
+\begin{aligned}
+c&=-\mathbf I\cdot\mathbf N,\\
+k&=1-\eta^2(1-c^2),\\
+\mathbf T&=\eta\mathbf I+(\eta c-\sqrt{k})\mathbf N,\qquad k\ge0.
+\end{aligned}
 $$
 
 For this comparator:
 
 $$
-\begin{gathered}
-I = (0,0,-1) \\
-T_{\mathrm{inside}} = \operatorname{refract}(I, N, 1/n) \\
-Q = p + T_{\mathrm{inside}}.\mathrm{xy} \times  h_{\mathrm{cap}}(p)/(-T_{\mathrm{inside}}.z) \\
-T_{\mathrm{out}} = \operatorname{refract}(T_{\mathrm{inside}}, (0,0,1), n) \\
-F(p) = Q + T_{\mathrm{out}}.\mathrm{xy} \times  G/(-T_{\mathrm{out}}.z)
-\end{gathered}
+\begin{aligned}
+\mathbf I&=(0,0,-1),\\
+\mathbf T_{\mathrm{in}}&=\operatorname{refract}\!\left(\mathbf I,\mathbf N,\frac1n\right),\\
+\mathbf Q&=\mathbf p+\frac{h_{\mathrm{cap}}(\mathbf p)}{-T_{\mathrm{in},z}}\,\mathbf T_{\mathrm{in},xy},\\
+\mathbf T_{\mathrm{out}}&=\operatorname{refract}(\mathbf T_{\mathrm{in}},(0,0,1),n),\\
+\mathbf F(\mathbf p)&=\mathbf Q+\frac{G}{-T_{\mathrm{out},z}}\,\mathbf T_{\mathrm{out},xy}.
+\end{aligned}
 $$
 
 
@@ -308,13 +325,13 @@ $$
 <a id="model-equation-118"></a>
 
 $$
--T_{\mathrm{inside}}.z\ge 1/n
+-T_{\mathrm{in},z}\ge\frac1n.
 $$
 
 <a id="model-equation-119"></a>
 
 $$
--T_{\mathrm{out}}.z\ge \sqrt{2-n^{2}}>0
+-T_{\mathrm{out},z}\ge\sqrt{2-n^2}>0.
 $$
 
 - It is **not** a general guarantee for tilted cameras or other shapes.
@@ -359,31 +376,58 @@ The lab adds an independent synthetic highlight (the field model uses a fixed 0.
 
 ## Flat-front inverse-map compatibility
 
-This separate comparator has an orthographic camera looking along −z, a flat front at z=0, one back surface z=−h(x,y), index n>1, and background plane z=−G. All lengths use the same normalized unit; h>0 and s=G−h>0. It is a test of a specified geometry, not an identified Apple lens.
-
-For a proposed inverse image map F, let v=F−(x,y). Normal entry leaves the internal ray vertical. Snell's law requires:
+This comparator uses orthographic propagation toward negative depth, a flat front and one back graph. All lengths share one normalized unit. It tests a stated geometry, not an identified Apple lens.
 
 $$
-\begin{gathered}
-M = \operatorname{dot}(v,v), R = \sqrt{M+s^{2}}, D = n R-s \\
-\nabla h = v/D \\
-\text{transmitted branch}\quad s > \sqrt{M/(n^{2}-1)}
-\end{gathered}
+z_{\mathrm{front}}=0,\qquad z_{\mathrm{back}}=-h(x,y),\qquad z_{\mathrm{bg}}=-G,\qquad n>1,\quad h>0,\quad s=G-h>0.
+$$
+
+
+
+For a proposed inverse image map, normal entry leaves the internal ray vertical. Snell's law requires:
+
+$$
+\begin{aligned}
+\mathbf v&=\mathbf F(\mathbf p)-\mathbf p,&s&=G-h,\\
+M&=\mathbf v\cdot\mathbf v,&R&=\sqrt{M+s^2},\\
+D&=nR-s,&\nabla h&=\frac{\mathbf v}{D},\\
+s&>\sqrt{\frac{M}{n^2-1}}.&&
+\end{aligned}
 $$
 
 - h is one unknown surface; s cannot be fitted independently at each pixel. The branch inequality rejects the wrong-side solution and critical/grazing rays. Do not clamp them into validity.
-- Define c=∂x(vy)−∂y(vx) and K=vy·dot(v,∂xv)−vx·dot(v,∂yv). Equality of the surface's mixed derivatives gives **Dc−nK/R=0**. Terms containing ∇s cancel because ∇s=−v/D. A valid surface may therefore have nonzero image-map curl.
-- For reliably nonzero c, set ρ=K/c. The transmitted branch requires **ρ>M**. Its necessary clearance is:
+Equality of the surface's mixed derivatives gives the following compatibility condition. A valid surface may have nonzero image-map curl.
 
 $$
-\begin{gathered}
-s^{2} = [2n^{2}(\rho -M)+M+\sqrt{M^{2}+4n^{2}\rho (\rho -M)}] / [2(n^{2}-1)]
-\end{gathered}
+\begin{aligned}
+c&=\partial_xv_y-\partial_yv_x,\\
+K&=v_y(\mathbf v\cdot\partial_x\mathbf v)-v_x(\mathbf v\cdot\partial_y\mathbf v),\\
+Dc-\frac{nK}{R}&=0,\qquad\nabla s=-\frac{\mathbf v}{D}.
+\end{aligned}
 $$
 
-- This root still must satisfy −∇s=v/D, compatible boundary conditions, positive thickness and valid complete ray paths. It does not establish a surface by itself.
+
+For reliably nonzero curl, define the ratio below. Strict transmission imposes its inequality and determines a necessary clearance.
+
+$$
+\rho=\frac Kc,\qquad\rho>M.
+$$
+
+
+
+$$
+s^2=\frac{2n^2(\rho-M)+M+\sqrt{M^2+4n^2\rho(\rho-M)}}{2(n^2-1)}.
+$$
+
+The clearance root must also satisfy the gradient equation, compatible boundaries, positive thickness and complete paths. It does not establish a surface by itself.
 - Near-zero curl, derivative noise and footprint-crossing differences require separate treatment; do not turn them into impossibility claims.
-- The inequality follows from ρ=DR/n=M+s²−s·sqrt(M+s²)/n, which increases from M on the strictly transmitted branch.
+The inequality follows from this expression, which increases from the squared displacement on the strictly transmitted branch:
+
+$$
+\rho=\frac{DR}{n}=M+s^2-\frac{s\sqrt{M+s^2}}{n}.
+$$
+
+
 - Failure rules out an **exact** map in this stated family; it supplies no lower bound on image error from an approximate surface or a different camera/front surface.
 
 [Executable equations](../reconstruction/surface_compatibility.py) and [independent controls](../reconstruction/verify-surface-compatibility.py) check scalar versus vector Snell refraction, a known quadratic surface with nonzero map curl, inverse recovery, scale invariance and invalid branches. Run `python verify-surface-compatibility.py` in the reconstruction directory.
@@ -399,23 +443,39 @@ That paper assumes collimated input/output beams, so its beam-shaping PDE must n
 
 ## Finite-camera slab control
 
-Use an infinite plane-parallel slab to check camera calibration before fitting a curved solid. Put the pinhole at (0,0,C), front at z=0, back at z=−h and backdrop at z=−G, with C>0, G>0, 0≤h≤G and n≥1. Let p be the ray's front-plane position.
+Use an infinite plane-parallel slab to check camera calibration before fitting a curved solid. The sample coordinate is the ray's front-plane position.
+
+$$
+\begin{aligned}
+\mathbf x_{\mathrm{camera}}&=(0,0,C),& z_{\mathrm{front}}&=0,\\
+z_{\mathrm{back}}&=-h,&z_{\mathrm{bg}}&=-G,\\
+C&>0,&G&>0,\qquad0\le h\le G,\quad n\ge1.
+\end{aligned}
+$$
+
+
 
 The unlensed backdrop point is (1+G/C)p; divide physical backdrop coordinates by that factor before comparing image maps.
 
 $$
-\begin{gathered}
-m = p/C; A = \sqrt{n^{2} + (n^{2}-1)|m|^{2}} \\
-F(p) = p + h [m/A - m] / (1+G/C) \\
-f = h/(C+G) \\
-\mathrm{J\_tangential} = 1 + f(1/A - 1) \\
-\mathrm{J\_radial} = 1 + f(n^{2}/A^{3} - 1)
-\end{gathered}
+\begin{aligned}
+\mathbf m&=\frac{\mathbf p}{C},&A&=\sqrt{n^2+(n^2-1)\|\mathbf m\|_2^2},\\
+\mathbf F(\mathbf p)&=\mathbf p+\frac{h}{1+\frac GC}\left(\frac{\mathbf m}{A}-\mathbf m\right),\\
+f&=\frac{h}{C+G},\\
+J_{\mathrm{tangential}}&=1+f\left(\frac1A-1\right),\\
+J_{\mathrm{radial}}&=1+f\left(\frac{n^2}{A^3}-1\right).
+\end{aligned}
 $$
 
 - Both derivatives are at least 1−f>0: this finite-camera slab cannot fold/reverse its image. Curved surfaces, sidewalls and multiple paths are outside that result.
 - Changing viewpoint alone does not justify adding a mirrored rim.
-- h=0 or n=1 gives identity. C→∞ also gives identity for this parallel slab; a curved surface need not. At the optical axis both derivatives equal 1−h(1−1/n)/(C+G).
+Zero thickness, equal indices and the far-camera limit give identity for this parallel slab; a curved surface need not. At the optical axis both Jacobian eigenvalues equal:
+
+$$
+J_{\mathrm{axis}}=1-\frac{h}{C+G}\left(1-\frac1n\right).
+$$
+
+
 - Central contraction of the source map corresponds to apparent image magnification.
 
 [Implementation](../reconstruction/camera_slab.py) and [independent vector-Snell controls](../reconstruction/verify-camera-slab.py) check both interfaces, Jacobian, equal-index/no-slab/far-camera limits and unit scaling. Run `python verify-camera-slab.py`. The NumPy oracle tests bounded floating-point cases; the algebra supplies the stated geometric bound.
@@ -423,21 +483,43 @@ $$
 
 ### Curved back surface with a finite camera
 
-For the same flat front, let the back be z=−h(q). Its intersection q differs from the front-plane sample p. Define H(p)=h(q(p)), use the slab's internal slope w=m/A and set q=p+Hw. The desired physical backdrop point is U=(1+G/C)F(p). With unit internal/outgoing directions t and v, Snell's normal is N=nt−v. A back graph has gradient b=N_xy/N_z.
+For the same flat front, the back intersection differs from the front-plane sample. Define its sampled height and the internal slope as follows:
+
+$$
+\begin{aligned}
+H(\mathbf p)&=h(\mathbf q(\mathbf p)),&\mathbf w&=\frac{\mathbf m}{A},\\
+\mathbf q&=\mathbf p+H\mathbf w,&\mathbf U&=\left(1+\frac GC\right)\mathbf F(\mathbf p),\\
+\mathbf N&=n\mathbf t-\mathbf v,&\mathbf b&=\frac{\mathbf N_{xy}}{N_z}.
+\end{aligned}
+$$
+
+Here the two ray directions are unit vectors. The unnormalized Snell normal supplies the back-graph gradient through its component ratio.
 
 The chain rule gives:
 
 $$
-\begin{gathered}
-B(p,H) = (I + H \mathrm{Dw})^T b / (1 - w\cdot b) \\
-\nabla_p H = B(p,H) \\
-\partial_x B_y - \partial_y B_x + B_x \partial_H B_y - B_y \partial_H B_x = 0
-\end{gathered}
+\begin{aligned}
+\mathbf B(\mathbf p,H)&=\frac{\left(\mathbf I+H\,\mathrm D\mathbf w\right)^{\mathsf T}\mathbf b}{1-\mathbf w\cdot\mathbf b},\\
+\nabla_{\mathbf p}H&=\mathbf B(\mathbf p,H),\\
+\partial_xB_y-\partial_yB_x+B_x\partial_HB_y-B_y\partial_HB_x&=0.
+\end{aligned}
 $$
 
-Partial x/y derivatives include the prescribed F(p), holding H fixed. The expanded condition includes H's unknown derivatives through the last two terms; raw image-map curl alone remains insufficient. Require 0<H<G, N_z<0, n(t·v)>1 and 1−w·b>0 on this transmitted local branch. Do not clamp failures into rays. Call the scalar compatibility residual Q(p,H).
+Spatial partial derivatives hold height fixed while including the prescribed map. The last two terms account for the unknown height derivatives. Raw image-map curl alone remains insufficient.
 
-A pointwise depth root also requires ∇p Q + Q_H B=0 along the surface; independently choosing a root at each pixel is insufficient. Boundary conditions, first-hit/sidewall paths and global height consistency remain separate checks.
+$$
+0<H<G,\qquad N_z<0,\qquad n(\mathbf t\cdot\mathbf v)>1,\qquad1-\mathbf w\cdot\mathbf b>0.
+$$
+
+Do not clamp failed branch conditions into rays. Denote the scalar compatibility residual by `Q`.
+
+A pointwise depth root must also satisfy this derivative condition along the surface. Independent per-pixel roots are insufficient; boundaries, first-hit paths and global height consistency remain separate checks.
+
+$$
+\nabla_{\mathbf p}Q+(\partial_HQ)\mathbf B=\mathbf0.
+$$
+
+
 
 [Executable inverse equation](../reconstruction/perspective_back_surface.py) and [independent forward controls](../reconstruction/verify-perspective-back-surface.py) recover known quadratic surfaces from vector Snell paths. Tests cover height derivatives, the expanded condition, unit scaling, wrong-branch rejection and the orthographic limit. Run `python verify-perspective-back-surface.py`. These validate the stated equations, not a finite-camera realization of Apple's images or of the current fitted switch map.
 
@@ -451,7 +533,7 @@ The [HD study](reconstruction.md) tests offline hypotheses beyond the portable l
 <a id="model-equation-124"></a>
 
 $$
-|x/\mathrm{hx}|^n+|y/\mathrm{hy}|^n=1
+\left|\frac{x}{h_x}\right|^n+\left|\frac{y}{h_y}\right|^n=1.
 $$
 
 <a id="model-equation-125"></a>
@@ -466,13 +548,13 @@ $$
 <a id="model-equation-126"></a>
 
 $$
-u=x/\mathrm{hx}
+u=\frac{x}{h_x}.
 $$
 
 <a id="model-equation-127"></a>
 
 $$
-v=y/\mathrm{hy}
+v=\frac{y}{h_y}.
 $$
 
 <a id="model-equation-128"></a>
@@ -484,19 +566,19 @@ $$
 <a id="model-equation-129"></a>
 
 $$
-T=u^{2}+[v/Q(u)]^{2}=1
+T=u^2+\left(\frac{v}{Q(u)}\right)^2=1.
 $$
 
 <a id="model-equation-130"></a>
 
 $$
-T_x=[2u-2v^{2}Q'/Q^{3}]/\mathrm{hx}
+T_x=\frac{2u-\frac{2v^2Q'}{Q^3}}{h_x}.
 $$
 
 <a id="model-equation-131"></a>
 
 $$
-T_y=2v/(\mathrm{hy} Q^{2})
+T_y=\frac{2v}{h_yQ^2}.
 $$
 
 
@@ -508,7 +590,7 @@ Its sampled minimum curvature radius is about 43.39 pixels; the optical band is 
 <a id="model-equation-132"></a>
 
 $$
-a(d)=\operatorname{min}(\mathrm{hx},\mathrm{hy}) \sum  \mathrm{ci} \mathrm{Bi}(\operatorname{clamp}(d/r,0,1))
+a(d)=\min(h_x,h_y)\sum_i c_iB_i\!\left(\operatorname{clamp}\!\left(\frac d r,0,1\right)\right).
 $$
 
 - The map is [the condition below](#model-equation-133), with quintic `S` evaluated at `d/r`. This allows independently fitted central X/Y scale and a flexible folded rim, without a fitted displacement image.
@@ -516,7 +598,7 @@ $$
 <a id="model-equation-133"></a>
 
 $$
-F=(x(1-\mathrm{cxS}), y(1-\mathrm{cyS}))-a n
+F=(x(1-c_xS), y(1-c_yS))-a n
 $$
 
 - It is an empirical comparator, not a physical surface reconstruction or a nonfolding guarantee.
@@ -540,13 +622,13 @@ $$
 <a id="model-equation-136"></a>
 
 $$
-F(v)=(1-a/r)v
+\mathbf F(\mathbf v)=\left(1-\frac a r\right)\mathbf v.
 $$
 
 <a id="model-equation-137"></a>
 
 $$
-\mathrm{a0}=A \operatorname{clamp}(1-d/b,0,1)^p
+a_0(d)=A\left[\operatorname{clamp}\!\left(1-\frac d b,0,1\right)\right]^p.
 $$
 
 <a id="model-equation-138"></a>
@@ -563,19 +645,19 @@ The following splice preserves the outer map and independently varies the inner 
 <a id="model-equation-139"></a>
 
 $$
-\mathrm{da}=b/4
+d_a=\frac b4.
 $$
 
 <a id="model-equation-140"></a>
 
 $$
-\mathrm{ds}=b/2
+d_s=\frac b2.
 $$
 
 <a id="model-equation-141"></a>
 
 $$
-\mathrm{w0}=b/2
+w_0=\frac b2.
 $$
 
 <a id="model-equation-142"></a>
@@ -598,16 +680,15 @@ $$
 
 
 $$
-\begin{gathered}
-\mathrm{for} d\le \mathrm{ds}: \\
-a = \mathrm{a0}(d) [1+(g-1) \mathrm{S5}(\operatorname{clamp}((d-\mathrm{da})/(\mathrm{ds}-\mathrm{da}),0,1))] \\
-\mathrm{for} \mathrm{ds}<d<\mathrm{ds}+k \mathrm{w0}: \\
-t = (d-\mathrm{ds})/(k \mathrm{w0}) \\
-a = g A 2^{-p} (1-t)^q \\
-\times  \operatorname{exp}[(q-p k)t + (q-p k^{2})t^{2}/2] \\
-\text{after that}\quad a = 0 \\
-\mathrm{S5}(u) = 10u^{3}-15u^{4}+6u^{5}
-\end{gathered}
+\begin{aligned}
+S_5(u)&=10u^3-15u^4+6u^5,\\
+t&=\frac{d-d_s}{kw_0},\\
+a(d)&=\begin{cases}
+a_0(d)\left[1+(g-1)S_5\!\left(\operatorname{clamp}\!\left(\frac{d-d_a}{d_s-d_a},0,1\right)\right)\right],&d\le d_s,\\
+gA2^{-p}(1-t)^q\exp\!\left[(q-pk)t+\frac{q-pk^2}{2}t^2\right],&d_s<d<d_s+kw_0,\\
+0,&d\ge d_s+kw_0.
+\end{cases}
+\end{aligned}
 $$
 
 
@@ -632,12 +713,16 @@ $$
 <a id="model-equation-147"></a>
 
 $$
-\mathrm{ds}+k \mathrm{w0}<R
+d_s+k w_0<R
 $$
 
 
 Tail support grows with `k`, but visible transition width need not grow proportionally: matching the entry derivatives constrains the tail. Neither `g` nor `q` is a measured physical surface curvature.
-- The radial/tangential Jacobian eigenvalues are `1+a′(d)` and `1−a/r`. A sign change can invert source detail.
+- The radial and tangential Jacobian eigenvalues are shown below. A sign change can invert source detail.
+
+$$
+J_{\mathrm{radial}}=1+a'(d),\qquad J_{\mathrm{tangential}}=1-\frac ar.
+$$
 - Test supported parameters for additional folds; smoothness and gradient-potential integrability do not establish a valid refracting solid or Apple fidelity.
 
 Foreground color is a separate control. Independent RGB power responses can fit one pose yet reverse warm hues when moved over a different part of the source. A shared monotone scalar response [the condition below](#model-equation-148) preserves channel ordering and neutral grays, with a white plateau if [the condition below](#model-equation-149) above a threshold.
@@ -645,7 +730,7 @@ Foreground color is a separate control. Independent RGB power responses can fit 
 <a id="model-equation-148"></a>
 
 $$
-C=(f(\mathrm{BR}),f(\mathrm{BG}),f(\mathrm{BB}))
+C=(f(B_R),f(B_G),f(B_B))
 $$
 
 <a id="model-equation-149"></a>
@@ -670,7 +755,7 @@ $$
 <a id="model-equation-151"></a>
 
 $$
-u=\operatorname{clamp}((c-t)/(1-t),0,1)
+u=\operatorname{clamp}\!\left(\frac{c-t}{1-t},0,1\right).
 $$
 
 <a id="model-equation-152"></a>
@@ -682,7 +767,7 @@ $$
 <a id="model-equation-153"></a>
 
 $$
-f'=1-k u^{2}(3-4u)\ge 1-k/4
+f'=1-ku^2(3-4u)\ge1-\frac k4.
 $$
 
 
@@ -693,7 +778,7 @@ Express blur and lighting lengths in the same geometry units as the element, the
 <a id="model-equation-154"></a>
 
 $$
-D=\operatorname{min}(\mathrm{width},\mathrm{height})
+D=\min(\mathrm{width},\mathrm{height})
 $$
 
 <a id="model-equation-155"></a>
@@ -727,19 +812,19 @@ $$
 <a id="model-equation-158"></a>
 
 $$
-t=(-\mathrm{ny},\mathrm{nx})
+t=(-n_y,n_x)
 $$
 
 <a id="model-equation-159"></a>
 
 $$
-\mathrm{bT}=r\times \mathrm{tangentBand}
+b_T=r\times \beta_T
 $$
 
 <a id="model-equation-160"></a>
 
 $$
-v=1-\operatorname{clamp}(d/\mathrm{bT},0,1)
+v=1-\operatorname{clamp}\!\left(\frac d{b_T},0,1\right).
 $$
 
 <a id="model-equation-161"></a>
@@ -750,9 +835,7 @@ $$
 
 
 $$
-\begin{gathered}
-F(p) = (I-\operatorname{diag}(\mathrm{cx},\mathrm{cy}))p - a(d)n - \tau B(d)(p\cdot t)t
-\end{gathered}
+\mathbf F(\mathbf p)=\left[\mathbf I-\operatorname{diag}(c_x,c_y)\right]\mathbf p-a(d)\mathbf n-\tau B(d)(\mathbf p\cdot\mathbf t)\mathbf t.
 $$
 
 [the condition below](#model-equation-162), [the condition below](#model-equation-163), [the condition below](#model-equation-164), [the condition below](#model-equation-165). On a straight horizontal edge, [the condition below](#model-equation-166); its reciprocal is displayed horizontal scale. The central scale is retained while tangential stretch grows toward the silhouette. `B`, `B′` and `B″` vanish at its inner join.
@@ -768,25 +851,25 @@ $$
 <a id="model-equation-163"></a>
 
 $$
-0.05\le \mathrm{tangentBand}\le 1
+0.05\le \beta_T\le 1
 $$
 
 <a id="model-equation-164"></a>
 
 $$
-\mathrm{cx}\in [0,0.3]
+c_x\in [0,0.3]
 $$
 
 <a id="model-equation-165"></a>
 
 $$
-\mathrm{cy}\in [0,0.65]
+c_y\in [0,0.65]
 $$
 
 <a id="model-equation-166"></a>
 
 $$
-\partial \mathrm{Fx}/\partial_x=1-\mathrm{cx}-\tau B
+\frac{\partial F_x}{\partial x}=1-c_x-\tau B.
 $$
 
 
@@ -804,7 +887,7 @@ $$
 <a id="model-equation-168"></a>
 
 $$
-\Psi =V(d)+K(d)x^{2}/2+\mathrm{cy} y^{2}/2
+\Psi=V(d)+\frac{K(d)x^2}{2}+\frac{c_yy^2}{2}.
 $$
 
 <a id="model-equation-169"></a>
@@ -816,7 +899,7 @@ $$
 <a id="model-equation-170"></a>
 
 $$
-K=\mathrm{cx}+\tau B
+K=c_x+\tau B
 $$
 
 <a id="model-equation-171"></a>
@@ -827,10 +910,10 @@ $$
 
 
 $$
-\begin{gathered}
-F = ((1-K)x, (1-\mathrm{cy})y) + [-a + K'x^{2}/2]n \\
-K' = -20\tau u(1-u)^{3}/\mathrm{bT}, u=\operatorname{clamp}(d/\mathrm{bT},0,1)
-\end{gathered}
+\begin{aligned}
+\mathbf F&=((1-K)x,(1-c_y)y)+\left[-a+\frac{K'x^2}{2}\right]\mathbf n,\\
+K'&=-\frac{20\tau u(1-u)^3}{b_T},\qquad u=\operatorname{clamp}\!\left(\frac d{b_T},0,1\right).
+\end{aligned}
 $$
 
 The extra normal term is required by this potential; dropping it would break equality of mixed derivatives. This control tests integrability, not exact thick-lens optics. It did not improve the toolbar fit. The better tensor fit cannot therefore be relabeled as a verified phase surface.
@@ -838,16 +921,19 @@ The extra normal term is required by this potential; dropping it would break equ
 **Smooth height surface. ** A continuous crown removes the old cap's explicit inner shoulder join. Define the footprint field `T` and height:
 
 $$
-\begin{gathered}
-\text{circle / oval}\quad T = |x/\mathrm{hx}|^{n} + |y/\mathrm{hy}|^{n} \\
-\text{measured oval}\quad T = u^{2} + [v/Q(u)]^{2} \\
-\text{capsule}\quad T = [\operatorname{max}(|x|-(\mathrm{hx}-r),0)^{2} + y^{2}]/r^{2} \\
-s = 1-T^{m} \\
-A = \mathrm{cx}(x/\mathrm{hx})^{2}+\mathrm{cy}(y/\mathrm{hy})^{2}; W = (1-k)+k T; C = 1-A W \\
-z(p) = H s^{\beta} C\quad\text{inside T<1} \\
-N \propto  ( H[\beta m T^{m-1}T_x C - s C_x], \\
-H[\beta m T^{m-1}T_y C - s C_y], s^{1-\beta} )
-\end{gathered}
+\begin{aligned}
+T_{\mathrm{oval}}&=\left|\frac{x}{h_x}\right|^n+\left|\frac{y}{h_y}\right|^n,\\
+T_{\mathrm{measured}}&=u^2+\left(\frac{v}{Q(u)}\right)^2,\\
+T_{\mathrm{capsule}}&=\frac{\max\{|x|-(h_x-r),0\}^2+y^2}{r^2},\\
+s&=1-T^m,\\
+A&=c_x\left(\frac{x}{h_x}\right)^2+c_y\left(\frac{y}{h_y}\right)^2,\qquad W=1-k+kT,\\
+C&=1-AW,\qquad z(\mathbf p)=Hs^\beta C,\qquad T<1,\\
+\mathbf N&\propto\begin{pmatrix}
+H(\beta mT^{m-1}T_xC-sC_x)\\
+H(\beta mT^{m-1}T_yC-sC_y)\\
+s^{1-\beta}
+\end{pmatrix}.
+\end{aligned}
 $$
 
 Domains: [the condition below](#model-equation-172), [the condition below](#model-equation-173), [the condition below](#model-equation-174), [the condition below](#model-equation-175); [the condition below](#model-equation-176) for the circle, or the fitted polynomial field for the measured oval. Earlier broad-crown trials use [the condition below](#model-equation-177), [the condition below](#model-equation-178), [the condition below](#model-equation-179). Independent X/Y crowns and [the condition below](#model-equation-180) vary how cross-sections change with depth; require [the condition below](#model-equation-181).
@@ -857,7 +943,7 @@ Increasing `m` concentrates curvature near the boundary. At [the condition below
 <a id="model-equation-172"></a>
 
 $$
-H=\operatorname{min}(h)\times \mathrm{height}
+H=\min(h)\times \mathrm{height}
 $$
 
 <a id="model-equation-173"></a>
@@ -887,7 +973,7 @@ $$
 <a id="model-equation-177"></a>
 
 $$
-\mathrm{cx}=\mathrm{cy}=c/2
+c_x=c_y=\frac c2.
 $$
 
 <a id="model-equation-178"></a>
@@ -917,7 +1003,7 @@ $$
 <a id="model-equation-182"></a>
 
 $$
-m=1, \beta =1/2, \mathrm{cx}=\mathrm{cy}=0
+m=1,\qquad\beta=\frac12,\qquad c_x=c_y=0.
 $$
 
 
@@ -928,7 +1014,7 @@ The capsule formula uses its long-axis frame, [the condition below](#model-equat
 <a id="model-equation-183"></a>
 
 $$
-\mathrm{hx}\ge \mathrm{hy}=r
+h_x\ge h_y=r
 $$
 
 
@@ -937,19 +1023,19 @@ The exponential alternative substitutes [the condition below](#model-equation-18
 <a id="model-equation-184"></a>
 
 $$
-s=[1-\operatorname{exp}(-m(1-T))]/[1-\operatorname{exp}(-m)]
+s=\frac{1-\exp[-m(1-T)]}{1-\exp(-m)}.
 $$
 
 <a id="model-equation-185"></a>
 
 $$
--\mathrm{ds}/\mathrm{dT}=m \operatorname{exp}(-m(1-T))/[1-\operatorname{exp}(-m)]
+-\frac{\mathrm ds}{\mathrm dT}=\frac{m\exp[-m(1-T)]}{1-\exp(-m)}.
 $$
 
 <a id="model-equation-186"></a>
 
 $$
-G=\operatorname{min}(h)\times \mathrm{gap}
+G=\min(h)\times \mathrm{gap}
 $$
 
 <a id="model-equation-187"></a>
@@ -959,18 +1045,24 @@ $$
 $$
 
 
-The outline does not identify `H,m,β,c` uniquely. For a height graph, principal curvatures are eigenvalues of `I⁻¹II`, where [the condition below](#model-equation-188) and [the condition below](#model-equation-189) (sign depends on chosen orientation). Height alone is not a curvature radius. The current checks establish analytic-normal/scale/mirror limits; full path-validity and temporal calibration remain open.
+The outline does not uniquely identify the height parameters. For a height graph, the [first](#model-equation-188) and [second](#model-equation-189) fundamental-form matrices give the principal curvatures below. Their signs depend on orientation; height alone is not a curvature radius.
+
+$$
+\{\kappa_1,\kappa_2\}=\operatorname{eig}(\mathbf g^{-1}\mathbf b).
+$$
+
+
 
 <a id="model-equation-188"></a>
 
 $$
-I=\mathrm{Id}+\nabla z\otimes \nabla z
+\mathbf g=\mathbf I+\nabla z\otimes\nabla z.
 $$
 
 <a id="model-equation-189"></a>
 
 $$
-\mathrm{II}=\mathrm{Hess}(z)/\sqrt{1+|\nabla z|^{2}}
+\mathbf b=\frac{\operatorname{Hess}z}{\sqrt{1+\|\nabla z\|_2^2}}.
 $$
 
 
@@ -991,19 +1083,19 @@ $$
 <a id="model-equation-192"></a>
 
 $$
-W=V/S
+W=\frac VS.
 $$
 
 
 $$
-\begin{gathered}
-T^{\ast} = U + S W^{p}, p\ge 1 \\
-T^{\ast}x = U_x[1+(p-1)W^{p}] + p W^{p-1}V_x \\
-T^{\ast}y = p W^{p-1}V_y
-\end{gathered}
+\begin{aligned}
+T^\ast&=U+SW^p,\qquad p\ge1,\\
+T_x^\ast&=U_x[1+(p-1)W^p]+pW^{p-1}V_x,\\
+T_y^\ast&=pW^{p-1}V_y.
+\end{aligned}
 $$
 
-Use `T*` consistently in the height, crown and analytic normal. At [the condition below](#model-equation-193) it recovers the original field. It preserves the silhouette ([the condition below](#model-equation-194)) and longitudinal Y=0 section ([the condition below](#model-equation-195)), while larger `p` reduces central transverse curvature. The implementation's `cross_section_power` controls `p`; exterior occupancy retains the original field to avoid singular perspective extrapolation at [the condition below](#model-equation-196).
+Use `T*` consistently in the height, crown and analytic normal. At [the condition below](#model-equation-193) it recovers the original field. It preserves the silhouette ([the condition below](#model-equation-194)) and longitudinal symmetry-axis section ([the condition below](#model-equation-195)), while larger `p` reduces central transverse curvature. The implementation's `cross_section_power` controls `p`; exterior occupancy retains the original field to avoid singular perspective extrapolation at [the condition below](#model-equation-196).
 
 <a id="model-equation-193"></a>
 
@@ -1039,13 +1131,13 @@ The capsule's [the condition below](#model-equation-197), [the condition below](
 <a id="model-equation-197"></a>
 
 $$
-q=\operatorname{max}(|x|-a,0)
+q=\max(|x|-a,0)
 $$
 
 <a id="model-equation-198"></a>
 
 $$
-a=\mathrm{hx}-r
+a=h_x-r
 $$
 
 <a id="model-equation-199"></a>
@@ -1062,13 +1154,11 @@ $$
 
 
 $$
-\begin{gathered}
-u = \operatorname{clamp}((s/w+1)/2, 0, 1) \\
-q = 0\quad\text{for sat most-w} \\
-q = w(2u^{3}-u^{4})\quad\text{for -w<s<w} \\
-q = s\quad\text{for sat leastw} \\
-q' = 3u^{2}-2u^{3}\quad\text{within the transition}
-\end{gathered}
+\begin{aligned}
+u&=\operatorname{clamp}\!\left(\frac{s+w}{2w},0,1\right),\\
+q(s)&=\begin{cases}0,&s\le-w,\\w(2u^3-u^4),&-w<s<w,\\s,&s\ge w,\end{cases}\\
+q'(s)&=3u^2-2u^3,\qquad -w<s<w.
+\end{aligned}
 $$
 
 Value, first and second derivative match both adjoining pieces. Use this `q` in the footprint and its derivatives; [the condition below](#model-equation-201) controls the width. The silhouette changes slightly, so coverage must follow the modified footprint too. This is not a promise of C2 smoothness for arbitrary footprints or a reconstruction of Apple's shape.
@@ -1076,7 +1166,7 @@ Value, first and second derivative match both adjoining pieces. Use this `q` in 
 <a id="model-equation-201"></a>
 
 $$
-\mathrm{cap\_join}=w/r
+c_{\mathrm{join}}=\frac wr.
 $$
 
 
@@ -1100,27 +1190,27 @@ For unit incident direction `I`, an opposing unit normal `N`, index ratio [the c
 <a id="model-equation-204"></a>
 
 $$
-\eta =\mathrm{ni}/\mathrm{nt}
+\eta=\frac{n_i}{n_t}.
 $$
 
 <a id="model-equation-205"></a>
 
 $$
-\mathrm{ci}=-I\cdot N
+c_i=-I\cdot N
 $$
 
 <a id="model-equation-206"></a>
 
 $$
-K=1-\eta ^{2}(1-\mathrm{ci}^{2})
+K=1-\eta ^{2}(1-c_i^{2})
 $$
 
 
 $$
-\begin{gathered}
-\mathrm{reflected}   = I + 2\mathrm{ci} N \\
-\mathrm{transmitted} = \eta I + (\eta \mathrm{ci}-\sqrt{K})N\quad\text{when Kat least0}
-\end{gathered}
+\begin{aligned}
+\mathbf I_{\mathrm{reflected}}&=\mathbf I+2c_i\mathbf N,\\
+\mathbf I_{\mathrm{transmitted}}&=\eta\mathbf I+\left(\eta c_i-\sqrt K\right)\mathbf N,\qquad K\ge0.
+\end{aligned}
 $$
 
 Unpolarized dielectric Fresnel weights split each path. At total internal reflection ([the condition below](#model-equation-207)) there is no transmitted direction; its entire weight continues along reflection. Subsequent transmissions hit the background plane or the environment. A finite path series reports remaining untraced energy; it must not silently become fabricated background detail.
@@ -1147,7 +1237,7 @@ For a view direction along +Z, the reflected lookup direction is [the condition 
 <a id="model-equation-208"></a>
 
 $$
-R=(2\mathrm{NzNx},2\mathrm{NzNy},2\mathrm{Nz}^{2}-1)
+\mathbf R=(2N_zN_x,\;2N_zN_y,\;2N_z^2-1).
 $$
 
 
@@ -1162,7 +1252,7 @@ Neither paints a particular edge. The environment is inferred nuisance lighting,
 <a id="model-equation-209"></a>
 
 $$
-E(R)=\mathrm{e0}+\mathrm{exRx}+\mathrm{eyRy}+\mathrm{ezRz}
+\mathbf E(\mathbf R)=\mathbf e_0+\mathbf e_xR_x+\mathbf e_yR_y+\mathbf e_zR_z.
 $$
 
 
@@ -1179,13 +1269,13 @@ $$
 <a id="model-equation-211"></a>
 
 $$
-\lambda ={0.65,0.55,0.45} \mu m
+\lambda\in\{0.65,0.55,0.45\}\,\mu\mathrm m.
 $$
 
 <a id="model-equation-212"></a>
 
 $$
-B\in [0,0.025] \mu m^{2}
+B\in [0,0.025] \mu\mathrm m^{2}
 $$
 
 - Transmission is scaled relative to the reference wavelength by `(1−Fλ)/(1−FG)`; reflected-environment terms use `Fλ`. At [the condition below](#model-equation-213) both recover the common-IOR comparator.
@@ -1203,13 +1293,13 @@ $$
 <a id="model-equation-214"></a>
 
 $$
-F\lambda =p+[1+D(\lambda ^{-2}-0.55^{-2})](\mathrm{F0}-p)
+\mathbf F_\lambda=\mathbf p+\left[1+D\left(\lambda^{-2}-0.55^{-2}\right)\right](\mathbf F_0-\mathbf p).
 $$
 
 <a id="model-equation-215"></a>
 
 $$
-D\in [0,0.2] \mu m^{2}
+D\in [0,0.2] \mu\mathrm m^{2}
 $$
 
 <a id="model-equation-216"></a>
@@ -1257,11 +1347,11 @@ $$
 
 
 $$
-\begin{gathered}
-\text{light foreground}\quad f(x) = x - \tau x^\gamma  \\
-\text{dark foreground}\quad g(x) = 1-f(1-x) = x + \tau (1-x)^\gamma  \\
-f'(x) = 1-\tau \gamma x^{\gamma-1} \ge  0
-\end{gathered}
+\begin{aligned}
+f(x)&=x-\tau x^\gamma&&\text{(light foreground)},\\
+g(x)&=1-f(1-x)=x+\tau(1-x)^\gamma&&\text{(dark foreground)},\\
+f'(x)&=1-\tau\gamma x^{\gamma-1}\ge0.&&
+\end{aligned}
 $$
 
 Endpoints are `[0,1−τ]` and `[τ,1]`; darker inputs cannot wrap above brighter ones. This is a channel bound, not a physical-luminance curve or a guarantee of a WCAG contrast ratio. Applying it after synthetic illumination preserves the chosen material endpoint. Foreground ink is outside the operation.
@@ -1273,12 +1363,12 @@ Normal finger contact and a side-wall reaction act along different axes. Strictl
 A homogeneous, approximately incompressible deformation has principal stretches with product one; it does not require one specific redistribution law.
 
 $$
-\begin{gathered}
-\mathrm{sx} = \operatorname{exp}(q - z/2) \\
-\mathrm{sy} = \operatorname{exp}(-q - z/2 - f p) \\
-\mathrm{sz} = \operatorname{exp}(z + f p) \\
-\mathrm{sx} \mathrm{sy} \mathrm{sz} = 1
-\end{gathered}
+\begin{aligned}
+s_x&=\exp\!\left(q-\frac z2\right),\\
+s_y&=\exp\!\left(-q-\frac z2-fp\right),\\
+s_z&=\exp(z+fp),\\
+s_xs_ys_z&=1.
+\end{aligned}
 $$
 
 `q` is in-plane strain including the wall contribution, `z` is normal strain (negative while held), `p` is positive wall-compression magnitude, and [the condition below](#model-equation-220) apportions wall compensation into depth. During recovery `p` is a signed spring state. At fixed `z`, increasing `p` increases depth when [the condition below](#model-equation-221); simultaneous normal pressure can still leave total depth below rest.
@@ -1305,13 +1395,13 @@ This answers the pressure-direction question without assuming Apple uses a volum
 <a id="model-equation-222"></a>
 
 $$
-V=H\int D \mathrm{fC} \mathrm{dA}
+V=H\int_{\mathcal D}fC\,\mathrm dA.
 $$
 
 <a id="model-equation-223"></a>
 
 $$
-H=\mathrm{Vtarget}/\int D \mathrm{fC} \mathrm{dA}
+H=\frac{V_{\mathrm{target}}}{\displaystyle\int_{\mathcal D}fC\,\mathrm dA}.
 $$
 
 - An exact-volume model must also resolve constraints when maximum depth is reached.
@@ -1344,31 +1434,32 @@ $$
 <a id="model-equation-227"></a>
 
 $$
-y=x-x*
+y=x-x^\ast.
 $$
 
 <a id="model-equation-228"></a>
 
 $$
-a=c/(2m)
+a=\frac{c}{2m}.
 $$
 
 <a id="model-equation-229"></a>
 
 $$
-\mathrm{w0}^{2}=k/m
+\omega_0^2=\frac km.
 $$
 
 
 $$
-\begin{gathered}
-y'' + 2a y' + \mathrm{w0}^{2} y = 0 \\
-\text{underdamped}\quad w=\sqrt{\mathrm{w0}^{2}-a^{2}} \\
-y(t)=\operatorname{exp}(-a t)[ y(0) \operatorname{cos}(w t) + (v(0)+a y(0)) \operatorname{sin}(w t)/w ] \\
-\text{critical}\quad y(t)=\operatorname{exp}(-a t)[ y(0) + (v(0)+a y(0))t ] \\
-\text{overdamped}\quad y(t)=A \operatorname{exp}(r_1 t)+B \operatorname{exp}(r_2 t) \\
-r_1,2=-a\pm \sqrt{a^{2}-\mathrm{w0}^{2}}; A=(v(0)-r_2 y(0))/(r_1-r_2); B=y(0)-A
-\end{gathered}
+\begin{aligned}
+\ddot y+2a\dot y+\omega_0^2y&=0.\\[3pt]
+\text{Underdamped: }\omega&=\sqrt{\omega_0^2-a^2},\\
+y(t)&=e^{-at}\left[y(0)\cos(\omega t)+\frac{v(0)+ay(0)}{\omega}\sin(\omega t)\right].\\[3pt]
+\text{Critical: }y(t)&=e^{-at}\left[y(0)+(v(0)+ay(0))t\right].\\[3pt]
+\text{Overdamped: }r_{1,2}&=-a\pm\sqrt{a^2-\omega_0^2},\\
+A&=\frac{v(0)-r_2y(0)}{r_1-r_2},\qquad B=y(0)-A,\\
+y(t)&=Ae^{r_1t}+Be^{r_2t}.
+\end{aligned}
 $$
 
 The reference returns both position and the derivative of these expressions. Fixed-target energy cannot grow.

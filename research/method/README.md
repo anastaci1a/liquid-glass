@@ -8,10 +8,10 @@ Empirical maps may diagnose or initialize a solid. They do not authorize indepen
 
 | Convention | Value |
 | --- | --- |
-| Scale | L = minor half-extent |
+| Scale | Fixed minor half-extent, denoted by `L`. |
 | Image axes | x right; y down |
-| Depth | +z toward viewer; front z=0; solid below |
-| Background | z=-D |
+| Depth | Positive toward viewer; front at zero; solid behind it. |
+| Background | Parallel plane at declared distance behind the front. |
 
 See the [geometric contract](../../guide/geometric-optics.md) for certificates and implementation scope.
 

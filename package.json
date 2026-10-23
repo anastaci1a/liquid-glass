@@ -4,7 +4,7 @@
   "scripts": {
     "build": "node guide/site.cjs",
     "test": "npm run check:docs && node guide/experiments/comparison-panels.test.cjs && node guide/experiments/equations-test.cjs",
-    "check:docs": "node tools/check-docs.cjs && node guide/experiments/check-links.cjs && node tools/check-publication.cjs",
+    "check:docs": "node tools/check-docs.cjs && node tools/check-mathematics.cjs && node guide/experiments/check-links.cjs && node tools/check-publication.cjs",
     "test:guide": "node guide/experiments/reconstruction-page.cjs && node guide/experiments/reconstruction-media-loading.cjs && node guide/experiments/reconstruction-comparison.cjs && node guide/experiments/mathematics.cjs",
     "test:lab": "node guide/experiments/browser.cjs && node guide/experiments/software.cjs",
     "evidence:verify": "node tools/evidence.cjs verify"

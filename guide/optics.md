@@ -63,7 +63,7 @@ Value and first derivative vanish at both ends, avoiding a sharp optical boundar
 <a id="optics-equation-1"></a>
 
 $$
-u=\operatorname{clamp}(d/b,0,1)
+u=\operatorname{clamp}\!\left(\frac db,0,1\right).
 $$
 
 Height scales its strength; it is a phenomenological parameter, not a measured physical thickness.

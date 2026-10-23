@@ -19,6 +19,8 @@ A longer passage needs a concrete reason: a quotation, mathematical derivation, 
 
 Use LaTeX display blocks delimited by double dollar signs for formulas, inequalities, derivations, vectors and matrices. Do not substitute code fences, screenshots or inline code for mathematics.
 
+Use stacked fractions, true component/label subscripts, nabla gradients, explicit vectors and aligned or piecewise relations. Keep units upright and distinguish dot products from componentwise multiplication.
+
 Keep executable code, API identifiers and literal preset values in code formatting. Immutable historical evidence stays verbatim; maintained explanations follow this contract. The guide renders display mathematics with locally bundled KaTeX.
 
 ## Where records live

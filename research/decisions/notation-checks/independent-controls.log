@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "controls": [
+    {
+      "camera": 2.0,
+      "gap": 2.0,
+      "thickness": 0.7,
+      "index": 1.5,
+      "vector_snell_max_error": 1.7763568394002505e-15,
+      "jacobian_max_error": 3.00338642844622e-11,
+      "minimum_eigenvalue": 0.8432786823759306
+    },
+    {
+      "camera": 10.0,
+      "gap": 4.0,
+      "thickness": 3.0,
+      "index": 1.05,
+      "vector_snell_max_error": 8.881784197001252e-16,
+      "jacobian_max_error": 3.597100395325015e-11,
+      "minimum_eigenvalue": 0.9848944647029916
+    },
+    {
+      "camera": 0.5,
+      "gap": 3.0,
+      "thickness": 3.0,
+      "index": 2.4,
+      "vector_snell_max_error": 5.551115123125783e-16,
+      "jacobian_max_error": 5.826872317982179e-11,
+      "minimum_eigenvalue": 0.14364335878205248
+    },
+    {
+      "camera": 5.0,
+      "gap": 2.0,
+      "thickness": 0.0,
+      "index": 1.5,
+      "vector_snell_max_error": 8.881784197001252e-16,
+      "jacobian_max_error": 6.551204023708124e-12,
+      "minimum_eigenvalue": 1.0
+    },
+    {
+      "camera": 5.0,
+      "gap": 2.0,
+      "thickness": 1.0,
+      "index": 1.0,
+      "vector_snell_max_error": 8.881784197001252e-16,
+      "jacobian_max_error": 6.551204023708124e-12,
+      "minimum_eigenvalue": 1.0
+    }
+  ],
+  "limits": "Infinite plane-parallel transmitted slab only. Positive Jacobian here does not rule out folds, TIR, sidewall paths or multi-path images for curved lenses."
+}
+{
+  "passed": true,
+  "controls": [
+    {
+      "index": 1.33,
+      "gradient_error": 3.122502256758253e-17,
+      "angular_error": 2.42861286636753e-17,
+      "compatibility_error": 1.9505494614646289e-13,
+      "clearance_error": 6.733922794932568e-07,
+      "nonzero_map_curl": 5.417321868872449e-06
+    },
+    {
+      "index": 1.5,
+      "gradient_error": 3.469446951953614e-17,
+      "angular_error": 3.469446951953614e-17,
+      "compatibility_error": 3.419872502183731e-13,
+      "clearance_error": 3.8337410424027496e-07,
+      "nonzero_map_curl": 1.4041126976394036e-05
+    },
+    {
+      "index": 1.8,
+      "gradient_error": 2.0816681711721685e-17,
+      "angular_error": 4.85722573273506e-17,
+      "compatibility_error": 9.281126350313765e-13,
+      "clearance_error": 1.0836360453403415e-07,
+      "nonzero_map_curl": 4.323391429583712e-05
+    }
+  ],
+  "limits": "Local geometric identities and branch rejection; no Apple fidelity, closed-body clearance or image-score claim."
+}
+........................
+----------------------------------------------------------------------
+Ran 24 tests in 1.376s
+
+OK
