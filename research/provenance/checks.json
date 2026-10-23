@@ -11,19 +11,21 @@
     "bytes": 120196636,
     "secret_scan": "PASS: 118743998 bytes scanned",
     "privacy_marker_scan": "PASS: 12347 files; zero flagged",
-    "status": "PROVISIONAL_NO_WRITER_FREEZE",
+    "status": "Immutable captured versions verified; no writer freeze claimed",
     "tracked_files": 11762,
     "tracked_bytes": 118431732,
     "preimport_scanned_files": 12347,
-    "privacy_and_rights_holds": "7 private feedback files plus 578 untracked vectors/third-party pages withheld after automated scan"
+    "privacy_and_rights_holds": "Research-related feedback excerpts and scientific vectors/evidence incorporated deliberately; whole private feedback, session transports and downloaded software remain explicitly excluded"
   },
   "docs": {
-    "maintained_markdown": 30,
+    "maintained_markdown": 32,
     "prose_and_markdown_links": "PASS",
-    "static_files": 666,
-    "local_html_links": 631,
-    "browser": "PASS: desktop/mobile layout, all 60 source figures, deferred requests/nested reopen, comparison drag/keyboard/fullscreen/crop/no-JS navigation",
-    "environment_recovery": "Host browser lacked libraries/fonts; isolated read-only runner used host-backed dependencies. Removed old /tmp/optics-deps override in the comparison test."
+    "static_files": 727,
+    "local_html_links": 919,
+    "browser": "PASS: desktop/mobile compact entries, 60 figures, deferred media, comparison interactions; long inline tokens now wrap on narrow screens",
+    "environment_recovery": "Host browser lacked libraries/fonts; isolated read-only runner used host-backed dependencies. Removed old /tmp/optics-deps override in the comparison test.",
+    "latex": "334 display equations; strict local KaTeX parse, accessible MathML, 668 desktop/mobile equation views",
+    "prose_limits": "60 words per paragraph; 30 per bullet"
   },
   "backup": {
     "git_bundle": "PASS: git bundle verify",
@@ -31,10 +33,7 @@
     "container_archive": "PROVISIONAL: 891 MiB read-only scoped research capture; no writer freeze",
     "empty_container_attempt": "Excluded: first command lacked stdin forwarding and produced empty tar; retained for audit"
   },
-  "pending": [
-    "Merge and verify isolated Localica documentation cutover",
-    "Final fresh checkout and remote artifact verification"
-  ],
+  "pending": [],
   "python": {
     "status": "PASS",
     "tests": 24,
@@ -44,15 +43,17 @@
   "whitespace": "Captured historical source retains original whitespace; new project-authored files checked separately",
   "fresh_checkout": {
     "path": "/mnt/user/live/projects/liquid-glass/validation-checkout",
-    "type": "Actual linked detached Git worktree",
-    "commit": "e4bd96bf2b82368561a7f729840cfa76e8e148f8",
-    "docs_build": "PASS: npm ci from lockfile; 666 public files",
-    "links": "PASS: 632 links/assets/anchors",
-    "python": "PASS: 24 tests in independent container mounting only fresh checkout and separately installed pinned dependencies, with no old Localica filesystem mount",
-    "limitations": "No full historical reconstruction replay from withheld raw inputs; no browser or Android build required for this split"
+    "type": "Actual detached linked Git worktree",
+    "commit": "a9a53542a9a2e172b40711f3b4d32c7be82512b4",
+    "install": "npm ci --ignore-scripts from lockfile",
+    "build": "PASS: 727 files",
+    "tests": "PASS: concise documents, local links, comparison metadata, equation/model fixtures",
+    "python": "24 tests PASS in isolated runner with no old Localica mount",
+    "remote_lfs": "PASS: separate empty cache, compressed and decompressed SHA256 verified",
+    "limitations": "No new research experiment, optical acceptance, animation or Android build"
   },
-  "ci": "Root package scripts and reconstruction paths; no deployment workflow",
-  "status": "Independent repository and evidence migrated; source cutover prepared",
+  "ci": "Research checks and independent Pages deployment PASS on a9a53542",
+  "status": "Complete: history, local scientific evidence, document consolidation, source cutover and independent Pages deployment",
   "layout": {
     "research": "research/",
     "engine": "reconstruction/",
@@ -72,5 +73,18 @@
     "inventory": "Every original inventory entry tracked or explicitly excluded",
     "restoration": "PASS: 26 pipeline reports restored without an old Localica checkout"
   },
-  "shared_physics": "All five shared geometry/tracing/render modules byte-identical to the pre-refactor baseline"
+  "shared_physics": "All five shared geometry/tracing/render modules byte-identical to the pre-refactor baseline",
+  "pages": {
+    "url": "https://anastaci1a.github.io/liquid-glass/",
+    "workflow": ".github/workflows/pages.yml",
+    "run": "https://github.com/anastaci1a/liquid-glass/actions/runs/39892564775",
+    "live_build_source": "a9a53542a9a2e172b40711f3b4d32c7be82512b4",
+    "compatibility_redirect_commit": "22e7ebb8d2aa04d3b20618acd8ab3ceaaf9195a8"
+  },
+  "source_cutover": {
+    "pr": "https://github.com/anastaci1a/localica/pull/457",
+    "merged": true,
+    "main_research_files_remaining": 0,
+    "app_build_workflow_changes": 0
+  }
 }
