@@ -1,0 +1,276 @@
+{
+  "H": [
+    [
+      0.9543119124706549,
+      0.9749159274322179
+    ],
+    [
+      0.9749159274322179,
+      0.9999999999999999
+    ]
+  ],
+  "linear": [
+    0.8728135189102917,
+    0.8931742869690357
+  ],
+  "constant": 0.7993710127430509,
+  "eigenvalues": [
+    0.001972426895058166,
+    1.9523394855755967
+  ],
+  "rank": 2,
+  "condition": 989.8158915126512,
+  "constraints": [
+    {
+      "name": "gain_min",
+      "A": [
+        -1.0,
+        0.0
+      ],
+      "bound": -0.5
+    },
+    {
+      "name": "gain_max",
+      "A": [
+        1.0,
+        0.0
+      ],
+      "bound": 1.2
+    },
+    {
+      "name": "bias_min",
+      "A": [
+        0.0,
+        -1.0
+      ],
+      "bound": 0.1
+    },
+    {
+      "name": "bias_max",
+      "A": [
+        0.0,
+        1.0
+      ],
+      "bound": 0.25
+    },
+    {
+      "name": "actual_min_nonnegative",
+      "A": [
+        -0.26776161789894104,
+        -1.0
+      ],
+      "bound": 0.0
+    },
+    {
+      "name": "actual_max_at_most_one",
+      "A": [
+        0.9929425716400146,
+        1.0
+      ],
+      "bound": 1.0
+    }
+  ],
+  "range": [
+    0.26776161789894104,
+    0.9929425716400146
+  ],
+  "evaluations": [
+    {
+      "origin": "identity",
+      "coefficients": [
+        1.0,
+        0.0
+      ],
+      "residuals": [
+        -0.5,
+        -0.19999999999999996,
+        -0.1,
+        -0.25,
+        -0.26776161789894104,
+        -0.0070574283599853516
+      ],
+      "feasible": true,
+      "objective": 0.008055887393122463
+    },
+    {
+      "origin": "unconstrained_interior",
+      "coefficients": [
+        0.5307093787996882,
+        0.37577726073956147
+      ],
+      "residuals": [
+        -0.03070937879968816,
+        -0.6692906212003118,
+        -0.4757772607395615,
+        0.12577726073956147,
+        -0.5178808626411079,
+        -0.09725880388160146
+      ],
+      "feasible": false,
+      "objective": 0.0005261053939649152
+    },
+    {
+      "origin": "edge_gain_min",
+      "coefficients": [
+        0.5,
+        0.25
+      ],
+      "residuals": [
+        0.0,
+        -0.7,
+        -0.35,
+        0.0,
+        -0.3838808089494705,
+        -0.2535287141799927
+      ],
+      "feasible": true,
+      "objective": 0.024777310323959467
+    },
+    {
+      "origin": "edge_bias_min",
+      "coefficients": [
+        1.016758880376389,
+        -0.1
+      ],
+      "residuals": [
+        -0.516758880376389,
+        -0.183241119623611,
+        0.0,
+        -0.35,
+        -0.17224900282269776,
+        -0.09041682258124628
+      ],
+      "feasible": true,
+      "objective": 0.0014395311885448958
+    },
+    {
+      "origin": "edge_bias_max",
+      "coefficients": [
+        0.6592022260558144,
+        0.25
+      ],
+      "residuals": [
+        -0.15920222605581436,
+        -0.5407977739441856,
+        -0.35,
+        0.0,
+        -0.4265090545712883,
+        -0.09545004642931743
+      ],
+      "feasible": true,
+      "objective": 0.0005899420564067226
+    },
+    {
+      "origin": "edge_actual_max_at_most_one",
+      "coefficients": [
+        0.9505683265410907,
+        0.0561402413247441
+      ],
+      "residuals": [
+        -0.4505683265410907,
+        -0.24943167345890926,
+        -0.1561402413247441,
+        -0.1938597586752559,
+        -0.3106659543628754,
+        -1.1102230246251565e-16
+      ],
+      "feasible": true,
+      "objective": 0.009249262687763604
+    }
+  ],
+  "edge_construction": [
+    {
+      "edge": "gain_min",
+      "interval": [
+        -0.25,
+        0.1
+      ],
+      "unconstrained_t": -0.4057163232529268,
+      "chosen_t": -0.25
+    },
+    {
+      "edge": "gain_max",
+      "empty": true
+    },
+    {
+      "edge": "bias_min",
+      "interval": [
+        0.5,
+        1.107818348631343
+      ],
+      "unconstrained_t": 1.016758880376389,
+      "chosen_t": 1.016758880376389
+    },
+    {
+      "edge": "bias_max",
+      "interval": [
+        -0.7553306922486429,
+        -0.5
+      ],
+      "unconstrained_t": -0.6592022260558144,
+      "chosen_t": -0.6592022260558144
+    },
+    {
+      "edge": "actual_min_nonnegative",
+      "empty": true
+    },
+    {
+      "edge": "actual_max_at_most_one",
+      "interval": [
+        -0.6078308886430492,
+        -0.2553432322603492
+      ],
+      "unconstrained_t": -0.45058086655279705,
+      "chosen_t": -0.45058086655279705
+    }
+  ],
+  "status": "PROPOSAL",
+  "selected": {
+    "origin": "edge_bias_max",
+    "coefficients": [
+      0.6592022260558144,
+      0.25
+    ],
+    "residuals": [
+      -0.15920222605581436,
+      -0.5407977739441856,
+      -0.35,
+      0.0,
+      -0.4265090545712883,
+      -0.09545004642931743
+    ],
+    "feasible": true,
+    "objective": 0.0005899420564067226
+  },
+  "identity": {
+    "origin": "identity",
+    "coefficients": [
+      1.0,
+      0.0
+    ],
+    "residuals": [
+      -0.5,
+      -0.19999999999999996,
+      -0.1,
+      -0.25,
+      -0.26776161789894104,
+      -0.0070574283599853516
+    ],
+    "feasible": true,
+    "objective": 0.008055887393122463
+  },
+  "ledger": {
+    "identity_composites": 2,
+    "quadratic_evaluations": 6,
+    "solves": 1,
+    "paired_trials": 0,
+    "candidate_composites": 0,
+    "rays": 0,
+    "height_evaluations": 0,
+    "source_queries": 0,
+    "incident_filters": 0,
+    "output_filters": 0,
+    "baseline_material_renders": 0
+  },
+  "utc": "2026-10-23T23:12:26.463135+00:00"
+}
