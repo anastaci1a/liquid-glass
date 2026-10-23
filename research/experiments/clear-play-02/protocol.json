@@ -1,0 +1,54 @@
+{
+  "status": "active",
+  "started_at": "2026-10-23T14:46:24.343Z",
+  "overall_deadline": "2026-10-23T16:46:24.343Z",
+  "stages": [
+    {
+      "name": "intake",
+      "cap_minutes": 10,
+      "latest_deadline": "2026-10-23T14:56:24.343Z"
+    },
+    {
+      "name": "source-blur",
+      "cap_minutes": 50,
+      "latest_deadline": "2026-10-23T15:46:24.343Z"
+    },
+    {
+      "name": "outline",
+      "cap_minutes": 45,
+      "latest_deadline": "2026-10-23T16:31:24.343Z"
+    },
+    {
+      "name": "verification",
+      "cap_minutes": 15,
+      "latest_deadline": "2026-10-23T16:46:24.343Z"
+    }
+  ],
+  "early_completion": "Close answered questions early; never borrow unused time without a declared new schedule.",
+  "budgets": {
+    "new_refraction_rays": 0,
+    "source_sigma_crop_candidates": [
+      1.25,
+      1.5,
+      1.7,
+      2,
+      2.5
+    ],
+    "max_new_full_native_candidates": 2,
+    "independent_native_replay": 1,
+    "outline_max_launches": 64,
+    "outline_max_events": 4096,
+    "outline_max_level_points": 2000000,
+    "outline_max_rgb_images": 0
+  },
+  "freeze": {
+    "geometry": "G05",
+    "index": 1.5,
+    "background_distance_over_L": 2,
+    "aa": 4,
+    "source": "Original registered photograph",
+    "foreground": "Historical icon coverage and calculated color",
+    "reference_masks": "Original"
+  },
+  "stop": "Invalid input/path/support, failed invariant, exhausted budget or deadline. Preserve the incumbent and partial evidence."
+}

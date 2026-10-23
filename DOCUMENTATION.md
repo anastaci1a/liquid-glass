@@ -35,7 +35,6 @@ Keep executable code, API identifiers and literal preset values in code formatti
 | Reference material | `guide/` | Separate observation from interpretation. |
 | Lab behavior | `lab/` | Keep illustrative behavior separate from physical claims. |
 | Historical evidence | `research/evidence/` | Preserve bytes and provenance; summarize elsewhere. |
-| record preparation provenance | `research/provenance/` | Keep maps, exclusions and verification. |
 
 ## Experiment format
 
