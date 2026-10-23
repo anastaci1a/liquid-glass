@@ -125,7 +125,7 @@
     "no_fourth_geometry_setting": true
   },
   "next_stage": {
-    "status": "AUTHORIZED_ISOLATED_NEUTRAL_TONE_QUESTION",
+    "status": "COLOUR_EVALUATED_NO_QUALIFIER_B_PARTIAL_BOUNDARY",
     "baseline": "Current H1 D2, source sigma 6.75; all source/shape/foreground/scoring stages frozen",
     "position": "Common encoded lens-color gain/bias after retained integration, before clear/foreground composition; no per-ray float32-equivalence claim",
     "maximum_minutes": 20,
@@ -136,6 +136,49 @@
     "new_source_queries": 0,
     "new_filters": 0,
     "comparison": "All original paired and completed-image guards against current H1; no geometric acceptance implied",
-    "clock": "Record actual receipt before setup; authorization is not execution."
+    "clock": "Record actual receipt before setup; authorization is not execution.",
+    "scientific_finish": "2026-10-23T23:12:33.818Z",
+    "actual_start": "2026-10-23T23:08:58.483Z",
+    "deadline": "2026-10-23T23:28:58.483Z",
+    "result": {
+      "proposal": {
+        "gain": 0.6592022260558144,
+        "bias": 0.25
+      },
+      "factors": [
+        1,
+        0.5,
+        0.25,
+        0.125
+      ],
+      "decision": "All four rejected by the predeclared B partial-boundary guard. H1 unit tone remains selected.",
+      "full_step_rounded_E": [
+        9.715935,
+        7.61791
+      ],
+      "B_partial_boundary_RMSE": {
+        "baseline": 84.81813049316406,
+        "full": 85.6432113647461
+      },
+      "scope": "All original paired body/SSIM/foreground and completed-image aggregate guards improve; the supplementary predeclared partial-boundary guard does not.",
+      "primary_visual_review": "Both full-step comparisons inspected. Shared neutral body tone is visibly closer; missing bright boundary and incorrect geometric returns remain separate.",
+      "counts": {
+        "solve": 1,
+        "quadratic_evaluations": 6,
+        "cached_identity_composites": 2,
+        "candidate_composites": 8,
+        "rays": 0,
+        "source_queries": 0,
+        "filters": 0
+      },
+      "presentation": "Show the held full-step candidate with its disclosed failure; no numerical acceptance or per-ray grading equivalence claim."
+    }
+  },
+  "remaining_stage_review": {
+    "status": "AUTHORIZED_AFTER_COLOUR_SEAL",
+    "maximum_minutes": 15,
+    "scope": "Existing evidence and compatibility checks for outline, shadow, foreground, dispersion and complete stage ledger. No new scientific evaluations.",
+    "unsupported": "Mark incomplete rather than absent or satisfactory.",
+    "selection": "H1 unit tone with current incident blur; held tone candidate not used as baseline."
   }
 }
