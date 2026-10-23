@@ -1,0 +1,30 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "started_at": "2026-10-23T20:22:09.091Z",
+  "deadline": "2026-10-23T20:37:09.091Z",
+  "visible_defect": "Missing exterior contact shadow below the elongated body; preserve partial-coverage glass.",
+  "hypothesis": "Test the existing neutral SDF shadow on the unfiltered clear contribution only, with fixed historical spatial profile and three predetermined common opacities.",
+  "frozen": [
+    "H1 geometry, original source/masks/foreground, incident6.75, selected neutral gain/bias, no output blur"
+  ],
+  "shadow": {
+    "opacity": 0.10758152975863192,
+    "sigma": 0.2071459298777112,
+    "offset": [
+      -0.04999997516993123,
+      0.09402143677412972
+    ]
+  },
+  "settings": [
+    0.10758152975863192,
+    0.05379076487931596,
+    0.02689538243965798
+  ],
+  "budgets": {
+    "new_rays": 0,
+    "source_RGB_queries": 0,
+    "fits": 0,
+    "native_composites": 6
+  },
+  "stop": "First strict paired qualifier, three fixed opacities or deadline; no glow fallback/refit/mask repair."
+}
