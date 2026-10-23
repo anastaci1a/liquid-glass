@@ -1,0 +1,241 @@
+{
+  "status": "PROPOSED_PENDING_PRIMARY_OWNERSHIP_AND_INPUT_REVIEW",
+  "target": "Active colored switch/slider thumb; paired green and gray transition frames",
+  "base_commit": "6fd37ddee6e418beb0694760d565a6ca8aeebdc6",
+  "cases": [
+    {
+      "key": "a",
+      "case_file": "reconstruction/studies/active-switch/paired/a.json",
+      "case_sha256": "2f535a9a3c827b1eabb6d9daad4ec27d0a8e57885e598cb2849e15b07ac38fed",
+      "reference": {
+        "video": "details",
+        "seconds": 9.4,
+        "frame_index": 564,
+        "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-details/large_2x.mp4"
+      },
+      "center": [
+        1040,
+        536.5
+      ],
+      "half": [
+        326,
+        216.5
+      ],
+      "L": 216.5,
+      "parameter_length_reference": 216.5,
+      "crop": [
+        625,
+        250,
+        1450,
+        840
+      ],
+      "source_sha256": {
+        "source.png": "bbd52a46c6c0e5008d4d9e746c9ea5c17acad781e1c2391607b8b7b5f6c64002",
+        "target.png": "76a17ebdea7a2cc8f6187faa461bfecc164e78e371cf8b234d47cd0b1cc1c780",
+        "known.png": "a2f32becc8c9f3b819da2f3a7c67eff1606bdce63ed1f5704a4883ad08dfd8e3",
+        "observed.png": "43ef8e3a5ca09a655bfcf1f86d56ff7c6c933bedf693ab63d8ba137b38264c50"
+      },
+      "foreground_layers": [],
+      "corrected_center": [
+        1040.2528645128123,
+        537.5294760490734
+      ],
+      "corrected_half_over_L": [
+        1.5032401726358495,
+        1.0112242531131506
+      ],
+      "crown_softness": 0.08,
+      "historical_sigma_nominal_px": 4.339320119358678,
+      "historical_sigma_effective_px": 4.25,
+      "proposed_incident_sigma_px": 4.25,
+      "finite_kernel_radius_px": 13,
+      "sigma_over_L": 0.019630484988452657,
+      "historical_post_sigma_px": 2.1642183469081204,
+      "original_scores": {
+        "glass": {
+          "pixels": 240456,
+          "rmse": 11.155485153198242
+        },
+        "rim": {
+          "pixels": 70466,
+          "rmse": 19.237165451049805
+        },
+        "held": {
+          "pixels": 61420,
+          "rmse": 12.67819595336914
+        },
+        "interior": {
+          "pixels": 169990,
+          "rmse": 4.756721496582031
+        },
+        "ssim": 0.9646053910255432,
+        "loss": 198.13195467957775,
+        "E": 14.075935303899977,
+        "shadow": {
+          "rmse": 6.534388542175293,
+          "pixels": 152521
+        }
+      }
+    },
+    {
+      "key": "b",
+      "case_file": "reconstruction/studies/active-switch/paired/b.json",
+      "case_sha256": "cdfdbc84b4128303f698c52d34dbe1c2fbdbf2fec35c8eb85ddeb90ac2028f7f",
+      "reference": {
+        "video": "details",
+        "seconds": 10.5,
+        "frame_index": 630,
+        "url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-details/large_2x.mp4"
+      },
+      "center": [
+        864,
+        536
+      ],
+      "half": [
+        306,
+        200
+      ],
+      "L": 200,
+      "parameter_length_reference": 216.5,
+      "crop": [
+        470,
+        255,
+        1255,
+        825
+      ],
+      "source_sha256": {
+        "source.png": "8d4176c394424213d60d7fdbc9d3236c03a726407731f93e87bd0cfccb1e892b",
+        "target.png": "3fa84e404edc62aeadd9934619252b337a7767bccf5ffc211f251f1454200599",
+        "known.png": "a2f32becc8c9f3b819da2f3a7c67eff1606bdce63ed1f5704a4883ad08dfd8e3",
+        "observed.png": "17ee433888006f32b7b9cd1a1fb9bf1c70a8b5f4f225a85b9802652fe32ed363"
+      },
+      "foreground_layers": [],
+      "corrected_center": [
+        864.2335930834294,
+        536.9510171354027
+      ],
+      "corrected_half_over_L": [
+        1.5274665005804222,
+        1.0112242531131506
+      ],
+      "crown_softness": 0.08,
+      "historical_sigma_nominal_px": 4.008609810031111,
+      "historical_sigma_effective_px": 4,
+      "proposed_incident_sigma_px": 4,
+      "finite_kernel_radius_px": 12,
+      "sigma_over_L": 0.02,
+      "historical_post_sigma_px": 1.9992779186218201,
+      "original_scores": {
+        "glass": {
+          "pixels": 208969,
+          "rmse": 13.641179084777832
+        },
+        "rim": {
+          "pixels": 60968,
+          "rmse": 18.650779724121094
+        },
+        "held": {
+          "pixels": 53183,
+          "rmse": 13.763595581054688
+        },
+        "interior": {
+          "pixels": 148001,
+          "rmse": 10.92894458770752
+        },
+        "ssim": 0.9325289726257324,
+        "loss": 234.61271207139205,
+        "E": 15.317072568588035,
+        "shadow": {
+          "rmse": 4.462649822235107,
+          "pixels": 132594
+        }
+      }
+    }
+  ],
+  "recipe": {
+    "file": "reconstruction/studies/active-switch/review-round/pass-09.json",
+    "sha256": "b4af8740ee0afa2b08759ae152c0bfdd776d92c43ef8f2374e245cecf460159f",
+    "historical_round": 9,
+    "historical_paired_checkpoints": 24,
+    "new_count": 0,
+    "acceptance_record": "reconstruction/studies/active-switch/review-round/pass-09-verification.json",
+    "acceptance_record_sha256": "d12d57900ec5800d38caa648bf70f7a401d82ee8b6283b372101ee7cce4f6890",
+    "note": "Recipe proposal primary_accepted false is stale provenance; separate primary verification is authoritative."
+  },
+  "source_classification": "Frozen modeled hidden track; all inspected whole/scored historical queries observed confidence zero, defined confidence one. No photographic recovery claim.",
+  "code": [
+    {
+      "file": "reconstruction/geometric_optics.py",
+      "sha256": "a48224f454b77d060601016329dee5c8bb48f87c418d2ba54d5a693c05841966"
+    },
+    {
+      "file": "reconstruction/geometric_render.py",
+      "sha256": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469"
+    },
+    {
+      "file": "reconstruction/harmonic_crowned_back.py",
+      "sha256": "95784ee9d92271ae88b5407bc3c7c5c09666a6c0b1396cfc4ccf4e7b1ad176a3"
+    },
+    {
+      "file": "reconstruction/crowned_bevel.py",
+      "sha256": "4065301f1025545bee500a48c5d23177e1d5fcd7345b2a83d4806e11649f33de"
+    },
+    {
+      "file": "reconstruction/crowned_footprint.py",
+      "sha256": "2488c958d0749b707d341945ee354726eddc3d66c4c3388b619edb7d9d4532b8"
+    },
+    {
+      "file": "reconstruction/extended_fit.py",
+      "sha256": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f"
+    }
+  ],
+  "proposed_geometry": {
+    "implementation": "Reuse existing HarmonicCrownedBack through an element adapter that translates frozen pose only",
+    "height": "H(d*(1-T^(3/2)), c*(1-(x/a)^2)) with shared harmonic_cap",
+    "solid": "T<=1, -h<=z<=0",
+    "depth": 0.15,
+    "crown_depth": 0.4,
+    "index": 1.5,
+    "background_distance_over_L": 2,
+    "coords": "L original minor half; x right, y down, +z viewer; orthographic air1/lens1.5/air1; front z0/background z-D",
+    "footprint": "Existing crowned_footprint.field, softness .08, accepted shape offsets; do not substitute ordinary capsule.",
+    "normal": "Exact full gradient of this one height, never normalized T gradient as a height derivative",
+    "boundary": "Exact tangent/zero height unresolved; no sampling fallback",
+    "validity": "Existing concavity and slope certificates must be instantiated for BOTH poses before any RGB. No rays evaluated in intake."
+  },
+  "proposed_render": {
+    "incident_filter": "Reuse geometric_render.incident_source_filter",
+    "source_sigmas": [
+      4.25,
+      4
+    ],
+    "kernel_radii": [
+      13,
+      12
+    ],
+    "post_sigma": 0,
+    "aa_samples_per_axis": 2,
+    "aa_native_offsets": [
+      -0.25,
+      0.25
+    ],
+    "material": "Propose fixed neutral g1/b0 primary-transmission baseline for review; do not transfer old RGB grading or normal-based lighting. Frozen source blur remains active.",
+    "historical_output": "Preserved comparison only; no variance addition or claim operator equivalence",
+    "source_guard": "All actual lens rays AND all subrays of every original E/glass/rim/held/interior/SSIM/exterior pixel; finite incident kernel plus all four bilinear texels before RGB; straight clear exterior unfiltered",
+    "source_proof": "Historical changed-map proof does not transfer; fresh proof required before future sampling"
+  },
+  "pipeline_caps_minutes": {
+    "refraction_including_intake": 80,
+    "blur": 20,
+    "color": 20,
+    "outline": 60,
+    "shadow_glow": 15,
+    "foreground": 20,
+    "dispersion_identification": 10,
+    "final_review": 15,
+    "total": 240
+  },
+  "fit_authorized": false,
+  "stage_rules": "No stage skipped except verified absence or explicit satisfactory acceptance; source/scene limits are blocked or incomplete. First proposed subpass after review: <=10min, <=10000 geometry checkpoint rays total, <=one paired native baseline, zero fit; count all comparator rays, then review. At most3 substantive hypotheses per stage and explicit per-subpass budgets. No microscopic walks.",
+  "ownership": "Helper only this record directory and prospective private adapter; lead shared optics/material/render and public acceptance/integration."
+}
