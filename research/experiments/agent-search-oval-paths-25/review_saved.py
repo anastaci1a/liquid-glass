@@ -1,0 +1,9 @@
+"""Saved audit-array validation only; no shared optical imports."""
+from pathlib import Path
+import numpy as np,json
+O=Path(__file__).parent;launch=np.load(O/'launches.npz',allow_pickle=False);z=np.load(O/'partitions.npz',allow_pickle=False);f=np.load(O/'event-01.npz',allow_pickle=False);s=launch['meridional_s'];d=f['reflected_direction'];plane=float(abs(np.sum(d*s,axis=1)).max());unit=float(abs(np.linalg.norm(d,axis=1)-1).max());assert plane<=1e-9 and unit<=1e-10
+role=z['first_exit_scene_role'];side=z['first_exit_hemisphere'];event=z['first_internal_exit_event'];power=z['first_exit_power_sp'];cross={}
+for r,label in [(1,'downward_background'),(2,'upward_environment'),(3,'lateral_environment')]:cross[label]={name:int(((role==r)&(side==v)).sum()) for v,name in [(1,'upper_front_hemisphere'),(-1,'lower_back_hemisphere'),(0,'equator')]}
+summary=json.loads((O/'summary.json').read_text());events=summary['events'];headers=json.loads((O/'decode-reservation.json').read_text())['headers'];header_bytes=sum(x['header_bytes'] for x in headers)
+a={'scope':'Saved array reductions only; no new optical event, direction or source sampling.','first_available_cross_roles':cross,'first_available_zero_power_count':int(((event>0)&(power.sum(1)==0)).sum()),'available_later_transmitted_branches':sum(e['available_transmissions'] for e in events),'zero_weight_available_branches':sum(e['zero_weight_available'] for e in events),'first_exit_events':{str(i):int((event==i).sum()) for i in range(3,17)},'cached_front_direction_plane_residual':plane,'cached_front_direction_unit_error':unit,'decoded_NPY_header_bytes':header_bytes,'as_run_unused_mask_header_ledger_field_preserved':True,'all549_continued_every_event':all(e['encounters']==549 for e in events)}
+(O/'saved-assessment.json').write_text(json.dumps(a,indent=2)+'\n');print(json.dumps(a),flush=True)

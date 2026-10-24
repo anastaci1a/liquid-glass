@@ -1,0 +1,42 @@
+{
+  "start": "2026-10-24T06:12:32.996Z",
+  "deadline": "2026-10-24T06:32:32.996Z",
+  "shared_pin": "4248efbadea25716784735c8b8e353faae8131fd",
+  "question": "Where do all549 cached near-rim TIR continuations of the fixed ellipsoid actually emerge, how much s/p power reaches supported downward source versus unobserved environment, and what remains at event16?",
+  "geometry": "Exact radius-scaled ClosedCircularOval(kappa0), depthH1maximum/2, n1.5/D2. Actual cached entry/back points, normals and internal directions from24. No new native grid or shape.",
+  "caps": {
+    "launch_records": 600,
+    "encounters": 9000,
+    "new_segments": 8000,
+    "level_points": 650000,
+    "delegate_units": 4200000,
+    "mask_lookups": 150000,
+    "decoded_bytes": 536870912,
+    "RGB": 0,
+    "filters": 0,
+    "composites": 0,
+    "images": 0,
+    "fits": 0
+  },
+  "reservation": {
+    "launches": 549,
+    "cached_initial_events": 1098,
+    "new_segments": 7686,
+    "total_encounters": 8784,
+    "level_points": 614880,
+    "delegate_units": 3926512,
+    "known_mask_lookups": 131760,
+    "derivation": "14*549 new ordered segments. Reserve80 levels per segment (shared64bisections+3level batches require<=67),6units per level plus16next-boundary+6refract+4reflect+4Fresnel units per segment. Initial twoFresnel and oneback-reflection+scalar setup add6652 units. All levels are included in total delegate units, never added twice."
+  },
+  "transport": "Separate incoherent s/p products in one fixed meridional plane per launch. Front reflection at cached event1 classified from cached directions. Cached event2 is TIR. Follow all reflected internal continuations to16 including exact-zero powers; retain every available transmitted endpoint, even zero-weight rounded branches.",
+  "tolerances": {
+    "solver": 1e-11,
+    "max_iterations": 64,
+    "plane_position_and_unit_vectors": 1e-9,
+    "unit_norm": 1e-10,
+    "power_closure": 3.410605131648481e-13
+  },
+  "source": "Only hash-proven original known and incident_known masks, finite43x43/r21. Raw and incident-compatible availability kept separate; neither adopts materialblur/tone for specular radiance. No new erosion or RGB.",
+  "stop": "First unexpected geometry/shape/provenance/numerical/cap/deadline invariant stops entire task without retry. Explicit unresolved branch retains incoming power unknown. No low-power deletion or power renormalization. All16-event tails remain unassigned.",
+  "ownership": "Own records/driver only. Shared primitives unchanged; no private intersector or tracer fork."
+}
