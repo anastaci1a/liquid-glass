@@ -1,0 +1,24 @@
+{
+  "status": "DECLARED_BEFORE_NUMERICAL_EXECUTION",
+  "start": "2026-10-24T12:41:29.426Z",
+  "deadline": "2026-10-24T13:01:29.426Z",
+  "checkpoint_minutes": 7,
+  "question": "Can a positive footprint-partitioned pixel rule reproduce known covered areas and stabilize the held direct-reflection signal without altering optics?",
+  "geometry": "Exact unsmoothed ordinary rounded rectangle. Split at footprint/cap joins and crossings of all y partition edges; polar substitution at caps. No source-knot preimage claim.",
+  "allowed": "Numerical area quadrature only; fixed Gauss orders 8,16,32 for direct signal, 16 for geometry controls.",
+  "frozen": "All physical surfaces, normals, scene panel48, reference/cases/inputs/AA2 records; no target-dependent selection.",
+  "caps": {
+    "analytic_geometry_fixtures": 24,
+    "quadrature_nodes": 300000,
+    "camera_front_points": 100000,
+    "adapter_units": 2000000,
+    "reflection_points": 100000,
+    "Fresnel_points": 100000,
+    "panel_intersections": 100000,
+    "source_RGB": 0,
+    "full_composites": 0,
+    "fits": 0
+  },
+  "selection": "Six declared boundary pixels per member, upper/lower straight-body extrema nearest native row plus/minus one; no target read.",
+  "stop": "First area/positivity/membership/mirror failure or cap/deadline; no silent rule repair. Original AA2 remains unchanged."
+}

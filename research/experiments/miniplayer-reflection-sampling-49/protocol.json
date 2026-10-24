@@ -1,0 +1,29 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T12:14:48.054Z",
+  "deadline": "2026-10-24T12:29:48.054Z",
+  "checkpoint_minutes": 5,
+  "question": "Is the held thin direct-reflection line stable under finite pixel integration?",
+  "scene": "Shallow41/42 actual front and finite48 panel z1770,center960/540,radiance4. No geometry or illumination parameter changes.",
+  "selection": "Three24x24native tiles per member, centered by frozen corrected pose at upper/lower minor extrema and right major extremum. No target pixels read or feature search.",
+  "levels": [
+    2,
+    4,
+    8
+  ],
+  "caps": {
+    "camera_front_points": 300000,
+    "conservative_adapter_units": 6000000,
+    "reflection_points": 300000,
+    "Fresnel_points": 300000,
+    "panel_intersections": 300000,
+    "cached_identity_points": 20000,
+    "source_RGB_queries": 0,
+    "full_composites": 0,
+    "score_calls": 0,
+    "fits": 0
+  },
+  "checkpoint": "First AA2 tile agrees with cached48 direct reflected subray signal within1e-14, membership exact. Stop any exact boundary/unresolved launch or invariant.",
+  "scope": "Only linear white reflected component, not full RGB reconstruction, source refraction convergence or new score epoch. Camera AA is distinct from optical blur.",
+  "stop": "Exactly three declared levels; no AA16, target sampling, filter, model coefficient or full-body rerender. All original2x2scores unchanged."
+}
