@@ -1,0 +1,42 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "started_utc": "2026-10-24T00:40:45.272Z",
+  "deadline_utc": "2026-10-24T01:00:45.272Z",
+  "base_commit": "0ca2b3c2408fae92fdf4b2180c68cb8a43a67f70",
+  "visible_question": "Does one narrower incident PSF recover appropriate background detail on the accepted spline/contrast state, or merely expose its incorrect returns?",
+  "setting": {
+    "sigma_native": 5.0625,
+    "finite_radius": 16,
+    "baseline_sigma": 6.75,
+    "baseline_radius": 21
+  },
+  "frozen": [
+    "Accepted actual spline/index/D2.1/camera and cached native paths",
+    "Accepted shared gain/bias, original foreground/artwork and shadow zero",
+    "Original sources, masks, registration and AA2"
+  ],
+  "references": "Original paired expanded Music cases in expanded-geometry-02; numerical comparison is accepted expanded-contrast-guard-02, not reset to H1.",
+  "fixed_detail_crop_relative": [
+    540,
+    20,
+    1080,
+    190
+  ],
+  "fixed_detail_crop_frame": [
+    820,
+    310,
+    1360,
+    480
+  ],
+  "diagnostic_mask": "Original glass subset in the fixed crop; gradient stencils require both adjacent samples valid.",
+  "budgets": {
+    "rays": 0,
+    "height_evaluations": 0,
+    "source_RGB_queries": 1800000,
+    "incident_fields": 2,
+    "native_candidate_pairs": 1,
+    "parameter_fits": 0
+  },
+  "source_gate": "Both complete whole-covered-pixel and original guard/backing finite-kernel/bilinear source audits must pass before source filtering or RGB. Clear samples reused exactly.",
+  "stop": "Failed invariant/source gate, one fixed pair outcome, cap or deadline. No second width, response adjustment, geometry change or source repair."
+}

@@ -1,0 +1,113 @@
+{
+  "reference": "b",
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 8.896454811096191
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 12.789996147155762
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 9.288393020629883
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 6.626326084136963
+    },
+    "ssim": 0.9516828060150146,
+    "loss": 104.47803617739136,
+    "E": 10.221449807996484,
+    "exterior_RMSE": 21.74403190612793,
+    "foreground_artwork_MSE": {
+      "jupiter.jpg": 2798.646240234375,
+      "title.svg": 613.7774658203125,
+      "artist.svg": 204.25283813476562,
+      "play.svg": 129.11888122558594,
+      "forward.svg": 188.94607543945312
+    }
+  },
+  "baseline_scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 7.306178569793701
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 10.981710433959961
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 7.657580852508545
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 5.0326738357543945
+    },
+    "ssim": 0.9740796089172363,
+    "loss": 73.54556092220243,
+    "E": 8.575870855032882,
+    "exterior_RMSE": 21.74403190612793,
+    "foreground_artwork_MSE": {
+      "jupiter.jpg": 2799.505859375,
+      "title.svg": 599.2610473632812,
+      "artist.svg": 180.5785369873047,
+      "play.svg": 129.10556030273438,
+      "forward.svg": 188.90171813964844
+    }
+  },
+  "guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "ssim": false,
+    "exterior": true,
+    "jupiter.jpg": true,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "float64_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "exterior": true,
+    "interior": false,
+    "jupiter.jpg": true,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "all_pass": false,
+  "clear_samples_exact": true,
+  "clips": [
+    0,
+    0
+  ],
+  "independent_bilinear_error": 2.220446049250313e-16,
+  "detail": {
+    "reference": {
+      "luma_std": 17.872970684418757,
+      "horizontal_difference_RMS": 1.1606013203523
+    },
+    "baseline": {
+      "luma_std": 21.435244832481807,
+      "horizontal_difference_RMS": 1.0916557181566375
+    },
+    "candidate": {
+      "luma_std": 23.708651400086975,
+      "horizontal_difference_RMS": 1.7758954307022237
+    }
+  },
+  "partial_boundary_advisory": {
+    "pixels": 16,
+    "baseline_RMSE": 26.49408266711836,
+    "candidate_RMSE": 26.325423196776107
+  }
+}
