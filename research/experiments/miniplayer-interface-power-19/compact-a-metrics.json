@@ -1,0 +1,91 @@
+{
+  "member": "compact",
+  "reference": "a",
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 27.10746192932129
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 32.467552185058594
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 26.884042739868164
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 23.172462463378906
+    },
+    "ssim": 0.9581204056739807,
+    "loss": 830.6127280415731,
+    "E": 28.820352670319167,
+    "exterior": 10.550281524658203,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 29.216102600097656
+    },
+    "foreground": {
+      "jupiter.jpg": 1814.661865234375,
+      "title.svg": 891.5864868164062,
+      "artist.svg": 379.7843933105469,
+      "play.svg": 383.86822509765625,
+      "forward.svg": 441.3542175292969
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 29.61311149597168,
+        "luma_signed": -12.85630929246242
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 25.022220611572266,
+        "luma_signed": -10.877945536415567
+      },
+      "left_cap": {
+        "RGB_RMSE": 25.872159957885742,
+        "luma_signed": -12.207104120685841
+      },
+      "body": {
+        "RGB_RMSE": 22.8046932220459,
+        "luma_signed": -19.996788475336988
+      }
+    }
+  },
+  "canonical_guards": {
+    "glass": false,
+    "rim": true,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "hybrid_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "clipped_channels": 0,
+  "all_canonical_pass": false,
+  "all_hybrid_pass": false,
+  "primary_power_min": 0.9124826711919971,
+  "primary_power_max": 0.9216,
+  "tail_unassigned": true
+}
