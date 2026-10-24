@@ -1,0 +1,68 @@
+{
+  "family": "music-mini-player",
+  "requirement": "One glass model; major_half is the only variable shape parameter.",
+  "length_unit_native_pixels": 88.5,
+  "geometry": {
+    "model": "SplineFootprintBack",
+    "minor_half": 1.012503164339156,
+    "corner_radius": 1.0043663048754772,
+    "cap_join_width": 0,
+    "breaks": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.9,
+      0.97,
+      0.99,
+      1
+    ],
+    "height_controls": [
+      0.1381819202620016,
+      0.1381819202620016,
+      0.136502710003918,
+      0.13602257117048225,
+      0.12733924854632883,
+      0.12044098503163844,
+      0.06671528306416542,
+      0.030004811796411936,
+      0.008992215599754803,
+      0.0022509236812926743,
+      0
+    ]
+  },
+  "optics": {
+    "camera": "orthographic",
+    "front_z": 0,
+    "index": 1.5,
+    "background_distance": 2.1
+  },
+  "material": {
+    "incident_sigma_native_pixels": 6.75,
+    "incident_kernel_radius": 21,
+    "gain": 0.596189238519786,
+    "bias": 0.3290237590837732,
+    "output_sigma": 0,
+    "generated_shadow": 0,
+    "outline": "Unresolved; no invented reflected illumination"
+  },
+  "sampling": {
+    "samples_per_axis": 2,
+    "bilinear": "exact"
+  },
+  "members": {
+    "expanded": {
+      "major_half": 7.225022904390323
+    },
+    "compact": {
+      "major_half": 4.906563038095225
+    }
+  },
+  "provenance": {
+    "expanded_height_record": "research/experiments/expanded-spline-height-01/inference.json",
+    "expanded_response_record": "research/experiments/expanded-contrast-guard-02/primary-decision.json",
+    "compact_length_record": "research/experiments/compact-geometry-01/geometry-check.json",
+    "nuisance_policy": "Input source, measured translation and original foreground/content are frozen case data, never optical tuning knobs."
+  }
+}
