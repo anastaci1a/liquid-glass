@@ -1,0 +1,50 @@
+{
+  "start": "2026-10-24T13:02:49.640Z",
+  "deadline": "2026-10-24T13:14:49.640Z",
+  "checkpoint_deadline": "2026-10-24T13:07:49.640Z",
+  "shared_pin": "c95dd0e2adca81c4c03f95a15fefde282d6d436c",
+  "orders": [
+    8,
+    16,
+    32
+  ],
+  "center_native": [
+    1511.2043368857017,
+    672.8753258356955
+  ],
+  "radius_native": 88.75191176648384,
+  "original_L": 89,
+  "selection": "Nearest integer native center at each exact cardinal point, floor(x+.5), then radial offsets-1,0,+1 along fixed cardinal direction. Retain12 pixels exactly.",
+  "scene": {
+    "panel_z": 885,
+    "center_xy": [
+      960,
+      540
+    ],
+    "radiance": 4,
+    "inner_degrees": 30,
+    "outer_degrees": 80,
+    "shoulder_degrees": 10,
+    "camera_z": 177,
+    "observed": false
+  },
+  "caps": {
+    "quadrature_nodes": 300000,
+    "front_points": 300000,
+    "reflection_points": 300000,
+    "Fresnel_points": 300000,
+    "panel_intersections": 300000,
+    "adapter_units": 6000000
+  },
+  "static_reservations": {
+    "nodes": 193536,
+    "formula": "12pixels *12 tensor-piece coefficient*(8^2+16^2+32^2). For these fixed cardinal phases each nonempty pixel has at most four covered x pieces and three y pieces. Empty pixels generate0.",
+    "adapter_units": 3878912,
+    "formula_adapter": "8192setup +20*193536. HG/footprint/bevel3, boundary/footprint/HG/footprint/bevel5, actualnormal/reflection/Fresnel/panel/escape checks and bookkeeping covered by20units per node."
+  },
+  "component_convergence_absolute": 1e-7,
+  "convergence_scope": "Compare successive fixed orders without tuning; no full-image/radiance/fidelity inference. Empty component is reported separately.",
+  "cache_comparison": "Omitted prospectively: finite42 stores inside rows compacted and no full-grid direct-signal field. Avoid rebuilding/mapping another cache; no cached scalar read is necessary.",
+  "zero": "Source/target RGB decode, refraction paths, source queries, filters, composites, images and fits",
+  "stop": "First strict footprint/crease/path/panel/invariant/cap/deadline failure; no correction, order beyond32 or model change"
+}
