@@ -1,0 +1,20 @@
+{
+  "status": "DECLARED_BEFORE_SAVED_PIXEL_REDUCTIONS",
+  "start": "2026-10-24T12:37:49.277Z",
+  "deadline": "2026-10-24T12:47:49.277Z",
+  "question": "Do fixed foreground-excluded source/target residual cohorts identify channel-dependent refraction rather than colored content, geometry, blur and illumination?",
+  "scope": "Four fixed crops per original reference, shallow42 complete and retained raw-source samples. Shadow50 changes only clear underlay; full-coverage cohorts therefore transfer exactly. No new optical work or spectral fit.",
+  "caps": {
+    "saved_pixel_observations": 2000000,
+    "decoded_array_bytes": 268435456,
+    "rays": 0,
+    "heights": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "composites": 0,
+    "fits": 0
+  },
+  "cohorts": "Original glass mask intersected with full actual coverage and fixed crop. Diagnostic cohort only, never a changed guard. Source statistics use four actual retained subray samples; no RGB feature shift is estimated.",
+  "stop": "Cap/deadline/hash mismatch; otherwise report limits. No spectral model, channelwarp, refractive-index fit or source search.",
+  "outcome": "Assessed means not silently skipped. Unidentified is not absent; n1.5 remains an assumed scalar approximation."
+}
