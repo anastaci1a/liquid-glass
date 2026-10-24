@@ -1,0 +1,52 @@
+{
+  "status": "DECLARED_SETUP_RECOVERY_BEFORE_EXECUTION",
+  "start": "2026-10-24T18:21:42.942Z",
+  "checkpoint_deadline": "2026-10-24T18:26:01.836Z",
+  "deadline": "2026-10-24T18:43:01.836Z",
+  "pin": "410826b97ef87f78a9323f747b1cf376b42380d5",
+  "defect": "The co-designed front creates a broad faint rim. Its first internal back-reflected return is unassigned. The solid is nonconvex, prohibiting the convex event solver.",
+  "hypothesis": "Global upward directional clearances certify the unique next front event despite back nonconvexity. Actual polarization transport can quantify its emitted power without adding a light or changing a surface.",
+  "allowed": "One sparse observation, 32 retained primary launches per family member, unchanged actual co-designed front/back/index. One scalar global angular-bound calculation. No native retrace, source selection, RGB, environment evaluation, image, fit or parameter trial.",
+  "frozen": "Exact78 actual paths, inverse77 back, power8 front75, original footprint/member lengths. Source/material/PSF/masks/AA/foreground are unchanged and not evaluated.",
+  "selection": "For each member, fixed 4x8 target locations over normalized footprint bounding box at y/b=-0.9,-0.3,0.3,0.9 and x/a=-0.98,-0.7,-0.4,-0.1,0.1,0.4,0.7,0.98. Nearest cached regular ray by squared entry XY distance; np.argmin flattened row-major breaks ties. No target RGB selection.",
+  "caps": {
+    "cached_launches": 64,
+    "selection_distance_comparisons": 48000000,
+    "cache_payload_decoded_bytes": 600000000,
+    "cache_scalar_observations": 80000000,
+    "return_segments": 64,
+    "surface_point_callbacks": 7000,
+    "conservative_surface_units": 140000,
+    "profile_bound_segments": 2048,
+    "polarized_interface_points": 192,
+    "reserved_nested_Snell_points": 192,
+    "reserved_nested_Fresnel_points": 192,
+    "reserved_nested_reflection_points": 256,
+    "scalar_bound_calculations": 1,
+    "rays_from_camera": 0,
+    "RGB_queries": 0,
+    "environment_queries": 0,
+    "images": 0,
+    "composites": 0,
+    "fits": 0
+  },
+  "accounting": "Each height or boundary callback is charged before evaluation at 20 conservative nested units. Two constructors reserve all 2048 exact polynomial intervals before evaluation. Each polarized interface reserves its Snell/Fresnel/reflection delegate. Cache decode uses NPY header payload bytes before np.load; selection comparisons and scalar-array observations are distinct.",
+  "checkpoint": "Frozen input hashes and headers; global angle/clearance bounds; first expanded 32 actual returns with positive margins, regular membership, brackets/residuals, actual front normals, upward emitted directions and component closure. Report before continuing compact in the same process.",
+  "stop": "First invariant, unsupported ordering, budget or deadline failure. No origin nudges, normal changes, convex-solver bypass, retry, extra geometry or light. Keep complete remaining reflected power; no cutoff.",
+  "tolerances": {
+    "unit_direction": 1e-10,
+    "initial_back_level": 2e-11,
+    "root_residual": 2e-11,
+    "root_bracket": 1e-11,
+    "primary_power_parity": 3e-13,
+    "closure": 3e-13
+  },
+  "retention": "Selected cache indices and full selected actual primary data; actual first-return points/normals/brackets/status/directions/coherency matrices/powers; input hashes and complete budget ledger. No reflected radiance claim.",
+  "predecessor": "research/experiments/miniplayer-first-return-81",
+  "recovery": "Use public NumPy versioned NPY header readers. Prior driver, failure and ledger remain immutable. This is a separate execution under the unchanged original deadline and checkpoint; no geometry, selection, tolerance or optical algorithm changes.",
+  "cumulative_reservations": {
+    "profile_bound_segments": 3072,
+    "scalar_bound_calculations": 2,
+    "description": "Includes prior1024 profile intervals and one scalar calculation; all remaining prior categories were zero. Additional run retains original64launch/192interface caps. Original wall deadline unchanged."
+  }
+}
