@@ -10,7 +10,7 @@ The [current working-family review](../experiments/miniplayer-working-final-70/R
 
 A separately budgeted [anchor-matched linear scattering test](../experiments/miniplayer-neutral-scattering-71/README.md) also fails all four references; working20 remains selected. A [fixed-width linear incident filter](../experiments/miniplayer-linear-incident-filter-72/README.md) improves compact aggregates but harms expanded playback, so it also remains unselected.
 
-The [latest boundary render](../experiments/miniplayer-boundary-render-57/README.md) uses consistent geometric pixel-area integration and fresh source support at every new node. Orders 8 and 16 are stable on its boundaries. The thin contour remains faint; cap light and source-feature placement still differ. These diagnostic images now appear on the reconstruction page.
+The [latest boundary render](../experiments/miniplayer-boundary-render-57/README.md) uses consistent geometric pixel-area integration and fresh source support at every new node. Orders 8 and 16 are stable on its boundaries. The thin contour remains faint; cap light and source-feature placement still differ. These diagnostics remain archived and linked from the reconstruction page.
 
 A [closed grazing surface](../experiments/miniplayer-grazing-solid-58/README.md) redirects some reflected light toward the backdrop. Its [later-branch audit](../experiments/miniplayer-grazing-branches-60/README.md) retains large tails and unsupported scene power. It has no completed RGB reconstruction or selected-model status.
 

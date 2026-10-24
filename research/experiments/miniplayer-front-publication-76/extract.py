@@ -1,0 +1,11 @@
+"""Lossless panel extraction from published scientific triptychs; no model work."""
+from pathlib import Path
+import hashlib,json,datetime
+import numpy as np
+from PIL import Image
+OUT=Path(__file__).parent;ROOT=OUT.parents[2];P=json.loads((OUT/'protocol.json').read_text());END=datetime.datetime.fromisoformat(P['deadline'].replace('Z','+00:00'));meta=json.loads((ROOT/'guide/comparison-panels.json').read_text());rows=[]
+for member in ['expanded','compact']:
+ for k in ['a','b']:
+  assert datetime.datetime.now(datetime.timezone.utc)<END
+  source=ROOT/f'research/experiments/miniplayer-perimeter-front-75/{member}-{k}-comparison.png';im=Image.open(source).convert('RGB');assert (im.width-4)%3==0;w=(im.width-4)//3;reference=im.crop((0,0,w,im.height));candidate=im.crop((2*(w+2),0,3*w+4,im.height));panel=Image.new('RGB',(2*w+2,im.height),'white');panel.paste(reference,(0,0));panel.paste(candidate,(w+2,0));dest=ROOT/f'guide/assets/geometric-{member}-perimeter-front-{k}.png';panel.save(dest);decoded=Image.open(dest).convert('RGB');assert np.array_equal(np.array(decoded.crop((0,0,w,im.height))),np.array(reference));assert np.array_equal(np.array(decoded.crop((w+2,0,2*w+2,im.height))),np.array(candidate));key=str(dest.relative_to(ROOT/'guide'));meta[key]={'width':panel.width,'height':panel.height,'top':64,'bottom':0,'gutter':2};rows.append({'source':str(source.relative_to(ROOT)),'asset':str(dest.relative_to(ROOT)),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'asset_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'reference_pixels_exact':True,'candidate_pixels_exact':True,'width':panel.width,'height':panel.height,'body_crop_removed':False})
+(ROOT/'guide/comparison-panels.json').write_text(json.dumps(meta,indent=2)+'\n');result={'status':'LATEST_SURFACE_IMAGES_PUBLISHED_WITHOUT_ADOPTION','extracted_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_experiment':'miniplayer-perimeter-front-75','assets':rows,'scientific_evaluations':0,'selected_family_changed':False,'original_acceptance_counts_changed':False,'former_latest':'Boundary57 remains archived separately; no result or asset deleted.'};(OUT/'extraction.json').write_text(json.dumps(result,indent=2)+'\n');(ROOT/'research/decisions/perimeter-front-diagnostic-publication.json').write_text(json.dumps(result,indent=2)+'\n')

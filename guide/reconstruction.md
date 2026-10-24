@@ -405,13 +405,13 @@ Current E is 7.88349 / 6.14943. Expanded A's original 16-pixel boundary and expa
 
 A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.md) over-brightens the edge. Later closed-surface studies expose [source limitations](../research/experiments/miniplayer-native-front-26/README.md) and [grazing-sampling error](../research/experiments/miniplayer-grazing-quadrature-27/README.md); they are diagnostics, not newer completed reconstructions.
 
-**Latest diagnostic: complete geometric boundary integration.** The shallow-front experiment now integrates every boundary pixel consistently. The contour remains faint and cap light is still missing; numerical correction is not a fidelity claim. Original sources, masks and optical parameters are unchanged.
+**Latest surface diagnostic: an exact perimeter-slope front.** The real eighth-power front shares the working back, material, incident blur and light. It changes refraction and reflection together. The perimeter band is more visible, but too broad and gray; expanded E worsens to 12.59843 / 8.24853. This test is not selected.
 
-![Expanded A: latest source-certified boundary-integration diagnostic](assets/geometric-expanded-boundary-area-a.png)
+![Expanded A: latest exact perimeter-front diagnostic](assets/geometric-expanded-perimeter-front-a.png)
 
-![Expanded B: latest source-certified boundary-integration diagnostic](assets/geometric-expanded-boundary-area-b.png)
+![Expanded B: latest exact perimeter-front diagnostic](assets/geometric-expanded-perimeter-front-b.png)
 
-[Latest images, convergence, original guards and regressions](../research/experiments/miniplayer-boundary-render-57/README.md). A newer [grazing-solid probe](../research/experiments/miniplayer-grazing-solid-58/README.md) has no full image: internal reflections and unsupported scene radiance remain [explicitly unresolved](../research/experiments/miniplayer-grazing-branches-60/README.md).
+[Actual surfaces/rays, fresh source proof and original guard failures](../research/experiments/miniplayer-perimeter-front-75/README.md). The earlier [boundary-integrated shallow diagnostic](../research/experiments/miniplayer-boundary-render-57/README.md) remains a separate numerical control; its convergence does not certify this changed front. [Closed-branch scene limits](../research/experiments/miniplayer-grazing-branches-60/README.md) remain unresolved.
 
 <details data-historical>
 <summary>Preserved verified numerical baseline</summary>
@@ -501,13 +501,13 @@ Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original 
 
 [Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Working selection and all failures](../research/decisions/miniplayer-working-primary.json) · [Four-reference material record](../research/experiments/miniplayer-incident-material-20/README.md).
 
-**Latest diagnostic: the same boundary-integrated shallow family.** These use the exact expanded model and numerical policy, shortened only. Source returns and bright rim remain wrong; no compact-specific material or optical fit is introduced.
+**Latest surface diagnostic: the exact same perimeter-front family, shortened only.** Compact E improves to 16.25391 / 16.24187, but both SSIM and original foreground guards still fail. Expanded results worsen. The new gray rim is not the reference’s thin bright contour; no compact-specific model is selected.
 
-![Compact A: latest shared boundary-integration diagnostic](assets/geometric-compact-boundary-area-a.png)
+![Compact A: latest shared perimeter-front diagnostic](assets/geometric-compact-perimeter-front-a.png)
 
-![Compact B: latest shared boundary-integration diagnostic](assets/geometric-compact-boundary-area-b.png)
+![Compact B: latest shared perimeter-front diagnostic](assets/geometric-compact-perimeter-front-b.png)
 
-[Four-reference evidence and all numerical limits](../research/experiments/miniplayer-boundary-render-57/README.md).
+[Four-reference evidence and all local limits](../research/experiments/miniplayer-perimeter-front-75/README.md). [Earlier boundary-integration evidence](../research/experiments/miniplayer-boundary-render-57/README.md) remains preserved.
 
 <details data-historical>
 <summary>Preserved unfitted expanded-family transfer baseline</summary>
