@@ -1,6 +1,8 @@
 # Current state
 
-The [shallow-front continuation](../experiments/miniplayer-shallow-final-53/README.md) closes without a full-model replacement. The contour is narrower, but [thin-reflection sampling](../experiments/miniplayer-reflection-sampling-49/README.md) is not converged. Correct geometric pixel integration is next; additional light or shape searches are deferred. Half-strength underlay shadow passes the frozen shallow-family guards as a held component.
+The [latest boundary render](../experiments/miniplayer-boundary-render-57/README.md) uses consistent geometric pixel-area integration and fresh source support at every new node. Orders 8 and 16 are stable on its boundaries. The thin contour remains faint; cap light and source-feature placement still differ. These diagnostic images now appear on the reconstruction page.
+
+A [closed grazing surface](../experiments/miniplayer-grazing-solid-58/README.md) redirects some reflected light toward the backdrop. Its [later-branch audit](../experiments/miniplayer-grazing-branches-60/README.md) retains large tails and unsupported scene power. It has no completed RGB reconstruction or selected-model status.
 
 The [current working miniplayer family](../../reconstruction/families/music-mini-player-working.json) now appears first in the gallery, with two physical surfaces, incident blur and one common material across both lengths. This explicit primary selection retains the expanded boundary/foreground failures and creates no accepted count.
 

@@ -405,6 +405,14 @@ Current E is 7.88349 / 6.14943. Expanded A's original 16-pixel boundary and expa
 
 A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.md) over-brightens the edge. Later closed-surface studies expose [source limitations](../research/experiments/miniplayer-native-front-26/README.md) and [grazing-sampling error](../research/experiments/miniplayer-grazing-quadrature-27/README.md); they are diagnostics, not newer completed reconstructions.
 
+**Latest diagnostic: complete geometric boundary integration.** The shallow-front experiment now integrates every boundary pixel consistently. The contour remains faint and cap light is still missing; numerical correction is not a fidelity claim. Original sources, masks and optical parameters are unchanged.
+
+![Expanded A: latest source-certified boundary-integration diagnostic](assets/geometric-expanded-boundary-area-a.png)
+
+![Expanded B: latest source-certified boundary-integration diagnostic](assets/geometric-expanded-boundary-area-b.png)
+
+[Latest images, convergence, original guards and regressions](../research/experiments/miniplayer-boundary-render-57/README.md). A newer [grazing-solid probe](../research/experiments/miniplayer-grazing-solid-58/README.md) has no full image: internal reflections and unsupported scene radiance remain [explicitly unresolved](../research/experiments/miniplayer-grazing-branches-60/README.md).
+
 <details data-historical>
 <summary>Preserved verified numerical baseline</summary>
 
@@ -492,6 +500,14 @@ Frame A: 0 seconds. Frame B: 6.033 seconds. Cover art is a separate high-resolut
 Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original comparisons, but the shared family remains guard-incomplete on expanded. The thin rim, cap light and returned features remain imperfect. Full radiance and full-fidelity acceptance are not claimed.
 
 [Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Working selection and all failures](../research/decisions/miniplayer-working-primary.json) · [Four-reference material record](../research/experiments/miniplayer-incident-material-20/README.md).
+
+**Latest diagnostic: the same boundary-integrated shallow family.** These use the exact expanded model and numerical policy, shortened only. Source returns and bright rim remain wrong; no compact-specific material or optical fit is introduced.
+
+![Compact A: latest shared boundary-integration diagnostic](assets/geometric-compact-boundary-area-a.png)
+
+![Compact B: latest shared boundary-integration diagnostic](assets/geometric-compact-boundary-area-b.png)
+
+[Four-reference evidence and all numerical limits](../research/experiments/miniplayer-boundary-render-57/README.md).
 
 <details data-historical>
 <summary>Preserved unfitted expanded-family transfer baseline</summary>
