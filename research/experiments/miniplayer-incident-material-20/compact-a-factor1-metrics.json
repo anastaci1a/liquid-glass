@@ -1,0 +1,94 @@
+{
+  "member": "compact",
+  "reference": "a",
+  "factor": 1,
+  "gain": 0.5144083153060457,
+  "bias": 0.45264991160600004,
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 13.686137199401855
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 19.402259826660156
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 13.740823745727539
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 8.37395191192627
+    },
+    "ssim": 0.9630243182182312,
+    "loss": 244.05155192296507,
+    "E": 15.622149401505705,
+    "exterior": 10.550281524658203,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 20.3394832611084
+    },
+    "foreground": {
+      "jupiter.jpg": 1804.33251953125,
+      "title.svg": 478.6044921875,
+      "artist.svg": 44.61317825317383,
+      "play.svg": 71.84587860107422,
+      "forward.svg": 190.2030029296875
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 23.191293716430664,
+        "luma_signed": -0.17099386772909383
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 18.52804183959961,
+        "luma_signed": -1.285909110867955
+      },
+      "left_cap": {
+        "RGB_RMSE": 18.577449798583984,
+        "luma_signed": 0.8771135153985034
+      },
+      "body": {
+        "RGB_RMSE": 10.217300415039062,
+        "luma_signed": 2.6969744624512875
+      }
+    }
+  },
+  "held_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "selected_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "clipping": [
+    0,
+    0,
+    0
+  ],
+  "all_pass": true
+}
