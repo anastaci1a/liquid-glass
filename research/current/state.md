@@ -1,6 +1,6 @@
 # Current state
 
-The [three-direction outline review](../experiments/miniplayer-front-review-37/README.md) rejects a globally steeper front: its actual correspondence remains close, but its pale band is too broad. The current working family stays selected. A perimeter-curvature proposal remains unexecuted.
+The [shallow-front continuation](../experiments/miniplayer-shallow-final-53/README.md) closes without a full-model replacement. The contour is narrower, but [thin-reflection sampling](../experiments/miniplayer-reflection-sampling-49/README.md) is not converged. Correct geometric pixel integration is next; additional light or shape searches are deferred. Half-strength underlay shadow passes the frozen shallow-family guards as a held component.
 
 The [current working miniplayer family](../../reconstruction/families/music-mini-player-working.json) now appears first in the gallery, with two physical surfaces, incident blur and one common material across both lengths. This explicit primary selection retains the expanded boundary/foreground failures and creates no accepted count.
 
