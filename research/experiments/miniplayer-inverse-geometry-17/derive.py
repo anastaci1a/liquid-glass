@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[3];OUT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'reconstruction'));sys.path.insert(0,str(OUT))
 from geometric_optics import refract
 from music_miniplayer_family import load_family,surface_for_member
-from profile import HermiteProfile
+from hermite_height_profile import HermiteProfile
 P=json.loads((OUT/'protocol.json').read_text());END=datetime.datetime.fromisoformat(P['deadline'].replace('Z','+00:00'));F=load_family();base=surface_for_member('expanded');R=base.radius;n=P['fixed']['index'];D=P['fixed']['background_distance']
 ledger={k:0 for k in P['caps']}
 def save(name,value):(OUT/name).write_text(json.dumps(value,indent=2,allow_nan=False)+'\n')
@@ -49,6 +49,7 @@ def equation(r,B,keep=False):
  f,fp,v,k,kp,target=kinematics(r);b=float(np.asarray(B).reshape(-1)[0]);rb=r-k*(b+f)
  target_direction=np.array([target-rb,0.,-D+b]);target_direction/=np.linalg.norm(target_direction)
  denominator=n*v[2]-target_direction[2]
+ save('last-design-state.json', {'input_radius':float(r),'height':b,'back_radius':float(rb),'front_height':f,'target_source':float(target),'Snell_denominator':float(denominator)})
  assert denominator<0 and abs(denominator)>1e-8
  m=(n*v[0]-target_direction[0])/denominator
  condition=1+m*k;assert condition>1e-6,'Back-radius design branch is singular'
