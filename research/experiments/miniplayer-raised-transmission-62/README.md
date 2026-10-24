@@ -17,8 +17,14 @@ The experiment imports the unchanged [raised-perimeter adapter](../../../reconst
 
 $$
 h_1(t)=0.4(1-t)(0.1+t),\qquad
-h_2(x)=0.4\left(1-\frac{x^2}{a^2}\right),\qquad
-h=\frac{h_1h_2}{h_1+h_2}.
+h_2(x)=0.4\left(1-\frac{x^2}{a^2}\right),
+$$
+
+$$
+h=\begin{cases}
+\frac{h_1h_2}{h_1+h_2},&h_1+h_2>0,\\
+0,&h_1=h_2=0.
+\end{cases}
 $$
 
 The same height determines back position and derivatives. Harmonic composition retains nonnegative height and a global slope bound below the shared primary-path threshold. The solid can be nonconvex, so no convex multiple-reflection intersector is applied. Only major length differs between expanded and compact.
