@@ -1,5 +1,7 @@
 # Current state
 
+The [co-designed forward observation](../experiments/miniplayer-codesigned-native-78/README.md) preserves transport within 0.000233 native pixels, but every reference still fails image guards. Both 75 and 78 have a disclosed angular-evaluation budget overrun from an omitted baseline charge. Their arrays and as-run ledgers remain preserved; no model or count is adopted.
+
 An [exact perimeter-slope front](../experiments/miniplayer-perimeter-front-75/README.md) creates a visible but overly broad rim band. Compact errors improve; expanded errors and every SSIM guard worsen. Fresh whole-body/guard source support passes, but no family replacement is selected. A [coherent inverse back](../experiments/miniplayer-perimeter-inverse-77/README.md) now satisfies nodal optical constraints and global intended-height bounds. Fresh actual forward/source validation is still required; no rendered improvement is claimed.
 
 The [direct-front envelope](../experiments/miniplayer-direct-front-envelope-74/README.md) shows that angular light bounded by the existing radiance cap cannot supply thousands of original rim pixels in the frozen working pipeline. A uniform scene over-brightens the body and fails all four references. This does not bound later transport, brighter scenes or changed geometry/material.

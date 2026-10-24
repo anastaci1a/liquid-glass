@@ -411,7 +411,7 @@ A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.m
 
 ![Expanded B: latest exact perimeter-front diagnostic](assets/geometric-expanded-perimeter-front-b.png)
 
-[Actual surfaces/rays, fresh source proof and original guard failures](../research/experiments/miniplayer-perimeter-front-75/README.md). The earlier [boundary-integrated shallow diagnostic](../research/experiments/miniplayer-boundary-render-57/README.md) remains a separate numerical control; its convergence does not certify this changed front. [Closed-branch scene limits](../research/experiments/miniplayer-grazing-branches-60/README.md) remain unresolved.
+[Actual surfaces/rays, fresh source proof, guard failures and the later accounting correction](../research/experiments/miniplayer-perimeter-front-75/README.md). The angular-evaluation budget was exceeded; no in-budget acceptance is claimed. The earlier [boundary-integrated shallow diagnostic](../research/experiments/miniplayer-boundary-render-57/README.md) remains a separate numerical control; its convergence does not certify this changed front. [Closed-branch scene limits](../research/experiments/miniplayer-grazing-branches-60/README.md) remain unresolved.
 
 <details data-historical>
 <summary>Preserved verified numerical baseline</summary>

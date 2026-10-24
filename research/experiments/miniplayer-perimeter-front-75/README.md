@@ -66,3 +66,7 @@ All clipping counts are zero. Later reflected power remains unassigned; the scen
 Changing the front also changes source-feature transport. A coherent back could be reconstructed behind this fixed front against the earlier physical correspondence prior, using the existing inverse-surface method. That would test whether the desired rim geometry can coexist with transport preservation.
 
 Such a surface must satisfy positivity, ordered radii, closure, branch validity and same-polynomial normals before forward testing. The old map may guide construction but must never replace newly traced coordinates. No inverse solve or second front setting runs in this experiment.
+
+## Accounting correction
+
+A later [accounting audit](../miniplayer-codesigned-native-78/accounting-addendum.json) finds 1487085 omitted baseline angular evaluations. Actual angular work totals 2974170 against the original 1500000 cap. This is a protocol overrun; the old counter is not reset. Original arrays, code, masks and as-run ledgers remain unchanged. No in-budget acceptance is claimed.
