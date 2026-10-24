@@ -1,5 +1,7 @@
 # Current state
 
+An [exact perimeter-slope front](../experiments/miniplayer-perimeter-front-75/README.md) creates a visible but overly broad rim band. Compact errors improve; expanded errors and every SSIM guard worsen. Fresh whole-body/guard source support passes, but no family replacement is selected. A coherent inverse back is the next proposed geometric discriminator.
+
 The [direct-front envelope](../experiments/miniplayer-direct-front-envelope-74/README.md) shows that angular light bounded by the existing radiance cap cannot supply thousands of original rim pixels in the frozen working pipeline. A uniform scene over-brightens the body and fails all four references. This does not bound later transport, brighter scenes or changed geometry/material.
 
 [Fixed rim sections](../experiments/miniplayer-rim-observation-73/README.md) locate distinct reference peaks and plain backing transitions. Expanded A’s upper-left corner has a large missing brightness peak; compact B’s top-center excess has no isolated peak above the outer backing. These observations do not fit or identify an outline material.
