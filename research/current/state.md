@@ -1,5 +1,7 @@
 # Current state
 
+The [current working-family review](../experiments/miniplayer-working-final-70/README.md) closes all eight stages with no new replacement. Incident blur, fixed-white contrast, finite lighting and shadow trials fail family guards. Original foreground remains unchanged; dispersion is unidentified. A separately budgeted material-response experiment is proposed next.
+
 The [latest boundary render](../experiments/miniplayer-boundary-render-57/README.md) uses consistent geometric pixel-area integration and fresh source support at every new node. Orders 8 and 16 are stable on its boundaries. The thin contour remains faint; cap light and source-feature placement still differ. These diagnostic images now appear on the reconstruction page.
 
 A [closed grazing surface](../experiments/miniplayer-grazing-solid-58/README.md) redirects some reflected light toward the backdrop. Its [later-branch audit](../experiments/miniplayer-grazing-branches-60/README.md) retains large tails and unsupported scene power. It has no completed RGB reconstruction or selected-model status.
