@@ -40,6 +40,7 @@ def monotone_front_reflection_escape(surface, direction, gradient):
     does not alter a ray or apply to arbitrary directions at a flat plateau.
     """
     from spline_height_back import SplineFootprintBack
+    from bevel_footprint_back import BevelFootprintBack
     from rounded_rectangle_back import RoundedRectangleHarmonicBack
     base = surface
     while type(base) is VerticalScaleBack:
@@ -49,11 +50,11 @@ def monotone_front_reflection_escape(surface, direction, gradient):
     if v.shape[-1] != 3 or g.shape != v.shape[:-1]+(2,):
         raise ValueError('Matched reflected directions and actual gradients required')
     valid = np.zeros(v.shape[:-1], bool)
-    if type(base) is not SplineFootprintBack:
+    if type(base) not in (SplineFootprintBack, BevelFootprintBack):
         return valid
     if type(base.coordinate) is not RoundedRectangleHarmonicBack or base.coordinate.cap_join_width != 0:
         return valid
-    if np.any(np.diff(base.profile.c) > 0):
+    if type(base) is SplineFootprintBack and np.any(np.diff(base.profile.c) > 0):
         return valid
     finite = np.isfinite(v).all(axis=-1) & np.isfinite(g).all(axis=-1)
     outward = np.sum(g*v[..., :2], axis=-1) <= 0
