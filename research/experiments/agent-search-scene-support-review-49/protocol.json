@@ -1,0 +1,19 @@
+{
+  "start": "2026-10-24T20:07:16.015Z",
+  "deadline": "2026-10-24T20:19:16.015Z",
+  "checkpoint_deadline": "2026-10-24T20:11:16.015Z",
+  "pin": "5538fdd082d2c0ff1eebbbdd7241085f31eee5ae",
+  "cohort": "Exact549 TIR launches of closed24/continuation25; event01 and events03..16 only for available air exits. Event02 is cached blocked TIR, not an available air exit.",
+  "caps": {
+    "numeric_payload_bytes": 134217728,
+    "machine_record_text_bytes": 16777216,
+    "endpoint_records": 20000,
+    "scalar_entries": 10000000
+  },
+  "frame_convention": "Saved native source coordinates are integer-centered pixel-index units. Center inside data index domain means0<=x<width and0<=y<height. Corner bounds use floor(x),floor(y), plus1. No plane recomputation or mask lookup. This indexing convention is explicit; bounds are not physical plane edges.",
+  "classification": "Downward: saved raw supported; center outside data index domain; center inside but four corners cross frame; all corners in frame but saved raw support false. Incident-compatible failures remain separate.",
+  "accounting": "Before decoding reserve all selected NPY payloads and at most256scalar entries per retained endpoint row plus32per partition row; count all rows including blocked placeholders. Headers and machine text separate.",
+  "closure_guard": 3.411e-13,
+  "zero": "Optical/shared imports, plane hits, directions, Fresnel, mask reads/lookups/erosions, source/target pixels, RGB, filters, fields, fits, composites, images",
+  "preserve": "Untracked46 and all older files remain untouched."
+}
