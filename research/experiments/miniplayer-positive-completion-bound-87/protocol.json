@@ -1,0 +1,33 @@
+{
+  "status": "DECLARED_BEFORE_ARRAY_EVALUATION_AND_IMPLEMENTATION",
+  "declared_at": "2026-10-24T20:12:41.105Z",
+  "preparation_time_lower_bound": "2026-10-24T19:59:09Z",
+  "planning_time_note": "Conservative earlier public clock anchor includes qualitative planning. No numerical experiment ran before declaration. Both the computational cap and earlier outer elapsed cap apply.",
+  "checkpoint_deadline": "2026-10-24T20:16:41.105Z",
+  "deadline": "2026-10-24T20:27:41.105Z",
+  "pin": "4080fbf64cf0f745844a5cbb2f17f03ec018cce4",
+  "question": "Can adding only nonnegative later reflected paths remove the current wrong bright inset band under the frozen incoherent model?",
+  "hypothesis": "Any such completion is componentwise no darker on original glass pixels. Existing positive residual therefore provides a lower bound on attainable squared error, without selecting another light.",
+  "fixed": "Saved known-prefix images85, matched78 images, original target pixels, poses/masks/foreground, AA2, colour and all existing optical/material/scene stages. No geometry, source or rendering changes.",
+  "scope": "Diagnostic encoded native-image comparison and analytic monotonicity under frozen positive-weight integration and incoherent nonnegative added radiance. Not all physical models, destructive coherent interference, new material/exposure/geometry, continuous camera integration or floating-point interval enclosure.",
+  "caps": {
+    "NPZ_payload_bytes": 100000000,
+    "target_RGB_decoded_pixels": 8294400,
+    "scalar_residual_entries": 6729600,
+    "scalar_reduction_entries": 100000000,
+    "target_cases": 4,
+    "diagnostic_figures": 4,
+    "rays": 0,
+    "source_RGB_queries": 0,
+    "fields": 0,
+    "filters": 0,
+    "Fresnel": 0,
+    "environment_queries": 0,
+    "model_composites": 0,
+    "fits": 0
+  },
+  "method": "Use only original glass/rim/held/interior and frozen16/22partial cohorts, with first assertion that all original glass pixels are outside actual foreground boxes. No mask dropping. Report positive-excess counts, above-one-level advisory counts, optimistic RGB RMSE floor and fraction of existing SSE. Reuse old images; no score or model acceptance.",
+  "checkpoint": "First case input/code hashes, payload reservations, original cohort/foreground-disjointness and finite-data controls before residual classification. Report immediately then continue without waiting.",
+  "stop": "First hash, shape, foreground-overlap, finite-data, cap or deadline failure. No retry, new mask, parameter or source repair.",
+  "retention": "Exact first/last input hashes, all per-cohort scalar records, positive residual diagnostic maps, code and ledger. Figures explicitly labeled error maps, never reconstructions."
+}

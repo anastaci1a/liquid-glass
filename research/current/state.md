@@ -1,5 +1,7 @@
 # Current state
 
+A [conditional continuation bound](../experiments/miniplayer-positive-completion-bound-87/README.md) shows that adding only nonnegative later reflected paths cannot recover prior78 rim error on expanded A/B. Existing over-bright channels already account for more than 97% of current rim squared error. This concerns the frozen prefix and native protocol, not arbitrary physical models.
+
 The [native first internal return](../experiments/miniplayer-first-return-native-85/README.md) adds an incorrect bright inset band. All four full-image errors and SSIM values worsen. Four zero-added-return controls are pixel-exact; source, blur, tone and foreground stay fixed. TIR and later power are retained. No working-model or count change is made.
 
 A [peak-pixel convergence audit](../experiments/miniplayer-return-convergence-86/README.md) finds changes below 0.00021 of an 8-bit level between orders 8 and 16 on the tested cohort. Other pixels remain unverified.
