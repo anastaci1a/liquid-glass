@@ -413,6 +413,8 @@ The selected images above remain unchanged.
 
 [Latest shared material test](../research/experiments/miniplayer-incident-material-20/README.md) · [Joint interpretation review](../research/experiments/miniplayer-interpretation-review-21/README.md) · [Inverse-back forward test](../research/experiments/miniplayer-inverse-forward-18/README.md) · [Earlier structured review and held color step](../research/experiments/miniplayer-pass-review-16/README.md) · [Three hypotheses and fixed-crop regressions](../research/experiments/miniplayer-outline-review-10/README.md) · [Same-geometry cached section](../research/experiments/miniplayer-outline-review-10/expanded-actual-section.svg). Lighting is an explicit unobserved assumption; later reflected radiance remains unresolved.
 
+A [narrower angular light](../research/experiments/miniplayer-narrow-emitter-22/README.md) produces a thin but over-bright perimeter. The [AA2/AA4 patch diagnostic](../research/experiments/miniplayer-outline-sampling-24/README.md) shows sampling does not fix the straight-edge mismatch. Both results remain separate from the selected model.
+
 Checkerboard marks unavailable unscored exterior. The original registered inputs and foreground remain fixed; no target backdrop, mask removal or new shadow is used. Earlier H1 and spline-response failures remain below.
 
 <details data-historical>
