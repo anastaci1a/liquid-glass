@@ -1,0 +1,143 @@
+{
+  "reference": "a",
+  "original_mask_scores_on_physical_pre_foreground": {
+    "glass": {
+      "pixels": 14904,
+      "rmse": 62.46433639526367
+    },
+    "rim": {
+      "pixels": 8364,
+      "rmse": 73.8486099243164
+    },
+    "held": {
+      "pixels": 4763,
+      "rmse": 58.318763732910156
+    },
+    "interior": {
+      "pixels": 6540,
+      "rmse": 43.785465240478516
+    },
+    "ssim": 0.7289465069770813,
+    "loss": 4367.340481236616,
+    "E": 66.08585689265605,
+    "exterior_RMSE": 16.447525024414062,
+    "foreground_RMSE": 39.6060905456543
+  },
+  "completed_image_scores": {
+    "glass": {
+      "pixels": 14904,
+      "rmse": 62.46433639526367
+    },
+    "rim": {
+      "pixels": 8364,
+      "rmse": 73.8486099243164
+    },
+    "held": {
+      "pixels": 4763,
+      "rmse": 58.318763732910156
+    },
+    "interior": {
+      "pixels": 6540,
+      "rmse": 43.785465240478516
+    },
+    "ssim": 0.7289465069770813,
+    "loss": 4367.340481236616,
+    "E": 66.08585689265605,
+    "exterior_RMSE": 16.447525024414062,
+    "foreground_RMSE": 39.6060905456543
+  },
+  "partial_boundary": {
+    "pixels": 38,
+    "pre_foreground_RMSE": 140.47406005859375,
+    "complete_RMSE": 140.47406005859375
+  },
+  "fixed_crops": {
+    "upper_rim": {
+      "original_frame_bounds": [
+        1440,
+        576,
+        1580,
+        620
+      ],
+      "finite_pixels": 6160,
+      "total_pixels": 6160,
+      "RGB_RMSE": 33.647592130024684,
+      "luma_RMSE": 30.08593488181709,
+      "chroma_RMSE": 14.973338946174923,
+      "signed_RGB": [
+        0.19661942545276184,
+        -9.486142162136831,
+        -15.400826190676927
+      ],
+      "scope": "Advisory only; unavailable pixels counted, no scoring mask changed"
+    },
+    "left_cap": {
+      "original_frame_bounds": [
+        1418,
+        630,
+        1455,
+        718
+      ],
+      "finite_pixels": 3256,
+      "total_pixels": 3256,
+      "RGB_RMSE": 46.688049613378894,
+      "luma_RMSE": 41.260331551688544,
+      "chroma_RMSE": 20.66884256928439,
+      "signed_RGB": [
+        -2.4553459308840133,
+        -22.036763202783444,
+        -32.337238881977264
+      ],
+      "scope": "Advisory only; unavailable pixels counted, no scoring mask changed"
+    },
+    "lower_return": {
+      "original_frame_bounds": [
+        1440,
+        728,
+        1580,
+        764
+      ],
+      "finite_pixels": 5040,
+      "total_pixels": 5040,
+      "RGB_RMSE": 58.83829334441218,
+      "luma_RMSE": 53.02329176920313,
+      "chroma_RMSE": 26.194701603214323,
+      "signed_RGB": [
+        -9.334405476050009,
+        -44.61422798516495,
+        -61.47563371201977
+      ],
+      "scope": "Advisory only; unavailable pixels counted, no scoring mask changed"
+    },
+    "glyph": {
+      "original_frame_bounds": [
+        1467,
+        626,
+        1563,
+        722
+      ],
+      "finite_pixels": 9216,
+      "total_pixels": 9216,
+      "RGB_RMSE": 39.6060894187443,
+      "luma_RMSE": 33.584781560204924,
+      "chroma_RMSE": 18.919540652911802,
+      "signed_RGB": [
+        -8.703559493587818,
+        -29.98193925290252,
+        -44.1753979603042
+      ],
+      "scope": "Advisory only; unavailable pixels counted, no scoring mask changed"
+    }
+  },
+  "required_complete_pixels_finite": true,
+  "outside_foreground_exact": true,
+  "raw_sample_clips": [
+    0,
+    0
+  ],
+  "clear_unfiltered": true,
+  "source_sigma": 6.75,
+  "source_radius": 21,
+  "body": "unit neutral, before original foreground",
+  "historical_comparison": "Different declared operator and unresolved historical fingerprint; no same-epoch acceptance guard or numerical gain claimed"
+}
