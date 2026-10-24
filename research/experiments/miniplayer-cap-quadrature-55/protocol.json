@@ -1,0 +1,28 @@
+{
+  "status": "DECLARED_BEFORE_NUMERICAL_EXECUTION",
+  "start": "2026-10-24T12:46:06.112Z",
+  "deadline": "2026-10-24T13:06:06.112Z",
+  "checkpoint_minutes": 5,
+  "question": "Does actual-footprint quadrature converge for the held cap reflected signal, including the pixels that failed uniform sampling49?",
+  "geometry": "Unchanged shallow41 actual front and finite48 panel z1770. Same shape/scene for both lengths.",
+  "selection": "For each member, fixed3x3 native pixels at rightmost cap and upper-right45-degree arc, rounded nearest native center. No target selection.",
+  "levels": [
+    8,
+    16,
+    32
+  ],
+  "caps": {
+    "quadrature_nodes": 2000000,
+    "camera_front_points": 500000,
+    "adapter_units": 10000000,
+    "reflection_points": 500000,
+    "Fresnel_points": 500000,
+    "panel_intersections": 500000,
+    "cached_signal_scalar_reads": 60,
+    "source_RGB": 0,
+    "full_composites": 0,
+    "fits": 0
+  },
+  "reused": "Immutable54 known-area controls; new actual surface membership/regularity checked at every contributing node. Original49 cached direct-signal AA arrays only for right-tip comparison.",
+  "stop": "First geometry, positive-weight, cap, checkpoint or deadline failure. Exactly three orders, no light/surface fit, target read or full RGB image. No convergence claim outside selected pixels."
+}

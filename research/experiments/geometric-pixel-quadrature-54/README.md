@@ -33,6 +33,6 @@ The constant-one test therefore gives fractional coverage. Exterior contributes 
 
 The complete-disk area matches its analytic value; general curved-pixel area still has finite-order error. Positivity alone is not an area or optical convergence certificate. Unrepresentable crease nodes must stop an optical evaluation, not receive fabricated normals. The current fixed nodes are regular.
 
-The [independent method review](https://github.com/anastaci1a/liquid-glass/tree/research/agent-music-search-223/research/experiments/agent-boundary-quadrature-peer-43) identifies the same partition and normalization requirements. Its record is on the separate research branch; integration into the primary record remains pending. The implementation includes every y-partition crossing and does not claim generic source-knot splitting.
+The [independent method review](../agent-boundary-quadrature-peer-43/README.md) identifies the same partition and normalization requirements. Its record is now integrated into the primary history. The implementation includes every y-partition crossing and does not claim generic source-knot splitting.
 
 No full image mixes these new weights with old AA2 transmission. Original AA2 evidence and scores remain unchanged. A subsequent cap test and fresh finite-source proof at new nodes are required before using this rule for a reconstruction. The same rule must apply to every eligible geometric boundary pixel, independently of reference residuals.
