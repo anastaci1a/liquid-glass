@@ -74,3 +74,7 @@ Sources include modeled or temporally reconstructed content. A finite support pr
 ## Shared circular-solid interface
 
 [Fixed-radius contract](../experiments/circular-solid-radius-01/README.md) passes 16 configurations and 96 ordered segments with exact default unit behavior. No image or scene is adopted. Search still lacks reflected-environment support; expanded playback remains outside this convex wrapper because its selected back is nonconcave.
+
+The independent primary-map checkpoint stopped at its first exact-boundary membership mismatch. [Saved-output diagnosis](../experiments/circular-boundary-contract-02/README.md) finds strict versus inclusive legacy labels; boundary completeness and available paths agree for that one configuration. Five configurations remain unexecuted. Explicit interoperability fields are proposed, not implemented.
+
+[Additive membership API](../experiments/geometric-membership-api-03/README.md) now preserves legacy fields while exposing projected membership and regular entry. Fifty small comparator rays preserve every old output exactly. Full six-configuration primary parity remains unverified; off-event direction diagnostics and source support remain separate.
