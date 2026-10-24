@@ -1,0 +1,429 @@
+{
+  "status": "ONE_UNFITTED_PERIMETER_TRANSFER_PAIR_READY",
+  "records": [
+    {
+      "reference": "a",
+      "scores": {
+        "original": {
+          "glass": {
+            "pixels": 14904,
+            "rmse": 17.580123901367188
+          },
+          "rim": {
+            "pixels": 8364,
+            "rmse": 18.391605377197266
+          },
+          "held": {
+            "pixels": 4763,
+            "rmse": 17.284753799438477
+          },
+          "interior": {
+            "pixels": 6540,
+            "rmse": 16.484207153320312
+          },
+          "ssim": 0.865696907043457,
+          "loss": 317.8178739763607,
+          "E": 17.827447208626385,
+          "exterior_RMSE": 16.447525024414062,
+          "foreground_RMSE": 15.986343383789062
+        },
+        "complete": {
+          "glass": {
+            "pixels": 14904,
+            "rmse": 17.580123901367188
+          },
+          "rim": {
+            "pixels": 8364,
+            "rmse": 18.391605377197266
+          },
+          "held": {
+            "pixels": 4763,
+            "rmse": 17.284753799438477
+          },
+          "interior": {
+            "pixels": 6540,
+            "rmse": 16.484207153320312
+          },
+          "ssim": 0.865696907043457,
+          "loss": 317.8178739763607,
+          "E": 17.827447208626385,
+          "exterior_RMSE": 16.447525024414062,
+          "foreground_RMSE": 15.986343383789062
+        }
+      },
+      "guards": {
+        "selected": {
+          "original": {
+            "glass": true,
+            "rim": true,
+            "held": true,
+            "interior": false,
+            "E": true,
+            "SSIM": true,
+            "exterior": true,
+            "foreground": false
+          },
+          "complete": {
+            "glass": true,
+            "rim": true,
+            "held": true,
+            "interior": false,
+            "E": true,
+            "SSIM": true,
+            "exterior": true,
+            "foreground": false
+          },
+          "partial38": true
+        },
+        "transfer34": {
+          "original": {
+            "glass": true,
+            "rim": true,
+            "held": true,
+            "interior": false,
+            "E": true,
+            "SSIM": false,
+            "exterior": true,
+            "foreground": false
+          },
+          "complete": {
+            "glass": true,
+            "rim": true,
+            "held": true,
+            "interior": false,
+            "E": true,
+            "SSIM": false,
+            "exterior": true,
+            "foreground": false
+          },
+          "partial38": true
+        }
+      },
+      "partial38_RMSE": 79.46836853027344,
+      "partial_selected": 97.96915435791016,
+      "partial34": 83.9215316772461,
+      "clipping": {
+        "neutral_low": 0,
+        "neutral_high": 0,
+        "encoded_low": 0,
+        "encoded_high": 0
+      },
+      "clear_reused_exact": true,
+      "fixed_crops": {
+        "upper_rim": {
+          "bounds": [
+            1440,
+            576,
+            1580,
+            620
+          ],
+          "RGB_RMSE": 23.157225598668262,
+          "luma_RMSE": 21.6120378116296,
+          "chroma_RMSE": 9.837809317766284,
+          "signed_RGB": [
+            -4.683270071330782,
+            -6.249980568039146,
+            -6.792896781715432
+          ]
+        },
+        "left_cap": {
+          "bounds": [
+            1418,
+            630,
+            1455,
+            718
+          ],
+          "RGB_RMSE": 22.365739795120156,
+          "luma_RMSE": 21.143512001492898,
+          "chroma_RMSE": 6.957337677564147,
+          "signed_RGB": [
+            -6.512608022248276,
+            -5.89455956707569,
+            -5.181896887360374
+          ]
+        },
+        "lower_return": {
+          "bounds": [
+            1440,
+            728,
+            1580,
+            764
+          ],
+          "RGB_RMSE": 20.89444766635398,
+          "luma_RMSE": 19.328153497089595,
+          "chroma_RMSE": 10.320219815625173,
+          "signed_RGB": [
+            -4.550985885961425,
+            -4.750970409473493,
+            -1.886351128840553
+          ]
+        },
+        "glyph": {
+          "bounds": [
+            1467,
+            626,
+            1563,
+            722
+          ],
+          "RGB_RMSE": 15.986343692733417,
+          "luma_RMSE": 15.120832309337047,
+          "chroma_RMSE": 4.794509867965785,
+          "signed_RGB": [
+            -16.100993593621144,
+            -11.643652973725693,
+            -10.294245445208313
+          ]
+        }
+      },
+      "parity": [
+        {
+          "cohort": "lens",
+          "patch": [
+            42,
+            111
+          ],
+          "raw_and_AA_exact": true
+        },
+        {
+          "cohort": "clear",
+          "patch": [
+            208,
+            112
+          ],
+          "raw_and_AA_exact": true
+        },
+        {
+          "cohort": "partial",
+          "patch": [
+            199,
+            141
+          ],
+          "raw_and_AA_exact": true
+        }
+      ],
+      "tail_unassigned": true
+    },
+    {
+      "reference": "b",
+      "scores": {
+        "original": {
+          "glass": {
+            "pixels": 14904,
+            "rmse": 17.17101287841797
+          },
+          "rim": {
+            "pixels": 8364,
+            "rmse": 17.729768753051758
+          },
+          "held": {
+            "pixels": 4763,
+            "rmse": 17.710168838500977
+          },
+          "interior": {
+            "pixels": 6540,
+            "rmse": 16.42875099182129
+          },
+          "ssim": 0.8815043568611145,
+          "loss": 300.6939883005641,
+          "E": 17.340530219706782,
+          "exterior_RMSE": 15.983244895935059,
+          "foreground_RMSE": 14.47735595703125
+        },
+        "complete": {
+          "glass": {
+            "pixels": 14904,
+            "rmse": 17.17101287841797
+          },
+          "rim": {
+            "pixels": 8364,
+            "rmse": 17.729768753051758
+          },
+          "held": {
+            "pixels": 4763,
+            "rmse": 17.710168838500977
+          },
+          "interior": {
+            "pixels": 6540,
+            "rmse": 16.42875099182129
+          },
+          "ssim": 0.8815043568611145,
+          "loss": 300.6939883005641,
+          "E": 17.340530219706782,
+          "exterior_RMSE": 15.983244895935059,
+          "foreground_RMSE": 14.47735595703125
+        }
+      },
+      "guards": {
+        "selected": {
+          "original": {
+            "glass": true,
+            "rim": true,
+            "held": true,
+            "interior": false,
+            "E": true,
+            "SSIM": false,
+            "exterior": true,
+            "foreground": false
+          },
+          "complete": {
+            "glass": true,
+            "rim": true,
+            "held": true,
+            "interior": false,
+            "E": true,
+            "SSIM": false,
+            "exterior": true,
+            "foreground": false
+          },
+          "partial38": true
+        },
+        "transfer34": {
+          "original": {
+            "glass": true,
+            "rim": true,
+            "held": true,
+            "interior": false,
+            "E": true,
+            "SSIM": false,
+            "exterior": true,
+            "foreground": false
+          },
+          "complete": {
+            "glass": true,
+            "rim": true,
+            "held": true,
+            "interior": false,
+            "E": true,
+            "SSIM": false,
+            "exterior": true,
+            "foreground": false
+          },
+          "partial38": true
+        }
+      },
+      "partial38_RMSE": 64.09809875488281,
+      "partial_selected": 70.07123565673828,
+      "partial34": 68.88929748535156,
+      "clipping": {
+        "neutral_low": 0,
+        "neutral_high": 0,
+        "encoded_low": 0,
+        "encoded_high": 0
+      },
+      "clear_reused_exact": true,
+      "fixed_crops": {
+        "upper_rim": {
+          "bounds": [
+            1440,
+            576,
+            1580,
+            620
+          ],
+          "RGB_RMSE": 21.263255450143028,
+          "luma_RMSE": 20.208332500317926,
+          "chroma_RMSE": 7.890585159349913,
+          "signed_RGB": [
+            -1.5472960121832884,
+            2.5956233724975935,
+            5.120972134572055
+          ]
+        },
+        "left_cap": {
+          "bounds": [
+            1418,
+            630,
+            1455,
+            718
+          ],
+          "RGB_RMSE": 17.74413363769006,
+          "luma_RMSE": 16.47712603289619,
+          "chroma_RMSE": 8.41504935633915,
+          "signed_RGB": [
+            -5.010219402977378,
+            -1.9420347999580003,
+            -0.07074303132154651
+          ]
+        },
+        "lower_return": {
+          "bounds": [
+            1440,
+            728,
+            1580,
+            764
+          ],
+          "RGB_RMSE": 21.78962339633519,
+          "luma_RMSE": 20.103433845878033,
+          "chroma_RMSE": 11.03569234985834,
+          "signed_RGB": [
+            -4.823067798057482,
+            -4.888332099254642,
+            -2.4426511760934124
+          ]
+        },
+        "glyph": {
+          "bounds": [
+            1467,
+            626,
+            1563,
+            722
+          ],
+          "RGB_RMSE": 14.477355508292144,
+          "luma_RMSE": 13.297856105137607,
+          "chroma_RMSE": 5.236254531801992,
+          "signed_RGB": [
+            -15.871649480735263,
+            -10.00715635784824,
+            -8.421801603860027
+          ]
+        }
+      },
+      "parity": [
+        {
+          "cohort": "lens",
+          "patch": [
+            42,
+            111
+          ],
+          "raw_and_AA_exact": true
+        },
+        {
+          "cohort": "clear",
+          "patch": [
+            208,
+            112
+          ],
+          "raw_and_AA_exact": true
+        },
+        {
+          "cohort": "partial",
+          "patch": [
+            199,
+            141
+          ],
+          "raw_and_AA_exact": true
+        }
+      ],
+      "tail_unassigned": true
+    }
+  ],
+  "selected_state_changed": false,
+  "finished": "2026-10-24T10:25:20.043735+00:00",
+  "ledger": {
+    "fixture_parity_records": 180,
+    "native_rays": 225600,
+    "nested_units": 19592727,
+    "incident_fields": 2,
+    "erosions": 4,
+    "source_audit_subrays": 451200,
+    "corner_lookups": 3609600,
+    "RGB_queries": 198134,
+    "candidate_composites": 2,
+    "identity_composites": 2,
+    "Study_constructors": 2,
+    "mask_points": 112800,
+    "score_calls": 4,
+    "metric_Gaussians": 20,
+    "metric_erosions": 4,
+    "cached_annular_evaluations": 197978
+  }
+}

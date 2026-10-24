@@ -1,0 +1,202 @@
+{
+  "reference": "a",
+  "scores": {
+    "original": {
+      "glass": {
+        "pixels": 14904,
+        "rmse": 17.580123901367188
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 18.391605377197266
+      },
+      "held": {
+        "pixels": 4763,
+        "rmse": 17.284753799438477
+      },
+      "interior": {
+        "pixels": 6540,
+        "rmse": 16.484207153320312
+      },
+      "ssim": 0.865696907043457,
+      "loss": 317.8178739763607,
+      "E": 17.827447208626385,
+      "exterior_RMSE": 16.447525024414062,
+      "foreground_RMSE": 15.986343383789062
+    },
+    "complete": {
+      "glass": {
+        "pixels": 14904,
+        "rmse": 17.580123901367188
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 18.391605377197266
+      },
+      "held": {
+        "pixels": 4763,
+        "rmse": 17.284753799438477
+      },
+      "interior": {
+        "pixels": 6540,
+        "rmse": 16.484207153320312
+      },
+      "ssim": 0.865696907043457,
+      "loss": 317.8178739763607,
+      "E": 17.827447208626385,
+      "exterior_RMSE": 16.447525024414062,
+      "foreground_RMSE": 15.986343383789062
+    }
+  },
+  "guards": {
+    "selected": {
+      "original": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": false,
+        "E": true,
+        "SSIM": true,
+        "exterior": true,
+        "foreground": false
+      },
+      "complete": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": false,
+        "E": true,
+        "SSIM": true,
+        "exterior": true,
+        "foreground": false
+      },
+      "partial38": true
+    },
+    "transfer34": {
+      "original": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": false,
+        "E": true,
+        "SSIM": false,
+        "exterior": true,
+        "foreground": false
+      },
+      "complete": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": false,
+        "E": true,
+        "SSIM": false,
+        "exterior": true,
+        "foreground": false
+      },
+      "partial38": true
+    }
+  },
+  "partial38_RMSE": 79.46836853027344,
+  "partial_selected": 97.96915435791016,
+  "partial34": 83.9215316772461,
+  "clipping": {
+    "neutral_low": 0,
+    "neutral_high": 0,
+    "encoded_low": 0,
+    "encoded_high": 0
+  },
+  "clear_reused_exact": true,
+  "fixed_crops": {
+    "upper_rim": {
+      "bounds": [
+        1440,
+        576,
+        1580,
+        620
+      ],
+      "RGB_RMSE": 23.157225598668262,
+      "luma_RMSE": 21.6120378116296,
+      "chroma_RMSE": 9.837809317766284,
+      "signed_RGB": [
+        -4.683270071330782,
+        -6.249980568039146,
+        -6.792896781715432
+      ]
+    },
+    "left_cap": {
+      "bounds": [
+        1418,
+        630,
+        1455,
+        718
+      ],
+      "RGB_RMSE": 22.365739795120156,
+      "luma_RMSE": 21.143512001492898,
+      "chroma_RMSE": 6.957337677564147,
+      "signed_RGB": [
+        -6.512608022248276,
+        -5.89455956707569,
+        -5.181896887360374
+      ]
+    },
+    "lower_return": {
+      "bounds": [
+        1440,
+        728,
+        1580,
+        764
+      ],
+      "RGB_RMSE": 20.89444766635398,
+      "luma_RMSE": 19.328153497089595,
+      "chroma_RMSE": 10.320219815625173,
+      "signed_RGB": [
+        -4.550985885961425,
+        -4.750970409473493,
+        -1.886351128840553
+      ]
+    },
+    "glyph": {
+      "bounds": [
+        1467,
+        626,
+        1563,
+        722
+      ],
+      "RGB_RMSE": 15.986343692733417,
+      "luma_RMSE": 15.120832309337047,
+      "chroma_RMSE": 4.794509867965785,
+      "signed_RGB": [
+        -16.100993593621144,
+        -11.643652973725693,
+        -10.294245445208313
+      ]
+    }
+  },
+  "parity": [
+    {
+      "cohort": "lens",
+      "patch": [
+        42,
+        111
+      ],
+      "raw_and_AA_exact": true
+    },
+    {
+      "cohort": "clear",
+      "patch": [
+        208,
+        112
+      ],
+      "raw_and_AA_exact": true
+    },
+    {
+      "cohort": "partial",
+      "patch": [
+        199,
+        141
+      ],
+      "raw_and_AA_exact": true
+    }
+  ],
+  "tail_unassigned": true
+}
