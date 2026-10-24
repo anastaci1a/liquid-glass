@@ -1,0 +1,24 @@
+{
+  "status": "DECLARED_BEFORE_POLYNOMIAL_ANALYSIS",
+  "start": "2026-10-24T18:01:45.094Z",
+  "checkpoint_deadline": "2026-10-24T18:04:45.094Z",
+  "deadline": "2026-10-24T18:11:45.094Z",
+  "pin": "8b56c0f6305fe0431eb102fee9355094bdc7ec21",
+  "question": "Does the current co-designed back satisfy the concavity needed to use the existing convex closed-event solver? If not, produce an exact intended-surface chord witness rather than bypass the solver contract.",
+  "source": "research/experiments/miniplayer-perimeter-inverse-77/back-profile.json",
+  "source_sha256": "567e39c8170e99be8a0b114c99c9dc82ec72bda4537c27dd7df00f629dbe9bdc",
+  "caps": {
+    "polynomial_intervals": 1024,
+    "exact_witness_values": 9,
+    "rays": 0,
+    "RGB_reads": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "composites": 0,
+    "fits": 0
+  },
+  "method": "Exact Fractions of stored binary64 knots/heights/slopes. Derivative quadratic extrema and linear second-derivative endpoints. A positive curvature interval yields two actual back-boundary points whose chord midpoint lies outside the solid.",
+  "scope": "Intended C1 Hermite polynomial, not full floating-point interval arithmetic, Apple geometry inference or visible fidelity. Front80proof uses unchanged exact power8composition; no new physical setting.",
+  "checkpoint": "Frozen source hash and exact endpoint/derivative algebra on first eight intervals, then continue without input wait.",
+  "stop": "Mismatch, algebraic invariant failure, cap or deadline. Nonconcavity is an allowed research outcome, not a software failure. No smoothing or epsilon certificate."
+}
