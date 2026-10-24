@@ -10,7 +10,9 @@
 | F-006 | Related pills | Central zoom appears excessive; peripheral compression matters. | Historical observation, not an identified thickness estimate. |
 | F-007 | All research | Isolate refraction, blur, grading, outline and foreground. | [Method](../method/README.md). |
 | F-008 | All records | Concise, readable, maintainable text throughout the repository. | [Documentation conduct](../../DOCUMENTATION.md). |
+| F-009 | Current modeling | Focus on physical correctness and visible fidelity; runtime optimization is outside current scope. | No device benchmarking or optimization task is active. |
+| F-010 | Compact / expanded miniplayer | Require one exact shared model; only length differs. | [Required family transfer](../current/state.md#miniplayer-family); no independent compact tuning. |
 
-User interpretations remain hypotheses unless independently established. Feedback IDs track the visible issue; a lower aggregate score does not close them.
+Physical interpretations remain hypotheses unless independently established. Explicit modeling requirements constrain implementation. Feedback IDs track the visible issue; a lower aggregate score does not close them.
 
 [Earlier visible requirements](history.md) consolidate related project feedback without importing unrelated app reports.

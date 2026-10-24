@@ -1,0 +1,107 @@
+{
+  "status": "SHARED_GLASS_MODEL_IDENTICAL_EXCEPT_MAJOR_LENGTH",
+  "family_sha256": "65a2dc1d394661d14c1caeccb48c1a4d62cf2093dacaa24ef7a24c8757492e8c",
+  "expanded_major_half": 7.225022904390323,
+  "compact_major_half": 4.906563038095225,
+  "shared_geometry": {
+    "model": "SplineFootprintBack",
+    "minor_half": 1.012503164339156,
+    "corner_radius": 1.0043663048754772,
+    "cap_join_width": 0,
+    "breaks": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.9,
+      0.97,
+      0.99,
+      1
+    ],
+    "height_controls": [
+      0.1381819202620016,
+      0.1381819202620016,
+      0.136502710003918,
+      0.13602257117048225,
+      0.12733924854632883,
+      0.12044098503163844,
+      0.06671528306416542,
+      0.030004811796411936,
+      0.008992215599754803,
+      0.0022509236812926743,
+      0
+    ]
+  },
+  "shared_optics": {
+    "camera": "orthographic",
+    "front_z": 0,
+    "index": 1.5,
+    "background_distance": 2.1
+  },
+  "shared_material": {
+    "incident_sigma_native_pixels": 6.75,
+    "incident_kernel_radius": 21,
+    "gain": 0.596189238519786,
+    "bias": 0.3290237590837732,
+    "output_sigma": 0,
+    "generated_shadow": 0,
+    "outline": "Unresolved; no invented reflected illumination"
+  },
+  "shared_sampling": {
+    "samples_per_axis": 2,
+    "bilinear": "exact"
+  },
+  "case_data": "Original source/target/foreground content and style, fixed registration and major length are reference inputs; no per-compact glass parameters.",
+  "expanded_identity": [
+    {
+      "reference": "a",
+      "pre_foreground_exact": true,
+      "complete_exact": true
+    },
+    {
+      "reference": "b",
+      "pre_foreground_exact": true,
+      "complete_exact": true
+    }
+  ],
+  "original_guard_results": [
+    {
+      "reference": "a",
+      "all_original_guards_pass": true
+    },
+    {
+      "reference": "b",
+      "all_original_guards_pass": true
+    }
+  ],
+  "frozen_boundary_review": [
+    {
+      "reference": "a",
+      "exterior_pixels": 31956,
+      "exterior_complete_pixels_exact": true,
+      "original_order_prior_exterior": 10.550281524658203,
+      "original_order_current_exterior": 10.550281524658203,
+      "original_order_exterior_nonregress": true,
+      "frozen_old_partial_glass_pixels": 22,
+      "frozen_old_partial_baseline_RMSE": 44.19375228881836,
+      "frozen_old_partial_transfer_RMSE": 48.28634262084961,
+      "frozen_old_partial_nonregress": false,
+      "new_shape_partial_scope": "The four-pixel field in the as-run result is original glass intersected with new coverage<1; this frozen-old cohort is separately retained."
+    },
+    {
+      "reference": "b",
+      "exterior_pixels": 31956,
+      "exterior_complete_pixels_exact": true,
+      "original_order_prior_exterior": 15.072770118713379,
+      "original_order_current_exterior": 15.072770118713379,
+      "original_order_exterior_nonregress": true,
+      "frozen_old_partial_glass_pixels": 22,
+      "frozen_old_partial_baseline_RMSE": 60.96459197998047,
+      "frozen_old_partial_transfer_RMSE": 41.92266845703125,
+      "frozen_old_partial_nonregress": true,
+      "new_shape_partial_scope": "The four-pixel field in the as-run result is original glass intersected with new coverage<1; this frozen-old cohort is separately retained."
+    }
+  ],
+  "acceptance_scope": "Unfitted required-family transfer; source and code correctness pass. No full-fidelity pass, no waiver of local boundary regression and no compact fit."
+}

@@ -1,6 +1,8 @@
 # Current state
 
-Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue its unresolved outline and return questions. Compact and bounded clear-play work remain parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
+Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue its unresolved outline and return questions. Compact is now a required exact transfer of the expanded family; bounded clear-play work remains parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
+
+Current scope is mathematical/physical modeling and visible fidelity. Runtime optimization and device benchmarking are outside this modeling work.
 
 Ordinary blur belongs before refraction across elements. Historical widths seed incident filtering; output-filtered records remain labeled comparisons.
 
@@ -75,6 +77,18 @@ Sources include modeled or temporally reconstructed content. A finite support pr
 
 [Fixed-radius contract](../experiments/circular-solid-radius-01/README.md) passes 16 configurations and 96 ordered segments with exact default unit behavior. No image or scene is adopted. Search still lacks reflected-environment support; expanded playback remains outside this convex wrapper because its selected back is nonconcave.
 
-The independent primary-map checkpoint stopped at its first exact-boundary membership mismatch. [Saved-output diagnosis](../experiments/circular-boundary-contract-02/README.md) finds strict versus inclusive legacy labels; boundary completeness and available paths agree for that one configuration. Five configurations remain unexecuted. Explicit interoperability fields are proposed, not implemented.
+The independent primary-map checkpoint stopped at its first exact-boundary membership mismatch. [Saved-output diagnosis](../experiments/circular-boundary-contract-02/README.md) finds strict versus inclusive legacy labels; boundary completeness and available paths agree for that one configuration. Its five remaining configurations remain unexecuted. The later additive API is a separate, backward-compatible clarification.
 
-[Additive membership API](../experiments/geometric-membership-api-03/README.md) now preserves legacy fields while exposing projected membership and regular entry. Fifty small comparator rays preserve every old output exactly. Full six-configuration primary parity remains unverified; off-event direction diagnostics and source support remain separate.
+[Additive membership API](../experiments/geometric-membership-api-03/README.md) now preserves legacy fields while exposing projected membership and regular entry. Fifty small comparator rays preserve every old output exactly. [Final primary parity](../experiments/agent-membership-parity-final-15/README.md) passes all six fixed configurations under the new contract. It uses 396 attempted launches and 39,556 nested units, including 6,500 level points.
+
+Normals and directions agree exactly on completed regular entries; source coordinates differ by at most 6.218e-14 original length units. Legacy pole labels and off-event direction diagnostics stay unchanged. This verifies fixture interoperability, not reflected transport, source support or image fidelity.
+
+The [accounting preflight](../experiments/agent-parity-accounting-preflight-14/README.md) covers every selected delegate. Its predecessor stopped before an undeclared bevel entry; that instrumentation failure and the earlier membership failure remain preserved. No further parity retry is planned.
+
+## Miniplayer family
+
+Compact and expanded must share one actual surface law, thickness/profile, minor extent/corner geometry, index, background distance, incident blur, material response and outline model. Only major length differs. Source, measured placement and foreground content remain reference inputs, not per-control optical tuning.
+
+The published earlier compact initializer does not satisfy this new exact-family requirement. Its evidence remains historical. The next compact observation must be an unfitted transfer of the selected expanded family, with source-first support and unchanged original guards. Failure requires a family-level review, not a separate compact fit.
+
+The [expanded first-return certificate](../experiments/expanded-first-return-certificate-05/README.md) establishes the next front event for the unchanged intended spline. Floating-point propagation and later events remain separate; old native counts and all images stay unchanged.
