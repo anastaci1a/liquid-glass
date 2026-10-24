@@ -1,0 +1,90 @@
+{
+  "status": "PASS_FOUR_CACHED_COMPOSITES_WITH_LIMITS",
+  "failure": null,
+  "finished": "2026-10-24T08:45:22.487540+00:00",
+  "records": [
+    {
+      "member": "expanded",
+      "reference": "a",
+      "amplitude": 4,
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "all_scores_exact": true,
+      "E": 7.883486797181998,
+      "SSIM": 0.9816307425498962,
+      "partial": {
+        "pixels": 16,
+        "RMSE": 40.32682800292969
+      },
+      "failed_original_guards": [
+        "partial"
+      ],
+      "failed_held_guards": [
+        "partial"
+      ]
+    },
+    {
+      "member": "expanded",
+      "reference": "b",
+      "amplitude": 4,
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "all_scores_exact": true,
+      "E": 6.149429642470981,
+      "SSIM": 0.979114830493927,
+      "partial": {
+        "pixels": 16,
+        "RMSE": 26.08043098449707
+      },
+      "failed_original_guards": [
+        "jupiter.jpg",
+        "artist.svg"
+      ],
+      "failed_held_guards": [
+        "partial"
+      ]
+    },
+    {
+      "member": "compact",
+      "reference": "a",
+      "amplitude": 4,
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "all_scores_exact": true,
+      "E": 20.53187643383762,
+      "SSIM": 0.9635760188102722,
+      "partial": {
+        "pixels": 22,
+        "RMSE": 23.813167572021484
+      },
+      "failed_original_guards": [],
+      "failed_held_guards": []
+    },
+    {
+      "member": "compact",
+      "reference": "b",
+      "amplitude": 4,
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "all_scores_exact": true,
+      "E": 19.68186325372886,
+      "SSIM": 0.9629939794540405,
+      "partial": {
+        "pixels": 22,
+        "RMSE": 21.07662582397461
+      },
+      "failed_original_guards": [],
+      "failed_held_guards": []
+    }
+  ],
+  "ledger": {
+    "cached_composites": 4,
+    "Study_constructors": 4,
+    "score_calls": 4,
+    "metric_gaussians": 20,
+    "metric_erosions": 4,
+    "cached_annular_direction_evaluations": 1487085,
+    "mask_points": 1121600
+  },
+  "new_rays_heights_source_queries_fields_Fresnel_fits": 0
+}
