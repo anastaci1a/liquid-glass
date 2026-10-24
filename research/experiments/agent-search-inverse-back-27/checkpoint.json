@@ -1,0 +1,43 @@
+{
+  "status": "PASS_EXACT_RADIAL_CHAIN_AND_K_DERIVATIVE",
+  "at": "2026-10-24T06:45:26.036859+00:00",
+  "h_error_vs_original_API": 1.3877787807814457e-17,
+  "hp_error_vs_original_API": 1.1102230246251565e-16,
+  "hpp_FD_check_error": 5.1919968324654064e-11,
+  "controls": [
+    {
+      "r": 0.1994424983516491,
+      "k_derivative_error": 5.4591296760886365e-12
+    },
+    {
+      "r": 0.3988849967032982,
+      "k_derivative_error": 1.0567241526260318e-12
+    },
+    {
+      "r": 0.5983274950549472,
+      "k_derivative_error": 4.987572854719957e-12
+    },
+    {
+      "r": 0.7977699934065964,
+      "k_derivative_error": 7.81445741449005e-12
+    },
+    {
+      "r": 0.9473518671703332,
+      "k_derivative_error": 7.533834667228234e-13
+    }
+  ],
+  "edge": "Factored one-sided limit only; harmonic_cap zero weights at exact edge are never used as a normal or traced tangent ray.",
+  "ledger": {
+    "ODE_RHS": 0,
+    "profile_scalar_queries": 279,
+    "shared_Snell_points": 30,
+    "bound_segments": 0,
+    "design_nodes": 0,
+    "native_grids": 0,
+    "source_RGB_reads": 0,
+    "fields": 0,
+    "images": 0,
+    "fits": 0,
+    "edge_limit_kinematics": 0
+  }
+}

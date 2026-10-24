@@ -1,0 +1,44 @@
+{
+  "start": "2026-10-24T06:40:37.049Z",
+  "deadline": "2026-10-24T07:00:37.049Z",
+  "checkpoint_deadline": "2026-10-24T06:45:37.049Z",
+  "scope": "One actual Search back-height inverse construction from ORIGINAL PHYSICAL H1 map; zero source/RGB/image/grid reads or fits.",
+  "pins": {
+    "shared_core": "e695699c exact geometric_optics bytes, also shared899e6cd6 compatible",
+    "HermiteProfile": "6564032c immutable read-only root dependency"
+  },
+  "fixed": {
+    "R": 0.9972124917582454,
+    "depth": 0.15,
+    "crown": 0.4,
+    "n": 1.5,
+    "D": 2,
+    "L": 89,
+    "front": "Half original radius-scaled HarmonicCircularBack actual height",
+    "prior": "Original H1 flat-front primary Snell source-plane map, not target RGB"
+  },
+  "caps": {
+    "ODE_RHS": 8000,
+    "profile_scalar_queries": 20000,
+    "shared_Snell_points": 22000,
+    "bound_segments": 1024,
+    "design_nodes": 1025,
+    "native_grids": 0,
+    "source_RGB_reads": 0,
+    "fields": 0,
+    "images": 0,
+    "fits": 0
+  },
+  "accounting": "One persistent ledger. Actual analytic radial triplet counts3 scalar queries per input; original API check counts each Harmonic/bevel/harmonic_cap delegate point conservatively. Shared Snell counts every input point before function. Postsolve endpoint and nodal profile/gradient checks count4*1025 queries, not hidden. Node equation calls count inside RHS cap.",
+  "checkpoint": "Exact radial h/hprime/hsecond and radius chain rule, original API interior agreement and second-derivative FD controls, then shared Snell k derivative check. No FD-defined normals. At boundary use algebraic one-sided derivative limit, never returned zero harmonic weights as a normal.",
+  "solver": {
+    "method": "DOP853",
+    "rtol": 1e-9,
+    "atol": 1e-11,
+    "max_step_over_R": 0.0078125,
+    "solves": 1,
+    "nodes": 1025
+  },
+  "stop": "First prerequisite/branch/positivity/accounting/invariant/deadline failure; no retry or parameter change. No source/map/target residual patch, native forward trace or next target.",
+  "ownership": "Own construction records/math only. No shared adapter/core edit or unrelated LFS hydration."
+}
