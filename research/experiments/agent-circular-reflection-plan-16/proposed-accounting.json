@@ -1,0 +1,48 @@
+{
+  "status": "FUTURE_PROPOSAL_NOT_EXECUTION",
+  "launches": 16,
+  "encounters_per_launch": 24,
+  "cached_initial_events": 2,
+  "encounter_cap": 384,
+  "new_segment_cap": 352,
+  "bisections": 64,
+  "level_calls_per_segment": 67,
+  "level_point_cap": 23584,
+  "geometry_nested": 120032,
+  "interface_primitive_rows": {
+    "fresnel_components": 384,
+    "reflect_direction": 384,
+    "refract": 352,
+    "total": 1120
+  },
+  "setup_scalar_units": 6,
+  "nested_total_cap": 121158,
+  "per_launch_nested_bound": 7572,
+  "per_launch_level_bound": 1474,
+  "initial_setup_global_units": 6,
+  "derivation": "Every new segment:67 level calls; each level includes level/radius/base/bevel/harmonic=5. Add5 nonsmooth/delegate rows plus1 segment wrapper per segment. Add primitive rows and6 constructor/property units. Closed levels are a subset of nested total.",
+  "old_100000_cap_sufficient": false,
+  "old_ledgers_untouched": true,
+  "endpoint_cap": 368,
+  "downward_audit_both_cases": {
+    "four_corner_tests": 2944,
+    "square_kernel_side": 43,
+    "all_explicit_kernel_corner_texel_checks": 5443456,
+    "raw_and_matching_eroded_corner_lookup_upper": 5888,
+    "new_erosions": 0,
+    "source_RGB": 0,
+    "actual_lookup_plan": "Use only exact-provenance retained known and incident_known masks; stop before transport if provenance/semantics unavailable. No enumeration fallback activated.",
+    "primary_proof_bit_checks": 32,
+    "total_actual_mask_lookup_cap": 5920,
+    "explicit_kernel_texel_checks_role": "Logical finite-support envelope only; not actual lookups when using certified eroded masks."
+  },
+  "source_mask_strategy": "Use only exact-provenance retained known and radius21 incident_known masks. Stop before future transport if unavailable or incompatible. No enumeration fallback, mask construction, RGB or source completion is proposed.",
+  "actual_optical_or_source_work": 0,
+  "auxiliary_symbolic_bookkeeping": {
+    "cached_selection_distance_comparisons_upper": 3609600,
+    "event_records": 384,
+    "s_p_component_products_upper": 1536,
+    "component_complements_upper": 768,
+    "ray_calls_now": 0
+  }
+}
