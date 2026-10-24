@@ -1,0 +1,27 @@
+{
+  "status": "DECLARED_BEFORE_IMPLEMENTATION_AND_EXECUTION",
+  "start": "2026-10-24T15:02:47.315Z",
+  "checkpoint_deadline": "2026-10-24T15:07:47.315Z",
+  "deadline": "2026-10-24T15:22:47.315Z",
+  "pin": "ae3ca1dd060f03dabbcfb341100bd4c4847147a5",
+  "defect": "Current response trades expanded tone against compact colored texture; missing rim and return positions remain distinct defects.",
+  "hypothesis": "One neutral linear-light white-scattering mixture, matched exactly at existing material white and encoded middle gray, can improve body tone without another fitted coefficient.",
+  "allowed": "Single derived mixture, shared by all four references. No optimizer, backtrack, tau sweep, new geometry, source or light. Derivation is from old response anchors only, never targets.",
+  "frozen": "Working20 actual18 front/back/source coordinates/primary Fresnel, scene4 direct-front annulus, incident6.75R21 before refraction, encoded source-filter domain, AA2 exactbilinear, original sources/pose/masks/styles/foreground, shadow0. Later reflected power remains unassigned. Compact differs only by major length.",
+  "assumption": "Normalized unobserved neutral white illumination supplies the scattered component. This is an explicit material hypothesis, not recovered radiance, identified roughness, or a complete angular-scattering model.",
+  "checkpoint": "First/last input bindings, synthetic white/middle-gray identities across primary powers and light contributions, and all four cached working20 pre/complete identities before candidates.",
+  "caps": {
+    "algebraic_checks": 64,
+    "environment_direction_queries": 1500000,
+    "Study_constructor_pixels": 1121600,
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "score_calls": 4,
+    "SSIM_Gaussians": 20,
+    "metric_erosions": 4,
+    "cached_native_samples": 4486400
+  },
+  "guards": "Every original current working body/SSIM/foreground/exterior and protected16/22partial guard, zero clipping; preserve original numerical baseline comparisons and local crop regressions. Visible improvement required before any selection.",
+  "stop": "First invariant/hash/deadline/cap failure, otherwise one candidate per reference only. No failed guard waived. No new rays, source queries, filters, fields or fits.",
+  "precedent": "Separate response-basis question proposed by shallow45; rejected fixed-white encoded solve65 stays closed."
+}
