@@ -1,0 +1,1104 @@
+{
+  "utc": "2026-10-24T01:55:52.512512+00:00",
+  "status": "NO_STRICT_PAIR_KEEP_SHADOW_ZERO",
+  "qualifier": null,
+  "trials": [
+    {
+      "name": "full",
+      "factor": 1,
+      "opacity": 0.07122886993343976,
+      "records": [
+        {
+          "reference": "a",
+          "factor": 1,
+          "opacity": 0.07122886993343976,
+          "scores": {
+            "original": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 25.645532608032227
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 31.93711280822754
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 22.73381996154785
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 13.941527366638184
+              },
+              "ssim": 0.8089752793312073,
+              "loss": 766.3790922823864,
+              "E": 27.683552739530857,
+              "exterior_RMSE": 12.612717628479004,
+              "foreground_RMSE": 13.477656364440918
+            },
+            "complete": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 25.645532608032227
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 31.93711280822754
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 22.73381996154785
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 13.941527366638184
+              },
+              "ssim": 0.8089752793312073,
+              "loss": 766.3790922823864,
+              "E": 27.683552739530857,
+              "exterior_RMSE": 12.612717628479004,
+              "foreground_RMSE": 13.477656364440918
+            }
+          },
+          "guards": {
+            "original": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "complete": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "partial_boundary": false
+          },
+          "strict_all": false,
+          "partial_pixels": 38,
+          "partial_RMSE": 99.91075134277344,
+          "fully_covered_pixels": 24573,
+          "fully_covered_exact": true,
+          "lens_contribution_unchanged": true,
+          "original_clear_cache_unchanged": true,
+          "generated_clear_contribution_changed": true,
+          "clipping": {
+            "below": 0,
+            "above": 0
+          },
+          "fixed_crops": {
+            "upper_rim": {
+              "original_bounds": [
+                1440,
+                576,
+                1580,
+                620
+              ],
+              "finite_pixels": 6160,
+              "RGB_RMSE": 25.173411949407523,
+              "luma_RMSE": 22.76994612681974,
+              "chroma_RMSE": 11.17810251549584,
+              "signed_RGB": [
+                -5.476999173255323,
+                -2.2233463256535204,
+                -0.006625050914703639
+              ],
+              "detail_pairs": 6546,
+              "luma_adjacent_RMS": 1.1215011248667675,
+              "target_luma_adjacent_RMS": 4.077650089929958,
+              "luma_difference_error_RMS": 4.116887292043448
+            },
+            "left_cap": {
+              "original_bounds": [
+                1418,
+                630,
+                1455,
+                718
+              ],
+              "finite_pixels": 3256,
+              "RGB_RMSE": 21.221297614648098,
+              "luma_RMSE": 19.367120808227863,
+              "chroma_RMSE": 8.478306131055902,
+              "signed_RGB": [
+                -3.730248025542981,
+                -3.481057147273487,
+                -2.662568889759682
+              ],
+              "detail_pairs": 4565,
+              "luma_adjacent_RMS": 1.0262081337004174,
+              "target_luma_adjacent_RMS": 3.2255264756856645,
+              "luma_difference_error_RMS": 3.3089984294140167
+            },
+            "lower_return": {
+              "original_bounds": [
+                1440,
+                728,
+                1580,
+                764
+              ],
+              "finite_pixels": 5040,
+              "RGB_RMSE": 21.395986121475374,
+              "luma_RMSE": 20.36002391808425,
+              "chroma_RMSE": 9.665554476101388,
+              "signed_RGB": [
+                -4.31209909818357,
+                -4.038771722997938,
+                -0.9135862055367657
+              ],
+              "detail_pairs": 6260,
+              "luma_adjacent_RMS": 0.10466107822126966,
+              "target_luma_adjacent_RMS": 5.271694614940158,
+              "luma_difference_error_RMS": 5.247839095398121
+            },
+            "glyph": {
+              "original_bounds": [
+                1467,
+                626,
+                1563,
+                722
+              ],
+              "finite_pixels": 9216,
+              "RGB_RMSE": 13.477656548661423,
+              "luma_RMSE": 11.453292098514266,
+              "chroma_RMSE": 7.049799188670307,
+              "signed_RGB": [
+                -2.9173427394319638,
+                3.818089576282849,
+                6.427008848453018
+              ],
+              "detail_pairs": 0,
+              "luma_adjacent_RMS": null,
+              "target_luma_adjacent_RMS": null,
+              "luma_difference_error_RMS": null
+            }
+          }
+        },
+        {
+          "reference": "b",
+          "factor": 1,
+          "opacity": 0.07122886993343976,
+          "scores": {
+            "original": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 20.32170295715332
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 25.63327980041504
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 19.33252716064453
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 10.039955139160156
+              },
+              "ssim": 0.9001263380050659,
+              "loss": 486.1996377530515,
+              "E": 22.049935096345557,
+              "exterior_RMSE": 10.535778045654297,
+              "foreground_RMSE": 10.046533584594727
+            },
+            "complete": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 20.32170295715332
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 25.63327980041504
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 19.33252716064453
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 10.039955139160156
+              },
+              "ssim": 0.9001263380050659,
+              "loss": 486.1996377530515,
+              "E": 22.049935096345557,
+              "exterior_RMSE": 10.535778045654297,
+              "foreground_RMSE": 10.046533584594727
+            }
+          },
+          "guards": {
+            "original": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "complete": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "partial_boundary": false
+          },
+          "strict_all": false,
+          "partial_pixels": 38,
+          "partial_RMSE": 72.02215576171875,
+          "fully_covered_pixels": 24573,
+          "fully_covered_exact": true,
+          "lens_contribution_unchanged": true,
+          "original_clear_cache_unchanged": true,
+          "generated_clear_contribution_changed": true,
+          "clipping": {
+            "below": 0,
+            "above": 0
+          },
+          "fixed_crops": {
+            "upper_rim": {
+              "original_bounds": [
+                1440,
+                576,
+                1580,
+                620
+              ],
+              "finite_pixels": 6160,
+              "RGB_RMSE": 20.032506474334255,
+              "luma_RMSE": 17.699691005644368,
+              "chroma_RMSE": 10.724434696748798,
+              "signed_RGB": [
+                -3.6333095703709435,
+                4.0608412597401,
+                8.392226219419149
+              ],
+              "detail_pairs": 6546,
+              "luma_adjacent_RMS": 0.8571332709627678,
+              "target_luma_adjacent_RMS": 4.473564082693339,
+              "luma_difference_error_RMS": 4.354636543540146
+            },
+            "left_cap": {
+              "original_bounds": [
+                1418,
+                630,
+                1455,
+                718
+              ],
+              "finite_pixels": 3256,
+              "RGB_RMSE": 16.17992052126367,
+              "luma_RMSE": 15.756320456704575,
+              "chroma_RMSE": 7.6119383964986715,
+              "signed_RGB": [
+                -2.030465815042395,
+                2.1952832956324704,
+                4.125685169777995
+              ],
+              "detail_pairs": 4565,
+              "luma_adjacent_RMS": 0.059764954071868576,
+              "target_luma_adjacent_RMS": 4.047095072032327,
+              "luma_difference_error_RMS": 4.048922040431175
+            },
+            "lower_return": {
+              "original_bounds": [
+                1440,
+                728,
+                1580,
+                764
+              ],
+              "finite_pixels": 5040,
+              "RGB_RMSE": 28.157187543029934,
+              "luma_RMSE": 24.109939392720154,
+              "chroma_RMSE": 15.840661600753682,
+              "signed_RGB": [
+                -1.6880928500599803,
+                10.95487909675354,
+                18.13563294648858
+              ],
+              "detail_pairs": 6260,
+              "luma_adjacent_RMS": 0.5068768056973094,
+              "target_luma_adjacent_RMS": 5.993889365854847,
+              "luma_difference_error_RMS": 6.055915619923124
+            },
+            "glyph": {
+              "original_bounds": [
+                1467,
+                626,
+                1563,
+                722
+              ],
+              "finite_pixels": 9216,
+              "RGB_RMSE": 10.046533980768373,
+              "luma_RMSE": 8.476299616270113,
+              "chroma_RMSE": 5.861874306074153,
+              "signed_RGB": [
+                -3.265587851346936,
+                3.5151481898113466,
+                5.349374861956069
+              ],
+              "detail_pairs": 0,
+              "luma_adjacent_RMS": null,
+              "target_luma_adjacent_RMS": null,
+              "luma_difference_error_RMS": null
+            }
+          }
+        }
+      ],
+      "strict_pair": false
+    },
+    {
+      "name": "half",
+      "factor": 0.5,
+      "opacity": 0.03561443496671988,
+      "records": [
+        {
+          "reference": "a",
+          "factor": 0.5,
+          "opacity": 0.03561443496671988,
+          "scores": {
+            "original": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 25.63582992553711
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 31.92323112487793
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 22.72393226623535
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 13.941527366638184
+              },
+              "ssim": 0.8089752793312073,
+              "loss": 765.7648488154573,
+              "E": 27.67245650128404,
+              "exterior_RMSE": 13.670065879821777,
+              "foreground_RMSE": 13.477656364440918
+            },
+            "complete": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 25.63582992553711
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 31.92323112487793
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 22.72393226623535
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 13.941527366638184
+              },
+              "ssim": 0.8089752793312073,
+              "loss": 765.7648488154573,
+              "E": 27.67245650128404,
+              "exterior_RMSE": 13.670065879821777,
+              "foreground_RMSE": 13.477656364440918
+            }
+          },
+          "guards": {
+            "original": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "complete": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "partial_boundary": false
+          },
+          "strict_all": false,
+          "partial_pixels": 38,
+          "partial_RMSE": 98.92960357666016,
+          "fully_covered_pixels": 24573,
+          "fully_covered_exact": true,
+          "lens_contribution_unchanged": true,
+          "original_clear_cache_unchanged": true,
+          "generated_clear_contribution_changed": true,
+          "clipping": {
+            "below": 0,
+            "above": 0
+          },
+          "fixed_crops": {
+            "upper_rim": {
+              "original_bounds": [
+                1440,
+                576,
+                1580,
+                620
+              ],
+              "finite_pixels": 6160,
+              "RGB_RMSE": 24.95895194692404,
+              "luma_RMSE": 22.416629867925778,
+              "chroma_RMSE": 11.484521435936635,
+              "signed_RGB": [
+                -2.4285086044533686,
+                -0.7086306004845476,
+                0.5833014854496079
+              ],
+              "detail_pairs": 6546,
+              "luma_adjacent_RMS": 1.1215011248667675,
+              "target_luma_adjacent_RMS": 4.077650089929958,
+              "luma_difference_error_RMS": 4.116887292043448
+            },
+            "left_cap": {
+              "original_bounds": [
+                1418,
+                630,
+                1455,
+                718
+              ],
+              "finite_pixels": 3256,
+              "RGB_RMSE": 21.83341114638677,
+              "luma_RMSE": 19.976999293114797,
+              "chroma_RMSE": 8.587853291072665,
+              "signed_RGB": [
+                -1.8461523170260306,
+                -2.123704072847706,
+                -1.583921758638791
+              ],
+              "detail_pairs": 4565,
+              "luma_adjacent_RMS": 1.0262081337004174,
+              "target_luma_adjacent_RMS": 3.2255264756856645,
+              "luma_difference_error_RMS": 3.3089984294140167
+            },
+            "lower_return": {
+              "original_bounds": [
+                1440,
+                728,
+                1580,
+                764
+              ],
+              "finite_pixels": 5040,
+              "RGB_RMSE": 21.41964727804221,
+              "luma_RMSE": 20.253230983612127,
+              "chroma_RMSE": 9.945112968597382,
+              "signed_RGB": [
+                -2.1760798221720115,
+                -2.8046800193509887,
+                -0.1405718943680681
+              ],
+              "detail_pairs": 6260,
+              "luma_adjacent_RMS": 0.10466107822126966,
+              "target_luma_adjacent_RMS": 5.271694614940158,
+              "luma_difference_error_RMS": 5.247839095398121
+            },
+            "glyph": {
+              "original_bounds": [
+                1467,
+                626,
+                1563,
+                722
+              ],
+              "finite_pixels": 9216,
+              "RGB_RMSE": 13.477656548661423,
+              "luma_RMSE": 11.453292098514266,
+              "chroma_RMSE": 7.049799188670307,
+              "signed_RGB": [
+                -2.9173427394319638,
+                3.818089576282849,
+                6.427008848453018
+              ],
+              "detail_pairs": 0,
+              "luma_adjacent_RMS": null,
+              "target_luma_adjacent_RMS": null,
+              "luma_difference_error_RMS": null
+            }
+          }
+        },
+        {
+          "reference": "b",
+          "factor": 0.5,
+          "opacity": 0.03561443496671988,
+          "scores": {
+            "original": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 20.312822341918945
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 25.6207332611084
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 19.323711395263672
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 10.039955139160156
+              },
+              "ssim": 0.9001263380050659,
+              "loss": 485.7541178971128,
+              "E": 22.039830260170174,
+              "exterior_RMSE": 12.184076309204102,
+              "foreground_RMSE": 10.046533584594727
+            },
+            "complete": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 20.312822341918945
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 25.6207332611084
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 19.323711395263672
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 10.039955139160156
+              },
+              "ssim": 0.9001263380050659,
+              "loss": 485.7541178971128,
+              "E": 22.039830260170174,
+              "exterior_RMSE": 12.184076309204102,
+              "foreground_RMSE": 10.046533584594727
+            }
+          },
+          "guards": {
+            "original": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "complete": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "partial_boundary": false
+          },
+          "strict_all": false,
+          "partial_pixels": 38,
+          "partial_RMSE": 71.0325698852539,
+          "fully_covered_pixels": 24573,
+          "fully_covered_exact": true,
+          "lens_contribution_unchanged": true,
+          "original_clear_cache_unchanged": true,
+          "generated_clear_contribution_changed": true,
+          "clipping": {
+            "below": 0,
+            "above": 0
+          },
+          "fixed_crops": {
+            "upper_rim": {
+              "original_bounds": [
+                1440,
+                576,
+                1580,
+                620
+              ],
+              "finite_pixels": 6160,
+              "RGB_RMSE": 20.895550443838694,
+              "luma_RMSE": 18.64418769993994,
+              "chroma_RMSE": 10.729102981402354,
+              "signed_RGB": [
+                0.008660774097427146,
+                7.687589222529008,
+                12.014110756554194
+              ],
+              "detail_pairs": 6546,
+              "luma_adjacent_RMS": 0.8571332709627678,
+              "target_luma_adjacent_RMS": 4.473564082693339,
+              "luma_difference_error_RMS": 4.354636543540146
+            },
+            "left_cap": {
+              "original_bounds": [
+                1418,
+                630,
+                1455,
+                718
+              ],
+              "finite_pixels": 3256,
+              "RGB_RMSE": 16.648624776633355,
+              "luma_RMSE": 16.1283142383649,
+              "chroma_RMSE": 7.903867878411545,
+              "signed_RGB": [
+                -0.25291778037384044,
+                2.9943989485694456,
+                4.506177526294581
+              ],
+              "detail_pairs": 4565,
+              "luma_adjacent_RMS": 0.059764954071868576,
+              "target_luma_adjacent_RMS": 4.047095072032327,
+              "luma_difference_error_RMS": 4.048922040431175
+            },
+            "lower_return": {
+              "original_bounds": [
+                1440,
+                728,
+                1580,
+                764
+              ],
+              "finite_pixels": 5040,
+              "RGB_RMSE": 28.281055586333824,
+              "luma_RMSE": 24.093539314200243,
+              "chroma_RMSE": 16.05612906947686,
+              "signed_RGB": [
+                0.45183288474522887,
+                12.100746823829555,
+                18.75265784439675
+              ],
+              "detail_pairs": 6260,
+              "luma_adjacent_RMS": 0.5068768056973094,
+              "target_luma_adjacent_RMS": 5.993889365854847,
+              "luma_difference_error_RMS": 6.055915619923124
+            },
+            "glyph": {
+              "original_bounds": [
+                1467,
+                626,
+                1563,
+                722
+              ],
+              "finite_pixels": 9216,
+              "RGB_RMSE": 10.046533980768373,
+              "luma_RMSE": 8.476299616270113,
+              "chroma_RMSE": 5.861874306074153,
+              "signed_RGB": [
+                -3.265587851346936,
+                3.5151481898113466,
+                5.349374861956069
+              ],
+              "detail_pairs": 0,
+              "luma_adjacent_RMS": null,
+              "target_luma_adjacent_RMS": null,
+              "luma_difference_error_RMS": null
+            }
+          }
+        }
+      ],
+      "strict_pair": false
+    },
+    {
+      "name": "quarter",
+      "factor": 0.25,
+      "opacity": 0.01780721748335994,
+      "records": [
+        {
+          "reference": "a",
+          "factor": 0.25,
+          "opacity": 0.01780721748335994,
+          "scores": {
+            "original": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 25.63109016418457
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 31.91644859313965
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 22.7191162109375
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 13.941527366638184
+              },
+              "ssim": 0.8089752793312073,
+              "loss": 765.464855342749,
+              "E": 27.66703553586378,
+              "exterior_RMSE": 14.890042304992676,
+              "foreground_RMSE": 13.477656364440918
+            },
+            "complete": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 25.63109016418457
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 31.91644859313965
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 22.7191162109375
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 13.941527366638184
+              },
+              "ssim": 0.8089752793312073,
+              "loss": 765.464855342749,
+              "E": 27.66703553586378,
+              "exterior_RMSE": 14.890042304992676,
+              "foreground_RMSE": 13.477656364440918
+            }
+          },
+          "guards": {
+            "original": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "complete": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "partial_boundary": false
+          },
+          "strict_all": false,
+          "partial_pixels": 38,
+          "partial_RMSE": 98.44674682617188,
+          "fully_covered_pixels": 24573,
+          "fully_covered_exact": true,
+          "lens_contribution_unchanged": true,
+          "original_clear_cache_unchanged": true,
+          "generated_clear_contribution_changed": true,
+          "clipping": {
+            "below": 0,
+            "above": 0
+          },
+          "fixed_crops": {
+            "upper_rim": {
+              "original_bounds": [
+                1440,
+                576,
+                1580,
+                620
+              ],
+              "finite_pixels": 6160,
+              "RGB_RMSE": 24.990034393392396,
+              "luma_RMSE": 22.360853360841794,
+              "chroma_RMSE": 11.71158726306082,
+              "signed_RGB": [
+                -0.9042638184672053,
+                0.04872724174388817,
+                0.8782648137746403
+              ],
+              "detail_pairs": 6546,
+              "luma_adjacent_RMS": 1.1215011248667675,
+              "target_luma_adjacent_RMS": 4.077650089929958,
+              "luma_difference_error_RMS": 4.116887292043448
+            },
+            "left_cap": {
+              "original_bounds": [
+                1418,
+                630,
+                1455,
+                718
+              ],
+              "finite_pixels": 3256,
+              "RGB_RMSE": 22.314263720647098,
+              "luma_RMSE": 20.459837021202663,
+              "chroma_RMSE": 8.676022589359007,
+              "signed_RGB": [
+                -0.9041043740745258,
+                -1.4450272147060905,
+                -1.0445980626645817
+              ],
+              "detail_pairs": 4565,
+              "luma_adjacent_RMS": 1.0262081337004174,
+              "target_luma_adjacent_RMS": 3.2255264756856645,
+              "luma_difference_error_RMS": 3.3089984294140167
+            },
+            "lower_return": {
+              "original_bounds": [
+                1440,
+                728,
+                1580,
+                764
+              ],
+              "finite_pixels": 5040,
+              "RGB_RMSE": 21.56550234163862,
+              "luma_RMSE": 20.32242404658738,
+              "chroma_RMSE": 10.12406983207355,
+              "signed_RGB": [
+                -1.1080701359148537,
+                -2.1876341607421637,
+                0.24593527723724642
+              ],
+              "detail_pairs": 6260,
+              "luma_adjacent_RMS": 0.10466107822126966,
+              "target_luma_adjacent_RMS": 5.271694614940158,
+              "luma_difference_error_RMS": 5.247839095398121
+            },
+            "glyph": {
+              "original_bounds": [
+                1467,
+                626,
+                1563,
+                722
+              ],
+              "finite_pixels": 9216,
+              "RGB_RMSE": 13.477656548661423,
+              "luma_RMSE": 11.453292098514266,
+              "chroma_RMSE": 7.049799188670307,
+              "signed_RGB": [
+                -2.9173427394319638,
+                3.818089576282849,
+                6.427008848453018
+              ],
+              "detail_pairs": 0,
+              "luma_adjacent_RMS": null,
+              "target_luma_adjacent_RMS": null,
+              "luma_difference_error_RMS": null
+            }
+          }
+        },
+        {
+          "reference": "b",
+          "factor": 0.25,
+          "opacity": 0.01780721748335994,
+          "scores": {
+            "original": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 20.308517456054688
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 25.614652633666992
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 19.31945037841797
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 10.039955139160156
+              },
+              "ssim": 0.9001263380050659,
+              "loss": 485.53824574704157,
+              "E": 22.03493239715161,
+              "exterior_RMSE": 13.90188980102539,
+              "foreground_RMSE": 10.046533584594727
+            },
+            "complete": {
+              "glass": {
+                "pixels": 14904,
+                "rmse": 20.308517456054688
+              },
+              "rim": {
+                "pixels": 8364,
+                "rmse": 25.614652633666992
+              },
+              "held": {
+                "pixels": 4763,
+                "rmse": 19.31945037841797
+              },
+              "interior": {
+                "pixels": 6540,
+                "rmse": 10.039955139160156
+              },
+              "ssim": 0.9001263380050659,
+              "loss": 485.53824574704157,
+              "E": 22.03493239715161,
+              "exterior_RMSE": 13.90188980102539,
+              "foreground_RMSE": 10.046533584594727
+            }
+          },
+          "guards": {
+            "original": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "complete": {
+              "glass": false,
+              "rim": false,
+              "held": false,
+              "interior": true,
+              "E": false,
+              "exterior_RMSE": true,
+              "foreground_RMSE": true,
+              "SSIM": true
+            },
+            "partial_boundary": false
+          },
+          "strict_all": false,
+          "partial_pixels": 38,
+          "partial_RMSE": 70.54830932617188,
+          "fully_covered_pixels": 24573,
+          "fully_covered_exact": true,
+          "lens_contribution_unchanged": true,
+          "original_clear_cache_unchanged": true,
+          "generated_clear_contribution_changed": true,
+          "clipping": {
+            "below": 0,
+            "above": 0
+          },
+          "fixed_crops": {
+            "upper_rim": {
+              "original_bounds": [
+                1440,
+                576,
+                1580,
+                620
+              ],
+              "finite_pixels": 6160,
+              "RGB_RMSE": 21.847338102855385,
+              "luma_RMSE": 19.69198272833491,
+              "chroma_RMSE": 10.732024450257084,
+              "signed_RGB": [
+                1.8296479177842666,
+                9.500965189563667,
+                13.825054933655668
+              ],
+              "detail_pairs": 6546,
+              "luma_adjacent_RMS": 0.8571332709627678,
+              "target_luma_adjacent_RMS": 4.473564082693339,
+              "luma_difference_error_RMS": 4.354636543540146
+            },
+            "left_cap": {
+              "original_bounds": [
+                1418,
+                630,
+                1455,
+                718
+              ],
+              "finite_pixels": 3256,
+              "RGB_RMSE": 17.003387784838484,
+              "luma_RMSE": 16.405675630512338,
+              "chroma_RMSE": 8.114192509205125,
+              "signed_RGB": [
+                0.6358558495119397,
+                3.393956663004633,
+                4.696423685880657
+              ],
+              "detail_pairs": 4565,
+              "luma_adjacent_RMS": 0.059764954071868576,
+              "target_luma_adjacent_RMS": 4.047095072032327,
+              "luma_difference_error_RMS": 4.048922040431175
+            },
+            "lower_return": {
+              "original_bounds": [
+                1440,
+                728,
+                1580,
+                764
+              ],
+              "finite_pixels": 5040,
+              "RGB_RMSE": 28.433307671808013,
+              "luma_RMSE": 24.174035778783047,
+              "chroma_RMSE": 16.192553277933882,
+              "signed_RGB": [
+                1.5217958803155593,
+                12.673680722802168,
+                19.061170300136187
+              ],
+              "detail_pairs": 6260,
+              "luma_adjacent_RMS": 0.5068768056973094,
+              "target_luma_adjacent_RMS": 5.993889365854847,
+              "luma_difference_error_RMS": 6.055915619923124
+            },
+            "glyph": {
+              "original_bounds": [
+                1467,
+                626,
+                1563,
+                722
+              ],
+              "finite_pixels": 9216,
+              "RGB_RMSE": 10.046533980768373,
+              "luma_RMSE": 8.476299616270113,
+              "chroma_RMSE": 5.861874306074153,
+              "signed_RGB": [
+                -3.265587851346936,
+                3.5151481898113466,
+                5.349374861956069
+              ],
+              "detail_pairs": 0,
+              "luma_adjacent_RMS": null,
+              "target_luma_adjacent_RMS": null,
+              "luma_difference_error_RMS": null
+            }
+          }
+        }
+      ],
+      "strict_pair": false
+    }
+  ],
+  "remaining_factors_not_run": [],
+  "ledger": {
+    "shadow_field_points": 56400,
+    "original_reference_mask_points": 112800,
+    "shadow_shape_helper_point_calls": 112800,
+    "original_mask_geometry_helper_point_calls": 112800,
+    "candidate_composites": 6,
+    "identity_composites": 2,
+    "score_calls": 12,
+    "SSIM_metric_Gaussian_calls": 60,
+    "SSIM_metric_mask_erosions": 12,
+    "optical_rays": 0,
+    "height_evaluations": 0,
+    "source_RGB_queries": 0,
+    "incident_output_filters": 0,
+    "fits": 0
+  },
+  "accepted_tone_unchanged": {
+    "gain": 0.5193880051291454,
+    "bias": 0.4473611800152188
+  },
+  "source_proof_transfer": "No changed sampling, source/known input, geometry or incident kernel. Cached clear contribution receives only the declared generated attenuation.",
+  "selected_shadow": 0,
+  "new_pass_count": 0,
+  "limits": [
+    "Empirical generated exterior operator, not measured illumination or optical refraction.",
+    "Original partial pixels remain guarded.",
+    "Historical fingerprint mismatch and original masks-after-fixtures disclosure retained."
+  ]
+}

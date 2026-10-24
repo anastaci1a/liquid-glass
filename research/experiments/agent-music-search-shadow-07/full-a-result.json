@@ -1,0 +1,174 @@
+{
+  "reference": "a",
+  "factor": 1,
+  "opacity": 0.07122886993343976,
+  "scores": {
+    "original": {
+      "glass": {
+        "pixels": 14904,
+        "rmse": 25.645532608032227
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 31.93711280822754
+      },
+      "held": {
+        "pixels": 4763,
+        "rmse": 22.73381996154785
+      },
+      "interior": {
+        "pixels": 6540,
+        "rmse": 13.941527366638184
+      },
+      "ssim": 0.8089752793312073,
+      "loss": 766.3790922823864,
+      "E": 27.683552739530857,
+      "exterior_RMSE": 12.612717628479004,
+      "foreground_RMSE": 13.477656364440918
+    },
+    "complete": {
+      "glass": {
+        "pixels": 14904,
+        "rmse": 25.645532608032227
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 31.93711280822754
+      },
+      "held": {
+        "pixels": 4763,
+        "rmse": 22.73381996154785
+      },
+      "interior": {
+        "pixels": 6540,
+        "rmse": 13.941527366638184
+      },
+      "ssim": 0.8089752793312073,
+      "loss": 766.3790922823864,
+      "E": 27.683552739530857,
+      "exterior_RMSE": 12.612717628479004,
+      "foreground_RMSE": 13.477656364440918
+    }
+  },
+  "guards": {
+    "original": {
+      "glass": false,
+      "rim": false,
+      "held": false,
+      "interior": true,
+      "E": false,
+      "exterior_RMSE": true,
+      "foreground_RMSE": true,
+      "SSIM": true
+    },
+    "complete": {
+      "glass": false,
+      "rim": false,
+      "held": false,
+      "interior": true,
+      "E": false,
+      "exterior_RMSE": true,
+      "foreground_RMSE": true,
+      "SSIM": true
+    },
+    "partial_boundary": false
+  },
+  "strict_all": false,
+  "partial_pixels": 38,
+  "partial_RMSE": 99.91075134277344,
+  "fully_covered_pixels": 24573,
+  "fully_covered_exact": true,
+  "lens_contribution_unchanged": true,
+  "original_clear_cache_unchanged": true,
+  "generated_clear_contribution_changed": true,
+  "clipping": {
+    "below": 0,
+    "above": 0
+  },
+  "fixed_crops": {
+    "upper_rim": {
+      "original_bounds": [
+        1440,
+        576,
+        1580,
+        620
+      ],
+      "finite_pixels": 6160,
+      "RGB_RMSE": 25.173411949407523,
+      "luma_RMSE": 22.76994612681974,
+      "chroma_RMSE": 11.17810251549584,
+      "signed_RGB": [
+        -5.476999173255323,
+        -2.2233463256535204,
+        -0.006625050914703639
+      ],
+      "detail_pairs": 6546,
+      "luma_adjacent_RMS": 1.1215011248667675,
+      "target_luma_adjacent_RMS": 4.077650089929958,
+      "luma_difference_error_RMS": 4.116887292043448
+    },
+    "left_cap": {
+      "original_bounds": [
+        1418,
+        630,
+        1455,
+        718
+      ],
+      "finite_pixels": 3256,
+      "RGB_RMSE": 21.221297614648098,
+      "luma_RMSE": 19.367120808227863,
+      "chroma_RMSE": 8.478306131055902,
+      "signed_RGB": [
+        -3.730248025542981,
+        -3.481057147273487,
+        -2.662568889759682
+      ],
+      "detail_pairs": 4565,
+      "luma_adjacent_RMS": 1.0262081337004174,
+      "target_luma_adjacent_RMS": 3.2255264756856645,
+      "luma_difference_error_RMS": 3.3089984294140167
+    },
+    "lower_return": {
+      "original_bounds": [
+        1440,
+        728,
+        1580,
+        764
+      ],
+      "finite_pixels": 5040,
+      "RGB_RMSE": 21.395986121475374,
+      "luma_RMSE": 20.36002391808425,
+      "chroma_RMSE": 9.665554476101388,
+      "signed_RGB": [
+        -4.31209909818357,
+        -4.038771722997938,
+        -0.9135862055367657
+      ],
+      "detail_pairs": 6260,
+      "luma_adjacent_RMS": 0.10466107822126966,
+      "target_luma_adjacent_RMS": 5.271694614940158,
+      "luma_difference_error_RMS": 5.247839095398121
+    },
+    "glyph": {
+      "original_bounds": [
+        1467,
+        626,
+        1563,
+        722
+      ],
+      "finite_pixels": 9216,
+      "RGB_RMSE": 13.477656548661423,
+      "luma_RMSE": 11.453292098514266,
+      "chroma_RMSE": 7.049799188670307,
+      "signed_RGB": [
+        -2.9173427394319638,
+        3.818089576282849,
+        6.427008848453018
+      ],
+      "detail_pairs": 0,
+      "luma_adjacent_RMS": null,
+      "target_luma_adjacent_RMS": null,
+      "luma_difference_error_RMS": null
+    }
+  }
+}

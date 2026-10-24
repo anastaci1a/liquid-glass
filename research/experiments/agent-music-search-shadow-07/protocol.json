@@ -1,0 +1,74 @@
+{
+  "start": "2026-10-24T01:53:50.740Z",
+  "deadline": "2026-10-24T02:08:50.740Z",
+  "overall_ceiling": "2026-10-24T04:25:20.608Z",
+  "visible_question": "Can the existing generated neutral exterior shadow improve the reference exterior without harming the accepted tone or any partial-glass pixel cohort?",
+  "recipe": "reconstruction/studies/music-search-vector/review-round/pass-03.json",
+  "recipe_sha256": "40f8e4443f963b8021c78ab0a57c6604e27db3742271b7fa81d78bb0d792a365",
+  "shadow": {
+    "opacity": 0.07122886993343976,
+    "sigma": 0.24802838204149674,
+    "offset": [
+      -0.049999984470484225,
+      -0.07017835536762522
+    ]
+  },
+  "shape": {
+    "shape_dx": -0.00894003499211507,
+    "shape_dy": -0.001400833306792197,
+    "half_x_delta": -0.002787508241754526,
+    "half_y_delta": 0,
+    "radius_delta": 0
+  },
+  "shape_default_cap_join_width": 0,
+  "radial": true,
+  "original_L": 89,
+  "accepted_tone": {
+    "gain": 0.5193880051291454,
+    "bias": 0.4473611800152188
+  },
+  "factors": [
+    1,
+    0.5,
+    0.25
+  ],
+  "operator": "extended_shadow.shadow; full finite native grid, Gaussian-distance formula without an added truncation cutoff",
+  "composition": "(accepted lens_premultiplied + unchanged clear_premultiplied * (1 - opacity_field)) cast float32, then original foreground",
+  "caps": {
+    "shadow_field_points": 112800,
+    "original_reference_mask_points": 112800,
+    "shadow_shape_helper_point_calls": 225600,
+    "original_mask_geometry_helper_point_calls": 112800,
+    "candidate_composites": 6,
+    "identity_composites": 2,
+    "score_calls": 12,
+    "SSIM_metric_Gaussian_calls": 60,
+    "SSIM_metric_mask_erosions": 12,
+    "optical_rays": 0,
+    "height_evaluations": 0,
+    "source_RGB_queries": 0,
+    "incident_output_filters": 0,
+    "fits": 0
+  },
+  "frozen": "All source/known/case/style/vector/geometry/masks/AA2 and cached clear samples; H1 D2 and incident6.75/radius21. No prior model stage is altered.",
+  "reuse": "One field may serve both cases only after exact native coordinates, L, radial status, half extents and radius are checked.",
+  "stop": "Identity/invariant failure, first strict visible paired qualifier, all three fixed factors, or deadline. No glow fallback.",
+  "shared_pins": [
+    {
+      "file": "reconstruction/extended_shadow.py",
+      "sha256": "df5e53e174966e996dc13c044f78db42957f0d59f9638b0ff1d9ca6f3e7a3bdd"
+    },
+    {
+      "file": "reconstruction/extended_fit.py",
+      "sha256": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f"
+    },
+    {
+      "file": "reconstruction/render.py",
+      "sha256": "58ae2b0be9ef1a1726944ee319f10c2e03c02835d0df5f8c80b111bfad797837"
+    },
+    {
+      "file": "reconstruction/vector_foreground.py",
+      "sha256": "e930b037ae7e8bc4ef98ea3a4aca78fabac9cee6e06a47b640ad6b18292714c6"
+    }
+  ]
+}

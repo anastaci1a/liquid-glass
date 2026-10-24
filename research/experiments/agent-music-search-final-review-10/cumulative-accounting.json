@@ -1,0 +1,98 @@
+{
+  "utc": "2026-10-24T02:18:02.144Z",
+  "scope": "Own Search cycle only; metadata arithmetic, no evaluations repeated.",
+  "baseline": {
+    "as_run_subtotal": 2939292,
+    "supplemental_mask_points": 225600,
+    "final_conservative_total": 3164892,
+    "physical_height_nested": 1809880,
+    "physical_boundary_nested": 903812,
+    "actual_original_mask_points": 451200,
+    "rule": "Use final total once, not as-run plus final; preserve both original records."
+  },
+  "native_rays": 225600,
+  "fixture_and_parity_rays": {
+    "geometry_fixtures": 245,
+    "renderer_parity": 96,
+    "total": 341
+  },
+  "geometry_and_helper_categories": {
+    "physical_nested_height_boundary": 2713692,
+    "original_reference_mask_points_total": 789600,
+    "shadow_field_points": 56400,
+    "shadow_nested_shape_helper_points": 112800,
+    "note": "Shadow field points are a top-level workload; do not add them again to nested helper calls. Original mask points and their helper counter describe the same calls, not extra work."
+  },
+  "optical_RGB_queries": {
+    "baseline_including_parity": 445755,
+    "blur_lens": 395956,
+    "blur_clear": 0,
+    "total": 841711
+  },
+  "source_audit": {
+    "subrays": 1353600,
+    "bilinear_mask_lookups": 10828800,
+    "incident_fields": 6,
+    "known_mask_erosions": 10,
+    "known_mask_cells": 20736000
+  },
+  "images_and_composites": {
+    "baseline_native_images": 2,
+    "later_candidate_composites": 12,
+    "total_native_candidate_outputs": 14,
+    "cached_identity_composites": 6,
+    "baseline_small_synthetic_foreground_controls": 4,
+    "presentation": "Saved-array figures and resizing are not new candidate composites; no final media."
+  },
+  "model": {
+    "tone_complete_quadratic_checks": 6,
+    "tone_total_model_checks": 14,
+    "tone_proposal_solves": 1,
+    "geometric_parameter_fits": 0,
+    "blur_or_shadow_fits": 0
+  },
+  "metrics": {
+    "baseline_score_calls_static_code_count": 4,
+    "later_score_calls": 24,
+    "total_score_calls": 28,
+    "SSIM_Gaussian_operations": 140,
+    "SSIM_metric_mask_erosions": 28,
+    "baseline_count_source": "Sealed observe.py calls metrics twice on each of two completed references; each scores call has five SSIM Gaussian operations and one erosion. No rerun."
+  },
+  "saved_diagnostics": {
+    "correspondence": {
+      "utc": "2026-10-24T00:57:00.922Z",
+      "source_crop_pixels": 56400,
+      "control_strip_pixels": 2000,
+      "target_crop_pixels": 23672,
+      "component_label_pixels": 56400,
+      "prefix_mask_cells": 112800,
+      "cached_subray_envelope_reductions": 75379,
+      "per_envelope_feature_rectangle_counts": 2,
+      "algebraic_line_roots": 92,
+      "scope": "Counts describe diagnostic array reductions; no optical remapping, new photography or additional image produced.",
+      "optical_work_zero": true,
+      "original_result_unchanged": true
+    },
+    "outline_target_pixels": 112800,
+    "outline_A_failed_read": 56400,
+    "outline_B_successful_read": 56400,
+    "foreground_saved_pixels": 110592,
+    "dispersion_saved_pixels": 331408,
+    "last_three_stage_observation_total": 554800,
+    "fixed_crop_pixel_pairs_static_count": {
+      "baseline": 47344,
+      "blur_including_cached_baseline": 142032,
+      "tone": 47344,
+      "shadow": 142032,
+      "total": 378752,
+      "note": "Paired target/output crop positions, not unique pixels or optical queries; derived from sealed driver calls and fixed rectangles, no new reductions. Mask/detail arithmetic reuses these crops."
+    }
+  },
+  "final_review_new_scientific_work": 0,
+  "cross_control_excluded": {
+    "expanded_contrast_peer": "Two candidate and two identity cached composites in pre-cycle peer review; zero rays/queries/filters/fits. Not Search science.",
+    "expanded_outline_peer": "Saved partial audit only; zero numerical optical evaluations or composites. Do not inherit root rays/Fresnel counts."
+  },
+  "independent_primary_Search_replay_excluded": "Primary two identities/two candidates and its mask/metric work are separately owned verification, not helper Search totals."
+}

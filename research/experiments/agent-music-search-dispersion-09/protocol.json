@@ -1,0 +1,53 @@
+{
+  "actual_start": "2026-10-24T02:08:01.661Z",
+  "deadline": "2026-10-24T02:18:01.661Z",
+  "overall_ceiling": "2026-10-24T04:25:20.608Z",
+  "scope": "Saved Search dispersion identifiability only; no spectral setting selected",
+  "fixed_crops": {
+    "upper_rim": [
+      1440,
+      576,
+      1580,
+      620
+    ],
+    "left_cap": [
+      1418,
+      630,
+      1455,
+      718
+    ],
+    "lower_return": [
+      1440,
+      728,
+      1580,
+      764
+    ],
+    "glyph": [
+      1467,
+      626,
+      1563,
+      722
+    ]
+  },
+  "pixel_cap": 350000,
+  "reserved_observations": 331408,
+  "seven_fields": [
+    "native source",
+    "native target",
+    "accepted pre-foreground image",
+    "geometric coverage",
+    "original glass mask",
+    "original foreground mask",
+    "native known mask"
+  ],
+  "pixel_accounting": "Count every rectangular pixel in all seven fields, including foreground subsequently excluded and overlaps. No extra cohort decode or threshold search.",
+  "selected": "H1 D2, original incident6.75/radius21, accepted neutral tone, original vector/style, shadow0",
+  "metrics": "Direct RGB/channel/luma/chroma residual and adjacent native differences on fixed known non-foreground cohorts; separate full physical coverage; no fit, smoothing or optical interpretation from colour alone.",
+  "forbidden": [
+    "rays/heights/directions/Fresnel",
+    "optical RGB queries",
+    "fields/filters/rasterizations/composites/images",
+    "source construction/fit/spectral setting/shared edits"
+  ],
+  "stop": "Seal unidentified or one concrete future discriminant; no implementation. Only final review protocol preparation follows both sealed blocks."
+}

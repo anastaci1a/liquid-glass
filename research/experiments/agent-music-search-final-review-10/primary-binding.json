@@ -1,0 +1,238 @@
+{
+  "utc": "2026-10-24T02:18:01.895Z",
+  "primary_commit": "641b43ea30793f8e86b0871f98d96a818c902f82",
+  "verification_path": "research/experiments/search-neutral-primary-01/verification.json",
+  "verification_blob_sha256": "5c79806a7e6480330c006152f4a5be77465381ca41d70b318e23aad42d8afa91",
+  "selection_blob_sha256": "b9875325055bcd6bb6afab350ced73051e8c6fb67cf777d9161b04cfb0b1a69c",
+  "selection": {
+    "status": "ACCEPTED_ENCODED_TONE_COMPONENT",
+    "recorded_utc": "2026-10-24T01:49:36.597Z",
+    "candidate_commit": "6037c131",
+    "geometry": "agent-music-search-baseline-01; radius-adapted HarmonicCircularBack",
+    "material": {
+      "gain": 0.5193880051291454,
+      "bias": 0.4473611800152188,
+      "incident_sigma_native": 6.75,
+      "finite_radius": 21,
+      "application": "inside samples before AA; clear and original foreground unchanged"
+    },
+    "accepted_increment": true,
+    "full_pipeline_pass": false,
+    "full_radiance_verified": false,
+    "source_observed_truth": false,
+    "metrics": {
+      "E_baseline": [
+        66.085856893,
+        55.939570425
+      ],
+      "E_selected": [
+        27.661699119259303,
+        22.030139499495235
+      ]
+    },
+    "regressions": [
+      "B lower-return RGB RMSE27.966990->28.644618 and chroma worse",
+      "Source-feature contrast falls"
+    ],
+    "remaining": [
+      "Missing bright rim",
+      "Incorrect feature positions and illumination",
+      "Historical recipe fingerprint mismatch",
+      "Conditional mosaic input and traced glyph fidelity"
+    ]
+  },
+  "input_bindings": [
+    {
+      "file": "research/experiments/agent-music-search-baseline-01/native-paths.npz",
+      "expected": "668212cc4466b0b645beb52df7c7c148537965c4292fa155af1ad65de70456bf",
+      "actual": "668212cc4466b0b645beb52df7c7c148537965c4292fa155af1ad65de70456bf",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-baseline-01/source-preflight.json",
+      "expected": "dabec2975a7d43a11c74e9f5c2e842dcf0d226a3446523b89e074d626ca1c89e",
+      "actual": "dabec2975a7d43a11c74e9f5c2e842dcf0d226a3446523b89e074d626ca1c89e",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-neutral-05/proposal.json",
+      "expected": "d9686b1e9504acef05e5d7b29e9337bde0d72458cea4996d6d572c35b15310fe",
+      "actual": "d9686b1e9504acef05e5d7b29e9337bde0d72458cea4996d6d572c35b15310fe",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-neutral-05/result.json",
+      "expected": "6124b4054f091049917d0027edee0f6d4de6d1a6dc6e38abfbb5541a4103170c",
+      "actual": "6124b4054f091049917d0027edee0f6d4de6d1a6dc6e38abfbb5541a4103170c",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-baseline-01/a-candidate.npz",
+      "expected": "dc1039226217913a036f86b1493af1f4d6109924aa8f5e320d2ceb6535326d13",
+      "actual": "dc1039226217913a036f86b1493af1f4d6109924aa8f5e320d2ceb6535326d13",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-baseline-01/a-masks.npz",
+      "expected": "c860a11da5ffab569dc9e8a15a248fcd014c36ac951f05c85c5e8151db21071d",
+      "actual": "c860a11da5ffab569dc9e8a15a248fcd014c36ac951f05c85c5e8151db21071d",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-neutral-05/full-a-candidate.npz",
+      "expected": "d00dbba54a72b7bb93214cbc33fc4c9211a91f888c080d1e8d787917b4a1061e",
+      "actual": "d00dbba54a72b7bb93214cbc33fc4c9211a91f888c080d1e8d787917b4a1061e",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-neutral-05/full-a-result.json",
+      "expected": "05f94915da8b425faf540266eea9ee73974e33f912a8cd683e8ba0b6c1f4992f",
+      "actual": "05f94915da8b425faf540266eea9ee73974e33f912a8cd683e8ba0b6c1f4992f",
+      "exact": true
+    },
+    {
+      "file": ".evidence-working/music-search-baseline-01/a/case.json",
+      "expected": "ed374880171981a2f31d74c1c7c991a2414975d5e333c17b0f76015b157e64b7",
+      "actual": "ed374880171981a2f31d74c1c7c991a2414975d5e333c17b0f76015b157e64b7",
+      "exact": true
+    },
+    {
+      "file": ".evidence-working/music-search-baseline-01/a/source.png",
+      "expected": "84da0d24f30dc1f4080b568756d79044a9ac6568ecbff9595d02a38cd3239fb1",
+      "actual": "84da0d24f30dc1f4080b568756d79044a9ac6568ecbff9595d02a38cd3239fb1",
+      "exact": true
+    },
+    {
+      "file": ".evidence-working/music-search-baseline-01/a/target.png",
+      "expected": "efffc64b8a6ee5b84f0bfc295369aad38db8531e4686674861074592fbee54de",
+      "actual": "efffc64b8a6ee5b84f0bfc295369aad38db8531e4686674861074592fbee54de",
+      "exact": true
+    },
+    {
+      "file": ".evidence-working/music-search-baseline-01/a/known.png",
+      "expected": "03433579b8ddf8771df2bacf7aa1566e84b71bc81df71da1cd64069c00ff2413",
+      "actual": "03433579b8ddf8771df2bacf7aa1566e84b71bc81df71da1cd64069c00ff2413",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-baseline-01/b-candidate.npz",
+      "expected": "79d89f23788758dfb516c0916cba62a23089b19447186c61b454e724d7925a79",
+      "actual": "79d89f23788758dfb516c0916cba62a23089b19447186c61b454e724d7925a79",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-baseline-01/b-masks.npz",
+      "expected": "c860a11da5ffab569dc9e8a15a248fcd014c36ac951f05c85c5e8151db21071d",
+      "actual": "c860a11da5ffab569dc9e8a15a248fcd014c36ac951f05c85c5e8151db21071d",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-neutral-05/full-b-candidate.npz",
+      "expected": "269485e71da95949909f71b4b2375faba64a22f3427163b9b7209a4f739de2e5",
+      "actual": "269485e71da95949909f71b4b2375faba64a22f3427163b9b7209a4f739de2e5",
+      "exact": true
+    },
+    {
+      "file": "research/experiments/agent-music-search-neutral-05/full-b-result.json",
+      "expected": "7c57058b81f8d960ebdae7924a54377204a534c5e91bbcfe2ef7e0d664c010d2",
+      "actual": "7c57058b81f8d960ebdae7924a54377204a534c5e91bbcfe2ef7e0d664c010d2",
+      "exact": true
+    },
+    {
+      "file": ".evidence-working/music-search-baseline-01/b/case.json",
+      "expected": "de8807a13d9a8af1fddde138498f92fa314de47c513b925d41e8e60f6a661a8e",
+      "actual": "de8807a13d9a8af1fddde138498f92fa314de47c513b925d41e8e60f6a661a8e",
+      "exact": true
+    },
+    {
+      "file": ".evidence-working/music-search-baseline-01/b/source.png",
+      "expected": "9789b4af085d505a23bdfac7615b0688125b0ea81587d1d58e23b68c6608268f",
+      "actual": "9789b4af085d505a23bdfac7615b0688125b0ea81587d1d58e23b68c6608268f",
+      "exact": true
+    },
+    {
+      "file": ".evidence-working/music-search-baseline-01/b/target.png",
+      "expected": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d",
+      "actual": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d",
+      "exact": true
+    },
+    {
+      "file": ".evidence-working/music-search-baseline-01/b/known.png",
+      "expected": "9d009193ae95ac9818a906fde1995dba531387f15926a5dd32e64ba34d3ff575",
+      "actual": "9d009193ae95ac9818a906fde1995dba531387f15926a5dd32e64ba34d3ff575",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/geometric_optics.py",
+      "expected": "0526a33f0ab8545151af61755ac8daa024d140573276d1dddf799b15c8172082",
+      "actual": "0526a33f0ab8545151af61755ac8daa024d140573276d1dddf799b15c8172082",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/geometric_render.py",
+      "expected": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469",
+      "actual": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/extended_fit.py",
+      "expected": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f",
+      "actual": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/vector_foreground.py",
+      "expected": "e930b037ae7e8bc4ef98ea3a4aca78fabac9cee6e06a47b640ad6b18292714c6",
+      "actual": "e930b037ae7e8bc4ef98ea3a4aca78fabac9cee6e06a47b640ad6b18292714c6",
+      "exact": true
+    },
+    {
+      "file": "reconstruction/foreground_response.py",
+      "expected": "3a63e808e4ed23ff34a6d55088ef2ba0c9fe1f3b3ac4124b6d5e5977a40cc7c5",
+      "actual": "3a63e808e4ed23ff34a6d55088ef2ba0c9fe1f3b3ac4124b6d5e5977a40cc7c5",
+      "exact": true
+    }
+  ],
+  "verification_claims": [
+    {
+      "reference": "a",
+      "identity_exact": true,
+      "graded_samples_exact": true,
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "all_reported_scores_exact": true,
+      "partial_pixels": 38,
+      "partial_RMSE": 97.96915435791016,
+      "all_six_f64_residual_guards_pass": true
+    },
+    {
+      "reference": "b",
+      "identity_exact": true,
+      "graded_samples_exact": true,
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "all_reported_scores_exact": true,
+      "partial_pixels": 38,
+      "partial_RMSE": 70.07123565673828,
+      "all_six_f64_residual_guards_pass": true
+    }
+  ],
+  "gallery_entry": {
+    "name": "Detached Music Search",
+    "geometry": "Radius-adapted HarmonicCircularBack, flat front, n1.5/D2",
+    "material": "Incident sigma6.75 before refraction; shared encoded gain0.5193880051291454/bias0.4473611800152188 before AA",
+    "record": "research/experiments/search-neutral-primary-01/selection.json",
+    "study": "research/experiments/search-neutral-primary-01/README.md",
+    "images": [
+      "assets/geometric-music-search-primary-a.png",
+      "assets/geometric-music-search-primary-b.png"
+    ],
+    "limits": "Missing bright rim and misplaced returns; B lower-return color and detail regress. Conditional mosaic source; historical recipe fingerprint mismatch retained.",
+    "selection": "primary-geometric",
+    "fidelity": "incomplete",
+    "accepted_increment": true,
+    "full_pipeline_pass": false,
+    "full_radiance_verified": false
+  },
+  "replay_executed": false
+}
