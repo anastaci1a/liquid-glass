@@ -1,0 +1,91 @@
+{
+  "member": "compact",
+  "reference": "b",
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 22.463083267211914
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 25.27933692932129
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 22.484554290771484
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 20.52519416809082
+    },
+    "ssim": 0.9631457924842834,
+    "loss": 544.9265395846312,
+    "E": 23.343661657602716,
+    "exterior": 15.072770118713379,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 22.654481887817383
+    },
+    "foreground": {
+      "jupiter.jpg": 1913.480712890625,
+      "title.svg": 571.356689453125,
+      "artist.svg": 249.2782440185547,
+      "play.svg": 225.01394653320312,
+      "forward.svg": 306.2197570800781
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 27.036348342895508,
+        "luma_signed": -8.305192890206273
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 24.281137466430664,
+        "luma_signed": -7.858503485149492
+      },
+      "left_cap": {
+        "RGB_RMSE": 21.390275955200195,
+        "luma_signed": -8.216550480030119
+      },
+      "body": {
+        "RGB_RMSE": 19.44832992553711,
+        "luma_signed": -15.060641761629125
+      }
+    }
+  },
+  "canonical_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": false,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "hybrid_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "clipped_channels": 0,
+  "all_canonical_pass": false,
+  "all_hybrid_pass": false,
+  "primary_power_min": 0.9124826711919971,
+  "primary_power_max": 0.9216,
+  "tail_unassigned": true
+}
