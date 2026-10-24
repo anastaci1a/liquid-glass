@@ -1,0 +1,39 @@
+{
+  "start": "2026-10-24T00:25:20.608Z",
+  "deadline": "2026-10-24T00:55:20.608Z",
+  "checkpoint_deadline": "2026-10-24T00:32:20.608Z",
+  "base": "94bf6bc59afa18afb6d7aa0abd0531bad4806dd8",
+  "visible_question": "How does the one fixed actual circular height render the detached frosted Music Search body, boundary and magnifier over the two frozen mosaics?",
+  "parameters": {
+    "R": 0.9972124917582454,
+    "center": [
+      1511.2043368857017,
+      672.8753258356955
+    ],
+    "L": 89,
+    "depth": 0.15,
+    "crown_depth": 0.4,
+    "index": 1.5,
+    "D": 2,
+    "incident_sigma": 6.75,
+    "incident_radius": 21,
+    "AA": 2,
+    "body_gain": 1,
+    "body_bias": 0,
+    "gamma": 1,
+    "output_blur": 0,
+    "shadow": 0
+  },
+  "caps": {
+    "fixture_rays": 3000,
+    "native_rays": 451200,
+    "graph": 6000000,
+    "RGB_queries": 500000,
+    "candidate_images": 2,
+    "incident_fields": 2,
+    "fits": 0
+  },
+  "support": "Whole body plus every original required/foreground/exterior/backing subray; actual finite kernels/all bilinear corners, both cases before RGB. Unsupported required sample or unresolved path stops pair.",
+  "ownership": "Only Search adapter/cases/driver/evidence. Shared core unchanged.",
+  "native_accounting": "One 240x235 AA2 grid =225600 rays reused for identical geometry; conservative 12 nested graph charges per traced point; reserve before native trace."
+}
