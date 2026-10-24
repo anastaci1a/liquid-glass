@@ -1,0 +1,40 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T10:24:13.840Z",
+  "deadline": "2026-10-24T10:39:13.840Z",
+  "checkpoint_minutes": 5,
+  "question": "Does a shallower physical front sag admit a positive inferred back while concentrating the same edge-slope bound into a narrower perimeter region?",
+  "motivating_evidence": "First anchored bevel39/40 remains a broad uniform band. This second curvature proposal changes only the geometric sag; light, material and map prior remain frozen.",
+  "initialization": "The selected flat-front geometric map is a diagnostic design target, not photographic truth. No target image or source RGB is read.",
+  "fixed": {
+    "front_law": "Existing bevel_profile, core0/edge0",
+    "front_depth": 0.02,
+    "front_power": "Canonical full-spline slope bound * radius / .02",
+    "index": 1.5,
+    "background_distance": 2.1
+  },
+  "unknown": "One real radial back-height profile B, common to both lengths. Surface is reconstructed from optical boundary equations; no image displacement correction after tracing.",
+  "method": "One inverse actual-back solve with fixed front sag.02L (1.77nativepx), power determined by unchanged global slope anchor. No target fit or second sag.",
+  "caps": {
+    "ode_rhs": 5000,
+    "shared_Snell_points": 12000,
+    "profile_scalar_queries": 40000,
+    "design_nodes": 1025,
+    "polynomial_bound_segments": 1024,
+    "native_grid_rays": 0,
+    "source_queries": 0,
+    "images": 0,
+    "fits_to_RGB": 0
+  },
+  "tolerances": {
+    "ODE_rtol": 1e-9,
+    "ODE_atol": 1e-11,
+    "maximum_step_over_radius": 0.0078125,
+    "height_residual": 1e-8,
+    "Snell_residual": 1e-8
+  },
+  "checkpoint": "Same-surface Snell equation sign, positive solve interval and finite budget before integration; positive/singlevalued endpoint and global profile bounds before any future forward render.",
+  "stop": "One fixed anchored front construction. Stop first branch/positivity/invariant failure or original deadline. No second exponent/depth or profile smoothing. No native image before separate forward/source budget.",
+  "ownership": "Root private experiment only, shared old tracer untouched during this design. Existing helper continues separate Search work through Sessionsation.",
+  "static_reservation": "RHS cap5000 includes1025postsolve node calls;15kinematic control points add30Snell. Maximum sharedSnell2*(5000+15)+1025=11055<12000. Six scalar profile outputs perkinematic call plus4100Hermite endpoint/validation points gives34190<40000. Fixedfrontdepth requires no extra profileanchor read."
+}
