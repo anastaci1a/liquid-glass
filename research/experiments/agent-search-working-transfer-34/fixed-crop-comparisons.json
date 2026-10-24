@@ -1,0 +1,437 @@
+{
+  "scope": "Advisory fixed scalar comparisons only; no new pixel reductions or selection",
+  "records": [
+    {
+      "reference": "a",
+      "crop": "upper_rim",
+      "metrics": {
+        "bounds": [
+          1440,
+          576,
+          1580,
+          620
+        ],
+        "RGB_RMSE": 23.823906252335867,
+        "luma_RMSE": 22.566588175091972,
+        "chroma_RMSE": 9.658422572290634,
+        "signed_RGB": [
+          -7.270114353579747,
+          -9.338172706860034,
+          -10.289036037007275
+        ]
+      },
+      "vs_selected": {
+        "RGB_RMSE": {
+          "before": 25.1132072500837,
+          "after": 23.823906252335867,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 22.386757872447806,
+          "after": 22.566588175091972,
+          "nonregression": false
+        },
+        "chroma_RMSE": {
+          "before": 11.984362180505734,
+          "after": 9.658422572290634,
+          "nonregression": true
+        }
+      },
+      "vs29": {
+        "RGB_RMSE": {
+          "before": 23.807078740260373,
+          "after": 23.823906252335867,
+          "nonregression": false
+        },
+        "luma_RMSE": {
+          "before": 22.599919939078603,
+          "after": 22.566588175091972,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 9.4684762231542,
+          "after": 9.658422572290634,
+          "nonregression": false
+        }
+      }
+    },
+    {
+      "reference": "a",
+      "crop": "left_cap",
+      "metrics": {
+        "bounds": [
+          1418,
+          630,
+          1455,
+          718
+        ],
+        "RGB_RMSE": 23.566835989511418,
+        "luma_RMSE": 22.552077137534003,
+        "chroma_RMSE": 6.81795799505971,
+        "signed_RGB": [
+          -9.480349231666956,
+          -9.219160270797094,
+          -8.760072281046401
+        ]
+      },
+      "vs_selected": {
+        "RGB_RMSE": {
+          "before": 22.90245479449443,
+          "after": 23.566835989511418,
+          "nonregression": false
+        },
+        "luma_RMSE": {
+          "before": 21.051062970216922,
+          "after": 22.552077137534003,
+          "nonregression": false
+        },
+        "chroma_RMSE": {
+          "before": 8.785618465924745,
+          "after": 6.81795799505971,
+          "nonregression": true
+        }
+      },
+      "vs29": {
+        "RGB_RMSE": {
+          "before": 23.708487271550315,
+          "after": 23.566835989511418,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 22.696408895388114,
+          "after": 22.552077137534003,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 6.6600073747717685,
+          "after": 6.81795799505971,
+          "nonregression": false
+        }
+      }
+    },
+    {
+      "reference": "a",
+      "crop": "lower_return",
+      "metrics": {
+        "bounds": [
+          1440,
+          728,
+          1580,
+          764
+        ],
+        "RGB_RMSE": 22.432160357330083,
+        "luma_RMSE": 21.549592669825127,
+        "chroma_RMSE": 9.804608991353502,
+        "signed_RGB": [
+          -7.7797046808437225,
+          -9.208755998827872,
+          -7.459267439209812
+        ]
+      },
+      "vs_selected": {
+        "RGB_RMSE": {
+          "before": 21.798681928269307,
+          "after": 22.432160357330083,
+          "nonregression": false
+        },
+        "luma_RMSE": {
+          "before": 20.472564748342187,
+          "after": 21.549592669825127,
+          "nonregression": false
+        },
+        "chroma_RMSE": {
+          "before": 10.327401030440218,
+          "after": 9.804608991353502,
+          "nonregression": true
+        }
+      },
+      "vs29": {
+        "RGB_RMSE": {
+          "before": 24.412875548644198,
+          "after": 22.432160357330083,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 23.766434211063377,
+          "after": 21.549592669825127,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 9.501559920230918,
+          "after": 9.804608991353502,
+          "nonregression": false
+        }
+      }
+    },
+    {
+      "reference": "a",
+      "crop": "glyph",
+      "metrics": {
+        "bounds": [
+          1467,
+          626,
+          1563,
+          722
+        ],
+        "RGB_RMSE": 15.986328058804236,
+        "luma_RMSE": 15.12081705632654,
+        "chroma_RMSE": 4.7945060580619705,
+        "signed_RGB": [
+          -16.100964740568696,
+          -11.64362994323407,
+          -10.294225789014794
+        ]
+      },
+      "vs_selected": {
+        "RGB_RMSE": {
+          "before": 13.477656548661423,
+          "after": 15.986328058804236,
+          "nonregression": false
+        },
+        "luma_RMSE": {
+          "before": 11.453292098514266,
+          "after": 15.12081705632654,
+          "nonregression": false
+        },
+        "chroma_RMSE": {
+          "before": 7.049799188670307,
+          "after": 4.7945060580619705,
+          "nonregression": true
+        }
+      },
+      "vs29": {
+        "RGB_RMSE": {
+          "before": 17.292354524552962,
+          "after": 15.986328058804236,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 16.544551975863683,
+          "after": 15.12081705632654,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 4.097536763551228,
+          "after": 4.7945060580619705,
+          "nonregression": false
+        }
+      }
+    },
+    {
+      "reference": "b",
+      "crop": "upper_rim",
+      "metrics": {
+        "bounds": [
+          1440,
+          576,
+          1580,
+          620
+        ],
+        "RGB_RMSE": 21.886552202234217,
+        "luma_RMSE": 21.16906708919702,
+        "chroma_RMSE": 7.429401702619076,
+        "signed_RGB": [
+          -4.2074274701828305,
+          -1.3538274313262724,
+          0.3804302927856515
+        ]
+      },
+      "vs_selected": {
+        "RGB_RMSE": {
+          "before": 23.094056233994802,
+          "after": 21.886552202234217,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 21.054198469715217,
+          "after": 21.16906708919702,
+          "nonregression": false
+        },
+        "chroma_RMSE": {
+          "before": 10.735337089443503,
+          "after": 7.429401702619076,
+          "nonregression": true
+        }
+      },
+      "vs29": {
+        "RGB_RMSE": {
+          "before": 23.923743476262533,
+          "after": 21.886552202234217,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 23.38981285678411,
+          "after": 21.16906708919702,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 7.386583042521337,
+          "after": 7.429401702619076,
+          "nonregression": false
+        }
+      }
+    },
+    {
+      "reference": "b",
+      "crop": "left_cap",
+      "metrics": {
+        "bounds": [
+          1418,
+          630,
+          1455,
+          718
+        ],
+        "RGB_RMSE": 19.76522389798925,
+        "luma_RMSE": 19.150066818062808,
+        "chroma_RMSE": 7.936179102375175,
+        "signed_RGB": [
+          -8.147460404572968,
+          -6.537460736880028,
+          -5.664673098362982
+        ]
+      },
+      "vs_selected": {
+        "RGB_RMSE": {
+          "before": 17.432260961673173,
+          "after": 19.76522389798925,
+          "nonregression": false
+        },
+        "luma_RMSE": {
+          "before": 16.74013203955016,
+          "after": 19.150066818062808,
+          "nonregression": false
+        },
+        "chroma_RMSE": {
+          "before": 8.36332886611935,
+          "after": 7.936179102375175,
+          "nonregression": true
+        }
+      },
+      "vs29": {
+        "RGB_RMSE": {
+          "before": 22.14946108374141,
+          "after": 19.76522389798925,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 21.876647227606018,
+          "after": 19.150066818062808,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 7.331291732029485,
+          "after": 7.936179102375175,
+          "nonregression": false
+        }
+      }
+    },
+    {
+      "reference": "b",
+      "crop": "lower_return",
+      "metrics": {
+        "bounds": [
+          1440,
+          728,
+          1580,
+          764
+        ],
+        "RGB_RMSE": 22.67233721357704,
+        "luma_RMSE": 21.657006955153093,
+        "chroma_RMSE": 10.448031890056344,
+        "signed_RGB": [
+          -8.015715788961167,
+          -9.49846957100644,
+          -8.066407229374384
+        ]
+      },
+      "vs_selected": {
+        "RGB_RMSE": {
+          "before": 28.644618213741065,
+          "after": 22.67233721357704,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 24.313023963346463,
+          "after": 21.657006955153093,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 16.347488418295065,
+          "after": 10.448031890056344,
+          "nonregression": true
+        }
+      },
+      "vs29": {
+        "RGB_RMSE": {
+          "before": 24.062602405474042,
+          "after": 22.67233721357704,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 23.361591453196066,
+          "after": 21.657006955153093,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 10.113062210464246,
+          "after": 10.448031890056344,
+          "nonregression": false
+        }
+      }
+    },
+    {
+      "reference": "b",
+      "crop": "glyph",
+      "metrics": {
+        "bounds": [
+          1467,
+          626,
+          1563,
+          722
+        ],
+        "RGB_RMSE": 14.477329479040812,
+        "luma_RMSE": 13.297828699385935,
+        "chroma_RMSE": 5.23625110774806,
+        "signed_RGB": [
+          -15.871620664790195,
+          -10.007135289924918,
+          -8.421783728820932
+        ]
+      },
+      "vs_selected": {
+        "RGB_RMSE": {
+          "before": 10.046533980768373,
+          "after": 14.477329479040812,
+          "nonregression": false
+        },
+        "luma_RMSE": {
+          "before": 8.476299616270113,
+          "after": 13.297828699385935,
+          "nonregression": false
+        },
+        "chroma_RMSE": {
+          "before": 5.861874306074153,
+          "after": 5.23625110774806,
+          "nonregression": true
+        }
+      },
+      "vs29": {
+        "RGB_RMSE": {
+          "before": 17.834285318733517,
+          "after": 14.477329479040812,
+          "nonregression": true
+        },
+        "luma_RMSE": {
+          "before": 17.121157114187067,
+          "after": 13.297828699385935,
+          "nonregression": true
+        },
+        "chroma_RMSE": {
+          "before": 4.281928734223817,
+          "after": 5.23625110774806,
+          "nonregression": false
+        }
+      }
+    }
+  ]
+}
