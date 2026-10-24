@@ -1,0 +1,28 @@
+{
+  "status": "DECLARED_BEFORE_IMPLEMENTATION_AND_EXECUTION",
+  "start": "2026-10-24T15:27:27.070Z",
+  "checkpoint_deadline": "2026-10-24T15:32:27.070Z",
+  "deadline": "2026-10-24T15:47:27.070Z",
+  "pin": "22760b40441f1c0e6c63500d7709aafbf5003ba1",
+  "defect": "Reference rim peaks remain missing at fixed sections73; distinguish angular-emitter placement from limited direct-front signal.",
+  "hypothesis": "Uniform white upper-environment radiance4 provides the direct-front envelope of every angular environment bounded0..4 on the frozen working surfaces. Its actual four-reference rendering tests whether broad light can supply the missing rim without washing out the body.",
+  "allowed": "One uniform upper hemisphere at radiance4, the existing emitter peak. No intensity fit, angular sweep, per-pixel light, geometry, source or material change. Bound concerns direct first-front reflection only; later paths remain unassigned.",
+  "frozen": "Working20 actual18 primary/geometry/reflection powers and directions, raw source/incident6.75R21, encoded gain/bias, AA2, original masks/pose/FG/assets/source, shadow0. Compact majorlengthonly.",
+  "caps": {
+    "environment_direction_queries": 1500000,
+    "cached_reflection_direction_points": 1500000,
+    "cached_reflectance_points": 1500000,
+    "Study_constructor_pixels": 1121600,
+    "cached_native_samples": 4486400,
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "score_calls": 4,
+    "SSIM_Gaussians": 20,
+    "metric_erosions": 4,
+    "envelope_pixel_observations": 2300000
+  },
+  "checkpoint": "Input first/last hashes, finite upper reflected directions/nonnegativeR, all four pre/complete baseline identities before candidates. Source proof transfers only unchanged cached queries and finite kernels.",
+  "guards": "All original working body/SSIM/FG/exterior/16or22partialguards and zeroactualclips; localregressions explicit. Original numerical comparisons preserved.",
+  "envelope_scope": "Computed floating coded upper image under fixed actual primary signal and bounded direct-front scene. Not certified rounding intervals, unknown later transport, measured radiance or global physical impossibility. Fully covered cohorts are diagnostic only; all original partial pixels remain scored.",
+  "stop": "First invariant/cap/deadline; at most four candidate composites. No second radiance, fit or scene. No new rays, Fresnel, source queries, fields or optical filters."
+}
