@@ -1,0 +1,189 @@
+{
+  "reference": "a",
+  "factor": 1,
+  "gain": 0.5193880051291454,
+  "bias": 0.4473611800152188,
+  "scores": {
+    "original": {
+      "glass": {
+        "pixels": 14904,
+        "rmse": 25.62642478942871
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 31.909770965576172
+      },
+      "held": {
+        "pixels": 4763,
+        "rmse": 22.714385986328125
+      },
+      "interior": {
+        "pixels": 6540,
+        "rmse": 13.941527366638184
+      },
+      "ssim": 0.8089752793312073,
+      "loss": 765.1695981644309,
+      "E": 27.661699119259303,
+      "exterior_RMSE": 16.447525024414062,
+      "foreground_RMSE": 13.477656364440918
+    },
+    "complete": {
+      "glass": {
+        "pixels": 14904,
+        "rmse": 25.62642478942871
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 31.909770965576172
+      },
+      "held": {
+        "pixels": 4763,
+        "rmse": 22.714385986328125
+      },
+      "interior": {
+        "pixels": 6540,
+        "rmse": 13.941527366638184
+      },
+      "ssim": 0.8089752793312073,
+      "loss": 765.1695981644309,
+      "E": 27.661699119259303,
+      "exterior_RMSE": 16.447525024414062,
+      "foreground_RMSE": 13.477656364440918
+    }
+  },
+  "guards": {
+    "original": {
+      "glass": true,
+      "rim": true,
+      "held": true,
+      "interior": true,
+      "E": true,
+      "exterior_RMSE": true,
+      "foreground_RMSE": true,
+      "SSIM": true
+    },
+    "complete": {
+      "glass": true,
+      "rim": true,
+      "held": true,
+      "interior": true,
+      "E": true,
+      "exterior_RMSE": true,
+      "foreground_RMSE": true,
+      "SSIM": true
+    },
+    "partial_boundary": true,
+    "no_clipping_shortcut": true
+  },
+  "strict_all": true,
+  "partial_pixels": 38,
+  "partial_RMSE": 97.96915435791016,
+  "clipping_before_response": [
+    0,
+    0
+  ],
+  "clipping_before_actual_clip": [
+    0,
+    0
+  ],
+  "clipping_after_response": [
+    0,
+    0
+  ],
+  "preclip_range": [
+    0.5274703804501767,
+    0.9599801468716993
+  ],
+  "clear_exact": true,
+  "rounding": {
+    "model_vs_native_before_float32_max": 2.220446049250313e-16,
+    "model_cast_vs_native_float32_max": 0.0,
+    "model_cast_different_channels": 0
+  },
+  "fixed_crops": {
+    "upper_rim": {
+      "original_bounds": [
+        1440,
+        576,
+        1580,
+        620
+      ],
+      "finite_pixels": 6160,
+      "RGB_RMSE": 25.1132072500837,
+      "luma_RMSE": 22.386757872447806,
+      "chroma_RMSE": 11.984362180505734,
+      "signed_RGB": [
+        0.6199816435865768,
+        0.8060852974024298,
+        1.1732280884337212
+      ],
+      "detail_pairs": 6546,
+      "luma_adjacent_RMS": 1.1215011248667675,
+      "target_luma_adjacent_RMS": 4.077650089929958,
+      "luma_difference_error_RMS": 4.116887292043448
+    },
+    "left_cap": {
+      "original_bounds": [
+        1418,
+        630,
+        1455,
+        718
+      ],
+      "finite_pixels": 3256,
+      "RGB_RMSE": 22.90245479449443,
+      "luma_RMSE": 21.051062970216922,
+      "chroma_RMSE": 8.785618465924745,
+      "signed_RGB": [
+        0.03794351286032862,
+        -0.7663507463469992,
+        -0.5052744962288758
+      ],
+      "detail_pairs": 4565,
+      "luma_adjacent_RMS": 1.0262081337004174,
+      "target_luma_adjacent_RMS": 3.2255264756856645,
+      "luma_difference_error_RMS": 3.3089984294140167
+    },
+    "lower_return": {
+      "original_bounds": [
+        1440,
+        728,
+        1580,
+        764
+      ],
+      "finite_pixels": 5040,
+      "RGB_RMSE": 21.798681928269307,
+      "luma_RMSE": 20.472564748342187,
+      "chroma_RMSE": 10.327401030440218,
+      "signed_RGB": [
+        -0.04006057028614339,
+        -1.5705882840390717,
+        0.6324424375336439
+      ],
+      "detail_pairs": 6260,
+      "luma_adjacent_RMS": 0.10466107822126966,
+      "target_luma_adjacent_RMS": 5.271694614940158,
+      "luma_difference_error_RMS": 5.247839095398121
+    },
+    "glyph": {
+      "original_bounds": [
+        1467,
+        626,
+        1563,
+        722
+      ],
+      "finite_pixels": 9216,
+      "RGB_RMSE": 13.477656548661423,
+      "luma_RMSE": 11.453292098514266,
+      "chroma_RMSE": 7.049799188670307,
+      "signed_RGB": [
+        -2.9173427394319638,
+        3.818089576282849,
+        6.427008848453018
+      ],
+      "detail_pairs": 0,
+      "luma_adjacent_RMS": null,
+      "target_luma_adjacent_RMS": null,
+      "luma_difference_error_RMS": null
+    }
+  }
+}

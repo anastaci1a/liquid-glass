@@ -1,0 +1,39 @@
+{
+  "start": "2026-10-24T01:34:03.118Z",
+  "deadline": "2026-10-24T01:54:03.118Z",
+  "cycle_ceiling": "2026-10-24T04:25:20.608Z",
+  "declared_utc": "2026-10-24T01:35:48.849Z",
+  "baseline": "95e876b08300f714fcca90510ed47e578e6b8b96; H1 D2, incident6.75/radius21, unit response",
+  "visible_defect": "Excessive dark/saturated unit-body tone; not white-return placement or missing rim illumination.",
+  "model": "ONE common gain and bias across all RGB and both references. Existing neutral_color_response on retained INSIDE raw samples BEFORE AA; clear exact; original full foreground chain.",
+  "constraints": "0<=gain<=1; 0<=bias<=1-gain; strict feasibility, no epsilon",
+  "train": "All original glass pixels excluding original held and both inclusive/half-open original foreground boxes. Each reference contributes one half of mean RGB squared error. No crop objective.",
+  "solve": "One finite active-set least-squares proposal: three exact edge minima and unconstrained interior plus identity/vertices as needed; <=8 unique complete quadratic checks. No iterative optimization.",
+  "actual_factors": [
+    1,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "guards": "Every original and completed paired E/glass/rim/held/interior/SSIM/exterior/glyph, plus all original38 partial-glass pixels per reference. Stop first numerical qualifier for immediate visual inspection; no dependent proposal.",
+  "diagnostics": "Reuse unchanged four crop rectangles and frozen adjacent-luma RMS/difference-to-target diagnostic from blur stage; advisory only, never optimized.",
+  "caps": {
+    "optical_rays": 0,
+    "heights": 0,
+    "source_RGB_queries": 0,
+    "incident_fields": 0,
+    "material_filters": 0,
+    "model_checks": 128,
+    "complete_quadratic_checks": 8,
+    "candidate_composites": 8,
+    "identity_composites": 2,
+    "original_reference_mask_points": 112800,
+    "score_calls": 16,
+    "SSIM_metric_Gaussian_calls": 80,
+    "SSIM_metric_mask_erosions": 16
+  },
+  "accounting": "Reserve two original Study mask constructions before evaluation. Existing SSIM filtering is a separately counted unchanged metric, not new material filtering. No import of baseline common.py or old ledger mutation.",
+  "stop": "Identity/model representability failure; first strict pair pending visual/primary review; four predetermined factors; any cap/deadline. No extra solve or factor.",
+  "frozen": "Source/case/vector/style/pose/map/index/D/AA2/seedblur/clear/masks/shadow0; historical fingerprints and ordering disclosures preserved.",
+  "adoption": "No automatic component or historical pass adoption."
+}

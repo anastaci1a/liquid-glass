@@ -1,0 +1,110 @@
+{
+  "utc": "2026-10-24T01:38:23.973813+00:00",
+  "Q": [
+    [
+      0.4091597484201992,
+      0.5749851733171012
+    ],
+    [
+      0.5749851733171012,
+      0.998459224928508
+    ]
+  ],
+  "linear": [
+    0.46973871113750376,
+    0.7453122992091032
+  ],
+  "constant": 0.586270101756529,
+  "eigenvalues": [
+    0.05772402964274806,
+    1.349894943705959
+  ],
+  "condition_number": 23.385320672524255,
+  "rank": 2,
+  "training": [
+    {
+      "reference": "a",
+      "channels": 30423,
+      "weight_per_channel": 1.6434934095914274e-05
+    },
+    {
+      "reference": "b",
+      "channels": 30423,
+      "weight_per_channel": 1.6434934095914274e-05
+    }
+  ],
+  "proposals": [
+    {
+      "name": "identity",
+      "gain": 1.0,
+      "bias": 0.0,
+      "feasible": true,
+      "objective": 0.055952427901720725,
+      "aliases": [
+        "edge_bias_zero"
+      ]
+    },
+    {
+      "name": "zero_vertex",
+      "gain": 0.0,
+      "bias": 0.0,
+      "feasible": true,
+      "objective": 0.586270101756529
+    },
+    {
+      "name": "white_vertex",
+      "gain": 0.0,
+      "bias": 1.0,
+      "feasible": true,
+      "objective": 0.09410472826683058
+    },
+    {
+      "name": "edge_gain_zero",
+      "gain": 0.0,
+      "bias": 0.7464624299129184,
+      "feasible": true,
+      "objective": 0.029922471844917697
+    },
+    {
+      "name": "edge_white_point_one",
+      "gain": 0.5740394017457459,
+      "bias": 0.42596059825425414,
+      "feasible": true,
+      "objective": 0.009204034658520932
+    },
+    {
+      "name": "unconstrained_interior",
+      "gain": 0.5193880051291454,
+      "bias": 0.4473611800152188,
+      "feasible": true,
+      "objective": 0.008869659992844836
+    }
+  ],
+  "best": {
+    "name": "unconstrained_interior",
+    "gain": 0.5193880051291454,
+    "bias": 0.4473611800152188,
+    "feasible": true,
+    "objective": 0.008869659992844836
+  },
+  "identity_objective": 0.055952427901720725,
+  "direct_train_objective": 0.008869659992845676,
+  "quadratic_roundoff_difference": 8.396061623727746e-16,
+  "solver": "Finite active-set algebra, one interior linear solve; no optimizer",
+  "ledger": {
+    "optical_rays": 0,
+    "heights": 0,
+    "source_RGB_queries": 0,
+    "incident_fields": 0,
+    "material_filters": 0,
+    "model_checks": 11,
+    "complete_quadratic_checks": 6,
+    "candidate_composites": 0,
+    "identity_composites": 2,
+    "original_reference_mask_points": 112800,
+    "score_calls": 0,
+    "SSIM_metric_Gaussian_calls": 0,
+    "SSIM_metric_mask_erosions": 0
+  },
+  "scope": "Real-arithmetic model only; actual per-ray response/AA/compositor metrics decide every candidate."
+}
