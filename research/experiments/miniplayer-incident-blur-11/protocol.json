@@ -1,0 +1,44 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T05:08:45.115Z",
+  "deadline": "2026-10-24T05:28:45.115Z",
+  "checkpoint_minutes": 5,
+  "question": "Is remaining texture/rim softness on held split surfaces improved by incident filtering alone, without moving geometry or light?",
+  "held_state": "miniplayer-split-surface-09; actual front=0.5h/back=-0.5h, common light4, original primary response and AA2. Held, not selected.",
+  "protected_selected": "Original canonical flat-front family and all original masks/foreground/partial cohorts remain separate nonregression comparison.",
+  "allowed_widths_native_pixels": [
+    5.0625,
+    8.4375
+  ],
+  "original_width": 6.75,
+  "finite_radii": [
+    16,
+    26
+  ],
+  "operation": "Shared incident_source_filter BEFORE refraction; cached changed ray coordinates, raw clear samples and actual direct front reflection unchanged. No output filter.",
+  "frozen": [
+    "all front/back/index/D/pose/scene/source/masks/foreground",
+    "gain/bias/shadow/AA2",
+    "same width for every member/reference"
+  ],
+  "caps": {
+    "identity_composites": 4,
+    "candidate_composites": 8,
+    "Study_constructor_pixels": 1200000,
+    "score_calls": 8,
+    "SSIM_Gaussians": 40,
+    "metric_erosions": 8,
+    "source_audit_inside_samples": 6000000,
+    "bilinear_known_lookups": 24000000,
+    "known_erosions": 16,
+    "incident_fields": 8,
+    "source_RGB_queries": 6000000,
+    "environment_direction_queries": 1500000,
+    "rays": 0,
+    "heights": 0,
+    "fits": 0
+  },
+  "checkpoint": "All four zero-lighted-state replays exact and both width source preflights complete before changed RGB. Clear/exterior finite support inherits unchanged09 proofs. Only whole lens samples receive the incident filter.",
+  "stop": "Unsupported required support rejects that width before any changed field/query; invariant, cap or deadline stops. Two fixed widths only. Retain all partial/foreground/interior failures; no retuning of geometry, light or color.",
+  "next": "After review, isolated common neutral response only; no automatic new surface."
+}
