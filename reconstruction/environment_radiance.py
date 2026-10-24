@@ -67,3 +67,46 @@ def certified_first_return(outward_back_normal, index=1.5):
                 retained_tail=tail, initial_front_power=float(R0.mean()),
                 unit_emitter_radiance=return_power*field+R0.mean()*initial_field,
                 closure_max_error=float(np.max(abs(closure-1))))
+
+
+def two_interface_power(incoming, front_normal, internal, exit_normal, index):
+    """Incoherent unpolarized weights through TWO actual dielectric events.
+
+    Rotate the first transmitted polarization intensities into the actual
+    second incidence basis. Total tail power is retained; this is not a
+    polarization state for continued propagation after a TIR event.
+    """
+    vectors = [np.asarray(v, float) for v in (incoming, front_normal, internal, exit_normal)]
+    if not np.isfinite(index) or index < 1 or len({v.shape for v in vectors}) != 1:
+        raise ValueError('Matching air/glass unit-vector fields required')
+    if any(v.shape[-1:] != (3,) or not np.isfinite(v).all() or np.any(abs(np.linalg.norm(v, axis=-1)-1) > 1e-10) for v in vectors):
+        raise ValueError('Finite unit vectors required')
+    incoming, front_normal, internal, exit_normal = vectors
+    c0 = -np.sum(incoming*front_normal, axis=-1)
+    c1 = np.sum(internal*exit_normal, axis=-1)
+    if np.any(c0 <= 0) or np.any(c1 <= 0) or np.any(np.sum(internal*front_normal, axis=-1) >= 0):
+        raise ValueError('Actual entering/exiting orientations required')
+    s0 = np.cross(incoming, front_normal)
+    s1 = np.cross(internal, exit_normal)
+    n0 = np.linalg.norm(s0, axis=-1)
+    n1 = np.linalg.norm(s1, axis=-1)
+    if np.any(abs(np.sum(s0*internal, axis=-1)) > 1e-10):
+        raise ValueError('Internal direction is outside the first Snell plane')
+    denominator = n0*n1
+    cosine = np.divide(np.sum(s0*s1, axis=-1), denominator,
+                       out=np.ones_like(denominator), where=denominator > 0)
+    if np.any(abs(cosine) > 1+1e-10):
+        raise ValueError('Invalid incidence-basis rotation')
+    c2 = np.clip(cosine, -1, 1)**2
+    R0 = fresnel_components(c0, 1., index)
+    R1 = fresnel_components(c1, index, 1.)
+    first_s = .5*(1-R0[..., 0]); first_p = .5*(1-R0[..., 1])
+    second_s = first_s*c2+first_p*(1-c2)
+    second_p = first_s*(1-c2)+first_p*c2
+    primary = second_s*(1-R1[..., 0])+second_p*(1-R1[..., 1])
+    tail = second_s*R1[..., 0]+second_p*R1[..., 1]
+    front = R0.mean(axis=-1)
+    if np.max(abs(front+primary+tail-1)) > 2e-14:
+        raise ValueError('Two-interface power closure')
+    return dict(front=front, primary=primary, tail=tail,
+                basis_cosine_squared=c2, basis_degenerate=denominator == 0)

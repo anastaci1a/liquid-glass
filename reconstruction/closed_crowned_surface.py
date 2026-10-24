@@ -78,3 +78,56 @@ class ClosedCrownedSurface:
         elif axis=='y':x,y=zero,v
         else:raise ValueError('axis x or y required')
         return self.surface_points(x,y,True),self.surface_points(x,y,False)
+
+
+@dataclass(frozen=True, init=False)
+class ClosedRoundedSurface(ClosedCrownedSurface):
+    """Same closed equation over an exact ordinary rounded-rectangle footprint.
+
+    The footprint is squared distance to its inner rectangle, divided by R².
+    Center placement is physical z translation. No smoothing/normal parameter
+    is exposed, and the projected equator has a unique actual surface normal.
+    """
+    radius: float = 1.
+    z_offset: float = 0.
+
+    def __init__(self, half, radius, eta, z_offset=0., kappa=0.):
+        from rounded_rectangle_back import RoundedRectangleHarmonicBack
+        super().__init__(half=tuple(half), eta=eta, kappa=kappa)
+        if not np.isfinite([radius, z_offset]).all() or not 0 < radius <= min(half):
+            raise ValueError('Finite placement and valid rounded footprint radius required')
+        object.__setattr__(self, 'radius', float(radius))
+        object.__setattr__(self, 'z_offset', float(z_offset))
+        object.__setattr__(self, '_coordinate', RoundedRectangleHarmonicBack(tuple(half), radius))
+
+    @property
+    def center(self):
+        return np.asarray([0., 0., self.z_offset-self.eta])
+
+    @property
+    def regular_gradient_lower_bound(self):
+        return np.sqrt(2)/max(self.radius, self.eta)
+
+    def footprint(self, x, y):
+        rho, qx, qy = self._coordinate.footprint(x, y)
+        return rho*rho, 2*qx/self.radius**2, 2*qy/self.radius**2
+
+    def level_gradient(self, points):
+        p = np.array(points, dtype=float, copy=True)
+        p[..., 2] -= self.z_offset
+        return super().level_gradient(p)
+
+    def sheet_heights(self, x, y):
+        front, back = super().sheet_heights(x, y)
+        return front+self.z_offset, back+self.z_offset
+
+    def boundary_mask(self, x, y):
+        x, y = np.broadcast_arrays(np.asarray(x, float), np.asarray(y, float))
+        a, b = self.half
+        # Exact straight projected boundaries avoid a subtract/divide roundtrip.
+        lines = ((abs(x) == a) & (abs(y) <= b-self.radius)) | ((abs(y) == b) & (abs(x) <= a-self.radius))
+        return (self.footprint(x, y)[0] == 1) | lines
+
+    def front_height(self, x, y):
+        T, _, _ = self.footprint(x, y)
+        return self.sheet_heights(x, y)[0], (T < 1) & ~self.boundary_mask(x, y)

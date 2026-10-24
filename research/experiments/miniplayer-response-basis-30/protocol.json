@@ -1,0 +1,24 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T09:31:15.774Z",
+  "deadline": "2026-10-24T09:43:15.774Z",
+  "checkpoint_minutes": 4,
+  "question": "Does a global normal-incidence material-basis conversion preserve the entire previous neutral response rather than white alone?",
+  "base": "Current working20half geometry/material and annular4; no closed25geometry or unsupported-source envelope.",
+  "operation": "One fixed sRGB nonlinear-branch conversion: k=Tnormal^(1/2.4), gain=oldgain/k, bias=(oldbias+.055)/k-.055. Actual angle-dependent primary power remains unchanged. No target fit or per-ray compensation.",
+  "frozen": "All four references/sources/poses/masks/AA2/styles, actual inverse18 surfaces/paths/source samples/6.75R21, scene4, shadowzero.",
+  "caps": {
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "Study_constructors": 4,
+    "mask_points": 1121600,
+    "score_calls": 8,
+    "metric_gaussians": 40,
+    "metric_erosions": 8,
+    "scene_queries": 1500000,
+    "normal_calibration_points": 9
+  },
+  "checkpoint": "Verify declared nonlinear/no-clipping coefficient ranges and eight synthetic scalar response identities within1e-14; then all four current-working cached identities before candidates. Stop any failure.",
+  "guards": "All original body/SSIM/foreground/exterior and16/22partial cohorts, compared both selected numerical baseline and current working20half. No waiver; retain failed components for a separately declared joint model question only.",
+  "stop": "Exactly one fixed four-reference conversion; original deadline or invariant failure. No factors, fitting, rays, fields, source queries or geometry/light changes."
+}

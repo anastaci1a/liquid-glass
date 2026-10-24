@@ -9,8 +9,8 @@
   "tiles": "For each member, fixed32x24 native tiles centered at rounded corrected left-cap, right-cap, upper-straight and lower-straight outline landmarks. No target-error-based selection. Verify no original foreground box overlap before rays.",
   "parameters": "Only AA samples per axis2(cached exact control) versus4(new traced diagnostic). Do not adopt a new scoring epoch or alter canonical AA2.",
   "caps": {
-    "cached_identity_tiles": 8,
-    "new_tile_integrations": 8,
+    "cached_identity_tiles": 16,
+    "new_tile_integrations": 16,
     "Study_constructor_pixels": 1121600,
     "native_rays": 98304,
     "surface_point_queries": 5000000,
@@ -25,7 +25,8 @@
   },
   "checkpoint": "Exact cached AA2 pre-foreground/completed tile identity against22, input/geometry/mask bindings and zero foreground overlap. No new native rays before this passes.",
   "source_first": "For new AA4, audit all whole-body and all original scored subrays in all tiles, finite radius21 and bilinear corners, both references before any field or RGB. Unknown unscored exterior remains unavailable.",
-  "stop": "First invariant/source/deadline failure or exactly eight AA4 tile integrations. No alternate samples, kernel, geometry, light, material or source change.",
+  "stop": "First invariant/source/deadline failure or eight geometry tiles integrated for each of two references (16 material tiles). No alternate samples, kernel, geometry, light, material or source change.",
   "outputs": "Reference, AA2 and AA4 native tiles at maximum2x display, actual same-geometry ray/source audit and local fixed-cohort RGB/MAE. No full-image scores, optical acceptance, HQ or motion.",
-  "scope": "This does not identify physical blur or continuous pixel-area truth. Primary model and original AA2 evidence stay unchanged."
+  "scope": "This does not identify physical blur or continuous pixel-area truth. Primary model and original AA2 evidence stay unchanged.",
+  "preexecution_count_clarification": "Eight geometry tiles are reused across paired references: 16 cached identity tiles and16 RGB integrations. Original ray/source caps already counted both references correctly. No evaluation has run; original clock and checkpoint remain unchanged."
 }

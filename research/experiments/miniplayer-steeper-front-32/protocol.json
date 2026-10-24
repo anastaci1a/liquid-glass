@@ -1,0 +1,40 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T09:37:46.872Z",
+  "deadline": "2026-10-24T09:52:46.872Z",
+  "checkpoint_minutes": 5,
+  "question": "Can a steeper actual front supply a different outer-highlight normal distribution while an optically derived positive back retains the existing physical source-plane correspondence?",
+  "motivating_evidence": "Current working front is half the positive spline. Its highlight is too broad and the cap/outer rim differ. Material-basis corrections cannot repair those structures. One fixed steeper front tests actual surface-normal distribution, not added light or a warp.",
+  "initialization": "The selected flat-front geometric map is a diagnostic design target, not photographic truth. No target image or source RGB is read.",
+  "fixed": {
+    "front_scale": 1,
+    "index": 1.5,
+    "background_distance": 2.1,
+    "radius": "canonical family corner_radius",
+    "selected_height": "canonical positive spline"
+  },
+  "unknown": "One real radial back-height profile B, common to both lengths. Surface is reconstructed from optical boundary equations; no image displacement correction after tracing.",
+  "method": "One backward ODE construction with front equal to the canonical positive spline, retaining n1.5/D2.1 and the same physical correspondence prior used in17. Require positive single-valued actual Hermite back and global bounds; no RGB or native grid.",
+  "caps": {
+    "ode_rhs": 5000,
+    "shared_Snell_points": 10200,
+    "profile_scalar_queries": 20000,
+    "design_nodes": 1025,
+    "polynomial_bound_segments": 1024,
+    "native_grid_rays": 0,
+    "source_queries": 0,
+    "images": 0,
+    "fits_to_RGB": 0
+  },
+  "tolerances": {
+    "ODE_rtol": 1e-9,
+    "ODE_atol": 1e-11,
+    "maximum_step_over_radius": 0.0078125,
+    "height_residual": 1e-8,
+    "Snell_residual": 1e-8
+  },
+  "checkpoint": "Same-surface Snell equation sign, positive solve interval and finite budget before integration; positive/singlevalued endpoint and global profile bounds before any future forward render.",
+  "stop": "One fixed front_scale1 construction, first invariant/branch/positivity failure or deadline. No alternate scale, profile smoothing, source/mask change or native rendering. A valid construction only enables a separately bounded forward/source experiment.",
+  "ownership": "Root private experiment only, shared old tracer untouched during this design. Existing helper continues separate Search work through Sessionsation.",
+  "static_reservation": "Controls30Snell+2*5000RHS<=10200;3profile queries per RHS plus controls<=20000.1025postsolve node residual calls count inside RHS cap."
+}

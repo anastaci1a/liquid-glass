@@ -1,0 +1,32 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T07:57:39.816Z",
+  "deadline": "2026-10-24T08:07:39.816Z",
+  "checkpoint_minutes": 3,
+  "question": "Does originalAA2 accurately integrate the new closed front grazing-reflectance band?",
+  "scope": "Straight-body unit first-front reflectance only. Exact geometry is x-invariant here, so continuous pixel-area integral reduces to1D in native y. No radiance/source/target image, refraction path, fit or optical parameter changes.",
+  "frozen": "Closed25 eta/radius/placement, n1.5, original expanded/compact center phases and nativepixel convention.",
+  "methods": [
+    "Cached/independently recomputed AA2 identity",
+    "Fixed AA8 diagnostic",
+    "One adaptive Gauss-Kronrod integration per pixel"
+  ],
+  "pixels": "Three rows centered on rounded upper and lower projected boundary for each member:12pixels total. Equalx extent lies entirely in the straight body.",
+  "caps": {
+    "native_AA2_identity_pixels": 12,
+    "AA8_pixels": 12,
+    "pixel_integrals": 12,
+    "callback_points": 20000,
+    "geometry_delegate_units": 400000,
+    "Fresnel_points": 20000
+  },
+  "tolerances": {
+    "epsabs": 1e-10,
+    "epsrel": 1e-7,
+    "accepted_absolute_error": 1e-7,
+    "subdivision_limit": 128
+  },
+  "checkpoint": "All12 AA2 identities match saved26 unit-reflectance values within1e-12 before AA8/adaptive observations. Checkpoint by3minutes; stop firstfailure.",
+  "stop": "First discrepancy/quadraturewarning/counter/deadline failure, no alternate tolerance, pixel, light or model. No accepted AA protocol or native score change.",
+  "edge": "The measure-zero tangent uses its one-sided reflectance limit only if an integration endpoint is evaluated; never reclassified as a valid traced ray."
+}

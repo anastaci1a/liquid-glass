@@ -1,0 +1,22 @@
+{
+  "status": "DECLARED_BEFORE_IMPLEMENTATION",
+  "start": "2026-10-24T09:44:33.061Z",
+  "deadline": "2026-10-24T09:59:33.061Z",
+  "checkpoint_minutes": 5,
+  "question": "Can convex-distance monotonicity certify direct reflected escape where the global Lipschitz cone is insufficient?",
+  "allowed": "One additive certificate for canonical nonincreasing spline heights over an unsmoothed convex rounded-rectangle distance. Same actual reflection directions/normals/intersections; preserve existing raw margin and existing fields.",
+  "proof": "For fixed orthographic downward camera, horizontal reflected direction is a nonnegative multiple of the convex-distance outward gradient. Convexity keeps distance at least its entry value. Nonincreasing height stays below entry height; strictly upward reflected z then escapes. Reject all other cases.",
+  "caps": {
+    "fixture_comparator_rays": 120,
+    "surface_point_queries": 200000,
+    "conservative_adapter_units": 4000000,
+    "profile_bound_segments": 6144,
+    "synthetic_certificate_cases": 4,
+    "native_rays": 0,
+    "source_queries": 0,
+    "images": 0,
+    "fits": 0
+  },
+  "comparators": "Two member half-front15-point fixtures, old/new atn1.5:60 rays. Two member full-front15-point fixtures,n1/n1.5:60 rays. Immutable old source used only as comparator; no alternative tracer delivered.",
+  "stop": "First invariant, cap or deadline. No native image, new profile, bypass of unresolved downward rays or interface modification. Prior33 failure preserved."
+}

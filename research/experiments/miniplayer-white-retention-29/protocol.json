@@ -1,0 +1,24 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T09:14:54.509Z",
+  "deadline": "2026-10-24T09:26:54.509Z",
+  "checkpoint_minutes": 4,
+  "question": "Can the previous normal-incidence unit-white calibration be retained exactly when the same physical two-interface power is introduced?",
+  "base": "Current working20half geometry/material and annular4; no closed25geometry or unsupported-source envelope.",
+  "operation": "One fixed shared coefficient correction: keep working gain, choose commonbias so encode(Tnormal*decode(gain+bias)) equals previous accepted gain+bias at sourcewhite. Tnormal=(1-Rnormal)^2 at n1.5. This is model white calibration, not a target fit.",
+  "frozen": "All four references/sources/poses/masks/AA2/styles, actual inverse18 surfaces/paths/source samples/6.75R21, scene4, shadowzero.",
+  "caps": {
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "Study_constructors": 4,
+    "mask_points": 1121600,
+    "score_calls": 8,
+    "metric_gaussians": 40,
+    "metric_erosions": 8,
+    "scene_queries": 1500000,
+    "normal_calibration_points": 4
+  },
+  "checkpoint": "Exact float32 white-response identity and four current-working cached pre/complete/score identities before candidate. Stop any failure.",
+  "guards": "All original body/SSIM/foreground/exterior and16/22partial cohorts, compared both selected numerical baseline and current working20half. No waiver; retain failed components for a separately declared joint model question only.",
+  "stop": "Exactly one four-reference fixed response, originaldeadline or firstinvariant. No fit, backtrack, second whiteanchor, source/filter/ray, new light or geometry."
+}

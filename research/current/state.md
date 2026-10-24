@@ -1,10 +1,10 @@
 # Current state
 
-Current direction: expanded playback now has a verified positive-spline/shared-response increment. The [structured continuation](../experiments/miniplayer-pass-review-16/README.md) assesses every stage and holds the two-surface outline candidate for local failures.
+The [three-direction outline review](../experiments/miniplayer-front-review-37/README.md) rejects a globally steeper front: its actual correspondence remains close, but its pale band is too broad. The current working family stays selected. A perimeter-curvature proposal remains unexecuted.
 
-The [inverse-back forward test](../experiments/miniplayer-inverse-forward-18/README.md) now preserves useful refraction and improves all original body/foreground guards with a visible outer highlight, but expanded A’s original partial boundary still fails.
+The [current working miniplayer family](../../reconstruction/families/music-mini-player-working.json) now appears first in the gallery, with two physical surfaces, incident blur and one common material across both lengths. This explicit primary selection retains the expanded boundary/foreground failures and creates no accepted count.
 
-The subsequent [interface/material review](../experiments/miniplayer-interpretation-review-21/README.md) holds the common incident-material half-step for original boundary/foreground failures. Preserve selected and historical states.
+The [earlier numerical baseline](../../reconstruction/families/music-mini-player.json) stays immutable. Closed-surface [signal envelopes](../experiments/miniplayer-bounded-signal-28/README.md) expose source and sampling limitations; they are not completed replacements.
 
 Compact now uses the exact expanded family with length alone changed; bounded clear-play work remains parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
 
@@ -29,7 +29,7 @@ The historical accepted output filter worsens outer-rim MAE 16.527521 → 16.897
 
 The bounded outline extension leaves residual reflected power and 20 unsupported secondary background events. No reflected RGB image or fitted environment is accepted.
 
-## Expanded miniplayer
+## Expanded and compact: preserved numerical baseline
 
 | Stage | Disposition |
 | --- | --- |
@@ -41,9 +41,9 @@ The bounded outline extension leaves residual reflected power and 20 unsupported
 | Foreground | Original artwork/vectors/styles stay fixed; all ten paired guards and float64 checks now pass. Exact UI identity remains unproven. |
 | Dispersion | Not identified; no spectral model added. |
 
-Primary source-filtered E is 12.90785 / 8.57587, versus prior H1 45.42369 / 18.21982. Independent cached replay is exact, with no new rays or source sampling. Historical empirical pass03 remains 5.38805 / 3.11686; its closer image fit stays archived.
+Preserved baseline source-filtered E is 12.90785 / 8.57587, versus prior H1 45.42369 / 18.21982. Independent cached replay is exact, with no new rays or source sampling. Historical empirical pass03 remains 5.38805 / 3.11686; its closer image fit stays archived.
 
-The [new combined increment](../experiments/expanded-contrast-guard-02/README.md) is accepted under the original paired guards. Bright perimeter, some return placement and colored-body transitions remain wrong. No completed full-pipeline pass or final animation is claimed. The [earlier stage review](../experiments/expanded-pipeline-review-01/README.md) remains historical evidence.
+The [preserved combined increment](../experiments/expanded-contrast-guard-02/README.md) is accepted under the original paired guards. Bright perimeter, some return placement and colored-body transitions remain wrong. No completed full-pipeline pass or final animation is claimed. The [earlier stage review](../experiments/expanded-pipeline-review-01/README.md) remains historical evidence.
 
 The [earlier spline observation](../experiments/expanded-spline-observation-01/README.md) used the prior response and failed foreground guards despite body improvement. Its rejection is preserved. The later response is shared across both references and RGB; no individual icon, source or mask coefficient was introduced.
 
