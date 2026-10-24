@@ -1,0 +1,128 @@
+{
+  "member": "expanded",
+  "reference": "a",
+  "amplitude": 4.0,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 13.119111061096191
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 17.942073822021484
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 13.14451789855957
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 10.468576431274414
+    },
+    "ssim": 0.8874965906143188,
+    "loss": 217.05315643382409,
+    "E": 14.732723999105668,
+    "exterior": 19.254291534423828,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 26.5498046875
+    },
+    "foreground": {
+      "jupiter.jpg": 2260.120361328125,
+      "title.svg": 327.4755554199219,
+      "artist.svg": 229.97120666503906,
+      "play.svg": 142.54721069335938,
+      "forward.svg": 191.93296813964844
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 21.88410186767578,
+        "luma_signed": 10.2399767248416
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 18.82809829711914,
+        "luma_signed": -2.1176877804491956
+      },
+      "left_cap": {
+        "RGB_RMSE": 22.29930877685547,
+        "luma_signed": -3.2894162033461725
+      },
+      "body": {
+        "RGB_RMSE": 7.825786113739014,
+        "luma_signed": 0.3595401687732379
+      }
+    }
+  },
+  "baseline": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 11.516127586364746
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 15.682034492492676
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 11.512120246887207
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 9.23768424987793
+    },
+    "ssim": 0.9763391017913818,
+    "loss": 166.61269795692078,
+    "E": 12.907854118982009,
+    "exterior": 19.254291534423828,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 26.5498046875
+    },
+    "foreground": {
+      "jupiter.jpg": 2260.37744140625,
+      "title.svg": 327.4755554199219,
+      "artist.svg": 229.97120666503906,
+      "play.svg": 142.54721069335938,
+      "forward.svg": 191.93296813964844
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 21.077720642089844,
+        "luma_signed": 7.491448763178163
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 17.136768341064453,
+        "luma_signed": -6.482675184826997
+      },
+      "left_cap": {
+        "RGB_RMSE": 21.596948623657227,
+        "luma_signed": -6.374718864419458
+      },
+      "body": {
+        "RGB_RMSE": 7.825786113739014,
+        "luma_signed": 0.3595401687732379
+      }
+    }
+  },
+  "guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "all_original_and_partial_guards_pass": false,
+  "clipped_channels": 0,
+  "encoded_tail_interval_max_levels": 79.4804118316533,
+  "conditional_first_return_only": true,
+  "environment_observed": false,
+  "source_queries": 0
+}

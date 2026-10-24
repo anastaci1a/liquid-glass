@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/repo/research/experiments/miniplayer-curved-front-08/render.py", line 78, in <module>
+    supported=np.where(inside,blur_ok,rawok);required=inside|np.repeat(np.repeat(d['m']['required'],2,0),2,1)
+                                                                                 ~~~~~~^^^^^^^^^^^^
+  File "/deps/numpy/lib/_npyio_impl.py", line 243, in __getitem__
+    raise KeyError(f"{key} is not a file in the archive") from None
+KeyError: 'required is not a file in the archive'

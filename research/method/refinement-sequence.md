@@ -1,19 +1,17 @@
 # Current refinement sequence
 
-Finish the current compact outline subpass, then park its remaining stages explicitly. Do not mark the unfinished cycle complete.
+Continue visible refinement of the miniplayer family. Preserve selected models, held physical hypotheses and historical fits separately. A bounded subpass ending does not pause the authorized sequence.
 
-| Order | Work | Limit |
-| --- | --- | --- |
-| 1 | Clear play: review incident blur and unresolved outline. | 30 minutes |
-| 2 | Expanded Music playback bar: prioritize geometric refraction against its own references. | Declared stage budgets |
-| Parallel | Existing family researcher: a distinct control in an isolated worktree. | Separate declared budgets |
+| Current work | Rule |
+| --- | --- |
+| Outline | Three rendered hypotheses are complete; no fourth geometry or emitter setting in this block. |
+| Incident blur | Next isolate softness on the held split surfaces, protecting the selected reconstruction and original guards. |
+| Color, shadow, foreground and dispersion | Assess explicitly against the compatible state; reuse unchanged evidence only where valid. |
+| Final verification | Separate visible progress, numerical failures, physical assumptions and family transfer. |
+| Parallel researcher | Detached Search uses its own references; shared code and family integration remain maintainer-owned. |
 
-Do not assume the expanded bar shares the circular play material or geometry. Reuse shared surface-derived transport and test meaningful family parameters.
+Expanded and compact must use one complete glass model, differing only in major length. Do not introduce compact-specific material or shape parameters. The circular play material is a different family; no equality is assumed.
 
-Keep play blur active. Its earlier absence claim was withdrawn. Dispersion may remain unchanged under explicit review acceptance; this does not establish physical absence.
+Ordinary blur acts before refraction. Historical widths seed each corresponding material. No stage is skipped merely because its model is incomplete; retain unresolved effects explicitly.
 
-Seed each element's incident blur from its own historical reconstruction. Follow the [operation-order and support rules](passes.md#blur-initialization-and-order).
-
-Use Sessionsation for existing-session coordination. Agree target, interfaces and file ownership before parallel edits; do not create a duplicate helper.
-
-Unfinished stages remain pending. A blocked implementation or unknown source is not evidence that an effect is absent.
+Use the [stage budgets](passes.md) and Sessionsation for existing-session coordination. Preserve frozen sources, masks, registration, foreground and original negative evidence.
