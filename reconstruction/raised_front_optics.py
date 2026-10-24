@@ -7,6 +7,15 @@ import numpy as np
 from geometric_optics import refract, reflect_direction, fresnel_components
 
 
+def escape_clearance(direction, slope_bound, upward=False):
+    """Sufficient no-reentry margin for a globally Lipschitz height graph."""
+    v = np.asarray(direction, float)
+    if v.shape[-1] != 3 or not np.isfinite(v).all() or not np.isfinite(slope_bound) or slope_bound < 0:
+        raise ValueError('Finite directions and nonnegative slope bound required')
+    vertical = v[..., 2] if upward else -v[..., 2]
+    return vertical-slope_bound*np.linalg.norm(v[..., :2], axis=-1)
+
+
 class VerticalScaleBack:
     """Physical height scaling; derivative and bounds scale identically."""
     def __init__(self, base, scale):
@@ -69,6 +78,10 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
     nb /= np.linalg.norm(nb, axis=-1)[:, None]
     outgoing, blocked_exit, discriminant = refract(interior, -nb, index, 1.)
     valid = ~blocked_exit & (outgoing[:, 2] < 0)
+    outgoing_margin = np.full_like(H, np.nan)
+    outgoing_margin[valid] = escape_clearance(outgoing[valid], back.slope_bound)
+    if np.any(outgoing_margin[valid] <= 0):
+        raise ValueError('Outgoing no-reentry unresolved: ordered later intersector required')
     t = np.full_like(H, np.nan)
     t[valid] = (-background_distance-point[valid, 2])/outgoing[valid, 2]
     valid &= t >= 0
@@ -80,6 +93,9 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
     primary = np.mean((1-Rf)*(1-Rb), axis=-1)
     tail = np.mean((1-Rf)*Rb, axis=-1)
     reflected = reflect_direction(camera, nf)
+    reflection_margin = escape_clearance(reflected, scale*back.slope_bound, upward=True)
+    if np.any(reflection_margin <= 0):
+        raise ValueError('Direct front reflection escape unresolved')
     if np.max(abs(Rf.mean(axis=-1)+primary+tail-1)) > 2e-14:
         raise ValueError('Power closure')
     shape = x.shape
@@ -102,4 +118,5 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
         back_bracket_high=expand(high), back_residual=expand(residual),
         discriminant=expand(discriminant), primary_back_clearance=expand(margin_b),
         primary_front_clearance=expand(margin_f), polarization_plane_residual=expand(plane),
+        outgoing_back_clearance=expand(outgoing_margin), reflection_front_clearance=expand(reflection_margin),
         iterations=np.array(iteration+1))
