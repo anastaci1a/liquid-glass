@@ -1,0 +1,378 @@
+[
+  {
+    "configuration": {
+      "name": "vertical_edge_partial",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 0.5,
+      "pixel_center": [
+        0.75,
+        0
+      ],
+      "pixel_width": 2,
+      "area": "segment x>=-1/4; full disk y span covered",
+      "node_upper_coefficient": 4
+    },
+    "rows": [
+      {
+        "order": 16,
+        "nodes": 1024,
+        "reserved": 1024,
+        "mass": 0.1579629877678384,
+        "exact_normalized_area": 0.15796298776783843,
+        "absolute_error": 2.7755575615628914e-17,
+        "minimum_weight": 1.2539005476327755e-09,
+        "strict_membership": true,
+        "moment_local": [
+          0.013531646934131855,
+          -2.0837010502455788e-19
+        ]
+      },
+      {
+        "order": 32,
+        "nodes": 4096,
+        "reserved": 4096,
+        "mass": 0.1579629877678384,
+        "exact_normalized_area": 0.15796298776783843,
+        "absolute_error": 2.7755575615628914e-17,
+        "minimum_weight": 5.583380986203335e-12,
+        "strict_membership": true,
+        "moment_local": [
+          0.01353164693413185,
+          -2.5612158742601907e-19
+        ]
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "name": "horizontal_mirror_partial",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 0.5,
+      "pixel_center": [
+        -0.75,
+        0
+      ],
+      "pixel_width": 2,
+      "area": "mirror of vertical segment",
+      "node_upper_coefficient": 4
+    },
+    "rows": [
+      {
+        "order": 16,
+        "nodes": 1024,
+        "reserved": 1024,
+        "mass": 0.1579629877678384,
+        "exact_normalized_area": 0.15796298776783843,
+        "absolute_error": 2.7755575615628914e-17,
+        "minimum_weight": 1.2539005476327755e-09,
+        "strict_membership": true,
+        "moment_local": [
+          -0.01353164693413185,
+          -1.3552527156068805e-19
+        ]
+      },
+      {
+        "order": 32,
+        "nodes": 4096,
+        "reserved": 4096,
+        "mass": 0.1579629877678384,
+        "exact_normalized_area": 0.15796298776783843,
+        "absolute_error": 2.7755575615628914e-17,
+        "minimum_weight": 5.583380986203335e-12,
+        "strict_membership": true,
+        "moment_local": [
+          -0.013531646934131746,
+          -3.417513244375085e-19
+        ]
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "name": "fractional_translation_partial",
+      "center": [
+        0.137,
+        -0.283
+      ],
+      "radius": 0.5,
+      "pixel_center": [
+        0.887,
+        -0.283
+      ],
+      "pixel_width": 2,
+      "area": "same exact translated segment",
+      "node_upper_coefficient": 4
+    },
+    "rows": [
+      {
+        "order": 16,
+        "nodes": 1024,
+        "reserved": 1024,
+        "mass": 0.1579629877678384,
+        "exact_normalized_area": 0.15796298776783843,
+        "absolute_error": 2.7755575615628914e-17,
+        "minimum_weight": 1.2539005476327796e-09,
+        "strict_membership": true,
+        "moment_local": [
+          0.013531646934131858,
+          1.4179331537036988e-18
+        ]
+      },
+      {
+        "order": 32,
+        "nodes": 4096,
+        "reserved": 4096,
+        "mass": 0.1579629877678384,
+        "exact_normalized_area": 0.15796298776783843,
+        "absolute_error": 2.7755575615628914e-17,
+        "minimum_weight": 5.583380986203292e-12,
+        "strict_membership": true,
+        "moment_local": [
+          0.013531646934131848,
+          9.500533294641046e-19
+        ]
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "name": "axis_exchange_partial",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 0.5,
+      "pixel_center": [
+        0,
+        0.75
+      ],
+      "pixel_width": 2,
+      "area": "same segment under x/y exchange",
+      "node_upper_coefficient": 8
+    },
+    "rows": [
+      {
+        "order": 16,
+        "nodes": 2048,
+        "reserved": 2048,
+        "mass": 0.1579629877678384,
+        "exact_normalized_area": 0.15796298776783843,
+        "absolute_error": 2.7755575615628914e-17,
+        "minimum_weight": 4.644171457898508e-11,
+        "strict_membership": true,
+        "moment_local": [
+          1.1455485336903971e-17,
+          0.013531646934131851
+        ]
+      },
+      {
+        "order": 32,
+        "nodes": 8192,
+        "reserved": 8192,
+        "mass": 0.15796298776783838,
+        "exact_normalized_area": 0.15796298776783843,
+        "absolute_error": 5.551115123125783e-17,
+        "minimum_weight": 2.0679217132181346e-13,
+        "strict_membership": true,
+        "moment_local": [
+          -1.499193391847438e-17,
+          0.013531646934131844
+        ]
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "name": "full_disk",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 0.5,
+      "pixel_center": [
+        0,
+        0
+      ],
+      "pixel_width": 2,
+      "area": "pi R squared",
+      "node_upper_coefficient": 4
+    },
+    "rows": [
+      {
+        "order": 16,
+        "nodes": 1024,
+        "reserved": 1024,
+        "mass": 0.19634954084936207,
+        "exact_normalized_area": 0.19634954084936207,
+        "absolute_error": 0.0,
+        "minimum_weight": 1.2539005476327755e-09,
+        "strict_membership": true,
+        "moment_local": [
+          -8.254476360825046e-17,
+          -2.0837010502455788e-19
+        ]
+      },
+      {
+        "order": 32,
+        "nodes": 4096,
+        "reserved": 4096,
+        "mass": 0.19634954084936207,
+        "exact_normalized_area": 0.19634954084936207,
+        "absolute_error": 0.0,
+        "minimum_weight": 5.583380986203335e-12,
+        "strict_membership": true,
+        "moment_local": [
+          1.6466018966610808e-16,
+          -4.7296202192311995e-19
+        ]
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "name": "tangent_empty",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 0.5,
+      "pixel_center": [
+        1.5,
+        0
+      ],
+      "pixel_width": 2,
+      "area": "zero; touches disk at single right pole",
+      "node_upper_coefficient": 0
+    },
+    "rows": [
+      {
+        "order": 16,
+        "nodes": 0,
+        "reserved": 0,
+        "mass": 0.0,
+        "exact_normalized_area": 0.0,
+        "absolute_error": 0.0,
+        "minimum_weight": null,
+        "strict_membership": true,
+        "moment_local": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "order": 32,
+        "nodes": 0,
+        "reserved": 0,
+        "mass": 0.0,
+        "exact_normalized_area": 0.0,
+        "absolute_error": 0.0,
+        "minimum_weight": null,
+        "strict_membership": true,
+        "moment_local": [
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "name": "strictly_disjoint",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 0.5,
+      "pixel_center": [
+        2,
+        0
+      ],
+      "pixel_width": 2,
+      "area": "zero",
+      "node_upper_coefficient": 0
+    },
+    "rows": [
+      {
+        "order": 16,
+        "nodes": 0,
+        "reserved": 0,
+        "mass": 0.0,
+        "exact_normalized_area": 0.0,
+        "absolute_error": 0.0,
+        "minimum_weight": null,
+        "strict_membership": true,
+        "moment_local": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "order": 32,
+        "nodes": 0,
+        "reserved": 0,
+        "mass": 0.0,
+        "exact_normalized_area": 0.0,
+        "absolute_error": 0.0,
+        "minimum_weight": null,
+        "strict_membership": true,
+        "moment_local": [
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "name": "full_interior_square",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 0.5,
+      "pixel_center": [
+        0,
+        0
+      ],
+      "pixel_width": 0.5,
+      "area": "full pixel area",
+      "node_upper_coefficient": 4
+    },
+    "rows": [
+      {
+        "order": 16,
+        "nodes": 1024,
+        "reserved": 1024,
+        "mass": 1.0,
+        "exact_normalized_area": 1.0,
+        "absolute_error": 0.0,
+        "minimum_weight": 4.185536630660416e-05,
+        "strict_membership": true,
+        "moment_local": [
+          -1.5637854774270909e-16,
+          1.6364676540953083e-18
+        ]
+      },
+      {
+        "order": 32,
+        "nodes": 4096,
+        "reserved": 4096,
+        "mass": 0.9999999999999999,
+        "exact_normalized_area": 1.0,
+        "absolute_error": 1.1102230246251565e-16,
+        "minimum_weight": 2.793321674575423e-06,
+        "strict_membership": true,
+        "moment_local": [
+          -3.616077950418439e-19,
+          1.197492829180767e-19
+        ]
+      }
+    ]
+  }
+]
