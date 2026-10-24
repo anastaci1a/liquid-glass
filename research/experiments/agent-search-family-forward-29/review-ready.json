@@ -1,0 +1,84 @@
+{
+  "ready_at": "2026-10-24T07:25:16.505Z",
+  "status": "PAIR_COMPLETE_GUARD_FAILURES_NOT_ADOPTED",
+  "records": [
+    {
+      "reference": "a",
+      "E": 21.065417549036514,
+      "baseline_E": 27.661699119259303,
+      "guards": {
+        "original": {
+          "glass": true,
+          "rim": true,
+          "held": true,
+          "interior": false,
+          "E": true,
+          "SSIM": true,
+          "exterior": true,
+          "foreground": false
+        },
+        "complete": {
+          "glass": true,
+          "rim": true,
+          "held": true,
+          "interior": false,
+          "E": true,
+          "SSIM": true,
+          "exterior": true,
+          "foreground": false
+        },
+        "partial38": true
+      },
+      "partial38_RMSE": 85.79635620117188,
+      "partial38_baseline": 97.96915435791016,
+      "clipped": 0
+    },
+    {
+      "reference": "b",
+      "E": 21.496938733117542,
+      "baseline_E": 22.030139499495235,
+      "guards": {
+        "original": {
+          "glass": false,
+          "rim": true,
+          "held": false,
+          "interior": false,
+          "E": true,
+          "SSIM": true,
+          "exterior": true,
+          "foreground": false
+        },
+        "complete": {
+          "glass": false,
+          "rim": true,
+          "held": false,
+          "interior": false,
+          "E": true,
+          "SSIM": true,
+          "exterior": true,
+          "foreground": false
+        },
+        "partial38": false
+      },
+      "partial38_RMSE": 71.46659851074219,
+      "partial38_baseline": 70.07123565673828,
+      "clipped": 0
+    }
+  ],
+  "ledger": {
+    "fixture_parity_records": 160,
+    "native_rays": 225600,
+    "nested_units": 19482507,
+    "incident_fields": 2,
+    "erosions": 4,
+    "source_audit_subrays": 451200,
+    "corner_lookups": 3609600,
+    "RGB_queries": 445755,
+    "candidate_composites": 2,
+    "selected_foreground_identities": 2
+  },
+  "metric_scope_note": "As-run original foreground extension differs from historical complete-image extension; preserved and corrected from existing complete scalar only. Complete guards unchanged.",
+  "selected_Search_unchanged": true,
+  "packaging_pending": false,
+  "sealed_at": "2026-10-24T07:34:19.337Z"
+}
