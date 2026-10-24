@@ -1,0 +1,40 @@
+{
+  "start": "2026-10-24T01:21:15.083Z",
+  "deadline": "2026-10-24T01:41:15.083Z",
+  "cycle_ceiling": "2026-10-24T04:25:20.608Z",
+  "declared_utc": "2026-10-24T01:22:17.550Z",
+  "baseline_commit": "95e876b08300f714fcca90510ed47e578e6b8b96",
+  "baseline_sigma": 6.75,
+  "baseline_radius": 21,
+  "hypotheses": [
+    {
+      "name": "narrow",
+      "sigma": 5.0625,
+      "radius": 16
+    },
+    {
+      "name": "wide",
+      "sigma": 8.4375,
+      "radius": 26
+    }
+  ],
+  "order": "All four width/reference preflights before changed fields or RGB; identities from retained raw samples before candidates.",
+  "visible_question": "Does incident detail softness improve in frozen upper-rim and lower-return crops independently of wrong return positions and missing light?",
+  "detail_metric": "Luma adjacent-difference RMS and difference-to-target RMSE, horizontal and vertical jointly, only neighbor pairs with both endpoints in original glass and baseline coverage1 inside each original fixed crop. Fixed cohorts; position/illumination confounds retained.",
+  "caps": {
+    "rays": 0,
+    "heights": 0,
+    "new_physical_geometry_fields": 0,
+    "lens_RGB_queries": 400128,
+    "clear_RGB_queries": 0,
+    "incident_fields": 4,
+    "full_known_mask_erosions": 8,
+    "candidate_composites": 4,
+    "cached_identity_composites": 2,
+    "fits": 0
+  },
+  "unchanged": "All frozen input/mask/style/pose/geometry/D/index/AA2, unit response, shadow0; clear samples copied exactly; no output blur.",
+  "accounting": "Two unavoidable original Study mask constructors reserved as112800 reference-mask points, not physical height calls. Existing SSIM score Gaussian/erosion operations are metric calculations, separately counted, not material fields.",
+  "stop": "Invariant failure; unsupported required footprint rejects width before RGB; two fixed widths or deadline. No third width or fit.",
+  "source_truth": "Conditional temporal-mosaic availability; historical fingerprint mismatch and mask-ordering deviation remain explicit."
+}

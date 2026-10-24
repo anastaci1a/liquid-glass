@@ -1,0 +1,116 @@
+{
+  "utc": "2026-10-24T01:31:08.586Z",
+  "checks": [
+    "PASS 91 maintained Markdown documents: prose limits and local links",
+    "PASS 456 maintained display equations: fractions, subscripts, gradients and component notation",
+    "PASS 87097 local Pages links/assets/anchors",
+    "PASS 91 maintained documents published; 8460 HTML pages without Markdown-host detours"
+  ],
+  "code": [
+    {
+      "file": "reconstruction/geometric_optics.py",
+      "sha256": "0526a33f0ab8545151af61755ac8daa024d140573276d1dddf799b15c8172082",
+      "final_sha256": "0526a33f0ab8545151af61755ac8daa024d140573276d1dddf799b15c8172082",
+      "unchanged": true
+    },
+    {
+      "file": "reconstruction/geometric_render.py",
+      "sha256": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469",
+      "final_sha256": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469",
+      "unchanged": true
+    },
+    {
+      "file": "reconstruction/extended_fit.py",
+      "sha256": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f",
+      "final_sha256": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f",
+      "unchanged": true
+    },
+    {
+      "file": "reconstruction/vector_foreground.py",
+      "sha256": "e930b037ae7e8bc4ef98ea3a4aca78fabac9cee6e06a47b640ad6b18292714c6",
+      "final_sha256": "e930b037ae7e8bc4ef98ea3a4aca78fabac9cee6e06a47b640ad6b18292714c6",
+      "unchanged": true
+    },
+    {
+      "file": "reconstruction/foreground_response.py",
+      "sha256": "3a63e808e4ed23ff34a6d55088ef2ba0c9fe1f3b3ac4124b6d5e5977a40cc7c5",
+      "final_sha256": "3a63e808e4ed23ff34a6d55088ef2ba0c9fe1f3b3ac4124b6d5e5977a40cc7c5",
+      "unchanged": true
+    }
+  ],
+  "inputs": [
+    {
+      "case": "a",
+      "name": "source.png",
+      "expected": "84da0d24f30dc1f4080b568756d79044a9ac6568ecbff9595d02a38cd3239fb1",
+      "actual": "84da0d24f30dc1f4080b568756d79044a9ac6568ecbff9595d02a38cd3239fb1"
+    },
+    {
+      "case": "a",
+      "name": "target.png",
+      "expected": "efffc64b8a6ee5b84f0bfc295369aad38db8531e4686674861074592fbee54de",
+      "actual": "efffc64b8a6ee5b84f0bfc295369aad38db8531e4686674861074592fbee54de"
+    },
+    {
+      "case": "a",
+      "name": "known.png",
+      "expected": "03433579b8ddf8771df2bacf7aa1566e84b71bc81df71da1cd64069c00ff2413",
+      "actual": "03433579b8ddf8771df2bacf7aa1566e84b71bc81df71da1cd64069c00ff2413"
+    },
+    {
+      "case": "a",
+      "name": "search.svg",
+      "expected": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49",
+      "actual": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49"
+    },
+    {
+      "case": "b",
+      "name": "source.png",
+      "expected": "9789b4af085d505a23bdfac7615b0688125b0ea81587d1d58e23b68c6608268f",
+      "actual": "9789b4af085d505a23bdfac7615b0688125b0ea81587d1d58e23b68c6608268f"
+    },
+    {
+      "case": "b",
+      "name": "target.png",
+      "expected": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d",
+      "actual": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d"
+    },
+    {
+      "case": "b",
+      "name": "known.png",
+      "expected": "9d009193ae95ac9818a906fde1995dba531387f15926a5dd32e64ba34d3ff575",
+      "actual": "9d009193ae95ac9818a906fde1995dba531387f15926a5dd32e64ba34d3ff575"
+    },
+    {
+      "case": "b",
+      "name": "search.svg",
+      "expected": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49",
+      "actual": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49"
+    }
+  ],
+  "baseline_manifest_entries_unchanged": 43,
+  "privacy": {
+    "text_files_scanned": 18,
+    "findings": [],
+    "scope": "Own derived research artifacts; no private communication, credentials or software packages."
+  },
+  "runtime": "Scientific driver and saved-only presentation completed once; no reruns.",
+  "budgets": {
+    "rays": 0,
+    "heights": 0,
+    "lens_RGB_queries": 395956,
+    "clear_RGB_queries": 0,
+    "incident_fields": 4,
+    "full_known_mask_erosions": 8,
+    "candidate_composites": 4,
+    "cached_identity_composites": 2,
+    "original_reference_mask_points": 112800,
+    "source_audit_subrays": 902400,
+    "bilinear_mask_lookups": 7219200,
+    "known_mask_cells_processed": 16588800,
+    "score_calls": 8,
+    "SSIM_metric_Gaussian_calls": 40,
+    "SSIM_metric_mask_erosions": 8,
+    "fits": 0
+  }
+}
