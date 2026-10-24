@@ -1,0 +1,47 @@
+{
+  "started": "2026-10-24T02:50:55.630453+00:00",
+  "status": "STOPPED_FIRST_FAILURE",
+  "configs": [],
+  "counter_scope": "Closed levels are a subset of total nested interface points; never add them twice.",
+  "failure": "RuntimeError('Unaccounted shared call bevel_profile')",
+  "finished": "2026-10-24T02:50:55.632478+00:00",
+  "ledger": {
+    "attempted_rays": 66,
+    "closed_level_points": 0,
+    "nested_interface_points": 117,
+    "per_function": {
+      "HarmonicCircularBack.__post_init__": 1,
+      "ScaledFlatBack.__init__": 1,
+      "CircularHeightSolid.__init__": 1,
+      "HarmonicCircularBack.maximum_height": 6,
+      "NoneType.trace_flat_front_orthographic": 33,
+      "ScaledFlatBack.maximum_height": 3,
+      "ScaledFlatBack.slope_bound": 3,
+      "HarmonicCircularBack.slope_bound": 3,
+      "ScaledFlatBack.height_gradient": 33,
+      "HarmonicCircularBack.height_gradient": 33
+    },
+    "reservations": [
+      {
+        "R": 0.9972124917582454,
+        "index": 1,
+        "reserved_at": "2026-10-24T02:50:55.631285+00:00",
+        "rays": 66,
+        "nested": 15000,
+        "level": 2000,
+        "nested_start": 0,
+        "level_start": 0
+      }
+    ]
+  },
+  "zero_work": [
+    "source queries",
+    "RGB",
+    "filters",
+    "Fresnel",
+    "composites",
+    "images",
+    "fits",
+    "other fixtures"
+  ]
+}
