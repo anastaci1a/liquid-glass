@@ -405,13 +405,13 @@ Current E is 7.88349 / 6.14943. Expanded A's original 16-pixel boundary and expa
 
 A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.md) over-brightens the edge. Later closed-surface studies expose [source limitations](../research/experiments/miniplayer-native-front-26/README.md) and [grazing-sampling error](../research/experiments/miniplayer-grazing-quadrature-27/README.md); they are diagnostics, not newer completed reconstructions.
 
-**Latest surface diagnostic: an exact perimeter-slope front.** The real eighth-power front shares the working back, material, incident blur and light. It changes refraction and reflection together. The perimeter band is more visible, but too broad and gray; expanded E worsens to 12.59843 / 8.24853. This test is not selected.
+**Latest test: the perimeter front with a coherent reconstructed back.** New actual rays preserve the earlier transport within 0.000233 native pixels. The thin bright rim remains wrong, and expanded E worsens to 12.25789 / 6.76131. Original image guards, an angular-evaluation cap and publication timing fail; this is not an adopted replacement.
 
-![Expanded A: latest exact perimeter-front diagnostic](assets/geometric-expanded-perimeter-front-a.png)
+![Expanded A: latest co-designed surface test with failures disclosed](assets/geometric-expanded-codesigned-front-a.png)
 
-![Expanded B: latest exact perimeter-front diagnostic](assets/geometric-expanded-perimeter-front-b.png)
+![Expanded B: latest co-designed surface test with failures disclosed](assets/geometric-expanded-codesigned-front-b.png)
 
-[Actual surfaces/rays, fresh source proof, guard failures and the later accounting correction](../research/experiments/miniplayer-perimeter-front-75/README.md). The angular-evaluation budget was exceeded; no in-budget acceptance is claimed. The earlier [boundary-integrated shallow diagnostic](../research/experiments/miniplayer-boundary-render-57/README.md) remains a separate numerical control; its convergence does not certify this changed front. [Closed-branch scene limits](../research/experiments/miniplayer-grazing-branches-60/README.md) remain unresolved.
+[Actual paths, fresh source audits and every failure](../research/experiments/miniplayer-codesigned-native-78/README.md) · [Constructed surface](../research/experiments/miniplayer-perimeter-inverse-77/README.md). Earlier [front-only75](../research/experiments/miniplayer-perimeter-front-75/README.md) and [boundary-integration57](../research/experiments/miniplayer-boundary-render-57/README.md) evidence remains preserved. No historical score, mask or count changes.
 
 <details data-historical>
 <summary>Preserved verified numerical baseline</summary>
@@ -501,13 +501,13 @@ Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original 
 
 [Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Working selection and all failures](../research/decisions/miniplayer-working-primary.json) · [Four-reference material record](../research/experiments/miniplayer-incident-material-20/README.md).
 
-**Latest surface diagnostic: the exact same perimeter-front family, shortened only.** Compact E improves to 16.25391 / 16.24187, but both SSIM and original foreground guards still fail. Expanded results worsen. The new gray rim is not the reference’s thin bright contour; no compact-specific model is selected.
+**Latest test: the exact same co-designed family, shortened only.** Compact E becomes 16.74083 / 16.57926, but interior, SSIM and original foreground guards still fail. The broad gray band is not the reference’s thin bright rim. Expanded results worsen; there is no compact-specific fit or adopted replacement.
 
-![Compact A: latest shared perimeter-front diagnostic](assets/geometric-compact-perimeter-front-a.png)
+![Compact A: latest shared co-designed test with failures disclosed](assets/geometric-compact-codesigned-front-a.png)
 
-![Compact B: latest shared perimeter-front diagnostic](assets/geometric-compact-perimeter-front-b.png)
+![Compact B: latest shared co-designed test with failures disclosed](assets/geometric-compact-codesigned-front-b.png)
 
-[Four-reference evidence and all local limits](../research/experiments/miniplayer-perimeter-front-75/README.md). [Earlier boundary-integration evidence](../research/experiments/miniplayer-boundary-render-57/README.md) remains preserved.
+[Four-reference results, budget overrun and late-publication record](../research/experiments/miniplayer-codesigned-native-78/README.md). Source/coverage checks and transport preservation do not establish full fidelity.
 
 <details data-historical>
 <summary>Preserved unfitted expanded-family transfer baseline</summary>

@@ -58,6 +58,16 @@ Stop a proposal at invalid paths, unsupported required source samples, exhausted
 
 Close a stage when its declared question is answered. Early completion is allowed; waiting does not create evidence. Record elapsed time and any overrun honestly.
 
+## Control accounting and useful budgets
+
+Reuse valid baseline evidence when its inputs, code and protocol are unchanged. Loading a verified result is different from recomputing it. Every recomputed control consumes the declared evaluation category, even when it is not a candidate trial.
+
+Define categories before execution. Candidate observations, solver evaluations, native rays and branch depth can bound substantive work. Low-level counters may help diagnose execution, but bookkeeping must not replace testing the visible defect. Device-performance optimization remains separate from model research.
+
+Stage time includes preparation, implementation, controls, review, required checks and publication. Keep the parent-stage deadline when a subpass closes early. Do not reset it at the first native call or silently exclude packaging.
+
+If a counter was incomplete, preserve its as-run ledger and publish the actual supplement. A cap overrun remains a protocol failure; do not relabel operations afterward to make it pass. Repair future instrumentation without rerunning completed science merely to obtain a cleaner ledger.
+
 ## Verification
 
 | Claim | Required evidence |
