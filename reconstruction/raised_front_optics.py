@@ -31,6 +31,37 @@ class VerticalScaleBack:
         return self.base.boundary_mask(x, y)
 
 
+def monotone_front_reflection_escape(surface, direction, gradient):
+    """Certify upward escape over a monotone convex-distance spline height.
+
+    Called only for the actual reflected direction of the downward orthographic
+    camera. Convex distance stays above its entry value along an outward ray;
+    nonincreasing height therefore stays below the rising ray. This certificate
+    does not alter a ray or apply to arbitrary directions at a flat plateau.
+    """
+    from spline_height_back import SplineFootprintBack
+    from rounded_rectangle_back import RoundedRectangleHarmonicBack
+    base = surface
+    while type(base) is VerticalScaleBack:
+        base = base.base
+    v = np.asarray(direction, float)
+    g = np.asarray(gradient, float)
+    if v.shape[-1] != 3 or g.shape != v.shape[:-1]+(2,):
+        raise ValueError('Matched reflected directions and actual gradients required')
+    valid = np.zeros(v.shape[:-1], bool)
+    if type(base) is not SplineFootprintBack:
+        return valid
+    if type(base.coordinate) is not RoundedRectangleHarmonicBack or base.coordinate.cap_join_width != 0:
+        return valid
+    if np.any(np.diff(base.profile.c) > 0):
+        return valid
+    finite = np.isfinite(v).all(axis=-1) & np.isfinite(g).all(axis=-1)
+    outward = np.sum(g*v[..., :2], axis=-1) <= 0
+    plateau = np.all(g == 0, axis=-1)
+    stationary = np.all(v[..., :2] == 0, axis=-1)
+    return finite & (v[..., 2] > 0) & outward & (~plateau | stationary)
+
+
 def trace_raised_front_orthographic(back, x, y, scale, index, background_distance, charge=None, front_surface=None):
     if not 0 < scale <= 1 or index < 1 or background_distance <= back.maximum_height:
         raise ValueError('Invalid physical front/index/background parameters')
@@ -109,8 +140,14 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
     tail = np.mean((1-Rf)*Rb, axis=-1)
     reflected = reflect_direction(camera, nf)
     reflection_margin = escape_clearance(reflected, front_slope, upward=True)
+    reflection_certificate = 'global Lipschitz slope'
     if np.any(reflection_margin <= 0):
-        raise ValueError('Direct front reflection escape unresolved')
+        monotone = monotone_front_reflection_escape(
+            back if front_surface is None else front_surface,
+            reflected, np.stack([scale*gx, scale*gy], -1))
+        if np.any((reflection_margin <= 0) & ~monotone):
+            raise ValueError('Direct front reflection escape unresolved')
+        reflection_certificate = 'Lipschitz or convex-distance monotone height'
     if np.max(abs(Rf.mean(axis=-1)+primary+tail-1)) > 2e-14:
         raise ValueError('Power closure')
     shape = x.shape
@@ -134,4 +171,5 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
         discriminant=expand(discriminant), primary_back_clearance=expand(margin_b),
         primary_front_clearance=expand(margin_f), polarization_plane_residual=expand(plane),
         outgoing_back_clearance=expand(outgoing_margin), reflection_front_clearance=expand(reflection_margin),
+        front_reflection_escape_certificate=np.array(reflection_certificate),
         iterations=np.array(iteration+1))
