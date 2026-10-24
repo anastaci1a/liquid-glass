@@ -1,0 +1,57 @@
+{
+  "start": "2026-10-24T07:39:15.041Z",
+  "deadline": "2026-10-24T07:54:15.041Z",
+  "checkpoint_deadline": "2026-10-24T07:44:15.041Z",
+  "scope": "All closed24 regular native FIRST FRONT events only, no new geometry or tracing. Raw reflected-power/scene-role diagnostic, no RGB or fidelity image.",
+  "caps": {
+    "retained_normals": 100000,
+    "primitive_input_points": 200000,
+    "decoded_bytes": 536870912,
+    "source_plane_endpoint_checks": 250000,
+    "raw_corner_lookups": 1000000,
+    "incident_corner_lookups": 1000000,
+    "saved_reduction_elements": 1000000,
+    "RGB": 0,
+    "heights": 0,
+    "tracing": 0,
+    "filters": 0,
+    "composites": 0,
+    "images_RGB": 0,
+    "fit": 0
+  },
+  "selection": "Exactly all cached regular_entry points in original470x480 AA2 grid, including549 old TIR launches. No source/power/angle-based subset.",
+  "reduction_reservation": {
+    "regular_flags": 225600,
+    "normal_z": 98989,
+    "entry_xy": 197978,
+    "Fresnel_sp": 197978,
+    "reflected_z": 98989,
+    "AA_contributions": 98989,
+    "pixel_statistics": 56400,
+    "total": 974923,
+    "meaning": "Each selected field is consumed in one joint streaming diagnostic pass. Range, fixed-bin, power/support and band statistics share that pass; no repeated vector reductions or threshold search. Primitive internal checks and endpoint support are charged separately."
+  },
+  "fixed_diagnostics": {
+    "incidence_bins_degrees": [
+      0,
+      20,
+      38,
+      60,
+      80,
+      90
+    ],
+    "incidence_histogram_width_degrees": 1,
+    "grazing_bands_degrees": [
+      60,
+      80
+    ],
+    "reflectance_thresholds": [
+      0.1,
+      0.25,
+      0.5
+    ]
+  },
+  "source": "Downward air meets fixedbackgroundz=-2 first; actual originalL89/corrected center. Raw4corners and optional exact21radius incident-compatible masks separate. No new erosion or specularPSF/tone. Up/lateral environment unobserved.",
+  "AA": "UnpolarizedRf=(Rs+Rp)/2 ONCE for first interface. Original4subray average, outside regular events contributes0; this is unit interface-reflectance, not reflectedRGB.",
+  "stop": "First hash/header/selection/primitive/shape/cap/numerical invariant failure, no retry or subset fallback. Preserve all power/unsupported endpoints. No next scene/target."
+}
