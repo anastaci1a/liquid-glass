@@ -1,0 +1,39 @@
+{
+  "start": "2026-10-24T05:58:11.523Z",
+  "deadline": "2026-10-24T06:18:11.523Z",
+  "checkpoint_deadline": "2026-10-24T06:03:11.523Z",
+  "shared_pin": "4248efbadea25716784735c8b8e353faae8131fd",
+  "question": "Can a smooth convex closed grazing rim provide the reference upper-rim/lower-return structure through complete primary paths under the frozen Search scene/source?",
+  "surface": {
+    "shared_primitive": "ClosedCircularOval",
+    "kappa": 0,
+    "R": 0.9972124917582454,
+    "depth": 0.054545454545454536,
+    "center_z": -0.054545454545454536,
+    "central_total_thickness": 0.10909090909090907,
+    "index": 1.5,
+    "D": 2,
+    "L": 89,
+    "center": [
+      1511.2043368857017,
+      672.8753258356955
+    ]
+  },
+  "frozen": "Source/known/case/styles/masks/tone0.5193880051291454+0.4473611800152188/incident6.75r21/AA2/shadow0. No selected state change.",
+  "caps": {
+    "fixture_rays": 64,
+    "native_rays": 225600,
+    "level_points": 20000000,
+    "direct_front_entries": 100000,
+    "known_corner_lookups": 4000000,
+    "conditional_comparisons": 2,
+    "incident_fields": 2,
+    "source_RGB_queries": 451200
+  },
+  "reservations": "Before each shared trace reserve67 level batches per launch: front1, next-boundary initial1, high1,64midpoints,final1 => conservative70 batches. Native70*225600=15792000 levels, plus fixture70*64=4480 <20million. Runtime increments before each adapter-level delegate. No cap reset.",
+  "geometry": "Exact radius scaling of shared implicit F and xy gradients; shared front roots/boundary classification. Same one F for all normals and sections. Convex ellipsoid proof is analytic.",
+  "checkpoint": "Original frozen input bytes verified first, shared primitive controls reused. <=64 new unit-index/mirror/radius-root controls; TIR recorded as valid physical branch, not geometry failure.",
+  "source_stop": "Any incomplete required primary path prevents RGB/image. TIR requires continued internal reflection not implemented by transmitted-first driver; no replacement pixels. Whole/all-original-guard finite43x43+bilinear gates before RGB if all paths complete.",
+  "direct_front_scope": "Optional<=100000 direct-front entries. Downward reflected directions meet the modeled background plane, so raw4corners must be audited against both known masks. Never assign infinite annulus to such rays. No environment radiance recovered.",
+  "stop": "One fixed depth/shape only. First unexpected invariant/cap/deadline or fixed observation complete. Preserve TIR/incomplete status; no threshold/depth/source fallback."
+}
