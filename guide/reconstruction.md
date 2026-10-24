@@ -403,7 +403,7 @@ Paired E improves from H1's 45.424 / 18.220 to 12.908 / 8.576. All original pair
 
 [Selected state and limits](../research/experiments/expanded-contrast-guard-02/primary-decision.json) · [Bounded experiment and exact replay](../research/experiments/expanded-contrast-guard-02/README.md) · [Independent review](../research/experiments/agent-expanded-contrast-peer-09/README.md).
 
-**Latest outline experiment: held, not selected.** Actual curved front/back surfaces now produce an outer highlight. The reconstructed physical back preserves useful refraction while a hypothetical common studio light supplies an outer highlight. Explicit interface powers and a shared material half-step bring body tone closer. Expanded A’s original boundary and two expanded B foreground guards still fail. 
+**Latest outline experiment: held, not selected.** Actual curved front/back surfaces now produce an outer highlight. The reconstructed physical back preserves useful refraction while a hypothetical common studio light supplies an outer highlight. Explicit interface powers and a shared material half-step bring body tone closer. Expanded A’s original boundary and two expanded B foreground guards still fail.
 
 The selected images above remain unchanged.
 

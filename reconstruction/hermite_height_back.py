@@ -41,3 +41,41 @@ class HermiteFootprintBack:
     def boundary_mask(self,x,y):
         rho=self.coordinate.footprint(x,y)[0];h,_,_,inside=self.height_gradient(x,y)
         return (rho==1)|(inside&(h==0))
+
+
+class CircularRadiusCoordinate:
+    """Circle radius in original physical units; no height or optical law."""
+    def __init__(self, radius):
+        if not np.isfinite(radius) or radius <= 0:
+            raise ValueError('Positive finite circular footprint radius required')
+        self.radius = float(radius)
+
+    def footprint(self, x, y):
+        x, y = np.broadcast_arrays(np.asarray(x, float), np.asarray(y, float))
+        return np.hypot(x/self.radius, y/self.radius), x, y
+
+
+class CircularHarmonicFootprintBack:
+    """Existing harmonic circle with an explicit shared radius coordinate.
+
+    Radius changes lateral coordinates only, matching the original circular
+    adapter. Actual heights and derivatives delegate to the same shared law.
+    This does not certify a Hermite back as a convex solid.
+    """
+    def __init__(self, radius, depth=.15, crown_depth=.4):
+        from geometric_optics import HarmonicCircularBack
+        self.coordinate = CircularRadiusCoordinate(radius)
+        self.radius = self.coordinate.radius
+        self.half = np.array([self.radius, self.radius])
+        self.base = HarmonicCircularBack(depth=depth, crown_depth=crown_depth)
+        self.maximum_height = self.base.maximum_height
+        self.slope_bound = self.base.slope_bound/self.radius
+
+    def height_gradient(self, x, y):
+        h, hx, hy, inside = self.base.height_gradient(
+            np.asarray(x)/self.radius, np.asarray(y)/self.radius)
+        return h, hx/self.radius, hy/self.radius, inside
+
+    def boundary_mask(self, x, y):
+        return self.base.boundary_mask(
+            np.asarray(x)/self.radius, np.asarray(y)/self.radius)

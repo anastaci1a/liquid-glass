@@ -1,8 +1,8 @@
 # Current state
 
-Current direction: expanded playback now has a verified positive-spline/shared-response increment. The [structured continuation](../experiments/miniplayer-pass-review-16/README.md) assesses every stage and holds the two-surface outline candidate for local failures. 
+Current direction: expanded playback now has a verified positive-spline/shared-response increment. The [structured continuation](../experiments/miniplayer-pass-review-16/README.md) assesses every stage and holds the two-surface outline candidate for local failures.
 
-The [inverse-back forward test](../experiments/miniplayer-inverse-forward-18/README.md) now preserves useful refraction and improves all original body/foreground guards with a visible outer highlight, but expanded A’s original partial boundary still fails. 
+The [inverse-back forward test](../experiments/miniplayer-inverse-forward-18/README.md) now preserves useful refraction and improves all original body/foreground guards with a visible outer highlight, but expanded A’s original partial boundary still fails.
 
 The subsequent [interface/material review](../experiments/miniplayer-interpretation-review-21/README.md) holds the common incident-material half-step for original boundary/foreground failures. Preserve selected and historical states.
 

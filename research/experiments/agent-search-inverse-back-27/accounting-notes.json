@@ -1,0 +1,16 @@
+{
+  "as_run_ledger_preserved": true,
+  "checkpoint_profile_queries": 279,
+  "solve_RHS": 1952,
+  "postsolve_node_RHS": 1025,
+  "total_RHS": 2977,
+  "postsolve_Hermite_queries": 4100,
+  "profile_query_total": 13310,
+  "Snell_point_total": 7009,
+  "bound_segments": 1024,
+  "edge_limit_kinematics_calls": 2,
+  "edge_limit_Snell_point_calculations": 5,
+  "edge_scope": "Two kinematic one-sided calls use two Snell vectors each; one final Hermite validation node adds one. They are included in7009, not extra regular tangent rays.",
+  "accounting": "Each analytic h/hprime/hsecond triplet counts3 scalar queries. Each original API control counts12 conservative scalar/delegate outputs before evaluation. All four1025-point Hermite endpoint/validation batches are counted before evaluation. No ledger reset or solve retry.",
+  "mapping_scope": "Stored radius nodes are strictly ordered and sampled mapping derivatives are positive. No interval bound of the complete ODE interpolant between samples is claimed."
+}
