@@ -171,5 +171,6 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
         discriminant=expand(discriminant), primary_back_clearance=expand(margin_b),
         primary_front_clearance=expand(margin_f), polarization_plane_residual=expand(plane),
         outgoing_back_clearance=expand(outgoing_margin), reflection_front_clearance=expand(reflection_margin),
+        front_reflection_escape_certified=regular.copy(),
         front_reflection_escape_certificate=np.array(reflection_certificate),
         iterations=np.array(iteration+1))
