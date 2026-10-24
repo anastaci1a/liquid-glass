@@ -1,0 +1,35 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T13:47:45.730Z",
+  "deadline": "2026-10-24T14:12:45.730Z",
+  "checkpoint_minutes": 6,
+  "defect": "Missing compressed/reversed white source returns around the miniplayer boundary. Isolate transmitted geometry rather than add reflected illumination.",
+  "hypothesis": "The existing shared raised-perimeter physical height creates a nonmonotone thickness and outward/inverted transport band. Compare one unchanged shared .4/.1/.4 prior against the canonical monotone spline, with matched flat front and material.",
+  "models": [
+    "Canonical SplineFootprintBack from music-mini-player.json",
+    "Existing RaisedPerimeterRoundedBack depth0.4/core_ratio0.1/crown0.4"
+  ],
+  "frozen": "Original cases/masks/pose/foreground, index1.5/D2.1L, incident sigma6.75R21, common working gain/bias, actual primary Fresnel power, no new reflection illumination or shadow. Only major length differs between expanded/compact.",
+  "caps": {
+    "fixture_rays": 128,
+    "native_rays": 4486400,
+    "height_points": 12000000,
+    "adapter_units": 240000000,
+    "Snell_points": 4486528,
+    "Fresnel_points": 9000000,
+    "source_audit_subrays": 8972800,
+    "bilinear_mask_lookups": 72000000,
+    "RGB_queries": 9000000,
+    "Study_mask_points": 1121600,
+    "known_erosions": 12,
+    "incident_fields": 4,
+    "candidate_composites": 8,
+    "score_calls": 8,
+    "metric_gaussians": 40,
+    "metric_erosions": 8,
+    "fits": 0
+  },
+  "source_gate": "Both geometries, all four frozen references, whole body and ALL original guard/miss subrays, full finite kernel/bilinear proof before ANY changed field/RGB. Stop first incomplete/unsupported required sample; no source repair.",
+  "checkpoint": "Bounds, actual gradient FD, unit-index straight paths and frozen inputs before native arrays. The nonconvex back uses the shared primary height certificate only, never the convex reflected solver.",
+  "stop": "Exactly one raised prior and matched control, no parameter fit, height/distance sweep, light rescue, score waiver or source change. Native AA2 preserved as a diagnostic; boundary convergence from another geometry does not transfer."
+}
