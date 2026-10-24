@@ -20,7 +20,24 @@ Use Sessionsation for authorized session-to-session tasks. Keep the existing vis
 
 A native queue receipt confirms delivery acceptance, not execution or completion. Check native working/idle observations and the assigned experiment’s ready flag. Review ready evidence promptly, including when reply scanning is inconclusive. Read-only artifact inspection supports review; tasks and decisions still go through Sessionsation.
 
-Keep session identifiers and transport payloads outside the public repository. Record scientific ownership, decisions, budgets and evidence in project documents.
+### Native recovery and evidence
+
+Distinguish a live native attachment from its terminal host. An unavailable host can block relaunch while the existing native process still supports message recovery. Use current Sessionsation capabilities; never infer that ordinary Queue or Submit can resume a failed turn.
+
+| Observed state | Authorized route |
+| --- | --- |
+| Idle | Submit under current guards. |
+| Working | Non-steering Queue; avoid duplicate assignments. |
+| Errored or interrupted, process retained | Explicit native Resume with the current previous-turn, runtime and stop-token guards. |
+| Process exited | A separately validated launch plan and existing authorization; no automatic replacement session. |
+
+The stop-token key must be present. It may be null only when the current observation supplies no token. Revalidate through Sessionsation; do not guess identifiers or reuse stale preconditions. A recovery message must explicitly preserve expired experiments and define its new bounded task.
+
+Native queue acceptance, input consumption, execution and completion are separate facts. An explicit start can be rejected because automatic dispatch already consumed the item. Observe the original receipt and exact-turn checkpoints before concluding what ran; do not resend accepted or uncertain input.
+
+Retain the original UUID and request before sending. For contention, inspect the receipt or retry only the identical request when the installed contract permits it. Never create a replacement UUID to bypass an uncertain delivery. Read-only checkpoint association alone is not message-delivery proof.
+
+Keep session identifiers and transport payloads outside the public repository. Record scientific ownership, actual receipt clocks, budgets and evidence in project documents.
 
 ## Experiments
 
