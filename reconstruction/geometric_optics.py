@@ -292,28 +292,35 @@ class CircularHeightSolid:
     """Convex closed solid for a separately certified concave circular back.
 
     The very same height supplies the back level and normal; front is z=0 and
-    the footprint r<=1. At an edge-thickness0 crease there is no unique normal.
-    This wrapper adds no new geometry parameters or displacement map.
+    the footprint r<=radius. Radius scales the lateral coordinates only; the
+    supplied back's height remains in the original physical length units.
+    At an edge-thickness0 crease there is no unique normal.
     """
-    def __init__(self,back):
+    def __init__(self,back,radius=1.):
         if not isinstance(back,(RadialCurvatureBack,CircularBevel,HarmonicCircularBack)) or back.maximum_height<=0:raise ValueError('A positive certified concave circular height is required')
-        self.back=back;self.half_extents=np.array([1.,1.,back.maximum_height/2]);self.center=np.array([0.,0.,-back.maximum_height/2]);self.level_point_evaluations=0;self.maximum_level_points=None
+        if not np.isfinite(radius) or radius<=0:raise ValueError('Positive finite footprint radius required')
+        self.back=back;self.radius=float(radius);self.half_extents=np.array([self.radius,self.radius,back.maximum_height/2]);self.center=np.array([0.,0.,-back.maximum_height/2]);self.level_point_evaluations=0;self.maximum_level_points=None
+
+    def _height_gradient(self,x,y):
+        if self.radius==1.:return self.back.height_gradient(x,y)
+        h,hx,hy,inside=self.back.height_gradient(x/self.radius,y/self.radius)
+        return h,hx/self.radius,hy/self.radius,inside
 
     def level_gradient(self,p):
         p=np.asarray(p,float);count=p[...,0].size
         if self.maximum_level_points is not None and self.level_point_evaluations+count>self.maximum_level_points:raise RuntimeError('Declared level-point budget would be exceeded')
-        self.level_point_evaluations+=count;x,y,z=p[...,0],p[...,1],p[...,2];h,hx,hy,_=self.back.height_gradient(x,y);r2=x*x+y*y
+        self.level_point_evaluations+=count;x,y,z=p[...,0],p[...,1],p[...,2];h,hx,hy,_=self._height_gradient(x,y);r2=(x/self.radius)**2+(y/self.radius)**2
         values=np.stack([z,-z-h,r2-1],-1);j=np.argmax(values,-1);ones=np.ones_like(x);zero=np.zeros_like(x)
-        g=np.stack([np.stack([zero,zero,ones],-1),np.stack([-hx,-hy,-ones],-1),np.stack([2*x,2*y,zero],-1)],-2)
+        g=np.stack([np.stack([zero,zero,ones],-1),np.stack([-hx,-hy,-ones],-1),np.stack([2*x/self.radius**2,2*y/self.radius**2,zero],-1)],-2)
         return np.take_along_axis(values,j[...,None],-1)[...,0],np.take_along_axis(g,j[...,None,None],-2)[...,0,:]
 
     def front_height(self,x,y):
-        x,y=np.broadcast_arrays(np.asarray(x,float),np.asarray(y,float));return np.zeros_like(x),np.hypot(x,y)<1
+        x,y=np.broadcast_arrays(np.asarray(x,float),np.asarray(y,float));return np.zeros_like(x),np.hypot(x/self.radius,y/self.radius)<1
 
-    def boundary_mask(self,x,y):return self.back.boundary_mask(x,y)
+    def boundary_mask(self,x,y):return self.back.boundary_mask(np.asarray(x)/self.radius,np.asarray(y)/self.radius)
 
     def nonsmooth_mask(self,p,uncertainty):
-        h,_,_,_=self.back.height_gradient(p[:,0],p[:,1]);near=abs(np.hypot(p[:,0],p[:,1])-1)<=2*uncertainty
+        h,_,_,_=self._height_gradient(p[:,0],p[:,1]);near=abs(np.hypot(p[:,0]/self.radius,p[:,1]/self.radius)-1)<=2*uncertainty/self.radius
         return near&((abs(p[:,2])<=2*uncertainty)|(abs(p[:,2]+h)<=2*uncertainty))
 
 

@@ -70,3 +70,7 @@ Sources include modeled or temporally reconstructed content. A finite support pr
 ## Detached Music Search
 
 [Verified shared tone](../experiments/search-neutral-primary-01/README.md) improves E66.086/55.940 to27.662/22.030. Incident sigma6.75 stays selected; both fixed blur alternatives fail guards. Thin rim and returns remain unresolved. B lower-return color and detail regress. Outline scene feasibility is next; no full-pipeline or physical-material acceptance is claimed.
+
+## Shared circular-solid interface
+
+[Fixed-radius contract](../experiments/circular-solid-radius-01/README.md) passes 16 configurations and 96 ordered segments with exact default unit behavior. No image or scene is adopted. Search still lacks reflected-environment support; expanded playback remains outside this convex wrapper because its selected back is nonconcave.
