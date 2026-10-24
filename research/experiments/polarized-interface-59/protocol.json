@@ -1,0 +1,31 @@
+{
+  "status": "DECLARED_BEFORE_NUMERICAL_EXECUTION",
+  "start": "2026-10-24T13:21:03.960Z",
+  "deadline": "2026-10-24T13:41:03.960Z",
+  "checkpoint_minutes": 7,
+  "question": "Can the shared interface preserve within-ray polarization and TIR phase through later changing incidence planes, without repeating scalar unpolarized means?",
+  "scope": "Lossless real positive scalar indices; incoherent BETWEEN distinct geometric paths, full2x2 complex coherence WITHIN each ray. No diffraction/inter-path interference, spectrum, scene assumption or image fit.",
+  "caps": {
+    "interface_points": 128,
+    "Snell_points": 128,
+    "reflection_points": 128,
+    "complex_Fresnel_points": 128,
+    "shared_power_comparator_points": 24,
+    "geometry_origin_rays": 0,
+    "source_RGB": 0,
+    "images": 0,
+    "fits": 0
+  },
+  "fixtures": "30fixed medium/angle/polarization cases with a rotated input basis for60interfaces total; optionally24interfaces from12completed58events compared to existing shared two-interface primary power. No new surface trace.",
+  "checkpoint": "First normal-incidence dielectric fixture conserves power and preserves global polarization; stop first invariant failure, no in-place retry.",
+  "tolerances": {
+    "closure": 5e-13,
+    "basis_covariance": 5e-13,
+    "old_two_interface_power": 1e-12,
+    "PSD": 1e-12
+  },
+  "references": [
+    "https://ocw.mit.edu/courses/6-974-fundamentals-of-photonics-quantum-electronics-spring-2006/fafcb9e36b7749f4eeb099d666bdf70a_electr_wav_inter.pdf"
+  ],
+  "stop": "No ray origin, scene/source query, image, fit or transport-tree execution. Do not change shared Snell/Fresnel/reflection legacy functions."
+}
