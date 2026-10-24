@@ -1,0 +1,98 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T10:16:45.343Z",
+  "deadline": "2026-10-24T10:41:45.343Z",
+  "checkpoint_minutes": 5,
+  "question": "Does anchored perimeter-curvature redistribution improve the thin bright outline without moving transmitted features?",
+  "geometry": "Actual shared BevelFootprintBack front using fixed39 center/slope anchors, actual Hermite back39. Same coordinate/normals/root solver. No empirical warp.",
+  "frozen": "Current working20half g/b, actual primary power, annular environment4, n1.5D2.1,incident6.75R21,original allfourcases/masks/AA2/foreground/shadowzero.",
+  "caps": {
+    "fixture_comparator_rays": 30,
+    "profile_bound_segments": 2048,
+    "native_grid_rays": 2243200,
+    "surface_point_queries": 100000000,
+    "conservative_adapter_units": 2000000000,
+    "reserved_Snell_interface_points": 4500000,
+    "reserved_Fresnel_interface_points": 4500000,
+    "reserved_reflection_points": 2250000,
+    "source_audit_subrays": 4486400,
+    "bilinear_known_lookups": 36000000,
+    "source_RGB_queries": 4500000,
+    "incident_fields": 4,
+    "known_erosions": 8,
+    "candidate_composites": 4,
+    "score_calls": 8,
+    "Study_constructor_pixels": 1200000,
+    "environment_direction_queries": 1500000,
+    "additional_fits": 0,
+    "reference_mask_archive_pixels": 1200000,
+    "identity_composites": 4
+  },
+  "geometry_tolerances": {
+    "root_bracket": 1e-11,
+    "back_residual": 2e-11,
+    "gradient_FD": 1e-7,
+    "Snell_or_mirror": 1e-9
+  },
+  "checkpoint": "Verify original input/mask hashes before new geometry fixtures; new actual pair mirrors and index-one paths pass within five minutes. Full whole+guard finite source support before RGB per member.",
+  "source_map_policy": "Report actual-versus-prior coordinate difference from retained paths; do not overwrite actual coordinates, change source/masks or round to force identity.",
+  "stop": "One fixed four-reference observation; no second front/profile/material/light, no fit. Stop first invariant, path/source failure or original deadline. All original/current guards and local crops retained.",
+  "scope": "Separate forward validation after completed17; no restart of17 and no guarantee of a passing score. Scene remains hypothetical and retained reflected tail remains unassigned.",
+  "fixed_crops": {
+    "expanded": {
+      "lower_right_rim": [
+        1300,
+        480,
+        1580,
+        515
+      ],
+      "upper_left_rim": [
+        315,
+        315,
+        545,
+        355
+      ],
+      "left_cap": [
+        310,
+        335,
+        380,
+        494
+      ],
+      "body": [
+        900,
+        390,
+        1080,
+        440
+      ]
+    },
+    "compact": {
+      "lower_right_rim": [
+        1090,
+        738,
+        1370,
+        773
+      ],
+      "upper_left_rim": [
+        515,
+        573,
+        745,
+        613
+      ],
+      "left_cap": [
+        515,
+        593,
+        585,
+        752
+      ],
+      "body": [
+        871,
+        648,
+        1051,
+        698
+      ]
+    }
+  },
+  "prior_deadline_retained": false,
+  "prior_attempted_fixture_rays": 0,
+  "shared_certificate": "Validated shared monotone convex-distance certificate including the known bevel law"
+}
