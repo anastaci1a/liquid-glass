@@ -1,0 +1,104 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T04:39:26.315Z",
+  "deadline": "2026-10-24T05:24:26.315Z",
+  "checkpoint_minutes": 10,
+  "visible_defect": "Missing thin bright lower/right rim in expanded B, uneven cap/upper rim in A; preserve body tone and content.",
+  "question": "Can surface-derived first-return reflection of a broad annular studio emitter supply visible rim structure without screen-space edge painting?",
+  "references": [
+    "expanded original Music0s/6.033s",
+    "compact original Music0s/6.033s as exact-family validation"
+  ],
+  "hypothesis": "One analytic infinite-distance annular white emitter, centred on +z camera axis, polar angles30..80 degrees with10degree smooth shoulders. Test radiance1 and4 relative to declared linear display white; no per-image/color/spatial coefficients.",
+  "assumptions": [
+    "Emitter is hypothetical and unobserved; never call it recovered Apple environment.",
+    "Use sRGB decoding as an explicit response approximation, not calibrated physical radiometry.",
+    "Retained unit-throughput transmission is an effective calibrated baseline; adding a separate emitted-radiance term does not identify its physical material.",
+    "Render only initial front reflection plus the certified first back/front-return branch. Later internal power stays an interval, bounded using max emitter radiance; do not replace it with a color or claim full reflection."
+  ],
+  "allowed": [
+    "Shared environment radiance and linear-response conversion utility",
+    "Actual cached normals, reflect_direction/refract/fresnel_components from unchanged shared core",
+    "Two fixed emitter amplitudes with same shape across every reference",
+    "Source-independent environment ray evaluation; no new backdrop query"
+  ],
+  "frozen": [
+    "all family geometry/index/D/AA/source/incident6.75/gain/bias/shadow/foreground/masks",
+    "expanded and compact share same light as a requirement",
+    "all old accepted outputs and proofs"
+  ],
+  "caps": {
+    "geometry_grid_rays": 0,
+    "height_calls": 0,
+    "reflected_direction_points": 1500000,
+    "snell_interface_points": 1500000,
+    "fresnel_interface_points": 3000000,
+    "environment_direction_queries": 3000010,
+    "candidate_composites": 8,
+    "identity_composites": 4,
+    "Study_constructor_pixels": 1200000,
+    "score_calls": 12,
+    "fits": 0,
+    "source_queries": 0,
+    "optical_filters": 0
+  },
+  "checkpoint": "Exact zero-light replay, valid first-front order via unchanged same-surface certificate, finite unit normal/direction and power closure. Shared-interface agreement before helper execution.",
+  "stop": "At first invariant failure, deadline, max2fixed lights, or all four paired observations. Render intervals/conditional images honestly; reject visible/body/boundary regressions. No emitter tuning, radius changes, source completion or painted halo.",
+  "outcome_policy": "Visual conditional-light hypothesis only. Selected model changes require independent review and explicit scene/model limitations. No full fidelity or full-pipeline claim.",
+  "fixed_crops": {
+    "expanded": {
+      "lower_right_rim": [
+        1300,
+        480,
+        1580,
+        515
+      ],
+      "upper_left_rim": [
+        315,
+        315,
+        545,
+        355
+      ],
+      "left_cap": [
+        310,
+        335,
+        380,
+        494
+      ],
+      "body": [
+        900,
+        390,
+        1080,
+        440
+      ]
+    },
+    "compact": {
+      "lower_right_rim": [
+        1090,
+        738,
+        1370,
+        773
+      ],
+      "upper_left_rim": [
+        515,
+        573,
+        745,
+        613
+      ],
+      "left_cap": [
+        515,
+        593,
+        585,
+        752
+      ],
+      "body": [
+        871,
+        648,
+        1051,
+        698
+      ]
+    }
+  },
+  "response_role": "Existing effective primary transmission is retained exactly. A separate hypothetical reflected irradiance term is added after explicit sRGB decoding and before re-encoding/AA. Its scale/calibration and possible overlap with old empirical bias remain unvalidated; no full energy/radiometric identification is claimed.",
+  "tail_interval": "Remaining internal power is retained in saved branch records. With all hypothetical scene radiance bounded by max(1,E), report lower first-return and upper omitted-radiance interval; never assign residual a color in the displayed lower-order diagnostic."
+}

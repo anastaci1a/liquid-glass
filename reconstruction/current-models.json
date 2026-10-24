@@ -46,7 +46,10 @@
       "fidelity": "incomplete",
       "full_radiance_verified": false,
       "accepted_increment": true,
-      "full_pipeline_pass": false
+      "full_pipeline_pass": false,
+      "family_record": "reconstruction/families/music-mini-player.json",
+      "family_member": "expanded",
+      "active_parameter_source": "reconstruction/families/music-mini-player.json"
     },
     "navigation-control": {
       "name": "Navigation",
@@ -65,18 +68,23 @@
     },
     "compact-mini-player": {
       "name": "Compact miniplayer",
-      "geometry": "Harmonic back over the frozen smoothed capsule",
-      "material": "Incident Gaussian sigma 6.75 native pixels and common neutral gain/bias",
-      "record": "research/experiments/compact-geometry-01/selected.json",
-      "study": "research/experiments/compact-geometry-01/README.md",
+      "geometry": "Same selected expanded positive spline and fixed minor/corner geometry; major length only differs",
+      "material": "Exact expanded family: incident6.75 before refraction, same encoded response, no generated outline or shadow",
+      "record": "reconstruction/families/music-mini-player.json",
+      "study": "research/experiments/miniplayer-shared-transfer-06/README.md",
+      "family_record": "reconstruction/families/music-mini-player.json",
+      "family_member": "compact",
       "images": [
-        "assets/geometric-compact-primary-a.png",
-        "assets/geometric-compact-primary-b.png"
+        "assets/geometric-compact-family-primary-a.png",
+        "assets/geometric-compact-family-primary-b.png"
       ],
-      "limits": "Dark body, missing bright rim and incorrect edge structure remain. Later stages are pending.",
+      "limits": "Thin rim, cap lighting and feature placement remain wrong. A frozen22-pixel old boundary cohort regresses; no separate compact fit or full-fidelity claim.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
-      "full_radiance_verified": false
+      "full_radiance_verified": false,
+      "full_pipeline_pass": false,
+      "independent_review": "research/experiments/agent-miniplayer-family-peer-19/README.md",
+      "independent_review_commit": "947c37e0f31319334e47ca528574daad7e305d6a"
     },
     "detached-search-control": {
       "name": "Detached Music Search",
