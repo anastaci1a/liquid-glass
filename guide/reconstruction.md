@@ -405,13 +405,13 @@ Current E is 7.88349 / 6.14943. Expanded A's original 16-pixel boundary and expa
 
 A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.md) over-brightens the edge. Later closed-surface studies expose [source limitations](../research/experiments/miniplayer-native-front-26/README.md) and [grazing-sampling error](../research/experiments/miniplayer-grazing-quadrature-27/README.md); they are diagnostics, not newer completed reconstructions.
 
-**Latest test: the perimeter front with a coherent reconstructed back.** New actual rays preserve the earlier transport within 0.000233 native pixels. The thin bright rim remains wrong, and expanded E worsens to 12.25789 / 6.76131. Original image guards, an angular-evaluation cap and publication timing fail; this is not an adopted replacement.
+**Latest test: the actual first internal return, under the same light.** It creates a bright inset band rather than the thin outer rim. Expanded E worsens from 12.25789 / 6.76131 to 17.71977 / 11.57293; both SSIM values worsen. Geometry, source, incident blur and tone remain fixed. This is a useful negative, not a replacement.
 
-![Expanded A: latest co-designed surface test with failures disclosed](assets/geometric-expanded-codesigned-front-a.png)
+![Expanded A: actual first-return test, incorrect inset band](assets/geometric-expanded-first-return-a.png)
 
-![Expanded B: latest co-designed surface test with failures disclosed](assets/geometric-expanded-codesigned-front-b.png)
+![Expanded B: actual first-return test, incorrect inset band](assets/geometric-expanded-first-return-b.png)
 
-[Actual paths, fresh source audits and every failure](../research/experiments/miniplayer-codesigned-native-78/README.md) · [Constructed surface](../research/experiments/miniplayer-perimeter-inverse-77/README.md). Earlier [front-only75](../research/experiments/miniplayer-perimeter-front-75/README.md) and [boundary-integration57](../research/experiments/miniplayer-boundary-render-57/README.md) evidence remains preserved. No historical score, mask or count changes.
+[Actual paths, exact zero controls and every regression](../research/experiments/miniplayer-first-return-native-85/README.md) · [First-return certificate](../research/experiments/miniplayer-first-return-83/README.md). Earlier [co-designed78](../research/experiments/miniplayer-codesigned-native-78/README.md), [front-only75](../research/experiments/miniplayer-perimeter-front-75/README.md) and [boundary57](../research/experiments/miniplayer-boundary-render-57/README.md) remain preserved. No source, mask, accepted count or working-model change.
 
 <details data-historical>
 <summary>Preserved verified numerical baseline</summary>
@@ -501,13 +501,13 @@ Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original 
 
 [Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Working selection and all failures](../research/decisions/miniplayer-working-primary.json) · [Four-reference material record](../research/experiments/miniplayer-incident-material-20/README.md).
 
-**Latest test: the exact same co-designed family, shortened only.** Compact E becomes 16.74083 / 16.57926, but interior, SSIM and original foreground guards still fail. The broad gray band is not the reference’s thin bright rim. Expanded results worsen; there is no compact-specific fit or adopted replacement.
+**Latest test: the same first-return model, shortened only.** The added inset band also fails compact: E worsens from 16.74083 / 16.57926 to 18.07564 / 18.36203, and both SSIM values worsen. No compact-specific fit or light change was used. Missing cap light and feature placement remain unresolved.
 
-![Compact A: latest shared co-designed test with failures disclosed](assets/geometric-compact-codesigned-front-a.png)
+![Compact A: same first-return model, incorrect inset band](assets/geometric-compact-first-return-a.png)
 
-![Compact B: latest shared co-designed test with failures disclosed](assets/geometric-compact-codesigned-front-b.png)
+![Compact B: same first-return model, incorrect inset band](assets/geometric-compact-first-return-b.png)
 
-[Four-reference results, budget overrun and late-publication record](../research/experiments/miniplayer-codesigned-native-78/README.md). Source/coverage checks and transport preservation do not establish full fidelity.
+[Four-reference result and retained TIR power](../research/experiments/miniplayer-first-return-native-85/README.md). Exact source/coverage and zero controls establish isolation, not visual success. The [prior co-designed render](../research/experiments/miniplayer-codesigned-native-78/README.md) remains archived.
 
 <details data-historical>
 <summary>Preserved unfitted expanded-family transfer baseline</summary>
