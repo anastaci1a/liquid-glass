@@ -1,0 +1,107 @@
+{
+  "member": "compact",
+  "reference": "a",
+  "width": 8.4375,
+  "radius": 26,
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 18.9182071685791
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 24.491430282592773
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 18.973583221435547
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 14.422224044799805
+    },
+    "ssim": 0.9567664265632629,
+    "loss": 430.47804091742506,
+    "E": 20.747964741569835,
+    "exterior": 10.550281524658203,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 23.788246154785156
+    },
+    "foreground": {
+      "jupiter.jpg": 1808.6651611328125,
+      "title.svg": 635.3203735351562,
+      "artist.svg": 68.56729125976562,
+      "play.svg": 161.60752868652344,
+      "forward.svg": 271.5963134765625
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 25.49380111694336,
+        "luma_signed": -6.545478084763691
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 22.027868270874023,
+        "luma_signed": -6.826371237639662
+      },
+      "left_cap": {
+        "RGB_RMSE": 21.752573013305664,
+        "luma_signed": -5.665335810632297
+      },
+      "body": {
+        "RGB_RMSE": 13.245206832885742,
+        "luma_signed": -8.62496525794883
+      }
+    }
+  },
+  "held_guards": {
+    "glass": false,
+    "rim": true,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "selected_guards": {
+    "glass": false,
+    "rim": true,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "original_numerical_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "held_all_pass": false,
+  "selected_all_pass": false,
+  "clipping": 0,
+  "baseline_held_E": 20.53187643383762,
+  "baseline_selected_E": 20.53187643383762
+}

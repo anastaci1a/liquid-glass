@@ -1,0 +1,38 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T14:13:59.755Z",
+  "deadline": "2026-10-24T14:33:59.755Z",
+  "checkpoint_minutes": 5,
+  "question": "Does ordinary incident softness improve the selected working20 family texture across all four references, with geometry/light/response fixed?",
+  "baseline": "Exact selected working20 half-step; this is not a transfer of the negative shallow44 verdict.",
+  "allowed_widths_native_pixels": [
+    5.0625,
+    8.4375
+  ],
+  "frozen": "All geometry/paths/source/AA2/masks/styles/primary power/annular4/shadowzero. Only incident source Gaussian width changes before refraction; reflected radiance stays unfiltered.",
+  "caps": {
+    "Study_constructor_pixels": 1121600,
+    "environment_direction_queries": 1500000,
+    "known_erosions": 16,
+    "source_audit_inside_samples": 6000000,
+    "bilinear_known_lookups": 24000000,
+    "incident_fields": 8,
+    "source_RGB_queries": 6000000,
+    "identity_composites": 4,
+    "candidate_composites": 8,
+    "score_calls": 12,
+    "SSIM_Gaussians": 60,
+    "metric_erosions": 12,
+    "rays": 0,
+    "heights": 0,
+    "fits": 0
+  },
+  "checkpoint": "Frozen input/mask hashes and all four pre/complete/score identities, complete finite source audits for both widths before any changed RGB.",
+  "stop": "Two fixed widths only; unchanged deadline/caps. Reject any unsupported width beforeRGB with no repair; the other predeclared width may proceed if allfour source gates pass. Stop invariant or cap. No third width, fit or reflected-light blur.",
+  "frozen_code_sha256": {
+    "reconstruction/geometric_render.py": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469",
+    "reconstruction/environment_radiance.py": "3957179699c08f432b06a602c1a56a6e8659ce4c16bed00de51d5dcacd0234bd",
+    "reconstruction/extended_fit.py": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f",
+    "research/experiments/miniplayer-outline-light-07/render.py": "98e60b41fedd1ecdbe38b28880f266394a6779d655b5a9e847d4dab7a313c976"
+  }
+}
