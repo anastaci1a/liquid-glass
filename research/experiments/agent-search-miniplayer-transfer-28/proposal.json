@@ -1,0 +1,37 @@
+{
+  "status": "PROPOSAL_ONLY_NOT_ADOPTED",
+  "family_radius": 1.0043663048754772,
+  "Search_radius": 0.9972124917582454,
+  "scale_original_units": 0.9928772868200525,
+  "native_physical_size_ratio": 0.9984867630167759,
+  "Search_original_L": 89,
+  "family_original_L": 88.5,
+  "background_distance_original_Search_L": 2.0850423023221105,
+  "index": 1.5,
+  "geometry": {
+    "back_node_radii": "s * canonical inverse17 radius_nodes",
+    "back_heights": "s * canonical inverse17 heights",
+    "back_derivatives": "unchanged canonical inverse17 derivatives",
+    "front": "0.5*s*canonical spline(rho)",
+    "circle_rho": "hypot(x,y)/SearchR",
+    "solver_frontscale": 1,
+    "footprint": "True circle; inner rectangular core degenerates to a point. Do not use scaled family minor_half as circle radius."
+  },
+  "single_material_choice": {
+    "gain": 0.596189238519786,
+    "bias": 0.3290237590837732,
+    "incident_sigma_native_Search_pixels": 6.739785650363237,
+    "incident_radius_native_pixels": 21,
+    "sigma_mapping": "6.75*(SearchR/familyRadius)*(89/88.5)",
+    "output_blur": 0,
+    "shadow": 0,
+    "gamma": 1,
+    "extra_primary_Fresnel_attenuation": false,
+    "scene": "For one later conditional pair, propose unchanged root18 hypothetical annulus at fixed radiance4, polar30..80deg and10deg shoulders; no scene adoption or calibration."
+  },
+  "comparison": "Current selected Search H1 + accepted Search tone + sigma6.75 remains immutable. Proposed shared-family gain/bias and width are initialization only, not silent adoption or an isolated geometry gain claim.",
+  "source_first": "All changed actual rays and original required subrays, straight misses, full finite radius21 and4bilinear texels must be audited anew for both source mosaics beforeRGB.",
+  "interface": "Root-owned true circular coordinate object shared by both actual height graphs; exact boundary semantics and center regularity; same object identity required by forward API.",
+  "air_role_prerequisite": "Any downward air exit encounters the fixed background plane before infinite environment; audit its actual source support. Never assign annular black/white as if the plane were absent.",
+  "reference_limit": "Full shared-profile transfer is not the old bar-to-circle map; inherited crease, source confidence zero, receipt mismatch and partial/foreground guard limits remain."
+}
