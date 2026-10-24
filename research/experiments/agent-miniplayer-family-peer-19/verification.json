@@ -1,0 +1,246 @@
+{
+  "status": "PASS_IMPLEMENTATION_WITH_LOCAL_LIMITS",
+  "ledger": {
+    "candidate_composites": 2,
+    "Study_constructors": 2,
+    "mask_pixels": 441600,
+    "score_calls": 4,
+    "SSIM_Gaussians": 20,
+    "metric_erosions": 4,
+    "expanded_composites": 0
+  },
+  "records": [
+    {
+      "reference": "a",
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "normalized_material_exact": true,
+      "clear_samples_exact": true,
+      "clipping": [
+        0,
+        0
+      ],
+      "scores_exact": {
+        "legacy_material": {
+          "glass": {
+            "pixels": 83012,
+            "rmse": 24.573265075683594
+          },
+          "rim": {
+            "pixels": 31757,
+            "rmse": 32.85575485229492
+          },
+          "held": {
+            "pixels": 21209,
+            "rmse": 24.20320701599121
+          },
+          "interior": {
+            "pixels": 51255,
+            "rmse": 17.582231521606445
+          },
+          "ssim": 0.954257071018219,
+          "loss": 746.5419376100981,
+          "E": 27.32291963919848
+        },
+        "completed_image": {
+          "glass": {
+            "pixels": 83012,
+            "rmse": 24.573793411254883
+          },
+          "rim": {
+            "pixels": 31757,
+            "rmse": 32.85678482055664
+          },
+          "held": {
+            "pixels": 21209,
+            "rmse": 24.20320701599121
+          },
+          "interior": {
+            "pixels": 51255,
+            "rmse": 17.582231521606445
+          },
+          "ssim": 0.954257071018219,
+          "loss": 746.5804184566321,
+          "E": 27.323623816335783
+        }
+      },
+      "foreground_artwork_exact": {
+        "jupiter.jpg": 1810.2302972774996,
+        "title.svg": 697.4082207401707,
+        "artist.svg": 230.33085047819023,
+        "play.svg": 250.04702188699292,
+        "forward.svg": 299.5004737801666
+      },
+      "original_guards": {
+        "legacy_material:glass": true,
+        "legacy_material:rim": true,
+        "legacy_material:held": true,
+        "legacy_material:interior": true,
+        "legacy_material:E": true,
+        "legacy_material:SSIM": true,
+        "completed_image:glass": true,
+        "completed_image:rim": true,
+        "completed_image:held": true,
+        "completed_image:interior": true,
+        "completed_image:E": true,
+        "completed_image:SSIM": true,
+        "exterior": true,
+        "jupiter.jpg": true,
+        "title.svg": true,
+        "artist.svg": true,
+        "play.svg": true,
+        "forward.svg": true
+      },
+      "corrected_center": [
+        959.8096608421954,
+        672.7154451689464
+      ],
+      "frozen_partial": {
+        "pixels": 22,
+        "old": 44.19375228881836,
+        "new": 48.28634262084961,
+        "nonregress": false
+      },
+      "new_coverage_partial": {
+        "pixels": 4,
+        "RMSE": 35.074859619140625
+      },
+      "exterior": {
+        "complete_pixels_exact": true,
+        "original_order_old": 10.550281524658203,
+        "original_order_new": 10.550281524658203,
+        "asrun_order_preserved": 10.550281126052141
+      }
+    },
+    {
+      "reference": "b",
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "normalized_material_exact": true,
+      "clear_samples_exact": true,
+      "clipping": [
+        0,
+        0
+      ],
+      "scores_exact": {
+        "legacy_material": {
+          "glass": {
+            "pixels": 83012,
+            "rmse": 24.607635498046875
+          },
+          "rim": {
+            "pixels": 31757,
+            "rmse": 30.049039840698242
+          },
+          "held": {
+            "pixels": 21209,
+            "rmse": 24.524425506591797
+          },
+          "interior": {
+            "pixels": 51255,
+            "rmse": 20.524730682373047
+          },
+          "ssim": 0.9531243443489075,
+          "loss": 694.7584459676767,
+          "E": 26.35827092143331
+        },
+        "completed_image": {
+          "glass": {
+            "pixels": 83012,
+            "rmse": 24.60821533203125
+          },
+          "rim": {
+            "pixels": 31757,
+            "rmse": 30.050281524658203
+          },
+          "held": {
+            "pixels": 21209,
+            "rmse": 24.524425506591797
+          },
+          "interior": {
+            "pixels": 51255,
+            "rmse": 20.524730682373047
+          },
+          "ssim": 0.9531243443489075,
+          "loss": 694.8008091926968,
+          "E": 26.359074513205062
+        }
+      },
+      "foreground_artwork_exact": {
+        "jupiter.jpg": 1913.4806391618508,
+        "title.svg": 571.3566071615644,
+        "artist.svg": 249.2782295023367,
+        "play.svg": 225.01394293739597,
+        "forward.svg": 306.21976095389766
+      },
+      "original_guards": {
+        "legacy_material:glass": true,
+        "legacy_material:rim": true,
+        "legacy_material:held": true,
+        "legacy_material:interior": true,
+        "legacy_material:E": true,
+        "legacy_material:SSIM": true,
+        "completed_image:glass": true,
+        "completed_image:rim": true,
+        "completed_image:held": true,
+        "completed_image:interior": true,
+        "completed_image:E": true,
+        "completed_image:SSIM": true,
+        "exterior": true,
+        "jupiter.jpg": true,
+        "title.svg": true,
+        "artist.svg": true,
+        "play.svg": true,
+        "forward.svg": true
+      },
+      "corrected_center": [
+        959.8096608421954,
+        672.7154451689464
+      ],
+      "frozen_partial": {
+        "pixels": 22,
+        "old": 60.96459197998047,
+        "new": 41.92266845703125,
+        "nonregress": true
+      },
+      "new_coverage_partial": {
+        "pixels": 4,
+        "RMSE": 36.114559173583984
+      },
+      "exterior": {
+        "complete_pixels_exact": true,
+        "original_order_old": 15.072770118713379,
+        "original_order_new": 15.072770118713379,
+        "asrun_order_preserved": 15.072769951075315
+      }
+    }
+  ],
+  "zero_work": [
+    "rays",
+    "heights",
+    "source/remapping queries",
+    "optical filters",
+    "fits",
+    "new images",
+    "expanded composites"
+  ],
+  "family_static_consumption": "One config; exact expanded controls and response; only major half differs; no surface constructed by peer.",
+  "expanded_zero_controls_reused": {
+    "status": "EXACT",
+    "records": [
+      {
+        "reference": "a",
+        "pre_foreground_exact": true,
+        "complete_exact": true
+      },
+      {
+        "reference": "b",
+        "pre_foreground_exact": true,
+        "complete_exact": true
+      }
+    ],
+    "rays": 0,
+    "source_queries": 0
+  },
+  "finished": "2026-10-24T04:19:49.979783+00:00"
+}
