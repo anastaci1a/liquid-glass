@@ -1,0 +1,52 @@
+{
+  "started": "2026-10-24T02:32:43.127438+00:00",
+  "merge_commit": "12e9d931dc8d5c26d3ec562392808980bc85be31",
+  "merge_remote_verified_before_tests": true,
+  "configs": [
+    {
+      "R": 0.9972124917582454,
+      "index": 1,
+      "points": 33,
+      "array_file": "config-00.npz",
+      "status_comparisons": {
+        "inside": {
+          "equal": false,
+          "mismatch_indices": [
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      }
+    }
+  ],
+  "status": "STOPPED_FIRST_FAILURE",
+  "failure": "inside status mismatch at [29, 30, 31, 32]; first invariant failure, no retry",
+  "finished": "2026-10-24T02:32:43.184884+00:00",
+  "ledger": {
+    "attempted_rays": 66,
+    "closed_level_points": 1075,
+    "height_boundary_points": 2456,
+    "per_function": {
+      "ScaledFlatBack.height_gradient": 33,
+      "HarmonicCircularBack.height_gradient": 1133,
+      "ScaledFlatBack.boundary_mask": 33,
+      "HarmonicCircularBack.boundary_mask": 66,
+      "CircularHeightSolid.front_height": 33,
+      "CircularHeightSolid.boundary_mask": 33,
+      "CircularHeightSolid.level_gradient": 1075,
+      "CircularHeightSolid._height_gradient": 1100,
+      "CircularHeightSolid.nonsmooth_mask": 25
+    }
+  },
+  "zero_work": [
+    "source queries",
+    "RGB",
+    "filters",
+    "Fresnel",
+    "composites",
+    "images",
+    "fits"
+  ]
+}
