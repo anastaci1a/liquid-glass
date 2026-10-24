@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-24T05:43:33.035Z",
+  "status": "LATE_DISCOVERED_DELEGATED_SOURCE_EROSION_OMISSION",
+  "phases": {
+    "08": {
+      "as_run_source_erosions": 5,
+      "incident_filter_delegate_erosions": 4,
+      "conservative_actual_source_erosions": 9,
+      "declared_source_erosion_cap": 5,
+      "source_erosion_cap_exceeded": true
+    },
+    "09": {
+      "as_run_source_erosions": 4,
+      "incident_filter_delegate_erosions": 4,
+      "conservative_actual_source_erosions": 8,
+      "declared_source_erosion_cap": 4,
+      "source_erosion_cap_exceeded": true
+    }
+  },
+  "original_ledgers_unchanged": true,
+  "actual_optical_rays_unchanged": true,
+  "source_support_logic_unchanged": true,
+  "extra_candidates_or_fits": 0,
+  "correction": "Count the existing finite-source-filter helper erosion in addition to preflight. Not retroactive budget permission; preserve the protocol deviation."
+}

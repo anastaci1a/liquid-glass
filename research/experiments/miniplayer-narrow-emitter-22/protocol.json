@@ -1,0 +1,43 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T06:51:39.588Z",
+  "deadline": "2026-10-24T07:11:39.588Z",
+  "checkpoint_minutes": 5,
+  "defect": "The held common model has a broad cap highlight and a weak thin lower perimeter.",
+  "hypothesis": "A physically narrower angular emitter can concentrate direct-front reflection near the steeper front normals without a pixel-space rim correction.",
+  "review": "miniplayer-interpretation-review-21",
+  "parameters": {
+    "inner_degrees": 36,
+    "outer_degrees": 44,
+    "shoulder_degrees": 0.5,
+    "radiance": 8
+  },
+  "parameters_status": "One fixed unobserved white ring-light hypothesis, chosen before rendering; not inferred from target colors or optimized across pixels.",
+  "frozen": "Exact inverse18 surfaces/paths, explicit19 primarypower, common20 half-stepgain/bias, source/masks/pose/incident6.75R21/AA2/foreground/shadowzero. Major length only differs by member.",
+  "operation": "Existing shared annular_environment on actual front-reflected directions. Replace only the old broad scene4 with the declared narrow scene8; same decode/transmission/reflection/encode/AA/foreground chain.",
+  "caps": {
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "Study_constructors": 4,
+    "mask_points": 1121600,
+    "score_calls": 8,
+    "metric_gaussians": 40,
+    "metric_erosions": 8,
+    "environment_direction_queries": 3000000,
+    "decoded_payload_bytes": 1200000000
+  },
+  "zero_work": [
+    "rays",
+    "heights",
+    "source queries",
+    "incident fields",
+    "optical filters",
+    "Fresnel",
+    "fits"
+  ],
+  "checkpoint": "All four half-step20 pre/complete/score identities exact; validate annular shoulder support algebraically; no changed candidate before all identities pass.",
+  "guards": "All original body/SSIM/exterior/foreground plus frozen16/22 partial cohort, compared against both selected canonical and held20 halfstep. Retain all fixed crop regressions. No local or aggregate waiver.",
+  "clipping_policy": "The brighter hypothetical scene may exceed display gamut; count pre-display channels and show resulting standard display saturation explicitly. No color-fit feasibility or zero-clipping claim. All original image guards remain unchanged.",
+  "stop": "First invariant/identity/deadline failure or four fixed candidates. No alternative angular support, strength, geometry or tone backtrack.",
+  "limits": "Conditional scene-extent test only. No measured environment, complete later reflections, physical camera calibration or full-fidelity acceptance."
+}

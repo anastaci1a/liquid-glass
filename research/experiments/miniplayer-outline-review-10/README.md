@@ -92,6 +92,8 @@ The following comparisons use the held split geometry with emitter radiance four
 
 Changed primary paths pass whole-body and original all-guard source audits before RGB. The full finite 43-by-43 incident kernel and four bilinear texels are included. Conditional mosaic support remains different from photographic truth.
 
+For fixed split09, independent scalar bounds also certify outgoing no-reentry and direct front-reflection escape. The earlier08 diagnostics did not certify outgoing no-reentry; their internal roots and image-plane support are not a complete escaping-path proof.
+
 The two-graph solver uses a monotone residual with a retained bracket. Positive slope-based bounds establish front/back event order. Exact creases remain unresolved; no convex intersector is applied to the nonconcave spline.
 
 An initial missing union-mask key stopped preflight before RGB. Its [failure and recovery](../miniplayer-curved-front-08/recovery-protocol.json) preserve the old ledger, reuse saved geometry and explicitly charge repeated preflight work. The original deadline is unchanged.

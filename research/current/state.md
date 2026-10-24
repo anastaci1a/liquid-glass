@@ -1,6 +1,10 @@
 # Current state
 
-Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue isolated material assessment of the held two-surface outline candidate; preserve selected and historical states.
+Current direction: expanded playback now has a verified positive-spline/shared-response increment. The [structured continuation](../experiments/miniplayer-pass-review-16/README.md) assesses every stage and holds the two-surface outline candidate for local failures.
+
+The [inverse-back forward test](../experiments/miniplayer-inverse-forward-18/README.md) now preserves useful refraction and improves all original body/foreground guards with a visible outer highlight, but expanded A’s original partial boundary still fails.
+
+The subsequent [interface/material review](../experiments/miniplayer-interpretation-review-21/README.md) holds the common incident-material half-step for original boundary/foreground failures. Preserve selected and historical states.
 
 Compact now uses the exact expanded family with length alone changed; bounded clear-play work remains parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
 
@@ -33,7 +37,7 @@ The bounded outline extension leaves residual reflected power and 20 unsupported
 | Ordinary blur | Incident sigma 6.75 is primary. Widths 4.5 / 9 failed earlier guards. The current spline also rejects 5.0625 for excess sharpness and body/foreground regressions; historical output filtering stays preserved. |
 | Color | Common gain 0.5961892385 and bias 0.3290237591 pass original guards with the selected spline. Encoded response is not measured radiance. |
 | Outline | [Three rendered hypotheses](../experiments/miniplayer-outline-review-10/README.md) expose an inset back-return ring and a more plausible direct-front highlight. Equal-thickness split surfaces remain held for original local failures; environment and later radiance remain unobserved. |
-| Shadow | Zero retained; earlier H1 negatives remain historical rather than current spline verdicts. |
+| Shadow | [Current selected-family test](../experiments/miniplayer-shared-shadow-13/README.md) rejects all three shared strengths on original partial/body guards. Zero remains; the verdict does not transfer to held split-surface states. |
 | Foreground | Original artwork/vectors/styles stay fixed; all ten paired guards and float64 checks now pass. Exact UI identity remains unproven. |
 | Dispersion | Not identified; no spectral model added. |
 

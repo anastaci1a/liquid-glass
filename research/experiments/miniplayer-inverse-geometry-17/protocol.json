@@ -1,0 +1,40 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T05:48:12.721Z",
+  "deadline": "2026-10-24T06:13:12.721Z",
+  "checkpoint_minutes": 5,
+  "question": "With actual frontF=0.5selectedh fixed, can an actual single-valued backB preserve the selected physical source-plane map?",
+  "motivating_evidence": "09 produces an outer highlight but moves content and fails foreground/partial guards. Prior three-hypothesis review is complete. This is a new inverse-surface constraint, not another light/frontscale setting.",
+  "initialization": "The selected flat-front geometric map is a diagnostic design target, not photographic truth. No target image or source RGB is read.",
+  "fixed": {
+    "front_scale": 0.5,
+    "index": 1.5,
+    "background_distance": 2.1,
+    "radius": "canonical family corner_radius",
+    "selected_height": "canonical positive spline"
+  },
+  "unknown": "One real radial back-height profile B, common to both lengths. Surface is reconstructed from optical boundary equations; no image displacement correction after tracing.",
+  "method": "One backward ODE solve for B along inputradius, boundary B(R)=0 in one-sided crease limit. Map inputradius to actual backradius; require positiveheight, ordered coordinates, finite gradients and actual polynomial surface consistency. Actual normals derive from the reconstructed height.",
+  "caps": {
+    "ode_rhs": 5000,
+    "shared_Snell_points": 10200,
+    "profile_scalar_queries": 20000,
+    "design_nodes": 1025,
+    "polynomial_bound_segments": 1024,
+    "native_grid_rays": 0,
+    "source_queries": 0,
+    "images": 0,
+    "fits_to_RGB": 0
+  },
+  "tolerances": {
+    "ODE_rtol": 1e-9,
+    "ODE_atol": 1e-11,
+    "maximum_step_over_radius": 0.0078125,
+    "height_residual": 1e-8,
+    "Snell_residual": 1e-8
+  },
+  "checkpoint": "Same-surface Snell equation sign, positive solve interval and finite budget before integration; positive/singlevalued endpoint and global profile bounds before any future forward render.",
+  "stop": "One solve, first invariant/branch/surface failure or deadline. No smoothing/normaltweaks to force consistency, no native image before separate forward/source validation.",
+  "ownership": "Root private experiment only, shared old tracer untouched during this design. Existing helper continues separate Search work through Sessionsation.",
+  "static_reservation": "Controls30Snell+2*5000RHS<=10200;3profile queries per RHS plus controls<=20000.1025postsolve node residual calls count inside RHS cap."
+}

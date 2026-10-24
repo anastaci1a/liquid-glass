@@ -403,11 +403,15 @@ Paired E improves from H1's 45.424 / 18.220 to 12.908 / 8.576. All original pair
 
 [Selected state and limits](../research/experiments/expanded-contrast-guard-02/primary-decision.json) · [Bounded experiment and exact replay](../research/experiments/expanded-contrast-guard-02/README.md) · [Independent review](../research/experiments/agent-expanded-contrast-peer-09/README.md).
 
-**Latest outline experiment: held, not selected.** Actual curved front/back surfaces now produce an outer highlight. A hypothetical studio light improves overall error on all four miniplayer references, but interior, foreground and boundary regressions prevent acceptance. The selected images above remain unchanged.
+**Latest outline experiment: held, not selected.** Actual curved front/back surfaces now produce an outer highlight. The reconstructed physical back preserves useful refraction while a hypothetical common studio light supplies an outer highlight. Explicit interface powers and a shared material half-step bring body tone closer. Expanded A’s original boundary and two expanded B foreground guards still fail.
 
-![Expanded B: held actual-surface outline experiment, with local regressions](assets/geometric-expanded-outline-held-b.png)
+The selected images above remain unchanged.
 
-[All three hypotheses, enlarged fixed crops and regressions](../research/experiments/miniplayer-outline-review-10/README.md) · [Same-geometry cached section](../research/experiments/miniplayer-outline-review-10/expanded-actual-section.svg). Lighting is an explicit unobserved assumption; later reflected radiance remains unresolved.
+![Expanded A: held inverse-back geometry, explicit interface powers and common material half-step](assets/geometric-expanded-outline-held-a.png)
+
+![Expanded B: held inverse-back geometry, explicit interface powers and common material half-step](assets/geometric-expanded-outline-held-b.png)
+
+[Latest shared material test](../research/experiments/miniplayer-incident-material-20/README.md) · [Joint interpretation review](../research/experiments/miniplayer-interpretation-review-21/README.md) · [Inverse-back forward test](../research/experiments/miniplayer-inverse-forward-18/README.md) · [Earlier structured review and held color step](../research/experiments/miniplayer-pass-review-16/README.md) · [Three hypotheses and fixed-crop regressions](../research/experiments/miniplayer-outline-review-10/README.md) · [Same-geometry cached section](../research/experiments/miniplayer-outline-review-10/expanded-actual-section.svg). Lighting is an explicit unobserved assumption; later reflected radiance remains unresolved.
 
 Checkerboard marks unavailable unscored exterior. The original registered inputs and foreground remain fixed; no target backdrop, mask removal or new shadow is used. Earlier H1 and spline-response failures remain below.
 

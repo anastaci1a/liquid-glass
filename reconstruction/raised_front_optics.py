@@ -31,7 +31,7 @@ class VerticalScaleBack:
         return self.base.boundary_mask(x, y)
 
 
-def trace_raised_front_orthographic(back, x, y, scale, index, background_distance, charge=None):
+def trace_raised_front_orthographic(back, x, y, scale, index, background_distance, charge=None, front_surface=None):
     if not 0 < scale <= 1 or index < 1 or background_distance <= back.maximum_height:
         raise ValueError('Invalid physical front/index/background parameters')
     x, y = np.broadcast_arrays(np.asarray(x, float), np.asarray(y, float))
@@ -40,9 +40,24 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
     def hg(X, Y):
         count('height', np.asarray(X).size)
         return back.height_gradient(X, Y)
-    h, hx, hy, inside = hg(x, y)
+    if front_surface is None:
+        h, hx, hy, inside = hg(x, y)
+        front_slope = scale*back.slope_bound
+        front_boundary = np.zeros_like(inside)
+    else:
+        key = front_surface
+        while isinstance(key, VerticalScaleBack): key = key.base
+        if not hasattr(key, 'coordinate') or key.coordinate is not getattr(back, 'coordinate', None):
+            raise ValueError('Independent height graphs require the same certified footprint object')
+        count('front_height', x.size)
+        h, hx, hy, inside = front_surface.height_gradient(x, y)
+        if not np.array_equal(inside, hg(x, y)[3]):
+            raise ValueError('Inconsistent front/back membership')
+        front_slope = scale*front_surface.slope_bound
+        count('front_boundary', x.size)
+        front_boundary = front_surface.boundary_mask(x, y)
     count('boundary', x.size)
-    boundary = back.boundary_mask(x, y)
+    boundary = back.boundary_mask(x, y) | front_boundary
     regular = inside & ~boundary
     flat = regular.ravel(); X, Y = x.ravel()[flat], y.ravel()[flat]
     H = h.ravel()[flat]; gx, gy = hx.ravel()[flat], hy.ravel()[flat]
@@ -54,7 +69,7 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
     if blocked_entry.any(): raise ValueError('Unavailable front entry')
     speed = np.linalg.norm(interior[:, :2], axis=-1)
     margin_b = -interior[:, 2]-back.slope_bound*speed
-    margin_f = -interior[:, 2]-scale*back.slope_bound*speed
+    margin_f = -interior[:, 2]-front_slope*speed
     if np.any(margin_b <= 0) or np.any(margin_f <= 0):
         raise ValueError('Event order lacks positive clearance certificate')
     low = np.zeros_like(H)
@@ -93,7 +108,7 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
     primary = np.mean((1-Rf)*(1-Rb), axis=-1)
     tail = np.mean((1-Rf)*Rb, axis=-1)
     reflected = reflect_direction(camera, nf)
-    reflection_margin = escape_clearance(reflected, scale*back.slope_bound, upward=True)
+    reflection_margin = escape_clearance(reflected, front_slope, upward=True)
     if np.any(reflection_margin <= 0):
         raise ValueError('Direct front reflection escape unresolved')
     if np.max(abs(Rf.mean(axis=-1)+primary+tail-1)) > 2e-14:
@@ -108,7 +123,7 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
     SX[boundary] = np.nan; SY[boundary] = np.nan
     complete = ~inside
     complete.ravel()[flat] = valid; complete[boundary] = False
-    return dict(X=SX, Y=SY, inside=inside, regular_entry=regular,
+    return dict(X=SX, Y=SY, inside=inside, projected_inside=inside|boundary, regular_entry=regular,
         boundary_unresolved=boundary, complete=complete,
         front=expand(entry), front_normal=expand(nf), back=expand(point),
         outward_normal=expand(nb), interior_direction=expand(interior),

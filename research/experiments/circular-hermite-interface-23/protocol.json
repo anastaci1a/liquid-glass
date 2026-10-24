@@ -1,0 +1,18 @@
+{
+  "status": "DECLARED_BEFORE_IMPLEMENTATION",
+  "start": "2026-10-24T06:55:28.623Z",
+  "deadline": "2026-10-24T07:03:28.623Z",
+  "question": "Expose the existing harmonic circle and exact radius footprint to the same actual Hermite-back/independent-front tracer used for miniplayer, without another optical model.",
+  "ownership": "Root owns reconstruction/hermite_height_back.py and this own interface record. Helper owns only Search27 profile/evidence, read-only here.",
+  "scope": "One radius-coordinate adapter; delegate harmonic heights/gradients unchanged. No core/tracer/source/material changes.",
+  "caps": {
+    "height_and_footprint_points": 5000,
+    "profiles": 1,
+    "rays": 0,
+    "RGB": 0,
+    "images": 0,
+    "fits": 0
+  },
+  "controls": "Exact original harmonic radius/gradient/status equivalence at three radii; identical circular footprint membership; Search27 profile positivity through existing constructor; actual Hermite finite-difference gradients. First failure stops without retry.",
+  "limits": "Adapter and local scalar controls only; forward ray ordering, source support and images require separate authority."
+}

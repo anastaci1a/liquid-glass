@@ -1,0 +1,94 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T06:14:37.406Z",
+  "deadline": "2026-10-24T06:44:37.406Z",
+  "checkpoint_minutes": 7,
+  "question": "Does the reconstructed actual back preserve useful source correspondence and add a visible outer highlight under full forward tracing?",
+  "geometry": "Front is0.5canonical spline; back is the1025node physical Hermite profile from17. Same ordinary rounded footprint and length-only members. Actual roots/normals/Snell determine sampling; oldmap is DIAGNOSTIC ONLY, never a sampled-coordinate correction.",
+  "frozen": "n1.5,D2.1,incident6.75r21,originalg/b,AA2,poses/sources/masks/styles,shadowzero; fixed scene1/4. Selected baseline remains separately preserved.",
+  "caps": {
+    "fixture_comparator_rays": 128,
+    "profile_bound_segments": 2048,
+    "native_grid_rays": 2243200,
+    "surface_point_queries": 100000000,
+    "conservative_adapter_units": 2000000000,
+    "reserved_Snell_interface_points": 4500000,
+    "reserved_Fresnel_interface_points": 4500000,
+    "reserved_reflection_points": 2250000,
+    "source_audit_subrays": 4486400,
+    "bilinear_known_lookups": 36000000,
+    "source_RGB_queries": 4500000,
+    "incident_fields": 4,
+    "known_erosions": 8,
+    "candidate_composites": 8,
+    "score_calls": 12,
+    "Study_constructor_pixels": 1200000,
+    "environment_direction_queries": 1500000,
+    "additional_fits": 0,
+    "reference_mask_archive_pixels": 1200000
+  },
+  "geometry_tolerances": {
+    "root_bracket": 1e-11,
+    "back_residual": 2e-11,
+    "gradient_FD": 1e-7,
+    "Snell_or_mirror": 1e-9
+  },
+  "checkpoint": "Legacy optional-front default preserves every old result on comparator fixtures; new actual height gradient/zero-index/mirror and escape controls pass. No nativeRGB until all whole+originalguard finite-kernel/fourtexel preflights pass.",
+  "source_map_policy": "Report actual-versus-prior coordinate difference from retained paths; do not overwrite actual coordinates, change source/masks or round to force identity.",
+  "stop": "First invariant/requiredpath/sourcefailure,8fixedcandidateoutputs or originaldeadline. No curve/node/n/index/light/color tuning and no extra inverse solve.",
+  "scope": "Separate forward validation after completed17; no restart of17 and no guarantee of a passing score. Scene remains hypothetical and retained reflected tail remains unassigned.",
+  "fixed_crops": {
+    "expanded": {
+      "lower_right_rim": [
+        1300,
+        480,
+        1580,
+        515
+      ],
+      "upper_left_rim": [
+        315,
+        315,
+        545,
+        355
+      ],
+      "left_cap": [
+        310,
+        335,
+        380,
+        494
+      ],
+      "body": [
+        900,
+        390,
+        1080,
+        440
+      ]
+    },
+    "compact": {
+      "lower_right_rim": [
+        1090,
+        738,
+        1370,
+        773
+      ],
+      "upper_left_rim": [
+        515,
+        573,
+        745,
+        613
+      ],
+      "left_cap": [
+        515,
+        593,
+        585,
+        752
+      ],
+      "body": [
+        871,
+        648,
+        1051,
+        698
+      ]
+    }
+  }
+}

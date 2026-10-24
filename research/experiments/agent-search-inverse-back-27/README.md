@@ -133,7 +133,7 @@ Background distance exceeds the complete back-height bound. Actual floating-poin
 
 No new shared adapter is implemented. The current generic `HermiteFootprintBack` requires a certified footprint-coordinate interface; bare `HarmonicCircularBack` does not expose that interface. A root-owned circular/radius contract must be agreed before a forward experiment. This construction supplies the one-dimensional actual profile, not a private bypass.
 
-The front is unchanged from [Search23](../agent-search-split-surface-23/README.md). Therefore its retained direct-front directions still miss the unchanged annular scene on that native lattice. This is an inherited front-only observation, not a new direction calculation. Preserving the old physical map also does not repair its already uncertain feature correspondence.
+The front is unchanged from the earlier Search split-surface experiment, preserved on the research branch. Therefore its retained direct-front directions still miss the unchanged annular scene on that native lattice. This is an inherited front-only observation, not a new direction calculation. Preserving the old physical map also does not repair its already uncertain feature correspondence.
 
 Missing rim light, unobserved environment, source uncertainty and old historical/protocol disclosures remain. No selected geometry, accepted tone, incident width, masks, style or historical count changes. There is no image or fidelity acceptance.
 

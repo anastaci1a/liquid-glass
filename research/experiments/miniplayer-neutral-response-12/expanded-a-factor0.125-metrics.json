@@ -1,0 +1,94 @@
+{
+  "member": "expanded",
+  "reference": "a",
+  "factor": 0.125,
+  "gain": 0.5836396950142594,
+  "bias": 0.3424458390774917,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 9.383875846862793
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 11.64488410949707
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 9.346880912780762
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 8.259197235107422
+    },
+    "ssim": 0.979780912399292,
+    "loss": 102.32098591361964,
+    "E": 10.115383626616424,
+    "exterior": 19.254291534423828,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 36.443843841552734
+    },
+    "foreground": {
+      "jupiter.jpg": 2260.13818359375,
+      "title.svg": 292.8665466308594,
+      "artist.svg": 190.11744689941406,
+      "play.svg": 127.06549835205078,
+      "forward.svg": 177.4620361328125
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 18.203685760498047,
+        "luma_signed": 9.96307521621358
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 13.72841739654541,
+        "luma_signed": -2.654307580000866
+      },
+      "left_cap": {
+        "RGB_RMSE": 19.955244064331055,
+        "luma_signed": -3.330254610002938
+      },
+      "body": {
+        "RGB_RMSE": 6.374749660491943,
+        "luma_signed": 1.1773381707433603
+      }
+    }
+  },
+  "held_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "selected_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "clipping": [
+    0,
+    0,
+    0
+  ],
+  "all_pass": false
+}

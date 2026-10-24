@@ -1,0 +1,31 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T07:05:44.129Z",
+  "deadline": "2026-10-24T07:25:44.129Z",
+  "checkpoint_minutes": 5,
+  "question": "Is the narrow outline visibly affected by native AA2 sampling, independently of blur, geometry and light?",
+  "hypothesis": "Four-by-four pixel integration can resolve a subpixel angular highlight differently from the frozen two-by-two protocol. This is a numerical quadrature diagnostic, never an optical score gain.",
+  "frozen": "Exact inverse18 geometry/power, held20half material, narrow22 scene36..44degrees/shoulder0.5/radiance8, incident6.75R21, original source/pose/masks/styles, shadowzero.",
+  "tiles": "For each member, fixed32x24 native tiles centered at rounded corrected left-cap, right-cap, upper-straight and lower-straight outline landmarks. No target-error-based selection. Verify no original foreground box overlap before rays.",
+  "parameters": "Only AA samples per axis2(cached exact control) versus4(new traced diagnostic). Do not adopt a new scoring epoch or alter canonical AA2.",
+  "caps": {
+    "cached_identity_tiles": 8,
+    "new_tile_integrations": 8,
+    "Study_constructor_pixels": 1121600,
+    "native_rays": 98304,
+    "surface_point_queries": 5000000,
+    "conservative_adapter_units": 100000000,
+    "source_audit_subrays": 196608,
+    "bilinear_known_lookups": 1600000,
+    "known_erosions": 8,
+    "incident_fields": 4,
+    "RGB_queries": 200000,
+    "scene_direction_queries": 300000,
+    "profile_bound_segments": 2048
+  },
+  "checkpoint": "Exact cached AA2 pre-foreground/completed tile identity against22, input/geometry/mask bindings and zero foreground overlap. No new native rays before this passes.",
+  "source_first": "For new AA4, audit all whole-body and all original scored subrays in all tiles, finite radius21 and bilinear corners, both references before any field or RGB. Unknown unscored exterior remains unavailable.",
+  "stop": "First invariant/source/deadline failure or exactly eight AA4 tile integrations. No alternate samples, kernel, geometry, light, material or source change.",
+  "outputs": "Reference, AA2 and AA4 native tiles at maximum2x display, actual same-geometry ray/source audit and local fixed-cohort RGB/MAE. No full-image scores, optical acceptance, HQ or motion.",
+  "scope": "This does not identify physical blur or continuous pixel-area truth. Primary model and original AA2 evidence stay unchanged."
+}
