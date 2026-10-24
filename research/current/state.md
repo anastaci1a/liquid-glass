@@ -1,5 +1,7 @@
 # Current state
 
+The [three-direction outline review](../experiments/miniplayer-front-review-37/README.md) rejects a globally steeper front: its actual correspondence remains close, but its pale band is too broad. The current working family stays selected. A perimeter-curvature proposal remains unexecuted.
+
 The [current working miniplayer family](../../reconstruction/families/music-mini-player-working.json) now appears first in the gallery, with two physical surfaces, incident blur and one common material across both lengths. This explicit primary selection retains the expanded boundary/foreground failures and creates no accepted count.
 
 The [earlier numerical baseline](../../reconstruction/families/music-mini-player.json) stays immutable. Closed-surface [signal envelopes](../experiments/miniplayer-bounded-signal-28/README.md) expose source and sampling limitations; they are not completed replacements.
