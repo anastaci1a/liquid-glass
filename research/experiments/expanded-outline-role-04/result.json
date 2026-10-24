@@ -1,0 +1,78 @@
+{
+  "status": "PARTIAL_POWER_AND_CODE_ROLE_AUDIT_NO_RGB",
+  "finished_utc": "2026-10-24T01:09:48.380876+00:00",
+  "cached_back_interface_points": 890848,
+  "specular_direction_evaluations": 890848,
+  "fresnel_interface_evaluations": 1691672,
+  "cone_certified_first_front_encounters": 800823,
+  "uncertified_next_intersections": 90025,
+  "first_front_TIR_or_critical": 72808,
+  "front_reflection": 0.04000000000000001,
+  "back_reflection": {
+    "min": 0.039999999999999994,
+    "median": 0.040000210976548434,
+    "p95": 0.05841995776632796,
+    "max": 0.07575582601685779
+  },
+  "primary_power": {
+    "min": 0.8872744070238164,
+    "median": 0.9215997974625134,
+    "p95": 0.9215999999458004,
+    "max": 0.9216
+  },
+  "first_front_exit_power": {
+    "min": 0.0,
+    "median": 0.036863920900047746,
+    "p95": 0.03686399997949185,
+    "max": 0.036864
+  },
+  "retained_internal_or_unresolved_power": {
+    "min": 0.0015359999999999994,
+    "median": 0.0015362816374387494,
+    "p95": 0.05608315945567484,
+    "max": 0.07272559297618347
+  },
+  "power_sum_max_error": 2.220446049250313e-16,
+  "selected_slope_bound": 0.6723414566078295,
+  "numerical_cone_margin": 1e-10,
+  "coded_transmission_cap_real": 0.9252129976035592,
+  "conservative_float32_cap": 0.9252130389213562,
+  "code_ceiling": [
+    {
+      "reference": "a",
+      "fully_covered_original_rim_pixels": 45750,
+      "any_channel_above_coded_cap": 3485,
+      "all_channels_above_coded_cap": 161,
+      "maximum_channel_excess_levels": 19.070674896240234,
+      "scope": "Conditional on current geometry coverage and bounded encoded source; not physical alpha or a unique lighting explanation."
+    },
+    {
+      "reference": "b",
+      "fully_covered_original_rim_pixels": 45750,
+      "any_channel_above_coded_cap": 6005,
+      "all_channels_above_coded_cap": 5866,
+      "maximum_channel_excess_levels": 19.070674896240234,
+      "scope": "Conditional on current geometry coverage and bounded encoded source; not physical alpha or a unique lighting explanation."
+    }
+  ],
+  "new_intersection_solves": 0,
+  "new_height_evaluations": 0,
+  "source_RGB_queries": 0,
+  "candidate_composites": 0,
+  "parameter_fits": 0,
+  "unresolved": "Every front-environment contribution and all remaining internal/unresolved power are retained as unknown; none is assigned RGB.",
+  "inputs": [
+    {
+      "path": "research/experiments/expanded-spline-observation-01/native-paths.npz",
+      "sha256": "4b594da55b57b44744a90b90af0ba1a74e160c039b70e70f52d1164c8b2f1846"
+    },
+    {
+      "path": "research/experiments/expanded-contrast-guard-02/primary-decision.json",
+      "sha256": "fd64ee40861d9f5eba309f180adcb215d5d0c6b4301bb554ce4232befdedf4b8"
+    },
+    {
+      "path": "reconstruction/geometric_optics.py",
+      "sha256": "0526a33f0ab8545151af61755ac8daa024d140573276d1dddf799b15c8172082"
+    }
+  ]
+}

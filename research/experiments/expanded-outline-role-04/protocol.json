@@ -1,0 +1,21 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "started_utc": "2026-10-24T01:09:41.774Z",
+  "deadline_utc": "2026-10-24T01:24:41.774Z",
+  "outline_stage_latest_utc": "2026-10-24T02:09:41.774Z",
+  "question": "What first-interface optical power is supported by the actual selected normals, and can the current bounded transmission response reach the observed bright rim?",
+  "model": "Accepted positive spline and common contrast, current source sigma6.75 and AA2; all inputs/guards frozen.",
+  "scope": "Cached-normal Fresnel and specular-direction calculations plus target-array code-ceiling counts. No new intersection solve, source sampling, RGB composite or fit.",
+  "budgets": {
+    "cached_back_interface_points": 900000,
+    "specular_direction_evaluations": 900000,
+    "total_fresnel_interface_evaluations": 1800000,
+    "new_intersections": 0,
+    "height_evaluations": 0,
+    "source_queries": 0,
+    "candidate_composites": 0,
+    "fits": 0
+  },
+  "numerical_cone_margin": 1e-10,
+  "stop": "Failed invariant, exhausted cap/deadline or completed partial-power/role report. No reflected image or invented environment."
+}

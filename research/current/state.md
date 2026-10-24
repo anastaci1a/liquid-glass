@@ -26,9 +26,9 @@ The bounded outline extension leaves residual reflected power and 20 unsupported
 | Stage | Disposition |
 | --- | --- |
 | Refraction | Positive spline plus shared response passes original paired guards. This combined result does not isolate the effect of geometry alone. |
-| Ordinary blur | Incident sigma 6.75 is primary. New widths 4.5 / 9 fail original guards; historical output filtering stays preserved. |
+| Ordinary blur | Incident sigma 6.75 is primary. Widths 4.5 / 9 failed earlier guards. The current spline also rejects 5.0625 for excess sharpness and body/foreground regressions; historical output filtering stays preserved. |
 | Color | Common gain 0.5961892385 and bias 0.3290237591 pass original guards with the selected spline. Encoded response is not measured radiance. |
-| Outline | Current nonconcave height needs appropriate ordered reflected paths; older convex-state ledgers do not transfer. Front environment is unobserved. |
+| Outline | The [actual-normal audit](../experiments/expanded-outline-role-04/README.md) certifies only part of reflected transport. Some bright rim pixels exceed the coded transmission ceiling. Front environment and remaining paths are unresolved. |
 | Shadow | Zero retained; earlier H1 negatives remain historical rather than current spline verdicts. |
 | Foreground | Original artwork/vectors/styles stay fixed; all ten paired guards and float64 checks now pass. Exact UI identity remains unproven. |
 | Dispersion | Not identified; no spectral model added. |
