@@ -1,0 +1,41 @@
+{
+  "start": "2026-10-24T03:32:44.368Z",
+  "deadline": "2026-10-24T03:42:44.368Z",
+  "overall_latest": "2026-10-24T04:25:20.608Z",
+  "shared_sha256": "bab1ed8681db4086f394998f12b563a41cc42af3b4fa2afd175191c24a43b428",
+  "old_driver_sha256": "271a60e0faec7f8cabcecd88653563dd083c7bc57a1b27888a4027ae83666c7c",
+  "scope": "Combined instrumentation preflight only; no shared numerical import/body or real profiling.",
+  "synthetic_cap": 64,
+  "suites": {
+    "old_regressions": 46,
+    "new_primitive_regressions": 12,
+    "combined_cases": 6
+  },
+  "future_caps": {
+    "encounters": 384,
+    "cached_initial": 32,
+    "segments": 352,
+    "nested_global": 130000,
+    "level_global": 25000,
+    "nested_per_launch": 8000,
+    "level_per_launch": 1500,
+    "scalar_setup_allowance": 128,
+    "mask_lookups": 5920,
+    "new_erosions": 0,
+    "RGB": 0
+  },
+  "forbidden": [
+    "optical bodies",
+    "rays",
+    "heights",
+    "directions",
+    "Fresnel calls",
+    "source/cache numerical arrays",
+    "real profiling",
+    "fields/filters",
+    "composites/images",
+    "fits",
+    "shared edits"
+  ],
+  "stop": "First unexpected synthetic failure or deadline; seal without optical dry run."
+}

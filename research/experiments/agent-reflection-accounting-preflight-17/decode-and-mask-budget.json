@@ -1,0 +1,77 @@
+{
+  "scope": "Future decode bounds derived from sealed JSON and generator text; no numerical container opened.",
+  "sealed_cells_per_known": 2073600,
+  "sealed_native_subrays": 225600,
+  "sealed_native_pixels": 56400,
+  "entries": [
+    {
+      "name": "known",
+      "cells_per_case": 2073600,
+      "dtype": "bool",
+      "bytes_per_cell": 1
+    },
+    {
+      "name": "incident_known",
+      "cells_per_case": 2073600,
+      "dtype": "bool",
+      "bytes_per_cell": 1
+    },
+    {
+      "name": "support",
+      "cells_per_case": 225600,
+      "dtype": "bool",
+      "bytes_per_cell": 1
+    },
+    {
+      "name": "required_pixels",
+      "cells_per_case": 56400,
+      "dtype": "bool",
+      "bytes_per_cell": 1
+    },
+    {
+      "name": "required_subrays",
+      "cells_per_case": 225600,
+      "dtype": "bool",
+      "bytes_per_cell": 1
+    },
+    {
+      "name": "coverage",
+      "cells_per_case": 56400,
+      "dtype": "float64",
+      "bytes_per_cell": 8
+    }
+  ],
+  "full_two_mask_container_cells": 9422400,
+  "full_two_mask_container_array_bytes": 10212000,
+  "selected_known_incident_support_cells_and_bytes": 8745600,
+  "npy_header_allowance_per_member": 4096,
+  "mask_member_count": 12,
+  "mask_header_byte_allowance": 49152,
+  "compressed_files": [
+    {
+      "file": "a-support.npz",
+      "bytes": 23704,
+      "sha256": "25ca570ecc8960b774e151ddfaa76695daffd8ecce205691d7e08ff2eaebf5fe"
+    },
+    {
+      "file": "b-support.npz",
+      "bytes": 24044,
+      "sha256": "622887ca4629b3a5b6c485d62c4b74736a3a1c8fecc4b19f3fd119e349a171e6"
+    },
+    {
+      "file": "native-paths.npz",
+      "bytes": 10144799,
+      "sha256": "668212cc4466b0b645beb52df7c7c148537965c4292fa155af1ad65de70456bf"
+    }
+  ],
+  "mask_container_compressed_bytes": 47748,
+  "indexed_mask_lookups_cap": 5920,
+  "new_erosions": 0,
+  "RGB": 0,
+  "decode_policy": "Validate exact compressed hash, allowed names, dtype, shape and declared expanded lengths before allocation. Lazy decode only known, incident_known and support if feasible; complete-container upper remains charged separately. Header mismatch stops, no larger unbounded decode.",
+  "native_cache_future_full_array_byte_bound": 36998448,
+  "native_cache_bound_basis": "20 full225600-row float64 components plus4 boolean fields plus6 scalar-vector float64 constants from pinned native-paths generator; no cache decoded here.",
+  "native_cache_header_allowance": 73728,
+  "combined_future_array_payload_upper": 47210448,
+  "source_or_cache_array_reads_now": 0
+}
