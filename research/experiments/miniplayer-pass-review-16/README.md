@@ -38,6 +38,8 @@ The experimental emitter is unobserved. The linearized additive reflection opera
 
 Both miniplayer lengths use one complete glass model per hypothesis. Only major length varies. Sources, measured translations and original UI content remain case inputs, rather than separate optical tuning.
 
+Compact is an unfitted geometry transfer, but participates in the four-reference color solve. It is not a held-out control for that solve. The separate Search tests also retain transfer failures; shared machinery does not establish universal fidelity.
+
 ## Correctness and limitations
 
 [Independent review](../agent-miniplayer-surface-peer-22/README.md) supports fixed split09 primary geometry and its outgoing escape bound. The generic implementation subsequently gains explicit escape guards. This does not repair the earlier raised-front observations as run.
