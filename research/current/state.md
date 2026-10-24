@@ -1,5 +1,7 @@
 # Current state
 
+[Fixed rim sections](../experiments/miniplayer-rim-observation-73/README.md) locate distinct reference peaks and plain backing transitions. Expanded A’s upper-left corner has a large missing brightness peak; compact B’s top-center excess has no isolated peak above the outer backing. These observations do not fit or identify an outline material.
+
 The [current working-family review](../experiments/miniplayer-working-final-70/README.md) closes all eight stages with no new replacement. Incident blur, fixed-white contrast, finite lighting and shadow trials fail family guards. Original foreground remains unchanged; dispersion is unidentified.
 
 A separately budgeted [anchor-matched linear scattering test](../experiments/miniplayer-neutral-scattering-71/README.md) also fails all four references; working20 remains selected. A [fixed-width linear incident filter](../experiments/miniplayer-linear-incident-filter-72/README.md) improves compact aggregates but harms expanded playback, so it also remains unselected.
