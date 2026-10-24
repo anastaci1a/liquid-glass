@@ -1,0 +1,109 @@
+{
+  "member": "compact",
+  "reference": "b",
+  "factor": 1,
+  "gain": 0.5066036400254624,
+  "bias": 0.4632497049724455,
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 14.29758071899414
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 18.93167495727539
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 14.50232982635498
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 10.440878868103027
+    },
+    "ssim": 0.953559935092926,
+    "loss": 250.61706509768555,
+    "E": 15.830889586428349,
+    "exterior": 15.072770118713379,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 22.252206802368164
+    },
+    "foreground": {
+      "jupiter.jpg": 1903.048828125,
+      "title.svg": 368.6057434082031,
+      "artist.svg": 56.41268539428711,
+      "play.svg": 82.2593765258789,
+      "forward.svg": 195.66513061523438
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 25.87874984741211,
+        "luma_signed": 1.7800718813099266
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 17.373910903930664,
+        "luma_signed": 3.2030045644726832
+      },
+      "left_cap": {
+        "RGB_RMSE": 17.706787109375,
+        "luma_signed": 5.642976555005941
+      },
+      "body": {
+        "RGB_RMSE": 12.91832160949707,
+        "luma_signed": 3.5448302187776712
+      }
+    }
+  },
+  "held_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "selected_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "current_working_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "clipping": [
+    0,
+    0,
+    890
+  ],
+  "all_pass": false
+}

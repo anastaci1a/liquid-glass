@@ -1,4 +1,4 @@
-"""Explicit hypothetical scene radiance, independent of image coordinates.
+"""Explicit hypothetical scene radiance from optical world-space paths.
 
 The first-return helper requires a separate same-surface event-order certificate.
 It does not trace later events or claim that the environment was observed.
@@ -30,6 +30,36 @@ def annular_environment(directions, inner_degrees=30., outer_degrees=80., should
     rise = np.clip((theta-inner_degrees)/shoulder_degrees, 0, 1)
     fall = np.clip((outer_degrees-theta)/shoulder_degrees, 0, 1)
     return (rise*rise*(3-2*rise))*(fall*fall*(3-2*fall))
+
+
+def planar_annular_emitter(positions, directions, panel_z=885., center_xy=(960., 540.),
+                           inner_degrees=30., outer_degrees=80., shoulder_degrees=10.):
+    """Intersect actual world-space reflected rays with a one-sided panel.
+
+    Panel radiance is a fixed radial texture. Its radii scale with panel height,
+    so its infinite-distance limit is annular_environment. Optical directions
+    are never altered; the normalized texture vector is only a panel lookup.
+    Misses receive zero contribution from this emitter, with NaN hit metadata.
+    """
+    p, d = np.asarray(positions, float), np.asarray(directions, float)
+    center = np.asarray(center_xy, float)
+    if p.shape != d.shape or p.shape[-1] != 3 or center.shape != (2,):
+        raise ValueError('Matched world-space points/directions and a planar center required')
+    if not np.isfinite(p).all() or not np.isfinite(d).all() or not np.isfinite(center).all():
+        raise ValueError('Finite scene geometry required')
+    if not np.isfinite(panel_z) or panel_z <= 0 or np.any(abs(np.linalg.norm(d, axis=-1)-1) > 1e-10):
+        raise ValueError('Positive panel height and actual unit optical directions required')
+    t = np.divide(panel_z-p[..., 2], d[..., 2], out=np.full(p.shape[:-1], np.nan), where=d[..., 2] > 0)
+    reached = (d[..., 2] > 0) & (t > 0)
+    hit = np.full_like(p, np.nan)
+    hit[reached] = p[reached]+t[reached, None]*d[reached]
+    texture = np.empty((int(reached.sum()), 3))
+    texture[:, :2] = hit[reached, :2]-center
+    texture[:, 2] = panel_z
+    texture /= np.linalg.norm(texture, axis=-1)[:, None]
+    unit = np.zeros(p.shape[:-1])
+    unit[reached] = annular_environment(texture, inner_degrees, outer_degrees, shoulder_degrees)
+    return dict(unit_radiance=unit, hit_point=hit, distance_parameter=t, reaches_panel=reached)
 
 
 def certified_first_return(outward_back_normal, index=1.5):

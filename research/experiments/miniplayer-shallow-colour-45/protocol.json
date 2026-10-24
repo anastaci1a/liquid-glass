@@ -1,0 +1,52 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T11:05:00.076Z",
+  "deadline": "2026-10-24T11:25:00.076Z",
+  "checkpoint_minutes": 5,
+  "defect": "Held shallow geometry has residual body tone/contrast error after isolated geometry/light/blur tests. Thin width alone is not a complete model.",
+  "hypothesis": "One shared neutral incident-material response can calibrate this role without changing geometry, light, blur, source or any per-reference parameter.",
+  "pin": "68fbdc1cbba0d1fe29be5fe92ea4d635f063c774",
+  "allowed": "One equal-four-reference train-only Gauss-Newton quadratic proposal for common RGB-tied gain/bias; fixed factors1,0.5,0.25,0.125; stop at first strict visually meaningful four-reference qualifier.",
+  "frozen": "Shallow42 actual front/back/paths/primary power, originalincident6.75R21, light4, originalall4cases/masks/styles/AA2/shadowzero. No geometry/light/blur change.",
+  "parameters": {
+    "original_gain": 0.5552987769129158,
+    "original_bias": 0.3908368353448866,
+    "gain_bounds": [
+      0.4,
+      0.8
+    ],
+    "bias_bounds": [
+      0.15,
+      0.5
+    ],
+    "white_upper": 0.98
+  },
+  "factors": [
+    1,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "caps": {
+    "environment_direction_queries": 1500000,
+    "Study_constructor_pixels": 1121600,
+    "identity_composites": 4,
+    "train_pixels": 20000,
+    "fits": 1,
+    "proposal_checks": 32,
+    "candidate_composites": 16,
+    "score_calls": 20,
+    "SSIM_Gaussians": 100,
+    "metric_erosions": 20
+  },
+  "checkpoint": "Four shallow42 pre/complete/score identities, frozen inputs/code hashes and original train-only/foreground exclusion before one fit. Derivatives through decode, actual power, reflected light, encode and AA remain explicit.",
+  "guards": "All original numerical-baseline, public-working20 and shallow42 protected cohorts. Zero actual clipping required for a qualifier. Compare every original partial/foreground guard and fixed crop, no waiver.",
+  "stop": "First invariant/identity/deadline failure, first qualifier or four fixed factors. No next solve, light change, extra factor or compensating per-image fit.",
+  "scope": "An empirical encoded incident-material calibration under explicit lossless interface powers, not measured radiance, identified Apple material or complete reflected scene. No rays, heights, source queries, filters, Fresnel or baseline optical rerenders.",
+  "frozen_code_sha256": {
+    "reconstruction/geometric_render.py": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469",
+    "reconstruction/environment_radiance.py": "3696c79acd69aa3a1e4a01d84c596cc4a1b803b35fc02c255041d941589841c7",
+    "reconstruction/extended_fit.py": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f",
+    "research/experiments/miniplayer-outline-light-07/render.py": "98e60b41fedd1ecdbe38b28880f266394a6779d655b5a9e847d4dab7a313c976"
+  }
+}
