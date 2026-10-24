@@ -1,0 +1,27 @@
+{
+  "status": "DECLARED_BEFORE_GEOMETRY_EXECUTION",
+  "start": "2026-10-24T13:08:23.710Z",
+  "deadline": "2026-10-24T13:23:23.710Z",
+  "checkpoint_minutes": 6,
+  "visible_defect": "Reference has a brighter thin rim and cap light absent from source-certified numerical render57. Test a physical grazing-edge mode, not another exposure/lighting-strength fit.",
+  "hypothesis": "A closed convex power solid has flat central faces but vertical tangent at the projected rim. Actual grazing Fresnel reflection can point DOWN to the frozen backdrop, rather than always UP to a hypothetical panel. This distinguishes a missing geometric/scene role.",
+  "allowed": "ONE explicit solid with exponent exactly shallow41 power, front center height exactly0.02L and back center depth exactly shallow41 actual profile height at radius0. Same footprint/pose/index1.5/D2.1 as prior. This changes both face profiles coherently, not just normals.",
+  "surface": "F=rho^p + (z/H_side)^2 -1, H_side=Hfront above z0 and Hback below. Convex rho distance, p>=2 and convex piecewise quadratic imply convex solid. Same F supplies roots, normals and sections.",
+  "frozen": "Original cases/masks/source/vector, original L88.5, ordinary sigma6.75 remains prior but no frosted/transmission RGB rendering in this sparse task.",
+  "caps": {
+    "fixture_level_points": 5000,
+    "level_points": 16000,
+    "adapter_points": 18000,
+    "adapter_units": 360000,
+    "launches": 72,
+    "front_Fresnel_points": 36,
+    "front_reflection_points": 36,
+    "known_mask_lookups": 288,
+    "backdrop_RGB_queries": 72,
+    "full_images": 0,
+    "fits": 0
+  },
+  "selection": "Per member three sections: upper straight body, right axial cap, upper-right45-degree cap. Each has rho0.9,0.97,0.99,0.999,0.9999,0.999999. Indices1 and1.5:72launches including comparator.",
+  "checkpoint": "Actual analytic gradient FD and truecircle p2 equal-height level/gradient parity; then source-free primary sparse paths. Stop first invariant, not expected TIR/non-down primary status.",
+  "stop": "No native image/source completion, spectrum, light-strength or exponent sweep. Every primary incomplete state, unavailable reflected endpoint and scene role retained. Original57 model unchanged."
+}
