@@ -1,6 +1,8 @@
 # Current state
 
-Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue its unresolved outline and return questions. Compact now uses the exact expanded family with length alone changed; bounded clear-play work remains parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
+Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue isolated material assessment of the held two-surface outline candidate; preserve selected and historical states.
+
+Compact now uses the exact expanded family with length alone changed; bounded clear-play work remains parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
 
 Current scope is mathematical/physical modeling and visible fidelity. Runtime optimization and device benchmarking are outside this modeling work.
 
@@ -30,7 +32,7 @@ The bounded outline extension leaves residual reflected power and 20 unsupported
 | Refraction | Positive spline plus shared response passes original paired guards. This combined result does not isolate the effect of geometry alone. |
 | Ordinary blur | Incident sigma 6.75 is primary. Widths 4.5 / 9 failed earlier guards. The current spline also rejects 5.0625 for excess sharpness and body/foreground regressions; historical output filtering stays preserved. |
 | Color | Common gain 0.5961892385 and bias 0.3290237591 pass original guards with the selected spline. Encoded response is not measured radiance. |
-| Outline | The [actual-normal audit](../experiments/expanded-outline-role-04/README.md) certifies only part of reflected transport. Some bright rim pixels exceed the coded transmission ceiling. Front environment and remaining paths are unresolved. |
+| Outline | [Three rendered hypotheses](../experiments/miniplayer-outline-review-10/README.md) expose an inset back-return ring and a more plausible direct-front highlight. Equal-thickness split surfaces remain held for original local failures; environment and later radiance remain unobserved. |
 | Shadow | Zero retained; earlier H1 negatives remain historical rather than current spline verdicts. |
 | Foreground | Original artwork/vectors/styles stay fixed; all ten paired guards and float64 checks now pass. Exact UI identity remains unproven. |
 | Dispersion | Not identified; no spectral model added. |
@@ -55,9 +57,9 @@ The [current-model registry](../../reconstruction/current-models.json) selects g
 
 ## Compact miniplayer
 
-The [retained transfer study](../experiments/compact-geometry-01/README.md) has a supported raw geometric baseline. Its smoothed contour matches the frozen footprint; exact native sample and foreground replay pass for both references.
+The [required shared family](../experiments/miniplayer-shared-transfer-06/README.md) now supplies every glass parameter; only major length changes. Its unfitted compact outputs reproduce independently. The old separately configured initializer is historical.
 
-Source blur 6.75 native pixels and a common neutral response improve both references under all original guards. Rim light remains unresolved. The gallery selects these component results. The outline mechanism audit is closed; remaining stages stay pending. No per-reference fit or geometric fidelity claim has been made.
+The [held split-surface outline](../experiments/miniplayer-outline-review-10/README.md) uses the same surfaces and light for both lengths. Its overall errors improve, but interior/foreground regressions prevent acceptance. No compact-specific fitting is allowed.
 
 ## Shared limits
 

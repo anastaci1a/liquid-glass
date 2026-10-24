@@ -45,7 +45,7 @@ for member in ['expanded','compact']:
    case['center']=(np.asarray(case['center'])+s.L*np.array([prior['shape_dx'],prior['shape_dy']])).tolist()
   known=cv2.imread(str(work/k/'known.png'),0)>0
   accepted=np.load(oldbase/(f'{k}-candidate.npz' if member=='expanded' else f'compact-{k}-candidate.npz'))
-  required=masks['glass']|masks['exterior']
+  required=masks['glass']|masks['rim']|masks['held']|masks['exterior']
   for layer in s.case['foreground_layers']:
    a,b,c,d=layer['box'];cx0,cy0,_,_=s.crop;required[b-cy0:d-cy0,a-cx0:c-cx0]=True
   data[k]=dict(s=s,m=masks,case=case,known=known,accepted=accepted,required=required)
