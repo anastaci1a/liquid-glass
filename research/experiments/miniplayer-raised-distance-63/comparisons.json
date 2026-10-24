@@ -1,0 +1,139 @@
+{
+  "records": [
+    {
+      "member": "expanded",
+      "reference": "a",
+      "checks": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": true,
+        "E": false,
+        "SSIM": true,
+        "partial": false,
+        "exterior": true,
+        "foreground_jupiter.jpg": false,
+        "foreground_title.svg": true,
+        "foreground_artist.svg": true,
+        "foreground_play.svg": true,
+        "foreground_forward.svg": true,
+        "crop_lower_right_rim": false,
+        "crop_upper_left_rim": false,
+        "crop_left_cap": false,
+        "crop_body": true
+      },
+      "regressions": [
+        "glass",
+        "rim",
+        "held",
+        "E",
+        "partial",
+        "foreground_jupiter.jpg",
+        "crop_lower_right_rim",
+        "crop_upper_left_rim",
+        "crop_left_cap"
+      ]
+    },
+    {
+      "member": "expanded",
+      "reference": "b",
+      "checks": {
+        "glass": true,
+        "rim": false,
+        "held": true,
+        "interior": true,
+        "E": true,
+        "SSIM": true,
+        "partial": false,
+        "exterior": true,
+        "foreground_jupiter.jpg": false,
+        "foreground_title.svg": true,
+        "foreground_artist.svg": true,
+        "foreground_play.svg": true,
+        "foreground_forward.svg": true,
+        "crop_lower_right_rim": false,
+        "crop_upper_left_rim": true,
+        "crop_left_cap": true,
+        "crop_body": true
+      },
+      "regressions": [
+        "rim",
+        "partial",
+        "foreground_jupiter.jpg",
+        "crop_lower_right_rim"
+      ]
+    },
+    {
+      "member": "compact",
+      "reference": "a",
+      "checks": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": false,
+        "E": false,
+        "SSIM": true,
+        "partial": false,
+        "exterior": true,
+        "foreground_jupiter.jpg": true,
+        "foreground_title.svg": true,
+        "foreground_artist.svg": true,
+        "foreground_play.svg": false,
+        "foreground_forward.svg": true,
+        "crop_lower_right_rim": true,
+        "crop_upper_left_rim": false,
+        "crop_left_cap": false,
+        "crop_body": false
+      },
+      "regressions": [
+        "glass",
+        "rim",
+        "held",
+        "interior",
+        "E",
+        "partial",
+        "foreground_play.svg",
+        "crop_upper_left_rim",
+        "crop_left_cap",
+        "crop_body"
+      ]
+    },
+    {
+      "member": "compact",
+      "reference": "b",
+      "checks": {
+        "glass": false,
+        "rim": false,
+        "held": false,
+        "interior": false,
+        "E": false,
+        "SSIM": false,
+        "partial": true,
+        "exterior": true,
+        "foreground_jupiter.jpg": false,
+        "foreground_title.svg": true,
+        "foreground_artist.svg": true,
+        "foreground_play.svg": false,
+        "foreground_forward.svg": false,
+        "crop_lower_right_rim": true,
+        "crop_upper_left_rim": false,
+        "crop_left_cap": false,
+        "crop_body": true
+      },
+      "regressions": [
+        "glass",
+        "rim",
+        "held",
+        "interior",
+        "E",
+        "SSIM",
+        "foreground_jupiter.jpg",
+        "foreground_play.svg",
+        "foreground_forward.svg",
+        "crop_upper_left_rim",
+        "crop_left_cap"
+      ]
+    }
+  ],
+  "scope": "Saved scalar comparisons only; no new score call."
+}
