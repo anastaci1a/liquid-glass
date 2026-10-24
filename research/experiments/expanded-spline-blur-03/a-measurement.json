@@ -1,0 +1,113 @@
+{
+  "reference": "a",
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 12.311944961547852
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 16.51256561279297
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 12.369598388671875
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 10.052486419677734
+    },
+    "ssim": 0.9675676822662354,
+    "loss": 187.90823905036632,
+    "E": 13.707962614858793,
+    "exterior_RMSE": 19.254291534423828,
+    "foreground_artwork_MSE": {
+      "jupiter.jpg": 2259.786865234375,
+      "title.svg": 333.0313720703125,
+      "artist.svg": 298.524169921875,
+      "play.svg": 159.0228271484375,
+      "forward.svg": 212.26341247558594
+    }
+  },
+  "baseline_scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 11.516127586364746
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 15.682034492492676
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 11.512120246887207
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 9.23768424987793
+    },
+    "ssim": 0.9763391017913818,
+    "loss": 166.61269795692078,
+    "E": 12.907854118982009,
+    "exterior_RMSE": 19.254291534423828,
+    "foreground_artwork_MSE": {
+      "jupiter.jpg": 2260.37744140625,
+      "title.svg": 327.4755554199219,
+      "artist.svg": 229.97120666503906,
+      "play.svg": 142.54721069335938,
+      "forward.svg": 191.93296813964844
+    }
+  },
+  "guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "ssim": false,
+    "exterior": true,
+    "jupiter.jpg": true,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "float64_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "exterior": true,
+    "interior": false,
+    "jupiter.jpg": true,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "all_pass": false,
+  "clear_samples_exact": true,
+  "clips": [
+    0,
+    0
+  ],
+  "independent_bilinear_error": 2.220446049250313e-16,
+  "detail": {
+    "reference": {
+      "luma_std": 17.750266249056914,
+      "horizontal_difference_RMS": 0.9649894489565642
+    },
+    "baseline": {
+      "luma_std": 19.355087833394812,
+      "horizontal_difference_RMS": 0.7946340297309396
+    },
+    "candidate": {
+      "luma_std": 20.158443559926685,
+      "horizontal_difference_RMS": 1.0539612399332583
+    }
+  },
+  "partial_boundary_advisory": {
+    "pixels": 16,
+    "baseline_RMSE": 26.54980279963609,
+    "candidate_RMSE": 26.21534354247525
+  }
+}

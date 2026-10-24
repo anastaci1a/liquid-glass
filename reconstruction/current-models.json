@@ -33,18 +33,20 @@
     },
     "expanded-mini-player": {
       "name": "Expanded miniplayer",
-      "geometry": "Harmonic rounded-rectangle back",
-      "material": "Incident softness 6.75 native pixels and common neutral response",
-      "record": "research/experiments/expanded-geometry-02/selection.json",
-      "study": "research/experiments/expanded-geometry-02/README.md",
+      "geometry": "Positive cubic spline back over the frozen rounded footprint; flat front, index 1.5 and background distance 2.1L",
+      "material": "Incident sigma 6.75 native pixels; shared encoded gain 0.596189238519786 and bias 0.3290237590837732",
+      "record": "research/experiments/expanded-contrast-guard-02/primary-decision.json",
+      "study": "research/experiments/expanded-contrast-guard-02/README.md",
       "images": [
-        "assets/geometric-expanded-primary-a.png",
-        "assets/geometric-expanded-primary-b.png"
+        "assets/geometric-expanded-contrast-primary-a.png",
+        "assets/geometric-expanded-contrast-primary-b.png"
       ],
-      "limits": "Missing rim/cap structure; artwork guards and A SSIM regress versus historical output filtering. Distance reduction rejected.",
+      "limits": "Bright perimeter, B lettering returns and A colored transitions remain imperfect. Conditional source support and encoded response do not identify Apple geometry/material. Reflected radiance and performance unverified.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
-      "full_radiance_verified": false
+      "full_radiance_verified": false,
+      "accepted_increment": true,
+      "full_pipeline_pass": false
     },
     "navigation-control": {
       "name": "Navigation",
@@ -56,7 +58,7 @@
         "assets/geometric-navigation-primary-a.png",
         "assets/geometric-navigation-primary-b.png"
       ],
-      "limits": "Original foreground guards regress; light body and rim remain missing. Nonlinear foreground response still blocks the previous colour approximation.",
+      "limits": "Original incident-blur foreground guards regress. Later exact nonlinear composition enabled a visibly better tone proposal, held for the predeclared B partial-boundary failure. Outline and current shadow/dispersion verdicts remain incomplete.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
       "full_radiance_verified": false
@@ -74,6 +76,23 @@
       "limits": "Dark body, missing bright rim and incorrect edge structure remain. Later stages are pending.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
+      "full_radiance_verified": false
+    },
+    "detached-search-control": {
+      "name": "Detached Music Search",
+      "geometry": "Radius-adapted HarmonicCircularBack, flat front, n1.5/D2",
+      "material": "Incident sigma6.75 before refraction; shared encoded gain0.5193880051291454/bias0.4473611800152188 before AA",
+      "record": "research/experiments/search-neutral-primary-01/selection.json",
+      "study": "research/experiments/search-neutral-primary-01/README.md",
+      "images": [
+        "assets/geometric-music-search-primary-a.png",
+        "assets/geometric-music-search-primary-b.png"
+      ],
+      "limits": "Missing bright rim and misplaced returns; B lower-return color and detail regress. Conditional mosaic source; historical recipe fingerprint mismatch retained.",
+      "selection": "primary-geometric",
+      "fidelity": "incomplete",
+      "accepted_increment": true,
+      "full_pipeline_pass": false,
       "full_radiance_verified": false
     }
   }

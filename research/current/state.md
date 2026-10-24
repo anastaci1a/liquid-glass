@@ -1,6 +1,6 @@
 # Current state
 
-Current direction: compact remains parked; the bounded clear-play and expanded playback stage reviews are complete. Continue refining expanded playback geometry from the retained negative evidence. Follow the [refinement sequence](../method/refinement-sequence.md).
+Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue its unresolved outline and return questions. Compact and bounded clear-play work remain parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
 
 Ordinary blur belongs before refraction across elements. Historical widths seed incident filtering; output-filtered records remain labeled comparisons.
 
@@ -25,18 +25,19 @@ The bounded outline extension leaves residual reflected power and 20 unsupported
 
 | Stage | Disposition |
 | --- | --- |
-| Refraction | Distance, depth, curved-front and map-informed physical-height proposals fail original paired guards; no new geometric replacement. |
-| Ordinary blur | Incident sigma 6.75 is primary. New widths 4.5 / 9 fail original guards; historical output filtering stays preserved. |
-| Color | Retain the prior common gain/bias; four new white-preserving steps fail B symbol guards. |
-| Outline | Limited by path/source-scene issues; no reflected image accepted. |
-| Shadow / foreground | Three fixed shadow strengths and one shared transport-opacity direction fail original paired guards. |
+| Refraction | Positive spline plus shared response passes original paired guards. This combined result does not isolate the effect of geometry alone. |
+| Ordinary blur | Incident sigma 6.75 is primary. Widths 4.5 / 9 failed earlier guards. The current spline also rejects 5.0625 for excess sharpness and body/foreground regressions; historical output filtering stays preserved. |
+| Color | Common gain 0.5961892385 and bias 0.3290237591 pass original guards with the selected spline. Encoded response is not measured radiance. |
+| Outline | The [actual-normal audit](../experiments/expanded-outline-role-04/README.md) certifies only part of reflected transport. Some bright rim pixels exceed the coded transmission ceiling. Front environment and remaining paths are unresolved. |
+| Shadow | Zero retained; earlier H1 negatives remain historical rather than current spline verdicts. |
+| Foreground | Original artwork/vectors/styles stay fixed; all ten paired guards and float64 checks now pass. Exact UI identity remains unproven. |
 | Dispersion | Not identified; no spectral model added. |
 
-Primary source-filtered physical-model E is 45.42369 / 18.21982. Artwork guards and A SSIM regress versus the prior output-filtered state. Historical pass03 scores 5.38805 / 3.11686; its closer image fit remains archived, rather than determining the primary modeling approach.
+Primary source-filtered E is 12.90785 / 8.57587, versus prior H1 45.42369 / 18.21982. Independent cached replay is exact, with no new rays or source sampling. Historical empirical pass03 remains 5.38805 / 3.11686; its closer image fit stays archived.
 
-The [complete stage review](../experiments/expanded-pipeline-review-01/README.md) records negative results, incomplete outline support and retained evidence. No final animation or new fidelity acceptance is claimed.
+The [new combined increment](../experiments/expanded-contrast-guard-02/README.md) is accepted under the original paired guards. Bright perimeter, some return placement and colored-body transitions remain wrong. No completed full-pipeline pass or final animation is claimed. The [earlier stage review](../experiments/expanded-pipeline-review-01/README.md) remains historical evidence.
 
-A later [positive spline-height observation](../experiments/expanded-spline-observation-01/README.md) improves all paired body metrics, to E25.28850 / 11.04459. Original foreground guards still fail; it remains a prominent tested candidate rather than a selected or accepted replacement.
+The [earlier spline observation](../experiments/expanded-spline-observation-01/README.md) used the prior response and failed foreground guards despite body improvement. Its rejection is preserved. The later response is shared across both references and RGB; no individual icon, source or mask coefficient was introduced.
 
 ## Navigation and toolbar
 
@@ -52,7 +53,7 @@ The [current-model registry](../../reconstruction/current-models.json) selects g
 
 ## Compact miniplayer
 
-The [active transfer study](../experiments/compact-geometry-01/README.md) has a supported raw geometric baseline. Its smoothed contour matches the frozen footprint; exact native sample and foreground replay pass for both references.
+The [retained transfer study](../experiments/compact-geometry-01/README.md) has a supported raw geometric baseline. Its smoothed contour matches the frozen footprint; exact native sample and foreground replay pass for both references.
 
 Source blur 6.75 native pixels and a common neutral response improve both references under all original guards. Rim light remains unresolved. The gallery selects these component results. The outline mechanism audit is closed; remaining stages stay pending. No per-reference fit or geometric fidelity claim has been made.
 
@@ -65,3 +66,11 @@ Navigation's historical chroma-only calculation also uses raw H1. Its numerical 
 Surface-derived normals, tracing and finite support transfer. Navigation now has bounded paired native controls, but no transferred fidelity acceptance. Geometry and softness differ by control family; device performance is not measured here.
 
 Sources include modeled or temporally reconstructed content. A finite support proof does not establish hidden photographic truth, physical roughness or a uniquely identified Apple material.
+
+## Detached Music Search
+
+[Verified shared tone](../experiments/search-neutral-primary-01/README.md) improves E66.086/55.940 to27.662/22.030. Incident sigma6.75 stays selected; both fixed blur alternatives fail guards. Thin rim and returns remain unresolved. B lower-return color and detail regress. Outline scene feasibility is next; no full-pipeline or physical-material acceptance is claimed.
+
+## Shared circular-solid interface
+
+[Fixed-radius contract](../experiments/circular-solid-radius-01/README.md) passes 16 configurations and 96 ordered segments with exact default unit behavior. No image or scene is adopted. Search still lacks reflected-environment support; expanded playback remains outside this convex wrapper because its selected back is nonconcave.

@@ -1,0 +1,120 @@
+{
+  "status": "EXACT_REPLAY_AND_RESIDUAL_GUARDS_PASS_PENDING_VISUAL_DECISION",
+  "finished": "2026-10-24T01:47:28.812846+00:00",
+  "references": [
+    {
+      "reference": "a",
+      "identity_exact": true,
+      "graded_samples_exact": true,
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "all_reported_scores_exact": true,
+      "partial_pixels": 38,
+      "partial_RMSE": 97.96915435791016,
+      "all_f64_residual_guards_pass": true,
+      "residuals": {
+        "glass": {
+          "baseline_MSE_f64": 3901.7931935699976,
+          "candidate_MSE_f64": 656.7136567677372
+        },
+        "rim": {
+          "baseline_MSE_f64": 5453.61722465584,
+          "candidate_MSE_f64": 1018.2335585932748
+        },
+        "held": {
+          "baseline_MSE_f64": 3401.0784390275435,
+          "candidate_MSE_f64": 515.9433117270877
+        },
+        "interior": {
+          "baseline_MSE_f64": 1917.166863906086,
+          "candidate_MSE_f64": 194.36618599269187
+        },
+        "exterior": {
+          "baseline_MSE_f64": 270.521082737676,
+          "candidate_MSE_f64": 270.521082737676
+        },
+        "foreground": {
+          "baseline_MSE_f64": 1568.6423190455691,
+          "candidate_MSE_f64": 181.64722604367614
+        }
+      }
+    },
+    {
+      "reference": "b",
+      "identity_exact": true,
+      "graded_samples_exact": true,
+      "pre_foreground_exact": true,
+      "complete_exact": true,
+      "all_reported_scores_exact": true,
+      "partial_pixels": 38,
+      "partial_RMSE": 70.07123565673828,
+      "all_f64_residual_guards_pass": true,
+      "residuals": {
+        "glass": {
+          "baseline_MSE_f64": 3212.797719125138,
+          "candidate_MSE_f64": 412.2648320296108
+        },
+        "rim": {
+          "baseline_MSE_f64": 2934.256158403722,
+          "candidate_MSE_f64": 655.8056453998877
+        },
+        "held": {
+          "baseline_MSE_f64": 3368.54743075252,
+          "candidate_MSE_f64": 373.0802408805708
+        },
+        "interior": {
+          "baseline_MSE_f64": 3569.02426558904,
+          "candidate_MSE_f64": 100.80070924230245
+        },
+        "exterior": {
+          "baseline_MSE_f64": 255.46415457654373,
+          "candidate_MSE_f64": 255.46415457654373
+        },
+        "foreground": {
+          "baseline_MSE_f64": 3312.807840939968,
+          "candidate_MSE_f64": 100.93284502673362
+        }
+      }
+    }
+  ],
+  "first_last_hashes_identical": true,
+  "inputs": {
+    "/helper/research/experiments/agent-music-search-baseline-01/native-paths.npz": "668212cc4466b0b645beb52df7c7c148537965c4292fa155af1ad65de70456bf",
+    "/helper/research/experiments/agent-music-search-baseline-01/source-preflight.json": "dabec2975a7d43a11c74e9f5c2e842dcf0d226a3446523b89e074d626ca1c89e",
+    "/helper/research/experiments/agent-music-search-neutral-05/proposal.json": "d9686b1e9504acef05e5d7b29e9337bde0d72458cea4996d6d572c35b15310fe",
+    "/helper/research/experiments/agent-music-search-neutral-05/result.json": "6124b4054f091049917d0027edee0f6d4de6d1a6dc6e38abfbb5541a4103170c",
+    "/helper/research/experiments/agent-music-search-baseline-01/a-candidate.npz": "dc1039226217913a036f86b1493af1f4d6109924aa8f5e320d2ceb6535326d13",
+    "/helper/research/experiments/agent-music-search-baseline-01/a-masks.npz": "c860a11da5ffab569dc9e8a15a248fcd014c36ac951f05c85c5e8151db21071d",
+    "/helper/research/experiments/agent-music-search-neutral-05/full-a-candidate.npz": "d00dbba54a72b7bb93214cbc33fc4c9211a91f888c080d1e8d787917b4a1061e",
+    "/helper/research/experiments/agent-music-search-neutral-05/full-a-result.json": "05f94915da8b425faf540266eea9ee73974e33f912a8cd683e8ba0b6c1f4992f",
+    "/helper/.evidence-working/music-search-baseline-01/a/case.json": "ed374880171981a2f31d74c1c7c991a2414975d5e333c17b0f76015b157e64b7",
+    "/helper/.evidence-working/music-search-baseline-01/a/source.png": "84da0d24f30dc1f4080b568756d79044a9ac6568ecbff9595d02a38cd3239fb1",
+    "/helper/.evidence-working/music-search-baseline-01/a/target.png": "efffc64b8a6ee5b84f0bfc295369aad38db8531e4686674861074592fbee54de",
+    "/helper/.evidence-working/music-search-baseline-01/a/known.png": "03433579b8ddf8771df2bacf7aa1566e84b71bc81df71da1cd64069c00ff2413",
+    "/helper/research/experiments/agent-music-search-baseline-01/b-candidate.npz": "79d89f23788758dfb516c0916cba62a23089b19447186c61b454e724d7925a79",
+    "/helper/research/experiments/agent-music-search-baseline-01/b-masks.npz": "c860a11da5ffab569dc9e8a15a248fcd014c36ac951f05c85c5e8151db21071d",
+    "/helper/research/experiments/agent-music-search-neutral-05/full-b-candidate.npz": "269485e71da95949909f71b4b2375faba64a22f3427163b9b7209a4f739de2e5",
+    "/helper/research/experiments/agent-music-search-neutral-05/full-b-result.json": "7c57058b81f8d960ebdae7924a54377204a534c5e91bbcfe2ef7e0d664c010d2",
+    "/helper/.evidence-working/music-search-baseline-01/b/case.json": "de8807a13d9a8af1fddde138498f92fa314de47c513b925d41e8e60f6a661a8e",
+    "/helper/.evidence-working/music-search-baseline-01/b/source.png": "9789b4af085d505a23bdfac7615b0688125b0ea81587d1d58e23b68c6608268f",
+    "/helper/.evidence-working/music-search-baseline-01/b/target.png": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d",
+    "/helper/.evidence-working/music-search-baseline-01/b/known.png": "9d009193ae95ac9818a906fde1995dba531387f15926a5dd32e64ba34d3ff575",
+    "/repo/reconstruction/geometric_optics.py": "0526a33f0ab8545151af61755ac8daa024d140573276d1dddf799b15c8172082",
+    "/repo/reconstruction/geometric_render.py": "2e7a00ccc515482b9456f3b6808406779dc69c218da9b1d4015e065872bc8469",
+    "/repo/reconstruction/extended_fit.py": "32e958889571c924f16968f555c401a27fea6201c80234804f6fe1564539585f",
+    "/repo/reconstruction/vector_foreground.py": "e930b037ae7e8bc4ef98ea3a4aca78fabac9cee6e06a47b640ad6b18292714c6",
+    "/repo/reconstruction/foreground_response.py": "3a63e808e4ed23ff34a6d55088ef2ba0c9fe1f3b3ac4124b6d5e5977a40cc7c5"
+  },
+  "counts": {
+    "identity_composites": 2,
+    "candidate_composites": 2,
+    "score_calls": 4,
+    "original_reference_mask_points": 112800,
+    "rays": 0,
+    "height_evaluations": 0,
+    "source_queries": 0,
+    "material_filters": 0,
+    "fits": 0
+  },
+  "limits": "Cached conditional source only. Shared code unchanged. No claim of geometry, radiance or historical epoch equivalence."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "ACCEPTED_ENCODED_TONE_COMPONENT",
+  "recorded_utc": "2026-10-24T01:49:36.597Z",
+  "candidate_commit": "6037c131",
+  "geometry": "agent-music-search-baseline-01; radius-adapted HarmonicCircularBack",
+  "material": {
+    "gain": 0.5193880051291454,
+    "bias": 0.4473611800152188,
+    "incident_sigma_native": 6.75,
+    "finite_radius": 21,
+    "application": "inside samples before AA; clear and original foreground unchanged"
+  },
+  "accepted_increment": true,
+  "full_pipeline_pass": false,
+  "full_radiance_verified": false,
+  "source_observed_truth": false,
+  "metrics": {
+    "E_baseline": [
+      66.085856893,
+      55.939570425
+    ],
+    "E_selected": [
+      27.661699119259303,
+      22.030139499495235
+    ]
+  },
+  "regressions": [
+    "B lower-return RGB RMSE27.966990->28.644618 and chroma worse",
+    "Source-feature contrast falls"
+  ],
+  "remaining": [
+    "Missing bright rim",
+    "Incorrect feature positions and illumination",
+    "Historical recipe fingerprint mismatch",
+    "Conditional mosaic input and traced glyph fidelity"
+  ]
+}
