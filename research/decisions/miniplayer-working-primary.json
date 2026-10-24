@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-24T08:50:29.860Z",
+  "decision": "Explicit primary working selection for both member lengths; no numerical acceptance or baseline replacement.",
+  "reason": "Show the completed newer geometric reconstruction with a visible outline and closer body tone first, while retaining every local failure.",
+  "family": "reconstruction/families/music-mini-player-working.json",
+  "accepted_numerical_baseline": "reconstruction/families/music-mini-player.json",
+  "full_fidelity": false,
+  "full_pipeline_pass": false,
+  "new_accepted_count": 0,
+  "compact_is_colour_holdout": false,
+  "shared_train_references": 4,
+  "records": [
+    {
+      "member": "expanded",
+      "reference": "a",
+      "E": 7.883486797181998,
+      "failed_selected_guards": [
+        "partial"
+      ],
+      "failed_previous_experimental_guards": [
+        "partial"
+      ],
+      "partial": {
+        "pixels": 16,
+        "RMSE": 40.32682800292969
+      }
+    },
+    {
+      "member": "expanded",
+      "reference": "b",
+      "E": 6.149429642470981,
+      "failed_selected_guards": [
+        "jupiter.jpg",
+        "artist.svg"
+      ],
+      "failed_previous_experimental_guards": [
+        "partial"
+      ],
+      "partial": {
+        "pixels": 16,
+        "RMSE": 26.08043098449707
+      }
+    },
+    {
+      "member": "compact",
+      "reference": "a",
+      "E": 20.53187643383762,
+      "failed_selected_guards": [],
+      "failed_previous_experimental_guards": [],
+      "partial": {
+        "pixels": 22,
+        "RMSE": 23.813167572021484
+      }
+    },
+    {
+      "member": "compact",
+      "reference": "b",
+      "E": 19.68186325372886,
+      "failed_selected_guards": [],
+      "failed_previous_experimental_guards": [],
+      "partial": {
+        "pixels": 22,
+        "RMSE": 21.07662582397461
+      }
+    }
+  ]
+}

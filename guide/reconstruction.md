@@ -389,33 +389,32 @@ References come from [Apple's original Music video](https://www.apple.com/newsro
 
 ### Expanded mini-player
 
-Expanded and compact now use [one canonical glass model](../reconstruction/families/music-mini-player.json); only major length differs. The shared configuration replays both existing expanded references pixel-exactly.
+Expanded and compact use [one current working glass model](../reconstruction/families/music-mini-player-working.json), with major length as their only different glass parameter. Both actual surfaces supply their own intersections and normals; incident blur remains before refraction.
 
-**Primary: positive spline-height geometric model with shared neutral contrast.** Both references use the same actual surface profile, incident softness and common response. The bright rim, some background returns and cap shading remain incomplete.
+**Current working reconstruction: two physical surfaces with shared material.** These newer renders now appear first. They improve body tone and add an outer highlight. Thin perimeter, cap light, source returns and foreground backing remain imperfect. This is a working selection, not a full-fidelity or numerical-guard acceptance.
 
-References: [Apple Music clip](https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4), frames at 0 and 6.033 seconds.
+References: the original Music frames at 0 and 6.033 seconds.
 
-![Expanded miniplayer A and verified spline geometric model](assets/geometric-expanded-contrast-primary-a.png)
+![Expanded A: current two-surface working reconstruction](assets/geometric-expanded-outline-held-a.png)
 
-![Expanded miniplayer B and verified spline geometric model](assets/geometric-expanded-contrast-primary-b.png)
+![Expanded B: current two-surface working reconstruction](assets/geometric-expanded-outline-held-b.png)
 
-Paired E improves from H1's 45.424 / 18.220 to 12.908 / 8.576. All original paired body, SSIM, artwork and glyph guards pass, including independent float64 residual checks. Both partial-boundary advisory errors improve. Incident blur stays 6.75 native pixels. This is a verified combined increment, not a completed pipeline or uniquely identified Apple material.
+Current E is 7.88349 / 6.14943. Expanded A's original 16-pixel boundary and expanded B's artwork/artist guards still fail. No mask, source, accepted count or scoring epoch changes. The earlier verified baseline remains preserved below.
 
-[Selected state and limits](../research/experiments/expanded-contrast-guard-02/primary-decision.json) · [Bounded experiment and exact replay](../research/experiments/expanded-contrast-guard-02/README.md) · [Independent review](../research/experiments/agent-expanded-contrast-peer-09/README.md).
+[Explicit working selection](../research/decisions/miniplayer-working-primary.json) · [Shared material evidence](../research/experiments/miniplayer-incident-material-20/README.md) · [Joint interpretation](../research/experiments/miniplayer-interpretation-review-21/README.md).
 
-**Latest outline experiment: held, not selected.** Actual curved front/back surfaces now produce an outer highlight. The reconstructed physical back preserves useful refraction while a hypothetical common studio light supplies an outer highlight. Explicit interface powers and a shared material half-step bring body tone closer. Expanded A’s original boundary and two expanded B foreground guards still fail.
+A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.md) over-brightens the edge. Later closed-surface studies expose [source limitations](../research/experiments/miniplayer-native-front-26/README.md) and [grazing-sampling error](../research/experiments/miniplayer-grazing-quadrature-27/README.md); they are diagnostics, not newer completed reconstructions.
 
-The selected images above remain unchanged.
+<details data-historical>
+<summary>Preserved verified numerical baseline</summary>
 
-![Expanded A: held inverse-back geometry, explicit interface powers and common material half-step](assets/geometric-expanded-outline-held-a.png)
+![Expanded A: preserved spline baseline](assets/geometric-expanded-contrast-primary-a.png)
 
-![Expanded B: held inverse-back geometry, explicit interface powers and common material half-step](assets/geometric-expanded-outline-held-b.png)
+![Expanded B: preserved spline baseline](assets/geometric-expanded-contrast-primary-b.png)
 
-[Latest shared material test](../research/experiments/miniplayer-incident-material-20/README.md) · [Joint interpretation review](../research/experiments/miniplayer-interpretation-review-21/README.md) · [Inverse-back forward test](../research/experiments/miniplayer-inverse-forward-18/README.md) · [Earlier structured review and held color step](../research/experiments/miniplayer-pass-review-16/README.md) · [Three hypotheses and fixed-crop regressions](../research/experiments/miniplayer-outline-review-10/README.md) · [Same-geometry cached section](../research/experiments/miniplayer-outline-review-10/expanded-actual-section.svg). Lighting is an explicit unobserved assumption; later reflected radiance remains unresolved.
+The flat-front positive-spline baseline has E12.90785 / 8.57587 with original guards passed. Its [decision](../research/experiments/expanded-contrast-guard-02/primary-decision.json), [exact replay](../research/experiments/agent-expanded-contrast-peer-09/README.md) and [baseline family](../reconstruction/families/music-mini-player.json) remain immutable.
 
-A [narrower angular light](../research/experiments/miniplayer-narrow-emitter-22/README.md) produces a thin but over-bright perimeter. The [AA2/AA4 patch diagnostic](../research/experiments/miniplayer-outline-sampling-24/README.md) shows sampling does not fix the straight-edge mismatch. Both results remain separate from the selected model.
-
-Checkerboard marks unavailable unscored exterior. The original registered inputs and foreground remain fixed; no target backdrop, mask removal or new shadow is used. Earlier H1 and spline-response failures remain below.
+</details>
 
 <details data-historical>
 <summary>Earlier H1 primary, retained unchanged</summary>
@@ -484,15 +483,26 @@ Frame A: 0 seconds. Frame B: 6.033 seconds. Cover art is a separate high-resolut
 
 ### Compact mini-player
 
-**Primary: the exact expanded miniplayer model, shortened only.** One shared configuration supplies the spline, minor/corner geometry, index, background distance, incident blur and material. Compact received no fit.
+**Current working reconstruction: the exact expanded model, shortened only.** Geometry, index, scene, incident blur and material are identical. The common material uses all four references; compact is not a color holdout and has no compact-specific coefficient.
 
-The unfitted transfer passes all original paired guards; E43.579/38.032 becomes27.324/26.359. A frozen22-pixel old boundary cohort worsens44.194→48.286. The thin bright rim, cap light and return positions remain unresolved. No full-fidelity pass is claimed.
+![Compact A: current shared two-surface working reconstruction](assets/geometric-compact-working-a.png)
 
-[Shared family configuration](../reconstruction/families/music-mini-player.json) · [Transfer and local regressions](../research/experiments/miniplayer-shared-transfer-06/README.md) · [Independent exact replay](../research/experiments/agent-miniplayer-family-peer-19/README.md). Original source, reference masks, artwork and foreground inputs remain fixed.
+![Compact B: current shared two-surface working reconstruction](assets/geometric-compact-working-b.png)
 
-![Compact A and exact expanded-family transfer](assets/geometric-compact-family-primary-a.png)
+Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original comparisons, but the shared family remains guard-incomplete on expanded. The thin rim, cap light and returned features remain imperfect. Full radiance and full-fidelity acceptance are not claimed.
 
-![Compact B and exact expanded-family transfer](assets/geometric-compact-family-primary-b.png)
+[Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Working selection and all failures](../research/decisions/miniplayer-working-primary.json) · [Four-reference material record](../research/experiments/miniplayer-incident-material-20/README.md).
+
+<details data-historical>
+<summary>Preserved unfitted expanded-family transfer baseline</summary>
+
+![Compact A: preserved family-transfer baseline](assets/geometric-compact-family-primary-a.png)
+
+![Compact B: preserved family-transfer baseline](assets/geometric-compact-family-primary-b.png)
+
+The earlier unfitted transfer had E27.32362 / 26.35907. Its frozen A22-pixel boundary regression and [independent replay](../research/experiments/agent-miniplayer-family-peer-19/README.md) remain preserved. The [accepted baseline family](../reconstruction/families/music-mini-player.json) is separate from the current working selection.
+
+</details>
 
 <details data-historical>
 <summary>Earlier separately configured geometric initializer</summary>

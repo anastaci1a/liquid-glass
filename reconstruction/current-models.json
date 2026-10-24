@@ -33,23 +33,25 @@
     },
     "expanded-mini-player": {
       "name": "Expanded miniplayer",
-      "geometry": "Positive cubic spline back over the frozen rounded footprint; flat front, index 1.5 and background distance 2.1L",
-      "material": "Incident sigma 6.75 native pixels; shared encoded gain 0.596189238519786 and bias 0.3290237590837732",
-      "record": "research/experiments/expanded-contrast-guard-02/primary-decision.json",
-      "study": "research/experiments/expanded-contrast-guard-02/README.md",
+      "geometry": "Independent actual spline front and Hermite back, shared index1.5/D2.1; major length only differs",
+      "material": "Shared incident6.75R21, gain0.5552987769129158,bias0.3908368353448866, actual primary and direct-front powers with conditional annular scene4",
+      "record": "research/decisions/miniplayer-working-primary.json",
+      "study": "research/experiments/miniplayer-incident-material-20/README.md",
       "images": [
-        "assets/geometric-expanded-contrast-primary-a.png",
-        "assets/geometric-expanded-contrast-primary-b.png"
+        "assets/geometric-expanded-outline-held-a.png",
+        "assets/geometric-expanded-outline-held-b.png"
       ],
-      "limits": "Bright perimeter, B lettering returns and A colored transitions remain imperfect. Conditional source support and encoded response do not identify Apple geometry/material. Reflected radiance and performance unverified.",
+      "limits": "Working approximation, not a full guard pass. ExpandedA original16partial and expandedB artwork/artist fail; compact participated in shared training. Thin rim, cap/feature placement and later reflected radiance remain unresolved.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
       "full_radiance_verified": false,
-      "accepted_increment": true,
+      "accepted_increment": false,
       "full_pipeline_pass": false,
-      "family_record": "reconstruction/families/music-mini-player.json",
+      "family_record": "reconstruction/families/music-mini-player-working.json",
       "family_member": "expanded",
-      "active_parameter_source": "reconstruction/families/music-mini-player.json"
+      "active_parameter_source": "reconstruction/families/music-mini-player-working.json",
+      "accepted_numerical_baseline": "reconstruction/families/music-mini-player.json",
+      "primary_working_selection": true
     },
     "navigation-control": {
       "name": "Navigation",
@@ -68,23 +70,27 @@
     },
     "compact-mini-player": {
       "name": "Compact miniplayer",
-      "geometry": "Same selected expanded positive spline and fixed minor/corner geometry; major length only differs",
-      "material": "Exact expanded family: incident6.75 before refraction, same encoded response, no generated outline or shadow",
-      "record": "reconstruction/families/music-mini-player.json",
-      "study": "research/experiments/miniplayer-shared-transfer-06/README.md",
-      "family_record": "reconstruction/families/music-mini-player.json",
+      "geometry": "Independent actual spline front and Hermite back, shared index1.5/D2.1; major length only differs",
+      "material": "Shared incident6.75R21, gain0.5552987769129158,bias0.3908368353448866, actual primary and direct-front powers with conditional annular scene4",
+      "record": "research/decisions/miniplayer-working-primary.json",
+      "study": "research/experiments/miniplayer-incident-material-20/README.md",
+      "family_record": "reconstruction/families/music-mini-player-working.json",
       "family_member": "compact",
       "images": [
-        "assets/geometric-compact-family-primary-a.png",
-        "assets/geometric-compact-family-primary-b.png"
+        "assets/geometric-compact-working-a.png",
+        "assets/geometric-compact-working-b.png"
       ],
-      "limits": "Thin rim, cap lighting and feature placement remain wrong. A frozen22-pixel old boundary cohort regresses; no separate compact fit or full-fidelity claim.",
+      "limits": "Working approximation, not a full guard pass. ExpandedA original16partial and expandedB artwork/artist fail; compact participated in shared training. Thin rim, cap/feature placement and later reflected radiance remain unresolved.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
       "full_radiance_verified": false,
       "full_pipeline_pass": false,
       "independent_review": "research/experiments/agent-miniplayer-family-peer-19/README.md",
-      "independent_review_commit": "947c37e0f31319334e47ca528574daad7e305d6a"
+      "independent_review_commit": "947c37e0f31319334e47ca528574daad7e305d6a",
+      "active_parameter_source": "reconstruction/families/music-mini-player-working.json",
+      "accepted_numerical_baseline": "reconstruction/families/music-mini-player.json",
+      "accepted_increment": false,
+      "primary_working_selection": true
     },
     "detached-search-control": {
       "name": "Detached Music Search",
