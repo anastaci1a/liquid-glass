@@ -1,0 +1,30 @@
+{
+  "pin": "2c90bd1d",
+  "consumed_code": {
+    "reconstruction/environment_radiance.py": {
+      "exact_bytes": false,
+      "immutable_prefix": true
+    },
+    "reconstruction/geometric_render.py": {
+      "exact_bytes": true,
+      "immutable_prefix": true
+    },
+    "reconstruction/extended_fit.py": {
+      "exact_bytes": true,
+      "immutable_prefix": true
+    },
+    "reconstruction/foreground_response.py": {
+      "exact_bytes": true,
+      "immutable_prefix": true
+    },
+    "reconstruction/vector_foreground.py": {
+      "exact_bytes": true,
+      "immutable_prefix": true
+    },
+    "research/experiments/miniplayer-outline-light-07/render.py": {
+      "exact_bytes": true,
+      "immutable_prefix": true
+    }
+  },
+  "note": "environment_radiance.py has an additive two_interface_power suffix after the immutable source prefix. That new function is not imported by name or called in this replay. All consumed original definitions match the pin. A broad comparison to peer26 initially flagged later geometry/environment additions; original inputs are unchanged and actual first/last hashes match. No composites or scores repeated."
+}
