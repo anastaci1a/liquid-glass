@@ -1,0 +1,25 @@
+{
+  "status": "CONDITIONALLY_SOUND_AREA_RULE_WITH_PARTITION_CLARIFICATIONS",
+  "blockers": [
+    "Compute arc intersections for every edge of every already-split subrectangle, including interior centerline cuts; otherwise clipped intervals change formula inside a quadrature piece",
+    "Native-center splits are not generic refracted-source bilinear knot preimages",
+    "Positive finite-order weights do not guarantee exact covered-area mass or optical convergence"
+  ],
+  "accepted": [
+    "Absolute R*sin(theta) cap Jacobian with correct orientation and native units",
+    "Clipped y intervals with positive nested Gauss weights",
+    "Full pixel-area normalization; zero exterior for lens-only component",
+    "Apply to all geometric boundary pixels independently of residual/target masks"
+  ],
+  "required_controls": [
+    "Exact circle and circle-degenerate core cases",
+    "Straight sides and interior/exterior/tangent slivers",
+    "Translation and fractional phase",
+    "Mirrors/axis exchange and non-overlapping partitions",
+    "Constant-positive area and weight mass",
+    "Separate actual optical integrand convergence/source/path gates"
+  ],
+  "scientific_evaluations": 0,
+  "implementation": false,
+  "score_change": false
+}
