@@ -1,0 +1,407 @@
+{
+  "reference": "a",
+  "gain": 0.5552987769129158,
+  "bias": 0.3908368353448866,
+  "scores": {
+    "original": {
+      "glass": {
+        "pixels": 14904,
+        "rmse": 18.502927780151367
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 20.213972091674805
+      },
+      "held": {
+        "pixels": 4763,
+        "rmse": 18.077518463134766
+      },
+      "interior": {
+        "pixels": 6540,
+        "rmse": 16.051040649414062
+      },
+      "ssim": 0.9335827827453613,
+      "loss": 362.2322358231504,
+      "E": 19.032399633865154,
+      "exterior_RMSE": 16.447525024414062,
+      "foreground_RMSE": 13.785253524780273
+    },
+    "complete": {
+      "glass": {
+        "pixels": 14904,
+        "rmse": 18.502927780151367
+      },
+      "rim": {
+        "pixels": 8364,
+        "rmse": 20.213972091674805
+      },
+      "held": {
+        "pixels": 4763,
+        "rmse": 18.077518463134766
+      },
+      "interior": {
+        "pixels": 6540,
+        "rmse": 16.051040649414062
+      },
+      "ssim": 0.9335827827453613,
+      "loss": 362.2322358231504,
+      "E": 19.032399633865154,
+      "exterior_RMSE": 16.447525024414062,
+      "foreground_RMSE": 13.785253524780273
+    }
+  },
+  "guards": {
+    "selected": {
+      "original": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": false,
+        "E": true,
+        "SSIM": true,
+        "exterior": true,
+        "foreground": false
+      },
+      "complete": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": false,
+        "E": true,
+        "SSIM": true,
+        "exterior": true,
+        "foreground": false
+      },
+      "partial38": true
+    },
+    "shallow39": {
+      "original": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "E": true,
+        "SSIM": false,
+        "exterior": true,
+        "foreground": true
+      },
+      "complete": {
+        "glass": true,
+        "rim": true,
+        "held": true,
+        "interior": true,
+        "E": true,
+        "SSIM": false,
+        "exterior": true,
+        "foreground": true
+      },
+      "partial38": false
+    }
+  },
+  "partial38_RMSE": 79.81787872314453,
+  "partial_baseline39": 79.70964813232422,
+  "partial_selected": 97.96915435791016,
+  "clipping": {
+    "neutral_low": 0,
+    "neutral_high": 0,
+    "encoded_low": 0,
+    "encoded_high": 0
+  },
+  "clear_exact": true,
+  "fixed_crops": {
+    "upper_rim": {
+      "bounds": [
+        1440,
+        576,
+        1580,
+        620
+      ],
+      "RGB_RMSE": 23.040806493121664,
+      "luma_RMSE": 21.65522506973991,
+      "chroma_RMSE": 9.776166246456294,
+      "signed_RGB": [
+        -5.349297182707043,
+        -7.098464251919226,
+        -7.787651161572521
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.0270439108895717,
+        "vertical_adjacent_RMS": 0.0419938421042863
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.0351938799484109,
+        "vertical_adjacent_RMS": 0.061748863428512296
+      }
+    },
+    "left_cap": {
+      "bounds": [
+        1418,
+        630,
+        1455,
+        718
+      ],
+      "RGB_RMSE": 25.190988038739448,
+      "luma_RMSE": 24.280265278737527,
+      "chroma_RMSE": 6.8313304561953085,
+      "signed_RGB": [
+        -10.455555320426786,
+        -10.278048001788099,
+        -9.881169573651027
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.04903217539204049,
+        "vertical_adjacent_RMS": 0.03306118406725702
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.060568699354425284,
+        "vertical_adjacent_RMS": 0.04151488347009851
+      }
+    },
+    "lower_return": {
+      "bounds": [
+        1440,
+        728,
+        1580,
+        764
+      ],
+      "RGB_RMSE": 20.405027298640757,
+      "luma_RMSE": 18.50965919395234,
+      "chroma_RMSE": 10.804333121376633,
+      "signed_RGB": [
+        -2.678351382857987,
+        -1.7710315107944465,
+        2.2254955210013403
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.04101619393128847,
+        "vertical_adjacent_RMS": 0.041338572625321125
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.05257618526052075,
+        "vertical_adjacent_RMS": 0.06605145448585531
+      }
+    },
+    "glyph": {
+      "bounds": [
+        1467,
+        626,
+        1563,
+        722
+      ],
+      "RGB_RMSE": 13.785253279538283,
+      "luma_RMSE": 12.521041626366431,
+      "chroma_RMSE": 5.654704212153126,
+      "signed_RGB": [
+        -11.852714827206606,
+        -6.064907485657993,
+        -3.443701623909874
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.045994954987485806,
+        "vertical_adjacent_RMS": 0.04244131867124969
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.04965870222597527,
+        "vertical_adjacent_RMS": 0.04771141945372482
+      }
+    }
+  },
+  "baseline_crops": {
+    "upper_rim": {
+      "bounds": [
+        1440,
+        576,
+        1580,
+        620
+      ],
+      "RGB_RMSE": 23.873113334523847,
+      "luma_RMSE": 22.63312759806716,
+      "chroma_RMSE": 9.603747372037727,
+      "signed_RGB": [
+        -7.595340481294053,
+        -9.700786761794385,
+        -10.692244478338095
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.027443012374403445,
+        "vertical_adjacent_RMS": 0.04282309910343035
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.0351938799484109,
+        "vertical_adjacent_RMS": 0.061748863428512296
+      }
+    },
+    "left_cap": {
+      "bounds": [
+        1418,
+        630,
+        1455,
+        718
+      ],
+      "RGB_RMSE": 24.757537922228387,
+      "luma_RMSE": 23.773035134995624,
+      "chroma_RMSE": 6.854798277812213,
+      "signed_RGB": [
+        -9.887818453023415,
+        -9.639329220641963,
+        -9.192801197837461
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.0499336767780796,
+        "vertical_adjacent_RMS": 0.03308856208854632
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.060568699354425284,
+        "vertical_adjacent_RMS": 0.04151488347009851
+      }
+    },
+    "lower_return": {
+      "bounds": [
+        1440,
+        728,
+        1580,
+        764
+      ],
+      "RGB_RMSE": 22.796621792343394,
+      "luma_RMSE": 21.8999720983828,
+      "chroma_RMSE": 9.663463117917427,
+      "signed_RGB": [
+        -8.174422970573817,
+        -9.733923469182281,
+        -8.163041599250088
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.04167395805276042,
+        "vertical_adjacent_RMS": 0.0435853492987304
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.05257618526052075,
+        "vertical_adjacent_RMS": 0.06605145448585531
+      }
+    },
+    "glyph": {
+      "bounds": [
+        1467,
+        626,
+        1563,
+        722
+      ],
+      "RGB_RMSE": 15.986384947329466,
+      "luma_RMSE": 15.120872231019913,
+      "chroma_RMSE": 4.794521231087792,
+      "signed_RGB": [
+        -16.10107379834517,
+        -11.643716646697916,
+        -10.29429940264284
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.044514557914348676,
+        "vertical_adjacent_RMS": 0.04090852172579623
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.04965870222597527,
+        "vertical_adjacent_RMS": 0.04771141945372482
+      }
+    }
+  },
+  "selected_crops": {
+    "upper_rim": {
+      "bounds": [
+        1440,
+        576,
+        1580,
+        620
+      ],
+      "RGB_RMSE": 25.1132072500837,
+      "luma_RMSE": 22.386757872447806,
+      "chroma_RMSE": 11.984362180505734,
+      "signed_RGB": [
+        0.6199816435865768,
+        0.8060852974024298,
+        1.1732280884337212
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.030378823574018072,
+        "vertical_adjacent_RMS": 0.04702903675642732
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.0351938799484109,
+        "vertical_adjacent_RMS": 0.061748863428512296
+      }
+    },
+    "left_cap": {
+      "bounds": [
+        1418,
+        630,
+        1455,
+        718
+      ],
+      "RGB_RMSE": 22.90245479449443,
+      "luma_RMSE": 21.051062970216922,
+      "chroma_RMSE": 8.785618465924745,
+      "signed_RGB": [
+        0.03794351286032862,
+        -0.7663507463469992,
+        -0.5052744962288758
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.04119896881297999,
+        "vertical_adjacent_RMS": 0.031909427763353704
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.060568699354425284,
+        "vertical_adjacent_RMS": 0.04151488347009851
+      }
+    },
+    "lower_return": {
+      "bounds": [
+        1440,
+        728,
+        1580,
+        764
+      ],
+      "RGB_RMSE": 21.798681928269307,
+      "luma_RMSE": 20.472564748342187,
+      "chroma_RMSE": 10.327401030440218,
+      "signed_RGB": [
+        -0.04006057028614339,
+        -1.5705882840390717,
+        0.6324424375336439
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.03817515718670477,
+        "vertical_adjacent_RMS": 0.03618189653614529
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.05257618526052075,
+        "vertical_adjacent_RMS": 0.06605145448585531
+      }
+    },
+    "glyph": {
+      "bounds": [
+        1467,
+        626,
+        1563,
+        722
+      ],
+      "RGB_RMSE": 13.477656548661423,
+      "luma_RMSE": 11.453292098514266,
+      "chroma_RMSE": 7.049799188670307,
+      "signed_RGB": [
+        -2.9173427394319638,
+        3.818089576282849,
+        6.427008848453018
+      ],
+      "candidate_detail": {
+        "horizontal_adjacent_RMS": 0.048824232054365264,
+        "vertical_adjacent_RMS": 0.04524032516552936
+      },
+      "target_detail": {
+        "horizontal_adjacent_RMS": 0.04965870222597527,
+        "vertical_adjacent_RMS": 0.04771141945372482
+      }
+    }
+  },
+  "conditional_scene": true,
+  "tail_unassigned": true
+}
