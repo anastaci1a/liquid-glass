@@ -1,0 +1,92 @@
+{
+  "member": "expanded",
+  "reference": "a",
+  "width": 8.4375,
+  "radius": 26,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 10.336968421936035
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 11.88952922821045
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 10.253812789916992
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 9.615169525146484
+    },
+    "ssim": 0.9774612188339233,
+    "loss": 117.2053128898131,
+    "E": 10.826140258181265,
+    "exterior": 19.254291534423828,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 35.889625549316406
+    },
+    "foreground": {
+      "jupiter.jpg": 2262.037841796875,
+      "title.svg": 326.20330810546875,
+      "artist.svg": 194.5269317626953,
+      "play.svg": 131.91456604003906,
+      "forward.svg": 179.895751953125
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 18.462848663330078,
+        "luma_signed": 9.807675544763939
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 14.510835647583008,
+        "luma_signed": -4.1157776327780295
+      },
+      "left_cap": {
+        "RGB_RMSE": 20.349899291992188,
+        "luma_signed": -4.510842651611214
+      },
+      "body": {
+        "RGB_RMSE": 7.606090545654297,
+        "luma_signed": 0.3863080027683761
+      }
+    }
+  },
+  "held_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "selected_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "held_all_pass": false,
+  "selected_all_pass": false,
+  "clipping": 0,
+  "baseline_held_E": 11.050967044930415,
+  "baseline_selected_E": 12.907854118982009
+}

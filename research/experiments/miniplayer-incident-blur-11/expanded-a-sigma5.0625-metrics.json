@@ -1,0 +1,92 @@
+{
+  "member": "expanded",
+  "reference": "a",
+  "width": 5.0625,
+  "radius": 16,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 11.292043685913086
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 13.452417373657227
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 11.234188079833984
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 10.256731986999512
+    },
+    "ssim": 0.9713356494903564,
+    "loss": 143.54743538172113,
+    "E": 11.981128301696845,
+    "exterior": 19.254291534423828,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 35.10811996459961
+    },
+    "foreground": {
+      "jupiter.jpg": 2260.737060546875,
+      "title.svg": 332.9465637207031,
+      "artist.svg": 315.83013916015625,
+      "play.svg": 159.73155212402344,
+      "forward.svg": 213.35000610351562
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 18.590843200683594,
+        "luma_signed": 9.30903052401222
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 15.322725296020508,
+        "luma_signed": -4.457403568399828
+      },
+      "left_cap": {
+        "RGB_RMSE": 21.219627380371094,
+        "luma_signed": -5.030316438165885
+      },
+      "body": {
+        "RGB_RMSE": 8.399173736572266,
+        "luma_signed": 0.311173102916846
+      }
+    }
+  },
+  "held_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "selected_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "held_all_pass": false,
+  "selected_all_pass": false,
+  "clipping": 0,
+  "baseline_held_E": 11.050967044930415,
+  "baseline_selected_E": 12.907854118982009
+}
