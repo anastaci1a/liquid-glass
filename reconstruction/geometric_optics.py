@@ -155,6 +155,11 @@ def trace_flat_front_orthographic(surface,x,y,index,background_distance):
     This certificate does not cover curved-front or multiply reflected paths.
     path_length is the post-exit AIR distance to the background, not glass
     thickness. Glass distance for this normal-incidence front is the height.
+    Legacy inside retains the adapter's membership convention. For certified
+    adapters, projected_inside includes the footprint boundary; regular_entry
+    excludes all unresolved launches, including interior zero thickness.
+    Neither flag certifies completion or source support. Legacy direction
+    diagnostics outside regular events are not physical interface-exit data.
     """
     if index<1 or not np.isfinite([index,background_distance]).all() or background_distance<=surface.maximum_height:raise ValueError('Invalid index or background clearance')
     if not np.isfinite([surface.maximum_height,surface.slope_bound]).all() or surface.maximum_height<0 or surface.slope_bound<0:raise ValueError('Finite nonnegative global surface bounds required')
@@ -180,6 +185,7 @@ def trace_flat_front_orthographic(surface,x,y,index,background_distance):
     valid_surface=inside&~boundary
     return dict(X=np.where(boundary,np.nan,np.where(inside,X,x)),
                 Y=np.where(boundary,np.nan,np.where(inside,Y,y)),inside=inside,
+                projected_inside=inside|boundary,regular_entry=valid_surface,
                 boundary_unresolved=boundary,zero_thickness_unresolved=zero_thickness,
                 back=np.where(valid_surface[...,None],np.stack([x,y,-h],axis=-1),np.nan),
                 outward_normal=np.where(valid_surface[...,None],-n_against,np.nan),
@@ -225,7 +231,9 @@ def trace_closed_orthographic(surface,x,y,index,background_distance,tolerance=1e
     Total internal reflection, tangent and non-downward exit are INCOMPLETE,
     with NaN background coordinates, never replacement samples. Convexity and
     positive outgoing normal derivative certify no subsequent solid reentry.
-    No reflected radiance or Fresnel weighting is implemented.
+    No reflected radiance or Fresnel weighting is implemented. Legacy inside
+    is strict front membership; projected_inside includes the unresolved rim.
+    regular_entry excludes unresolved launches and does not certify an exit.
     """
     ext=np.asarray(surface.half_extents,float);center=np.asarray(surface.center,float)
     if not np.isfinite([index,background_distance,tolerance]).all() or index<1 or background_distance<=-center[2]+ext[2] or tolerance<=0 or max_iterations<1:raise ValueError('Invalid closed-solid scene')
@@ -255,7 +263,7 @@ def trace_closed_orthographic(surface,x,y,index,background_distance,tolerance=1e
     X[boundary]=np.nan;Y[boundary]=np.nan
     scalar=lambda v:v.reshape(shape)
     vector=lambda v:v.reshape(shape+(3,))
-    return dict(X=scalar(X),Y=scalar(Y),inside=scalar(inside),complete=scalar(complete),boundary_unresolved=scalar(boundary),blocked=scalar(blocked),entry=vector(entry),exit=vector(exit),entry_normal=vector(ni),exit_normal=vector(no),internal_direction=vector(internal),exit_direction=vector(outgoing),discriminant=scalar(discriminant),intersection_bracket=scalar(width),exit_level_residual=scalar(residual))
+    return dict(X=scalar(X),Y=scalar(Y),inside=scalar(inside),projected_inside=scalar(inside|boundary),regular_entry=scalar(inside&~boundary),complete=scalar(complete),boundary_unresolved=scalar(boundary),blocked=scalar(blocked),entry=vector(entry),exit=vector(exit),entry_normal=vector(ni),exit_normal=vector(no),internal_direction=vector(internal),exit_direction=vector(outgoing),discriminant=scalar(discriminant),intersection_bracket=scalar(width),exit_level_residual=scalar(residual))
 
 
 def fresnel_components(cosine,n_from,n_to):

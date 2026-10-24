@@ -1,0 +1,19 @@
+{
+  "status": "DECLARED_BEFORE_METADATA_EDIT",
+  "start": "2026-10-24T02:42:20.448Z",
+  "deadline": "2026-10-24T03:02:20.448Z",
+  "base_commit": "2a78e0fab81a3b27baaee2e651784bbbb8c66d7c",
+  "question": "Can explicit inclusive projected membership and regular entry be returned without changing any legacy output or path?",
+  "allowed": "Add projected_inside and regular_entry from already evaluated membership and unresolved flags. Preserve all legacy arrays, algorithms and selected images.",
+  "caps": {
+    "fixture_configurations": 4,
+    "attempted_comparator_rays": 64,
+    "level_points": 10000,
+    "height_boundary_points": 20000,
+    "source_queries": 0,
+    "images": 0,
+    "fits": 0
+  },
+  "checkpoint": "Every old field exact versus pinned implementation, with NaNs preserved; explicit membership checked separately from complete.",
+  "stop": "First unexpected legacy difference, budget/deadline or completion. No boundary reclassification, remaining old fixture restart or scene generation."
+}

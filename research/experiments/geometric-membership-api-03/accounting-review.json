@@ -1,0 +1,21 @@
+{
+  "status": "CONSERVATIVE_WRAPPER_ACCOUNTING_NO_REPLAY",
+  "recorded_utc": "2026-10-24T02:46:24.435Z",
+  "as_run_counter": {
+    "fixture_configurations": 4,
+    "attempted_comparator_rays": 50,
+    "height_boundary_points": 580,
+    "level_points": 516
+  },
+  "scope": "The measured height_boundary_points counter covers delegated height queries and explicit flat-adapter boundary calls; it is not a complete nested interface-method count.",
+  "closed_tracer_calls": 6,
+  "launches_per_closed_call": 4,
+  "conservative_nested_interface_upper": 1232,
+  "derivation": "Double the measured query count to enclose the delegated geometry adapters, then reserve front and two boundary-interface methods for every closed launch. Instrumentation wrappers are not additional numerical evaluations.",
+  "cap": 20000,
+  "extra_rays": 0,
+  "extra_geometry_calls": 0,
+  "all_within_original_cap": true,
+  "structural_upper_from_fixed_fixtures_and_iteration_limit": 1856,
+  "chronology": "Post-run accounting supplement derived from the unchanged fixed fixture and solver limits; not an as-run nested method counter."
+}
