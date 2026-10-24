@@ -34,4 +34,4 @@ for d in data:
   with warnings.catch_warnings():
    warnings.simplefilter('error',IntegrationWarning);value,error=quad(callback,lo,hi,epsabs=1e-10,epsrel=1e-7,limit=128)
  assert error<1e-7,'Quadrature uncertainty';records.append({k:v for k,v in d.items() if k not in ['callback','lower','upper']}|dict(AA8=aa8,adaptive=value,estimated_error=error,AA2_error=abs(d['AA2']-value),AA8_error=abs(aa8-value)))
-save('result.json',{'status':'STRAIGHT_EDGE_UNIT_REFLECTANCE_QUADRATURE_COMPLETE','finished':datetime.datetime.now(datetime.timezone.utc).isoformat(),'records':records,'ledger':ledger,'source_RGB_queries_rays_fits':0,'AA2_protocol_unchanged':True,'optical_acceptance':False})
+save('result.json',{'status':'STRAIGHT_EDGE_UNIT_REFLECTANCE_QUADRATURE_COMPLETE','finished':datetime.datetime.now(datetime.timezone.utc).isoformat(),'records':records,'ledger':ledger,'source_RGB_queries_internal_traces_fits':0,'AA2_protocol_unchanged':True,'optical_acceptance':False})
