@@ -1,0 +1,91 @@
+{
+  "member": "compact",
+  "reference": "b",
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 16.390775680541992
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 19.627986907958984
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 16.549358367919922
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 14.014754295349121
+    },
+    "ssim": 0.9640212059020996,
+    "loss": 303.63763020459555,
+    "E": 17.42520100901552,
+    "exterior": 15.072770118713379,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 20.209455490112305
+    },
+    "foreground": {
+      "jupiter.jpg": 1907.048828125,
+      "title.svg": 405.32537841796875,
+      "artist.svg": 64.70574951171875,
+      "play.svg": 105.92972564697266,
+      "forward.svg": 226.292236328125
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 24.7360897064209,
+        "luma_signed": -3.368282287619122
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 20.15968132019043,
+        "luma_signed": -2.2773172597706592
+      },
+      "left_cap": {
+        "RGB_RMSE": 17.70008087158203,
+        "luma_signed": -1.2156773520017907
+      },
+      "body": {
+        "RGB_RMSE": 14.001497268676758,
+        "luma_signed": -6.0578098007834
+      }
+    }
+  },
+  "canonical_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "hybrid_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "clipped_channels": 0,
+  "all_canonical_pass": true,
+  "all_hybrid_pass": true,
+  "primary_power_min": 0.9124826711919971,
+  "primary_power_max": 0.9216,
+  "tail_unassigned": true
+}
