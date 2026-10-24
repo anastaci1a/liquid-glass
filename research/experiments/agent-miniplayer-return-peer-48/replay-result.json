@@ -1,0 +1,107 @@
+{
+  "status": "PASS_FOUR_CACHED_FOREGROUND_METRIC_REPLAYS",
+  "failure": null,
+  "at": "2026-10-24T19:46:34.081778+00:00",
+  "records": [
+    {
+      "member": "expanded",
+      "reference": "a",
+      "pre_foreground": "Sealed input reused unchanged; no optical reconstruction",
+      "complete_pixel_exact": true,
+      "scores_exact": true,
+      "E": 17.719766362371054,
+      "SSIM": 0.8623149394989014,
+      "partial": {
+        "pixels": 16,
+        "RMSE": 44.875789642333984
+      },
+      "all_foreground_and_fixed_crop_values_exact": true,
+      "matched78_failed_guards": [
+        "glass",
+        "rim",
+        "held",
+        "interior",
+        "E",
+        "SSIM"
+      ]
+    },
+    {
+      "member": "expanded",
+      "reference": "b",
+      "pre_foreground": "Sealed input reused unchanged; no optical reconstruction",
+      "complete_pixel_exact": true,
+      "scores_exact": true,
+      "E": 11.572925333375535,
+      "SSIM": 0.8972504734992981,
+      "partial": {
+        "pixels": 16,
+        "RMSE": 26.696975708007812
+      },
+      "all_foreground_and_fixed_crop_values_exact": true,
+      "matched78_failed_guards": [
+        "glass",
+        "rim",
+        "held",
+        "interior",
+        "E",
+        "SSIM"
+      ]
+    },
+    {
+      "member": "compact",
+      "reference": "a",
+      "pre_foreground": "Sealed input reused unchanged; no optical reconstruction",
+      "complete_pixel_exact": true,
+      "scores_exact": true,
+      "E": 18.075636765098857,
+      "SSIM": 0.7978649139404297,
+      "partial": {
+        "pixels": 22,
+        "RMSE": 20.62848472595215
+      },
+      "all_foreground_and_fixed_crop_values_exact": true,
+      "matched78_failed_guards": [
+        "glass",
+        "rim",
+        "held",
+        "E",
+        "SSIM"
+      ]
+    },
+    {
+      "member": "compact",
+      "reference": "b",
+      "pre_foreground": "Sealed input reused unchanged; no optical reconstruction",
+      "complete_pixel_exact": true,
+      "scores_exact": true,
+      "E": 18.36203338501665,
+      "SSIM": 0.7716655135154724,
+      "partial": {
+        "pixels": 22,
+        "RMSE": 19.808732986450195
+      },
+      "all_foreground_and_fixed_crop_values_exact": true,
+      "matched78_failed_guards": [
+        "glass",
+        "rim",
+        "held",
+        "E",
+        "SSIM"
+      ]
+    }
+  ],
+  "ledger": {
+    "Study_constructors": 4,
+    "mask_points": 1121600,
+    "cached_composites": 4,
+    "score_calls": 4,
+    "SSIM_Gaussians": 20,
+    "metric_erosions": 4,
+    "vector_coverage_visits": 32,
+    "foreground_box_reservations": 617616,
+    "numeric_payload_bytes": 43910400,
+    "bitmap_payload_bytes": 362959616
+  },
+  "bitmap_accounting": "Conservative pre-reserved bound; not a measured device allocation",
+  "optical_calls_source_queries_filters_fits_images": 0
+}
