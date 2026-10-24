@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-24T00:19:34.379Z",
+  "status": "ACCEPTED_COMBINED_GEOMETRY_TONE_INCREMENT",
+  "full_pipeline_pass": false,
+  "geometry": {
+    "surface": "SplineFootprintBack",
+    "source_profile": "research/experiments/expanded-spline-height-01/inference.json",
+    "actual_paths": "research/experiments/expanded-spline-observation-01/native-paths.npz",
+    "index": 1.5,
+    "background_distance_over_L": 2.1
+  },
+  "material": {
+    "incident_sigma_native": 6.75,
+    "finite_radius": 21,
+    "gain": 0.596189238519786,
+    "bias": 0.3290237590837732,
+    "output_blur": 0,
+    "position": "Incident blur before geometric sampling; common encoded response on retained lens samples before AA and original foreground"
+  },
+  "numerical_comparison": "Original selected H1 source-filtered state; all original paired guards and float64 residual checks pass. Partial-boundary advisories improve.",
+  "peer_review": {
+    "status": "PASS_WITH_LIMITS",
+    "verification_sha256": "f6970b54521953274d341a0dea59f54a02e11c9596f97cd565612f1f3d2860c3",
+    "scientific_arrays": "Exact independent replay; no new rays/source queries",
+    "own_review_commit": "Pending separate reviewer versioning; exact verification copied here for durable provenance."
+  },
+  "visible_result": "Large-scale body and cap appearance improves versus H1. Bright perimeter, B lettering returns and A colored transition remain imperfect.",
+  "previous_selection": "research/experiments/expanded-geometry-02/selection.json",
+  "limits": [
+    "Combined response and geometry comparison, not isolated attribution to either.",
+    "Conditional temporal-mosaic source support, not hidden photographic truth.",
+    "Encoded response and its active white bound are not measured physical radiance.",
+    "Complete reflected radiance and device performance remain unverified."
+  ]
+}

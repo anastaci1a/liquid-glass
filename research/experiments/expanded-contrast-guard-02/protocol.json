@@ -1,0 +1,44 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "started_utc": "2026-10-24T00:04:36.188Z",
+  "deadline_utc": "2026-10-24T00:24:36.188Z",
+  "defect": "The supported spline visibly improves expanded playback body correspondence but fails original foreground/artwork guards.",
+  "question": "Is the earlier tiny compensation box mathematically incompatible with its saved guards, and can one broader shared nearly white-preserving contrast response satisfy them?",
+  "scope": "New saved-quadratic feasibility question, followed only conditionally by one actual cached-native pair. Earlier expired budgets remain closed.",
+  "parameters": {
+    "original_gain": 0.701980827595718,
+    "original_bias": 0.22423217000784113,
+    "contrast_r": [
+      0,
+      0.125
+    ],
+    "white_change_w": [
+      -0.001,
+      0
+    ],
+    "delta_gain": "-r",
+    "delta_bias": "r+w",
+    "delta_bias_bounds": [
+      0,
+      0.125
+    ]
+  },
+  "frozen": [
+    "Published spline and native paths",
+    "Source sigma 6.75 and finite kernel",
+    "Original source/known masks, registration and alpha",
+    "Original foreground/artwork/styles and H1 numerical comparison"
+  ],
+  "budgets": {
+    "model_evaluations": 64,
+    "feasibility_solves": 1,
+    "native_candidate_pairs": 1,
+    "cached_identity_composites": 2,
+    "rays": 0,
+    "height_calls": 0,
+    "source_queries": 0,
+    "optical_filters": 0
+  },
+  "gate": "Exact saved-form feasibility including existing foreground model reserves before the one native pair. Original float32 guards, SSIM and advisory float64 guards decide; no epsilon.",
+  "stop": "Invariant failure, no strictly model-feasible point, first actual pair outcome, cap or deadline. No additional factor, source repair or new surface."
+}

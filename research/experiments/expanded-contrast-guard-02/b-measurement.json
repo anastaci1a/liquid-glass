@@ -1,0 +1,103 @@
+{
+  "reference": "b",
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 7.306178569793701
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 10.981710433959961
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 7.657580852508545
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 5.0326738357543945
+    },
+    "ssim": 0.9740796089172363,
+    "loss": 73.54556092220243,
+    "E": 8.575870855032882,
+    "exterior_RMSE": 21.74403190612793,
+    "foreground_artwork_MSE": {
+      "jupiter.jpg": 2799.505859375,
+      "title.svg": 599.2610473632812,
+      "artist.svg": 180.5785369873047,
+      "play.svg": 129.10556030273438,
+      "forward.svg": 188.90171813964844
+    }
+  },
+  "baseline_scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 15.106258392333984
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 23.959861755371094
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 15.744105339050293
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 9.157090187072754
+    },
+    "ssim": 0.9228106737136841,
+    "loss": 331.9618224321209,
+    "E": 18.21981949504772,
+    "exterior_RMSE": 21.74403190612793,
+    "foreground_artwork_MSE": {
+      "jupiter.jpg": 2799.579345703125,
+      "title.svg": 620.7975463867188,
+      "artist.svg": 236.71302795410156,
+      "play.svg": 129.15786743164062,
+      "forward.svg": 189.0420379638672
+    }
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "ssim": true,
+    "exterior": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "float64_residual_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "exterior": true,
+    "interior": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "partial_boundary_advisory": {
+    "pixels": 16,
+    "baseline_RMSE": 34.845521060278934,
+    "candidate_RMSE": 26.49408266711836,
+    "scope": "Advisory local disclosure; no new post hoc guard or mask change."
+  },
+  "identity_exact": true,
+  "clip_counts": [
+    0,
+    0
+  ],
+  "preclip_range": [
+    0.5917691068268586,
+    0.9211134506181065
+  ],
+  "all_pass": true
+}

@@ -1,0 +1,103 @@
+{
+  "reference": "a",
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 11.516127586364746
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 15.682034492492676
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 11.512120246887207
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 9.23768424987793
+    },
+    "ssim": 0.9763391017913818,
+    "loss": 166.61269795692078,
+    "E": 12.907854118982009,
+    "exterior_RMSE": 19.254291534423828,
+    "foreground_artwork_MSE": {
+      "jupiter.jpg": 2260.37744140625,
+      "title.svg": 327.4755554199219,
+      "artist.svg": 229.97120666503906,
+      "play.svg": 142.54721069335938,
+      "forward.svg": 191.93296813964844
+    }
+  },
+  "baseline_scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 38.077415466308594
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 59.11540603637695
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 39.29434585571289
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 24.424238204956055
+    },
+    "ssim": 0.8710734248161316,
+    "loss": 2063.3120672694276,
+    "E": 45.423694997979055,
+    "exterior_RMSE": 19.254291534423828,
+    "foreground_artwork_MSE": {
+      "jupiter.jpg": 2269.170654296875,
+      "title.svg": 903.3077392578125,
+      "artist.svg": 1107.062255859375,
+      "play.svg": 427.9103698730469,
+      "forward.svg": 498.3172912597656
+    }
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "ssim": true,
+    "exterior": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "float64_residual_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "exterior": true,
+    "interior": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "partial_boundary_advisory": {
+    "pixels": 16,
+    "baseline_RMSE": 30.508700557233553,
+    "candidate_RMSE": 26.54980279963609,
+    "scope": "Advisory local disclosure; no new post hoc guard or mask change."
+  },
+  "identity_exact": true,
+  "clip_counts": [
+    0,
+    0
+  ],
+  "preclip_range": [
+    0.3441962012637875,
+    0.9205652579960504
+  ],
+  "all_pass": true
+}
