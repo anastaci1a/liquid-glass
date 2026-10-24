@@ -520,6 +520,19 @@ Frames A/B: 2.5/2.0 seconds. This tests the compact state of the same playback c
 
 ### Detached Search control
 
+Current: **shared harmonic geometry with verified neutral tone**, using original 2.5/2.0-second references. Incident blur6.75 runs before refraction. Both references use one encoded gain/bias; all original and partial-boundary guards pass. E66.086/55.940 becomes27.662/22.030.
+
+The thin bright rim, feature placement and illumination remain wrong. B lower-return color and source-feature contrast regress. Conditional source availability and the historical fingerprint discrepancy remain disclosed. This is an accepted tone component, not full fidelity or paired physical identification.
+
+[Primary decision and exact replay](../research/experiments/search-neutral-primary-01/README.md) · [Color record and local regressions](../research/experiments/agent-music-search-neutral-05/README.md) · [Rejected blur bracket](../research/experiments/agent-music-search-incident-blur-04/README.md).
+
+![Detached Music Search, reference A and current geometric model](assets/geometric-music-search-primary-a.png)
+
+![Detached Music Search, reference B and current geometric model](assets/geometric-music-search-primary-b.png)
+
+<details data-historical>
+<summary>Historical empirical reconstruction and motion</summary>
+
 Historical round: **3/3** verified passes. Shared material updates: native E A7.230750→7.227650 and B7.124124→7.120881. Glass and foreground improve on both; exterior shadow stays fixed. Unknown exterior is completed from nearest defined source RGB for presentation only; scored pixels are unchanged. Motion below uses this third-pass recipe:6 seconds at 15fps,1080px wide.
 
 GIFs preserve full dimensions below10MB (A10fps/96colors; B6fps/256colors). [Motion verification](../reconstruction/studies/music-search-vector/review-round/motion.json).
@@ -552,6 +565,8 @@ Frames A/B: 2.5/2.0 seconds. The magnifier is a clean symmetric vector trace; co
 <img src="assets/study-music-search-vector-paired-b.gif" alt="Search control motion on background B" width="1080" height="1058" loading="lazy" decoding="async">
 
 [Video](assets/study-music-search-vector-paired-b.mp4) · [GIF](assets/study-music-search-vector-paired-b.gif)
+
+</details>
 
 </details>
 

@@ -1,6 +1,6 @@
 # Current state
 
-Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue its unresolved outline and return questions. Compact and bounded clear-play work remain parked. The existing family researcher is establishing the detached frosted Music Search baseline separately. Follow the [refinement sequence](../method/refinement-sequence.md).
+Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue its unresolved outline and return questions. Compact and bounded clear-play work remain parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
 
 Ordinary blur belongs before refraction across elements. Historical widths seed incident filtering; output-filtered records remain labeled comparisons.
 
@@ -66,3 +66,7 @@ Navigation's historical chroma-only calculation also uses raw H1. Its numerical 
 Surface-derived normals, tracing and finite support transfer. Navigation now has bounded paired native controls, but no transferred fidelity acceptance. Geometry and softness differ by control family; device performance is not measured here.
 
 Sources include modeled or temporally reconstructed content. A finite support proof does not establish hidden photographic truth, physical roughness or a uniquely identified Apple material.
+
+## Detached Music Search
+
+[Verified shared tone](../experiments/search-neutral-primary-01/README.md) improves E66.086/55.940 to27.662/22.030. Incident sigma6.75 stays selected; both fixed blur alternatives fail guards. Thin rim and returns remain unresolved. B lower-return color and detail regress. Outline scene feasibility is next; no full-pipeline or physical-material acceptance is claimed.
