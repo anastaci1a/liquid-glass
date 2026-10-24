@@ -7,6 +7,21 @@ import numpy as np
 from geometric_optics import refract, reflect_direction, fresnel_components
 
 
+class VerticalScaleBack:
+    """Physical height scaling; derivative and bounds scale identically."""
+    def __init__(self, base, scale):
+        if not np.isfinite(scale) or scale <= 0:
+            raise ValueError('Positive finite physical height scale required')
+        self.base, self.scale = base, float(scale)
+        self.maximum_height = base.maximum_height*scale
+        self.slope_bound = base.slope_bound*scale
+    def height_gradient(self, x, y):
+        h, hx, hy, inside = self.base.height_gradient(x, y)
+        return self.scale*h, self.scale*hx, self.scale*hy, inside
+    def boundary_mask(self, x, y):
+        return self.base.boundary_mask(x, y)
+
+
 def trace_raised_front_orthographic(back, x, y, scale, index, background_distance, charge=None):
     if not 0 < scale <= 1 or index < 1 or background_distance <= back.maximum_height:
         raise ValueError('Invalid physical front/index/background parameters')

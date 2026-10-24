@@ -1,0 +1,94 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T04:57:02.640Z",
+  "deadline": "2026-10-24T05:14:26.315Z",
+  "stage_deadline": "2026-10-24T05:24:26.315Z",
+  "checkpoint_minutes": 7,
+  "visible_question": "Keep the direct outer highlight but reduce the refraction disruption from increased total thickness.",
+  "proposal": "THIRD AND FINAL hypothesis: front z=+0.5h, back z=-0.5h; total axial thickness equals selected original h. Same canonical profile/footprint and length-only members, fixed n1.5/D2.1, same two unmodified scene amplitudes1/4.",
+  "hypothesis": "08 kept the back and added a front, increasing total thickness by50percent and visibly disrupting content. Redistributing the original thickness may preserve transport more closely while allowing direct front reflection.",
+  "frozen": [
+    "backprofile,minor,radius,pose,sources,masks,foreground",
+    "incident6.75,encoded response,AA2,shadowzero",
+    "same model and scene for both lengths"
+  ],
+  "assumptions": "Unobserved hypothetical studio emitter and sRGB response approximation. Existing effective primary transmission is calibrated, not measured radiometry. Back-reflected power remains an unassigned interval. No complete scene claim.",
+  "caps": {
+    "native_grid_rays": 2243200,
+    "fixture_comparator_rays": 128,
+    "back_height_point_calls": 100000000,
+    "conservative_nested_surface_units": 500000000,
+    "source_audit_subrays": 4486400,
+    "bilinear_known_lookups": 36000000,
+    "source_RGB_queries": 4500000,
+    "incident_fields": 4,
+    "known_erosions": 4,
+    "candidate_composites": 8,
+    "score_calls": 12,
+    "fits": 0,
+    "snell_interface_points": 4500000,
+    "fresnel_interface_points": 4500000,
+    "front_reflection_points": 2250000,
+    "environment_direction_queries": 1500000,
+    "Study_constructor_pixels": 1200000
+  },
+  "solver": "Ordered monotone graph residual; same graph derivatives give normals. <=40bisections, bracketwidth1e-11/residual2e-11. Positive global-slope clearance for both front/back must pass. Exact creases unresolved; no warp or independent normal.",
+  "checkpoint": "Reuse08 ordered-tracer implementation controls. New physical scale and exact two-graph normals remain surface-derived; own native primary path/residual/monotone checks precede source proof. No additional fixtures needed.",
+  "stop": "First invariant/required support failure, fixed four-reference observations or deadline. Mandatory three-hypothesis review follows; NO fourth surface/light tuning.",
+  "storage_deviation": "First setup attempt could not create protocol/code due project write threshold; no model body ran. Generated site removed and immutable LFS caches hash-verified in temporary recovery before restoring writes. Original overall deadline unchanged.",
+  "fixed_crops": {
+    "expanded": {
+      "lower_right_rim": [
+        1300,
+        480,
+        1580,
+        515
+      ],
+      "upper_left_rim": [
+        315,
+        315,
+        545,
+        355
+      ],
+      "left_cap": [
+        310,
+        335,
+        380,
+        494
+      ],
+      "body": [
+        900,
+        390,
+        1080,
+        440
+      ]
+    },
+    "compact": {
+      "lower_right_rim": [
+        1090,
+        738,
+        1370,
+        773
+      ],
+      "upper_left_rim": [
+        515,
+        573,
+        745,
+        613
+      ],
+      "left_cap": [
+        515,
+        593,
+        585,
+        752
+      ],
+      "body": [
+        871,
+        648,
+        1051,
+        698
+      ]
+    }
+  },
+  "scope": "New distinct geometric comparison after completed08; earlier budgets and failed/preflight recovery ledgers stay immutable. This does not extend the outline stage."
+}
