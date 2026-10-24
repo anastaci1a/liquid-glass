@@ -405,9 +405,11 @@ Paired E improves from H1's 45.424 / 18.220 to 12.908 / 8.576. All original pair
 
 **Latest outline experiment: held, not selected.** Actual curved front/back surfaces now produce an outer highlight. A hypothetical studio light improves overall error on all four miniplayer references, but interior, foreground and boundary regressions prevent acceptance. The selected images above remain unchanged.
 
-![Expanded B: held actual-surface outline experiment, with local regressions](assets/geometric-expanded-outline-held-b.png)
+![Expanded A: held split-surface outline and common half-step color response](assets/geometric-expanded-outline-held-a.png)
 
-[All three hypotheses, enlarged fixed crops and regressions](../research/experiments/miniplayer-outline-review-10/README.md) · [Same-geometry cached section](../research/experiments/miniplayer-outline-review-10/expanded-actual-section.svg). Lighting is an explicit unobserved assumption; later reflected radiance remains unresolved.
+![Expanded B: held split-surface outline and common half-step color response](assets/geometric-expanded-outline-held-b.png)
+
+[Complete structured review and held color step](../research/experiments/miniplayer-pass-review-16/README.md) · [Three hypotheses and fixed-crop regressions](../research/experiments/miniplayer-outline-review-10/README.md) · [Same-geometry cached section](../research/experiments/miniplayer-outline-review-10/expanded-actual-section.svg). Lighting is an explicit unobserved assumption; later reflected radiance remains unresolved.
 
 Checkerboard marks unavailable unscored exterior. The original registered inputs and foreground remain fixed; no target backdrop, mask removal or new shadow is used. Earlier H1 and spline-response failures remain below.
 

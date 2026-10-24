@@ -1,6 +1,6 @@
 # Current state
 
-Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue isolated material assessment of the held two-surface outline candidate; preserve selected and historical states.
+Current direction: expanded playback now has a verified positive-spline/shared-response increment. The [structured continuation](../experiments/miniplayer-pass-review-16/README.md) assesses every stage and holds the two-surface outline candidate for local failures. Preserve selected and historical states.
 
 Compact now uses the exact expanded family with length alone changed; bounded clear-play work remains parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
 
