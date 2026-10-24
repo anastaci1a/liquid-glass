@@ -1,0 +1,48 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T05:12:14.270Z",
+  "deadline": "2026-10-24T05:32:14.270Z",
+  "checkpoint_minutes": 5,
+  "question": "Can one shared neutral transmission response restore held split-surface body/foreground guards while preserving the visible outer reflection?",
+  "frozen": "09 split actual surfaces, light4, incident6.75,r21, source/masks/styles/AA2/shadowzero. Both lengths and all four references share response; no reflected-light grading.",
+  "parameters": {
+    "original_gain": 0.596189238519786,
+    "original_bias": 0.3290237590837732,
+    "gain": [
+      0.4,
+      0.8
+    ],
+    "bias": [
+      0.15,
+      0.5
+    ],
+    "white_max": 0.98
+  },
+  "fit": "ONE train-only equal-reference Gauss-Newton quadratic direction using exact analytic derivatives of the declared decode/add-light/encode operation. Original deterministic5000train pixels per reference, held and foreground excluded. Finite2D active-set proposal only; no iterative optimizer.",
+  "factors": [
+    1,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "caps": {
+    "fits": 1,
+    "proposal_checks": 32,
+    "train_pixels": 20000,
+    "identity_composites": 4,
+    "candidate_composites": 16,
+    "Study_constructor_pixels": 1200000,
+    "score_calls": 16,
+    "SSIM_Gaussians": 80,
+    "metric_erosions": 16,
+    "environment_direction_queries": 1500000,
+    "rays": 0,
+    "heights": 0,
+    "source_queries": 0,
+    "fields": 0,
+    "filters": 0
+  },
+  "checkpoint": "Four cached full identities exact, original train/held/foreground exclusion verified, finite2x2 Hessian and bounded proposal before candidates. Actual full native guards decide; linearization is advisory.",
+  "stop": "First actual four-reference strict qualifier with visible improvement, all four fixed factors, invariant/cap or deadline. No coefficient/channel/image exception. All held and selected original/partial/foreground guards plus zero new saturation must pass.",
+  "outcome": "Experimental material direction only. Unknown lighting and retained reflected tail prevent a full radiance claim even if numerical guards pass."
+}
