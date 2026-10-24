@@ -1,0 +1,41 @@
+{
+  "start": "2026-10-24T03:18:48.333Z",
+  "deadline": "2026-10-24T03:28:48.333Z",
+  "overall_latest": "2026-10-24T04:25:20.608Z",
+  "scope": "Proposal, static accounting, symbolic meridional/polarization derivation and at most16 synthetic new-dispatch fixtures only.",
+  "shared_commit": "54681b1128ee345687469e5ab767a6dedd528d87",
+  "shared_sha256": "bab1ed8681db4086f394998f12b563a41cc42af3b4fa2afd175191c24a43b428",
+  "synthetic_fixture_cap": 16,
+  "forbidden": [
+    "shared optical imports/bodies",
+    "rays",
+    "height/normal/direction evaluations",
+    "Fresnel calls",
+    "source queries or source-array reductions",
+    "real profiling",
+    "fields/filters",
+    "composites/images",
+    "fits",
+    "transport driver implementation"
+  ],
+  "future_only": {
+    "max_launch_selections": 16,
+    "fractions": [
+      0.5,
+      0.7,
+      0.85,
+      0.95
+    ],
+    "axes": [
+      "upper",
+      "lower",
+      "left",
+      "right"
+    ],
+    "encounters_per_launch": 24,
+    "encounters_including_cached_initial": 384,
+    "geometry": "Existing radius-adapted harmonic circle; n1.5 D2",
+    "material": "Incident6.75/radius21 and accepted encoded transmission tone frozen; no automatic specular transfer."
+  },
+  "stop": "Seal by deadline or first unmet static prerequisite. No optical dry run."
+}

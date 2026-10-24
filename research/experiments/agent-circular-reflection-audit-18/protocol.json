@@ -1,0 +1,61 @@
+{
+  "start": "2026-10-24T03:53:58.207Z",
+  "deadline": "2026-10-24T04:13:58.207Z",
+  "overall_latest": "2026-10-24T04:25:20.608Z",
+  "shared_commit": "54681b1128ee345687469e5ab767a6dedd528d87",
+  "shared_sha256": "bab1ed8681db4086f394998f12b563a41cc42af3b4fa2afd175191c24a43b428",
+  "callback_commit": "74c177f0ed65c99860831bc555011a56e1255783",
+  "callback_sha256": "397ca8048c5677005a878e2753fbd199a452587f787d9a8184492501073974e9",
+  "caps": {
+    "launches": 16,
+    "events_per_launch": 24,
+    "encounters": 384,
+    "new_segments": 352,
+    "nested": 130000,
+    "level_subset": 25000,
+    "nested_per_launch": 8000,
+    "level_per_launch": 1500,
+    "scalar_setup": 128,
+    "initial_level_checks": 32,
+    "payload_bytes": 47210448,
+    "mask_header_bytes": 49152,
+    "path_header_bytes": 73728,
+    "selection_comparisons": 3609600,
+    "cache_scalar_observations": 20000000,
+    "mask_lookups": 5920,
+    "new_erosions": 0,
+    "RGB": 0
+  },
+  "parameters": {
+    "R": 0.9972124917582454,
+    "index": 1.5,
+    "D": 2,
+    "depth": 0.15,
+    "crown": 0.4,
+    "incident_sigma": 6.75,
+    "incident_radius": 21,
+    "solver_iterations": 64,
+    "solver_tolerance": 1e-11
+  },
+  "cohorts": "Up/down/left/right fractions.5,.7,.85,.95; squared-distance minimum then row/column ties; duplicate index keeps labels.",
+  "checks": {
+    "initial_residual": 1e-10,
+    "normal_agreement": 1e-9,
+    "plane_position": 1e-9,
+    "plane_unit_vectors": 1e-9,
+    "component_closure": "1536*2^-52"
+  },
+  "checkpoint": "All provenance/header/decode/mask semantics/selection/startup reservations before first real event; save/print then same-run continuation without input.",
+  "stop": "Any unexpected header, provenance, shape, accounting, numerical or deadline failure stops whole task. Explicit crease ends its path with power unknown. No repair/retry.",
+  "prohibited": [
+    "moving main",
+    "shared edits",
+    "RGB",
+    "Gaussian filtering",
+    "composites/images",
+    "fits",
+    "environment radiance generation",
+    "new source/shape/target",
+    "benchmarks"
+  ]
+}

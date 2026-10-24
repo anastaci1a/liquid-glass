@@ -1,0 +1,64 @@
+{
+  "start": "2026-10-24T11:07:14.175Z",
+  "deadline": "2026-10-24T11:27:14.175Z",
+  "checkpoint_deadline": "2026-10-24T11:12:14.175Z",
+  "baseline_pin": "7ed9e0380cffdfeb3f76414665cfd3be0e02a02e",
+  "seed_sigma": 6.739785650363237,
+  "settings": [
+    {
+      "multiplier": 0.75,
+      "sigma": 5.054839237772428,
+      "radius": 16
+    },
+    {
+      "multiplier": 1.25,
+      "sigma": 8.424732062954046,
+      "radius": 26
+    }
+  ],
+  "caps": {
+    "incident_fields": 4,
+    "known_erosions": 8,
+    "lens_RGB_queries": 400000,
+    "audited_lens_subrays": 400000,
+    "corner_lookups": 1600000,
+    "candidate_composites": 4,
+    "identity_composites": 2,
+    "Study_constructors": 2,
+    "mask_points": 112800,
+    "score_calls": 12,
+    "metric_Gaussians": 60,
+    "metric_erosions": 12,
+    "cached_annular_directions": 100000
+  },
+  "fixed": "Exact shallow39 source paths/primary power/front reflection/gain/bias/annular4/AA2/masks/style/source and clear samples. Incident Gaussian before refraction only; no output filter, light8, fit or geometry.",
+  "decode_plan": {
+    "NPY_members": 32,
+    "NPY_payload_bytes": 30230400,
+    "NPY_payload_cap": 536870912,
+    "NPY_header_max": 4096,
+    "NPZ_member_max": 64,
+    "Study_PNG_decodes": 4,
+    "known_PNG_decodes": 2,
+    "PNG_dimensions": [
+      1920,
+      1080
+    ],
+    "PNG_spatial_pixels": 12441600,
+    "Study_float32_source_target_bytes": 99532800,
+    "known_byte_payload_bytes": 4147200,
+    "mask_archive_boolean_cells": 676800,
+    "mask_constructor_points": 112800,
+    "proof_erosions": 4,
+    "filter_internal_erosions": 4,
+    "score_calls_expected": 8,
+    "identity_scores_expected": 0,
+    "SSIM_Gaussians_expected": 40,
+    "metric_erosions_expected": 8,
+    "filter_raster_pixels_upper": 8294400
+  },
+  "source_gate": "Each setting BOTH references whole98989 inside rays/full finite kernel+four corners before any changed field/RGB. Clear/scored misses inherit exact39 map/source support. Unsupported setting rejected without RGB; other fixed setting may proceed only after its paired gates.",
+  "visible_question": "Does background detail in fixed upper-rim/lower-return/left-cap/glyph rectangles have reference-like softness, independently of thin contour intensity and wrong feature locations?",
+  "detail_metric": "Predeclared encoded-luminance horizontal/vertical adjacent-difference RMS on exact existing crops, no smoothing/alignment/normalization/thresholds. Advisory only; all original/complete/partial guards remain strict.",
+  "stop": "First identity/invariant/cap/deadline failure; exactly two fixed widths and no adoption from aggregate alone"
+}

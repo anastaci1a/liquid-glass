@@ -1,0 +1,460 @@
+{
+  "status": "PASS_ALL_HEADERS_BEFORE_DECODE",
+  "bindings": {
+    "shared": "bab1ed8681db4086f394998f12b563a41cc42af3b4fa2afd175191c24a43b428",
+    "callback": "397ca8048c5677005a878e2753fbd199a452587f787d9a8184492501073974e9",
+    "inputs": [
+      {
+        "case": "a",
+        "name": "source.png",
+        "sha256": "84da0d24f30dc1f4080b568756d79044a9ac6568ecbff9595d02a38cd3239fb1",
+        "PNG_decoded": false
+      },
+      {
+        "case": "a",
+        "name": "target.png",
+        "sha256": "efffc64b8a6ee5b84f0bfc295369aad38db8531e4686674861074592fbee54de",
+        "PNG_decoded": false
+      },
+      {
+        "case": "a",
+        "name": "known.png",
+        "sha256": "03433579b8ddf8771df2bacf7aa1566e84b71bc81df71da1cd64069c00ff2413",
+        "PNG_decoded": false
+      },
+      {
+        "case": "a",
+        "name": "search.svg",
+        "sha256": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49",
+        "PNG_decoded": false
+      },
+      {
+        "case": "b",
+        "name": "source.png",
+        "sha256": "9789b4af085d505a23bdfac7615b0688125b0ea81587d1d58e23b68c6608268f",
+        "PNG_decoded": false
+      },
+      {
+        "case": "b",
+        "name": "target.png",
+        "sha256": "bf0e997fb546edd1c89ade9b227de2b0b13387cb70d249054bf3f8ff7430123d",
+        "PNG_decoded": false
+      },
+      {
+        "case": "b",
+        "name": "known.png",
+        "sha256": "9d009193ae95ac9818a906fde1995dba531387f15926a5dd32e64ba34d3ff575",
+        "PNG_decoded": false
+      },
+      {
+        "case": "b",
+        "name": "search.svg",
+        "sha256": "da95145b096fc39155c93be845ba7a50c27bc97184874970d28df684d754aa49",
+        "PNG_decoded": false
+      }
+    ],
+    "cases": [
+      {
+        "case": "a",
+        "file_sha256": "ed374880171981a2f31d74c1c7c991a2414975d5e333c17b0f76015b157e64b7",
+        "canonical_fingerprint": "f760954ab02f7567c47354ef620b39598d7b0a536c3993cfb39ba4165486e7dd",
+        "style": {
+          "search.svg": {
+            "color": [
+              0.23791402964793887,
+              0.2092211291437152,
+              0.2142868270726464
+            ],
+            "opacity": 0.5959399154311875
+          }
+        },
+        "raw_case_center_not_used": [
+          1512,
+          673
+        ]
+      },
+      {
+        "case": "b",
+        "file_sha256": "de8807a13d9a8af1fddde138498f92fa314de47c513b925d41e8e60f6a661a8e",
+        "canonical_fingerprint": "87d6ff0b76d6bd3eca8b8de1f87046b6943227071eb6c612740a5e33ecfb093e",
+        "style": {
+          "search.svg": {
+            "color": [
+              0.23791402964793887,
+              0.2092211291437152,
+              0.2142868270726464
+            ],
+            "opacity": 0.5959399154311875
+          }
+        },
+        "raw_case_center_not_used": [
+          1512,
+          673
+        ]
+      }
+    ],
+    "containers": [
+      {
+        "name": "native-paths.npz",
+        "sha256": "668212cc4466b0b645beb52df7c7c148537965c4292fa155af1ad65de70456bf",
+        "compressed_bytes": 10144799
+      },
+      {
+        "name": "a-support.npz",
+        "sha256": "25ca570ecc8960b774e151ddfaa76695daffd8ecce205691d7e08ff2eaebf5fe",
+        "compressed_bytes": 23704
+      },
+      {
+        "name": "b-support.npz",
+        "sha256": "622887ca4629b3a5b6c485d62c4b74736a3a1c8fecc4b19f3fd119e349a171e6",
+        "compressed_bytes": 24044
+      }
+    ],
+    "corrected_center": [
+      1511.2043368857017,
+      672.8753258356955
+    ],
+    "L_original": 89.0
+  },
+  "headers": {
+    "native-paths.npz": {
+      "source_X": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 1804800,
+        "fortran": false
+      },
+      "source_Y": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 1804800,
+        "fortran": false
+      },
+      "x": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 1804800,
+        "fortran": false
+      },
+      "y": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 1804800,
+        "fortran": false
+      },
+      "X": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 1804800,
+        "fortran": false
+      },
+      "Y": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 1804800,
+        "fortran": false
+      },
+      "discriminant": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 1804800,
+        "fortran": false
+      },
+      "path_length": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 1804800,
+        "fortran": false
+      },
+      "entry": {
+        "shape": [
+          470,
+          480,
+          3
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 676800,
+        "payload_bytes": 5414400,
+        "fortran": false
+      },
+      "back": {
+        "shape": [
+          470,
+          480,
+          3
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 676800,
+        "payload_bytes": 5414400,
+        "fortran": false
+      },
+      "outward_normal": {
+        "shape": [
+          470,
+          480,
+          3
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 676800,
+        "payload_bytes": 5414400,
+        "fortran": false
+      },
+      "exit_direction": {
+        "shape": [
+          470,
+          480,
+          3
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 676800,
+        "payload_bytes": 5414400,
+        "fortran": false
+      },
+      "inside": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 225600,
+        "fortran": false
+      },
+      "boundary_unresolved": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 225600,
+        "fortran": false
+      },
+      "zero_thickness_unresolved": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 225600,
+        "fortran": false
+      },
+      "complete": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 225600,
+        "fortran": false
+      },
+      "entry_outward_normal": {
+        "shape": [
+          3
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 3,
+        "payload_bytes": 24,
+        "fortran": false
+      },
+      "internal_direction": {
+        "shape": [
+          3
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 3,
+        "payload_bytes": 24,
+        "fortran": false
+      }
+    },
+    "a-support.npz": {
+      "known": {
+        "shape": [
+          1080,
+          1920
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 2073600,
+        "payload_bytes": 2073600,
+        "fortran": false
+      },
+      "incident_known": {
+        "shape": [
+          1080,
+          1920
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 2073600,
+        "payload_bytes": 2073600,
+        "fortran": false
+      },
+      "support": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 225600,
+        "fortran": false
+      },
+      "required_pixels": {
+        "shape": [
+          235,
+          240
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 56400,
+        "payload_bytes": 56400,
+        "fortran": false
+      },
+      "required_subrays": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 225600,
+        "fortran": false
+      },
+      "coverage": {
+        "shape": [
+          235,
+          240
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 56400,
+        "payload_bytes": 451200,
+        "fortran": false
+      }
+    },
+    "b-support.npz": {
+      "known": {
+        "shape": [
+          1080,
+          1920
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 2073600,
+        "payload_bytes": 2073600,
+        "fortran": false
+      },
+      "incident_known": {
+        "shape": [
+          1080,
+          1920
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 2073600,
+        "payload_bytes": 2073600,
+        "fortran": false
+      },
+      "support": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 225600,
+        "fortran": false
+      },
+      "required_pixels": {
+        "shape": [
+          235,
+          240
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 56400,
+        "payload_bytes": 56400,
+        "fortran": false
+      },
+      "required_subrays": {
+        "shape": [
+          470,
+          480
+        ],
+        "dtype": "|b1",
+        "header_bytes": 128,
+        "cells": 225600,
+        "payload_bytes": 225600,
+        "fortran": false
+      },
+      "coverage": {
+        "shape": [
+          235,
+          240
+        ],
+        "dtype": "<f8",
+        "header_bytes": 128,
+        "cells": 56400,
+        "payload_bytes": 451200,
+        "fortran": false
+      }
+    }
+  },
+  "reserved_payload_bytes": 47210448
+}

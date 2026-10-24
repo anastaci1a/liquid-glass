@@ -1,0 +1,24 @@
+{
+ "start":"2026-10-24T12:45:20.669Z",
+ "deadline":"2026-10-24T12:55:20.669Z",
+ "checkpoint_deadline":"2026-10-24T12:49:20.669Z",
+ "utility_pin":"46efa5a93e9523d07b2a274f6cc37d28594b9ab3",
+ "orders":[16,32],
+ "caps":{"configurations":8,"generated_nodes":300000},
+ "tolerances":{"normalized_area_absolute":1e-10,"order_mass_difference_absolute":1e-10,"mirror_translation_axis_moments_absolute":1e-10},
+ "strict_invariants":"Finite positive raw weights; every node strictly inside the true disk AND pixel; empty/tangent returns no nodes/weights. No tolerance for membership or positivity, clipping or renormalization.",
+ "configurations":[
+  {"name":"vertical_edge_partial","center":[0,0],"radius":0.5,"pixel_center":[0.75,0],"pixel_width":2,"area":"segment x>=-1/4; full disk y span covered","node_upper_coefficient":4},
+  {"name":"horizontal_mirror_partial","center":[0,0],"radius":0.5,"pixel_center":[-0.75,0],"pixel_width":2,"area":"mirror of vertical segment","node_upper_coefficient":4},
+  {"name":"fractional_translation_partial","center":[0.137,-0.283],"radius":0.5,"pixel_center":[0.887,-0.283],"pixel_width":2,"area":"same exact translated segment","node_upper_coefficient":4},
+  {"name":"axis_exchange_partial","center":[0,0],"radius":0.5,"pixel_center":[0,0.75],"pixel_width":2,"area":"same segment under x/y exchange","node_upper_coefficient":8},
+  {"name":"full_disk","center":[0,0],"radius":0.5,"pixel_center":[0,0],"pixel_width":2,"area":"pi R squared","node_upper_coefficient":4},
+  {"name":"tangent_empty","center":[0,0],"radius":0.5,"pixel_center":[1.5,0],"pixel_width":2,"area":"zero; touches disk at single right pole","node_upper_coefficient":0},
+  {"name":"strictly_disjoint","center":[0,0],"radius":0.5,"pixel_center":[2,0],"pixel_width":2,"area":"zero","node_upper_coefficient":0},
+  {"name":"full_interior_square","center":[0,0],"radius":0.5,"pixel_center":[0,0],"pixel_width":0.5,"area":"full pixel area","node_upper_coefficient":4}
+ ],
+ "static_node_reservation":35840,
+ "reservation_derivation":"Sum coefficients28 times(16^2+32^2)=35840. Covered x/y partitions are2x2 for vertical/mirror/translated/full-disk/interior,4x2 for axis exchange,zero for empty/tangent. Reserve before every utility call.",
+ "stop":"First invariant/cap/deadline failure; no utility edit, alternate order, repair or retry. Fixed16 then32 per case. First configuration is checkpoint.",
+ "zero":"Optical imports/bodies, actual height adapters, tracers, source/target/radiance pixels, rays, filters, composites, images and fits"
+}

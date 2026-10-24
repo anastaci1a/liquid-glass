@@ -1,0 +1,77 @@
+{
+  "status": "PASS_SYNTHETIC_DISPATCH_ONLY",
+  "fixtures": 12,
+  "cap": 16,
+  "records": [
+    {
+      "name": "reflect_direction",
+      "status": "PASS",
+      "units": 1
+    },
+    {
+      "name": "reflect_direction",
+      "status": "PASS",
+      "units": 16
+    },
+    {
+      "name": "fresnel_components",
+      "status": "PASS",
+      "units": 1
+    },
+    {
+      "name": "fresnel_components",
+      "status": "PASS",
+      "units": 16
+    },
+    {
+      "name": "reflect_direction",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "Matched vector rows required",
+      "ledger_unchanged": true
+    },
+    {
+      "name": "reflect_direction",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "Matched vector rows required",
+      "ledger_unchanged": true
+    },
+    {
+      "name": "fresnel_components",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "Cosine rows and scalar indices required",
+      "ledger_unchanged": true
+    },
+    {
+      "name": "fresnel_components",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "Cosine rows and scalar indices required",
+      "ledger_unchanged": true
+    },
+    {
+      "name": "fresnel_components",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "Cosine rows and scalar indices required",
+      "ledger_unchanged": true
+    },
+    {
+      "name": "fresnel_unpolarized",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "Undeclared new delegate",
+      "ledger_unchanged": true
+    },
+    {
+      "name": "reflect_direction",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "Pre-mutation interface cap",
+      "ledger_unchanged": true
+    },
+    {
+      "name": "fresnel_components",
+      "status": "PASS",
+      "units": 16
+    }
+  ],
+  "shared_imports": 0,
+  "shared_function_body_calls": 0,
+  "real_profiler_installations": 0
+}

@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-24T07:25:16.504Z",
+  "as_run_result_preserved": true,
+  "records": [
+    {
+      "reference": "a",
+      "as_run_original_foreground_RMSE": 35.60905456542969,
+      "canonical_original_foreground_RMSE": 17.292354583740234,
+      "canonical_original_foreground_guard": false,
+      "reason": "Historical measure stores completed-image foreground extension in both original/body and complete score dictionaries. As-run original extension instead used pre-foreground pixels. Body scores and completed metrics are unchanged; corrected original extension copies the already-computed complete scalar. No new score, composite or optical evaluation."
+    },
+    {
+      "reference": "b",
+      "as_run_original_foreground_RMSE": 29.139936447143555,
+      "canonical_original_foreground_RMSE": 17.83428382873535,
+      "canonical_original_foreground_guard": false,
+      "reason": "Historical measure stores completed-image foreground extension in both original/body and complete score dictionaries. As-run original extension instead used pre-foreground pixels. Body scores and completed metrics are unchanged; corrected original extension copies the already-computed complete scalar. No new score, composite or optical evaluation."
+    }
+  ],
+  "verdict_unchanged": true,
+  "no_scientific_rerun": true
+}

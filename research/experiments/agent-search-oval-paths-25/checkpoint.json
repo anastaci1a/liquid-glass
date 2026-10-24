@@ -1,0 +1,17 @@
+{
+  "status": "PASS_HASHES_HEADERS_ALL549_EXACT_CACHED_SELECTION",
+  "at": "2026-10-24T06:18:11.995144+00:00",
+  "launches": 549,
+  "decoded_bytes": 52539744,
+  "no_new_grid": true,
+  "reservations": {
+    "launches": 549,
+    "cached_initial_events": 1098,
+    "new_segments": 7686,
+    "total_encounters": 8784,
+    "level_points": 614880,
+    "delegate_units": 3926512,
+    "known_mask_lookups": 131760,
+    "derivation": "14*549 new ordered segments. Reserve80 levels per segment (shared64bisections+3level batches require<=67),6units per level plus16next-boundary+6refract+4reflect+4Fresnel units per segment. Initial twoFresnel and oneback-reflection+scalar setup add6652 units. All levels are included in total delegate units, never added twice."
+  }
+}
