@@ -389,6 +389,8 @@ References come from [Apple's original Music video](https://www.apple.com/newsro
 
 ### Expanded mini-player
 
+Expanded and compact now use [one canonical glass model](../reconstruction/families/music-mini-player.json); only major length differs. The shared configuration replays both existing expanded references pixel-exactly.
+
 **Primary: positive spline-height geometric model with shared neutral contrast.** Both references use the same actual surface profile, incident softness and common response. The bright rim, some background returns and cap shading remain incomplete.
 
 References: [Apple Music clip](https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4), frames at 0 and 6.033 seconds.
@@ -470,7 +472,20 @@ Frame A: 0 seconds. Frame B: 6.033 seconds. Cover art is a separate high-resolut
 
 ### Compact mini-player
 
-**Primary: smoothed-cap harmonic geometric baseline.** The accepted contour, paired sources, artwork and original vector styles are preserved. Refraction uses the same surface-derived tracer as the other geometric controls.
+**Primary: the exact expanded miniplayer model, shortened only.** One shared configuration supplies the spline, minor/corner geometry, index, background distance, incident blur and material. Compact received no fit.
+
+The unfitted transfer passes all original paired guards; E43.579/38.032 becomes27.324/26.359. A frozen22-pixel old boundary cohort worsens44.194→48.286. The thin bright rim, cap light and return positions remain unresolved. No full-fidelity pass is claimed.
+
+[Shared family configuration](../reconstruction/families/music-mini-player.json) · [Transfer and local regressions](../research/experiments/miniplayer-shared-transfer-06/README.md) · [Independent exact replay](../research/experiments/agent-miniplayer-family-peer-19/README.md). Original source, reference masks, artwork and foreground inputs remain fixed.
+
+![Compact A and exact expanded-family transfer](assets/geometric-compact-family-primary-a.png)
+
+![Compact B and exact expanded-family transfer](assets/geometric-compact-family-primary-b.png)
+
+<details data-historical>
+<summary>Earlier separately configured geometric initializer</summary>
+
+**Historical: smoothed-cap harmonic geometric baseline.** The accepted contour, paired sources, artwork and original vector styles are preserved. Refraction uses the same surface-derived tracer as the other geometric controls.
 
 ![Compact miniplayer A and primary geometric baseline](assets/geometric-compact-primary-a.png)
 
@@ -478,7 +493,10 @@ Frame A: 0 seconds. Frame B: 6.033 seconds. Cover art is a separate high-resolut
 
 The raw unit body is too sharp and saturated; frosting, light body response and rim light remain open. All required source samples pass, including the 30 original scored subrays outside the physical outline.
 
-[Active transfer study](../research/experiments/compact-geometry-01/README.md) · [Surface and certificate](../research/experiments/compact-geometry-01/surface.md) · [Raw scores and exact replay](../research/experiments/compact-geometry-01/raw-result.json). Original pre-foreground and subray data are retained for material checks.
+[Earlier transfer study](../research/experiments/compact-geometry-01/README.md) · [Surface and certificate](../research/experiments/compact-geometry-01/surface.md) · [Raw scores and exact replay](../research/experiments/compact-geometry-01/raw-result.json). Original pre-foreground and subray data are retained for material checks.
+
+
+</details>
 
 <details data-historical>
 <summary>Archived empirical reconstruction and motion</summary>

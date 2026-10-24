@@ -1,6 +1,6 @@
 # Current state
 
-Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue its unresolved outline and return questions. Compact is now a required exact transfer of the expanded family; bounded clear-play work remains parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
+Current direction: expanded playback now has a verified positive-spline/shared-response increment. Continue its unresolved outline and return questions. Compact now uses the exact expanded family with length alone changed; bounded clear-play work remains parked. The detached frosted Music Search has a verified neutral-tone increment; its outline scene is being assessed separately. Follow the [refinement sequence](../method/refinement-sequence.md).
 
 Current scope is mathematical/physical modeling and visible fidelity. Runtime optimization and device benchmarking are outside this modeling work.
 
@@ -89,6 +89,6 @@ The [accounting preflight](../experiments/agent-parity-accounting-preflight-14/R
 
 Compact and expanded must share one actual surface law, thickness/profile, minor extent/corner geometry, index, background distance, incident blur, material response and outline model. Only major length differs. Source, measured placement and foreground content remain reference inputs, not per-control optical tuning.
 
-The published earlier compact initializer does not satisfy this new exact-family requirement. Its evidence remains historical. The next compact observation must be an unfitted transfer of the selected expanded family, with source-first support and unchanged original guards. Failure requires a family-level review, not a separate compact fit.
+The [unfitted family transfer](../experiments/miniplayer-shared-transfer-06/README.md) preserves both expanded outputs exactly and improves compact E43.579/38.032 to27.324/26.359 under original guards. A frozen old22-pixel boundary cohort worsens on A. Keep that regression; future changes require family-level validation, not a separate compact fit.
 
 The [expanded first-return certificate](../experiments/expanded-first-return-certificate-05/README.md) establishes the next front event for the unchanged intended spline. Floating-point propagation and later events remain separate; old native counts and all images stay unchanged.
