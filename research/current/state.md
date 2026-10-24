@@ -2,7 +2,9 @@
 
 The [native first internal return](../experiments/miniplayer-first-return-native-85/README.md) adds an incorrect bright inset band. All four full-image errors and SSIM values worsen. Four zero-added-return controls are pixel-exact; source, blur, tone and foreground stay fixed. TIR and later power are retained. No working-model or count change is made.
 
-The [co-designed solid is nonconvex](../experiments/miniplayer-convexity-certificate-80/README.md), so its convex-only reflection solver is inapplicable. A [first-return audit](../experiments/miniplayer-first-return-83/README.md) instead certifies ordering through directional clearance. All64 sparse returns reach the actual front;40 undergo TIR and24 transmit upward. No new outline image or selected-model change follows.
+A [peak-pixel convergence audit](../experiments/miniplayer-return-convergence-86/README.md) finds changes below 0.00021 of an 8-bit level between orders 8 and 16 on the tested cohort. Other pixels remain unverified.
+
+The [co-designed solid is nonconvex](../experiments/miniplayer-convexity-certificate-80/README.md), so its convex-only reflection solver is inapplicable. A [first-return audit](../experiments/miniplayer-first-return-83/README.md) instead certifies ordering through directional clearance. All 64 sparse returns reach the actual front; 40 undergo TIR and 24 transmit upward. No new outline image or selected-model change follows.
 
 The [co-designed forward observation](../experiments/miniplayer-codesigned-native-78/README.md) preserves transport within 0.000233 native pixels, but every reference still fails image guards. Both 75 and 78 have a disclosed angular-evaluation budget overrun from an omitted baseline charge. Their arrays and as-run ledgers remain preserved; no model or count is adopted.
 
