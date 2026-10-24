@@ -1,0 +1,29 @@
+{
+  "status": "DECLARED_BEFORE_IMPLEMENTATION_AND_EXECUTION",
+  "start": "2026-10-24T15:09:23.225Z",
+  "checkpoint_deadline": "2026-10-24T15:14:23.225Z",
+  "deadline": "2026-10-24T15:29:23.225Z",
+  "pin": "579b47833ea317754e61723c7b3758e057cc30ee",
+  "defect": "Colored background mixing and tone differ across references despite fixed incident softness; rim light and feature placement remain separate defects.",
+  "hypothesis": "A Gaussian averages linear light before geometric sampling, rather than encoded RGB, at exactly the same6.75px width and43x43 finite kernel.",
+  "allowed": "One fixed decoded-source Gaussian and linear bilinear sample, then re-encode before unchanged current encoded gain/bias. No width sweep, fit, scattering response71, new light or source edit.",
+  "frozen": "Actual18 paths/primary Fresnel/direct-front annular4, working20 encoded gain/bias, input source bytes/pose/masks/AA2/foreground/shadowzero. Original incident width6.75R21 before refraction. Only physical mixing domain changes; float32 Gaussian fields preserve original storage precision.",
+  "caps": {
+    "environment_direction_queries": 1500000,
+    "Study_constructor_pixels": 1121600,
+    "cached_native_samples": 4486400,
+    "known_erosions": 8,
+    "source_audit_inside_samples": 3000000,
+    "bilinear_known_lookups": 12000000,
+    "incident_fields": 4,
+    "source_RGB_queries": 3000000,
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "score_calls": 4,
+    "SSIM_Gaussians": 20,
+    "metric_erosions": 4
+  },
+  "checkpoint": "First input hashes and four exact working20 identities; complete finite source support for all four references before any changed field or RGB sample.",
+  "guards": "All original working native glass/rim/held/interior/E/SSIM/foreground/exterior/16or22partial guards, zeroactualclips, original numerical comparisons and fixed crop regressions explicit.",
+  "stop": "First invariant/cap/deadline/unsupported required sample. One candidate per reference only; no additional color response or alternative width. No new rays/heights/clear source queries/fits."
+}

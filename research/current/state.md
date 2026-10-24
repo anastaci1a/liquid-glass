@@ -1,6 +1,8 @@
 # Current state
 
-The [current working-family review](../experiments/miniplayer-working-final-70/README.md) closes all eight stages with no new replacement. Incident blur, fixed-white contrast, finite lighting and shadow trials fail family guards. Original foreground remains unchanged; dispersion is unidentified. A separately budgeted [anchor-matched linear scattering test](../experiments/miniplayer-neutral-scattering-71/README.md) also fails all four references; working20 remains selected.
+The [current working-family review](../experiments/miniplayer-working-final-70/README.md) closes all eight stages with no new replacement. Incident blur, fixed-white contrast, finite lighting and shadow trials fail family guards. Original foreground remains unchanged; dispersion is unidentified.
+
+A separately budgeted [anchor-matched linear scattering test](../experiments/miniplayer-neutral-scattering-71/README.md) also fails all four references; working20 remains selected. A [fixed-width linear incident filter](../experiments/miniplayer-linear-incident-filter-72/README.md) improves compact aggregates but harms expanded playback, so it also remains unselected.
 
 The [latest boundary render](../experiments/miniplayer-boundary-render-57/README.md) uses consistent geometric pixel-area integration and fresh source support at every new node. Orders 8 and 16 are stable on its boundaries. The thin contour remains faint; cap light and source-feature placement still differ. These diagnostic images now appear on the reconstruction page.
 
