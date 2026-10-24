@@ -1,0 +1,27 @@
+{
+  "status": "DECLARED_BEFORE_NEW_PATHS",
+  "start": "2026-10-24T12:50:08.845Z",
+  "deadline": "2026-10-24T13:10:08.845Z",
+  "checkpoint_minutes": 6,
+  "question": "Is complete pre-foreground RGB integration stable on the36fixed cap pixels once both lens and clear complement use physical pixel area?",
+  "selection": "Exactly cap55 fixed pixels, orders8/16/32, same shallow41/42 geometry, finite48 panel1770,radiance4, neutral working response, sigma6.75R21. No target read for selection or fit.",
+  "caps": {
+    "quadrature_nodes": 500000,
+    "native_rays": 500000,
+    "surface_points": 15000000,
+    "adapter_units": 300000000,
+    "source_audit_points": 2000000,
+    "bilinear_mask_lookups": 8000000,
+    "RGB_queries": 2000000,
+    "incident_fields": 4,
+    "known_erosions": 8,
+    "Study_mask_points": 1121600,
+    "panel_intersections": 500000,
+    "preclip_channels": 3000000,
+    "full_composites": 0,
+    "fits": 0
+  },
+  "source_gate": "Every new primary finite43x43kernel/bilinear footprint and each direct-clear sample, in BOTH original references, before any field or RGB sampling.",
+  "integration": "Full unfiltered clear bilinear pixel integral from four quadrant-center samples, plus positive lens-area integral of encoded glass minus clear, divided by full pixel area. Native-center cuts partition clear bilinear knots. No mixed old-AA2 lens contribution.",
+  "stop": "First incomplete path, unsupported source, invariant, cap, checkpoint or deadline failure. Preserve failures without source repair or in-place retry. No image/score/full reconstruction claim."
+}
