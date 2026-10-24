@@ -389,20 +389,35 @@ References come from [Apple's original Music video](https://www.apple.com/newsro
 
 ### Expanded mini-player
 
-**Primary: harmonic rounded-rectangle geometric model.** Both references use the same surface law, ordinary softness and common neutral response. The cap/body, bright rim and tone remain visibly incomplete.
+**Primary: positive spline-height geometric model with shared neutral contrast.** Both references use the same actual surface profile, incident softness and common response. The bright rim, some background returns and cap shading remain incomplete.
 
 References: [Apple Music clip](https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4), frames at 0 and 6.033 seconds.
 
-![Expanded miniplayer A and primary geometric model](assets/geometric-expanded-primary-a.png)
+![Expanded miniplayer A and verified spline geometric model](assets/geometric-expanded-contrast-primary-a.png)
 
-![Expanded miniplayer B and primary geometric model](assets/geometric-expanded-primary-b.png)
+![Expanded miniplayer B and verified spline geometric model](assets/geometric-expanded-contrast-primary-b.png)
 
-Paired E is 45.424 / 18.220 with incident blur 6.75 native pixels. This primary selection is not a claim of parity with the reference or a passing full-model comparison. Checkerboard marks unavailable unscored exterior; no backdrop is filled from the target.
+Paired E improves from H1's 45.424 / 18.220 to 12.908 / 8.576. All original paired body, SSIM, artwork and glyph guards pass, including independent float64 residual checks. Both partial-boundary advisory errors improve. Incident blur stays 6.75 native pixels. This is a verified combined increment, not a completed pipeline or uniquely identified Apple material.
 
-[Selected source-filtered state](../research/experiments/expanded-geometry-02/selection.json) · [Paired geometric study](../research/experiments/expanded-geometry-02/README.md).
+[Selected state and limits](../research/experiments/expanded-contrast-guard-02/primary-decision.json) · [Bounded experiment and exact replay](../research/experiments/expanded-contrast-guard-02/README.md) · [Independent review](../research/experiments/agent-expanded-contrast-peer-09/README.md).
 
-<details>
-<summary>Latest tested geometry: body improves; foreground guards still fail</summary>
+Checkerboard marks unavailable unscored exterior. The original registered inputs and foreground remain fixed; no target backdrop, mask removal or new shadow is used. Earlier H1 and spline-response failures remain below.
+
+<details data-historical>
+<summary>Earlier H1 primary, retained unchanged</summary>
+
+H1 used a harmonic rounded-rectangle back and the prior common response. Its incident-filtered E was 45.424 / 18.220. The complete source and scoring records remain unchanged.
+
+![Earlier expanded H1 A](assets/geometric-expanded-primary-a.png)
+
+![Earlier expanded H1 B](assets/geometric-expanded-primary-b.png)
+
+[Original selection](../research/experiments/expanded-geometry-02/selection.json).
+
+</details>
+
+<details data-historical>
+<summary>Earlier spline with prior response: foreground guards failed</summary>
 
 A positive spline back reduces paired E to 25.289 / 11.045 with all body metrics improving. Original artwork/title/transport guards still fail, so this is an experimental candidate, not an accepted replacement. Source, masks, blur and colour stay fixed.
 

@@ -480,7 +480,11 @@ The same coverage filter and neutral encoded-color function were independently r
 
 This establishes reusable software and paired material increments within those diagnostic pipelines, **not transferred optical fidelity** or a completed held-out third reference. Review stops at the checklist boundary; no motion or device-performance result is implied.
 
-## Frosted miniplayer: paired component checks
+<span id="frosted-miniplayer-paired-component-checks"></span>
+
+## Frosted miniplayer: historical component checks
+
+This section preserves the earlier harmonic/output-filtered pipeline. The [current primary model](../research/experiments/expanded-contrast-guard-02/README.md) uses a positive spline height, incident filtering and a later shared response. Its verified combined improvement does not rewrite these historical comparisons.
 
 The expanded Apple Music miniplayer is a deliberately different family: an elongated frosted surface with text, symbols and artwork. It uses the same surface-normal/Snell tracer and coverage/material components. Its harmonic height adapter changes the actual solid; it does not add an image warp.
 
@@ -493,7 +497,20 @@ The frozen XY outline is an ordinary rounded rectangle: it does not yet reproduc
 | Shared neutral gain/bias | 49.127 | 19.819 |
 | Historical polished fit, unchanged | 5.388 | 3.117 |
 
-The common encoded response is0.70198083S+0.22423217, applied before the same coverage-normalized filter. Softness is6.75/88.5L here versus1.7/245L for the clear circle. The visibly frosted and clear references justify testing different material softness; these values do not identify physical roughness or capture PSF.
+The earlier common encoded response preceded the historical coverage-normalized output filter:
+
+$$
+C_{\mathrm{encoded}}=0.70198083S+0.22423217.
+$$
+
+Its declared normalized softness values were:
+
+$$
+\frac{\sigma_{\mathrm{expanded}}}{L_{\mathrm{expanded}}}=\frac{6.75}{88.5},\qquad
+\frac{\sigma_{\mathrm{clear}}}{L_{\mathrm{clear}}}=\frac{1.7}{245}.
+$$
+
+The visibly frosted and clear references justify distinct softness parameters. These numbers do not identify physical roughness or capture PSF. Moving the material filter to incident space is a separately recorded operation-order assumption.
 
 Root independently reconstructed both accepted composites pixel-exactly, verified frozen source/vector/artwork hashes and checked every original paired body, foreground, artwork and exterior guard. The rejected full color-fit step remains rejected.
 
@@ -512,7 +529,7 @@ The physical geometry still misplaces/deforms background features, lacks the bri
 
 A shared artist-label opacity improves B but worsens A, so the original vector styles stay fixed. Exact source font paths do not establish the original UI weight or layout.
 
-Selected neutral text regions in B have coincident reference RGB channels; A already has strong source color differences. The saved-array audit does not identify a source-independent spectral term, so no dispersion fit is added. This is an identification limit, not proof of nondispersive glass. The circle's dispersion stage is separately skipped on the reviewer’s explicit observation.
+Selected neutral text regions in B have coincident reference RGB channels; A has strong source color differences. The historical audit identifies no source-independent spectral term. This is not proof of nondispersive glass. The clear control retains its existing dispersion state under explicit review acceptance; absence is not established.
 
 These paired checks establish shared implementation and material increments relative to the raw physical hypothesis. They do not establish a successful transferred optical model, complete reflected radiance, final visual parity or performance. [Parameters, source/guard scope and rejected outcomes](../reconstruction/studies/geometric-expanded-pipeline/summary.json)
 
