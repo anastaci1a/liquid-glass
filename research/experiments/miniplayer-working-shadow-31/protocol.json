@@ -1,0 +1,43 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T09:34:40.099Z",
+  "deadline": "2026-10-24T09:49:40.099Z",
+  "question": "Does the retained common contact-shadow prior improve the visible exterior dark boundary of the current working two-surface family without changing fully covered glass?",
+  "baseline": "Current working20half, all four references. Older13 numerical verdict does not transfer because covered/partial material response changed. Original numerical baselines are additional guards, not replaced.",
+  "shared_seed": {
+    "opacity": 0.10758152975863192,
+    "sigma": 0.2071459298777112,
+    "offset": [
+      -0.04999997516993123,
+      0.09402143677412972
+    ]
+  },
+  "factors": [
+    1,
+    0.5,
+    0.25
+  ],
+  "frozen": [
+    "Working20half geometry/material/primary power/direct-front environment",
+    "incident6.75R21,source/pose/masks/AA2/foreground",
+    "shadow13 unit fields with exact original footprint/pose binding"
+  ],
+  "model": "Existing extended_shadow.shadow Gaussian-distance underlay approximation, applied only to retained premultiplied clear contribution. No target shadow copied; not a complete physical light/occluder inference.",
+  "caps": {
+    "Study_constructor_pixels": 1121600,
+    "cached_unit_field_pixels": 560800,
+    "identity_composites": 4,
+    "candidate_composites": 12,
+    "score_calls": 16,
+    "SSIM_Gaussians": 80,
+    "metric_erosions": 16,
+    "rays": 0,
+    "source_queries": 0,
+    "fields": 0,
+    "filters": 0,
+    "fits": 0
+  },
+  "checkpoint": "Exact original field/preset provenance and current source/path/input hashes; all four zero-shadow pre/complete/score identities before candidates. Fully covered pixels exact for every strength.",
+  "stop": "Exactly three original strengths; no new field, strength, glow, fit or optical change. All four current and original numerical guards retained. No all-guard acceptance if inherited fully covered failures remain.",
+  "checkpoint_minutes": 4
+}
