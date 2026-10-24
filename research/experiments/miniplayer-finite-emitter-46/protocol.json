@@ -1,0 +1,45 @@
+{
+  "status": "DECLARED_BEFORE_IMPLEMENTATION",
+  "start": "2026-10-24T11:44:21.671Z",
+  "deadline": "2026-10-24T12:04:21.671Z",
+  "outline_latest_deadline": "2026-10-24T12:30:57.762Z",
+  "checkpoint_minutes": 5,
+  "defect": "The far-field annulus gives uniform rim bands and fails localized cap brightness. Search body also stays too dark under unchanged shared response.",
+  "hypothesis": "One finite planar annular emitter creates genuine spatial parallax across caps and control placements. All emitted/direct paths are explicit; no refraction sample, normal or target RGB changes.",
+  "fixed_scene": {
+    "camera": "Orthographic downward rays launched at global z177nativepx, above glass and below emitter. Ideal camera sampling plane is not an occluder.",
+    "panel_z_native": 885,
+    "panel_center_xy_native": [
+      960,
+      540
+    ],
+    "panel_reference_z_native": 0,
+    "inner_degrees": 30,
+    "outer_degrees": 80,
+    "shoulder_degrees": 10,
+    "radiance": 4,
+    "background": "Frozen emissive source plane; no relighting or new shadow.",
+    "observed": false
+  },
+  "frozen": "Shallow42 geometry/material/primary power, incident6.75R21,all4originalcases/masks/styles/AA2/shadowzero. Native world coordinates from actual q.front*originalL+correctedpose.",
+  "caps": {
+    "synthetic_intersections": 32,
+    "old_annular_direction_queries": 1500000,
+    "panel_intersections": 1500000,
+    "Study_constructors": 4,
+    "mask_points": 1121600,
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "score_calls": 8,
+    "metric_gaussians": 40,
+    "metric_erosions": 8,
+    "lens_rays": 0,
+    "source_RGB_queries": 0,
+    "fields": 0,
+    "filters": 0,
+    "fits": 0
+  },
+  "checkpoint": "Synthetic analytic hit, covariance, direction-miss and far-field-limit controls. Then four shallow42 exact pre/complete/score identities before candidates. All new direct light segments must escape actual front and intersect the panel forward.",
+  "guards": "Original numerical/currentworking20/shallow42 all cohorts and fixed crops; preserve display clipping counts. No automatic adoption or count; later branch remains unassigned.",
+  "stop": "One finite height885px only, first invariant/cap/originaldeadline. No emitter recentering percontrol, secondheight, lightstrength, source repair, material fit or sourceRGB query."
+}
