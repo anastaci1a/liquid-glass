@@ -1,0 +1,272 @@
+{
+  "compiled_not_executed": true,
+  "definitions": [
+    {
+      "owner": null,
+      "name": "bevel_profile",
+      "line": 10,
+      "calls": [
+        "ValueError",
+        "np.any",
+        "np.asarray",
+        "np.isfinite",
+        "np.isfinite([core, depth, power, edge]).all",
+        "np.maximum"
+      ]
+    },
+    {
+      "owner": null,
+      "name": "harmonic_cap",
+      "line": 25,
+      "calls": [
+        "ValueError",
+        "np.any",
+        "np.asarray",
+        "np.broadcast_arrays",
+        "np.divide",
+        "np.zeros_like"
+      ]
+    },
+    {
+      "owner": null,
+      "name": "refract",
+      "line": 43,
+      "calls": [
+        "ValueError",
+        "abs",
+        "np.any",
+        "np.asarray",
+        "np.broadcast_arrays",
+        "np.isfinite",
+        "np.isfinite([n_from, n_to]).all",
+        "np.isfinite(i).all",
+        "np.isfinite(n).all",
+        "np.linalg.norm",
+        "np.max",
+        "np.maximum",
+        "np.sqrt",
+        "np.sum",
+        "np.where"
+      ]
+    },
+    {
+      "owner": "HarmonicCircularBack",
+      "name": "__post_init__",
+      "line": 95,
+      "calls": [
+        "ValueError",
+        "min",
+        "np.isfinite",
+        "np.isfinite([self.depth, self.crown_depth]).all"
+      ]
+    },
+    {
+      "owner": "HarmonicCircularBack",
+      "name": "maximum_height",
+      "line": 99,
+      "calls": []
+    },
+    {
+      "owner": "HarmonicCircularBack",
+      "name": "slope_bound",
+      "line": 101,
+      "calls": [
+        "max"
+      ]
+    },
+    {
+      "owner": "HarmonicCircularBack",
+      "name": "boundary_mask",
+      "line": 103,
+      "calls": [
+        "np.hypot"
+      ]
+    },
+    {
+      "owner": "HarmonicCircularBack",
+      "name": "height_gradient",
+      "line": 105,
+      "calls": [
+        "bevel_profile",
+        "harmonic_cap",
+        "np.asarray",
+        "np.broadcast_arrays",
+        "np.divide",
+        "np.hypot",
+        "np.maximum",
+        "np.where",
+        "np.zeros_like"
+      ]
+    },
+    {
+      "owner": "HarmonicCircularBack",
+      "name": "section",
+      "line": 112,
+      "calls": [
+        "np.zeros_like",
+        "self.height_gradient"
+      ]
+    },
+    {
+      "owner": null,
+      "name": "trace_flat_front_orthographic",
+      "line": 147,
+      "calls": [
+        "ValueError",
+        "dict",
+        "np.any",
+        "np.asarray",
+        "np.broadcast_arrays",
+        "np.isfinite",
+        "np.isfinite([index, background_distance]).all",
+        "np.isfinite([surface.maximum_height, surface.slope_bound]).all",
+        "np.isfinite(x).all",
+        "np.isfinite(y).all",
+        "np.linalg.norm",
+        "np.ones_like",
+        "np.sqrt",
+        "np.stack",
+        "np.where",
+        "np.zeros_like",
+        "refract",
+        "surface.boundary_mask",
+        "surface.height_gradient"
+      ]
+    },
+    {
+      "owner": null,
+      "name": "trace_closed_orthographic",
+      "line": 227,
+      "calls": [
+        "ValueError",
+        "abs",
+        "dict",
+        "entry.copy",
+        "first_blocked.any",
+        "len",
+        "next_convex_boundary",
+        "np.any",
+        "np.asarray",
+        "np.broadcast_arrays",
+        "np.flatnonzero",
+        "np.full",
+        "np.full_like",
+        "np.isfinite",
+        "np.isfinite([index, background_distance, tolerance]).all",
+        "np.isfinite(x).all",
+        "np.isfinite(y).all",
+        "np.linalg.norm",
+        "np.stack",
+        "np.where",
+        "np.zeros",
+        "np.zeros_like",
+        "refract",
+        "scalar",
+        "surface.boundary_mask",
+        "surface.front_height",
+        "surface.level_gradient",
+        "v.reshape",
+        "vector",
+        "x.copy",
+        "x.ravel",
+        "y.copy",
+        "y.ravel"
+      ]
+    },
+    {
+      "owner": "CircularHeightSolid",
+      "name": "__init__",
+      "line": 307,
+      "calls": [
+        "ValueError",
+        "float",
+        "isinstance",
+        "np.array",
+        "np.isfinite"
+      ]
+    },
+    {
+      "owner": "CircularHeightSolid",
+      "name": "_height_gradient",
+      "line": 312,
+      "calls": [
+        "self.back.height_gradient"
+      ]
+    },
+    {
+      "owner": "CircularHeightSolid",
+      "name": "level_gradient",
+      "line": 317,
+      "calls": [
+        "RuntimeError",
+        "np.argmax",
+        "np.asarray",
+        "np.ones_like",
+        "np.stack",
+        "np.take_along_axis",
+        "np.zeros_like",
+        "self._height_gradient"
+      ]
+    },
+    {
+      "owner": "CircularHeightSolid",
+      "name": "front_height",
+      "line": 325,
+      "calls": [
+        "np.asarray",
+        "np.broadcast_arrays",
+        "np.hypot",
+        "np.zeros_like"
+      ]
+    },
+    {
+      "owner": "CircularHeightSolid",
+      "name": "boundary_mask",
+      "line": 328,
+      "calls": [
+        "np.asarray",
+        "self.back.boundary_mask"
+      ]
+    },
+    {
+      "owner": "CircularHeightSolid",
+      "name": "nonsmooth_mask",
+      "line": 330,
+      "calls": [
+        "abs",
+        "np.hypot",
+        "self._height_gradient"
+      ]
+    },
+    {
+      "owner": null,
+      "name": "next_convex_boundary",
+      "line": 335,
+      "calls": [
+        "ValueError",
+        "abs",
+        "dict",
+        "hasattr",
+        "len",
+        "np.any",
+        "np.asarray",
+        "np.empty",
+        "np.full",
+        "np.isfinite",
+        "np.isfinite(d).all",
+        "np.isfinite(ext).all",
+        "np.isfinite(p).all",
+        "np.linalg.norm",
+        "np.max",
+        "np.sum",
+        "np.where",
+        "np.zeros",
+        "p.copy",
+        "range",
+        "surface.level_gradient",
+        "surface.nonsmooth_mask"
+      ]
+    }
+  ],
+  "generated_constructor": "Dataclass __init__ has <string> filename; explicitly included by selected owner/name, not imported or constructed here."
+}
