@@ -1,0 +1,95 @@
+{
+  "member": "expanded",
+  "reference": "a",
+  "factor": 1,
+  "gain": 0.48253315649856554,
+  "bias": 0.46360245575923686,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 10.832664489746094
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 14.59493350982666
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 11.004755020141602
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 8.798971176147461
+    },
+    "ssim": 0.9779778122901917,
+    "loss": 146.04625921006254,
+    "E": 12.084960041723868,
+    "exterior": 19.254291534423828,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 46.27556610107422
+    },
+    "foreground": {
+      "jupiter.jpg": 2257.867919921875,
+      "title.svg": 336.8025207519531,
+      "artist.svg": 121.66940307617188,
+      "play.svg": 137.9622802734375,
+      "forward.svg": 162.55459594726562
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 18.21225357055664,
+        "luma_signed": 10.38761097184801
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 15.641783714294434,
+        "luma_signed": 8.962222737489453
+      },
+      "left_cap": {
+        "RGB_RMSE": 21.138315200805664,
+        "luma_signed": 7.857491427026677
+      },
+      "body": {
+        "RGB_RMSE": 7.994384765625,
+        "luma_signed": 3.3239648685711
+      }
+    }
+  },
+  "held_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "selected_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": false,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "clipping": [
+    0,
+    0,
+    0
+  ],
+  "all_pass": false,
+  "original_numerical_all_pass": false
+}

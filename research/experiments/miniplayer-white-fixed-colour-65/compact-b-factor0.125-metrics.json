@@ -1,0 +1,95 @@
+{
+  "member": "compact",
+  "reference": "b",
+  "factor": 0.125,
+  "gain": 0.546203074361122,
+  "bias": 0.3999325378966804,
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 17.985427856445312
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 20.924766540527344
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 18.184240341186523
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 15.893807411193848
+    },
+    "ssim": 0.9629802107810974,
+    "loss": 357.7866870582511,
+    "E": 18.915250118839325,
+    "exterior": 15.072770118713379,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 20.79570198059082
+    },
+    "foreground": {
+      "jupiter.jpg": 1908.3883056640625,
+      "title.svg": 432.7606506347656,
+      "artist.svg": 91.05078125,
+      "play.svg": 127.97039031982422,
+      "forward.svg": 261.9398498535156
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 25.40843391418457,
+        "luma_signed": -4.686215662196909
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 21.022045135498047,
+        "luma_signed": -3.1983085103821165
+      },
+      "left_cap": {
+        "RGB_RMSE": 18.298076629638672,
+        "luma_signed": -2.208089614770484
+      },
+      "body": {
+        "RGB_RMSE": 15.138494491577148,
+        "luma_signed": -7.72892205721992
+      }
+    }
+  },
+  "held_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": false,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "selected_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "clipping": [
+    0,
+    0,
+    0
+  ],
+  "all_pass": false,
+  "original_numerical_all_pass": true
+}
