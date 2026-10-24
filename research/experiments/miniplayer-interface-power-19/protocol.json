@@ -1,0 +1,38 @@
+{
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "start": "2026-10-24T06:38:32.553Z",
+  "deadline": "2026-10-24T06:58:32.553Z",
+  "checkpoint_minutes": 5,
+  "question": "Does explicit same-path interface transmission power resolve the calibrated-primary role ambiguity while retaining the visible outline?",
+  "hypothesis": "The stage18 hybrid omitted primary interface attenuation. Test the lossless direct-front plus primary-transmission partition with the same calibrated incident material, rather than tuning illumination to a boundary score.",
+  "state_pin": "899e6cd6023cbaa413cf6780e68bf2c5de9e7baf",
+  "allowed": "One fixed operation: decode selected neutral incident response, multiply by actual retained primary_power, add actual direct-front reflected annular radiance with fixed amplitude4, encode before AA2 and original foreground. No new coefficient.",
+  "frozen": "All18 actual surfaces, paths, primary powers, source raw samples, incident6.75R21, sharedg/b, pose, source, masks, AA2, foreground, shadowzero; one family major-length parameter.",
+  "references": [
+    "expanded A",
+    "expanded B",
+    "compact A",
+    "compact B"
+  ],
+  "caps": {
+    "cached_candidate_composites": 4,
+    "identity_composites": 4,
+    "Study_constructors": 4,
+    "mask_points": 1121600,
+    "score_calls": 8,
+    "metric_gaussians": 40,
+    "metric_erosions": 8,
+    "annular_direction_queries": 1500000,
+    "decoded_payload_bytes": 1200000000,
+    "rays": 0,
+    "heights": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "Fresnel": 0,
+    "fits": 0
+  },
+  "checkpoint": "Hash bindings; four identity reconstructions must reproduce18 light4 exactly before any changed-power composite. Validate retained primary/front/tail closure without optical reevaluation.",
+  "guards": "Every original body/SSIM/foreground/exterior and original16/22 partial cohort; compare both selected canonical and18 hybrid. Report local crop regressions. No tolerance waiver.",
+  "stop": "First identity/invariant failure, four candidates or actualdeadline; no second throughput setting, gain compensation, environment change or omitted tail.",
+  "limits": "Neutral encoded response decoded to linear is an assumed calibrated incident material, not measured radiance. Unassigned later reflected tail remains explicit; no complete scene acceptance."
+}
