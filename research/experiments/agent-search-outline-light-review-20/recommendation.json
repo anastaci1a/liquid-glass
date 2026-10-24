@@ -1,0 +1,73 @@
+{
+  "recorded_at": "2026-10-24T04:44:23.938Z",
+  "decision": "Recommend one separately authorized conditional Search first-return light test after immutable shared pin; same emitter and amplitudes, no Search-specific tuning.",
+  "saved_launches": 16,
+  "first_return_front_all": true,
+  "polar_ranges": {
+    "0.5": [
+      15.839124676717521,
+      15.98777535002
+    ],
+    "0.7": [
+      27.793272893390185,
+      28.117560792586684
+    ],
+    "0.85": [
+      39.13709121605324,
+      39.370260893788135
+    ],
+    "0.95": [
+      47.866665902325096,
+      48.32135490121381
+    ]
+  },
+  "later_power_after_event3_range": [
+    0.0015442003843900703,
+    0.0025542959343666824
+  ],
+  "tail_at_event24_range": [
+    9.632207048090103e-27,
+    5.789008392472613e-10
+  ],
+  "correctness_conditions": [
+    "Environment evaluates outward backward-ray direction toward scene, axis+z. Flat-front reflectiontheta0 is outside annulus.",
+    "Pin exact angular support/shoulder convention before Search run.",
+    "Per-point first-return-front certificate must pass, not inferred from16 samples.",
+    "Later interval begins after first return; never substitute24-event tail.",
+    "BoundA*laterpower is omitted emitter contribution under hypothesis, not total unknown scene radiance.",
+    "Separate s/p products and air-to-air endpoint reciprocity; no cosine/inverse-square multipliers.",
+    "sRGB decoding/encoding and additive calibrated-base hybrid explicitly declared, with clipping/preclip.",
+    "Reflection gets no transmissionPSF, encodedgain/bias or backdrop/source-confidence substitution."
+  ],
+  "visible_scope": "Missing thin outer rim is a plausible discriminator; interior white returns and misplaced source features remain separate.",
+  "next_task_requested": "Short cached Search conditional rendering after root shared utility pin and separate execution budget.",
+  "optical_events": 0,
+  "RGB_reductions": 0,
+  "environment_queries": 0,
+  "packaging_pending": true,
+  "first_front_certificate": {
+    "H": 0.10909090909090907,
+    "M": 0.8022362401312,
+    "R": 0.9972124917582454,
+    "lateral_upper": 0.4910914858351322,
+    "valid": true,
+    "scope": "Symbolic first-front ordering only; no height, ray or direction function evaluation."
+  },
+  "status": "SEALED_READONLY_REVIEW",
+  "storage": {
+    "error": "ENOSPC on new-file creation after one230MB own ignored-site cleanup.",
+    "commit_push": "Blocked; no commit created.",
+    "full_docs_checks": "Not completed during storage block; machine JSON parsing and staged diff checks pass. No maintained Markdown source added.",
+    "temporary_preservation": "/tmp/localica-search-light20-nTKajF",
+    "sessionsation": "Failed nonretryable OPERATION_FAILED: unable to open database file; request preserved in temporary staging; not delivered.",
+    "restored_by_primary": true
+  },
+  "readable_review": "# Search conditional annular light review\n\nRecommend one short cached first-return Search experiment after the shared immutable pin, preserving both fixed radiances 1/4 and the same angular law as root. This can discriminate the missing outer rim. It cannot identify Apple lighting or repair misplaced source-feature returns. No optical event, source query, RGB reduction, filter, composite or fit ran in this review. Exactly 16 saved audit18 launch records were read.\n\nOutward backward-ray direction points from the interface toward the environment. The camera axis is+z; do not negate the direction before the annulus query. Flat-front reflection is+z at polar 0 and receives zero from a 30–80deg annulus. The first back/front return uses T_entry R_back T_return separately for s/p, initially weighted one half each. Air-to-air reciprocity requires no extra index-square endpoint factor. Do not add cosine or inverse-square factors to infinite-distance radiance.\n\nPin exact shoulder support. Recommended compact support 30–80deg, smooth ramps 30–40 and 70–80, plateau 40–70, rather than ambiguously shifting support outside those bounds. The 16 retained first returns are all regular front exits. Polar ranges are 15.84–15.99deg at radius 0.5,27.79–28.12 at 0.7,39.14–39.37 at 0.85 and47.87–48.32 at 0.95. This should produce an outer band rather than lift the center. These sparse samples do not prove an entire native field.\n\nA global circle-order certificate is available symbolically: the actual harmonic height is radially nonincreasing and concave; let m=-h_r,0<=m<=M. Back reflection of vertical incidence gives v_z=(1-m²)/(1+m²)>0 for M<1 and inward displacement delta=2hm/(1-m²)<=2HM/(1-M²)<R. Then the signed front radius r-delta lies strictly between-R andR. Convex occupancy certifies the front is next. Exact zero-thickness poles remain unresolved, and return Snell/TIR still needs its shared status. No new height or direction evaluation establishes this derivation.\n\nThe omission interval starts AFTER the first return. Saved remaining unit-power totals are 0.001544–.002554, much larger than the 24-event tails. Emax times this remaining weight bounds omitted contribution from the assumed emitter only, not total unknown scene radiance. Retain the interval separately; do not replace it with a color or substitute the final tiny tail.\n\nDecode the accepted transmission response under an explicit sRGB approximation; adding known reflected light to that calibrated effective base is a conditional hybrid, not an identified energy-conserving material. Do not apply transmission gain/bias or its incident blur to specular light. Declare per-subray addition/AA/foreground order, preserve zero-light identity, save preclip/clipping and keep clear exterior unchanged.\n\nExisting Search images show a missing thin upper/lower outer rim and still-wrong interior white blobs/returns. The circular geometry plus an azimuth-uniform emitter gives a radial component; it cannot independently explain asymmetric interior features. The lower-return source envelope can include lower white lettering and not the upper field, as sealed correspondence02 already reports. Do not relabel those unknown features as reflections merely because adding light looks better.\n\nA shared environment is a meaningful boundary-condition hypothesis across the distinct miniplayer and Search surfaces, not proof that their geometry or material fits transfer. Keep Search H1/D2, source 6.75/r21, accepted tone, glyph/styles, masks and 38 partial-glass guards frozen in the prospective separate task. Inspect upper_rim[1440,576,1580,620], lower_return[1440,728,1580,764], left_cap[1418,630,1455,718] and glyph[1467,626,1563,722] without crop search or retuning.\n\nReview clock 04:39:37.862–04:54:37.862UTC. ENOSPC blocked new workspace files and Sessionsation then failed with OPERATION_FAILED/unable-to-open-database, marked nonretryable. The failed request is preserved under this temporary directory; no fallback transport or automatic retry is used. Only 230MB of this worktree's own ignored generated site from 20197aaf was removed; all scientific and other owners' files were preserved. Full build/publication checks remain blocked. Request the next bounded Search render task after root supplies the utility pin and storage is restored.\n",
+  "review_finished_at": "2026-10-24T04:53:33.053Z",
+  "latest_primary_notice": {
+    "utility_pin": "1c1a454a",
+    "Search_execution": false,
+    "flat_front_miniplayer": "Both amplitudes failed expanded B/SSIM with inset ring; preserve negative and await next explicit Search authority.",
+    "root_curved_front": "Separate root08 work, no helper evaluation."
+  }
+}
