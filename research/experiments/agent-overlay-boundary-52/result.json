@@ -1,0 +1,67 @@
+{
+  "status": "COMPLETE_FIXED76_BOUNDARY_DIAGNOSIS",
+  "failure": null,
+  "at": "2026-10-25T20:46:20.742449+00:00",
+  "summary": [
+    {
+      "member": "expanded",
+      "reference": "a",
+      "pixels": 16,
+      "RMSE_before": 40.32682800292969,
+      "RMSE_after": 82.50563049316406,
+      "worse_pixels": 16,
+      "better_pixels": 0,
+      "equal_pixels": 0,
+      "already_all_channels_above_target": 10,
+      "outside_overlay_center_pixels": 0,
+      "saved_guard_pass": false
+    },
+    {
+      "member": "expanded",
+      "reference": "b",
+      "pixels": 16,
+      "RMSE_before": 26.08043098449707,
+      "RMSE_after": 18.707460403442383,
+      "worse_pixels": 12,
+      "better_pixels": 4,
+      "equal_pixels": 0,
+      "already_all_channels_above_target": 12,
+      "outside_overlay_center_pixels": 0,
+      "saved_guard_pass": true
+    },
+    {
+      "member": "compact",
+      "reference": "a",
+      "pixels": 22,
+      "RMSE_before": 23.813167572021484,
+      "RMSE_after": 36.654205322265625,
+      "worse_pixels": 16,
+      "better_pixels": 6,
+      "equal_pixels": 0,
+      "already_all_channels_above_target": 1,
+      "outside_overlay_center_pixels": 0,
+      "saved_guard_pass": false
+    },
+    {
+      "member": "compact",
+      "reference": "b",
+      "pixels": 22,
+      "RMSE_before": 21.07662582397461,
+      "RMSE_after": 41.356353759765625,
+      "worse_pixels": 20,
+      "better_pixels": 2,
+      "equal_pixels": 0,
+      "already_all_channels_above_target": 1,
+      "outside_overlay_center_pixels": 0,
+      "saved_guard_pass": false
+    }
+  ],
+  "ledger": {
+    "numeric_payload_bytes": 49518400,
+    "target_pixels": 8294400,
+    "selected_scalar_observations": 7296,
+    "header_bytes": 2816,
+    "mask_selection_cells": 1121600
+  },
+  "optics_source_integration_composites_filters_images_fits": 0
+}
