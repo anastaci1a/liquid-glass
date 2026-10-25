@@ -169,7 +169,7 @@ def run():
     if P.get('reuse_alpha'):
         reuse=P['reuse_alpha']
         for config in configs:
-            assert {k:v for k,v in config.items() if k!='response'}==reuse['geometry_config']
+            assert {k:v for k,v in config.items() if k not in ['response','white_mix']}==reuse['geometry_config']
         for member in ['expanded','compact']:
             f=SERIES/reuse['folder']/f'{member}-alpha.npz'
             assert sha(f)==reuse['hashes'][member]
@@ -200,7 +200,12 @@ def run():
     for j,config in enumerate(configs):
         numerator=0.;denominator=0.;loss0=0.;deltas={}
         for (member,k),d in data.items():
-            a=fields[member][j];delta=response_delta(d['baseline'],config['response']);deltas[(member,k)]=delta
+            a=fields[member][j]
+            if config['response']=='mixed_lift':
+                mix=config['white_mix'];assert 0<=mix<=1
+                delta=mix*response_delta(d['baseline'],'white')+(1-mix)*response_delta(d['baseline'],'linear_lift')
+            else:delta=response_delta(d['baseline'],config['response'])
+            deltas[(member,k)]=delta
             train=d['train'];v=a[train,None]*delta[train];r=d['s'].target_crop[train].astype(float)-d['baseline'][train]
             charge('fit_pixel_channels',v.size)
             numerator+=float(np.mean(v*r))/4;denominator+=float(np.mean(v*v))/4;loss0+=float(np.mean(r*r))/4

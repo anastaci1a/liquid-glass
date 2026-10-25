@@ -1,0 +1,105 @@
+{
+  "number": 5,
+  "question": "Combined soft fade and color-preserving white blend",
+  "start": "2026-10-25T21:56:00.393782+00:00",
+  "checkpoint_deadline": "2026-10-25T22:01:00.393782+00:00",
+  "deadline": "2026-10-25T22:16:00.393782+00:00",
+  "configs": [
+    {
+      "sigma": 2.6,
+      "power": 1.5,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85,
+      "response": "mixed_lift",
+      "white_mix": 0.25
+    },
+    {
+      "sigma": 2.6,
+      "power": 1.5,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85,
+      "response": "mixed_lift",
+      "white_mix": 0.5
+    },
+    {
+      "sigma": 2.6,
+      "power": 1.5,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85,
+      "response": "mixed_lift",
+      "white_mix": 0.75
+    }
+  ],
+  "caps": {
+    "quadrature_calls": 0,
+    "quadrature_nodes": 0,
+    "profile_evaluations": 0,
+    "profile_controls": 1000,
+    "Study_constructor_pixels": 1121600,
+    "target_source_bitmap_pixels": 17000000,
+    "decoded_numeric_bytes": 128000000,
+    "identity_composites": 4,
+    "candidate_composites": 12,
+    "score_calls": 12,
+    "SSIM_Gaussians": 60,
+    "metric_erosions": 12,
+    "scalar_fits": 3,
+    "fit_pixel_channels": 20000000,
+    "comparison_sheets": 12,
+    "crop_sheets": 12,
+    "native_rays": 0,
+    "height_calls": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "reused_alpha_values": 6000000
+  },
+  "registration": "../registration-decision.json",
+  "orders": [
+    8,
+    16
+  ],
+  "maximum_order_difference": 1e-06,
+  "tail_bound": 1e-12,
+  "fit": "One closed-form bounded scalar per setting, equal four-reference train MSE; exclude held/foreground; no partial cohort optimization.",
+  "selection": "Every original guard against start and incumbent; otherwise retain incumbent. Development seed by train loss only, separate from acceptance.",
+  "checkpoint": "Exact zero identities, input/mask hashes, angular/response fixtures before candidate work.",
+  "stop": "First invalid support/profile/identity, cap or deadline; no retry. Order discrepancy above threshold stops before fitting/composites.",
+  "incoming_development": {
+    "folder": "pass-04",
+    "candidate": 0,
+    "config": {
+      "sigma": 2.6,
+      "power": 1.5,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85,
+      "response": "white"
+    },
+    "strength": 0.9476514824681201,
+    "train_loss": 0.002290430657492062
+  },
+  "reuse_alpha": {
+    "folder": "pass-04",
+    "candidate": 0,
+    "geometry_config": {
+      "sigma": 2.6,
+      "power": 1.5,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85
+    },
+    "hashes": {
+      "expanded": "1951a68894ac840b7c29576e3f29260dac17d94daa4ab419fb74ae1a7995f821",
+      "compact": "1a8c1fd3b011d61e31159d7b4da24a39367050ceb49248e12cd3eb6009dc1956"
+    }
+  },
+  "comparison": "Three fixed convex blends of white and linear-color endpoints with the best shared fade; fit only one common strength each. Reuse sealed opacity fields exactly. Pure white remains a saved comparator, not rerendered."
+}
