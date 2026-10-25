@@ -22,6 +22,8 @@ Use Steer Submit for every message in both directions between the lead and resea
 
 Keep messages short and efficient: include only what the recipient needs to act or understand the update. Communicate in plain prose only. Do not send diffs, patches, code blocks, file contents, attachments or embedded artifacts. Reference files, modules, commits and reports instead. Split longer messages into short paragraphs, each covering one point.
 
+Wrap every inter-agent message with the exact header `-- INCOMING MSG: <session_name> --` and footer `-- MSG END (<sent_timestamp>) --`. Substitute the sender's session name and the UTC send timestamp in ISO 8601 format. Put exactly one blank line between header and body, and between body and footer. Keep every body paragraph inside this single wrapper.
+
 A native acceptance receipt confirms delivery acceptance, not execution or completion. Check native working/idle observations and the assigned experiment’s ready flag. Review ready evidence promptly, including when reply scanning is inconclusive. Read-only artifact inspection supports review; tasks and decisions still go through Sessionsation.
 
 ### Native recovery and evidence
