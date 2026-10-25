@@ -20,7 +20,7 @@ Use Sessionsation for authorized session-to-session tasks. Keep the existing vis
 
 Use Steer Submit for every message in both directions between the lead and researcher. Never use Queue: delayed messages create stale backlogs. Use explicit in-turn Steer for an active turn and immediate Submit for an idle session, under current native guards. If neither is available, report the blocker without a Queue fallback.
 
-Communicate in plain prose only. Do not send diffs, patches, code blocks, file contents, attachments or embedded artifacts. Reference relevant files, modules, commits and reports by name or path instead. Split longer messages into short paragraphs, each covering one point.
+Keep messages short and efficient: include only what the recipient needs to act or understand the update. Communicate in plain prose only. Do not send diffs, patches, code blocks, file contents, attachments or embedded artifacts. Reference files, modules, commits and reports instead. Split longer messages into short paragraphs, each covering one point.
 
 A native acceptance receipt confirms delivery acceptance, not execution or completion. Check native working/idle observations and the assigned experiment’s ready flag. Review ready evidence promptly, including when reply scanning is inconclusive. Read-only artifact inspection supports review; tasks and decisions still go through Sessionsation.
 
