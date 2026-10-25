@@ -18,7 +18,9 @@ Agree interfaces and file ownership before overlapping edits. Use linked Git wor
 
 Use Sessionsation for authorized session-to-session tasks. Keep the existing visible sessions and isolated worktrees; do not substitute terminal input or launch a replacement helper.
 
-A native queue receipt confirms delivery acceptance, not execution or completion. Check native working/idle observations and the assigned experiment’s ready flag. Review ready evidence promptly, including when reply scanning is inconclusive. Read-only artifact inspection supports review; tasks and decisions still go through Sessionsation.
+Use Steer Submit for every message in both directions between the lead and researcher. Never use Queue: delayed messages create stale backlogs. Use explicit in-turn Steer for an active turn and immediate Submit for an idle session, under current native guards. If neither is available, report the blocker without a Queue fallback.
+
+A native acceptance receipt confirms delivery acceptance, not execution or completion. Check native working/idle observations and the assigned experiment’s ready flag. Review ready evidence promptly, including when reply scanning is inconclusive. Read-only artifact inspection supports review; tasks and decisions still go through Sessionsation.
 
 ### Native recovery and evidence
 
@@ -26,14 +28,14 @@ Distinguish a live native attachment from its terminal host. An unavailable host
 
 | Observed state | Authorized route |
 | --- | --- |
-| Idle | Submit under current guards. |
-| Working | Non-steering Queue; avoid duplicate assignments. |
+| Idle | Immediate Submit under current guards; never Queue. |
+| Working | Explicit in-turn Steer with a freshly resolved turn and runtime; never Queue. |
 | Errored or interrupted, process retained | Explicit native Resume with the current previous-turn, runtime and stop-token guards. |
 | Process exited | A separately validated launch plan and existing authorization; no automatic replacement session. |
 
 The stop-token key must be present. It may be null only when the current observation supplies no token. Revalidate through Sessionsation; do not guess identifiers or reuse stale preconditions. A recovery message must explicitly preserve expired experiments and define its new bounded task.
 
-Native queue acceptance, input consumption, execution and completion are separate facts. An explicit start can be rejected because automatic dispatch already consumed the item. Observe the original receipt and exact-turn checkpoints before concluding what ran; do not resend accepted or uncertain input.
+Native acceptance, input consumption, execution and completion are separate facts. An explicit start can be rejected because automatic dispatch already consumed the item. Observe the original receipt and exact-turn checkpoints before concluding what ran; do not resend accepted or uncertain input.
 
 Retain the original UUID and request before sending. For contention, inspect the receipt or retry only the identical request when the installed contract permits it. Never create a replacement UUID to bypass an uncertain delivery. Read-only checkpoint association alone is not message-delivery proof.
 
