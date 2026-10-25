@@ -66,7 +66,7 @@ No fourth width, opacity or placement is tried. The gallery retains overlay88 as
 
 The [protocol](protocol.json) began at 20:58:26.443 UTC, with checkpoint due at 21:03:26.443 and sealing due at 21:18:26.443. The exact four-image replay checkpoint passed at 20:58:59.189. [Results](result.json) record scientific completion. The parent outline deadline remains 21:33:02.674; no unused time transfers.
 
-[Foreground scope correction](foreground-scope-correction.json) narrows the original verification label without changing its saved bytes or any scientific output. The exact assertion concerns backing identity, not geometric nonoverlap.
+[Independent static review](../agent-overlay-composition-peer-53/README.md) supports the matched control and covariance algebra. [Foreground scope correction](foreground-scope-correction.json) narrows the original verification label without changing its saved bytes or any scientific output. The exact assertion concerns backing identity, not geometric nonoverlap.
 
 The checkpoint's profile-control label refers to the unchanged controls from overlay88, reused rather than numerically repeated. Native signed-distance membership subsequently matches every retained inside flag. Clear samples and unavailable pixels remain exact. Original input/mask identities and [first](first-hashes.json)/[last](last-hashes.json) scientific hashes agree.
 
