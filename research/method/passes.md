@@ -18,12 +18,12 @@ Use the [experiment template](../../templates/experiment.md). Preserve selected 
 | --- | ---: | --- |
 | Intake and controls | 10 min | Frozen G05 state, source/filter support and reproducible baseline. |
 | Source blur before refraction | 50 min | Compare source-space and output-space softness at matched central detail. |
-| Outline shading | 45 min | Test a justified surface-derived transport or illumination hypothesis. |
+| Outline shading | 45 min | Test the separate boundary overlay against the visible rim. |
 | Verification and decision | 15 min | Independent reproduction, local/overall guards and visible-feedback review. |
 
 Leave the existing dispersion stage unchanged under the current review instruction; do not infer physical absence. Retain blur and freeze geometry during its comparison. Do not add spatially painted edge corrections or change a filter radius by image location.
 
-Outline calculations must use the same optical surface. Unknown reflected illumination or unresolved internal paths remain limitations; neither permits target-colored repair.
+The visible outline is a separate composited effect over the completed reconstruction. Keep refraction, source sampling and optical normals unchanged during outline trials. Use the shared projected boundary to locate the overlay, with explicit width, profile, color and opacity. Physical reflection experiments remain separate evidence; they do not define the current outline convention.
 
 ## Subsequent element studies: four hours
 
@@ -32,7 +32,7 @@ Outline calculations must use the same optical surface. Unknown reflected illumi
 | Refraction, including intake | 80 min | Does one realizable surface explain source-feature correspondence? |
 | Blurriness | 20 min | Which declared material operator explains detail attenuation? |
 | Color response | 20 min | Does a shared response improve informative references? |
-| Outline | 60 min | Do surface transport and supported lighting explain the boundary? |
+| Outline | 60 min | Does a separate boundary overlay reproduce the thin rim and smooth inward fade? |
 | Shadow / glow | 15 min | Does generated exterior behavior pass its original guards? |
 | Icon shape / material | 20 min | Are foreground geometry and response independently supported? |
 | Dispersion identification | 10 min | Is a spectral effect distinguishable from source color and filtering? |

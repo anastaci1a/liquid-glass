@@ -405,13 +405,13 @@ Current E is 7.88349 / 6.14943. Expanded A's original 16-pixel boundary and expa
 
 A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.md) over-brightens the edge. Later closed-surface studies expose [source limitations](../research/experiments/miniplayer-native-front-26/README.md) and [grazing-sampling error](../research/experiments/miniplayer-grazing-quadrature-27/README.md); they are diagnostics, not newer completed reconstructions.
 
-**Latest test: the actual first internal return, under the same light.** It creates a bright inset band rather than the thin outer rim. Expanded E worsens from 12.25789 / 6.76131 to 17.71977 / 11.57293; both SSIM values worsen. Geometry, source, incident blur and tone remain fixed. This is a useful negative, not a replacement.
+**Latest test: a separate thin outline over the frozen working body.** One white profile peaks at the outer boundary and fades smoothly inward. Refraction and incident blur are unchanged. Expanded E is 7.96922 / 6.14915; expanded A's original partial-boundary error worsens substantially. This is a held outline test, with no family acceptance.
 
-![Expanded A: actual first-return test, incorrect inset band](assets/geometric-expanded-first-return-a.png)
+![Expanded A: independent thin white outline over frozen refraction](assets/geometric-expanded-overlay-a.png)
 
-![Expanded B: actual first-return test, incorrect inset band](assets/geometric-expanded-first-return-b.png)
+![Expanded B: independent thin white outline over frozen refraction](assets/geometric-expanded-overlay-b.png)
 
-[Actual paths, exact zero controls and every regression](../research/experiments/miniplayer-first-return-native-85/README.md) · [First-return certificate](../research/experiments/miniplayer-first-return-83/README.md). Earlier [co-designed78](../research/experiments/miniplayer-codesigned-native-78/README.md), [front-only75](../research/experiments/miniplayer-perimeter-front-75/README.md) and [boundary57](../research/experiments/miniplayer-boundary-render-57/README.md) remain preserved. No source, mask, accepted count or working-model change.
+[Overlay recipe, exact controls and all failures](../research/experiments/miniplayer-overlay-outline-88/README.md). The previous [first-return test and incorrect inset band](../research/experiments/miniplayer-first-return-native-85/README.md) remain archived, along with [co-designed78](../research/experiments/miniplayer-codesigned-native-78/README.md), [front-only75](../research/experiments/miniplayer-perimeter-front-75/README.md) and [boundary57](../research/experiments/miniplayer-boundary-render-57/README.md). No source, mask, accepted count or working-model change.
 
 <details data-historical>
 <summary>Preserved verified numerical baseline</summary>
@@ -501,13 +501,13 @@ Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original 
 
 [Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Working selection and all failures](../research/decisions/miniplayer-working-primary.json) · [Four-reference material record](../research/experiments/miniplayer-incident-material-20/README.md).
 
-**Latest test: the same first-return model, shortened only.** The added inset band also fails compact: E worsens from 16.74083 / 16.57926 to 18.07564 / 18.36203, and both SSIM values worsen. No compact-specific fit or light change was used. Missing cap light and feature placement remain unresolved.
+**Latest test: the same separate thin outline, shortened only.** The white overlay has one outer maximum and a smooth inward fade, with identical width and strength across both lengths. Compact E improves slightly to 20.50074 / 19.66365, but both original partial-boundary guards worsen. Body tone and source-return placement remain unresolved; this test is held.
 
-![Compact A: same first-return model, incorrect inset band](assets/geometric-compact-first-return-a.png)
+![Compact A: one thin white overlay over the frozen working body](assets/geometric-compact-overlay-a.png)
 
-![Compact B: same first-return model, incorrect inset band](assets/geometric-compact-first-return-b.png)
+![Compact B: one thin white overlay over the frozen working body](assets/geometric-compact-overlay-b.png)
 
-[Four-reference result and retained TIR power](../research/experiments/miniplayer-first-return-native-85/README.md). Exact source/coverage and zero controls establish isolation, not visual success. The [prior co-designed render](../research/experiments/miniplayer-codesigned-native-78/README.md) remains archived.
+[Four-reference overlay results and original guards](../research/experiments/miniplayer-overlay-outline-88/README.md). The latest test uses the unchanged working body, not the [rejected first-return reconstruction](../research/experiments/miniplayer-first-return-native-85/README.md) with its doubled contour. Refraction, foreground and incident blur are unchanged.
 
 <details data-historical>
 <summary>Preserved unfitted expanded-family transfer baseline</summary>
