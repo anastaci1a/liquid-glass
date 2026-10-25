@@ -4,6 +4,8 @@ The current outline convention is a separate effect composited over the complete
 
 The [first independent overlay](../experiments/miniplayer-overlay-outline-88/README.md) produces a single thin edge over working20. Compact aggregate errors improve slightly, but both original partial guards worsen; expanded A also worsens. All foreground guards pass. The 0.65-pixel profile is shared across both lengths, with no refraction changes or accepted replacement.
 
+The [half-pixel outward placement](../experiments/miniplayer-outer-outline-89/README.md) reduces those partial errors but substantially worsens compact exterior. Expanded B passes its original guards; the shared family does not. The two-placement review retains the first overlay as a held gallery test. [Original partial-pixel diagnosis](../experiments/agent-overlay-boundary-52/README.md) separates existing brightness errors from the changed completed-pixel composition.
+
 A [conditional continuation bound](../experiments/miniplayer-positive-completion-bound-87/README.md) shows that adding only nonnegative later reflected paths cannot recover prior78 rim error on expanded A/B. Existing over-bright channels already account for more than 97% of current rim squared error. This concerns the frozen prefix and native protocol, not arbitrary physical models.
 
 The [native first internal return](../experiments/miniplayer-first-return-native-85/README.md) adds an incorrect bright inset band. All four full-image errors and SSIM values worsen. Four zero-added-return controls are pixel-exact; source, blur, tone and foreground stay fixed. TIR and later power are retained. No working-model or count change is made.

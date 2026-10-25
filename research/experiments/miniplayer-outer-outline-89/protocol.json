@@ -1,0 +1,55 @@
+{
+  "status": "DECLARED_BEFORE_IMPLEMENTATION_AND_EVALUATION",
+  "start": "2026-10-25T20:48:40.869694+00:00",
+  "checkpoint_deadline": "2026-10-25T20:54:40.869694+00:00",
+  "deadline": "2026-10-25T21:08:40.869694+00:00",
+  "pin": "6d049e56e5e2f0c773428e0dee7e5584a04dec23",
+  "question": "Does a fixed half-native-pixel outward outline placement better match the outer reference peak while keeping the refracted body unchanged?",
+  "reference": "Original expanded and compact pairs, working20 cached completed arrays, original masks and fixed crops",
+  "user_direction": "Outline is a separate effect placed on top; not part of refraction. Extremely thin outer maximum, smooth rapid inward fade, no sharp inner cutoff. Uniform strength remains tentative.",
+  "fixed_candidate": {
+    "sigma_native_pixels": 0.65,
+    "peak_opacity": 1.0,
+    "color_encoded_rgb": [
+      1,
+      1,
+      1
+    ],
+    "profile": "Same Gaussian inward fade, on the exact parallel contour offset outward by0.5nativepixel. Optical footprint and all original guards unchanged.",
+    "composite": "Encoded white over completed frozen image; no optical calls or backing rerender",
+    "pixel_area_orders": [
+      8,
+      16
+    ],
+    "numerical_tail_opacity_bound": 1e-15,
+    "outward_offset_native_pixels": 0.5,
+    "comparison": "Original working20 plus saved88 metrics; no88 rerender."
+  },
+  "caps": {
+    "quadrature_calls": 65000,
+    "quadrature_nodes": 90000000,
+    "profile_controls": 1024,
+    "Study_constructor_pixels": 1121600,
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "score_calls": 4,
+    "SSIM_Gaussians": 20,
+    "metric_erosions": 4,
+    "decoded_numeric_bytes": 128000000,
+    "target_source_bitmap_pixels": 17000000,
+    "comparison_sheets": 4,
+    "crop_sheets": 4,
+    "native_rays": 0,
+    "height_calls": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "fits": 0
+  },
+  "checkpoint": "Same fixed zero-body identities and preexisting profile controls; confirm parallel-boundary half/radius shift preserves inner rectangle and original optical recipe. No new optical control.",
+  "stop": "First invalid input, changed mask, negative/out-of-range alpha, unsupported required image pixel, cap or deadline. No retry or second width.",
+  "integration": "Positive full-pixel area rule. Pixels whose upper opacity bound is below 1e-15 may be omitted with explicit total/error bound; this is numerical truncation only, not a finite inner cutoff in the analytic profile.",
+  "acceptance": "Inspect thin single rim; all original paired E/body/SSIM/foreground/exterior and frozen partial guards remain. Report regressions; no automatic adoption.",
+  "hypothesis_number": 2,
+  "parent_outline_stage_start": "2026-10-25T20:33:02.673892+00:00",
+  "parent_outline_stage_deadline": "2026-10-25T21:33:02.673892+00:00"
+}

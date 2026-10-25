@@ -509,6 +509,8 @@ Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original 
 
 [Four-reference overlay results and original guards](../research/experiments/miniplayer-overlay-outline-88/README.md). The latest test uses the unchanged working body, not the [rejected first-return reconstruction](../research/experiments/miniplayer-first-return-native-85/README.md) with its doubled contour. Refraction, foreground and incident blur are unchanged.
 
+A [fixed half-pixel outward placement](../research/experiments/miniplayer-outer-outline-89/README.md) reduces partial-boundary errors but worsens compact exterior. It is retained as a comparison, not substituted for the test above. Both placements keep one thin contour and remain unaccepted under the shared original guards.
+
 <details data-historical>
 <summary>Preserved unfitted expanded-family transfer baseline</summary>
 
