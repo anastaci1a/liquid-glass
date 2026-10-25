@@ -1,0 +1,76 @@
+{
+  "number": 3,
+  "question": "Earlier and later cap fade landmarks",
+  "start": "2026-10-25T21:48:17.969078+00:00",
+  "checkpoint_deadline": "2026-10-25T21:53:17.969078+00:00",
+  "deadline": "2026-10-25T22:08:17.969078+00:00",
+  "configs": [
+    {
+      "sigma": 2.6,
+      "power": 2,
+      "start": -60,
+      "minimum": 30,
+      "hold": 45,
+      "recover": 80,
+      "response": "white"
+    },
+    {
+      "sigma": 2.6,
+      "power": 2,
+      "start": -30,
+      "minimum": 55,
+      "hold": 70,
+      "recover": 88,
+      "response": "white"
+    }
+  ],
+  "caps": {
+    "quadrature_calls": 180000,
+    "quadrature_nodes": 220000000,
+    "profile_evaluations": 660000000,
+    "profile_controls": 1000,
+    "Study_constructor_pixels": 1121600,
+    "target_source_bitmap_pixels": 17000000,
+    "decoded_numeric_bytes": 128000000,
+    "identity_composites": 4,
+    "candidate_composites": 8,
+    "score_calls": 8,
+    "SSIM_Gaussians": 40,
+    "metric_erosions": 8,
+    "scalar_fits": 2,
+    "fit_pixel_channels": 20000000,
+    "comparison_sheets": 8,
+    "crop_sheets": 8,
+    "native_rays": 0,
+    "height_calls": 0,
+    "source_queries": 0,
+    "filters": 0
+  },
+  "registration": "../registration-decision.json",
+  "orders": [
+    8,
+    16
+  ],
+  "maximum_order_difference": 1e-06,
+  "tail_bound": 1e-12,
+  "fit": "One closed-form bounded scalar per setting, equal four-reference train MSE; exclude held/foreground; no partial cohort optimization.",
+  "selection": "Every original guard against start and incumbent; otherwise retain incumbent. Development seed by train loss only, separate from acceptance.",
+  "checkpoint": "Exact zero identities, input/mask hashes, angular/response fixtures before candidate work.",
+  "stop": "First invalid support/profile/identity, cap or deadline; no retry. Order discrepancy above threshold stops before fitting/composites.",
+  "incoming_development": {
+    "folder": "pass-01",
+    "candidate": 2,
+    "config": {
+      "sigma": 2.6,
+      "power": 2,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85,
+      "response": "white"
+    },
+    "strength": 0.8850125485463721,
+    "train_loss": 0.002357470951921552
+  },
+  "comparison": "Two fixed shared angular schedules around the confirmed starting pattern. Retain incoming settings as saved comparator; no pose or radius change."
+}
