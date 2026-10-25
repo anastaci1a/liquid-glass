@@ -18,3 +18,9 @@
 Physical interpretations remain hypotheses unless independently established. Explicit modeling requirements constrain implementation. Feedback IDs track the visible issue; a lower aggregate score does not close them.
 
 [Earlier visible requirements](history.md) consolidate related project feedback without importing unrelated app reports.
+
+## Wider asymmetric outline refinement
+
+The confirmed cap pattern fades from lower-right toward upper-right on the right end, recovering before the top join. The left pattern is rotated 180 degrees. Start with three-to-four times the earlier inward width. Compare white with a color-preserving brightness lift; exact angles, width and strength remain adjustable shared hypotheses.
+
+The approved [five-pass study](../experiments/miniplayer-outline-series-91/README.md) verifies registration first and provides draggable reference/result and starting-model/result comparisons. Original guards and rejected candidates stay visible.
