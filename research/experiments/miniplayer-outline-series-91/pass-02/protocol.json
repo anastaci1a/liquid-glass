@@ -1,0 +1,93 @@
+{
+  "number": 2,
+  "question": "White versus color-preserving brightness response",
+  "start": "2026-10-25T21:46:04.703383+00:00",
+  "checkpoint_deadline": "2026-10-25T21:51:04.703383+00:00",
+  "deadline": "2026-10-25T22:06:04.703383+00:00",
+  "configs": [
+    {
+      "sigma": 2.6,
+      "power": 2,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85,
+      "response": "encoded_lift"
+    },
+    {
+      "sigma": 2.6,
+      "power": 2,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85,
+      "response": "linear_lift"
+    }
+  ],
+  "caps": {
+    "quadrature_calls": 0,
+    "quadrature_nodes": 0,
+    "profile_evaluations": 0,
+    "profile_controls": 1000,
+    "Study_constructor_pixels": 1121600,
+    "target_source_bitmap_pixels": 17000000,
+    "decoded_numeric_bytes": 128000000,
+    "identity_composites": 4,
+    "candidate_composites": 8,
+    "score_calls": 8,
+    "SSIM_Gaussians": 40,
+    "metric_erosions": 8,
+    "scalar_fits": 2,
+    "fit_pixel_channels": 20000000,
+    "comparison_sheets": 8,
+    "crop_sheets": 8,
+    "native_rays": 0,
+    "height_calls": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "reused_alpha_values": 6000000
+  },
+  "registration": "../registration-decision.json",
+  "orders": [
+    8,
+    16
+  ],
+  "maximum_order_difference": 1e-06,
+  "tail_bound": 1e-12,
+  "fit": "One closed-form bounded scalar per setting, equal four-reference train MSE; exclude held/foreground; no partial cohort optimization.",
+  "selection": "Every original guard against start and incumbent; otherwise retain incumbent. Development seed by train loss only, separate from acceptance.",
+  "checkpoint": "Exact zero identities, input/mask hashes, angular/response fixtures before candidate work.",
+  "stop": "First invalid support/profile/identity, cap or deadline; no retry. Order discrepancy above threshold stops before fitting/composites.",
+  "incoming_development": {
+    "folder": "pass-01",
+    "candidate": 2,
+    "config": {
+      "sigma": 2.6,
+      "power": 2,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85,
+      "response": "white"
+    },
+    "strength": 0.8850125485463721,
+    "train_loss": 0.002357470951921552
+  },
+  "reuse_alpha": {
+    "folder": "pass-01",
+    "candidate": 2,
+    "geometry_config": {
+      "sigma": 2.6,
+      "power": 2,
+      "start": -45,
+      "minimum": 45,
+      "hold": 60,
+      "recover": 85
+    },
+    "hashes": {
+      "expanded": "18375cb8889ab45bc288ab3be304d56475f84f2289de03cbea6316fbcb158ef1",
+      "compact": "1d5cd5a9d5ce4eb3b8d0fbef9532ff4dd49c4d42797e4a547129b97147647bd8"
+    }
+  },
+  "comparison": "Sealed pass01 white setting2 reused without rerender or refit. Two new bounded color-preserving endpoint operators, one common train-only scalar each."
+}

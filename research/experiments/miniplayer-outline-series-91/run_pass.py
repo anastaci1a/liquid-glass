@@ -108,7 +108,7 @@ def run():
     configs=P['configs'];c=configs[0]
     # Algebraic/profile fixtures, not optical calls.
     t=np.deg2rad(np.array([-90.,c['start'],c['minimum'],c['hold'],c['recover'],90.]))
-    x=2+np.cos(t);y=-np.sin(t);charge('profile_controls',24)
+    x=2+np.cos(t);y=-np.sin(t);charge('profile_controls',36)
     w=cap_strength(x,y,(3.,1.),1.,(0.,0.),c)
     assert np.allclose(w,[1,1,0,0,1,1],atol=1e-14)
     assert np.allclose(w,cap_strength(-x,-y,(3.,1.),1.,(0.,0.),c),atol=1e-14)
@@ -165,6 +165,16 @@ def run():
                     ip=SERIES/selection['accepted']['folder']/f"{member}-{k}-c{selection['accepted']['candidate']}-metrics.json"
                     first[str(ip.relative_to(ROOT))]=sha(ip);incumbent=json.loads(ip.read_text())['scores']
             data[(member,k)]=dict(s=s,baseline=baseline,m=m,partial=partial,before=before,incumbent=incumbent,crops=crops,center=center,half=half,radius=radius,train=train)
+    reused={}
+    if P.get('reuse_alpha'):
+        reuse=P['reuse_alpha']
+        for config in configs:
+            assert {k:v for k,v in config.items() if k!='response'}==reuse['geometry_config']
+        for member in ['expanded','compact']:
+            f=SERIES/reuse['folder']/f'{member}-alpha.npz'
+            assert sha(f)==reuse['hashes'][member]
+            first[str(f.relative_to(ROOT))]=sha(f)
+            reused[member]=read_npz(f,['order8','order16'])
     save('first-hashes.json',first)
     now=datetime.datetime.now(datetime.timezone.utc)
     assert now<datetime.datetime.fromisoformat(P['checkpoint_deadline'])
@@ -174,7 +184,12 @@ def run():
     for member in ['expanded','compact']:
         d=data[(member,'a')];pair=[];infos=[]
         for order in P['orders']:
-            a,info=integrate(d['s'].crop,d['half'],d['radius'],d['center'],configs,order,charge,reserve,tail=P['tail_bound'])
+            if member in reused:
+                selected=reused[member][f'order{order}'][P['reuse_alpha']['candidate']]
+                charge('reused_alpha_values',selected.size*len(configs))
+                a=np.stack([selected]*len(configs));info=dict(order=order,reused_from=P['reuse_alpha']['folder'])
+            else:
+                a,info=integrate(d['s'].crop,d['half'],d['radius'],d['center'],configs,order,charge,reserve,tail=P['tail_bound'])
             pair.append(a);infos.append(info)
         diffs=np.max(abs(pair[1]-pair[0]),axis=(1,2))
         assert np.all(diffs<=P['maximum_order_difference']), 'Unresolved opacity quadrature'
