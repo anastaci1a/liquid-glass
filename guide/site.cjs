@@ -85,7 +85,7 @@ const normalize=s=>path.posix.normalize(s).replace(/^historical-records\//,'');
       content+=[...groups].sort(([a],[b])=>a.localeCompare(b)).map(([group,items])=>`<details class="report-group"><summary>${escape(group)} (${items.length})</summary><ul>${items.map(({name})=>`<li><a href="${relative(output,reportRoute(name))}">${escape(path.posix.basename(name))}</a></li>`).join('')}</ul></details>`).join('\n');
     }
     if(file==='guide/reconstruction.md')content=await prepareStudies(content,guide,write);
-    if(file.startsWith('guide/'))content=prepareMedia(content,guide,{comparisons:file==='guide/reconstruction.md'});
+    if(file.startsWith('guide/'))content=prepareMedia(content,guide,{comparisons:['guide/reconstruction.md','guide/outline-review.md'].includes(file),panelFile:file==='guide/outline-review.md'?'outline-comparison-panels.json':'comparison-panels.json'});
     const title=(/^#\s+(.+)$/m.exec(markdown)||[])[1]||file;
     write(output,shell(output,title,content));manifest.documentation.push({source:file,route:output});
   }

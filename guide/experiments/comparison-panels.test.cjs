@@ -23,5 +23,11 @@ try{
  metadata[file].gutter=2;
  metadata[file].height=400;fs.writeFileSync(path.join(root,'comparison-panels.json'),JSON.stringify(metadata));
  assert.throws(()=>prepareMedia(html,root,{comparisons:true}),/Stale comparison-panel metadata/);
+ const review={[file]:{width:2162,height:346,top:64,bottom:0,leftLabel:'Starting & fixed',rightLabel:'Pass "two"'}};
+ fs.writeFileSync(path.join(root,'outline-comparison-panels.json'),JSON.stringify(review));
+ const reviewHTML=prepareMedia(html,root,{comparisons:true,panelFile:'outline-comparison-panels.json'});
+ assert.match(reviewHTML,/data-comparison-left-label="Starting &amp; fixed"/);
+ assert.match(reviewHTML,/data-comparison-right-label="Pass &quot;two&quot;"/);
+ assert.match(reviewHTML,/data-comparison-top="64"/,'A review page uses its own declared bounds');
  console.log('PASS declared caption bounds, legacy compatibility, deferred loading and stale metadata rejection');
 }finally{fs.rmSync(root,{recursive:true,force:true});}

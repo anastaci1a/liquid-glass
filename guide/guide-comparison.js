@@ -41,7 +41,8 @@
     }
     sync=()=>{const url=image.getAttribute('src');for(const layer of layers)layer.style.backgroundImage=url&&visible(image)?`url(${JSON.stringify(url)})`:'none';};
     const labels=document.createElement('div');labels.className='comparison-labels';
-    for(const text of ['Apple','Reconstruction']){const label=document.createElement('span');label.textContent=text;labels.append(label);}
+    const leftLabel=image.dataset.comparisonLeftLabel||'Apple',rightLabel=image.dataset.comparisonRightLabel||'Reconstruction';
+    for(const text of [leftLabel,rightLabel]){const label=document.createElement('span');label.textContent=text;labels.append(label);}
     const handle=document.createElement('div');handle.className='comparison-handle';handle.tabIndex=0;
     for(const [key,value] of Object.entries({role:'slider','aria-label':'Comparison divider','aria-orientation':'horizontal','aria-valuemin':'0','aria-valuemax':'100'}))handle.setAttribute(key,value);
     const grip=document.createElement('span');grip.textContent='↔';grip.setAttribute('aria-hidden','true');handle.append(grip);frame.append(handle);
@@ -49,7 +50,7 @@
     const update=value=>{
      split=Math.min(100,Math.max(0,value));frame.style.setProperty('--split',split+'%');
      handle.setAttribute('aria-valuenow',String(Math.round(split)));
-     handle.setAttribute('aria-valuetext',`${Math.round(split)}% Apple, ${Math.round(100-split)}% reconstruction`);
+     handle.setAttribute('aria-valuetext',`${Math.round(split)}% ${leftLabel}, ${Math.round(100-split)}% ${rightLabel}`);
     };
     const setMode=isWipe=>{
      update(50);figure.classList.toggle('comparison-wipe',isWipe);frame.hidden=labels.hidden=!isWipe;

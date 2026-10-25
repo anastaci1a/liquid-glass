@@ -1,8 +1,8 @@
 // URLs inside closed details are assigned only when that section is opened.
 const fs=require('node:fs'),path=require('node:path');
-function prepareMedia(html,root,{comparisons=false}={}){
+function prepareMedia(html,root,{comparisons=false,panelFile='comparison-panels.json'}={}){
  const sections=[];
- const metadataFile=path.join(root,'comparison-panels.json');
+ const metadataFile=path.join(root,panelFile);
  const panels=fs.existsSync(metadataFile)?JSON.parse(fs.readFileSync(metadataFile,'utf8')):{};
  return html.replace(/<!--[\s\S]*?-->|<\/?[a-z][^>"']*(?:(?:"[^"]*"|'[^']*')[^>"']*)*>/gi,tag=>{
   if(/^<!--/.test(tag))return tag;
@@ -38,7 +38,11 @@ function prepareMedia(html,root,{comparisons=false}={}){
       if(declared.width!==width||declared.height!==height||!Number.isInteger(declared.top)||!Number.isInteger(declared.bottom)||declared.top<0||declared.bottom<0||declared.top+declared.bottom>=height)throw Error('Stale comparison-panel metadata: '+src[1]);
       top=declared.top;bottom=declared.bottom;
      }
-     if(top<height)tag=tag.replace(/>$/,` data-comparison-top="${top}" data-comparison-bottom="${bottom}" data-comparison-gutter="${gutter}">`);
+     if(top<height){
+      const attr=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+      const labels=declared?.leftLabel?` data-comparison-left-label="${attr(declared.leftLabel)}" data-comparison-right-label="${attr(declared.rightLabel||'Result')}"`:'';
+      tag=tag.replace(/>$/,` data-comparison-top="${top}" data-comparison-bottom="${bottom}" data-comparison-gutter="${gutter}"${labels}>`);
+     }
     }
    }
   }

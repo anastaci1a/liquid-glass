@@ -1,5 +1,7 @@
 # Current state
 
+The [five-pass outline study](../experiments/miniplayer-outline-series-91/README.md) is complete. Wider fades, brightness endpoints, angular changes and mixed responses improve some references, but no shared setting passes every guard. Working20 remains selected. [Interactive comparisons](../../guide/outline-review.md) expose every setting and the starting model.
+
 The current outline convention is a separate effect composited over the completed reconstruction. Refraction and incident blur remain fixed during outline trials. The immediate target is one extremely thin outer highlight with a smooth inward fade, replacing the visually incorrect doubled contour. Uniform white strength around the miniplayer remains a hypothesis.
 
 The [first independent overlay](../experiments/miniplayer-overlay-outline-88/README.md) produces a single thin edge over working20. Compact aggregate errors improve slightly, but both original partial guards worsen; expanded A also worsens. All foreground guards pass. The 0.65-pixel profile is shared across both lengths, with no refraction changes or accepted replacement.

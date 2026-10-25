@@ -24,3 +24,5 @@ Physical interpretations remain hypotheses unless independently established. Exp
 The confirmed cap pattern fades from lower-right toward upper-right on the right end, recovering before the top join. The left pattern is rotated 180 degrees. Start with three-to-four times the earlier inward width. Compare white with a color-preserving brightness lift; exact angles, width and strength remain adjustable shared hypotheses.
 
 The approved [five-pass study](../experiments/miniplayer-outline-series-91/README.md) verifies registration first and provides draggable reference/result and starting-model/result comparisons. Original guards and rejected candidates stay visible.
+
+The five approved outline passes are complete. No family qualifier was found; [all comparisons](../../guide/outline-review.md) remain available for direct visual feedback. Current sizing is retained with uncertainty.
