@@ -12,7 +12,7 @@
 | F-008 | All records | Concise, readable, maintainable text throughout the repository. | [Documentation conduct](../../DOCUMENTATION.md). |
 | F-009 | Current modeling | Focus on physical correctness and visible fidelity; runtime optimization is outside current scope. | No device benchmarking or optimization task is active. |
 | F-010 | Compact / expanded miniplayer | Require one exact shared model; only length differs. | [Required family transfer](../current/state.md#miniplayer-family); no independent compact tuning. |
-| F-011 | Miniplayer outline | Double edge lines are incorrect. Prefer an extremely thin outer white maximum with a rapid, smooth inward fade and no sharp inner cutoff. | [Two overlay placements tested](../experiments/miniplayer-outer-outline-89/README.md); single contour achieved, boundary guards unresolved. Uniform strength remains tentative. |
+| F-011 | Miniplayer outline | Double edge lines are incorrect. Prefer an extremely thin outer white maximum with a rapid, smooth inward fade and no sharp inner cutoff. | [Three-proposal review](../experiments/miniplayer-sample-outline-90/README.md); single contour achieved, boundary guards unresolved. Uniform strength remains tentative. |
 | F-012 | Outline composition | Place the outline on top of the completed reconstruction, independently of refraction calculations. | Current modeling convention; earlier physical-reflection experiments remain historical evidence. |
 
 Physical interpretations remain hypotheses unless independently established. Explicit modeling requirements constrain implementation. Feedback IDs track the visible issue; a lower aggregate score does not close them.

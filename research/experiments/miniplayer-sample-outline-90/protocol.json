@@ -1,0 +1,46 @@
+{
+  "status": "DECLARED_BEFORE_IMPLEMENTATION_AND_EVALUATION",
+  "start": "2026-10-25T20:58:26.442660+00:00",
+  "checkpoint_deadline": "2026-10-25T21:03:26.442660+00:00",
+  "deadline": "2026-10-25T21:18:26.442660+00:00",
+  "parent_deadline": "2026-10-25T21:33:02.673892+00:00",
+  "pin": "345cdb85350b4177ee0f7c210d40f537ae0bee3b",
+  "question": "Does composing the separate white outline over retained post-refraction samples before AA avoid brightening the clear share of partial pixels?",
+  "fixed": {
+    "sigma_native_pixels": 0.65,
+    "peak": 1,
+    "white": [
+      1,
+      1,
+      1
+    ],
+    "contour_offset": 0,
+    "AA": 2
+  },
+  "caps": {
+    "Study_constructor_pixels": 1121600,
+    "target_source_bitmap_pixels": 17000000,
+    "decoded_numeric_bytes": 536870912,
+    "identity_composites": 4,
+    "candidate_composites": 8,
+    "score_calls": 8,
+    "SSIM_Gaussians": 40,
+    "metric_erosions": 8,
+    "comparison_sheets": 4,
+    "crop_sheets": 4,
+    "outline_points": 2243200,
+    "environment_direction_queries": 1487085,
+    "material_sample_points": 2974170,
+    "native_rays": 0,
+    "height_calls": 0,
+    "source_queries": 0,
+    "filters": 0,
+    "fits": 0
+  },
+  "controls": "Four exact working20 raw-to-complete identities, unchanged source/paths/foreground; matched AA2 pixel-overlay comparator isolates composition from quadrature. Reuse88 analytic profile controls.",
+  "candidates": "One sample-overlay and one matched AA2 pixel-overlay control for each of four references. No parameter search.",
+  "foreground": "Require exact unchanged pre-foreground pixels throughout all original foreground boxes before composition; otherwise stop.",
+  "limits": "AA2 outline is not area-converged. Compare matched AA2 operators directly; do not attribute differences from88 solely to composition.",
+  "stop": "First failed identity, mask, membership, foreground commutation, deadline or cap; no retry.",
+  "acceptance": "All original body, SSIM, partial, foreground and exterior guards retained. Visual review required; no automatic adoption."
+}

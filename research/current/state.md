@@ -44,6 +44,8 @@ Ordinary blur belongs before refraction across elements. Historical widths seed 
 
 Status: geometric models are primary for playback, toolbar, expanded/compact miniplayer and navigation. Their visible defects remain open. Earlier empirical fits are historical references under the [primary-model policy](../decisions/primary-geometric-models.md).
 
+The [matched subpixel composition test](../experiments/miniplayer-sample-outline-90/README.md) preserves clear subrays but still fails all four original partial guards. Matched AA2 composition helps compact partial errors slightly and worsens expanded errors. The three-proposal review finds no family qualifier; overlay88 remains the held gallery illustration, with all alternatives linked.
+
 ## Clear circular play control
 
 | Stage | Disposition |

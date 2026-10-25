@@ -405,7 +405,7 @@ Current E is 7.88349 / 6.14943. Expanded A's original 16-pixel boundary and expa
 
 A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.md) over-brightens the edge. Later closed-surface studies expose [source limitations](../research/experiments/miniplayer-native-front-26/README.md) and [grazing-sampling error](../research/experiments/miniplayer-grazing-quadrature-27/README.md); they are diagnostics, not newer completed reconstructions.
 
-**Latest test: a separate thin outline over the frozen working body.** One white profile peaks at the outer boundary and fades smoothly inward. Refraction and incident blur are unchanged. Expanded E is 7.96922 / 6.14915; expanded A's original partial-boundary error worsens substantially. This is a held outline test, with no family acceptance.
+**Held visible test: a separate thin outline over the frozen working body.** One white profile peaks at the outer boundary and fades smoothly inward. Refraction and incident blur are unchanged. Expanded E is 7.96922 / 6.14915; expanded A's original partial-boundary error worsens substantially. This is a held outline test, with no family acceptance.
 
 ![Expanded A: independent thin white outline over frozen refraction](assets/geometric-expanded-overlay-a.png)
 
@@ -501,15 +501,17 @@ Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original 
 
 [Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Working selection and all failures](../research/decisions/miniplayer-working-primary.json) · [Four-reference material record](../research/experiments/miniplayer-incident-material-20/README.md).
 
-**Latest test: the same separate thin outline, shortened only.** The white overlay has one outer maximum and a smooth inward fade, with identical width and strength across both lengths. Compact E improves slightly to 20.50074 / 19.66365, but both original partial-boundary guards worsen. Body tone and source-return placement remain unresolved; this test is held.
+**Held visible test: the same separate thin outline, shortened only.** The white overlay has one outer maximum and a smooth inward fade, with identical width and strength across both lengths. Compact E improves slightly to 20.50074 / 19.66365, but both original partial-boundary guards worsen. Body tone and source-return placement remain unresolved; this test is held.
 
 ![Compact A: one thin white overlay over the frozen working body](assets/geometric-compact-overlay-a.png)
 
 ![Compact B: one thin white overlay over the frozen working body](assets/geometric-compact-overlay-b.png)
 
-[Four-reference overlay results and original guards](../research/experiments/miniplayer-overlay-outline-88/README.md). The latest test uses the unchanged working body, not the [rejected first-return reconstruction](../research/experiments/miniplayer-first-return-native-85/README.md) with its doubled contour. Refraction, foreground and incident blur are unchanged.
+[Four-reference overlay results and original guards](../research/experiments/miniplayer-overlay-outline-88/README.md). The held test uses the unchanged working body, not the [rejected first-return reconstruction](../research/experiments/miniplayer-first-return-native-85/README.md) with its doubled contour. Refraction, foreground and incident blur are unchanged.
 
 A [fixed half-pixel outward placement](../research/experiments/miniplayer-outer-outline-89/README.md) reduces partial-boundary errors but worsens compact exterior. It is retained as a comparison, not substituted for the test above. Both placements keep one thin contour and remain unaccepted under the shared original guards.
+
+The [matched sample-composition comparison](../research/experiments/miniplayer-sample-outline-90/README.md) preserves clear subrays exactly but fails all four original partial-edge guards. It does not replace the illustration above. The three-proposal review distinguishes placement, composition and numerical integration; no new optical tracing was used for these overlays.
 
 <details data-historical>
 <summary>Preserved unfitted expanded-family transfer baseline</summary>
