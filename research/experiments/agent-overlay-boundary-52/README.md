@@ -56,7 +56,7 @@ The selected pixels lie on cap arcs. Their old coverage and new signed distances
 
 ## Concrete next question
 
-Before another parameter trial, determine whether the intended display-overlay semantics are the declared post-completed-pixel operation or a jointly integrated overlay over a spatially varying frozen backing. 
+Before another parameter trial, determine whether the intended display-overlay semantics are the declared post-completed-pixel operation or a jointly integrated overlay over a spatially varying frozen backing.
 
 A discriminator needs legitimate retained subpixel backing and matched integration support; it cannot be fabricated by subtracting foreground or inventing samples. This is a proposed composition question only, not authority to change implementation or masks.
 
