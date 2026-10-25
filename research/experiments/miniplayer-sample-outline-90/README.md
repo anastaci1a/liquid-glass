@@ -6,9 +6,9 @@ The third outline test preserves clear subrays exactly but fails all four origin
 
 The width stays 0.65 native pixel, peak opacity one and color white. The outer maximum stays on the original contour, as in [overlay88](../miniplayer-overlay-outline-88/README.md). Both lengths share the same profile. No placement, shape, source, blur, material or light parameter changes.
 
-Retained working20 source samples, primary powers and direct-front directions reproduce all four pre-foreground and completed images exactly. The outline then blends over those post-refraction sample colors before the original AA2 average. Every original foreground box has exactly unchanged backing, so the fixed foreground chain does not change the outline's visible ordering here.
+Retained working20 source samples, primary powers and direct-front directions reproduce all four pre-foreground and completed images exactly. The outline then blends over those post-refraction sample colors before the original AA2 average. Every original foreground box has exactly unchanged backing before the fixed foreground chain. This verifies its unchanged input, not an independent geometric nonoverlap certificate.
 
-This commutation is specific to these nonoverlapping regions. An outline intersecting artwork would require an explicit composition-order decision; this test does not establish a general interchange rule.
+Backing equality can also result from white values or rounding under nonzero opacity. No separate zero-alpha assertion covers all foreground boxes. The candidate tests body-sample composition followed by fixed foreground, not a generally interchangeable topmost overlay. The matched completed-pixel control has the same reporting limit.
 
 The control first averages the same four opacity samples, then blends over the already completed pixel. This avoids confusing composition order with the positive area quadrature used in overlay88. AA2 is not an area-convergence certificate for either new output.
 
@@ -65,6 +65,8 @@ No fourth width, opacity or placement is tried. The gallery retains overlay88 as
 ## Controls and accounting
 
 The [protocol](protocol.json) began at 20:58:26.443 UTC, with checkpoint due at 21:03:26.443 and sealing due at 21:18:26.443. The exact four-image replay checkpoint passed at 20:58:59.189. [Results](result.json) record scientific completion. The parent outline deadline remains 21:33:02.674; no unused time transfers.
+
+[Foreground scope correction](foreground-scope-correction.json) narrows the original verification label without changing its saved bytes or any scientific output. The exact assertion concerns backing identity, not geometric nonoverlap.
 
 The checkpoint's profile-control label refers to the unchanged controls from overlay88, reused rather than numerically repeated. Native signed-distance membership subsequently matches every retained inside flag. Clear samples and unavailable pixels remain exact. Original input/mask identities and [first](first-hashes.json)/[last](last-hashes.json) scientific hashes agree.
 
