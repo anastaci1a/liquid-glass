@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+For review: [calibrated body and outline colors with native comparison sliders](miniplayer-anchor-colors.md). One candidate; expanded color targets govern both sizes.
+
 For review: [five HSV outline options with native zoom sliders](miniplayer-hsv-options.md). Geometry is finalized; these options do not replace the selected reconstruction.
 
 Completed: [three further full miniplayer passes and all comparison sliders](miniplayer-three-pass.md). Pass two is the shared working selection. Expanded improves; compact aggregate regressions remain explicit. Dispersion was excluded.

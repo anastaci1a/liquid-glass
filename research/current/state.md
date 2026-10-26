@@ -1,5 +1,7 @@
 # Current state
 
+For review: [one calibrated body/outline color candidate](../../guide/miniplayer-anchor-colors.md). Final white targets are #E5E5E5 and #FCFCFC. Hue is preserved; saturation/value anchors pass. Expanded defines the shared color target. Image errors increase, and selection remains unchanged.
+
 For review: [five fixed HSV outline options](../../guide/miniplayer-hsv-options.md). The projected miniplayer shape is finalized. No option is selected; the body white endpoint passes at grading, but final compact white remains too dark.
 
 The [three further full miniplayer passes](../../guide/miniplayer-three-pass.md) are complete. Pass two is the current shared working model. Expanded errors improve; compact aggregate regressions remain. The narrow outline has verified opposing zero-contribution gaps. Stronger color endpoints remain rejected contrasts. Dispersion was excluded. See the [final review](../experiments/miniplayer-three-pass-101/FINAL-REVIEW.md).
