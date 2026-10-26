@@ -1,0 +1,56 @@
+{
+  "start": "2026-10-26T06:26:12.474987+00:00",
+  "deadline": "2026-10-26T08:56:12.474987+00:00",
+  "stop_condition": "Four full passes; stage and source failures stop only dependent candidates",
+  "stages": [
+    {
+      "name": "two_geometries",
+      "maximum_minutes": 35
+    },
+    {
+      "name": "separate_shadow_edge_and_combination",
+      "maximum_minutes": 40
+    },
+    {
+      "name": "own_verification_and_publication",
+      "maximum_minutes": 25
+    }
+  ],
+  "selection": "Training-only normalized stage error and independent visible review; all held guards disclosed",
+  "geometry_deadline": "2026-10-26T07:11:12.474987+00:00",
+  "geometry_checkpoint_deadline": "2026-10-26T06:36:12.474987+00:00",
+  "geometry_caps": {
+    "fixture_rays": 128,
+    "native_rays": 2243200,
+    "height_point_queries": 180000000,
+    "coordinate_queries": 900000000,
+    "projection_iteration_points": 24000000000,
+    "source_audit_subrays": 4486400,
+    "source_corner_lookups": 40000000,
+    "incident_fields": 4,
+    "known_erosions": 8,
+    "RGB_queries": 4486400,
+    "candidate_composites": 4,
+    "identity_composites": 4,
+    "Studies": 4,
+    "total_bitmap_pixels": 64000000,
+    "numeric_payload_bytes": 2147483648,
+    "geometry_configurations": 1
+  },
+  "original_masks": "Retain 16 expanded and22 compact partial pixels per reference; all original body/held/exterior/foreground guards. New coverage is supplementary, not replacement.",
+  "dilation_reduction_native": 1.25,
+  "incident_sigma": 6.075,
+  "incident_radius": 19,
+  "dilation_reductions_native": [
+    1.25
+  ],
+  "geometry_cap_scope": "One pass-two geometry; separate actual clock and unchanged per-grid reservations. No pass-one budget reset.",
+  "shoulder_settings": [
+    0.5
+  ],
+  "registration": {
+    "major_half_increment_native": 1.5,
+    "center_x_shift_native": -0.5
+  },
+  "height_multiplier": 1.02
+}

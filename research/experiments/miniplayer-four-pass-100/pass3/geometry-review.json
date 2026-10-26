@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-26T06:29:21.018684+00:00",
+  "completed": "2026-10-26T06:28:53.391045+00:00",
+  "actual_height_multiplier": 1.02,
+  "front_and_back_consistent": true,
+  "source_gates": [
+    {
+      "status": "BOTH_PASS_BEFORE_RGB",
+      "records": [
+        {
+          "reference": "a",
+          "whole_body": 885348,
+          "required_subrays": 1072294,
+          "unsupported_required": 0,
+          "unknown_unscored": 10500
+        },
+        {
+          "reference": "b",
+          "whole_body": 885348,
+          "required_subrays": 1072294,
+          "unsupported_required": 0,
+          "unknown_unscored": 10500
+        }
+      ],
+      "kernel_radius": 19
+    },
+    {
+      "status": "BOTH_PASS_BEFORE_RGB",
+      "records": [
+        {
+          "reference": "a",
+          "whole_body": 592860,
+          "required_subrays": 720591,
+          "unsupported_required": 0,
+          "unknown_unscored": 0
+        },
+        {
+          "reference": "b",
+          "whole_body": 592860,
+          "required_subrays": 720591,
+          "unsupported_required": 0,
+          "unknown_unscored": 0
+        }
+      ],
+      "kernel_radius": 19
+    }
+  ],
+  "ledger": {
+    "geometry_cumulative": {
+      "fixture_rays": 8,
+      "native_rays": 2243200,
+      "height_point_queries": 62188688,
+      "coordinate_queries": 66675104,
+      "projection_iteration_points": 850028098,
+      "source_audit_subrays": 4486400,
+      "source_corner_lookups": 35891200,
+      "incident_fields": 4,
+      "known_erosions": 8,
+      "RGB_queries": 4465464,
+      "candidate_composites": 4,
+      "identity_composites": 4,
+      "Studies": 4,
+      "total_bitmap_pixels": 41366752,
+      "numeric_payload_bytes": 243555200,
+      "geometry_configurations": 1
+    },
+    "separate_categories": {
+      "mask_points": 1121600,
+      "score_calls": 8,
+      "SSIM_Gaussians": 40,
+      "metric_erosions": 8,
+      "cached_environment_points": 1487085,
+      "new_environment_points": 1478208,
+      "parity_RGB_queries": 64
+    }
+  },
+  "qualifier": false,
+  "reason": "Geometry-only scores mix gains and regressions. Continue declared independent display stages; no geometry-only adoption."
+}
