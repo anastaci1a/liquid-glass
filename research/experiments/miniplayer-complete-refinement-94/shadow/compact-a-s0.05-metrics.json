@@ -1,0 +1,88 @@
+{
+  "member": "compact",
+  "reference": "a",
+  "strength": 0.05,
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 18.372251510620117
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 24.082420349121094
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 18.144241333007812
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 13.68710994720459
+    },
+    "ssim": 0.9647409915924072,
+    "loss": 410.26662886016675,
+    "E": 20.255039591671174,
+    "exterior": 9.273679733276367,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 32.03759002685547
+    },
+    "foreground": {
+      "jupiter.jpg": 1807.2257080078125,
+      "title.svg": 598.2888793945312,
+      "artist.svg": 68.13995361328125,
+      "play.svg": 161.15228271484375,
+      "forward.svg": 260.0396728515625
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 21.865886688232422,
+        "luma_signed": -8.41888002964363
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 20.187238693237305,
+        "luma_signed": -8.057151606067558
+      },
+      "left_cap": {
+        "RGB_RMSE": 19.246912002563477,
+        "luma_signed": -6.401855486779105
+      },
+      "body": {
+        "RGB_RMSE": 13.261637687683105,
+        "luma_signed": -8.649916798427743
+      }
+    }
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": false,
+    "artist.svg": true,
+    "play.svg": false,
+    "forward.svg": true
+  },
+  "geometry_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": true,
+    "E": false,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "all_pass": false,
+  "full_coverage_exact": true
+}

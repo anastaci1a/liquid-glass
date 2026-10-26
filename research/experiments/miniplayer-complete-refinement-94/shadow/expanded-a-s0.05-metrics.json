@@ -1,0 +1,88 @@
+{
+  "member": "expanded",
+  "reference": "a",
+  "strength": 0.05,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 7.17236328125
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 9.45517349243164
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 7.638744831085205
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 5.9667181968688965
+    },
+    "ssim": 0.9812121391296387,
+    "loss": 62.83004825835087,
+    "E": 7.926540749806997,
+    "exterior": 17.170305252075195,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 67.66600036621094
+    },
+    "foreground": {
+      "jupiter.jpg": 2260.40380859375,
+      "title.svg": 249.83348083496094,
+      "artist.svg": 113.2825698852539,
+      "play.svg": 102.45838928222656,
+      "forward.svg": 148.9895782470703
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 15.615500450134277,
+        "luma_signed": 6.485869674727378
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 13.5739107131958,
+        "luma_signed": -0.3871515754567725
+      },
+      "left_cap": {
+        "RGB_RMSE": 20.662214279174805,
+        "luma_signed": -0.4437600558679869
+      },
+      "body": {
+        "RGB_RMSE": 2.16585111618042,
+        "luma_signed": -0.018087954477559176
+      }
+    }
+  },
+  "original_guards": {
+    "glass": false,
+    "rim": true,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "geometry_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": false,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "all_pass": false,
+  "full_coverage_exact": true
+}

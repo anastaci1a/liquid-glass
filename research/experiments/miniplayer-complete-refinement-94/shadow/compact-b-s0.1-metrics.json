@@ -1,0 +1,88 @@
+{
+  "member": "compact",
+  "reference": "b",
+  "strength": 0.1,
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 18.742765426635742
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 21.365522384643555
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 18.900148391723633
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 16.914905548095703
+    },
+    "ssim": 0.9629175662994385,
+    "loss": 382.8495431171359,
+    "E": 19.566541419401027,
+    "exterior": 12.069674491882324,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 31.590621948242188
+    },
+    "foreground": {
+      "jupiter.jpg": 1909.2564697265625,
+      "title.svg": 452.2868347167969,
+      "artist.svg": 111.34312438964844,
+      "play.svg": 141.84059143066406,
+      "forward.svg": 271.4688720703125
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 21.451065063476562,
+        "luma_signed": -8.584411313709259
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 19.776988983154297,
+        "luma_signed": -4.810024419941747
+      },
+      "left_cap": {
+        "RGB_RMSE": 17.13321304321289,
+        "luma_signed": -4.284637647942998
+      },
+      "body": {
+        "RGB_RMSE": 15.82078742980957,
+        "luma_signed": -9.05996601563735
+      }
+    }
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": true,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "geometry_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": true,
+    "E": false,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "all_pass": false,
+  "full_coverage_exact": true
+}

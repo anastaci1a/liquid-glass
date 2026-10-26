@@ -1,0 +1,88 @@
+{
+  "member": "expanded",
+  "reference": "a",
+  "strength": 0.1,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 7.1572370529174805
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 9.416165351867676
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 7.574404716491699
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 5.9667181968688965
+    },
+    "ssim": 0.9812118411064148,
+    "loss": 62.45748054227242,
+    "E": 7.903004526271792,
+    "exterior": 15.742212295532227,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 61.760704040527344
+    },
+    "foreground": {
+      "jupiter.jpg": 2260.40380859375,
+      "title.svg": 249.83348083496094,
+      "artist.svg": 113.2825698852539,
+      "play.svg": 102.45838928222656,
+      "forward.svg": 148.9895782470703
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 13.48273754119873,
+        "luma_signed": 3.964779503305288
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 13.719538688659668,
+        "luma_signed": -0.5760503557854366
+      },
+      "left_cap": {
+        "RGB_RMSE": 20.476360321044922,
+        "luma_signed": -1.0840362357612376
+      },
+      "body": {
+        "RGB_RMSE": 2.16585111618042,
+        "luma_signed": -0.018087954477559176
+      }
+    }
+  },
+  "original_guards": {
+    "glass": false,
+    "rim": true,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "geometry_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": false,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "all_pass": false,
+  "full_coverage_exact": true
+}
