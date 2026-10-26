@@ -60,3 +60,16 @@ The earlier [blur study](../miniplayer-working-blur-64/README.md) tested a much 
 [Shadow patches](shadow-points.json), [section profiles](shadow-profiles.json), [join profiles](join-profiles.json), [yellow-rim RGB](yellow-rim.json), [body-tone statistics](body-tone.json) and [sparse geometry](geometry-discriminator.json) retain the literal measurements. No target fit, image warp, source completion or selected-model change occurred.
 
 After subtracting each top section's observed far-distance offset, the half-darkening crossings lie around 21–29 pixels. Ten-percent crossings lie around 45–55 pixels. These are interpolations between fixed measured brackets, not fitted Gaussian radii. [Crossing brackets and offsets](shadow-falloff-summary.json) preserve the calculation.
+
+## Saved comparisons
+
+- [compact a upper left join](compact-a-upper_left_join.png).
+- [compact a upper right join](compact-a-upper_right_join.png).
+- [compact b upper left join](compact-b-upper_left_join.png).
+- [compact b upper right join](compact-b-upper_right_join.png).
+- [expanded a upper left join](expanded-a-upper_left_join.png).
+- [expanded a upper right join](expanded-a-upper_right_join.png).
+- [expanded a yellow upper edge](expanded-a-yellow_upper_edge.png).
+- [expanded b upper left join](expanded-b-upper_left_join.png).
+- [expanded b upper right join](expanded-b-upper_right_join.png).
+- [expanded b yellow upper edge](expanded-b-yellow_upper_edge.png).

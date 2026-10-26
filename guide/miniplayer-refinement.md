@@ -1,5 +1,7 @@
 # Miniplayer: smooth shape, shadow and color-aware rim
 
+Latest: [inward joins, broad shadow and color-filter comparisons](miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.
+
 The complete refinement sequence is finished and independently replayed by the primary researcher. The combined proposal makes the compact rim clearer and keeps edge color, but expanded A becomes too bright. **No proposal passes every original family guard.** The selected model remains unchanged.
 
 Drag the divider to compare identical native coordinates. Touch, keyboard arrows, side-by-side mode and fullscreen are available. The first comparisons show the final experimental combination; every separate stage and tested setting follows.

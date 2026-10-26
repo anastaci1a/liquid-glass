@@ -1,0 +1,100 @@
+{
+  "member": "compact",
+  "reference": "a",
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 15.25571346282959
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 17.68616485595703
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 14.563393592834473
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 13.532563209533691
+    },
+    "ssim": 0.9698469042778015,
+    "loss": 256.75588347559886,
+    "E": 16.023603947788988,
+    "exterior": 5.544788360595703,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 40.28642654418945
+    },
+    "foreground": {
+      "jupiter.jpg": 1807.015625,
+      "title.svg": 591.7177734375,
+      "artist.svg": 71.70256042480469,
+      "play.svg": 160.97640991210938,
+      "forward.svg": 257.11968994140625
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 17.99337387084961,
+        "luma_signed": -9.061440111138285
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 27.680723190307617,
+        "luma_signed": -10.05232625632524
+      },
+      "left_cap": {
+        "RGB_RMSE": 18.788280487060547,
+        "luma_signed": -7.72339340687765
+      },
+      "body": {
+        "RGB_RMSE": 13.265838623046875,
+        "luma_signed": -8.656602514330721
+      }
+    }
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": false,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "native98_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "previous94_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": true,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": false,
+    "play.svg": true,
+    "forward.svg": true
+  }
+}

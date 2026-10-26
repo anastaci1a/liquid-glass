@@ -19,3 +19,38 @@ A separate shadow uses width 32 pixels, exponent 1.5 and strength 0.08. It acts 
 The original exact-white control exposed sRGB roundoff before any bitmap decode. An explicit exact-white fixed point repaired the operator. The first driver, filter, counters and failure remain preserved; all repeated controls are counted and the original deadline is unchanged.
 
 [Results](result.json), [response controls](response-controls.json), [protocol](protocol.json) and [ledger](ledger.json) retain all sixteen candidates. No new ray, source query, optical field or fit ran.
+
+## Saved comparisons
+
+- [compact a broad shadow comparison](compact-a-broad-shadow-comparison.png).
+- [compact a broad shadow crops](compact-a-broad-shadow-crops.png).
+- [compact a f0 comparison](compact-a-f0-comparison.png).
+- [compact a f0 crops](compact-a-f0-crops.png).
+- [compact a f1 comparison](compact-a-f1-comparison.png).
+- [compact a f1 crops](compact-a-f1-crops.png).
+- [compact a f2 comparison](compact-a-f2-comparison.png).
+- [compact a f2 crops](compact-a-f2-crops.png).
+- [compact b broad shadow comparison](compact-b-broad-shadow-comparison.png).
+- [compact b broad shadow crops](compact-b-broad-shadow-crops.png).
+- [compact b f0 comparison](compact-b-f0-comparison.png).
+- [compact b f0 crops](compact-b-f0-crops.png).
+- [compact b f1 comparison](compact-b-f1-comparison.png).
+- [compact b f1 crops](compact-b-f1-crops.png).
+- [compact b f2 comparison](compact-b-f2-comparison.png).
+- [compact b f2 crops](compact-b-f2-crops.png).
+- [expanded a broad shadow comparison](expanded-a-broad-shadow-comparison.png).
+- [expanded a broad shadow crops](expanded-a-broad-shadow-crops.png).
+- [expanded a f0 comparison](expanded-a-f0-comparison.png).
+- [expanded a f0 crops](expanded-a-f0-crops.png).
+- [expanded a f1 comparison](expanded-a-f1-comparison.png).
+- [expanded a f1 crops](expanded-a-f1-crops.png).
+- [expanded a f2 comparison](expanded-a-f2-comparison.png).
+- [expanded a f2 crops](expanded-a-f2-crops.png).
+- [expanded b broad shadow comparison](expanded-b-broad-shadow-comparison.png).
+- [expanded b broad shadow crops](expanded-b-broad-shadow-crops.png).
+- [expanded b f0 comparison](expanded-b-f0-comparison.png).
+- [expanded b f0 crops](expanded-b-f0-crops.png).
+- [expanded b f1 comparison](expanded-b-f1-comparison.png).
+- [expanded b f1 crops](expanded-b-f1-crops.png).
+- [expanded b f2 comparison](expanded-b-f2-comparison.png).
+- [expanded b f2 crops](expanded-b-f2-crops.png).

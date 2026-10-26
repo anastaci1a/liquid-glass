@@ -24,3 +24,30 @@ Black becomes `(0.65, 0.65, 0.65)`, white remains exactly white, and the yellow 
 The light-gray endpoint plus broad exterior shadow improves every smooth94 guard on expanded B and both compact references. Expanded A remains a conflict. Against original working20, failures remain. The additional less-blurred combination preserves every original failure rather than being accepted by aggregate score alone.
 
 [Results](result.json), [fixed recipe](filter-recipe.json), [source gates](source-FIRST.json) and [ledger](ledger.json) retain all twelve candidates and eight identities. Geometry, original masks, glyphs and shared material gain/bias remain unchanged. The separate compact darkness diagnosis is not repaired by an unreported compact-only exposure.
+
+## Saved comparisons
+
+- [compact a blur only comparison](compact-a-blur-only-comparison.png).
+- [compact a blur only crops](compact-a-blur-only-crops.png).
+- [compact a combined comparison](compact-a-combined-comparison.png).
+- [compact a combined crops](compact-a-combined-crops.png).
+- [compact a filter revision comparison](compact-a-filter-revision-comparison.png).
+- [compact a filter revision crops](compact-a-filter-revision-crops.png).
+- [compact b blur only comparison](compact-b-blur-only-comparison.png).
+- [compact b blur only crops](compact-b-blur-only-crops.png).
+- [compact b combined comparison](compact-b-combined-comparison.png).
+- [compact b combined crops](compact-b-combined-crops.png).
+- [compact b filter revision comparison](compact-b-filter-revision-comparison.png).
+- [compact b filter revision crops](compact-b-filter-revision-crops.png).
+- [expanded a blur only comparison](expanded-a-blur-only-comparison.png).
+- [expanded a blur only crops](expanded-a-blur-only-crops.png).
+- [expanded a combined comparison](expanded-a-combined-comparison.png).
+- [expanded a combined crops](expanded-a-combined-crops.png).
+- [expanded a filter revision comparison](expanded-a-filter-revision-comparison.png).
+- [expanded a filter revision crops](expanded-a-filter-revision-crops.png).
+- [expanded b blur only comparison](expanded-b-blur-only-comparison.png).
+- [expanded b blur only crops](expanded-b-blur-only-crops.png).
+- [expanded b combined comparison](expanded-b-combined-comparison.png).
+- [expanded b combined crops](expanded-b-combined-crops.png).
+- [expanded b filter revision comparison](expanded-b-filter-revision-comparison.png).
+- [expanded b filter revision crops](expanded-b-filter-revision-crops.png).

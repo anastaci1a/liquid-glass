@@ -34,3 +34,9 @@ The inner-edge highlight should brighten the underlying color with slight desatu
 The [native join checkpoint](../experiments/miniplayer-join-inspection-92/README.md) inspects these regions before any shape replacement. Geometry validation precedes separate shadow and highlight comparisons; original masks and shared-family requirements remain fixed.
 
 The [complete refinement](../experiments/miniplayer-complete-refinement-94/README.md) now tests actual smooth geometry, exterior-only shadow and a color-aware inner fade. Own replay and source checks pass. Compact rim visibility improves, but expanded A over-brightens and original guards still fail. [All stage comparisons](../../guide/miniplayer-refinement.md) are available; these visible issues remain open.
+
+## Inward joins, shadow breadth and edge response
+
+Top joins should move down and bottom joins up, toward the center. Far caps should refract more, not retract. The edge should brighten and desaturate existing color without reaching pure white; black should become light gray. Both controls need slightly less blur, and compact body tone appears too dark.
+
+The [completed investigation](../experiments/miniplayer-stronger-joins-98/README.md) tests one shared inward contour, a ten-percent incident-blur reduction, broad exterior-only shadow and a finite color filter. Source proofs and own replays pass. Original local failures prevent adoption; compact tone and exact contour remain unresolved. [Interactive results](../../guide/miniplayer-feedback-review.md) retain every comparison.

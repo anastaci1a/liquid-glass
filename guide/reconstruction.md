@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+Latest: [inward joins, broad shadow and color-filter comparisons](miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.
+
 **Latest miniplayer study:** [smooth shape, exterior shadow and color-aware rim — all comparisons](miniplayer-refinement.md). The full sequence is verified; the proposals remain experimental because original guards fail.
 
 [Five-pass miniplayer outline review](outline-review.md): compare all settings with draggable reference/result and starting-model/result wipes. Proposals remain unaccepted; original failures are shown.

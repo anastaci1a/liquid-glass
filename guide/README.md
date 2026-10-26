@@ -1,5 +1,7 @@
 # Liquid Glass research
 
+Latest: [inward joins, broad shadow and color-filter comparisons](miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.
+
 A public research notebook on mathematical models of Apple's Liquid Glass elements.
 
 The project studies explicit optical geometry, material response and visible reference behavior. It does not claim access to Apple's private renderer or uniquely recovered implementation.
