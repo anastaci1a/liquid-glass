@@ -77,7 +77,7 @@ Exact axis extrema, unit normals, ellipse membership, support consistency, mirro
 
 A very large finite midpoint curvature radius means a very slight bow, not an exactly straight edge. Display polygons are fine enough for the declared annotation check; their chord bound is not a native optical quadrature certificate.
 
-[Full controls](controls.json), [fixed sections](sections.json), [expanded boundary arrays](expanded-contour.npz) and [compact boundary arrays](compact-contour.npz) retain the numerical evidence. No geometry setting was rejected and replaced, and no parameter fit ran.
+[Full controls](controls.json), [fixed sections](sections.json), [expanded boundary arrays](https://media.githubusercontent.com/media/anastaci1a/liquid-glass/7949bf297f6553d07a6035e070665f1aa860b52b/research/experiments/miniplayer-smooth-contour-checkpoint-93/expanded-contour.npz) and [compact boundary arrays](https://media.githubusercontent.com/media/anastaci1a/liquid-glass/7949bf297f6553d07a6035e070665f1aa860b52b/research/experiments/miniplayer-smooth-contour-checkpoint-93/compact-contour.npz) retain the numerical evidence. No geometry setting was rejected and replaced, and no parameter fit ran.
 
 ## Decision and remaining work
 
