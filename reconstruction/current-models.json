@@ -33,15 +33,15 @@
     },
     "expanded-mini-player": {
       "name": "Expanded miniplayer",
-      "geometry": "Independent actual spline front and Hermite back, shared index1.5/D2.1; major length only differs",
-      "material": "Shared incident6.75R21, gain0.5552987769129158,bias0.3908368353448866, actual primary and direct-front powers with conditional annular scene4",
-      "record": "research/decisions/miniplayer-working-primary.json",
-      "study": "research/experiments/miniplayer-incident-material-20/README.md",
+      "geometry": "Smooth shoulder-core contour, actual spline front and Hermite back; major length only differs",
+      "material": "Incident sigma 6.37875 before refraction; shared low-luminance body lift, colored plateau, exterior-only shadow and original artwork transform",
+      "record": "research/decisions/miniplayer-four-pass-working.json",
+      "study": "research/experiments/miniplayer-four-pass-100/FINAL-REVIEW.md",
       "images": [
-        "assets/geometric-expanded-outline-held-a.png",
-        "assets/geometric-expanded-outline-held-b.png"
+        "assets/four100-p3-expanded-a.png",
+        "assets/four100-p3-expanded-b.png"
       ],
-      "limits": "Working approximation, not a full guard pass. ExpandedA original16partial and expandedB artwork/artist fail; compact participated in shared training. Thin rim, cap/feature placement and later reflected radiance remain unresolved.",
+      "limits": "Visual working compromise, not full fidelity or all-guard acceptance. Expanded body/foreground and compact B partial failures remain. Conditional source and incomplete reflected scene remain.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
       "full_radiance_verified": false,
@@ -51,7 +51,8 @@
       "family_member": "expanded",
       "active_parameter_source": "reconstruction/families/music-mini-player-working.json",
       "accepted_numerical_baseline": "reconstruction/families/music-mini-player.json",
-      "primary_working_selection": true
+      "primary_working_selection": true,
+      "own_verification": "research/experiments/miniplayer-four-pass-100/selected-verification/result.json"
     },
     "navigation-control": {
       "name": "Navigation",
@@ -70,28 +71,27 @@
     },
     "compact-mini-player": {
       "name": "Compact miniplayer",
-      "geometry": "Independent actual spline front and Hermite back, shared index1.5/D2.1; major length only differs",
-      "material": "Shared incident6.75R21, gain0.5552987769129158,bias0.3908368353448866, actual primary and direct-front powers with conditional annular scene4",
-      "record": "research/decisions/miniplayer-working-primary.json",
-      "study": "research/experiments/miniplayer-incident-material-20/README.md",
+      "geometry": "Smooth shoulder-core contour, actual spline front and Hermite back; major length only differs",
+      "material": "Incident sigma 6.37875 before refraction; shared low-luminance body lift, colored plateau, exterior-only shadow and original artwork transform",
+      "record": "research/decisions/miniplayer-four-pass-working.json",
+      "study": "research/experiments/miniplayer-four-pass-100/FINAL-REVIEW.md",
       "family_record": "reconstruction/families/music-mini-player-working.json",
       "family_member": "compact",
       "images": [
-        "assets/geometric-compact-working-a.png",
-        "assets/geometric-compact-working-b.png"
+        "assets/four100-p3-compact-a.png",
+        "assets/four100-p3-compact-b.png"
       ],
-      "limits": "Working approximation, not a full guard pass. ExpandedA original16partial and expandedB artwork/artist fail; compact participated in shared training. Thin rim, cap/feature placement and later reflected radiance remain unresolved.",
+      "limits": "Visual working compromise, not full fidelity or all-guard acceptance. Expanded body/foreground and compact B partial failures remain. Conditional source and incomplete reflected scene remain.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
       "full_radiance_verified": false,
       "full_pipeline_pass": false,
-      "independent_review": "research/experiments/agent-miniplayer-working-peer-33/README.md",
-      "independent_review_commit": "1cecaecda1d9dcf5d3033a4a29c8fd11fd2feb8f",
       "active_parameter_source": "reconstruction/families/music-mini-player-working.json",
       "accepted_numerical_baseline": "reconstruction/families/music-mini-player.json",
       "accepted_increment": false,
       "primary_working_selection": true,
-      "preserved_numerical_baseline_review": "research/experiments/agent-miniplayer-family-peer-19/README.md"
+      "preserved_numerical_baseline_review": "research/experiments/agent-miniplayer-family-peer-19/README.md",
+      "own_verification": "research/experiments/miniplayer-four-pass-100/selected-verification/result.json"
     },
     "detached-search-control": {
       "name": "Detached Music Search",

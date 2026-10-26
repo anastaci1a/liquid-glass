@@ -1,0 +1,99 @@
+{
+  "member": "compact",
+  "reference": "b",
+  "setting": "color2",
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 13.81783676147461
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 15.151580810546875
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 13.99161434173584
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 12.92258071899414
+    },
+    "ssim": 0.958532989025116,
+    "loss": 202.52394925429104,
+    "E": 14.231090936899077,
+    "exterior": 15.306013107299805,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 26.776052474975586
+    },
+    "foreground": {
+      "jupiter.jpg": 1905.2666015625,
+      "title.svg": 377.6048278808594,
+      "artist.svg": 45.72073745727539,
+      "play.svg": 89.09735870361328,
+      "forward.svg": 243.13385009765625
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 18.146041870117188,
+        "luma_signed": -0.522307263845547
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 16.567520141601562,
+        "luma_signed": 5.23072611514909
+      },
+      "left_cap": {
+        "RGB_RMSE": 20.136032104492188,
+        "luma_signed": 6.626234540696162
+      },
+      "body": {
+        "RGB_RMSE": 13.123187065124512,
+        "luma_signed": -1.581058900982072
+      }
+    }
+  },
+  "previous99_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": false,
+    "exterior": false,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": false,
+    "exterior": false,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "normalized_categories": {
+    "glass": 0.8236228908701596,
+    "rim": 0.9808874436143191,
+    "shadow": 1.9965664246187391,
+    "artwork": 0.9989471060760609
+  },
+  "combined": 1.2000059662948197,
+  "normalized_training_errors": {
+    "glass": 0.8217945714804595,
+    "rim": 0.9808059850840691,
+    "shadow": 1.9965664246187391,
+    "artwork": 0.9989471366569476
+  }
+}

@@ -6,7 +6,9 @@ Drag the mask to compare identical native coordinates. Fullscreen, keyboard, tou
 
 [Research plan](../research/experiments/miniplayer-four-pass-100/README.md) · [Feedback](../research/feedback/miniplayer-four-pass.md) · [Previous proposal](miniplayer-middle-ground.md) · [Current models](reconstruction.md)
 
-Completed and independently replayed: **3 of four passes**. Numerical ranking and visual selection are separate; the original strict local guards remain reported.
+Completed and independently replayed: **4 of four passes**. Numerical ranking and visual selection are separate; the original strict local guards remain reported.
+
+**Final working choice: pass 3.** All four passes are retained below. The combined category score improves about 8.7% against the starting proposal, mainly through artwork, compact tone and shadow. Average glass error is nearly unchanged; average rim error is worse. Expanded and partial-boundary regressions remain. [Full decision](../research/experiments/miniplayer-four-pass-100/FINAL-REVIEW.md).
 
 ## Pass 1
 
@@ -220,6 +222,77 @@ Combined score equally weights baseline-normalized glass, rim, exterior and artw
 </details>
 
 Recipe: incident sigma `6.37875`; rim plateau `2.0` pixels and fade `2.0` pixels; artwork scale `0.95`. [Exact results and stage choices](../research/experiments/miniplayer-four-pass-100/pass3/README.md).
+
+## Pass 4
+
+This pass is held. Its combined normalized score is 0.95085, worse than pass three. The wider shadow improves exterior error, but the stronger shoulder easing and thicker plateau worsen the complete result. Both extra dark-edge neutral increments are rejected.
+
+All four independent replays and metrics are exact. The final working choice retains the complete third pass, without combining unverified parts from different geometries.
+
+| Reference | E | SSIM | Original partial RMSE | Normalized combined score |
+| --- | ---: | ---: | ---: | ---: |
+| expanded A | 13.3719 | 0.96260 | 61.1883 | 1.0921 |
+| expanded B | 8.3467 | 0.97600 | 16.0881 | 1.1423 |
+| compact A | 13.6517 | 0.95994 | 26.2137 | 0.7714 |
+| compact B | 13.4971 | 0.95820 | 25.8101 | 0.7976 |
+
+Combined score equally weights baseline-normalized glass, rim, exterior and artwork errors across references. Lower than one improves this numerical ranking. It is not a physical-material identification or a replacement for visual review.
+
+### Expanded A
+
+![p4-expanded-a](assets/four100-p4-expanded-a.png)
+
+### Expanded B
+
+![p4-expanded-b](assets/four100-p4-expanded-b.png)
+
+### Compact A
+
+![p4-compact-a](assets/four100-p4-compact-a.png)
+
+### Compact B
+
+![p4-compact-b](assets/four100-p4-compact-b.png)
+
+<details id="pass4-previous" data-stage="pass4-previous">
+<summary>Previous result versus pass 4</summary>
+
+![p4-expanded-a-previous](assets/four100-p4-expanded-a-previous.png)
+
+![p4-expanded-b-previous](assets/four100-p4-expanded-b-previous.png)
+
+![p4-compact-a-previous](assets/four100-p4-compact-a-previous.png)
+
+![p4-compact-b-previous](assets/four100-p4-compact-b-previous.png)
+
+</details>
+
+<details data-stage="pass4-details">
+<summary>Native cap, rim and artwork details</summary>
+
+![p4-expanded-a-left](assets/four100-p4-expanded-a-left.png)
+
+![p4-expanded-a-right](assets/four100-p4-expanded-a-right.png)
+
+![p4-expanded-b-left](assets/four100-p4-expanded-b-left.png)
+
+![p4-expanded-b-right](assets/four100-p4-expanded-b-right.png)
+
+![p4-compact-a-left](assets/four100-p4-compact-a-left.png)
+
+![p4-compact-a-right](assets/four100-p4-compact-a-right.png)
+
+![p4-compact-b-left](assets/four100-p4-compact-b-left.png)
+
+![p4-compact-b-right](assets/four100-p4-compact-b-right.png)
+
+![p4-expanded-a-yellow](assets/four100-p4-expanded-a-yellow.png)
+
+![p4-expanded-b-yellow](assets/four100-p4-expanded-b-yellow.png)
+
+</details>
+
+Recipe: incident sigma `6.37875`; rim plateau `2.5` pixels and fade `2.0` pixels; artwork scale `0.95`. [Exact results and stage choices](../research/experiments/miniplayer-four-pass-100/pass4/README.md).
 
 ## Interpretation
 

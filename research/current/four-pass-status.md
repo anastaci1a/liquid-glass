@@ -1,7 +1,7 @@
-# Active four-pass refinement
+# Four-pass refinement complete
 
-Two full passes are independently verified. Neither is adopted: the first washes out expanded tone; the second produces an orange rim. Both remain available in the public comparisons.
+All four complete passes are independently replayed. Pass three is the current shared working choice; pass four remains a nearby negative. No dispersion work ran.
 
-The next pass tests a softer channel response and a small actual-height change. Training masks now determine parameter ranking; earlier full-mask choices remain explicitly exploratory.
+The combined category score improves about 8.7% against the starting proposal, mainly through artwork, compact tone and shadow. Average rim error worsens and expanded local failures remain. No full-fidelity or historical acceptance count is claimed.
 
-Dispersion is excluded. The original ten-hour ceiling remains 2026-10-26 15:17:24 UTC. See the [experiment](../experiments/miniplayer-four-pass-100/README.md).
+[Final review](../experiments/miniplayer-four-pass-100/FINAL-REVIEW.md) · [Interactive comparisons](../../guide/miniplayer-four-pass.md) · [Working decision](../decisions/miniplayer-four-pass-working.json).

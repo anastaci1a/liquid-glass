@@ -1,16 +1,20 @@
 # Current state
 
-Active: [four complete miniplayer passes](../../guide/miniplayer-four-pass.md). Pass 1 is independently verified and held for expanded regressions. All comparisons and local tradeoffs are published; dispersion is excluded.
+The [four full miniplayer passes](../../guide/miniplayer-four-pass.md) are complete. Pass three is the current shared working model. Yellow color, compact tone, artwork and shadow improve; expanded and local failures remain. Dispersion was excluded. See the [final review](../experiments/miniplayer-four-pass-100/FINAL-REVIEW.md).
 
-Latest: [intermediate joins, colored plateau and downward shadow](../../guide/miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
+## Earlier research checkpoints
 
-Latest: [inward joins, broad shadow and color-filter comparisons](../../guide/miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.
+The following summaries describe their historical states; current miniplayer selection is the four-pass result above.
 
-The [complete miniplayer refinement](../experiments/miniplayer-complete-refinement-94/README.md) evaluates smooth geometry, exterior-only shadow and a color-aware inner rim. All four source gates and own replay checks pass, but no combined family qualifier emerges. Compact outlines become clearer; expanded A becomes too bright. [Interactive comparisons](../../guide/miniplayer-refinement.md) show every setting. Working20 remains selected.
+Earlier: [intermediate joins, colored plateau and downward shadow](../../guide/miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
+
+Earlier: [inward joins, broad shadow and color-filter comparisons](../../guide/miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.
+
+The [complete miniplayer refinement](../experiments/miniplayer-complete-refinement-94/README.md) evaluates smooth geometry, exterior-only shadow and a color-aware inner rim. All four source gates and own replay checks pass, but no combined family qualifier emerges. Compact outlines become clearer; expanded A becomes too bright. [Interactive comparisons](../../guide/miniplayer-refinement.md) show every setting. Working20 was retained at that checkpoint.
 
 The [native cap-join checkpoint](../experiments/miniplayer-join-inspection-92/README.md) identifies the current contour’s curvature discontinuity and repeatable compact lower intensity offsets. The [single smooth-contour diagram](../experiments/miniplayer-smooth-contour-checkpoint-93/README.md) preserves extrema and moves the old joins inward by approximately 0.665–0.680 pixel. It passes two-dimensional controls but is not an actual-height adapter or adopted lens. The subsequent complete refinement evaluates both exterior shadow and color-aware highlight.
 
-The [five-pass outline study](../experiments/miniplayer-outline-series-91/README.md) is complete. Wider fades, brightness endpoints, angular changes and mixed responses improve some references, but no shared setting passes every guard. Working20 remains selected. [Interactive comparisons](../../guide/outline-review.md) expose every setting and the starting model.
+The [five-pass outline study](../experiments/miniplayer-outline-series-91/README.md) is complete. Wider fades, brightness endpoints, angular changes and mixed responses improve some references, but no shared setting passes every guard. Working20 was retained at that checkpoint. [Interactive comparisons](../../guide/outline-review.md) expose every setting and the starting model.
 
 The current outline convention is a separate effect composited over the completed reconstruction. Refraction and incident blur remain fixed during outline trials. The immediate target is one extremely thin outer highlight with a smooth inward fade, replacing the visually incorrect doubled contour. Uniform white strength around the miniplayer remains a hypothesis.
 
@@ -36,7 +40,7 @@ The [direct-front envelope](../experiments/miniplayer-direct-front-envelope-74/R
 
 [Fixed rim sections](../experiments/miniplayer-rim-observation-73/README.md) locate distinct reference peaks and plain backing transitions. Expanded A’s upper-left corner has a large missing brightness peak; compact B’s top-center excess has no isolated peak above the outer backing. These observations do not fit or identify an outline material.
 
-The [current working-family review](../experiments/miniplayer-working-final-70/README.md) closes all eight stages with no new replacement. Incident blur, fixed-white contrast, finite lighting and shadow trials fail family guards. Original foreground remains unchanged; dispersion is unidentified.
+The [earlier working-family review](../experiments/miniplayer-working-final-70/README.md) closes all eight stages with no new replacement. Incident blur, fixed-white contrast, finite lighting and shadow trials fail family guards. Original foreground remains unchanged; dispersion is unidentified.
 
 A separately budgeted [anchor-matched linear scattering test](../experiments/miniplayer-neutral-scattering-71/README.md) also fails all four references; working20 remains selected. A [fixed-width linear incident filter](../experiments/miniplayer-linear-incident-filter-72/README.md) improves compact aggregates but harms expanded playback, so it also remains unselected.
 

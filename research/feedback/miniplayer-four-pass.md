@@ -19,3 +19,17 @@ Retain blur in the pre-grade refracted guide used by the outline. Brighten while
 Apply the revision to expanded and compact together. Only major length differs in the glass model. Artwork and original foreground metrics remain separate from glass error.
 
 Four full passes share ten hours. Dispersion is excluded. Overall visual and category-score improvement may be promoted with explicit local-regression disclosure; physical and source-validity requirements remain mandatory.
+
+## Four-pass disposition
+
+The complete third pass is selected. [All comparisons and failures](../../guide/miniplayer-four-pass.md) remain public. Raw notes stay local and untracked.
+
+| Feedback | Outcome |
+| --- | --- |
+| Tips outward, diagonal shoulders inward | Shared smooth support shape separates those changes; exact silhouette remains uncertain. |
+| Slightly stronger far refraction | Actual front/back heights increase two percent; normals are not independently adjusted. |
+| Slightly less blur | Incident sigma is `6.37875`, below the old working `6.75`; filtering remains before refraction. |
+| Saturated colored edge and plateau | Blurred pre-grade guide, soft per-channel response and two-pixel plateau; wider final trial is held. |
+| Smaller, higher artwork | Shared `0.95` scale, three-pixel upward shift, eighteen-pixel corner radius. |
+| Localized downward shadow | Exterior-only anisotropic field; fixed outward samples retain conditional-background limitations. |
+| Four complete passes, no dispersion | Completed and independently verified; all four full results remain available. |

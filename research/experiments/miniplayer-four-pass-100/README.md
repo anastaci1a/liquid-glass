@@ -1,6 +1,6 @@
 # Four complete miniplayer passes
 
-Status: active. Four complete cycles share one ten-hour window. Dispersion is excluded by the current scope.
+Status: complete. Four cycles finished within the ten-hour window. [Final review](FINAL-REVIEW.md) selects the complete third pass with disclosed regressions. Dispersion is excluded by the current scope.
 
 The starting experiment is [middle-ground99](../miniplayer-middle-ground-99/README.md). Earlier selected and experimental models remain immutable comparators.
 

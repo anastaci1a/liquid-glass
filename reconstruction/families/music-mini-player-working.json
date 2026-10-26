@@ -3,9 +3,9 @@
   "requirement": "One glass model; major_half is the only variable shape parameter.",
   "length_unit_native_pixels": 88.5,
   "geometry": {
-    "model": "Independent actual spline front and Hermite back",
+    "model": "Smooth convex shoulder-core coordinate; actual spline front and Hermite back",
     "minor_half": 1.012503164339156,
-    "corner_radius": 1.0043663048754772,
+    "corner_radius": 0.9902420110901664,
     "cap_join_width": 0,
     "breaks": [
       0,
@@ -31,10 +31,12 @@
       0.0022509236812926743,
       0
     ],
-    "front_scale": 0.5,
-    "back_profile": "research/experiments/miniplayer-inverse-geometry-17/back-profile.json",
-    "back_profile_sha256": "c07c07a4c51c18135f8cbd14dbd04968d547e32bf04877558f0aa59d8437f554",
-    "trace_front_scale": 1
+    "front_scale": 0.51,
+    "back_profile": "reconstruction/families/music-mini-player-refined-profile.json",
+    "back_profile_sha256": "387d6fb3dd9281b32e01ab92d7bdcc9ec27a4d28e92f9d2777c6005383832e0e",
+    "trace_front_scale": 1,
+    "coordinate": "shoulder_core",
+    "shoulder_inset": 0.005649717514124294
   },
   "optics": {
     "camera": "orthographic",
@@ -43,32 +45,60 @@
     "background_distance": 2.1
   },
   "material": {
-    "incident_sigma_native_pixels": 6.75,
-    "incident_kernel_radius": 21,
+    "incident_sigma_native_pixels": 6.37875,
+    "incident_kernel_radius": 20,
     "gain": 0.5552987769129158,
-    "bias": 0.3908368353448866,
+    "bias": 0.39083683534488656,
     "output_sigma": 0,
-    "generated_shadow": 0,
-    "outline": "Unresolved; no invented reflected illumination",
-    "role": "Encoded incident response before actual primary interface power"
+    "generated_shadow": {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.23
+    },
+    "outline": {
+      "response": "soft_channel_rim_dark",
+      "curve_power": 1.75,
+      "dark_neutral": 0.0,
+      "plateau": 2.0,
+      "fade": 2.0,
+      "angular": {
+        "sigma": 2.6,
+        "power": 1.5,
+        "start": -45,
+        "minimum": 45,
+        "hold": 60,
+        "recover": 85
+      },
+      "guide": "Incident-filtered actual refraction before body grade and assigned reflection light; original ordered foreground retained"
+    },
+    "role": "Bounded low-luminance encoded response before primary interface power; outline and exterior shadow remain separate",
+    "low_luminance_lift": 0.08
   },
   "sampling": {
     "samples_per_axis": 2,
-    "bilinear": "exact"
+    "bilinear": "exact",
+    "outline": {
+      "order": 32,
+      "normalization": "full pixel",
+      "tail": 1e-10,
+      "source": "Integrated actual projected contour; no occupied-area renormalization"
+    }
   },
   "members": {
     "expanded": {
-      "major_half": 7.225022904390323
+      "major_half": 7.2419720569326955
     },
     "compact": {
-      "major_half": 4.906563038095225
+      "major_half": 4.923512190637598
     }
   },
   "provenance": {
     "expanded_height_record": "research/experiments/expanded-spline-height-01/inference.json",
     "expanded_response_record": "research/experiments/expanded-contrast-guard-02/primary-decision.json",
     "compact_length_record": "research/experiments/compact-geometry-01/geometry-check.json",
-    "nuisance_policy": "Input source, measured translation and original foreground/content are frozen case data, never optical tuning knobs."
+    "nuisance_policy": "Original source/style inputs preserved. Common registration correction and shared artwork transform are declared separately from optics.",
+    "starting_family": "research/experiments/miniplayer-four-pass-100/starting-family.json"
   },
   "status": "primary-working-approximation-guard-incomplete",
   "numerical_acceptance": false,
@@ -86,6 +116,18 @@
     "front_reflection": "Actual direct first-front power",
     "later_reflection": "Unassigned, incomplete"
   },
-  "evidence": "research/experiments/miniplayer-incident-material-20/README.md",
-  "selection_record": "research/decisions/miniplayer-working-primary.json"
+  "evidence": "research/experiments/miniplayer-four-pass-100/FINAL-REVIEW.md",
+  "selection_record": "research/decisions/miniplayer-four-pass-working.json",
+  "registration": {
+    "center_shift_native": [
+      -0.5,
+      0.0
+    ],
+    "scope": "Same correction for all four original measured centers; original case files unchanged"
+  },
+  "artwork": {
+    "scale": 0.95,
+    "up": 3,
+    "radius": 18
+  }
 }

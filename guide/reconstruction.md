@@ -1,6 +1,6 @@
 # Apple reference recreations
 
-Active: [four complete miniplayer passes](miniplayer-four-pass.md). Pass 1 is independently verified and held for expanded regressions. All comparisons and local tradeoffs are published; dispersion is excluded.
+Completed: [four full miniplayer passes and all comparison sliders](miniplayer-four-pass.md). Pass three is the shared working selection, with original local failures disclosed. Dispersion was excluded.
 
 Latest: [intermediate joins, colored plateau and downward shadow](miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
 
@@ -395,23 +395,33 @@ This is illustrative generated motion, not captured Apple animation. [Motion/sou
 
 ## Apple Music studies
 
-References come from [Apple's original Music video](https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4). Each study shares optics/material across two observed backgrounds. Current reconstruction exports are **1080px wide per side**; native scoring remains fixed to the reference resolution. The Apple halves retain the original video's detail. Use **Fullscreen** to inspect the full-size pair.
+References come from [Apple's original Music video](https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/large_2x.mp4). Each study shares optics/material across two observed backgrounds. Current miniplayer comparisons preserve native pixels. Other reconstruction exports are **1080px wide per side**; scoring remains fixed to the reference resolution. The Apple halves retain the original video's detail. Use **Fullscreen** to inspect the full-size pair.
 
 ### Expanded mini-player
 
 Expanded and compact use [one current working glass model](../reconstruction/families/music-mini-player-working.json), with major length as their only different glass parameter. Both actual surfaces supply their own intersections and normals; incident blur remains before refraction.
 
-**Current working reconstruction: two physical surfaces with shared material.** These newer renders now appear first. They improve body tone and add an outer highlight. Thin perimeter, cap light, source returns and foreground backing remain imperfect. This is a working selection, not a full-fidelity or numerical-guard acceptance.
+**Current working reconstruction: pass three of the complete refinement cycle.** Smooth shoulders, colored edge filtering, exterior shadow and smaller artwork now appear first. Yellow outline color and compact tone improve; expanded body and local errors remain. This is a visual working choice, not full fidelity acceptance.
 
 References: the original Music frames at 0 and 6.033 seconds.
 
-![Expanded A: current two-surface working reconstruction](assets/geometric-expanded-outline-held-a.png)
+![Expanded A: current two-surface working reconstruction](assets/four100-p3-expanded-a.png)
 
-![Expanded B: current two-surface working reconstruction](assets/geometric-expanded-outline-held-b.png)
+![Expanded B: current two-surface working reconstruction](assets/four100-p3-expanded-b.png)
 
-Current E is 7.88349 / 6.14943. Expanded A's original 16-pixel boundary and expanded B's artwork/artist guards still fail. No mask, source, accepted count or scoring epoch changes. The earlier verified baseline remains preserved below.
+Current E is `12.31818 / 6.96087`. Expanded body, foreground and local regressions remain, including A's original sixteen-pixel boundary cohort. The shared selection improves the combined category ranking mainly through compact tone and artwork; it is not an expanded-score improvement.
 
-[Explicit working selection](../research/decisions/miniplayer-working-primary.json) · [Shared material evidence](../research/experiments/miniplayer-incident-material-20/README.md) · [Joint interpretation](../research/experiments/miniplayer-interpretation-review-21/README.md).
+[Current decision and all failures](../research/decisions/miniplayer-four-pass-working.json) · [All four passes and native details](miniplayer-four-pass.md).
+
+<details><summary>Earlier shared working model</summary>
+
+![Earlier expanded A](assets/geometric-expanded-outline-held-a.png)
+
+![Earlier expanded B](assets/geometric-expanded-outline-held-b.png)
+
+[Earlier decision](../research/decisions/miniplayer-working-primary.json).
+
+</details>
 
 A [narrower light](../research/experiments/miniplayer-narrow-emitter-22/README.md) over-brightens the edge. Later closed-surface studies expose [source limitations](../research/experiments/miniplayer-native-front-26/README.md) and [grazing-sampling error](../research/experiments/miniplayer-grazing-quadrature-27/README.md); they are diagnostics, not newer completed reconstructions.
 
@@ -503,13 +513,21 @@ Frame A: 0 seconds. Frame B: 6.033 seconds. Cover art is a separate high-resolut
 
 **Current working reconstruction: the exact expanded model, shortened only.** Geometry, index, scene, incident blur and material are identical. The common material uses all four references; compact is not a color holdout and has no compact-specific coefficient.
 
-![Compact A: current shared two-surface working reconstruction](assets/geometric-compact-working-a.png)
+![Compact A: current shared two-surface working reconstruction](assets/four100-p3-compact-a.png)
 
-![Compact B: current shared two-surface working reconstruction](assets/geometric-compact-working-b.png)
+![Compact B: current shared two-surface working reconstruction](assets/four100-p3-compact-b.png)
 
-Current E is 20.53188 / 19.68186. Both compact cases pass the recorded original comparisons, but the shared family remains guard-incomplete on expanded. The thin rim, cap light and returned features remain imperfect. Full radiance and full-fidelity acceptance are not claimed.
+Current E is `13.49366 / 13.43211`. Compact A passes its original comparisons; compact B retains its original twenty-two-pixel partial-boundary failure. The shared family remains guard-incomplete on expanded. Returned features, cap light and full radiance remain unresolved.
 
-[Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Working selection and all failures](../research/decisions/miniplayer-working-primary.json) · [Four-reference material record](../research/experiments/miniplayer-incident-material-20/README.md).
+[Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Current decision](../research/decisions/miniplayer-four-pass-working.json) · [Four-pass comparisons](miniplayer-four-pass.md).
+
+<details><summary>Earlier compact working model</summary>
+
+![Earlier compact A](assets/geometric-compact-working-a.png)
+
+![Earlier compact B](assets/geometric-compact-working-b.png)
+
+</details>
 
 **Held visible test: the same separate thin outline, shortened only.** The white overlay has one outer maximum and a smooth inward fade, with identical width and strength across both lengths. Compact E improves slightly to 20.50074 / 19.66365, but both original partial-boundary guards worsen. Body tone and source-return placement remain unresolved; this test is held.
 
