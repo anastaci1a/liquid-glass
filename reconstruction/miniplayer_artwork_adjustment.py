@@ -6,7 +6,7 @@ import numpy as np
 
 def resize_and_center_artwork(study, factor, center_y, radius=18):
     """Scale current rectangles; retain horizontal centers within raster precision."""
-    if not np.isfinite([factor, center_y, radius]).all() or not 0 < factor <= 1 or radius < 0:
+    if not np.isfinite([factor, center_y, radius]).all() or not 0 < factor <= 2 or radius < 0:
         raise ValueError('Invalid artwork adjustment')
     from extended_fit import geometry
     result = copy.copy(study)

@@ -34,3 +34,42 @@ def body_response(rgb, calibration):
 
 def outline_endpoint(rgb, calibration):
     return response(rgb,calibration['roles']['outline'])
+
+
+def adjusted_outline_endpoint(rgb, calibration):
+    """Existing endpoint plus an explicit, optional warm-hue correction."""
+    result = outline_endpoint(rgb, calibration)
+    adjustment = calibration.get('outline_hue_adjustment')
+    if adjustment is None:
+        return result
+    rgb = np.asarray(rgb, float)
+    maximum = rgb.max(-1)
+    delta = maximum-rgb.min(-1)
+    hue = np.zeros_like(maximum)
+    for channel in [2, 1, 0]:
+        take = (delta > 0) & (maximum == rgb[..., channel])
+        a, b = ((0, 1) if channel == 2 else (2, 0) if channel == 1 else (1, 2))
+        hue[take] = ((rgb[..., a][take]-rgb[..., b][take])/delta[take]+2*channel) % 6
+    hue /= 6
+    distance = (hue-adjustment['center_hue']+.5) % 1-.5
+    width = adjustment['half_width']
+    weight = np.where(abs(distance) < width, .5*(1+np.cos(np.pi*distance/width)), 0.)
+    offset = curve(maximum, adjustment['offset_curve'])*weight
+    active = (delta > 0) & (offset != 0)
+    if not active.any():
+        return result
+    color = result[active]
+    value = color.max(-1)
+    saturation = (value-color.min(-1))/value
+    h = ((hue[active]+offset[active]) % 1)*6
+    sector = np.floor(h).astype(int) % 6
+    fraction = h-np.floor(h)
+    p = value*(1-saturation)
+    q = value*(1-saturation*fraction)
+    t = value*(1-saturation*(1-fraction))
+    rotated = np.empty_like(color)
+    for i, channels in enumerate([(value,t,p),(q,value,p),(p,value,t),(p,q,value),(t,p,value),(value,p,q)]):
+        mask = sector == i
+        rotated[mask] = np.stack([x[mask] for x in channels],axis=-1)
+    result[active] = rotated
+    return result

@@ -50,3 +50,5 @@ The [completed investigation](../experiments/miniplayer-stronger-joins-98/README
 [Restored body controls and wider rim plateau](miniplayer-restored-grade.md) supersede the anchor-map body proposal while retaining its outline colors.
 
 [Final-output white and artwork correction](miniplayer-final-white.md) supersede the grading-stage white target and two-pixel rim plateau.
+
+[Stronger yellow outline and artwork enlargement](miniplayer-yellow-match.md) records the revised exact color target and deferred comparison observation.

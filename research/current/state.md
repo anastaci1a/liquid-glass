@@ -1,5 +1,7 @@
 # Current state
 
+For review: [exact stronger-yellow anchor and larger artwork](../../guide/miniplayer-yellow-match.md). The new full-strength yellow matches #F6F586 from tentative input #EBCE48. Artwork is multiplied by 1.0183. Body, 1.5-pixel rim geometry and selection remain unchanged.
+
 For review: [final-output white, revised yellow, 1.5-pixel rim and centered artwork](../../guide/miniplayer-final-white.md). Existing body gain targets #E6E6E6 after optical lighting. Artwork is 0.986 of its prior dimensions. Selection remains unchanged.
 
 For review: [restored body grading and doubled colored-rim plateau](../../guide/miniplayer-restored-grade.md). Existing gain targets grading-stage white #E5E5E5; optical brightness is restored. The calibrated outline remains, with a two-pixel plateau. Selection is unchanged.
