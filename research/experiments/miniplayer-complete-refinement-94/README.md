@@ -57,3 +57,5 @@ The first native attempt stopped on an all-clear tile before any nonempty interf
 The successful native ledger omitted its one-setting increment. Exactly one fixed geometry ran; the geometry report records that supplement while preserving the as-run zero. No mask, parameter or numerical result was changed to conceal either issue.
 
 The [original plan](plan.json) remains immutable. Each material stage retains its own actual preparation clock and caps. Closing an intermediate stage did not stop the authorized sequence.
+
+The own verification's combined bitmap accounting exceeded its declared cap by 5,031,584 pixels after visual inspection and publication decoding were included. The original protocol and as-run ledger remain unchanged. This presentation-accounting overrun is separate from the valid numerical replay and remains disclosed.
