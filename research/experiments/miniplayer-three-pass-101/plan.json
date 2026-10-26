@@ -1,0 +1,39 @@
+{
+  "start": "2026-10-26T15:57:07+00:00",
+  "deadline": "2026-10-26T19:57:07+00:00",
+  "passes": 3,
+  "maximum_minutes_per_pass": 80,
+  "dispersion": "Excluded",
+  "outline_priority": "Expanded A/B lead selection; same settings transfer unchanged to compact A/B with reported regressions",
+  "stages": [
+    "registration/refraction",
+    "incident blur",
+    "interior color",
+    "outline",
+    "exterior shadow",
+    "foreground",
+    "own verification/publication"
+  ],
+  "zero_outline_regions": "Right upper-right pi/4 and centrally mirrored left lower-left 5pi/4; actual overlay contribution must be zero, with smooth transitions",
+  "first_intake_deadline": "2026-10-26T16:07:07+00:00",
+  "intake_caps": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 1000000000,
+    "bitmap_pixels": 40000000,
+    "composites": 4,
+    "distance_points": 1200000,
+    "angular_points": 5000000,
+    "diagnostic_pixels": 100000,
+    "coordinate_queries": 1200000,
+    "projection_iteration_points": 80000000
+  },
+  "pass_deadlines": [
+    "2026-10-26T17:17:07+00:00",
+    "2026-10-26T18:37:07+00:00",
+    "2026-10-26T19:57:07+00:00"
+  ],
+  "selection": "Expanded training rim/brightness first for outline; shared training body color. Fixed original held, partial, foreground and exterior guards remain evaluation evidence. Visible contrasts before middle-ground refinement; at most three substantive settings per question.",
+  "source_rule": "Changed actual surfaces require fresh ordered-path and whole/guard finite-kernel source proofs before RGB.",
+  "helper": "No helper assigned; primary performs own verification"
+}

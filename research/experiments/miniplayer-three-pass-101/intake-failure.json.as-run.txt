@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-26T16:04:52.416514+00:00",
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"/repo/research/experiments/miniplayer-three-pass-101/intake.py\", line 36, in <module>\n    charge('diagnostic_pixels',int(region.sum()));assert region.any();exact=np.array_equal(body[region],z['complete'][region],equal_nan=True);records.append(dict(member=m,reference=r,region=name,pixels=int(region.sum()),max_saved_alpha=float(alpha[region].max()),overlay_exactly_zero=exact,body_mean_rgb=(np.nanmean(body[region],axis=0)*255).tolist(),target_mean_rgb=(np.nanmean(s.target_crop[region],axis=0)*255).tolist()));assert exact and np.all(alpha[region]==0)\n                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "ledger": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 306982400,
+    "bitmap_pixels": 33072352,
+    "composites": 1,
+    "distance_points": 340000,
+    "angular_points": 1360020,
+    "diagnostic_pixels": 135,
+    "coordinate_queries": 340000,
+    "projection_iteration_points": 4278418
+  }
+}

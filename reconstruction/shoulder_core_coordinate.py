@@ -40,11 +40,11 @@ class ShoulderCoreCoordinate:
         unit=self.original_radius
         u,v=np.abs(x)/unit,np.abs(y)/unit;lo=np.zeros_like(u);hi=np.full_like(u,np.pi/2)
         t=np.arctan2(v,u);active=np.ones_like(u,dtype=bool)
-        for _ in range(64):
+        for _ in range(80):
             if self.counter is not None:self.counter('projection_iteration_points',int(active.sum()))
             c,s=np.cos(t),np.sin(t);h,hp,hpp=(q/unit for q in self.support(t))
             f=-u*s+v*c-hp;dist=u*c+v*s-h
-            done=(np.abs(f)<2e-13)|(hi-lo<2e-14)
+            done=(np.abs(f)<2e-13)
             active &= ~done
             if not active.any():break
             lo=np.where(active&(f>0),t,lo);hi=np.where(active&(f<=0),t,hi)
