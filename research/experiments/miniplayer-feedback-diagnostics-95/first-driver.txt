@@ -1,0 +1,96 @@
+"""Fixed reference profiles and sparse real-surface diagnostics; no target fit."""
+from pathlib import Path
+import sys,json,datetime,hashlib,zipfile
+import numpy as np
+from PIL import Image,ImageDraw,ImageFont
+ROOT=Path(__file__).resolve().parents[3];OUT=Path(__file__).parent;P=json.loads((OUT/'protocol.json').read_text());END=datetime.datetime.fromisoformat(P['deadline']);ledger=dict.fromkeys(P['caps'],0);sys.path.insert(0,str(ROOT/'reconstruction'))
+from ellipse_core_coordinate import EllipseCoreCoordinate,EllipseCoreSplineBack
+from ellipse_edge_effects import extent_at
+from hermite_height_back import HermiteFootprintBack
+from raised_front_optics import VerticalScaleBack,trace_raised_front_orthographic
+F=json.loads((ROOT/'reconstruction/families/music-mini-player-working.json').read_text());L=F['length_unit_native_pixels'];g=F['geometry'];first={};lum=np.array([.2126,.7152,.0722]);font=ImageFont.load_default(size=14)
+def save(n,x):(OUT/n).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def charge(k,n):
+ assert datetime.datetime.now(datetime.timezone.utc)<END,'Original diagnostic clock';assert ledger[k]+n<=P['caps'][k],(k,ledger[k],n);ledger[k]+=int(n)
+def read(p,keys):
+ first[str(p.relative_to(ROOT))]=sha(p)
+ with zipfile.ZipFile(p) as z:
+  for k in keys:
+   with z.open(k+'.npy') as f:
+    v=np.lib.format.read_magic(f);shape,_,dt=(np.lib.format.read_array_header_1_0(f) if v==(1,0) else np.lib.format.read_array_header_2_0(f));assert not dt.hasobject;charge('numeric_bytes',int(np.prod(shape))*dt.itemsize)
+ with np.load(p) as z:return {k:z[k] for k in keys}
+def image(p):
+ first[str(p.relative_to(ROOT))]=sha(p)
+ with Image.open(p) as im:charge('bitmap_pixels',im.width*im.height);return np.array(im.convert('RGB'))
+def boundary(half,r,theta):
+ a,b=np.array(half)-r;c,s=np.cos(theta),np.sin(theta);h=np.hypot(a*c,b*s);return np.stack([a*a*c/h+r*c,b*b*s/h+r*s],-1)
+def pane(images,labels,path,scale=3):
+ w,h=images[0].size;out=Image.new('RGB',(len(images)*(w*scale+2),h*scale+30),'white');d=ImageDraw.Draw(out)
+ for i,(im,label) in enumerate(zip(images,labels)):out.paste(im.resize((w*scale,h*scale),Image.Resampling.NEAREST),(i*(w*scale+2),30));d.text((i*(w*scale+2)+3,6),label,font=font,fill='black')
+ charge('diagnostic_images',1);out.save(OUT/path)
+def run():
+ assert not (OUT/'started.json').exists();save('started.json',{'at':datetime.datetime.now(datetime.timezone.utc).isoformat()})
+ for p in [Path(__file__),ROOT/'reconstruction/ellipse_core_coordinate.py',ROOT/'reconstruction/ellipse_edge_effects.py',ROOT/'reconstruction/raised_front_optics.py',ROOT/'research/captures/dark-glass-lab/extended/prepare_music.py']:first[str(p.relative_to(ROOT))]=sha(p)
+ allshadow=[];summary=[];join=[];color=[];body=[];geometry=[]
+ for member in ['expanded','compact']:
+  work=ROOT/f'.evidence-working/{member}-geometry-0{2 if member=="expanded" else 1}';center=np.array(json.loads((ROOT/'reconstruction/studies/geometric-expanded-pipeline/summary.json').read_text())['geometry']['center'])
+  if member=='compact':
+   c=json.loads((work/'a/case.json').read_text());p=json.loads((ROOT/'reconstruction/studies/music-mini-compact-vector/review-round/pass-03.json').read_text())['parameters'];center=np.array(c['center'])+L*np.array([p['shape_dx'],p['shape_dy']])
+  half=np.array([F['members'][member]['major_half'],g['minor_half']])*L;r=g['corner_radius']*L;coord=EllipseCoreCoordinate(tuple(half),r)
+  # Shared geometric hypothesis: reduce dilation, increase core axes, preserve extrema.
+  angles=np.deg2rad(P['sparse_cap_angles_degrees']);points=boundary(half,r,angles);normals=np.stack([np.cos(angles),np.sin(angles)],-1);xy=(points[:,None,:]-np.array(P['sparse_inward_distances_native'])[None,:,None]*normals[:,None,:]).reshape(-1,2)
+  for reduction in P['geometry_dilation_reductions_native']:
+   rr=(r-reduction)/L;base=EllipseCoreSplineBack(half/L,rr,g['breaks'],g['height_controls']);back=HermiteFootprintBack(base,json.loads((ROOT/g['back_profile']).read_text()));front=VerticalScaleBack(base,g['front_scale']);charge('sparse_rays',len(xy));q=trace_raised_front_orthographic(back,xy[:,0]/L,xy[:,1]/L,1,F['optics']['index'],F['optics']['background_distance'],lambda label,n:charge('height_points',n),front_surface=front)
+   np.savez_compressed(OUT/f'{member}-dilation{reduction}-sparse.npz',launch_xy=xy,**q)
+   x=np.array([0,(half[0]-r)*.5,half[0]-r]);charge('shape_profile_points',len(x));y=extent_at(x,half,r-reduction)
+   geometry.append(dict(member=member,reduction=reduction,center_to_join_x=x.tolist(),top_inward_native=(half[1]-y).tolist(),regular=int(q['regular_entry'].sum()),complete=int(q['complete'].sum()),source_displacement_native=np.stack([q['X']*L-xy[:,0],q['Y']*L-xy[:,1]],-1).tolist()))
+  # Fixed long-side points and fixed cap-normal directions.
+  sections=[]
+  for sign,label in [(-1,'top'),(1,'bottom')]:
+   for f in [-.75,-.5,0,.5,.75]:
+    x=f*(half[0]-r);y=sign*float(extent_at(x,half,r));_,nx,ny=coord.boundary_distance(np.array([x]),np.array([y]));sections.append((f'{label}_{f}',np.array([x,y]),np.array([nx[0],ny[0]])))
+  for deg in [0,30,45,60,120,135,150,180,210,225,240,300,315,330]:
+   theta=np.deg2rad(deg);sections.append((f'normal_{deg}',boundary(half,r,theta),np.array([np.cos(theta),np.sin(theta)])))
+  for ref in ['a','b']:
+   case=json.loads((work/ref/'case.json').read_text());first[str((work/ref/'case.json').relative_to(ROOT))]=sha(work/ref/'case.json')
+   for fn,h in case['source_sha256'].items():assert sha(work/ref/fn)==h
+   target=image(work/ref/'target.png');source=image(work/ref/'source.png');known=image(work/ref/'known.png')[...,0]>0
+   old=read(ROOT/f'research/experiments/miniplayer-incident-material-20/{member}-{ref}-factor0.5.npz',['complete'])['complete'];latest=read(ROOT/f'research/experiments/miniplayer-complete-refinement-94/highlight/{member}-{ref}-combined.npz',['complete'])['complete'];geom=read(ROOT/f'research/experiments/miniplayer-complete-refinement-94/geometry-run-02/{member}-{ref}-geometry.npz',['complete'])['complete'];x0,y0,x1,y1=case['crop']
+   mp=work/f'{ref}-masks.npz' if member=='expanded' else ROOT/f'research/experiments/compact-geometry-01/{ref}-masks.npz';m=read(mp,['glass','rim','held']);interior=m['glass']&~m['rim'];tar=target[y0:y1,x0:x1]/255.
+   for label,C in [('selected20',old),('smooth_geometry94',geom),('combined94',latest)]:
+    charge('image_reduction_pixels',int(interior.sum()));e=(C[interior]-tar[interior])*255;body.append(dict(member=member,reference=ref,model=label,pixels=int(interior.sum()),mean_rgb_error=e.mean(0).tolist(),mean_luma_error=float((e@lum).mean()),median_luma_error=float(np.median(e@lum)),RGB_RMSE=float(np.sqrt(np.mean(e*e)))))
+   # Full-frame source/target shadow measurements, never cropped at reconstruction bounds.
+   for name,p,n in sections:
+    tangent=np.array([-n[1],n[0]])
+    for distance in P['shadow_distances_native']:
+     entries=[]
+     for shift in P['tangent_offsets']:
+      pos=center+p+n*distance+tangent*shift;ix,iy=np.floor(pos+.5).astype(int);row=dict(member=member,reference=ref,section=name,distance=distance,tangent=shift,xy=[int(ix),int(iy)],inside_frame=bool(1<=ix<1919 and 1<=iy<1079),inside_model_crop=bool(x0<=ix<x1 and y0<=iy<y1))
+      if row['inside_frame']:
+       charge('image_patch_pixels',18);T=target[iy-1:iy+2,ix-1:ix+2].reshape(-1,3).astype(float);S=source[iy-1:iy+2,ix-1:ix+2].reshape(-1,3).astype(float);K=known[iy-1:iy+2,ix-1:ix+2];tm=np.median(T,0);sm=np.median(S,0);tl=float(tm@lum);sl=float(sm@lum);eligible=bool(K.all() and np.max(np.ptp(S,axis=0))<=P['smooth_source_range_limit_8bit'] and sl>=P['minimum_source_luma_8bit'])
+       row.update(known=bool(K.all()),source_rgb=sm.tolist(),target_rgb=tm.tolist(),darkening_luma=sl-tl,relative_encoded_darkening=1-tl/sl if sl>0 else None,source_range=float(np.max(np.ptp(S,axis=0))),eligible=eligible,exact_source_target_patch=bool(np.array_equal(T,S)))
+       if eligible:entries.append(row)
+      allshadow.append(row)
+     summary.append(dict(member=member,reference=ref,section=name,distance=distance,eligible=len(entries),darkening_luma=float(np.median([e['darkening_luma'] for e in entries])) if entries else None,relative_darkening=float(np.median([e['relative_encoded_darkening'] for e in entries])) if entries else None))
+   # Native top/bottom join profiles, outward sign is consistent on both sides.
+   for sign,label in [(-1,'top'),(1,'bottom')]:
+    for side in [-1,1]:
+     jx=int(round(center[0]+side*(half[0]-r)));xs=np.arange(jx-16,jx+17);edge=center[1]+sign*extent_at(xs-center[0],half,r);offset=np.arange(-8,9);ys=np.floor(edge+.5).astype(int)[:,None]+sign*offset;charge('image_reduction_pixels',len(xs)*len(offset)*2);T=target[ys,xs[:,None]].astype(float)@lum;C=latest[ys-y0,xs[:,None]-x0]*255@lum;dt=np.diff(T,axis=1);dc=np.diff(C,axis=1);actual=sign*(ys-edge[:,None]);mid=(actual[:,:-1]+actual[:,1:])*.5
+     peakT=np.argmax(abs(dt),axis=1);peakC=np.argmax(abs(dc),axis=1);join.append(dict(member=member,reference=ref,side=label,join='left' if side<0 else 'right',x=xs.tolist(),target_gradient_offsets=mid[np.arange(len(xs)),peakT].tolist(),model_gradient_offsets=mid[np.arange(len(xs)),peakC].tolist(),target_gradient_signed=dt[np.arange(len(xs)),peakT].tolist(),model_gradient_signed=dc[np.arange(len(xs)),peakC].tolist(),median_target_minus_model=float(np.median(mid[np.arange(len(xs)),peakT]-mid[np.arange(len(xs)),peakC]))))
+   boxes=[('upper_left_join',(int(center[0]-(half[0]-r))-64,int(center[1]-half[1])-12,int(center[0]-(half[0]-r))+64,int(center[1]-half[1])+20)),('upper_right_join',(int(center[0]+half[0]-r)-64,int(center[1]-half[1])-12,int(center[0]+half[0]-r)+64,int(center[1]-half[1])+20))]
+   if member=='expanded':boxes.append(('yellow_upper_edge',(1120,312,1510,340)))
+   for label,box in boxes:
+    a,b,c,e=box;ims=[Image.fromarray(target).crop(box)]
+    for C in [old,latest]:ims.append(Image.fromarray(np.uint8(np.rint(np.clip(np.nan_to_num(C),0,1)*255))).crop((a-x0,b-y0,c-x0,e-y0)))
+    pane(ims,['Reference','Starting20','Combined94'],f'{member}-{ref}-{label}.png',4)
+   if member=='expanded':
+    for x in [1160,1280,1400,1500]:
+     ey=center[1]-float(extent_at(x-center[0],half,r));ys=np.arange(int(round(ey))-5,int(round(ey))+9);charge('image_reduction_pixels',len(ys)*3)
+     for y in ys:
+      tr=target[y,x].astype(float);cr=latest[y-y0,x-x0]*255;br=geom[y-y0,x-x0]*255;color.append(dict(reference=ref,x=x,y=int(y),inward_offset=float(y-ey),target_RGB=tr.tolist(),candidate_RGB=cr.tolist(),body_RGB=br.tolist(),target_saturation=float((tr.max()-tr.min())/max(tr.max(),1)),candidate_saturation=float((cr.max()-cr.min())/max(cr.max(),1))))
+   save('ledger.json',ledger);print('OBSERVED',member,ref,flush=True)
+ save('shadow-points.json',allshadow);save('shadow-profiles.json',summary);save('join-profiles.json',join);save('yellow-rim.json',color);save('body-tone.json',body);save('geometry-discriminator.json',geometry)
+ assert first=={p:sha(ROOT/p) for p in first};save('first-last-hashes.json',first);save('ledger.json',ledger);save('result.json',dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),shadow_points=len(allshadow),geometry_configurations=3,native_images=0,source_RGB_optical_queries=0,selected_changed=False));print('DIAGNOSTICS COMPLETE',ledger,flush=True)
+try:run()
+except Exception as e:save('failure.json',dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),error=repr(e)));save('ledger.json',ledger);raise
