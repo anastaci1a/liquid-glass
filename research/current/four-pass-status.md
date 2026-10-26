@@ -1,9 +1,7 @@
 # Active four-pass refinement
 
-Four complete miniplayer passes run within 2026-10-26 05:17:24–15:17:24 UTC. Dispersion is excluded. Follow the [declared plan](../experiments/miniplayer-four-pass-100/README.md).
+Two full passes are independently verified. Neither is adopted: the first washes out expanded tone; the second produces an orange rim. Both remain available in the public comparisons.
 
-Pass 1 is active. The separate-tip/shoulder geometry is complete, source-supported and versioned. Its geometry-only results do not establish visible family improvement. Blur and color candidates are retained; outline, shadow, artwork and final verification remain in progress.
+The next pass tests a softer channel response and a small actual-height change. Training masks now determine parameter ranking; earlier full-mask choices remain explicitly exploratory.
 
-The current display recovery preserves completed candidates and the original outline deadline. Physical-unit normalization repairs a projection check; no source field or optical grid is repeated. All failures and setup supplements remain in the experiment folder.
-
-Working selection may now tolerate disclosed local regressions when visual review and the equal-reference normalized category score improve. Physical correctness and source support remain mandatory. Historical strict-guard reports are unchanged.
+Dispersion is excluded. The original ten-hour ceiling remains 2026-10-26 15:17:24 UTC. See the [experiment](../experiments/miniplayer-four-pass-100/README.md).
