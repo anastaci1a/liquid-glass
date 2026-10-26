@@ -104,7 +104,7 @@ try:
         positions=[(725,65),(735,65),(725,185),(735,185)] if m=='compact' else [(1160-x0,325-y0),(1280-x0,325-y0),(1400-x0,325-y0),(1160-x0,501-y0),(1280-x0,501-y0),(1400-x0,501-y0)]
         for x,y in positions:
             white.append(dict(member=m,reference=r,local_x=x,local_y=y,preimage=(d['guide'][y,x]*255).tolist(),target=(s.target_crop[y,x]*255).tolist(),old=(d['selected']['complete'][y,x]*255).tolist(),new_body=(body[y,x]*255).tolist(),new_complete=(C[y,x]*255).tolist(),outline_alpha=float(alpha[y,x])))
-        
+
         if m=='expanded' and r=='b':
             save('actual-white-cohort.json',dict(pixels=int(cohort.sum()),mean_body=(body[cohort].mean(0)*255).tolist(),mean_complete=(C[cohort].mean(0)*255).tolist(),mean_reference=(s.target_crop[cohort].mean(0)*255).tolist(),maximum_outline_alpha=float(alpha[cohort].max()),white_probe_mean=float(white_out.mean()*255)))
         save('results.json',rows);save('verification.json',verify);save('fixed-color-patches.json',white);save('render-ledger.json',ledger);print('CANDIDATE',m,r,metrics['E'],'replay',error,flush=True)
