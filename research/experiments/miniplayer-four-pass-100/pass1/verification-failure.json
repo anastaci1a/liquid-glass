@@ -1,0 +1,54 @@
+{
+  "error": "ValueError('Out of range float values are not JSON compliant: nan')",
+  "traceback": "Traceback (most recent call last):\n  File \"/repo/research/experiments/miniplayer-four-pass-100/verify_pass.py\", line 62, in <module>\n    assert first=={k:c.sha(ROOT/k) for k in first};save('verification.json',{'passed':True,'records':results,'ledger':ledger,'first_last_hashes':first,'finished':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'Independent response, power, integration and artwork reconstruction; shared original foreground chain and metrics. No retracing or source sampling.'});save('fixed-diagnostics.json',observations)\n                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/repo/research/experiments/miniplayer-four-pass-100/verify_pass.py\", line 9, in save\n    def save(n,v):(OUT/n).write_text(json.dumps(v,indent=2,allow_nan=False)+'\\n')\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n          ^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/json/encoder.py\", line 202, in encode\n    chunks = list(chunks)\n             ^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/json/encoder.py\", line 430, in _iterencode\n    yield from _iterencode_list(o, _current_indent_level)\n  File \"/usr/local/lib/python3.12/json/encoder.py\", line 326, in _iterencode_list\n    yield from chunks\n  File \"/usr/local/lib/python3.12/json/encoder.py\", line 406, in _iterencode_dict\n    yield from chunks\n  File \"/usr/local/lib/python3.12/json/encoder.py\", line 317, in _iterencode_list\n    yield buf + _floatstr(value)\n                ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/json/encoder.py\", line 240, in floatstr\n    raise ValueError(\nValueError: Out of range float values are not JSON compliant: nan\n",
+  "ledger": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 548630400,
+    "bitmap_pixels": 33072352,
+    "score_calls": 4,
+    "metric_Gaussians": 20,
+    "metric_erosions": 4,
+    "composites": 8,
+    "environment_points": 1477088,
+    "diagnostic_pixels": 32
+  },
+  "records": [
+    {
+      "member": "expanded",
+      "reference": "a",
+      "max_error": 0.0,
+      "pre_foreground_error": 0.0,
+      "metrics_exact": true,
+      "E_difference": 0.0,
+      "original_guard_decisions_match": true
+    },
+    {
+      "member": "expanded",
+      "reference": "b",
+      "max_error": 0.0,
+      "pre_foreground_error": 0.0,
+      "metrics_exact": true,
+      "E_difference": 0.0,
+      "original_guard_decisions_match": true
+    },
+    {
+      "member": "compact",
+      "reference": "a",
+      "max_error": 0.0,
+      "pre_foreground_error": 0.0,
+      "metrics_exact": true,
+      "E_difference": 0.0,
+      "original_guard_decisions_match": true
+    },
+    {
+      "member": "compact",
+      "reference": "b",
+      "max_error": 0.0,
+      "pre_foreground_error": 0.0,
+      "metrics_exact": true,
+      "E_difference": 0.0,
+      "original_guard_decisions_match": true
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+# Miniplayer: four complete refinement passes
+
+This review follows the shared compact and expanded model through contour, refraction, incident blur, color, outline, exterior shadow and artwork. Dispersion is excluded. Each completed pass retains its original failures and local tradeoffs.
+
+Drag the mask to compare identical native coordinates. Fullscreen, keyboard, touch and side-by-side controls are available. Native detail crops preserve source pixels without smoothing or alignment changes.
+
+[Research plan](../research/experiments/miniplayer-four-pass-100/README.md) · [Feedback](../research/feedback/miniplayer-four-pass.md) · [Previous proposal](miniplayer-middle-ground.md) · [Current models](reconstruction.md)
+
+Completed and independently replayed: **1 of four passes**. Numerical ranking and visual selection are separate; the original strict local guards remain reported.
+
+## Pass 1
+
+The candidate improves compact tone and all four artwork errors, but expanded body and rim errors worsen. The combined normalized score improves by approximately 1.5%; visual review keeps the candidate held. The working model is unchanged.
+
+The rim has a two-pixel plateau and a separate inward fade. All four own replays are exact. Local failures, source uncertainty and the wider-blur tradeoff remain visible below.
+
+| Reference | E | SSIM | Original partial RMSE | Normalized combined score |
+| --- | ---: | ---: | ---: | ---: |
+| expanded A | 12.9747 | 0.96655 | 63.4226 | 1.1052 |
+| expanded B | 9.7445 | 0.97766 | 17.5831 | 1.3195 |
+| compact A | 13.2608 | 0.96167 | 30.9172 | 0.7595 |
+| compact B | 12.3132 | 0.96429 | 31.1988 | 0.7545 |
+
+Combined score equally weights baseline-normalized glass, rim, exterior and artwork errors across references. Lower than one improves this numerical ranking. It is not a physical-material identification or a replacement for visual review.
+
+### Expanded A
+
+![p1-expanded-a](assets/four100-p1-expanded-a.png)
+
+### Expanded B
+
+![p1-expanded-b](assets/four100-p1-expanded-b.png)
+
+### Compact A
+
+![p1-compact-a](assets/four100-p1-compact-a.png)
+
+### Compact B
+
+![p1-compact-b](assets/four100-p1-compact-b.png)
+
+<details id="pass1-previous" data-stage="pass1-previous">
+<summary>Previous result versus pass 1</summary>
+
+![p1-expanded-a-previous](assets/four100-p1-expanded-a-previous.png)
+
+![p1-expanded-b-previous](assets/four100-p1-expanded-b-previous.png)
+
+![p1-compact-a-previous](assets/four100-p1-compact-a-previous.png)
+
+![p1-compact-b-previous](assets/four100-p1-compact-b-previous.png)
+
+</details>
+
+<details data-stage="pass1-details">
+<summary>Native cap, rim and artwork details</summary>
+
+![p1-expanded-a-left](assets/four100-p1-expanded-a-left.png)
+
+![p1-expanded-a-right](assets/four100-p1-expanded-a-right.png)
+
+![p1-expanded-b-left](assets/four100-p1-expanded-b-left.png)
+
+![p1-expanded-b-right](assets/four100-p1-expanded-b-right.png)
+
+![p1-compact-a-left](assets/four100-p1-compact-a-left.png)
+
+![p1-compact-a-right](assets/four100-p1-compact-a-right.png)
+
+![p1-compact-b-left](assets/four100-p1-compact-b-left.png)
+
+![p1-compact-b-right](assets/four100-p1-compact-b-right.png)
+
+![p1-expanded-a-yellow](assets/four100-p1-expanded-a-yellow.png)
+
+![p1-expanded-b-yellow](assets/four100-p1-expanded-b-yellow.png)
+
+</details>
+
+Recipe: incident sigma `6.6825`; rim plateau `2.0` pixels and fade `2.0` pixels; artwork scale `0.94`. [Exact results and stage choices](../research/experiments/miniplayer-four-pass-100/pass1/README.md).
+
+## Interpretation
+
+Artwork uses the original asset with a shared centered scale, upward offset and absolute corner radius. Its score includes the exposed backing in the unchanged original guard box. It does not improve the glass score by changing that mask.
+
+The outline uses incident-blurred refraction before the body grade. Chroma and peak strength remain distinct. Shadow darkens only uncovered contributions; it is excluded from lens transport. Shared optical parameters still differ only by member length.
+
+All source mosaics are conditional evidence. Reflected scene assumptions and unassigned later power remain unresolved. A better appearance does not uniquely identify the original renderer.

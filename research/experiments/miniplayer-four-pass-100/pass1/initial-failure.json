@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-26T05:26:18.845258+00:00",
+  "stage": "outline",
+  "error": "ArithmeticError('Unresolved convex-core projection')",
+  "traceback": "Traceback (most recent call last):\n  File \"/repo/research/experiments/miniplayer-four-pass-100/effects.py\", line 145, in <module>\n    try:run()\n        ^^^^^\n  File \"/repo/research/experiments/miniplayer-four-pass-100/effects.py\", line 115, in run\n    alpha=integrate_rims(d['s'].crop,d['coord'],d['center'],angular,P['profiles'],order,charge)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/repo/reconstruction/miniplayer_refinement_effects.py\", line 66, in integrate_rims\n    sd,_,_=coordinate.boundary_distance(xx-center[0],yy-center[1])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/repo/reconstruction/shoulder_core_coordinate.py\", line 68, in boundary_distance\n    d,nx,ny=self.distance_gradient(x,y)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/repo/reconstruction/shoulder_core_coordinate.py\", line 58, in distance_gradient\n    raise ArithmeticError('Unresolved convex-core projection')\nArithmeticError: Unresolved convex-core projection\n"
+}

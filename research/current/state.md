@@ -1,5 +1,7 @@
 # Current state
 
+Active: [four complete miniplayer passes](../../guide/miniplayer-four-pass.md). Pass 1 is independently verified and held for expanded regressions. All comparisons and local tradeoffs are published; dispersion is excluded.
+
 Latest: [intermediate joins, colored plateau and downward shadow](../../guide/miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
 
 Latest: [inward joins, broad shadow and color-filter comparisons](../../guide/miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.

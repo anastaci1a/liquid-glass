@@ -1,0 +1,122 @@
+{
+  "start": "2026-10-26T05:24:25.923784+00:00",
+  "deadline": "2026-10-26T07:47:24+00:00",
+  "native": "native-s1.0",
+  "shoulder_native": 1.0,
+  "caps": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 4000000000,
+    "bitmap_pixels": 80000000,
+    "identity_composites": 8,
+    "guide_composites": 128,
+    "candidate_composites": 100,
+    "replay_composites": 16,
+    "score_calls": 140,
+    "metric_Gaussians": 700,
+    "metric_erosions": 140,
+    "distance_points": 1500000000,
+    "boundary_inversions": 100000000,
+    "quadrature_nodes": 1200000000,
+    "profile_points": 3600000000,
+    "shadow_points": 20000000,
+    "shadow_filters": 6,
+    "incident_fields": 8,
+    "known_erosions": 16,
+    "source_audit_subrays": 9000000,
+    "source_corner_lookups": 40000000,
+    "RGB_queries": 9000000,
+    "environment_points": 2243200,
+    "presentation_panels": 32
+  },
+  "blur": [
+    5.4675,
+    6.075,
+    6.6825
+  ],
+  "color": [
+    {
+      "gain": 0.5552987769129158,
+      "bias": 0.3908368353448866
+    },
+    {
+      "gain": 0.56,
+      "bias": 0.4
+    },
+    {
+      "gain": 0.55,
+      "bias": 0.41
+    }
+  ],
+  "profiles": [
+    {
+      "plateau": 2.0,
+      "fade": 2.0
+    },
+    {
+      "plateau": 2.5,
+      "fade": 2.5
+    },
+    {
+      "plateau": 3.0,
+      "fade": 3.0
+    }
+  ],
+  "chroma": [
+    1.0,
+    1.35,
+    1.7
+  ],
+  "shadow": [
+    {
+      "sigma_x": 15.0,
+      "sigma_y": 15.0,
+      "offset": 5.0,
+      "opacity": 0.22
+    },
+    {
+      "sigma_x": 20.0,
+      "sigma_y": 18.0,
+      "offset": 6.0,
+      "opacity": 0.24
+    },
+    {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.26
+    }
+  ],
+  "artwork": [
+    {
+      "scale": 0.92,
+      "up": 2,
+      "radius": 19
+    },
+    {
+      "scale": 0.94,
+      "up": 3,
+      "radius": 20
+    },
+    {
+      "scale": 0.96,
+      "up": 4,
+      "radius": 21
+    }
+  ],
+  "orders": [
+    8,
+    16,
+    32
+  ],
+  "maximum_order_difference": 1e-06,
+  "selection": "Fixed candidates, no optimizer. Choose equal-reference stage-category error, report all held/local outcomes as evaluation rather than a held-out claim. Integrated comparison uses equal baseline-normalized glass/rim/exterior/artwork categories.",
+  "dispersion": "Excluded explicitly",
+  "stage_limits_minutes": {
+    "blur": 10,
+    "color": 10,
+    "outline": 25,
+    "shadow": 15,
+    "artwork": 20
+  }
+}
