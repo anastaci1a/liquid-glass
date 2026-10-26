@@ -1,0 +1,119 @@
+{
+  "start": "2026-10-26T03:47:17.612902+00:00",
+  "deadline": "2026-10-26T04:27:17.612902+00:00",
+  "scope": "Two intermediate geometries reviewed first. One chosen shared geometry for all display observations; no target fit, source query or incident-filter change. Retain blur in pre-grade guide.",
+  "caps": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 2000000000,
+    "bitmap_pixels": 150000000,
+    "identity_composites": 4,
+    "guide_composites": 4,
+    "candidate_composites": 28,
+    "replay_composites": 4,
+    "score_calls": 36,
+    "metric_Gaussians": 180,
+    "metric_erosions": 36,
+    "distance_points": 1100000000,
+    "boundary_inversions": 50000000,
+    "quadrature_nodes": 1000000000,
+    "profile_points": 2000000000,
+    "response_controls": 256,
+    "diagnostic_pixels": 10000,
+    "shadow_points": 10000000,
+    "presentation_panels": 28,
+    "shadow_composites": 12
+  },
+  "profiles": [
+    {
+      "sigma": 2.6,
+      "power": 1.5,
+      "plateau": 0.0
+    },
+    {
+      "sigma": 2.6,
+      "power": 2.0,
+      "plateau": 0.6
+    }
+  ],
+  "orders": [
+    8,
+    16
+  ],
+  "conditional_order": 32,
+  "maximum_order_difference": 1e-06,
+  "shadow_candidates": [
+    {
+      "width": 32,
+      "power": 1.5,
+      "strength": 0.13333333333333333,
+      "offset_y": 14
+    },
+    {
+      "width": 32,
+      "power": 1.5,
+      "strength": 0.13333333333333333,
+      "offset_y": 18
+    }
+  ],
+  "shadow_for_final": "Predeclared offset18 matches reported above/below asymmetry; no extra strength fit. Both settings retain all original guard failures.",
+  "color_candidates": [
+    "graded-guide without plateau",
+    "pre-grade blurred refracted guide without plateau",
+    "pre-grade blurred refracted guide with 0.6px plateau and quadratic fade"
+  ],
+  "color_for_final": "Third declared profile, only if boundedness/support/convergence pass. Experimental even if fidelity fails.",
+  "color_response": {
+    "exposure": 1.4,
+    "lift": 0.4378927114042099,
+    "desaturation": 0
+  },
+  "yellow_diagnostics": {
+    "references": [
+      "expanded-a",
+      "expanded-b"
+    ],
+    "x": [
+      1160,
+      1280,
+      1400
+    ],
+    "y": [
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      492,
+      493,
+      494,
+      495,
+      496,
+      497,
+      498,
+      499,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507
+    ],
+    "scope": "Fixed literal samples, no alignment/peak search; reported hex values have no supplied coordinates."
+  },
+  "original_guards": "All body/held/exterior/foreground and16/22 frozen partial pixels; no mask change.",
+  "compositor_accounting": "Four identity compositor calls, four raw-guide foreground calls and twelve distinct shadow foreground calls; twenty-eight output-response candidates and four algebraic replays are separate categories."
+}

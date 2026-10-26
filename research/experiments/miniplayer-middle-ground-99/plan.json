@@ -1,0 +1,49 @@
+{
+  "start": "2026-10-26T03:42:32.905092+00:00",
+  "deadline": "2026-10-26T05:22:32.905092+00:00",
+  "stop_condition": "Two intermediate geometries, isolated directional-shadow and color-source/profile tests, one combined display, own verification and public sliders.",
+  "stages": [
+    {
+      "name": "two_geometries",
+      "maximum_minutes": 35
+    },
+    {
+      "name": "separate_shadow_edge_and_combination",
+      "maximum_minutes": 40
+    },
+    {
+      "name": "own_verification_and_publication",
+      "maximum_minutes": 25
+    }
+  ],
+  "selection": "Two intermediate shared geometries. Choose lower equal-reference mean E for downstream display investigation, subject to visual review; this uses evaluation evidence and is not held-out validation. No family adoption without all original guards.",
+  "geometry_deadline": "2026-10-26T04:17:32.905092+00:00",
+  "geometry_checkpoint_deadline": "2026-10-26T03:52:32.905092+00:00",
+  "geometry_caps": {
+    "fixture_rays": 128,
+    "native_rays": 2243200,
+    "height_point_queries": 180000000,
+    "coordinate_queries": 600000000,
+    "projection_iteration_points": 12000000000,
+    "source_audit_subrays": 4486400,
+    "source_corner_lookups": 40000000,
+    "incident_fields": 4,
+    "known_erosions": 8,
+    "RGB_queries": 4486400,
+    "candidate_composites": 4,
+    "identity_composites": 4,
+    "Studies": 4,
+    "total_bitmap_pixels": 64000000,
+    "numeric_payload_bytes": 2147483648,
+    "geometry_configurations": 1
+  },
+  "original_masks": "Retain 16 expanded and22 compact partial pixels per reference; all original body/held/exterior/foreground guards. New coverage is supplementary, not replacement.",
+  "dilation_reduction_native": 2,
+  "incident_sigma": 6.075,
+  "incident_radius": 19,
+  "dilation_reductions_native": [
+    0.75,
+    1.25
+  ],
+  "geometry_cap_scope": "Per radius setting; twice these reservations across exactly two settings. No third setting."
+}
