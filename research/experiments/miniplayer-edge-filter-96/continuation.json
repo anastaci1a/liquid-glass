@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-26T01:56:00.000105+00:00",
+  "cause": "Exact-white endpoint assertion failed because sRGB encoding returns one minus floating roundoff for unit linear white. No bitmap, cache, candidate or score ran.",
+  "fix": "Explicitly preserve exact white input pixels at one. This is the analytic fixed point, not a candidate clipping or guard tolerance.",
+  "old_controls_retained": {
+    "Studies": 0,
+    "mask_points": 0,
+    "numeric_bytes": 0,
+    "bitmap_pixels": 0,
+    "identity_composites": 0,
+    "candidate_composites": 0,
+    "score_calls": 0,
+    "metric_Gaussians": 0,
+    "metric_erosions": 0,
+    "distance_points": 0,
+    "response_controls": 10
+  },
+  "clock_unchanged": true
+}

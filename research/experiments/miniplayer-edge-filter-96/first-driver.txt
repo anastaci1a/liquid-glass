@@ -1,0 +1,51 @@
+"""Three finite display-filter endpoints and one broad exterior shadow."""
+from pathlib import Path
+import sys,json,datetime,hashlib
+ROOT=Path(__file__).resolve().parents[3];OUT=Path(__file__).parent;sys.path.insert(0,str(ROOT/'research/experiments/miniplayer-complete-refinement-94'))
+from material_common import *
+from ellipse_core_coordinate import EllipseCoreCoordinate
+from ellipse_edge_effects import color_lift
+from edge_color_filter import edge_filter
+P=json.loads((OUT/'protocol.json').read_text());END=datetime.datetime.fromisoformat(P['deadline']);ledger=dict.fromkeys(P['caps'],0);first={}
+def save(n,x):(OUT/n).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
+def charge(k,n):
+ assert datetime.datetime.now(datetime.timezone.utc)<END
+ assert ledger[k]+n<=P['caps'][k],(k,ledger[k],n);ledger[k]+=int(n)
+ if k=='score_calls':charge('metric_Gaussians',5*n);charge('metric_erosions',n)
+fx=metric_functions(charge);score=fx['score']
+def array(p,key):
+ first[str(p.relative_to(ROOT))]=sha(p)
+ with np.load(p) as z:v=z[key];charge('numeric_bytes',v.nbytes);return v
+
+def run():
+ assert not (OUT/'started.json').exists();save('started.json',dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat()))
+ for p in [Path(__file__),ROOT/'reconstruction/edge_color_filter.py',ROOT/'reconstruction/ellipse_edge_effects.py']:first[str(p.relative_to(ROOT))]=sha(p)
+ samples=np.array([[0.,0.,0.],[1.,1.,1.],[.8,.7,.05],[.2,.2,.2],[.1,.4,.8]])
+ controls=[]
+ for cfg in P['filters']:
+  for a in [0.,.5,1.]:
+   charge('response_controls',len(samples));v=edge_filter(samples,np.full(len(samples),a),**cfg)
+   if a==0:assert np.array_equal(v,samples)
+   else:assert 0<v[0,0]<.5 and np.max(abs(v[0]-v[0,0]))<1e-14
+   assert np.array_equal(v[1],samples[1]);assert v[2,0]>v[2,1]>v[2,2] and v[2].max()<1
+   controls.append(dict(config=cfg,alpha=a,outputs=v.tolist()))
+ save('response-controls.json',controls);data=load_data(charge,first);oldfit=json.loads((BASE/'highlight/result.json').read_text())['development'];alpha={};old={}
+ for member in ['expanded','compact']:
+  alpha[member]=array(BASE/f'highlight/{member}-order16.npz','alpha')
+ for (member,k),d in data.items():
+  p=BASE/f'shadow/{member}-{k}-s0.1.npz';d['short_shadow']=array(p,'complete');old[(member,k)]=array(BASE/f'highlight/{member}-{k}-combined.npz','complete');charge('identity_composites',1);C=color_lift(d['short_shadow'],alpha[member],oldfit['exposure'],oldfit['desaturation']);assert np.array_equal(C,old[(member,k)],equal_nan=True);before=score(d['s'],C,d['m'],d['partial'],d['crops']);assert before==json.loads((BASE/f'highlight/{member}-{k}-combined-metrics.json').read_text())['scores'];d['previous']=before
+ save('checkpoint.json',dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),old_identities_exact=True,black_gray_and_yellow_controls=True))
+ rows=[];losses=[]
+ for j,cfg in enumerate(P['filters']):
+  loss=[]
+  for (member,k),d in data.items():
+   charge('candidate_composites',1);C=edge_filter(d['short_shadow'],alpha[member],**cfg);now=score(d['s'],C,d['m'],d['partial'],d['crops']);row=dict(member=member,reference=k,candidate=j,config=cfg,scores=now,original_guards=guards(now,d['original']),previous_guards=guards(now,d['previous']));rows.append(row);prefix=f'{member}-{k}-f{j}';np.savez_compressed(OUT/f'{prefix}.npz',complete=C);save(prefix+'-metrics.json',row);dd=dict(d);dd['old']=old[(member,k)];panels(OUT,prefix,dd,C,fx['to_image'],'Finite edge filter; black lifts to gray');train=d['train'];loss.append(float(np.mean((C[train]-d['s'].target_crop[train])**2)))
+  losses.append(float(np.mean(loss)))
+ shadow=[];sp=P['shadow'];fields={}
+ for member in ['expanded','compact']:
+  d=data[(member,'a')];s=d['s'];H,W=s.valid.shape;x0,y0,_,_=s.crop;yy,xx=np.mgrid[:2*H,:2*W];charge('distance_points',xx.size);sd,_,_=EllipseCoreCoordinate(tuple(d['half']),d['radius']).boundary_distance(x0+xx*.5-.25-d['center'][0],y0+yy*.5-.25-d['center'][1]-sp['offset_y']);fields[member]=np.exp(-(np.maximum(sd,0)/sp['width'])**sp['power']);np.savez_compressed(OUT/f'{member}-broad-shadow-field.npz',field=fields[member])
+ for (member,k),d in data.items():
+  z,s=d['z'],d['s'];H,W=s.valid.shape;v=z['encoded_subrays'].copy();clear=~z['inside']&z['supported'];v[clear]*=1-sp['strength']*fields[member][clear,None];assert np.array_equal(v[z['inside']],z['encoded_subrays'][z['inside']]);pre=v.reshape(H,2,W,2,3).mean((1,3)).astype(np.float32);body=s.apply_foreground(pre.copy());full=z['coverage']==1;assert np.array_equal(body[full],z['complete'][full]);charge('candidate_composites',1);C=color_lift(body,alpha[member],oldfit['exposure'],oldfit['desaturation']);now=score(s,C,d['m'],d['partial'],d['crops']);row=dict(member=member,reference=k,scores=now,original_guards=guards(now,d['original']),previous_guards=guards(now,d['previous']));shadow.append(row);prefix=f'{member}-{k}-broad-shadow';np.savez_compressed(OUT/f'{prefix}.npz',pre_foreground=pre,body_complete=body,complete=C);save(prefix+'-metrics.json',row);dd=dict(d);dd['old']=old[(member,k)];panels(OUT,prefix,dd,C,fx['to_image'],'Broad exterior shadow; old94 highlight')
+ save('result.json',dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),records=rows,shadow=shadow,training_losses=losses,development_filter=int(np.argmin(losses)),selected_changed=False));assert first=={p:sha(ROOT/p) for p in first};save('hashes.json',first);save('ledger.json',ledger);print('FILTER COMPLETE',losses,flush=True)
+try:run()
+except Exception as e:save('failure.json',dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),error=repr(e)));save('ledger.json',ledger);raise

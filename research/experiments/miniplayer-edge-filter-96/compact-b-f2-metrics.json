@@ -1,0 +1,91 @@
+{
+  "member": "compact",
+  "reference": "b",
+  "candidate": 2,
+  "config": {
+    "exposure": 1.4,
+    "lift": 0.05,
+    "desaturation": 0.15
+  },
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 17.785484313964844
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 19.107084274291992
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 17.982608795166016
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 16.914905548095703
+    },
+    "ssim": 0.9652466773986816,
+    "loss": 330.9506174370715,
+    "E": 18.192048192467816,
+    "exterior": 12.069674491882324,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 27.08445930480957
+    },
+    "foreground": {
+      "jupiter.jpg": 1909.2564697265625,
+      "title.svg": 452.2868347167969,
+      "artist.svg": 111.34312438964844,
+      "play.svg": 141.84059143066406,
+      "forward.svg": 271.4688720703125
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 21.158246994018555,
+        "luma_signed": -7.385768116396138
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 17.85230827331543,
+        "luma_signed": -3.7703103969628273
+      },
+      "left_cap": {
+        "RGB_RMSE": 16.307268142700195,
+        "luma_signed": -3.8106112100261313
+      },
+      "body": {
+        "RGB_RMSE": 15.82078742980957,
+        "luma_signed": -9.05996601563735
+      }
+    }
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": true,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "previous_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": true,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  }
+}
