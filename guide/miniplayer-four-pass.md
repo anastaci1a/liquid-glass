@@ -6,7 +6,7 @@ Drag the mask to compare identical native coordinates. Fullscreen, keyboard, tou
 
 [Research plan](../research/experiments/miniplayer-four-pass-100/README.md) · [Feedback](../research/feedback/miniplayer-four-pass.md) · [Previous proposal](miniplayer-middle-ground.md) · [Current models](reconstruction.md)
 
-Completed and independently replayed: **2 of four passes**. Numerical ranking and visual selection are separate; the original strict local guards remain reported.
+Completed and independently replayed: **3 of four passes**. Numerical ranking and visual selection are separate; the original strict local guards remain reported.
 
 ## Pass 1
 
@@ -149,6 +149,77 @@ Combined score equally weights baseline-normalized glass, rim, exterior and artw
 </details>
 
 Recipe: incident sigma `6.37875`; rim plateau `2.0` pixels and fade `2.0` pixels; artwork scale `0.95`. [Exact results and stage choices](../research/experiments/miniplayer-four-pass-100/pass2/README.md).
+
+## Pass 3
+
+This is the strongest candidate so far, with a combined normalized score of 0.91290. The softer response restores yellow without the orange contour of pass two. Compact tone and artwork improve; expanded and partial-boundary regressions remain.
+
+All four independent output and metric replays are exact. This is a provisional visual candidate, not full fidelity acceptance. The fourth pass tests nearby geometry, plateau width and shadow falloff before final selection.
+
+| Reference | E | SSIM | Original partial RMSE | Normalized combined score |
+| --- | ---: | ---: | ---: | ---: |
+| expanded A | 12.3182 | 0.96793 | 53.9024 | 1.0436 |
+| expanded B | 6.9609 | 0.97969 | 16.4711 | 1.0404 |
+| compact A | 13.4937 | 0.96510 | 23.1769 | 0.7643 |
+| compact B | 13.4321 | 0.96300 | 23.4438 | 0.8033 |
+
+Combined score equally weights baseline-normalized glass, rim, exterior and artwork errors across references. Lower than one improves this numerical ranking. It is not a physical-material identification or a replacement for visual review.
+
+### Expanded A
+
+![p3-expanded-a](assets/four100-p3-expanded-a.png)
+
+### Expanded B
+
+![p3-expanded-b](assets/four100-p3-expanded-b.png)
+
+### Compact A
+
+![p3-compact-a](assets/four100-p3-compact-a.png)
+
+### Compact B
+
+![p3-compact-b](assets/four100-p3-compact-b.png)
+
+<details id="pass3-previous" data-stage="pass3-previous">
+<summary>Previous result versus pass 3</summary>
+
+![p3-expanded-a-previous](assets/four100-p3-expanded-a-previous.png)
+
+![p3-expanded-b-previous](assets/four100-p3-expanded-b-previous.png)
+
+![p3-compact-a-previous](assets/four100-p3-compact-a-previous.png)
+
+![p3-compact-b-previous](assets/four100-p3-compact-b-previous.png)
+
+</details>
+
+<details data-stage="pass3-details">
+<summary>Native cap, rim and artwork details</summary>
+
+![p3-expanded-a-left](assets/four100-p3-expanded-a-left.png)
+
+![p3-expanded-a-right](assets/four100-p3-expanded-a-right.png)
+
+![p3-expanded-b-left](assets/four100-p3-expanded-b-left.png)
+
+![p3-expanded-b-right](assets/four100-p3-expanded-b-right.png)
+
+![p3-compact-a-left](assets/four100-p3-compact-a-left.png)
+
+![p3-compact-a-right](assets/four100-p3-compact-a-right.png)
+
+![p3-compact-b-left](assets/four100-p3-compact-b-left.png)
+
+![p3-compact-b-right](assets/four100-p3-compact-b-right.png)
+
+![p3-expanded-a-yellow](assets/four100-p3-expanded-a-yellow.png)
+
+![p3-expanded-b-yellow](assets/four100-p3-expanded-b-yellow.png)
+
+</details>
+
+Recipe: incident sigma `6.37875`; rim plateau `2.0` pixels and fade `2.0` pixels; artwork scale `0.95`. [Exact results and stage choices](../research/experiments/miniplayer-four-pass-100/pass3/README.md).
 
 ## Interpretation
 

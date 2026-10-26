@@ -1,0 +1,127 @@
+{
+  "start": "2026-10-26T06:26:12.474987+00:00",
+  "deadline": "2026-10-26T08:56:12.474987+00:00",
+  "native": "native-pass3",
+  "shoulder_native": 0.5,
+  "caps": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 4000000000,
+    "bitmap_pixels": 80000000,
+    "identity_composites": 8,
+    "guide_composites": 128,
+    "candidate_composites": 100,
+    "replay_composites": 16,
+    "score_calls": 140,
+    "metric_Gaussians": 700,
+    "metric_erosions": 140,
+    "distance_points": 1500000000,
+    "boundary_inversions": 100000000,
+    "quadrature_nodes": 1200000000,
+    "profile_points": 3600000000,
+    "shadow_points": 20000000,
+    "shadow_filters": 6,
+    "incident_fields": 8,
+    "known_erosions": 16,
+    "source_audit_subrays": 9000000,
+    "source_corner_lookups": 40000000,
+    "RGB_queries": 9000000,
+    "environment_points": 2243200,
+    "presentation_panels": 32,
+    "training_channel_reductions": 1000000000
+  },
+  "blur": [
+    5.77125,
+    6.075,
+    6.37875
+  ],
+  "color": [
+    {
+      "gain": 0.5552987769129158,
+      "bias": 0.39083683534488656,
+      "low_lift": 0
+    },
+    {
+      "gain": 0.5552987769129158,
+      "bias": 0.39083683534488656,
+      "low_lift": 0.08
+    },
+    {
+      "gain": 0.5552987769129158,
+      "bias": 0.39083683534488656,
+      "low_lift": 0.16
+    }
+  ],
+  "profiles": [
+    {
+      "plateau": 2.0,
+      "fade": 2.0
+    },
+    {
+      "plateau": 2.0,
+      "fade": 2.0
+    },
+    {
+      "plateau": 2.0,
+      "fade": 2.0
+    }
+  ],
+  "shadow": [
+    {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.2
+    },
+    {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.23
+    },
+    {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.26
+    }
+  ],
+  "artwork": [
+    {
+      "scale": 0.95,
+      "up": 3,
+      "radius": 18
+    },
+    {
+      "scale": 0.95,
+      "up": 3,
+      "radius": 20
+    },
+    {
+      "scale": 0.95,
+      "up": 3,
+      "radius": 22
+    }
+  ],
+  "orders": [
+    8,
+    16,
+    32
+  ],
+  "maximum_order_difference": 1e-06,
+  "selection": "Equal-reference normalized training-only cohort error. Held pixels excluded before candidate ranking. All original evaluation guards retained.",
+  "dispersion": "Excluded explicitly",
+  "stage_limits_minutes": {
+    "blur": 10,
+    "color": 10,
+    "outline": 25,
+    "shadow": 15,
+    "artwork": 20
+  },
+  "response": "Soft per-channel linear-light highlight with low-luminance neutral floor",
+  "curve_power": [
+    1.75,
+    2.0,
+    2.25
+  ]
+}
