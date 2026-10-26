@@ -1,0 +1,19 @@
+BASELINE CHECKPOINT REUSED
+MOMENTS expanded 32 None
+Traceback (most recent call last):
+  File "/repo/research/experiments/miniplayer-outline-taper-107/refine.py", line 54, in <module>
+    moments=integrate_taper(d['s'].crop,coord,working_center(d['center']),F['material']['outline']['angular'],P,order,charge)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/repo/reconstruction/miniplayer_outline_taper.py", line 32, in integrate_taper
+    charge('distance_points',len(w));d,_,_=coordinate.boundary_distance(pts[:,0],pts[:,1])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/repo/reconstruction/shoulder_core_coordinate.py", line 69, in boundary_distance
+    d,nx,ny=self.distance_gradient(x,y)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/repo/reconstruction/shoulder_core_coordinate.py", line 45, in distance_gradient
+    c,s=np.cos(t),np.sin(t);h,hp,hpp=(q/unit for q in self.support(t))
+                                                      ^^^^^^^^^^^^^^^
+  File "/repo/reconstruction/shoulder_core_coordinate.py", line 33, in support
+    return (e+8*d-d*np.sin(2*t)**2,
+                    ^^^^^^^^^^^
+KeyboardInterrupt

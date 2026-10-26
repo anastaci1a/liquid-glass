@@ -52,3 +52,5 @@ The [completed investigation](../experiments/miniplayer-stronger-joins-98/README
 [Final-output white and artwork correction](miniplayer-final-white.md) supersede the grading-stage white target and two-pixel rim plateau.
 
 [Stronger yellow outline and artwork enlargement](miniplayer-yellow-match.md) records the revised exact color target and deferred comparison observation.
+
+- [Hue-preserving horizontal outline taper](miniplayer-outline-taper.md).
