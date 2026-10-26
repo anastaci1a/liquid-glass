@@ -1,5 +1,7 @@
 # Current state
 
+The [native cap-join checkpoint](../experiments/miniplayer-join-inspection-92/README.md) identifies the current contour’s curvature discontinuity and repeatable compact lower intensity offsets. A smooth ellipse-plus-disk contour is proposed with unchanged extrema, not fitted or adopted. Exterior shadow and color-aware highlight work follow the geometry assessment.
+
 The [five-pass outline study](../experiments/miniplayer-outline-series-91/README.md) is complete. Wider fades, brightness endpoints, angular changes and mixed responses improve some references, but no shared setting passes every guard. Working20 remains selected. [Interactive comparisons](../../guide/outline-review.md) expose every setting and the starting model.
 
 The current outline convention is a separate effect composited over the completed reconstruction. Refraction and incident blur remain fixed during outline trials. The immediate target is one extremely thin outer highlight with a smooth inward fade, replacing the visually incorrect doubled contour. Uniform white strength around the miniplayer remains a hypothesis.

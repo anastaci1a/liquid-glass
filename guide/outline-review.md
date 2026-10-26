@@ -1,5 +1,7 @@
 # Miniplayer outline: five-pass comparison
 
+**New shape checkpoint:** [Inspect native cap joins and the smooth-contour proposal](../research/experiments/miniplayer-join-inspection-92/README.md). These observations precede shadow and color-aware highlight changes; the five-pass results below remain unchanged.
+
 Five outline passes are complete. **No candidate passed every original family guard**, so the starting model remains the incumbent. The proposals below show useful local changes and their regressions, rather than an accepted replacement.
 
 **Drag the divider** to compare aligned pixels. Use **Side by side** or **Fullscreen** for a larger view. The handle also supports touch, arrow keys, Home and End. Reference and result have identical native crop coordinates; no image alignment was changed for presentation.

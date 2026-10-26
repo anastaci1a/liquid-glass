@@ -1,0 +1,22 @@
+{
+  "clock_unchanged": true,
+  "failures": [
+    {
+      "driver": "initial-driver-source.txt",
+      "reason": "Filename inspect.py shadowed the Python standard-library inspect module during NumPy initialization. Reentrant module inspection reached metadata/header preparation; no bitmap or numeric payload was decoded. Renamed to observe.py."
+    },
+    {
+      "driver": "header-failure-source.txt",
+      "reason": "Private NumPy _read_array_header is unavailable. Replaced with public version-specific header readers before payload decoding."
+    }
+  ],
+  "first_successful_checkpoint": "2026-10-26T00:22:25.476728+00:00",
+  "scientific_observation_executions": 1,
+  "presentation_warning": "Conversion of the full cached float image to display bytes encountered unavailable NaNs before crop extraction. They remain unavailable in the original cache; display conversion uses black. Every recorded native profile sample passed a finite check. The displayed crops are diagnostics, not rescored candidates.",
+  "profile_counter_scope": {
+    "paired_positions": 139264,
+    "target_and_working_RGB_triplets": 278528,
+    "channels": 835584,
+    "note": "As-run native_profile_pixels counts positions across two fields, not combined triplets."
+  }
+}

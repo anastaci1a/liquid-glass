@@ -1,0 +1,21 @@
+{
+  "start": "2026-10-26T00:21:21.845040+00:00",
+  "checkpoint_deadline": "2026-10-26T00:26:21.845040+00:00",
+  "deadline": "2026-10-26T00:46:21.845040+00:00",
+  "pin": "b496caabad800218e4924a8cd79b59ac66e2d53c",
+  "question": "Do native cap-to-body transitions and long sides support a shared smooth contour correction distinct from highlight/shadow intensity?",
+  "frozen": "working20 family and four original cases, target hashes, centers, masks, foreground, sources and selected state",
+  "method": "Read four original target bitmaps and four saved complete arrays. Direct native integer samples at every column over long sides plus64px into each cap, seventeen vertical rows centered on the frozen contour. Retain RGB, brightest-row and largest adjacent encoded-luminance-gradient locations as descriptive intensity features, never alpha or fitted silhouette. Fixed32px bins and center-to-join summaries, no thresholds or optimizer. Four join crop panels and one side overview per case; exact native crop bytes, enlarged by nearest-neighbor for inspection only.",
+  "caps": {
+    "target_bitmap_pixels": 9000000,
+    "cache_numeric_bytes": 64000000,
+    "native_profile_pixels": 200000,
+    "diagnostic_png_exports": 8,
+    "model_trials": 0,
+    "optical_calls": 0,
+    "fits": 0
+  },
+  "shadow_followup": "Separate exterior-only compositor on supported contour; no optical shadow.",
+  "outline_followup": "Separate color-aware brightness/desaturation response, not pure white identification.",
+  "stop": "Missing hash, shape mismatch, cap or clock stops before dependent observations. New shape/optical rendering requires separate reviewed protocol; checkpoint returns geometry evidence first."
+}

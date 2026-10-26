@@ -1,0 +1,78 @@
+"""Native image-plane join observations; no optical or fitted contour model."""
+from pathlib import Path
+import datetime, hashlib, json, zipfile
+import numpy as np
+from PIL import Image,ImageDraw,ImageFont
+ROOT=Path(__file__).resolve().parents[3];OUT=Path(__file__).parent
+P=json.loads((OUT/'protocol.json').read_text());END=datetime.datetime.fromisoformat(P['deadline']);ledger={k:0 for k in P['caps']}
+def save(n,x):(OUT/n).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def charge(k,n):
+ assert datetime.datetime.now(datetime.timezone.utc)<END,'Clock';assert ledger[k]+n<=P['caps'][k],k
+ ledger[k]+=int(n);save('ledger.json',ledger)
+font=ImageFont.load_default(size=14);first={};inventory=[];cases=[]
+F=json.loads((ROOT/'reconstruction/families/music-mini-player-working.json').read_text());L=F['length_unit_native_pixels'];b=L*F['geometry']['minor_half'];r=L*F['geometry']['corner_radius'];assert F['geometry']['cap_join_width']==0
+for member in ['expanded','compact']:
+ work=ROOT/f'.evidence-working/{member}-geometry-0'+Path('2') if False else ROOT/f'.evidence-working/{member}-geometry-0{2 if member=="expanded" else 1}'
+ center=json.loads((ROOT/'reconstruction/studies/geometric-expanded-pipeline/summary.json').read_text())['geometry']['center']
+ if member=='compact':
+  case=json.loads((work/'a/case.json').read_text());prior=json.loads((ROOT/'reconstruction/studies/music-mini-compact-vector/review-round/pass-03.json').read_text())['parameters'];center=[case['center'][0]+L*prior['shape_dx'],case['center'][1]+L*prior['shape_dy']]
+ a=L*F['members'][member]['major_half']
+ for ref in ['a','b']:
+  cp=work/ref/'case.json';tp=work/ref/'target.png';zp=ROOT/f'research/experiments/miniplayer-incident-material-20/{member}-{ref}-factor0.5.npz';case=json.loads(cp.read_text());assert sha(tp)==case['source_sha256']['target.png']
+  for f in [cp,tp,zp]:first[str(f.relative_to(ROOT))]=sha(f)
+  with Image.open(tp) as im:shape=im.size
+  with zipfile.ZipFile(zp) as z:
+   with z.open('complete.npy') as f:
+    version=np.lib.format.read_magic(f);arrshape,order,dtype=np.lib.format._read_array_header(f,version)
+  assert len(arrshape)==3 and arrshape[2]==3 and dtype==np.dtype('float32')
+  inventory.append({'member':member,'reference':ref,'target_size':list(shape),'complete_shape':list(arrshape),'complete_bytes':int(np.prod(arrshape))*dtype.itemsize})
+  cases.append((member,ref,case,tp,zp,center,a))
+assert sum(x['target_size'][0]*x['target_size'][1] for x in inventory)<=P['caps']['target_bitmap_pixels'];assert sum(x['complete_bytes'] for x in inventory)<=P['caps']['cache_numeric_bytes']
+for f in [Path(__file__),ROOT/'reconstruction/families/music-mini-player-working.json',ROOT/'reconstruction/rounded_rectangle_back.py',ROOT/'research/experiments/agent-miniplayer-registration-54/frozen-contours.json']:
+ first[str(f.relative_to(ROOT))]=sha(f)
+save('first-hashes.json',first);save('inventory.json',inventory)
+now=datetime.datetime.now(datetime.timezone.utc);assert now<datetime.datetime.fromisoformat(P['checkpoint_deadline']);save('checkpoint.json',{'at':now.isoformat(),'hashes_and_headers_pass':True,'all_payloads_still_unread':True});print('CHECKPOINT',now.isoformat(),flush=True)
+summary=[];rows=[];bins=[];lum=np.array([.2126,.7152,.0722]);offsets=np.arange(-8,9)
+for member,ref,case,tp,zp,center,a in cases:
+ cx,cy=center;core=a-r;x0,y0,x1,y1=case['crop']
+ charge('target_bitmap_pixels',1920*1080);target=np.array(Image.open(tp).convert('RGB'))
+ item=next(x for x in inventory if x['member']==member and x['reference']==ref);charge('cache_numeric_bytes',item['complete_bytes'])
+ with np.load(zp) as z:complete=z['complete']
+ assert complete.shape==(y1-y0,x1-x0,3)
+ # Integer X and nearest Y retain phase: positive radial offset always outward.
+ xs=np.arange(int(np.ceil(cx-core-64)),int(np.floor(cx+core+64))+1);d=np.maximum(abs(xs-cx)-core,0);extent=b-r+np.sqrt(r*r-d*d)
+ sheets=[]
+ overview=Image.new('RGB',(len(xs),4*33+56),'white');ov=ImageDraw.Draw(overview);ov.text((3,2),f'{member} {ref}: native top / bottom bands; reference then working20',font=font,fill='black')
+ for sign,label in [(-1,'top'),(1,'bottom')]:
+  edge=cy+sign*extent;ys=np.floor(edge+.5).astype(int)[:,None]+sign*offsets
+  charge('native_profile_pixels',len(xs)*len(offsets));rgb=target[ys,xs[:,None]];work=complete[ys-y0,xs[:,None]-x0]*255
+  assert np.isfinite(work).all();t=rgb@lum;w=work@lum
+  peak=np.argmax(t,axis=1);diff=np.diff(t,axis=1);grad=np.argmax(abs(diff),axis=1)
+  delta=(ys-edge[:,None])*sign;features=[]
+  for i,x in enumerate(xs):
+   fg=any(aa<=x<cc and np.any((ys[i]>=bb)&(ys[i]<dd)) for aa,bb,cc,dd in (z['box'] for z in case['foreground_layers']))
+   q={'member':member,'reference':ref,'side':label,'x':int(x),'frozen_y':float(edge[i]),'sample_y':ys[i].tolist(),'outward_offsets':delta[i].tolist(),'target_rgb':rgb[i].tolist(),'working_rgb':work[i].tolist(),'peak_offset':float(delta[i,peak[i]]),'peak_at_window_end':bool(peak[i] in [0,16]),'largest_gradient_offset':float((delta[i,grad[i]]+delta[i,grad[i]+1])/2),'largest_gradient_signed':float(diff[i,grad[i]]),'foreground_box_intersection':fg}
+   rows.append(q);features.append(q)
+  for left in range(0,len(xs),32):
+   sub=features[left:left+32];bins.append({'member':member,'reference':ref,'side':label,'x_first':sub[0]['x'],'x_last':sub[-1]['x'],'peak_median':float(np.median([q['peak_offset'] for q in sub])),'gradient_median':float(np.median([q['largest_gradient_offset'] for q in sub])),'median_gradient_magnitude':float(np.median([abs(q['largest_gradient_signed']) for q in sub])),'peak_window_end_count':sum(q['peak_at_window_end'] for q in sub),'foreground_columns':sum(q['foreground_box_intersection'] for q in sub)})
+  # Fixed zones have no optimizer or data-selected position.
+  zones={'center':abs(xs-cx)<=32,'left_join':abs(xs-(cx-core))<=16,'right_join':abs(xs-(cx+core))<=16,'left_mid':abs(xs-(cx-core*.5))<=16,'right_mid':abs(xs-(cx+core*.5))<=16}
+  for name,mask in zones.items():
+   ix=np.flatnonzero(mask);summary.append({'member':member,'reference':ref,'side':label,'zone':name,'count':len(ix),'peak_median':float(np.median([features[i]['peak_offset'] for i in ix])),'gradient_median':float(np.median([features[i]['largest_gradient_offset'] for i in ix])),'median_gradient_magnitude':float(np.median([abs(features[i]['largest_gradient_signed']) for i in ix])),'window_end_peaks':sum(features[i]['peak_at_window_end'] for i in ix)})
+  base=28+(0 if sign==-1 else 66)
+  overview.paste(Image.fromarray(rgb.transpose(1,0,2)),(0,base));overview.paste(Image.fromarray(np.uint8(np.clip(work.transpose(1,0,2),0,255))),(0,base+25))
+  for side in [-1,1]:
+   jx=int(np.floor(cx+side*core+.5));jy=int(np.floor(cy+sign*b+.5));box=(jx-96,jy-24,jx+96,jy+24);raw=Image.fromarray(target).crop(box);pred=Image.fromarray(np.uint8(np.clip(complete*255,0,255))).crop((box[0]-x0,box[1]-y0,box[2]-x0,box[3]-y0))
+   # Label contour on a separate duplicate, never burn into the reference panel.
+   mark=raw.copy();draw=ImageDraw.Draw(mark);px=np.arange(box[0],box[2]);qx=np.maximum(abs(px-cx)-core,0);yy=cy+sign*(b-r+np.sqrt(np.maximum(r*r-qx*qx,0)));draw.line([(float(x-box[0]),float(y-box[1])) for x,y in zip(px,yy)],fill=(255,0,255),width=1)
+   sheets.append((f'{label} {"left" if side<0 else "right"}: reference | working20 | reference + frozen contour',raw,pred,mark,box))
+  ov.line((0,base+17,len(xs),base+17),fill='#aaa')
+ charge('diagnostic_png_exports',1);overview.save(OUT/f'{member}-{ref}-side-bands.png')
+ sheet=Image.new('RGB',(192*3*3,4*(48*3+28)),'#eee');sd=ImageDraw.Draw(sheet)
+ for i,(title,raw,pred,mark,box) in enumerate(sheets):
+  top=i*(48*3+28);sd.text((5,top+5),f'{title}; native box {box}',font=font,fill='black')
+  for j,im in enumerate([raw,pred,mark]):sheet.paste(im.resize((576,144),Image.Resampling.NEAREST),(j*576,top+28))
+ charge('diagnostic_png_exports',1);sheet.save(OUT/f'{member}-{ref}-joins.png')
+save('profiles.json',{'role':'Literal image-plane brightness observations, not silhouette or alpha measurements','rows':rows});save('bins.json',bins);save('summary.json',summary)
+last={f:sha(ROOT/f) for f in first};assert last==first;save('last-hashes.json',last);save('result.json',{'finished':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'OBSERVATIONS_READY_NO_CONTOUR_FIT','ledger':ledger,'native_columns':len(rows),'selected_state_changed':False});print(json.dumps({'ledger':ledger,'columns':len(rows)}),flush=True)

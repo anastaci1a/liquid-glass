@@ -26,3 +26,9 @@ The confirmed cap pattern fades from lower-right toward upper-right on the right
 The approved [five-pass study](../experiments/miniplayer-outline-series-91/README.md) verifies registration first and provides draggable reference/result and starting-model/result comparisons. Original guards and rejected candidates stay visible.
 
 The five approved outline passes are complete. No family qualifier was found; [all comparisons](../../guide/outline-review.md) remain available for direct visual feedback. Current sizing is retained with uncertainty.
+
+## Color-aware highlight, smooth joins and exterior shadow
+
+The inner-edge highlight should brighten the underlying color with slight desaturation rather than erase it into white. Cap/body transitions may have continuous curvature, with subtly convex long sides. A slight shadow should affect only the exterior, separately from refraction.
+
+The [native join checkpoint](../experiments/miniplayer-join-inspection-92/README.md) inspects these regions before any shape replacement. Geometry validation precedes separate shadow and highlight comparisons; original masks and shared-family requirements remain fixed.
