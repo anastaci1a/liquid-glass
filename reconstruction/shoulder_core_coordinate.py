@@ -37,11 +37,12 @@ class ShoulderCoreCoordinate:
         x,y=np.broadcast_arrays(np.asarray(x,float),np.asarray(y,float))
         if not np.isfinite(x).all() or not np.isfinite(y).all():raise ValueError('Finite positions required')
         if self.counter is not None:self.counter('coordinate_queries',x.size)
-        u,v=np.abs(x),np.abs(y);lo=np.zeros_like(u);hi=np.full_like(u,np.pi/2)
+        unit=self.original_radius
+        u,v=np.abs(x)/unit,np.abs(y)/unit;lo=np.zeros_like(u);hi=np.full_like(u,np.pi/2)
         t=np.arctan2(v,u);active=np.ones_like(u,dtype=bool)
         for _ in range(64):
             if self.counter is not None:self.counter('projection_iteration_points',int(active.sum()))
-            c,s=np.cos(t),np.sin(t);h,hp,hpp=self.support(t)
+            c,s=np.cos(t),np.sin(t);h,hp,hpp=(q/unit for q in self.support(t))
             f=-u*s+v*c-hp;dist=u*c+v*s-h
             done=(np.abs(f)<2e-13)|(hi-lo<2e-14)
             active &= ~done
@@ -51,12 +52,12 @@ class ShoulderCoreCoordinate:
             step=t+np.divide(f,denom,out=np.zeros_like(f),where=denom>0)
             proposal=np.where((denom>0)&(step>lo)&(step<hi),step,(lo+hi)/2)
             t=np.where(active,proposal,t)
-        c,s=np.cos(t),np.sin(t);h,hp,_=self.support(t)
+        c,s=np.cos(t),np.sin(t);h,hp,_=(q/unit for q in self.support(t))
         dist=u*c+v*s-h;f=-u*s+v*c-hp
         exterior=dist>0
         if np.any(exterior&(np.abs(f)>2e-11)):
             raise ArithmeticError('Unresolved convex-core projection')
-        return np.maximum(dist,0),np.where(exterior,c*np.sign(x),0),np.where(exterior,s*np.sign(y),0)
+        return np.maximum(dist,0)*unit,np.where(exterior,c*np.sign(x),0),np.where(exterior,s*np.sign(y),0)
 
     def footprint(self,x,y):
         x,y=np.broadcast_arrays(np.asarray(x,float),np.asarray(y,float))
