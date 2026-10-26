@@ -95,6 +95,30 @@ def trace_raised_front_orthographic(back, x, y, scale, index, background_distanc
     boundary = back.boundary_mask(x, y) | front_boundary
     regular = inside & ~boundary
     flat = regular.ravel(); X, Y = x.ravel()[flat], y.ravel()[flat]
+    if not flat.any():
+        # All-clear tiles (or exact unresolved boundary-only fixtures) have no
+        # interface event. Preserve the same unavailable-field contract rather
+        # than calling optical primitives with an empty batch.
+        SX, SY = x.copy(), y.copy()
+        SX[boundary] = np.nan; SY[boundary] = np.nan
+        result = dict(X=SX, Y=SY, inside=inside,
+                      projected_inside=inside|boundary, regular_entry=regular,
+                      boundary_unresolved=boundary, complete=~inside & ~boundary)
+        vector_fields = ('front', 'front_normal', 'back', 'outward_normal',
+                         'interior_direction', 'exit_direction',
+                         'front_reflection_direction')
+        scalar_fields = ('front_reflection_power', 'primary_power',
+                         'retained_back_power', 'back_bracket_low',
+                         'back_bracket_high', 'back_residual', 'discriminant',
+                         'primary_back_clearance', 'primary_front_clearance',
+                         'polarization_plane_residual', 'outgoing_back_clearance',
+                         'reflection_front_clearance')
+        result.update({k: np.full(x.shape+(3,), np.nan) for k in vector_fields})
+        result.update({k: np.full(x.shape, np.nan) for k in scalar_fields})
+        result.update(front_reflection_escape_certified=regular.copy(),
+                      front_reflection_escape_certificate=np.array('no regular launches'),
+                      iterations=np.array(0))
+        return result
     H = h.ravel()[flat]; gx, gy = hx.ravel()[flat], hy.ravel()[flat]
     entry = np.stack([X, Y, scale*H], -1)
     nf = np.stack([-scale*gx, -scale*gy, np.ones_like(H)], -1)
