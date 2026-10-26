@@ -1,0 +1,26 @@
+{
+  "start": "2026-10-26T00:33:04.206723+00:00",
+  "checkpoint_deadline": "2026-10-26T00:38:04.206723+00:00",
+  "deadline": "2026-10-26T00:51:04.206723+00:00",
+  "pin": "0d2892036e86e091dc346b20b2588d11f3a7fd79",
+  "question": "Display and numerically control the single unfitted ellipse-plus-disk contour before any actual-height adapter or optical image.",
+  "recipe": "Retain existing A,B,R and centers. Inner ellipse axes A-R,B-R; radius R dilation. Only A varies by member. No alternate coefficient.",
+  "caps": {
+    "boundary_points": 150000,
+    "control_points": 4096,
+    "section_bisection_points": 2048,
+    "old_contour_points": 20000,
+    "target_bitmap_pixels": 9000000,
+    "diagnostic_pngs": 4,
+    "contour_proposals": 1,
+    "rays": 0,
+    "heights": 0,
+    "filters": 0,
+    "fits": 0,
+    "candidate_composites": 0
+  },
+  "sampling": "Per member union of32768 uniform normal angles and32768 uniform ellipse parameters mapped to normal angles. Algebraic support, unit normals, ellipse membership, exact extrema, mirror, scale and circle controls. Require polygon maximum chord below0.6 native pixel. Eight fixed first-quadrant x sections per member,64 bisections each. Annotate original16 join crops only.",
+  "checkpoint": "Hash/header and geometric controls before reference decode. All old masks and selected states unchanged.",
+  "scope": "Geometric annotation, not new lens reconstruction, alpha estimate, source proof or score improvement.",
+  "stop": "Failed control or cap stops without replacement setting or hidden tolerance change."
+}
