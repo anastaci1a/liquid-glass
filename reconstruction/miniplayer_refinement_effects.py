@@ -138,3 +138,28 @@ def artwork_study(study,scale=.94,up=3,radius=20):
         cov=np.clip(.5-sd,0,1)
         result.foreground_layers.append((new,cov,pixels));result.artwork_layers[tuple(new)]=(source,radius)
     return result
+
+
+def peak_preserving_rim(body,guide,alpha,chroma=1.25,exposure=3.,peak_lift=.12):
+    """Preserve peak color without requiring unchanged body luminance.
+
+    A smooth neutral lift dominates near black and vanishes toward unit peak.
+    Chroma is adjusted before applying the shared raised peak. This is a
+    bounded encoded-display hypothesis, not calibrated scene radiance.
+    """
+    if not 1<=chroma<=2 or exposure<=0 or not 0<=peak_lift<=1:
+        raise ValueError('Invalid peak response')
+    out=body.copy();active=alpha>0
+    if not active.any():return out
+    if np.any(alpha[active]>1+1e-12) or np.any(alpha<0):raise ValueError('Unit alpha required')
+    B=decode_srgb(body[active].astype(float));G=decode_srgb(guide[active].astype(float))
+    if not np.isfinite(B).all() or not np.isfinite(G).all():raise ValueError('Supported finite guide required')
+    m=G.max(-1,keepdims=True);neutral=.4378927114042099*(1-m)**3
+    ratio=(G+neutral)/(m+neutral)
+    intrinsic=exposure*(m+.4378927114042099)/(exposure*(m+.4378927114042099)+1-m)
+    body_peak=B.max(-1,keepdims=True);peak=np.maximum(intrinsic,body_peak+peak_lift*(1-body_peak))
+    E=peak*ratio**chroma
+    if np.any(E<0) or np.any(E>1):raise ArithmeticError('Unbounded peak response')
+    endpoint=encode_srgb(E);endpoint[np.all(body[active]==1,axis=-1)]=1.
+    out[active]=body[active]+alpha[active,None]*(endpoint-body[active])
+    return out
