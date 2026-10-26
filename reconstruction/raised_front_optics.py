@@ -42,6 +42,7 @@ def monotone_front_reflection_escape(surface, direction, gradient):
     from spline_height_back import SplineFootprintBack
     from bevel_footprint_back import BevelFootprintBack
     from rounded_rectangle_back import RoundedRectangleHarmonicBack
+    from ellipse_core_coordinate import EllipseCoreSplineBack, EllipseCoreCoordinate
     base = surface
     while type(base) is VerticalScaleBack:
         base = base.base
@@ -50,11 +51,13 @@ def monotone_front_reflection_escape(surface, direction, gradient):
     if v.shape[-1] != 3 or g.shape != v.shape[:-1]+(2,):
         raise ValueError('Matched reflected directions and actual gradients required')
     valid = np.zeros(v.shape[:-1], bool)
-    if type(base) not in (SplineFootprintBack, BevelFootprintBack):
+    if type(base) not in (SplineFootprintBack, BevelFootprintBack, EllipseCoreSplineBack):
         return valid
-    if type(base.coordinate) is not RoundedRectangleHarmonicBack or base.coordinate.cap_join_width != 0:
+    ordinary = type(base.coordinate) is RoundedRectangleHarmonicBack and base.coordinate.cap_join_width == 0
+    ellipse = type(base) is EllipseCoreSplineBack and type(base.coordinate) is EllipseCoreCoordinate
+    if not (ordinary or ellipse):
         return valid
-    if type(base) is SplineFootprintBack and np.any(np.diff(base.profile.c) > 0):
+    if type(base) in (SplineFootprintBack, EllipseCoreSplineBack) and np.any(np.diff(base.profile.c) > 0):
         return valid
     finite = np.isfinite(v).all(axis=-1) & np.isfinite(g).all(axis=-1)
     outward = np.sum(g*v[..., :2], axis=-1) <= 0

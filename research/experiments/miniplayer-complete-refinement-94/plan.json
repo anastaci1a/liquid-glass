@@ -1,0 +1,52 @@
+{
+  "start": "2026-10-26T00:50:50.344790+00:00",
+  "deadline": "2026-10-26T02:50:50.344790+00:00",
+  "stop_condition": "Complete geometry validation, exterior-only shadow assessment, color-aware highlight assessment, combined original-guard verification and published comparison page. No intermediate handoff pause. Primary performs own verification.",
+  "stages": [
+    {
+      "name": "geometry",
+      "maximum_minutes": 50,
+      "hypotheses": 1,
+      "recipe": "Fixed ellipse-core parallel body from93; same actual spline/Hermite laws, current optics and material, only member major length differs."
+    },
+    {
+      "name": "shadow",
+      "maximum_minutes": 20,
+      "hypotheses": 3,
+      "scope": "Exterior clear contribution only, fixed shared softness/offset, three fixed strengths. No optical shadow."
+    },
+    {
+      "name": "highlight",
+      "maximum_minutes": 30,
+      "hypotheses": 3,
+      "scope": "Shared bounded color-aware edge lift with controlled desaturation; same angular fade and separate completed-body overlay."
+    },
+    {
+      "name": "verification_publication",
+      "maximum_minutes": 20,
+      "scope": "Own identities, metrics, native/full comparisons, original guards and side-by-side/wipe page. Preserve every rejection."
+    }
+  ],
+  "selection": "Geometry or material changes that fail original paired guards stay experimental. Continue later independent stages on a supported declared baseline; no failure silently cancels the remainder of the plan. Combined candidates compared to both component baseline and original working20; no mask/foreground changes.",
+  "geometry_deadline": "2026-10-26T01:40:50.344790+00:00",
+  "geometry_checkpoint_deadline": "2026-10-26T01:02:50.344790+00:00",
+  "geometry_caps": {
+    "fixture_rays": 2048,
+    "native_rays": 2243200,
+    "height_point_queries": 180000000,
+    "coordinate_queries": 600000000,
+    "projection_iteration_points": 12000000000,
+    "source_audit_subrays": 4486400,
+    "source_corner_lookups": 40000000,
+    "incident_fields": 4,
+    "known_erosions": 8,
+    "RGB_queries": 4486400,
+    "candidate_composites": 4,
+    "identity_composites": 4,
+    "Studies": 4,
+    "total_bitmap_pixels": 64000000,
+    "numeric_payload_bytes": 2147483648,
+    "geometry_configurations": 1
+  },
+  "original_masks": "Retain 16 expanded and22 compact partial pixels per reference; all original body/held/exterior/foreground guards. New coverage is supplementary, not replacement."
+}
