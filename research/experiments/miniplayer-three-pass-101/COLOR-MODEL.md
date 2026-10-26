@@ -18,3 +18,17 @@ $$
 The common chroma factor stops at the first zero channel. White stays white; black receives a neutral lift. The angular gap has exactly zero overlay contribution. This is a bounded display hypothesis, not calibrated radiance.
 
 [Controls](color-controls.json) verify unit bounds, fixed white, zero-overlay identity, interior luminance and opposing angular gaps. Expanded references lead outline ranking; compact transfer remains separately scored.
+
+## Second-pass contrast
+
+Uniform extra exposure over-brightened neutral edges. The next hypothesis scales only that extra exposure by guide chroma. Neutral colors retain the first-pass endpoint; the same rule applies to both sizes and all hues.
+
+$$
+c=\begin{cases}
+\frac{\max_i G_i-\min_i G_i}{\max_i G_i},&\max_i G_i>0,\\
+0,&\max_i G_i=0,
+\end{cases}\qquad
+e_{\mathrm{effective}}=1+(e-1)c.
+$$
+
+[Second controls](color-controls2.json) verify the unchanged neutral response and bounded colored endpoints. The body-grade contrast separately increases gain and reduces the neutral bias; it is not a hue-specific correction.

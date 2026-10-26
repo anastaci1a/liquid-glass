@@ -25,7 +25,7 @@ def interior_chroma(encoded, factor=1.):
     return encode_srgb(result)
 
 
-def bright_colored_rim(body, guide, alpha, exposure=1., saturation=1.):
+def bright_colored_rim(body, guide, alpha, exposure=1., saturation=1., chroma_weighted=False):
     """Brighten a guide-derived endpoint; preserve peak through chroma change.
 
     Exposure acts in linear light. Chroma expansion acts in encoded RGB
@@ -40,7 +40,13 @@ def bright_colored_rim(body, guide, alpha, exposure=1., saturation=1.):
     endpoint = soft_channel_rim(body, guide, active.astype(float), curve_power=1.75)
     color = endpoint[active].astype(float)
     if exposure != 1:
-        color = encode_srgb(1-(1-decode_srgb(color))**exposure)
+        effective = exposure
+        if chroma_weighted:
+            raw = guide[active].astype(float)
+            peak = raw.max(-1)
+            strength = np.divide(peak-raw.min(-1), peak, out=np.zeros_like(peak), where=peak > 0)
+            effective = (1+(exposure-1)*strength)[:, None]
+        color = encode_srgb(1-(1-decode_srgb(color))**effective)
     if saturation != 1:
         peak = color.max(-1, keepdims=True)
         spread = peak-color

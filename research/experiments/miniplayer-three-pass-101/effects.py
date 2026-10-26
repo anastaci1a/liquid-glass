@@ -53,10 +53,13 @@ def evaluate(label,rawmap,gain,bias,alpha_index=None,shadow_index=None,art=None,
    charge('training_channel_reductions',int(mask.sum())*3)
    training[category]=float(np.sqrt(np.mean(((C[mask]-s.target_crop[mask])*255)**2)))/d['training_denominators'][category]
   row['normalized_training_errors']=training
+  row['starting100_guards']=common.guards(sc,d['starting100'])
   metrics.append(row);outputs[key]=(C,pre,guide)
   if retain:
    np.savez_compressed(OUT/f'{m}-{r}-{label}.npz',complete=C,pre_foreground=pre)
    save(f'{m}-{r}-{label}-metrics.json',row)
+   if label.startswith('outline'):
+    charge('presentation_panels',1);common.panels(OUT,f'{m}-{r}-{label}',d,C,fx['to_image'],label+' fixed endpoint contrast')
   print(label,m,r,round(sc['E'],5),flush=True)
  rows.extend(metrics);save('all-metrics.json',rows);flush();all_metrics[label]=metrics
  return metrics,outputs
@@ -78,6 +81,7 @@ def run():
   d['half']=d['half'].copy();d['center']=d['center'].copy();d['half'][0]+=1.5;d['center'][0]-=.5;d['radius']-=P['dilation_reduction_native']
   d['coord']=ShoulderCoreCoordinate(tuple(d['half']),d['radius'],P['shoulder_native'])
   old=ROOT/f'research/experiments/miniplayer-middle-ground-99/peak-brightness/{m}-{r}-floor0.24-metrics.json';first[str(old.relative_to(ROOT))]=common.sha(old);d['comparison']=json.loads(old.read_text())['scores']
+  selected=ROOT/f'research/experiments/miniplayer-four-pass-100/pass3/{m}-{r}-final-metrics.json';first[str(selected.relative_to(ROOT))]=common.sha(selected);d['starting100']=json.loads(selected.read_text())['scores']
   masks={cat:d['m'][name]&~d['m']['held'] for cat,name in [('glass','glass'),('rim','rim'),('shadow','exterior')]};artmask=np.zeros(d['s'].valid.shape,bool);x0,y0,_,_=d['s'].crop
   for layer in d['s'].case['foreground_layers']:
    if layer['mode']=='artwork':a,b,c,e=layer['box'];artmask[b-y0:e-y0,a-x0:c-x0]=True
@@ -112,6 +116,7 @@ def run():
     wx=(X[i,j]-a[i,j])[:,None];wy=(Y[i,j]-b[i,j])[:,None];charge('RGB_queries',len(i));values=(field[b[i,j],a[i,j]]*(1-wx)+field[b[i,j],a[i,j]+1]*wx)*(1-wy)+(field[b[i,j]+1,a[i,j]]*(1-wx)+field[b[i,j]+1,a[i,j]+1]*wx)*wy
     raw=raws[6.075][(m,r)].copy();raw[I]=values;assert np.array_equal(raw[~I],raws[6.075][(m,r)][~I],equal_nan=True);raws[sigma][(m,r)]=raw
     np.savez_compressed(OUT/f'{m}-{r}-blur{sigma}-samples.npz',raw_source=raw)
+    np.savez_compressed(OUT/f'{m}-{r}-blur{sigma}-field.npz',incident_field=field)
  labels=[]
  for sigma in P['blur']:
   label=f'blur{sigma}';labels.append(label);evaluate(label,raws[sigma],basegain,basebias,retain=True)

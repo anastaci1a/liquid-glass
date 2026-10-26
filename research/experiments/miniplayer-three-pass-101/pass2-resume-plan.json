@@ -1,0 +1,59 @@
+{
+  "start": "2026-10-26T16:38:22.175243+00:00",
+  "deadline": "2026-10-26T17:58:22.175243+00:00",
+  "stop_condition": "Four full passes; stage and source failures stop only dependent candidates",
+  "stages": [
+    {
+      "name": "two_geometries",
+      "maximum_minutes": 35
+    },
+    {
+      "name": "separate_shadow_edge_and_combination",
+      "maximum_minutes": 40
+    },
+    {
+      "name": "own_verification_and_publication",
+      "maximum_minutes": 25
+    }
+  ],
+  "selection": "Training-only normalized stage error and independent visible review; all held guards disclosed",
+  "geometry_deadline": "2026-10-26T17:03:22.175243+00:00",
+  "geometry_checkpoint_deadline": "2026-10-26T16:52:34.116202+00:00",
+  "geometry_caps": {
+    "fixture_rays": 128,
+    "native_rays": 1459840,
+    "height_point_queries": 180000000,
+    "coordinate_queries": 900000000,
+    "projection_iteration_points": 24000000000,
+    "source_audit_subrays": 4486400,
+    "source_corner_lookups": 40000000,
+    "incident_fields": 4,
+    "known_erosions": 8,
+    "RGB_queries": 4486400,
+    "candidate_composites": 4,
+    "identity_composites": 4,
+    "Studies": 4,
+    "total_bitmap_pixels": 64000000,
+    "numeric_payload_bytes": 2147483648,
+    "geometry_configurations": 1,
+    "cached_path_subrays": 783360
+  },
+  "original_masks": "Retain 16 expanded and22 compact partial pixels per reference; all original body/held/exterior/foreground guards. New coverage is supplementary, not replacement.",
+  "dilation_reduction_native": 0.875,
+  "incident_sigma": 6.075,
+  "incident_radius": 19,
+  "dilation_reductions_native": [
+    0.875
+  ],
+  "geometry_cap_scope": "Pass two new gentler contour; separate fresh grid and original unchanged inputs.",
+  "shoulder_settings": [
+    0.125
+  ],
+  "registration": {
+    "major_half_increment_native": 1.5,
+    "center_x_shift_native": -0.5
+  },
+  "height_multiplier": 1.02,
+  "continuation_start": "2026-10-26T16:47:34.116202+00:00",
+  "recovery_record": "native-pass2-corrected/storage-recovery.json"
+}

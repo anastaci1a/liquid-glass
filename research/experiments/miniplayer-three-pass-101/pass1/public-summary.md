@@ -1,0 +1,3 @@
+The narrower plateau and gentler contour improve both expanded aggregate errors, while compact errors worsen against the previous selection. Stronger uniform edge exposure over-brightens neutral regions; the expanded rim ranking retains the baseline endpoint. All fixed endpoint contrasts remain available below.
+
+Independent arithmetic agrees within one float32 step. Pre-foreground arrays, aggregate error and original guard decisions agree; some detailed metrics differ in their last bits. Source-coordinate checks and zero overlay in both diagonal gaps pass. The improved shadow and artwork settings remain unchanged.
