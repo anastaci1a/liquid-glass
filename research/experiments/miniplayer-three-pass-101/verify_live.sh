@@ -15,7 +15,8 @@ packet=research/experiments/miniplayer-three-pass-101
 folder=$(mktemp -d /tmp/liquid-glass-live101-XXXXXX)
 curl --fail --silent --show-error --max-time 45 "${base}miniplayer-three-pass.html?verify=$revision" -o "$folder/page.html"
 rg -q 'Miniplayer: three complete refinement passes' "$folder/page.html"
-rg -q 'three101-p1-compact-b.png' "$folder/page.html"
+passes=$(jq '.passes' "$packet/publication-panels.json")
+rg -q "three101-p${passes}-compact-b.png" "$folder/page.html"
 jq -r '.panels[]|[.asset,.sha256]|@tsv' "$packet/publication-panels.json" | xargs -n2 -P6 bash "$0" worker "$base" "$revision" "$folder"
 pagehash=$(sha256sum "$folder/page.html"); pagehash=${pagehash%% *}
 expected=$(jq '.panels|length' "$packet/publication-panels.json")
