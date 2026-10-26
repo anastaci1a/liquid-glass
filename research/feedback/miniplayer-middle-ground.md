@@ -1,6 +1,6 @@
 # Miniplayer: intermediate joins, colored rim and directional shadow
 
-Status: authorized investigation. Preserve the existing shape endpoints and test two intermediate shared shapes. The latest inward smoothing is closer but excessive. Only major length may distinguish compact and expanded.
+Status: investigation completed; experimental results remain unaccepted. Preserve the existing shape endpoints and test two intermediate shared shapes. The latest inward smoothing is closer but excessive. Only major length may distinguish compact and expanded.
 
 ## Edge color
 
@@ -25,3 +25,5 @@ The shadow should be darker below than above, consistent with a diffuse overhead
 ## Provenance
 
 Verbatim notes and the later blur correction are saved outside the repository in the local feedback folder. This tracked summary preserves the requirements without personal attribution.
+
+[Complete result and limitations](../experiments/miniplayer-middle-ground-99/README.md) · [Interactive comparisons](../../guide/miniplayer-middle-ground.md).

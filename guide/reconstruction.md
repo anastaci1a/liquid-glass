@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+Latest: [intermediate joins, colored plateau and downward shadow](miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
+
 Latest: [inward joins, broad shadow and color-filter comparisons](miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.
 
 **Latest miniplayer study:** [smooth shape, exterior shadow and color-aware rim — all comparisons](miniplayer-refinement.md). The full sequence is verified; the proposals remain experimental because original guards fail.

@@ -4,6 +4,7 @@ from ellipse_core_coordinate import EllipseCoreCoordinate
 from ellipse_edge_effects import pixel_rule_batch
 from outline_response import cap_strength
 from edge_color_filter import edge_filter
+from environment_radiance import decode_srgb,encode_srgb
 
 def profile(depth, sigma, power, plateau=0.):
     if sigma <= 0 or power <= 1 or plateau < 0:
@@ -41,4 +42,25 @@ def apply_color_rim(backing,guide,alpha,exposure=1.4,lift=.4378927114042099):
     v=guide[active]
     endpoint=edge_filter(v,np.ones(v.shape[:-1]),exposure=exposure,lift=lift,desaturation=0.)
     out[active]=backing[active]+a[active,None]*(endpoint-backing[active])
+    return out
+
+def apply_luminance_floor_rim(backing,guide,alpha,brightening,peak_exposure=1.4):
+    """Keep source color subject to a minimum linear-luminance highlight.
+
+    Minimal mixing toward neutral white reaches the declared brightness floor.
+    This is a display response, not a physical radiance identification.
+    """
+    if not 0<=brightening<=1:raise ValueError('Unit brightening required')
+    out=backing.copy();a=np.asarray(alpha);active=a>0
+    if not active.any():return out
+    if np.any(a[active]>1+1e-12):raise ValueError('Unit alpha required')
+    body=backing[active].astype(float);color=guide[active]
+    endpoint=edge_filter(color,np.ones(color.shape[:-1]),exposure=peak_exposure,lift=.4378927114042099,desaturation=0.)
+    B=decode_srgb(body);E=decode_srgb(endpoint)
+    weights=np.array([.2126,.7152,.0722]);yb=B@weights;ye=E@weights
+    required=yb+brightening*(1-yb)
+    neutral=np.divide(np.maximum(required-ye,0),1-ye,out=np.zeros_like(ye),where=ye<1)
+    if np.any(neutral>1+1e-12):raise ArithmeticError('Unreachable luminance floor')
+    target=encode_srgb(E+neutral[:,None]*(1-E));target[np.all(body==1,axis=-1)]=1.
+    out[active]=body+a[active,None]*(target-body)
     return out

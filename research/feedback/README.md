@@ -40,3 +40,7 @@ The [complete refinement](../experiments/miniplayer-complete-refinement-94/READM
 Top joins should move down and bottom joins up, toward the center. Far caps should refract more, not retract. The edge should brighten and desaturate existing color without reaching pure white; black should become light gray. Both controls need slightly less blur, and compact body tone appears too dark.
 
 The [completed investigation](../experiments/miniplayer-stronger-joins-98/README.md) tests one shared inward contour, a ten-percent incident-blur reduction, broad exterior-only shadow and a finite color filter. Source proofs and own replays pass. Original local failures prevent adoption; compact tone and exact contour remain unresolved. [Interactive results](../../guide/miniplayer-feedback-review.md) retain every comparison.
+
+## Intermediate joins and color-bearing plateau
+
+[Latest feedback](miniplayer-middle-ground.md) requests intermediate smoothing, retained edge color, a short peak plateau and stronger downward shadow. The blur correction explicitly retains incident filtering. [Results and sliders](../../guide/miniplayer-middle-ground.md) preserve the two shape trials, separate material contrasts and unresolved original guards.

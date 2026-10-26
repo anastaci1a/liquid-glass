@@ -1,0 +1,29 @@
+{
+  "start": "2026-10-26T04:01:54.433024+00:00",
+  "deadline": "2026-10-26T04:27:17.612902+00:00",
+  "review": "Two brightness floors remove the dark colored line, but the fixed expanded-A sample remains too blue and too dim. The third and last follow-up setting increases peak exposure to3 with floor0.24, preserving the source direction before the minimal neutral floor correction.",
+  "brightening": [
+    0.24
+  ],
+  "frozen": "Chosen1.25 shape, retained blur6.075, plateau0.6 with quadratic fade, offset18 shadow, exact source/style/masks.",
+  "caps": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 1500000000,
+    "bitmap_pixels": 50000000,
+    "guide_composites": 4,
+    "identity_composites": 4,
+    "candidate_composites": 4,
+    "replay_composites": 4,
+    "score_calls": 12,
+    "metric_Gaussians": 60,
+    "metric_erosions": 12,
+    "response_controls": 64,
+    "presentation_panels": 4,
+    "diagnostic_pixels": 1000
+  },
+  "selection": "Single declared brighter endpoint, no further exposure or color search. Publish even if rejected.",
+  "own_check": "Independent linear-luminance floor and encoded blend; report array/metric differences and exact original guard agreement. Do not demand bit equality from rearranged floating arithmetic.",
+  "scientific_operations": "No rays, source queries, incident fields, quadrature or shadow recomputation. Repeat constructors and guide compositions explicitly charged.",
+  "peak_exposure": 3.0
+}

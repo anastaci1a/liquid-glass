@@ -1,5 +1,7 @@
 # Miniplayer feedback: inward joins, edge color and broad shadow
 
+Latest: [intermediate joins, colored plateau and downward shadow](miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
+
 The new shared shape moves top joins down and bottom joins up, while keeping the outer tips fixed. Near-tip refraction becomes stronger. The final combination remains experimental: boundary, foreground and other local failures prevent family acceptance. The selected reconstruction is unchanged.
 
 Drag each divider across identical native coordinates. Fullscreen, keyboard, touch and side-by-side views are available. The first group shows the complete proposal; isolated tests and native edge close-ups follow.

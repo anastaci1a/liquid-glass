@@ -1,5 +1,7 @@
 # Current state
 
+Latest: [intermediate joins, colored plateau and downward shadow](../../guide/miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
+
 Latest: [inward joins, broad shadow and color-filter comparisons](../../guide/miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.
 
 The [complete miniplayer refinement](../experiments/miniplayer-complete-refinement-94/README.md) evaluates smooth geometry, exterior-only shadow and a color-aware inner rim. All four source gates and own replay checks pass, but no combined family qualifier emerges. Compact outlines become clearer; expanded A becomes too bright. [Interactive comparisons](../../guide/miniplayer-refinement.md) show every setting. Working20 remains selected.

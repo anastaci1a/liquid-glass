@@ -1,5 +1,7 @@
 # Liquid Glass research
 
+Latest: [intermediate joins, colored plateau and downward shadow](miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
+
 Latest: [inward joins, broad shadow and color-filter comparisons](miniplayer-feedback-review.md). The complete experimental pair remains unaccepted; original boundary and foreground failures are preserved.
 
 A public research notebook on mathematical models of Apple's Liquid Glass elements.
