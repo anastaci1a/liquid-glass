@@ -190,3 +190,22 @@ def soft_channel_rim(body,guide,alpha,curve_power=2.):
     endpoint=encode_srgb(E);endpoint[np.all(body[active]==1,axis=-1)]=1.
     out[active]=body[active]+alpha[active,None]*(endpoint-body[active])
     return out
+
+
+def soft_channel_rim_dark(body,guide,alpha,curve_power=1.75,dark_neutral=0.):
+    """Per-channel highlight with a neutral floor strongest near black."""
+    if not 0<=dark_neutral<=.24:raise ValueError('Invalid neutral increment')
+    if not 1.75<=curve_power<=2.25:raise ValueError('Invalid highlight power')
+    out=body.copy();active=alpha>0
+    if not active.any():return out
+    if np.any(alpha<0) or np.any(alpha>1+1e-12):raise ValueError('Invalid alpha')
+    B=decode_srgb(body[active].astype(float));G=decode_srgb(guide[active].astype(float))
+    if not np.isfinite(B).all() or not np.isfinite(G).all():raise ValueError('Finite colors required')
+    Y=G@np.array([.2126,.7152,.0722]);floor=.12+.38*(1-Y)**2+dark_neutral*(1-Y)**4
+    E=1-(1-floor[:,None])*(1-G)**curve_power
+    maximum=B.max(-1,keepdims=True);required=maximum+.12*(1-maximum)
+    E*=np.maximum(1,required/E.max(-1,keepdims=True))
+    if np.any(E<0) or np.any(E>1+1e-14):raise ArithmeticError('Unbounded response')
+    endpoint=encode_srgb(E);endpoint[np.all(body[active]==1,axis=-1)]=1.
+    out[active]=body[active]+alpha[active,None]*(endpoint-body[active])
+    return out
