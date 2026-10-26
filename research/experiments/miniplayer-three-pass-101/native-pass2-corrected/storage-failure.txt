@@ -1,0 +1,45 @@
+FOUR IDENTITIES EXACT
+TRACE expanded 32 / 500
+TRACE expanded 64 / 500
+TRACE expanded 96 / 500
+TRACE expanded 128 / 500
+TRACE expanded 160 / 500
+TRACE expanded 192 / 500
+TRACE expanded 224 / 500
+TRACE expanded 256 / 500
+TRACE expanded 288 / 500
+Traceback (most recent call last):
+  File "/repo/research/experiments/miniplayer-three-pass-101/native_corrected.py", line 136, in <module>
+    try:run()
+        ^^^^^
+  File "/repo/research/experiments/miniplayer-three-pass-101/native_corrected.py", line 102, in run
+    np.savez_compressed(OUT/f'{member}-chunk-{start:04d}.npz',**c)
+  File "/deps/numpy/lib/_npyio_impl.py", line 753, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/deps/numpy/lib/_npyio_impl.py", line 779, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/deps/numpy/lib/_npyio_impl.py", line 112, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1378, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: '/repo/research/experiments/miniplayer-three-pass-101/native-pass2-corrected/expanded-chunk-0288.npz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/repo/research/experiments/miniplayer-three-pass-101/native_corrected.py", line 138, in <module>
+    save('native-failure.json',{'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'error':repr(e)});flush();raise
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/repo/research/experiments/miniplayer-three-pass-101/native_corrected.py", line 18, in save
+    def save(n,x):(OUT/n).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: '/repo/research/experiments/miniplayer-three-pass-101/native-pass2-corrected/native-failure.json'

@@ -41,8 +41,10 @@ def working_surface_pair(member):
 def working_incident_response(filtered_samples):
     """Grade incident-filtered samples before actual primary power and AA."""
     from miniplayer_refinement_effects import low_luminance_body
+    from miniplayer_color_refinement import interior_chroma
     material=load_working_family()['material']
-    return low_luminance_body(filtered_samples,material['gain'],material['bias'],material.get('low_luminance_lift',0.))
+    graded=low_luminance_body(filtered_samples,material['gain'],material['bias'],material.get('low_luminance_lift',0.))
+    return interior_chroma(graded,material.get('chroma',1.))
 
 
 def working_artwork_study(study):
@@ -61,6 +63,9 @@ def working_outline(body,ungraded_blurred_guide,integrated_alpha):
     """
     material=load_working_family()['material'];outline=material.get('outline')
     if not isinstance(outline,dict):return body.copy()
+    if outline.get('response')=='bright_colored_rim':
+        from miniplayer_color_refinement import bright_colored_rim
+        return bright_colored_rim(body,ungraded_blurred_guide,integrated_alpha,**outline['endpoint'])
     from miniplayer_refinement_effects import soft_channel_rim_dark
     return soft_channel_rim_dark(body,ungraded_blurred_guide,integrated_alpha,
                                  outline['curve_power'],outline.get('dark_neutral',0.))

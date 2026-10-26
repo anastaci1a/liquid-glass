@@ -1,0 +1,177 @@
+{
+  "start": "2026-10-26T17:05:59.316078+00:00",
+  "deadline": "2026-10-26T18:20:59.316078+00:00",
+  "native": "native-pass3-corrected",
+  "shoulder_native": 0.1875,
+  "caps": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 4000000000,
+    "bitmap_pixels": 80000000,
+    "identity_composites": 8,
+    "guide_composites": 128,
+    "candidate_composites": 100,
+    "replay_composites": 16,
+    "score_calls": 140,
+    "metric_Gaussians": 700,
+    "metric_erosions": 140,
+    "distance_points": 1500000000,
+    "boundary_inversions": 100000000,
+    "quadrature_nodes": 1200000000,
+    "profile_points": 3600000000,
+    "shadow_points": 20000000,
+    "shadow_filters": 6,
+    "incident_fields": 8,
+    "known_erosions": 16,
+    "source_audit_subrays": 9000000,
+    "source_corner_lookups": 40000000,
+    "RGB_queries": 9000000,
+    "environment_points": 2243200,
+    "presentation_panels": 32,
+    "training_channel_reductions": 1000000000,
+    "coordinate_queries": 2000000000,
+    "projection_iteration_points": 60000000000
+  },
+  "blur": [
+    6.075,
+    6.37875,
+    6.6825
+  ],
+  "color": [
+    {
+      "gain": 0.5552987769129158,
+      "bias": 0.39083683534488656,
+      "low_lift": 0.08,
+      "chroma": 1.0
+    },
+    {
+      "gain": 0.5552987769129158,
+      "bias": 0.39083683534488656,
+      "low_lift": 0.08,
+      "chroma": 1.025
+    },
+    {
+      "gain": 0.5552987769129158,
+      "bias": 0.39083683534488656,
+      "low_lift": 0.08,
+      "chroma": 1.05
+    }
+  ],
+  "profiles": [
+    {
+      "plateau": 0.6666666666666666,
+      "fade": 2.0
+    },
+    {
+      "plateau": 0.6666666666666666,
+      "fade": 2.0
+    },
+    {
+      "plateau": 0.6666666666666666,
+      "fade": 2.0
+    }
+  ],
+  "shadow": [
+    {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.2
+    },
+    {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.23
+    },
+    {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.26
+    }
+  ],
+  "artwork": [
+    {
+      "scale": 0.945,
+      "up": 3,
+      "radius": 18
+    },
+    {
+      "scale": 0.95,
+      "up": 3,
+      "radius": 18
+    },
+    {
+      "scale": 0.955,
+      "up": 3,
+      "radius": 18
+    }
+  ],
+  "orders": [
+    8,
+    16,
+    32
+  ],
+  "maximum_order_difference": 1e-06,
+  "selection": "Outline: fixed expanded top/bottom peak RGB training cohort. Body/shadow/artwork: unchanged equal-reference training cohorts. All original scores retained.",
+  "dispersion": "Excluded explicitly",
+  "stage_limits_minutes": {
+    "blur": 8,
+    "color": 5,
+    "outline": 22,
+    "shadow": 8,
+    "artwork": 6
+  },
+  "response": "Bounded brighter endpoint with peak-preserving chroma contrast",
+  "curve_power": [
+    1.75,
+    2.0,
+    2.25
+  ],
+  "dilation_reduction_native": 0.9375,
+  "endpoint": [
+    {
+      "exposure": 1.0,
+      "saturation": 1.0,
+      "chroma_weighted": false
+    },
+    {
+      "exposure": 1.4,
+      "saturation": 1.15,
+      "chroma_weighted": true
+    },
+    {
+      "exposure": 1.7,
+      "saturation": 1.3,
+      "chroma_weighted": true
+    }
+  ],
+  "angular": {
+    "sigma": 2.6,
+    "power": 1.5,
+    "start": -45,
+    "minimum": 30,
+    "hold": 60,
+    "recover": 85
+  },
+  "peak_training": {
+    "expanded_boxes": [
+      [
+        1100,
+        315,
+        1450,
+        335
+      ],
+      [
+        1100,
+        490,
+        1450,
+        510
+      ]
+    ],
+    "minimum_integrated_alpha": 0.75,
+    "held_excluded": true,
+    "original_evaluation_masks_unchanged": true
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "member": "expanded",
+  "reference": "b",
+  "setting": "artwork1",
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 4.5051960945129395
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 6.200348854064941
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 4.725252628326416
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 3.56695294380188
+    },
+    "ssim": 0.9825037121772766,
+    "loss": 25.74105206864158,
+    "E": 5.073564040065088,
+    "exterior": 7.681431293487549,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 12.849200248718262
+    },
+    "foreground": {
+      "jupiter.jpg": 1181.238525390625,
+      "title.svg": 586.9915161132812,
+      "artist.svg": 180.04904174804688,
+      "play.svg": 119.5228500366211,
+      "forward.svg": 176.3258514404297
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 5.489472389221191,
+        "luma_signed": 1.088345980735309
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 18.257686614990234,
+        "luma_signed": -3.3343864995869357
+      },
+      "left_cap": {
+        "RGB_RMSE": 10.927301406860352,
+        "luma_signed": -0.42425780166599913
+      },
+      "body": {
+        "RGB_RMSE": 1.8945690393447876,
+        "luma_signed": 1.0778874679480501
+      }
+    }
+  },
+  "previous99_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": false,
+    "forward.svg": true
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": false
+  },
+  "normalized_categories": {
+    "glass": 0.9138083400158058,
+    "rim": 0.9375328915136488,
+    "shadow": 0.9644377431056335,
+    "artwork": 0.6494019536222128
+  },
+  "combined": 0.8662952320643252,
+  "normalized_training_errors": {
+    "glass": 0.9304272597381702,
+    "rim": 0.9611053198880556,
+    "shadow": 0.9644377431056335,
+    "artwork": 0.6494019550964837
+  },
+  "starting100_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": false,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": false,
+    "forward.svg": true
+  }
+}

@@ -8,7 +8,7 @@ Drag the mask to compare identical native coordinates. Fullscreen, keyboard, tou
 
 [Research plan](../research/experiments/miniplayer-three-pass-101/README.md) · [Feedback](../research/feedback/miniplayer-three-pass.md) · [Previous four passes](miniplayer-four-pass.md) · [Current models](reconstruction.md)
 
-Completed and independently replayed: **1 of three passes**. Numerical ranking and visual selection are separate; the original strict local guards remain reported.
+Completed and independently replayed: **2 of three passes**. Numerical ranking and visual selection are separate; the original strict local guards remain reported.
 
 ## Pass 1
 
@@ -109,6 +109,106 @@ Combined score equally weights baseline-normalized glass, rim, exterior and artw
 </details>
 
 Recipe: incident sigma `6.6825`; rim plateau `0.6666666666666666` pixels and fade `2.0` pixels; artwork scale `0.95`. [Exact results and stage choices](../research/experiments/miniplayer-three-pass-101/pass1/README.md).
+
+## Pass 2
+
+The gentler contour improves expanded errors further, but compact remains worse than the previous working selection. Color-dependent extra exposure avoids lifting neutral edges; its stronger yellow contrasts still lose the whole-rim ranking. They remain visible below rather than being discarded.
+
+All four own replays and reported metrics are exact. The original clock survived a storage interruption: retained path chunks were reused, and the lost batch was counted separately. Both source gates and the exact opposing zero-overlay regions pass. Shadow and artwork retain their previous settings.
+
+| Reference | E | SSIM | Original partial RMSE | Normalized combined score |
+| --- | ---: | ---: | ---: | ---: |
+| expanded A | 10.2239 | 0.97597 | 38.8751 | 0.9283 |
+| expanded B | 5.0736 | 0.98250 | 12.8492 | 0.8638 |
+| compact A | 14.8296 | 0.96668 | 21.8088 | 0.8125 |
+| compact B | 14.4727 | 0.96546 | 21.2235 | 0.8362 |
+
+Combined score equally weights baseline-normalized glass, rim, exterior and artwork errors across references. Lower than one improves this numerical ranking. It is not a physical-material identification or a replacement for visual review.
+
+### Expanded A
+
+![p2-expanded-a](assets/three101-p2-expanded-a.png)
+
+### Expanded B
+
+![p2-expanded-b](assets/three101-p2-expanded-b.png)
+
+### Compact A
+
+![p2-compact-a](assets/three101-p2-compact-a.png)
+
+### Compact B
+
+![p2-compact-b](assets/three101-p2-compact-b.png)
+
+<details id="pass2-previous" data-stage="pass2-previous">
+<summary>Previous result versus pass 2</summary>
+
+![p2-expanded-a-previous](assets/three101-p2-expanded-a-previous.png)
+
+![p2-expanded-b-previous](assets/three101-p2-expanded-b-previous.png)
+
+![p2-compact-a-previous](assets/three101-p2-compact-a-previous.png)
+
+![p2-compact-b-previous](assets/three101-p2-compact-b-previous.png)
+
+</details>
+
+<details data-stage="pass2-details">
+<summary>Native cap, rim and artwork details</summary>
+
+![p2-expanded-a-left](assets/three101-p2-expanded-a-left.png)
+
+![p2-expanded-a-right](assets/three101-p2-expanded-a-right.png)
+
+![p2-expanded-b-left](assets/three101-p2-expanded-b-left.png)
+
+![p2-expanded-b-right](assets/three101-p2-expanded-b-right.png)
+
+![p2-compact-a-left](assets/three101-p2-compact-a-left.png)
+
+![p2-compact-a-right](assets/three101-p2-compact-a-right.png)
+
+![p2-compact-b-left](assets/three101-p2-compact-b-left.png)
+
+![p2-compact-b-right](assets/three101-p2-compact-b-right.png)
+
+![p2-expanded-a-yellow](assets/three101-p2-expanded-a-yellow.png)
+
+![p2-expanded-b-yellow](assets/three101-p2-expanded-b-yellow.png)
+
+</details>
+
+<details data-stage="pass2-endpoints">
+<summary>Three fixed outline brightness/color contrasts</summary>
+
+![p2-expanded-a-outline0](assets/three101-p2-expanded-a-outline0.png)
+
+![p2-expanded-b-outline0](assets/three101-p2-expanded-b-outline0.png)
+
+![p2-compact-a-outline0](assets/three101-p2-compact-a-outline0.png)
+
+![p2-compact-b-outline0](assets/three101-p2-compact-b-outline0.png)
+
+![p2-expanded-a-outline1](assets/three101-p2-expanded-a-outline1.png)
+
+![p2-expanded-b-outline1](assets/three101-p2-expanded-b-outline1.png)
+
+![p2-compact-a-outline1](assets/three101-p2-compact-a-outline1.png)
+
+![p2-compact-b-outline1](assets/three101-p2-compact-b-outline1.png)
+
+![p2-expanded-a-outline2](assets/three101-p2-expanded-a-outline2.png)
+
+![p2-expanded-b-outline2](assets/three101-p2-expanded-b-outline2.png)
+
+![p2-compact-a-outline2](assets/three101-p2-compact-a-outline2.png)
+
+![p2-compact-b-outline2](assets/three101-p2-compact-b-outline2.png)
+
+</details>
+
+Recipe: incident sigma `6.6825`; rim plateau `0.6666666666666666` pixels and fade `2.0` pixels; artwork scale `0.95`. [Exact results and stage choices](../research/experiments/miniplayer-three-pass-101/pass2/README.md).
 
 ## Interpretation
 
