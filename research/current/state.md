@@ -1,6 +1,8 @@
 # Current state
 
-The [native cap-join checkpoint](../experiments/miniplayer-join-inspection-92/README.md) identifies the current contour’s curvature discontinuity and repeatable compact lower intensity offsets. The [single smooth-contour diagram](../experiments/miniplayer-smooth-contour-checkpoint-93/README.md) preserves extrema and moves the old joins inward by approximately 0.665–0.680 pixel. It passes two-dimensional controls but is not an actual-height adapter or adopted lens. Exterior shadow and color-aware highlight work follow the geometry assessment.
+The [complete miniplayer refinement](../experiments/miniplayer-complete-refinement-94/README.md) evaluates smooth geometry, exterior-only shadow and a color-aware inner rim. All four source gates and own replay checks pass, but no combined family qualifier emerges. Compact outlines become clearer; expanded A becomes too bright. [Interactive comparisons](../../guide/miniplayer-refinement.md) show every setting. Working20 remains selected.
+
+The [native cap-join checkpoint](../experiments/miniplayer-join-inspection-92/README.md) identifies the current contour’s curvature discontinuity and repeatable compact lower intensity offsets. The [single smooth-contour diagram](../experiments/miniplayer-smooth-contour-checkpoint-93/README.md) preserves extrema and moves the old joins inward by approximately 0.665–0.680 pixel. It passes two-dimensional controls but is not an actual-height adapter or adopted lens. The subsequent complete refinement evaluates both exterior shadow and color-aware highlight.
 
 The [five-pass outline study](../experiments/miniplayer-outline-series-91/README.md) is complete. Wider fades, brightness endpoints, angular changes and mixed responses improve some references, but no shared setting passes every guard. Working20 remains selected. [Interactive comparisons](../../guide/outline-review.md) expose every setting and the starting model.
 

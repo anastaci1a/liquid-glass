@@ -1,5 +1,7 @@
 # Experiment catalogue
 
+[Complete miniplayer refinement](miniplayer-complete-refinement-94/README.md): smooth contour, exterior shadow, color-aware rim and own verification; all comparisons published.
+
 See [cross-family findings](findings.md) for the concise scientific synthesis.
 
 Historical reports are preserved as indexed verbatim evidence. These summaries do not upgrade their acceptance status.

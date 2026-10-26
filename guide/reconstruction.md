@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+**Latest miniplayer study:** [smooth shape, exterior shadow and color-aware rim — all comparisons](miniplayer-refinement.md). The full sequence is verified; the proposals remain experimental because original guards fail.
+
 [Five-pass miniplayer outline review](outline-review.md): compare all settings with draggable reference/result and starting-model/result wipes. Proposals remain unaccepted; original failures are shown.
 
 Open a study to load its comparisons. **Wipe** shows Apple on the left and the reconstruction on the right; **Side by side** shows both panels. **Fullscreen** enlarges any image. The divider resets to the center when a view reopens. Motion captures load only when their dropdown is opened.

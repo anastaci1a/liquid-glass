@@ -32,3 +32,5 @@ The five approved outline passes are complete. No family qualifier was found; [a
 The inner-edge highlight should brighten the underlying color with slight desaturation rather than erase it into white. Cap/body transitions may have continuous curvature, with subtly convex long sides. A slight shadow should affect only the exterior, separately from refraction.
 
 The [native join checkpoint](../experiments/miniplayer-join-inspection-92/README.md) inspects these regions before any shape replacement. Geometry validation precedes separate shadow and highlight comparisons; original masks and shared-family requirements remain fixed.
+
+The [complete refinement](../experiments/miniplayer-complete-refinement-94/README.md) now tests actual smooth geometry, exterior-only shadow and a color-aware inner fade. Own replay and source checks pass. Compact rim visibility improves, but expanded A over-brightens and original guards still fail. [All stage comparisons](../../guide/miniplayer-refinement.md) are available; these visible issues remain open.

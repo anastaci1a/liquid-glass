@@ -1,0 +1,88 @@
+{
+  "member": "compact",
+  "reference": "b",
+  "candidate": 1,
+  "scores": {
+    "glass": {
+      "pixels": 83012,
+      "rmse": 16.33624267578125
+    },
+    "rim": {
+      "pixels": 31757,
+      "rmse": 15.356368064880371
+    },
+    "held": {
+      "pixels": 21209,
+      "rmse": 16.536043167114258
+    },
+    "interior": {
+      "pixels": 51255,
+      "rmse": 16.914905548095703
+    },
+    "ssim": 0.9684096574783325,
+    "loss": 257.55638937663485,
+    "E": 16.048563467695008,
+    "exterior": 15.072770118713379,
+    "partial": {
+      "pixels": 22,
+      "RMSE": 23.624130249023438
+    },
+    "foreground": {
+      "jupiter.jpg": 1909.2564697265625,
+      "title.svg": 452.2868347167969,
+      "artist.svg": 111.34312438964844,
+      "play.svg": 141.84059143066406,
+      "forward.svg": 271.4688720703125
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 22.528867721557617,
+        "luma_signed": -3.282810833956353
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 17.288997650146484,
+        "luma_signed": -0.49312055825885026
+      },
+      "left_cap": {
+        "RGB_RMSE": 15.944252014160156,
+        "luma_signed": -1.9777182282189874
+      },
+      "body": {
+        "RGB_RMSE": 15.82078742980957,
+        "luma_signed": -9.05996601563735
+      }
+    }
+  },
+  "original_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": false,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": true,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "geometry_guards": {
+    "glass": true,
+    "rim": true,
+    "held": true,
+    "interior": true,
+    "E": true,
+    "SSIM": true,
+    "exterior": true,
+    "partial": true,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "all_pass": false,
+  "clipped_channels": 0
+}

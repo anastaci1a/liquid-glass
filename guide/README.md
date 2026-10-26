@@ -13,6 +13,7 @@ The project studies explicit optical geometry, material response and visible ref
 | Reference defects | [Observations](../research/feedback/README.md) |
 | Experiment results | [Catalogue](../research/experiments/README.md) |
 | Historical reports | [Evidence library](../research/evidence/README.md) |
+| Latest miniplayer refinement | [Shape, shadow and color-aware rim](miniplayer-refinement.md) |
 | Primary geometric reconstructions | [Reference comparisons](reconstruction.md) |
 | Surfaces and ray paths | [Geometric optics](geometric-optics.md) |
 | Apple guidance and demonstrations | [Source atlas](sources.md) |

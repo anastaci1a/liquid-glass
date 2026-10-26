@@ -1,0 +1,88 @@
+{
+  "member": "expanded",
+  "reference": "a",
+  "candidate": 1,
+  "scores": {
+    "glass": {
+      "pixels": 155428,
+      "rmse": 9.61642837524414
+    },
+    "rim": {
+      "pixels": 45766,
+      "rmse": 15.124615669250488
+    },
+    "held": {
+      "pixels": 38118,
+      "rmse": 9.162165641784668
+    },
+    "interior": {
+      "pixels": 109662,
+      "rmse": 5.9667181968688965
+    },
+    "ssim": 0.9775372743606567,
+    "loss": 133.35918603010168,
+    "E": 11.548124784141436,
+    "exterior": 19.254291534423828,
+    "partial": {
+      "pixels": 16,
+      "RMSE": 74.59381866455078
+    },
+    "foreground": {
+      "jupiter.jpg": 2260.40380859375,
+      "title.svg": 249.83348083496094,
+      "artist.svg": 113.2825698852539,
+      "play.svg": 102.45838928222656,
+      "forward.svg": 148.9895782470703
+    },
+    "crops": {
+      "lower_right_rim": {
+        "RGB_RMSE": 18.49432373046875,
+        "luma_signed": 10.18205284316507
+      },
+      "upper_left_rim": {
+        "RGB_RMSE": 19.441457748413086,
+        "luma_signed": 6.213978315773294
+      },
+      "left_cap": {
+        "RGB_RMSE": 22.058574676513672,
+        "luma_signed": 2.4514087070929786
+      },
+      "body": {
+        "RGB_RMSE": 2.16585111618042,
+        "luma_signed": -0.018087954477559176
+      }
+    }
+  },
+  "original_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": false,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": false,
+    "title.svg": false,
+    "artist.svg": false,
+    "play.svg": false,
+    "forward.svg": false
+  },
+  "geometry_guards": {
+    "glass": false,
+    "rim": false,
+    "held": false,
+    "interior": true,
+    "E": false,
+    "SSIM": false,
+    "exterior": true,
+    "partial": false,
+    "jupiter.jpg": true,
+    "title.svg": true,
+    "artist.svg": true,
+    "play.svg": true,
+    "forward.svg": true
+  },
+  "all_pass": false,
+  "clipped_channels": 0
+}
