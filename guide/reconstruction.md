@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+For review: [restored lens grading and doubled colored outline plateau](miniplayer-restored-grade.md), with reference and previous-candidate sliders.
+
 For review: [calibrated body and outline colors with native comparison sliders](miniplayer-anchor-colors.md). One candidate; expanded color targets govern both sizes.
 
 For review: [five HSV outline options with native zoom sliders](miniplayer-hsv-options.md). Geometry is finalized; these options do not replace the selected reconstruction.

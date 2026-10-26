@@ -46,3 +46,5 @@ The [completed investigation](../experiments/miniplayer-stronger-joins-98/README
 [Latest feedback](miniplayer-middle-ground.md) requests intermediate smoothing, retained edge color, a short peak plateau and stronger downward shadow. The blur correction explicitly retains incident filtering. [Results and sliders](../../guide/miniplayer-middle-ground.md) preserve the two shape trials, separate material contrasts and unresolved original guards.
 
 [Final display color anchors](miniplayer-anchor-colors.md) supersede the earlier equal-value outline proposal.
+
+[Restored body controls and wider rim plateau](miniplayer-restored-grade.md) supersede the anchor-map body proposal while retaining its outline colors.

@@ -1,5 +1,7 @@
 # Current state
 
+For review: [restored body grading and doubled colored-rim plateau](../../guide/miniplayer-restored-grade.md). Existing gain targets grading-stage white #E5E5E5; optical brightness is restored. The calibrated outline remains, with a two-pixel plateau. Selection is unchanged.
+
 For review: [one calibrated body/outline color candidate](../../guide/miniplayer-anchor-colors.md). Final white targets are #E5E5E5 and #FCFCFC. Hue is preserved; saturation/value anchors pass. Expanded defines the shared color target. Image errors increase, and selection remains unchanged.
 
 For review: [five fixed HSV outline options](../../guide/miniplayer-hsv-options.md). The projected miniplayer shape is finalized. No option is selected; the body white endpoint passes at grading, but final compact white remains too dark.
