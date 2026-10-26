@@ -1,10 +1,10 @@
 # Current state
 
-The [four full miniplayer passes](../../guide/miniplayer-four-pass.md) are complete. Pass three is the current shared working model. Yellow color, compact tone, artwork and shadow improve; expanded and local failures remain. Dispersion was excluded. See the [final review](../experiments/miniplayer-four-pass-100/FINAL-REVIEW.md).
+The [three further full miniplayer passes](../../guide/miniplayer-three-pass.md) are complete. Pass two is the current shared working model. Expanded errors improve; compact aggregate regressions remain. The narrow outline has verified opposing zero-contribution gaps. Stronger color endpoints remain rejected contrasts. Dispersion was excluded. See the [final review](../experiments/miniplayer-three-pass-101/FINAL-REVIEW.md).
 
 ## Earlier research checkpoints
 
-The following summaries describe their historical states; current miniplayer selection is the four-pass result above.
+The following summaries describe their historical states; current miniplayer selection is the three-pass result above.
 
 Earlier: [intermediate joins, colored plateau and downward shadow](../../guide/miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
 

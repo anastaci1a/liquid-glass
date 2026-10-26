@@ -18,7 +18,9 @@ record=dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),selected
 (B/'selection.json').write_text(json.dumps(record,indent=2)+'\n');(R/F['selection_record']).write_text(json.dumps(record,indent=2)+'\n')
 registry=json.loads((R/'reconstruction/current-models.json').read_text());meta=json.loads((R/'guide/comparison-panels.json').read_text());newmeta=json.loads((R/'guide/three-pass-comparison-panels.json').read_text())
 for member in ['expanded','compact']:
- row=registry['models'][member+'-mini-player'];row.update(record=F['selection_record'],study=F['evidence'],material=f"Incident sigma {recipe['sigma']} before refraction; shared grade, narrow colored rim with opposing zero gaps, exterior shadow and original artwork transform",images=[f'assets/three101-p{number}-{member}-{r}.png' for r in ['a','b']],limits='Working approximation, not all-guard acceptance. Original failures and compact transfer differences remain; source and scene are conditional.',own_verification=str((B/'selected-verification/result.json').relative_to(R)))
+ row=registry['models'][member+'-mini-player']
+ for old in row['images']:meta.pop(old,None)
+ row.update(record=F['selection_record'],study=F['evidence'],material=f"Incident sigma {recipe['sigma']} before refraction; shared grade, narrow colored rim with opposing zero gaps, exterior shadow and original artwork transform",images=[f'assets/three101-p{number}-{member}-{r}.png' for r in ['a','b']],limits='Working approximation, not all-guard acceptance. Original failures and compact transfer differences remain; source and scene are conditional.',own_verification=str((B/'selected-verification/result.json').relative_to(R)))
  for image in row['images']:meta[image]=newmeta[image]
 (R/'reconstruction/current-models.json').write_text(json.dumps(registry,indent=2)+'\n');(R/'guide/comparison-panels.json').write_text(json.dumps(meta,indent=2)+'\n')
 print('Prepared selected shared family',number)

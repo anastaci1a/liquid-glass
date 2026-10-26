@@ -1,6 +1,6 @@
 # Three-pass miniplayer refinement
 
-Status: active. Three full passes share a four-hour window, beginning `2026-10-26 15:57:07 UTC`. Dispersion is excluded. The selected third pass of study100 is the baseline; its fourth pass remains a comparator.
+Status: complete. Three full passes share a four-hour window, beginning `2026-10-26 15:57:07 UTC`. Dispersion is excluded. The selected third pass of study100 is the baseline; its fourth pass remains a comparator. [Final review](FINAL-REVIEW.md) selects pass two of this study and retains every local failure.
 
 Expanded references lead outline decisions. Compact receives the same model and parameters. Preference for the expanded appearance is a design priority, not evidence that every element uses identical rendering internally.
 

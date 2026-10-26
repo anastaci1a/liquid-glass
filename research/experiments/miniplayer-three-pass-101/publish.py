@@ -34,6 +34,9 @@ Drag the mask to compare identical native coordinates. Fullscreen, keyboard, tou
 
 '''
 page+=f'Completed and independently replayed: **{len(folders)} of three passes**. Numerical ranking and visual selection are separate; the original strict local guards remain reported.\n\n'
+if (OUT/'selection.json').exists():
+ selected=json.loads((OUT/'selection.json').read_text())['selected_pass']
+ page+=f'**Working selection: pass {selected}.** Its expanded match is the strongest of these three passes. Compact aggregate errors worsen against the previous working version. Stronger outline endpoints remain visible as rejected contrasts; no brightness fix or full-family acceptance is claimed. [Final review](../research/experiments/miniplayer-three-pass-101/FINAL-REVIEW.md).\n\n'
 cases=[f'{m}-{r}' for m in ['expanded','compact'] for r in ['a','b']]
 for folder in folders:
  number=folder.name[4:];result=json.loads((folder/'result.json').read_text());recipe=json.loads((folder/'final-recipe.json').read_text())

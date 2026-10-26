@@ -3,7 +3,7 @@ from pathlib import Path
 import sys,json,datetime,hashlib,zipfile,importlib.util,traceback
 import numpy as np
 R=Path('/repo');B=Path(__file__).parent;P=B/sys.argv[1];O=B/'selected-verification';assert not O.exists();O.mkdir()
-recipe=json.loads((P/'final-recipe.json').read_text());N=B/recipe['native'];deadline=datetime.datetime.fromisoformat(json.loads((P/'protocol.json').read_text())['deadline'])
+recipe=json.loads((P/'final-recipe.json').read_text());N=B/recipe['native'];deadline=datetime.datetime.fromisoformat(json.loads((B/'final-verification-plan.json').read_text())['deadline'])
 caps=dict(Studies=4,mask_points=1121600,numeric_bytes=3000000000,bitmap_pixels=50000000,fixture_rays=32,height_points=1000000,environment_points=2243200,composites=8);ledger=dict.fromkeys(caps,0);first={}
 def save(n,v):(O/n).write_text(json.dumps(v,indent=2,allow_nan=False)+'\n')
 def charge(k,n):
@@ -18,13 +18,16 @@ def read(p,keys):
  with np.load(p) as z:return {k:z[k] for k in keys}
 save('start.json',dict(at=datetime.datetime.now(datetime.timezone.utc).isoformat(),deadline=deadline.isoformat(),caps=caps,selected_pass=sys.argv[1],scope='32 actual factory fixture rays and four cached compositions; no new source query, filter or parameter trial'))
 try:
- from music_miniplayer_family import load_working_family,working_surface_pair,working_composite
+ from music_miniplayer_family import load_working_family,working_surface_pair,working_composite,working_center,working_contour
  from raised_front_optics import trace_raised_front_orthographic
  from environment_radiance import annular_environment
  spec=importlib.util.spec_from_file_location('selected_common',B/'material_common.py');c=importlib.util.module_from_spec(spec);spec.loader.exec_module(c);c.NATIVE=N
  F=load_working_family()
  for f in [Path(__file__),R/'reconstruction/music_miniplayer_family.py',R/'reconstruction/families/music-mini-player-working.json',R/F['geometry']['back_profile'],R/'reconstruction/miniplayer_refinement_effects.py',R/'reconstruction/miniplayer_color_refinement.py',R/'reconstruction/shoulder_core_coordinate.py',R/'reconstruction/raised_front_optics.py']:first[str(f.relative_to(R))]=sha(f)
  data=c.load_data(charge,first);records=[];geometry=[]
+ for member in ['expanded','compact']:
+  contour=working_contour(member);assert contour.half==(F['members'][member]['major_half']*c.L,F['geometry']['minor_half']*c.L)
+  for reference in ['a','b']:assert np.array_equal(working_center(data[(member,reference)]['center']),data[(member,reference)]['center']+[-.5,0])
  for m in ['expanded','compact']:
   keys=['inside','front','back','front_normal','outward_normal','exit_direction','X','Y','primary_power','front_reflection_power','front_reflection_direction'];q=read(N/f'{m}-paths.npz',keys);I=q['inside'];ids=np.flatnonzero(I);ids=ids[np.linspace(0,len(ids)-1,16,dtype=int)];points=q['front'].reshape(-1,3)[ids]
   back,front=working_surface_pair(m);charge('fixture_rays',len(ids));trial=trace_raised_front_orthographic(back,points[:,0],points[:,1],1.,F['optics']['index'],F['optics']['background_distance'],lambda label,n:charge('height_points',n),front_surface=front)

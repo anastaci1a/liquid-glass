@@ -34,14 +34,14 @@
     "expanded-mini-player": {
       "name": "Expanded miniplayer",
       "geometry": "Smooth shoulder-core contour, actual spline front and Hermite back; major length only differs",
-      "material": "Incident sigma 6.37875 before refraction; shared low-luminance body lift, colored plateau, exterior-only shadow and original artwork transform",
-      "record": "research/decisions/miniplayer-four-pass-working.json",
-      "study": "research/experiments/miniplayer-four-pass-100/FINAL-REVIEW.md",
+      "material": "Incident sigma 6.6825 before refraction; shared grade, narrow colored rim with opposing zero gaps, exterior shadow and original artwork transform",
+      "record": "research/decisions/miniplayer-three-pass-working.json",
+      "study": "research/experiments/miniplayer-three-pass-101/FINAL-REVIEW.md",
       "images": [
-        "assets/four100-p3-expanded-a.png",
-        "assets/four100-p3-expanded-b.png"
+        "assets/three101-p2-expanded-a.png",
+        "assets/three101-p2-expanded-b.png"
       ],
-      "limits": "Visual working compromise, not full fidelity or all-guard acceptance. Expanded body/foreground and compact B partial failures remain. Conditional source and incomplete reflected scene remain.",
+      "limits": "Working approximation, not all-guard acceptance. Original failures and compact transfer differences remain; source and scene are conditional.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
       "full_radiance_verified": false,
@@ -52,7 +52,7 @@
       "active_parameter_source": "reconstruction/families/music-mini-player-working.json",
       "accepted_numerical_baseline": "reconstruction/families/music-mini-player.json",
       "primary_working_selection": true,
-      "own_verification": "research/experiments/miniplayer-four-pass-100/selected-verification/result.json"
+      "own_verification": "research/experiments/miniplayer-three-pass-101/selected-verification/result.json"
     },
     "navigation-control": {
       "name": "Navigation",
@@ -72,16 +72,16 @@
     "compact-mini-player": {
       "name": "Compact miniplayer",
       "geometry": "Smooth shoulder-core contour, actual spline front and Hermite back; major length only differs",
-      "material": "Incident sigma 6.37875 before refraction; shared low-luminance body lift, colored plateau, exterior-only shadow and original artwork transform",
-      "record": "research/decisions/miniplayer-four-pass-working.json",
-      "study": "research/experiments/miniplayer-four-pass-100/FINAL-REVIEW.md",
+      "material": "Incident sigma 6.6825 before refraction; shared grade, narrow colored rim with opposing zero gaps, exterior shadow and original artwork transform",
+      "record": "research/decisions/miniplayer-three-pass-working.json",
+      "study": "research/experiments/miniplayer-three-pass-101/FINAL-REVIEW.md",
       "family_record": "reconstruction/families/music-mini-player-working.json",
       "family_member": "compact",
       "images": [
-        "assets/four100-p3-compact-a.png",
-        "assets/four100-p3-compact-b.png"
+        "assets/three101-p2-compact-a.png",
+        "assets/three101-p2-compact-b.png"
       ],
-      "limits": "Visual working compromise, not full fidelity or all-guard acceptance. Expanded body/foreground and compact B partial failures remain. Conditional source and incomplete reflected scene remain.",
+      "limits": "Working approximation, not all-guard acceptance. Original failures and compact transfer differences remain; source and scene are conditional.",
       "selection": "primary-geometric",
       "fidelity": "incomplete",
       "full_radiance_verified": false,
@@ -91,7 +91,7 @@
       "accepted_increment": false,
       "primary_working_selection": true,
       "preserved_numerical_baseline_review": "research/experiments/agent-miniplayer-family-peer-19/README.md",
-      "own_verification": "research/experiments/miniplayer-four-pass-100/selected-verification/result.json"
+      "own_verification": "research/experiments/miniplayer-three-pass-101/selected-verification/result.json"
     },
     "detached-search-control": {
       "name": "Detached Music Search",

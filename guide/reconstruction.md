@@ -1,6 +1,6 @@
 # Apple reference recreations
 
-Completed: [four full miniplayer passes and all comparison sliders](miniplayer-four-pass.md). Pass three is the shared working selection, with original local failures disclosed. Dispersion was excluded.
+Completed: [three further full miniplayer passes and all comparison sliders](miniplayer-three-pass.md). Pass two is the shared working selection. Expanded improves; compact aggregate regressions remain explicit. Dispersion was excluded.
 
 Latest: [intermediate joins, colored plateau and downward shadow](miniplayer-middle-ground.md). Incident blur is retained. All settings and original failures are published; no family adoption is claimed.
 
@@ -401,17 +401,17 @@ References come from [Apple's original Music video](https://www.apple.com/newsro
 
 Expanded and compact use [one current working glass model](../reconstruction/families/music-mini-player-working.json), with major length as their only different glass parameter. Both actual surfaces supply their own intersections and normals; incident blur remains before refraction.
 
-**Current working reconstruction: pass three of the complete refinement cycle.** Smooth shoulders, colored edge filtering, exterior shadow and smaller artwork now appear first. Yellow outline color and compact tone improve; expanded body and local errors remain. This is a visual working choice, not full fidelity acceptance.
+**Current working reconstruction: pass two of the three-pass refinement.** Gentler shoulders and a narrower colored rim now appear first. Opposing diagonal gaps contribute exactly zero overlay. Expanded improves; compact and local failures remain. This is a working choice, not full fidelity acceptance.
 
 References: the original Music frames at 0 and 6.033 seconds.
 
-![Expanded A: current two-surface working reconstruction](assets/four100-p3-expanded-a.png)
+![Expanded A: current two-surface working reconstruction](assets/three101-p2-expanded-a.png)
 
-![Expanded B: current two-surface working reconstruction](assets/four100-p3-expanded-b.png)
+![Expanded B: current two-surface working reconstruction](assets/three101-p2-expanded-b.png)
 
-Current E is `12.31818 / 6.96087`. Expanded body, foreground and local regressions remain, including A's original sixteen-pixel boundary cohort. The shared selection improves the combined category ranking mainly through compact tone and artwork; it is not an expanded-score improvement.
+Current E is `10.22388 / 5.07356`, improved against the previous working version. Original local failures remain, especially expanded A's sixteen-pixel boundary cohort. Stronger outline brightness tests are published but not selected.
 
-[Current decision and all failures](../research/decisions/miniplayer-four-pass-working.json) · [All four passes and native details](miniplayer-four-pass.md).
+[Current decision and all failures](../research/decisions/miniplayer-three-pass-working.json) · [All three passes and native details](miniplayer-three-pass.md).
 
 <details><summary>Earlier shared working model</summary>
 
@@ -513,13 +513,13 @@ Frame A: 0 seconds. Frame B: 6.033 seconds. Cover art is a separate high-resolut
 
 **Current working reconstruction: the exact expanded model, shortened only.** Geometry, index, scene, incident blur and material are identical. The common material uses all four references; compact is not a color holdout and has no compact-specific coefficient.
 
-![Compact A: current shared two-surface working reconstruction](assets/four100-p3-compact-a.png)
+![Compact A: current shared two-surface working reconstruction](assets/three101-p2-compact-a.png)
 
-![Compact B: current shared two-surface working reconstruction](assets/four100-p3-compact-b.png)
+![Compact B: current shared two-surface working reconstruction](assets/three101-p2-compact-b.png)
 
-Current E is `13.49366 / 13.43211`. Compact A passes its original comparisons; compact B retains its original twenty-two-pixel partial-boundary failure. The shared family remains guard-incomplete on expanded. Returned features, cap light and full radiance remain unresolved.
+Current E is `14.82960 / 14.47269`, worse than the previous working version. The expanded-priority shared choice preserves these compact regressions. Original twenty-two-pixel boundary cohorts remain scored. Returned features, body color and full radiance remain unresolved.
 
-[Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Current decision](../research/decisions/miniplayer-four-pass-working.json) · [Four-pass comparisons](miniplayer-four-pass.md).
+[Current shared recipe](../reconstruction/families/music-mini-player-working.json) · [Current decision](../research/decisions/miniplayer-three-pass-working.json) · [Three-pass comparisons](miniplayer-three-pass.md).
 
 <details><summary>Earlier compact working model</summary>
 

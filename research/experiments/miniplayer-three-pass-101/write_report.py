@@ -11,4 +11,5 @@ for x in r['records']:
 text+='\nExpanded-only rim training selects the outline. Compact uses identical settings. All other stage rankings use equal-reference training cohorts, excluding held pixels. Original guards remain evaluation evidence.\n\n'
 text+='[Recipe](final-recipe.json), [all stage scores](all-metrics.json), [source gates](blur-source-FIRST.json), [integration](integration.json), [own verification](verification.json), [fixed diagnostics](fixed-diagnostics.json) and [ledger](ledger.json) retain the detailed evidence.\n\n'
 text+='Outline integration reports a successive-order difference, not a certified global error bound. Exterior shadow affects clear subrays only. The source mosaic and annular scene remain conditional; later reflected power is unassigned.\n'
+if sys.argv[1]=='pass3':text=text.replace('Expanded-only rim training selects the outline.', 'Fixed expanded upper/lower peak training selects the outline; these training pixels exclude held samples.')
 (P/'README.md').write_text(text)
