@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-26T18:38:41.729727+00:00",
+  "original_deadline": "2026-10-26T19:53:34.826506+00:00",
+  "caps": {
+    "Studies": 8,
+    "mask_points": 2243200,
+    "numeric_bytes": 8000000000,
+    "bitmap_pixels": 100000000,
+    "score_calls": 24,
+    "metric_Gaussians": 120,
+    "metric_erosions": 24,
+    "composites": 80,
+    "environment_points": 4486400,
+    "distance_points": 1000000000,
+    "boundary_inversions": 100000000,
+    "quadrature_nodes": 1000000000,
+    "profile_points": 2000000000,
+    "coordinate_queries": 2000000000,
+    "projection_iteration_points": 60000000000
+  },
+  "reason": "Original OpenCV float32 independent check differed by 1.42e-6. Use scalar colorsys double precision with unchanged 4e-7 composite tolerance; no endpoint/model change.",
+  "reuse": "Both completed 16/32 integration pairs remain frozen. Original failure and ledger retained. Reconstruct lost in-memory Studies/cache state once, with full additional accounting.",
+  "diagnostic_supplement": {
+    "at": "2026-10-26T18:37:44.506913+00:00",
+    "purpose": "Determine whether stopped independent HSV check failed from numerical differences or unavailable pixels",
+    "numeric_bytes": 10880000,
+    "active_pixels": 31018,
+    "nonfinite_comparison_pixels": 0,
+    "finite_max_error": 1.4206654951609554e-06,
+    "guide_nonfinite_pixels": 0,
+    "body_nonfinite_pixels": 0,
+    "extra_partial_compositions": 2,
+    "new_optical_work": 0
+  },
+  "duplicate_candidate": "The first S60 expanded-A composite was evaluated before the failed check and was not scored or retained. Its repeat is counted, not claimed as zero work."
+}

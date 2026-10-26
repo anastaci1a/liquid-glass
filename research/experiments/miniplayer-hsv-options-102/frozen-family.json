@@ -1,0 +1,137 @@
+{
+  "family": "music-mini-player-working",
+  "requirement": "One glass model; major_half is the only variable shape parameter.",
+  "length_unit_native_pixels": 88.5,
+  "geometry": {
+    "model": "Smooth shoulder-core contour; same actual spline front and Hermite back",
+    "minor_half": 1.012503164339156,
+    "corner_radius": 0.9944792992257596,
+    "cap_join_width": 0,
+    "breaks": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.9,
+      0.97,
+      0.99,
+      1
+    ],
+    "height_controls": [
+      0.1381819202620016,
+      0.1381819202620016,
+      0.136502710003918,
+      0.13602257117048225,
+      0.12733924854632883,
+      0.12044098503163844,
+      0.06671528306416542,
+      0.030004811796411936,
+      0.008992215599754803,
+      0.0022509236812926743,
+      0
+    ],
+    "front_scale": 0.51,
+    "back_profile": "reconstruction/families/music-mini-player-three-pass-profile.json",
+    "back_profile_sha256": "b623ac74672aafca22991582f2261857fff8b660352f44ba633d9f792a017e02",
+    "trace_front_scale": 1,
+    "shoulder_inset": 0.0014124293785310734,
+    "coordinate": "shoulder_core"
+  },
+  "optics": {
+    "camera": "orthographic",
+    "front_z": 0,
+    "index": 1.5,
+    "background_distance": 2.1
+  },
+  "material": {
+    "incident_sigma_native_pixels": 6.6825,
+    "incident_kernel_radius": 21,
+    "gain": 0.5552987769129158,
+    "bias": 0.39083683534488656,
+    "output_sigma": 0,
+    "generated_shadow": {
+      "sigma_x": 25.0,
+      "sigma_y": 20.0,
+      "offset": 7.0,
+      "opacity": 0.23
+    },
+    "outline": {
+      "response": "bright_colored_rim",
+      "endpoint": {
+        "exposure": 1.0,
+        "saturation": 1.0,
+        "chroma_weighted": false
+      },
+      "plateau": 0.6666666666666666,
+      "fade": 2.0,
+      "angular": {
+        "sigma": 2.6,
+        "power": 1.5,
+        "start": -45,
+        "minimum": 30,
+        "hold": 60,
+        "recover": 85
+      },
+      "guide": "Incident-blurred actual refraction before body grade and assigned reflection; ordered foreground retained"
+    },
+    "role": "Bounded low-luminance encoded response before primary interface power; outline and exterior shadow remain separate",
+    "low_luminance_lift": 0.08,
+    "chroma": 1.0
+  },
+  "sampling": {
+    "samples_per_axis": 2,
+    "bilinear": "exact",
+    "outline": {
+      "order": 32,
+      "normalization": "full pixel",
+      "tail": 1e-10,
+      "source": "Integrated actual projected contour; no occupied-area renormalization"
+    }
+  },
+  "members": {
+    "expanded": {
+      "major_half": 7.2419720569326955
+    },
+    "compact": {
+      "major_half": 4.923512190637598
+    }
+  },
+  "provenance": {
+    "expanded_height_record": "research/experiments/expanded-spline-height-01/inference.json",
+    "expanded_response_record": "research/experiments/expanded-contrast-guard-02/primary-decision.json",
+    "compact_length_record": "research/experiments/compact-geometry-01/geometry-check.json",
+    "nuisance_policy": "Original source/style inputs preserved. Common registration correction and shared artwork transform are declared separately from optics.",
+    "starting_family": "research/experiments/miniplayer-three-pass-101/starting-family.json"
+  },
+  "status": "primary-working-approximation-guard-incomplete",
+  "numerical_acceptance": false,
+  "accepted_baseline": "reconstruction/families/music-mini-player.json",
+  "scene": {
+    "model": "annular_environment",
+    "inner_degrees": 30,
+    "outer_degrees": 80,
+    "shoulder_degrees": 10,
+    "radiance": 4,
+    "observed": false
+  },
+  "transport": {
+    "primary": "Actual two-interface primary power",
+    "front_reflection": "Actual direct first-front power",
+    "later_reflection": "Unassigned, incomplete"
+  },
+  "evidence": "research/experiments/miniplayer-three-pass-101/FINAL-REVIEW.md",
+  "selection_record": "research/decisions/miniplayer-three-pass-working.json",
+  "registration": {
+    "center_shift_native": [
+      -0.5,
+      0.0
+    ],
+    "scope": "Same correction for all four original measured centers; original case files unchanged"
+  },
+  "artwork": {
+    "scale": 0.95,
+    "up": 3,
+    "radius": 18
+  }
+}

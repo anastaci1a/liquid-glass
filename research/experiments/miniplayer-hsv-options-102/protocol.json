@@ -1,0 +1,43 @@
+{
+  "start": "2026-10-26T18:23:34.826506+00:00",
+  "deadline": "2026-10-26T19:53:34.826506+00:00",
+  "checkpoint_deadline": "2026-10-26T18:38:34.826506+00:00",
+  "caps": {
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 8000000000,
+    "bitmap_pixels": 50000000,
+    "score_calls": 24,
+    "metric_Gaussians": 120,
+    "metric_erosions": 24,
+    "composites": 80,
+    "environment_points": 2243200,
+    "distance_points": 1000000000,
+    "boundary_inversions": 100000000,
+    "quadrature_nodes": 1000000000,
+    "profile_points": 2000000000,
+    "coordinate_queries": 2000000000,
+    "projection_iteration_points": 60000000000
+  },
+  "saturation_fractions": [
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "value": 0.9921568627450981,
+  "plateau_native": 1.0,
+  "fade_native": 2.0,
+  "orders": [
+    16,
+    32
+  ],
+  "maximum_order_difference": 1e-06,
+  "baseline": "miniplayer-three-pass-101/pass2",
+  "native": "miniplayer-three-pass-101/native-pass2-resumed",
+  "body": "Keep bias and dark lift; raise gain so grading-stage white is 253/255. Optical power and reflected contribution remain unchanged.",
+  "scope": "One user-requested five-option comparison, no optimizer or adoption. Geometry finalized; no new lens rays, source sampling, blur, shadow field, artwork adjustment or dispersion.",
+  "proposals_exception": "Five explicitly requested saturation options override the ordinary three-proposal limit.",
+  "clipping_policy": "Retain preclip encoded body samples; clamp to display unit range before pixel integration, count every clipped channel. No clipping is concealed as optical acceptance."
+}
