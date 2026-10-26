@@ -1,0 +1,62 @@
+{
+  "start": "2026-10-26T22:01:17.580437+00:00",
+  "deadline": "2026-10-26T23:31:17.580437+00:00",
+  "calibration_checkpoint_minutes": 20,
+  "scope": "One shared candidate. Solve existing gain for final encoded white230 on frozen expanded-B central near-white body paths. Keep bias/lift and optical composition. Revise outline yellow S/V target to FCF8AD; preserve hue and other anchors. Plateau1.5 fade2; no new optical paths/source/filter/shape.",
+  "caps": {
+    "calibration_scalar_points": 50000,
+    "control_colors": 200000,
+    "Studies": 4,
+    "mask_points": 1121600,
+    "numeric_bytes": 4000000000,
+    "bitmap_pixels": 50000000,
+    "color_evaluations": 20000000,
+    "foreground_applications": 32,
+    "identity_composites": 8,
+    "candidate_composites": 4,
+    "verification_composites": 4,
+    "score_calls": 12,
+    "metric_Gaussians": 60,
+    "metric_erosions": 12,
+    "environment_points": 2243200,
+    "distance_points": 1000000000,
+    "boundary_inversions": 100000000,
+    "quadrature_nodes": 1000000000,
+    "profile_points": 2000000000,
+    "coordinate_queries": 2000000000,
+    "projection_iteration_points": 60000000000,
+    "white_calibration_points": 50000000
+  },
+  "maximum_saturation_value_error": 0.00392156862745098,
+  "maximum_replay_error": 1e-07,
+  "new_rays": 0,
+  "new_source_queries": 0,
+  "new_filters": 0,
+  "checkpoint_deadline": "2026-10-26T22:21:17.580437+00:00",
+  "body_white_stage": "After actual retained primary power and direct reflected light",
+  "gain": null,
+  "bias": 0.39083683534488656,
+  "dark_lift": 0.08,
+  "plateau_native": 1.5,
+  "fade_native": 2.0,
+  "orders": [
+    16,
+    32
+  ],
+  "maximum_order_difference": 1e-06,
+  "final_white_target": 0.9019607843137255,
+  "white_cohort": "Expanded B original glass excluding held/rim/foreground; full coverage; all12 retained RGB channels >=250/255; central body at least30 native pixels inside minor extent and cap core.",
+  "white_solve": "One monotone gain bisection,48 steps plus bracket/final evaluations; bias/lift frozen. Actual source samples select cohort only. White probe uses actual cached optical paths.",
+  "outline_targets": [
+    "FCFCFC",
+    "FCF8AD",
+    "F6DDAD",
+    "FBD7A1"
+  ],
+  "inputs": [
+    "FFFFFF",
+    "F3CC00",
+    "B28E3E",
+    "C59352"
+  ]
+}

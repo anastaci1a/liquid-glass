@@ -1,5 +1,7 @@
 # Current state
 
+For review: [final-output white, revised yellow, 1.5-pixel rim and centered artwork](../../guide/miniplayer-final-white.md). Existing body gain targets #E6E6E6 after optical lighting. Artwork is 0.986 of its prior dimensions. Selection remains unchanged.
+
 For review: [restored body grading and doubled colored-rim plateau](../../guide/miniplayer-restored-grade.md). Existing gain targets grading-stage white #E5E5E5; optical brightness is restored. The calibrated outline remains, with a two-pixel plateau. Selection is unchanged.
 
 For review: [one calibrated body/outline color candidate](../../guide/miniplayer-anchor-colors.md). Final white targets are #E5E5E5 and #FCFCFC. Hue is preserved; saturation/value anchors pass. Expanded defines the shared color target. Image errors increase, and selection remains unchanged.

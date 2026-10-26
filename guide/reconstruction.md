@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+For review: [final-output white, revised yellow and centered artwork](miniplayer-final-white.md), with native comparison sliders and a 1.5-pixel strongest rim band.
+
 For review: [restored lens grading and doubled colored outline plateau](miniplayer-restored-grade.md), with reference and previous-candidate sliders.
 
 For review: [calibrated body and outline colors with native comparison sliders](miniplayer-anchor-colors.md). One candidate; expanded color targets govern both sizes.
