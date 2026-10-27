@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-27T02:21:17.178Z",
+  "scope": "Two selectors;11colors by5widths. Fixed thin-left moments; original angular profile; actual positive-area quadrature for changed right profile. Color and width axes independent; source data unchanged.",
+  "checks": [
+    "Hue reduction factor is1-(1-.95^5)/2, not sqrt(.95^5).",
+    "Color A is exact111 Step5 calibration.",
+    "Width100 reuses exact107 adaptive alpha/reduction.",
+    "Width increase scales plateau and fade, with unchanged thin-left scale.",
+    "Each completed image is replayed separately against scalar HSV endpoints.",
+    "Deferred crops update through data-media-src."
+  ],
+  "prepared_code_hashes": {
+    "guide/outline-range.js": "a61d3f9482d5f3fe209084e533a4529d6c4687025d194eb83aac285a06522e51",
+    "guide/experiments/miniplayer-outline-range.cjs": "04a16c6ea8a69912b4adca048b85a6469271fdf472471a6efe19d8be6f15fbcb",
+    "reconstruction/miniplayer_outline_widths.py": "4d275b8e02cdeea11d39f0971de0b798a5e819d49fa2f651bc24725df7f027b4",
+    "research/experiments/miniplayer-outline-range-112/render-matrix.py": "16700e61f8a33104bffa3181deab36d628d704e0aadd6c0619b33d159d336d24",
+    "research/experiments/miniplayer-outline-range-112/publish-matrix.py": "96f86cabfbc5aa1e8774ad428e13088caa9b4d3df1925018684be9d49961c4c0"
+  },
+  "unused_preparations": [
+    "render.py: stopped color-only route;first3retained",
+    "publish.py: superseded unexecuted single-axis preparation"
+  ]
+}

@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+For review: [ten larger outline steps from the previous Step 5](miniplayer-outline-range.md). Two dropdowns compare Colors A–K and non-left thicknesses100–180%; hue-shift reduction is halved. No option is adopted.
+
 For review: [five outline color steps with a dropdown](miniplayer-outline-options.md). Current and five further steps share the same comparison sliders. No option is adopted.
 
 For review: [slightly brighter, less saturated outline](miniplayer-outline-value.md). Relative to revision 109, saturation is 99%, hue-shift strength 95%, and HSV value gains 0.002. Taper, body and artwork remain unchanged.
