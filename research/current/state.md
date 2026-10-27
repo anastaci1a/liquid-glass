@@ -1,5 +1,7 @@
 # Current state
 
+For review: [five outline color steps with a dropdown](../../guide/miniplayer-outline-options.md). Current and five further steps share the same comparison sliders. No option is adopted.
+
 For review: [slightly brighter, less saturated outline](../../guide/miniplayer-outline-value.md). Relative to revision 109, saturation is 99%, hue-shift strength 95%, and HSV value gains 0.002. Taper, body and artwork remain unchanged.
 
 For review: [slightly reduced outline saturation and hue shift](../../guide/miniplayer-outline-balance.md). Saturation is 98% and hue-shift strength 90% of revision 108. Brightness, taper, body and artwork remain unchanged.

@@ -41,7 +41,7 @@
     }
     sync=()=>{const url=image.getAttribute('src');for(const layer of layers)layer.style.backgroundImage=url&&visible(image)?`url(${JSON.stringify(url)})`:'none';};
     const labels=document.createElement('div');labels.className='comparison-labels';
-    const leftLabel=image.dataset.comparisonLeftLabel||'Apple',rightLabel=image.dataset.comparisonRightLabel||'Reconstruction';
+    const leftLabel=image.dataset.comparisonLeftLabel||'Apple';let rightLabel=image.dataset.comparisonRightLabel||'Reconstruction';
     for(const text of [leftLabel,rightLabel]){const label=document.createElement('span');label.textContent=text;labels.append(label);}
     const handle=document.createElement('div');handle.className='comparison-handle';handle.tabIndex=0;
     for(const [key,value] of Object.entries({role:'slider','aria-label':'Comparison divider','aria-orientation':'horizontal','aria-valuemin':'0','aria-valuemax':'100'}))handle.setAttribute(key,value);
@@ -72,6 +72,7 @@
      else if(event.key==='Home')update(0);else if(event.key==='End')update(100);else return;
      event.preventDefault();
     });
+    image.addEventListener('comparison-source-change',event=>{rightLabel=event.detail.rightLabel;labels.lastElementChild.textContent=rightLabel;update(split);sync();});
     tools.after(labels,frame);reset();sync();image.addEventListener('load',sync);
    }
    const v={figure,image,full,reset,sync,marker:null};viewers.add(v);
