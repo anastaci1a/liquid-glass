@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+For review: [slightly brighter, less saturated outline](miniplayer-outline-value.md). Relative to revision 109, saturation is 99%, hue-shift strength 95%, and HSV value gains 0.002. Taper, body and artwork remain unchanged.
+
 For review: [slightly reduced outline saturation and hue shift](miniplayer-outline-balance.md). Saturation is 98% and hue-shift strength 90% of revision 108. Brightness, taper, body and artwork remain unchanged.
 
 For review: [restored yellow hue with the thinner outline](miniplayer-restored-yellow.md). Only the prior hue correction returns; taper, body and artwork remain unchanged.

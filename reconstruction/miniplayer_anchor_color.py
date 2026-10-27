@@ -73,3 +73,17 @@ def adjusted_outline_endpoint(rgb, calibration):
         rotated[mask] = np.stack([x[mask] for x in channels],axis=-1)
     result[active] = rotated
     return result
+
+
+def outline_display_endpoint(rgb, calibration):
+    """Optional HSV-value lift after the calibrated hue/saturation response."""
+    result = adjusted_outline_endpoint(rgb, calibration)
+    lift = float(calibration.get('outline_value_lift', 0.))
+    if not 0 <= lift <= .05:
+        raise ValueError('Outline value lift must lie between zero and .05')
+    if lift == 0:
+        return result
+    value = result.max(-1, keepdims=True)
+    raised = np.minimum(value + lift, 1.)
+    ratio = np.divide(result, value, out=np.ones_like(result), where=value > 0)
+    return ratio * raised
