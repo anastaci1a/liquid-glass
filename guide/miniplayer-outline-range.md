@@ -14,7 +14,7 @@ Color A is the previous series' Step 5. Each following color multiplies saturati
 
 Thickness increases affect the region to the right of the 43.36%–44.58% transition, including top, bottom and right endcap. The thin left region remains fixed. The transition blends into the chosen width, scaling plateau and fade together. Existing diagonal gaps remain unchanged.
 
-Geometry, body, artwork, incident blur and shadow remain fixed. No choice is adopted automatically.
+Geometry, body, artwork, incident blur and shadow remain fixed. Color B at 120% was chosen as the baseline for the next outline revision.
 
 | Thickness | Non-left plateau | Non-left fade scale |
 | --- | ---: | ---: |

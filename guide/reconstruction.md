@@ -1,6 +1,8 @@
 # Apple reference recreations
 
-For review: [ten larger outline steps from the previous Step 5](miniplayer-outline-range.md). Two dropdowns compare Colors A–K and non-left thicknesses100–180%; hue-shift reduction is halved. No option is adopted.
+Chosen outline baseline: Color B at 120%. The [eased horizontal thickness candidate](miniplayer-outline-eased-width.md) spreads the left taper and strengthens the right tip; it is awaiting visual review.
+
+For review: [ten larger outline steps from the previous Step 5](miniplayer-outline-range.md). Two dropdowns compare Colors A–K and non-left thicknesses100–180%; hue-shift reduction is halved. Color B at 120% is the chosen review baseline.
 
 For review: [five outline color steps with a dropdown](miniplayer-outline-options.md). Current and five further steps share the same comparison sliders. No option is adopted.
 
