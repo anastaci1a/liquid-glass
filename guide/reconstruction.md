@@ -1,5 +1,7 @@
 # Apple reference recreations
 
+For review: [restored yellow hue with the thinner outline](miniplayer-restored-yellow.md). Only the prior hue correction returns; taper, body and artwork remain unchanged.
+
 For review: [thinner hue-preserving outline](miniplayer-outline-taper.md). The shared outline tapers from thin left to thick right. Body, artwork and selection remain unchanged.
 
 For review: [more saturated yellow and larger artwork](miniplayer-yellow-match.md), with exact full-strength color matching and native comparison sliders.

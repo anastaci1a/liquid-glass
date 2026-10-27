@@ -1,5 +1,7 @@
 # Current state
 
+For review: [restored yellow hue with the thinner outline](../../guide/miniplayer-restored-yellow.md). Only the prior hue correction returns; taper, body and artwork remain unchanged.
+
 For review: [thinner hue-preserving outline](../../guide/miniplayer-outline-taper.md). The shared outline tapers from thin left to thick right. Body, artwork and selection remain unchanged.
 
 For review: [exact stronger-yellow anchor and larger artwork](../../guide/miniplayer-yellow-match.md). The new full-strength yellow matches #F6F586 from tentative input #EBCE48. Artwork is multiplied by 1.0183. Body, 1.5-pixel rim geometry and selection remain unchanged.
