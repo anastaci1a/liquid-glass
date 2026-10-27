@@ -1,5 +1,7 @@
 # Current state
 
+For review: [slightly reduced outline saturation and hue shift](../../guide/miniplayer-outline-balance.md). Saturation is 98% and hue-shift strength 90% of revision 108. Brightness, taper, body and artwork remain unchanged.
+
 For review: [restored yellow hue with the thinner outline](../../guide/miniplayer-restored-yellow.md). Only the prior hue correction returns; taper, body and artwork remain unchanged.
 
 For review: [thinner hue-preserving outline](../../guide/miniplayer-outline-taper.md). The shared outline tapers from thin left to thick right. Body, artwork and selection remain unchanged.
